@@ -9,34 +9,48 @@ const openai = new OpenAI({
 
 export async function POST(req: NextRequest) {
   try {
-    const { messages, projectId, mode } = await req.json();
+    const { messages, projectId, mode, currentData } = await req.json();
+    
+    // Create a new Supabase client for this request context to ensure fresh auth/connection
     const supabase = getSupabase();
 
-    // 1. Fetch Context
-    const { data: project } = await supabase.from('projects').select('*').eq('id', projectId).single();
+    const isMockProject = projectId.startsWith('mock-');
     
-    // Get Company ID (Empresa)
-    const { data: empresa } = await supabase.from('empresas').select('id').eq('project_id', projectId).single();
-    
-    if (!empresa) {
-        return NextResponse.json({ error: 'Company not found' }, { status: 404 });
+    let project: any = null;
+    let empresa: any = null;
+
+    if (!isMockProject) {
+        // 1. Fetch Context from DB if real project
+        const { data: projectData } = await supabase.from('projects').select('*').eq('id', projectId).single();
+        project = projectData;
+        
+        // Get Company ID (Empresa)
+        const { data: empresaData } = await supabase.from('empresas').select('id').eq('project_id', projectId).single();
+        empresa = empresaData;
+    } else {
+        // Mock Project Context
+        project = {
+            name: 'Mock Project',
+            mission: 'Simulated Mission',
+            metadata: { workflows: currentData?.workflows || [] }
+        };
     }
 
+    // Prepare System Prompt Context
     let systemPrompt = '';
     let tools: OpenAI.Chat.Completions.ChatCompletionTool[] = [];
-    let contextData: any = {};
 
     if (mode === 'team') {
-      const { data: team } = await supabase.from('personas').select('*').eq('empresa_id', empresa.id);
-      contextData = { team };
+      // Use provided currentData (preferred for latest state) or fetch from DB
+      const team = currentData?.team || (empresa ? (await supabase.from('personas').select('*').eq('empresa_id', empresa.id)).data : []);
       
       systemPrompt = `
-        You are an expert HR Manager & Organizational Strategist for the project "${project.name}".
+        You are an expert HR Manager & Organizational Strategist for the project "${project?.name || 'Project'}".
         
         Current Team Context:
         ${JSON.stringify(team, null, 2)}
         
-        Project Mission: ${project.mission}
+        Project Mission: ${project?.mission || 'Not specified'}
         
         Your goal is to help the user refine the team structure. You can add, remove, or update team members based on the conversation.
         
@@ -80,14 +94,11 @@ export async function POST(req: NextRequest) {
       ];
 
     } else if (mode === 'workflows') {
-      // Refactored to use Project Metadata for Workflows instead of automation_opportunities table
-      const workflows = project.metadata?.workflows || [];
-      const { data: team } = await supabase.from('personas').select('id, nome, cargo').eq('empresa_id', empresa.id);
+      const workflows = currentData?.workflows || project?.metadata?.workflows || [];
+      const team = currentData?.team || (empresa ? (await supabase.from('personas').select('id, nome, cargo').eq('empresa_id', empresa.id)).data : []);
       
-      contextData = { workflows, team };
-
       systemPrompt = `
-        You are an expert Operations & Automation Manager for "${project.name}".
+        You are an expert Operations & Automation Manager for "${project?.name || 'Project'}".
         
         Current Workflows:
         ${JSON.stringify(workflows, null, 2)}
@@ -157,11 +168,29 @@ export async function POST(req: NextRequest) {
       if (toolCall.function.name === 'update_team_structure') {
         const { team } = JSON.parse(toolCall.function.arguments);
         
-        // Perform DB Updates
-        // Strategy: Delete all for this company and insert new (simplest for syncing)
-        // OR: Upsert. Upsert is safer to keep IDs.
-        
-        // 1. Upsert provided members
+        if (isMockProject) {
+            return NextResponse.json({ 
+                role: 'assistant', 
+                content: 'Simulação: Atualizei a estrutura da equipe.',
+                action_performed: 'team_updated',
+                action_payload: team 
+            });
+        }
+
+        // Real Project DB Updates
+        if (!empresa) {
+            // Create Empresa if missing
+            const { data: newEmpresa, error: createError } = await supabase
+                .from('empresas')
+                .insert({ project_id: projectId, nome: project.name })
+                .select()
+                .single();
+            
+            if (createError) throw createError;
+            empresa = newEmpresa;
+        }
+
+        // Upsert provided members
         const upsertData = team.map((member: any) => ({
            ...member,
            empresa_id: empresa.id,
@@ -172,15 +201,8 @@ export async function POST(req: NextRequest) {
         
         if (error) console.error('Error updating team:', error);
 
-        // Optional: Handle deletions if the list is shorter? 
-        // For MVP, we'll assume the LLM sends the FULL list every time if it wants to "remove" someone (by omitting them).
-        // But upsert won't delete omitted ones. 
-        // Let's rely on the user manually deleting via UI if needed, OR implement a sync.
-        // For a true "Manage Team" experience, we should probably delete those not in the list if the list is intended to be exhaustive.
-        // Let's assume the LLM sends the *intended* full state.
-        
+        // Delete removed members
         if (team.length > 0) {
-            // Find IDs not in the new list and delete them
             const newIds = team.filter((m: any) => m.id).map((m: any) => m.id);
             if (newIds.length > 0) {
                 await supabase.from('personas').delete().eq('empresa_id', empresa.id).not('id', 'in', `(${newIds.join(',')})`);
@@ -197,7 +219,16 @@ export async function POST(req: NextRequest) {
       if (toolCall.function.name === 'update_workflows') {
         const { workflows } = JSON.parse(toolCall.function.arguments);
         
-        // Save to Project Metadata instead of table
+        if (isMockProject) {
+            return NextResponse.json({ 
+                role: 'assistant', 
+                content: 'Simulação: Atualizei os fluxos de trabalho.',
+                action_performed: 'workflows_updated',
+                action_payload: workflows
+            });
+        }
+
+        // Save to Project Metadata
         const updatedMetadata = {
             ...project.metadata,
             workflows: workflows

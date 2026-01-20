@@ -380,6 +380,7 @@ export default function ProjectDashboard() {
                   projectId={project.id} 
                   mode="team" 
                   onUpdate={fetchProjectData}
+                  currentData={{ team }}
                 />
              </div>
              <div className="lg:col-span-2 space-y-6">

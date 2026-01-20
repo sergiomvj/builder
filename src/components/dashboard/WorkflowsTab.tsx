@@ -70,6 +70,7 @@ export default function WorkflowsTab({ workflows, team, projectId, onUpdate }: W
              projectId={projectId} 
              mode="workflows" 
              onUpdate={onUpdate} 
+             currentData={{ workflows, team }}
            />
         </div>
 

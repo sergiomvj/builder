@@ -13,7 +13,7 @@ export function MockModeIndicator() {
   if (!isMockMode) return null;
 
   return (
-    <div className="flex items-center gap-2 px-3 py-1 bg-amber-50 text-amber-700 rounded-full border border-amber-200 text-sm font-medium animate-pulse">
+    <div className="flex items-center gap-2 px-3 py-1 bg-amber-50 text-amber-700 rounded-full border border-amber-200 text-sm font-medium animate-pulse" suppressHydrationWarning>
       <AlertTriangle className="w-4 h-4" />
       <span>Modo Simulado</span>
     </div>

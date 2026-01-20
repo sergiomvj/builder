@@ -11,6 +11,7 @@ interface HRManagerChatProps {
   projectId: string;
   mode: 'team' | 'workflows';
   onUpdate: () => void;
+  currentData?: any;
 }
 
 interface Message {
@@ -18,7 +19,7 @@ interface Message {
   content: string;
 }
 
-export default function HRManagerChat({ projectId, mode, onUpdate }: HRManagerChatProps) {
+export default function HRManagerChat({ projectId, mode, onUpdate, currentData }: HRManagerChatProps) {
   const [messages, setMessages] = useState<Message[]>([
     { 
       role: 'assistant', 
@@ -52,7 +53,8 @@ export default function HRManagerChat({ projectId, mode, onUpdate }: HRManagerCh
         body: JSON.stringify({
           messages: [...messages, userMsg].map(m => ({ role: m.role, content: m.content })),
           projectId,
-          mode
+          mode,
+          currentData
         })
       });
 
