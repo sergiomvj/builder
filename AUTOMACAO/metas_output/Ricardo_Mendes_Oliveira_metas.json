@@ -1,0 +1,36 @@
+{
+  "persona_id": "3c7e5b97-a45e-48c6-847b-026ea7b40aab",
+  "full_name": "Ricardo Mendes Oliveira",
+  "role": "Contador",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar conhecimentos em planejamento tributário",
+      "descricao": "Realizar um curso de especialização em planejamento tributário com carga horária mínima de 40 horas",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "horas",
+      "data_prazo": "2026-06-01",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Melhorar habilidades de análise de balanços",
+      "descricao": "Realizar um workshop prático sobre análise de balanços com foco em contabilidade financeira",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "horas",
+      "data_prazo": "2026-06-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Participar de treinamentos sobre novas legislações contábeis",
+      "descricao": "Participar de pelo menos 3 treinamentos ou cursos online sobre as atualizações das legislações contábeis vigentes",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 3,
+      "unidade_medida": "cursos",
+      "data_prazo": "2026-06-01",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:43:29.083Z"
+}

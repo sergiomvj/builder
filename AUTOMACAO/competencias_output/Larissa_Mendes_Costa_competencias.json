@@ -1,0 +1,53 @@
+{
+  "persona_id": "a24b1a9e-f98f-4a2d-adb7-1d889c6c6986",
+  "full_name": "Larissa Mendes Costa",
+  "role": "Especialista em Marketing Digital",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em SEO",
+    "Experiência em Google Analytics",
+    "Domínio em gestão de redes sociais",
+    "Habilidade em criação de campanhas de e-mail marketing",
+    "Conhecimento em marketing de conteúdo"
+  ],
+  "competencias_comportamentais": [
+    "Proatividade",
+    "Criatividade",
+    "Trabalho em equipe",
+    "Resiliência",
+    "Capacidade de análise"
+  ],
+  "ferramentas": [
+    "Google Ads",
+    "Facebook Ads Manager",
+    "MailChimp",
+    "Canva"
+  ],
+  "tarefas_diarias": [
+    "Análise de métricas de desempenho",
+    "Criação de conteúdo para redes sociais",
+    "Gestão de campanhas de Google Ads",
+    "Monitoramento de concorrentes"
+  ],
+  "tarefas_semanais": [
+    "Elaboração de relatórios de performance",
+    "Reuniões de alinhamento com a equipe de marketing",
+    "Acompanhamento de resultados de SEO"
+  ],
+  "tarefas_mensais": [
+    "Planejamento de novas estratégias de marketing digital",
+    "Atualização de personas e jornada do cliente",
+    "Avaliação de tendências de mercado"
+  ],
+  "kpis": [
+    "Aumento de tráfego orgânico - Crescimento de 20%",
+    "Taxa de conversão de leads - Meta de 15%",
+    "Engajamento nas redes sociais - Atingir 10 mil interações"
+  ],
+  "objetivos_desenvolvimento": [
+    "Participar de cursos de atualização em marketing digital",
+    "Aprimorar habilidades em gestão de projetos",
+    "Desenvolver expertise em marketing de influência"
+  ],
+  "generated_at": "2025-12-08T14:41:23.642Z"
+}

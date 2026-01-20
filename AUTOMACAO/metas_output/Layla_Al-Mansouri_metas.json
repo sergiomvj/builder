@@ -1,0 +1,59 @@
+{
+  "persona_id": "09ffa714-e7ac-49e4-9890-10a64b28d756",
+  "full_name": "Layla Al-Mansouri",
+  "role": "UX/UI Designer",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "metas": [
+    {
+      "titulo": "Atingir NPS de 85+ em projetos",
+      "descricao": "Elevar o Net Promoter Score médio dos projetos de UX/UI entregues para 85 ou superior, coletando feedback de pelo menos 20 usuários por projeto via surveys padronizados.",
+      "categoria": "kpi",
+      "valor_alvo": 85,
+      "unidade_medida": "pontos",
+      "data_prazo": "2025-06-01",
+      "prioridade": 5,
+      "vinculada_kpi": "Net Promoter Score (NPS)"
+    },
+    {
+      "titulo": "Alcançar 90% de satisfação do usuário",
+      "descricao": "Aumentar a taxa média de satisfação do usuário em testes de usabilidade para 90%, medido por escalas de 1-10 em pelo menos 5 sessões de teste por trimestre.",
+      "categoria": "kpi",
+      "valor_alvo": 90,
+      "unidade_medida": "%",
+      "data_prazo": "2025-05-01",
+      "prioridade": 4,
+      "vinculada_kpi": "Taxa de Satisfação do Usuário"
+    },
+    {
+      "titulo": "Reduzir handoff de design para <48h",
+      "descricao": "Diminuir o tempo médio de handoff de designs finalizados para equipes de dev para menos de 48 horas, rastreando em ferramenta interna para todos os 10+ projetos do período.",
+      "categoria": "performance",
+      "valor_alvo": 48,
+      "unidade_medida": "horas",
+      "data_prazo": "2025-06-01",
+      "prioridade": 4,
+      "vinculada_kpi": "Tempo Médio de Handoff de Design"
+    },
+    {
+      "titulo": "Obter certificação WCAG",
+      "descricao": "Completar e obter certificação oficial em Accessibility conforme WCAG 2.1 ou superior, via curso credenciado como Deque University ou IAAP, incluindo exame prático.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "certificações",
+      "data_prazo": "2025-04-01",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Dominar UX para interfaces IA",
+      "descricao": "Desenvolver e documentar 3 protótipos avançados de interfaces para agentes IA autônomos, aplicando princípios de UX conversacional, testados com 10 usuários cada.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 3,
+      "unidade_medida": "protótipos",
+      "data_prazo": "2025-06-01",
+      "prioridade": 4,
+      "vinculada_kpi": ""
+    }
+  ],
+  "generated_at": "2025-12-08T22:25:11.403Z"
+}

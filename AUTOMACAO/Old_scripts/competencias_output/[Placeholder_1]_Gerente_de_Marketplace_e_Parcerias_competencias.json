@@ -1,0 +1,57 @@
+{
+  "persona_id": "06f0b005-5265-4f37-bf32-3841efe4cc82",
+  "full_name": "[Placeholder 1] Gerente de Marketplace e Parcerias",
+  "role": "Gerente de Marketplace e Parcerias",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Gestão de plataformas de marketplace, incluindo onboarding de sellers e gerenciamento de listings",
+    "Análise de dados e métricas de performance (GMV, taxa de conversão, churn de parceiros)",
+    "Negociação e elaboração de contratos de parceria estratégica",
+    "Integração de APIs e sistemas tecnológicos para parcerias B2B",
+    "Otimização de SEO, ASO e visibilidade de produtos no marketplace"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação assertiva e persuasiva com stakeholders internos e externos",
+    "Negociação avançada e construção de relacionamentos de longo prazo",
+    "Pensamento estratégico para expansão de parcerias e marketplace",
+    "Resolução de conflitos e problemas complexos em ecossistemas de parceiros",
+    "Liderança de equipes cross-funcionais e gestão de mudanças"
+  ],
+  "ferramentas": [
+    "VTEX ou Shopify para gestão de marketplace",
+    "Salesforce ou HubSpot para CRM e gerenciamento de parcerias",
+    "Google Analytics ou Amplitude para análise de dados",
+    "Tableau ou Power BI para visualização de métricas",
+    "Slack ou Microsoft Teams para comunicação com parceiros"
+  ],
+  "tarefas_diarias": [
+    "Monitorar dashboards de performance do marketplace (revisar GMV e taxa de conversão diária)",
+    "Responder a consultas e tickets de suporte de parceiros (mínimo 15 interações/dia)",
+    "Aprovar novos listings e produtos de sellers (processar 20 aprovações/dia)",
+    "Coordenar stand-up meetings com equipe de operations (15 minutos diários)",
+    "Analisar relatórios de vendas e alertas de churn (identificar 5 riscos/dia)"
+  ],
+  "tarefas_semanais": [
+    "Realizar reuniões com parceiros estratégicos (mínimo 4 reuniões/semana)",
+    "Gerar e distribuir relatório semanal de métricas de marketplace",
+    "Prospectar e qualificar novos leads de parcerias (contatar 10 prospects/semana)",
+    "Treinar equipe em processos de onboarding (1 sessão de 1h/semana)"
+  ],
+  "tarefas_mensais": [
+    "Avaliar performance de parcerias e renegociar 5 contratos chave",
+    "Planejar e lançar campanhas de aquisição de sellers (meta: 10 novos/mês)",
+    "Apresentar relatório mensal de KPIs à diretoria executiva"
+  ],
+  "kpis": [
+    "Número de parceiros ativos - 50 parceiros",
+    "GMV (Gross Merchandise Value) gerado - R$ 2M/mês",
+    "Taxa de retenção de sellers - 92%",
+    "NPS de satisfação de parceiros - 85+"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação em gestão de marketplaces (ex: VTEX Partner Certification em 6 meses)",
+    "Completar curso avançado de negociação estratégica (em 3 meses)",
+    "Expandir rede profissional participando de 2 eventos de tech/parcerias por ano"
+  ],
+  "generated_at": "2025-12-01T16:22:47.160Z"
+}

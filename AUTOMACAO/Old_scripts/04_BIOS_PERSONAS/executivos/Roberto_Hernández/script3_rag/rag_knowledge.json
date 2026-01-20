@@ -1,0 +1,454 @@
+{
+  "persona_profile": {
+    "id": 9,
+    "persona_key": "Roberto_Hernández",
+    "nome_completo": "Roberto Hernández",
+    "categoria": "executivos",
+    "especialidade": null,
+    "experiencia_anos": 17,
+    "biografia": {
+      "educacao": "MBA Executivo em Liderança pela INSEAD",
+      "idiomas": [
+        "inglês",
+        "espanhol",
+        "português"
+      ],
+      "secoes_extraidas": [
+        "formacao",
+        "experiencia",
+        "competencias_tecnicas",
+        "competencias_comportamentais",
+        "responsabilidades"
+      ]
+    },
+    "competencias": {
+      "tecnicas": [
+        {
+          "id": "9_t_1",
+          "nome": "Gestão Estratégica",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Gestão Estratégica aplicada no contexto de null"
+        },
+        {
+          "id": "9_t_2",
+          "nome": "Liderança de Equipes",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Liderança de Equipes aplicada no contexto de null"
+        },
+        {
+          "id": "9_t_3",
+          "nome": "Planejamento Empresarial",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Planejamento Empresarial aplicada no contexto de null"
+        },
+        {
+          "id": "9_t_4",
+          "nome": "Análise de Mercado",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Análise de Mercado aplicada no contexto de null"
+        },
+        {
+          "id": "9_t_5",
+          "nome": "Gestão de Mudanças",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Gestão de Mudanças aplicada no contexto de null"
+        },
+        {
+          "id": "9_t_6",
+          "nome": "Business Intelligence",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Business Intelligence aplicada no contexto de null"
+        }
+      ],
+      "comportamentais": [
+        {
+          "id": "9_c_1",
+          "nome": "Liderança Visionária",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Liderança Visionária aplicada no contexto de executivos"
+        },
+        {
+          "id": "9_c_2",
+          "nome": "Pensamento Estratégico",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Pensamento Estratégico aplicada no contexto de executivos"
+        },
+        {
+          "id": "9_c_3",
+          "nome": "Tomada de Decisão",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Tomada de Decisão aplicada no contexto de executivos"
+        },
+        {
+          "id": "9_c_4",
+          "nome": "Comunicação Executiva",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Comunicação Executiva aplicada no contexto de executivos"
+        },
+        {
+          "id": "9_c_5",
+          "nome": "Negociação",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Negociação aplicada no contexto de executivos"
+        },
+        {
+          "id": "9_c_6",
+          "nome": "Influência",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Influência aplicada no contexto de executivos"
+        }
+      ]
+    },
+    "ferramentas": [
+      {
+        "id": "9_f_1",
+        "nome": "Microsoft Office 365",
+        "categoria_uso": "produtividade_geral",
+        "nivel_proficiencia": "avançado"
+      },
+      {
+        "id": "9_f_2",
+        "nome": "Google Workspace",
+        "categoria_uso": "produtividade_geral",
+        "nivel_proficiencia": "avançado"
+      },
+      {
+        "id": "9_f_3",
+        "nome": "Slack",
+        "categoria_uso": "comunicacao",
+        "nivel_proficiencia": "avançado"
+      },
+      {
+        "id": "9_f_4",
+        "nome": "Zoom",
+        "categoria_uso": "comunicacao",
+        "nivel_proficiencia": "avançado"
+      },
+      {
+        "id": "9_f_5",
+        "nome": "Power BI",
+        "categoria_uso": "analytics",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "9_f_6",
+        "nome": "Tableau",
+        "categoria_uso": "analytics",
+        "nivel_proficiencia": "expert"
+      }
+    ],
+    "search_metadata": {
+      "tags": [
+        "executivos",
+        "Gestão Estratégica",
+        "Liderança de Equipes",
+        "Planejamento Empresarial",
+        "Liderança Visionária",
+        "Pensamento Estratégico"
+      ],
+      "embedding_text": "Roberto Hernández trabalha como executivos. com 17 anos de experiência. competências técnicas: Gestão Estratégica, Liderança de Equipes, Planejamento Empresarial, Análise de Mercado, Gestão de Mudanças, Business Intelligence. competências comportamentais: Liderança Visionária, Pensamento Estratégico, Tomada de Decisão, Comunicação Executiva, Negociação, Influência. utiliza ferramentas: Microsoft Office 365, Google Workspace, Slack, Zoom, Power BI, Tableau. educação: MBA Executivo em Liderança pela INSEAD. idiomas: inglês, espanhol, português",
+      "update_timestamp": "2025-11-16T14:48:34.870Z"
+    }
+  },
+  "relacionamentos": {
+    "competencias_relacionadas": [
+      {
+        "persona_id": 9,
+        "competencia_nome": "Gestão Estratégica",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 9,
+        "competencia_nome": "Liderança de Equipes",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 9,
+        "competencia_nome": "Planejamento Empresarial",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 9,
+        "competencia_nome": "Análise de Mercado",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 9,
+        "competencia_nome": "Gestão de Mudanças",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 9,
+        "competencia_nome": "Business Intelligence",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 9,
+        "competencia_nome": "Liderança Visionária",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 9,
+        "competencia_nome": "Pensamento Estratégico",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 9,
+        "competencia_nome": "Tomada de Decisão",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 9,
+        "competencia_nome": "Comunicação Executiva",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 9,
+        "competencia_nome": "Negociação",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 9,
+        "competencia_nome": "Influência",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      }
+    ],
+    "ferramentas_relacionadas": [
+      {
+        "persona_id": 9,
+        "ferramenta_nome": "Microsoft Office 365",
+        "proficiencia": "avançado",
+        "categoria_uso": "produtividade_geral"
+      },
+      {
+        "persona_id": 9,
+        "ferramenta_nome": "Google Workspace",
+        "proficiencia": "avançado",
+        "categoria_uso": "produtividade_geral"
+      },
+      {
+        "persona_id": 9,
+        "ferramenta_nome": "Slack",
+        "proficiencia": "avançado",
+        "categoria_uso": "comunicacao"
+      },
+      {
+        "persona_id": 9,
+        "ferramenta_nome": "Zoom",
+        "proficiencia": "avançado",
+        "categoria_uso": "comunicacao"
+      },
+      {
+        "persona_id": 9,
+        "ferramenta_nome": "Power BI",
+        "proficiencia": "expert",
+        "categoria_uso": "analytics"
+      },
+      {
+        "persona_id": 9,
+        "ferramenta_nome": "Tableau",
+        "proficiencia": "expert",
+        "categoria_uso": "analytics"
+      }
+    ]
+  },
+  "contextos_relevantes": [
+    {
+      "id": "persona_7",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Gabriela Rodríguez",
+      "conteudo": "Gabriela Rodríguez trabalha como executivos. com 18 anos de experiência. competências técnicas: Gestão Estratégica, Liderança de Equipes, Planejamento Empresarial, Análise de Mercado, Gestão de Mudanças, Business Intelligence. competências comportamentais: Liderança Visionária, Pensamento Estratégico, Tomada de Decisão, Comunicação Executiva, Negociação, Influência. utiliza ferramentas: Microsoft Office 365, Google Workspace, Slack, Zoom, Power BI, Tableau. educação: Pós-graduação em Gestão Estratégica pela PUC. idiomas: espanhol, francês, inglês, português",
+      "metadata": {
+        "categoria": "executivos",
+        "especialidade": null,
+        "experiencia": 18
+      },
+      "tags": [
+        "executivos",
+        "Gestão Estratégica",
+        "Liderança de Equipes",
+        "Planejamento Empresarial",
+        "Liderança Visionária",
+        "Pensamento Estratégico"
+      ]
+    },
+    {
+      "id": "persona_8",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Gabriela Silva",
+      "conteudo": "Gabriela Silva trabalha como executivos. com 13 anos de experiência. competências técnicas: Gestão Estratégica, Liderança de Equipes, Planejamento Empresarial, Análise de Mercado, Gestão de Mudanças, Business Intelligence. competências comportamentais: Liderança Visionária, Pensamento Estratégico, Tomada de Decisão, Comunicação Executiva, Negociação, Influência. utiliza ferramentas: Microsoft Office 365, Google Workspace, Slack, Zoom, Power BI, Tableau. educação: MBA Executivo em Liderança pela INSEAD. idiomas: francês, português, espanhol, inglês",
+      "metadata": {
+        "categoria": "executivos",
+        "especialidade": null,
+        "experiencia": 13
+      },
+      "tags": [
+        "executivos",
+        "Gestão Estratégica",
+        "Liderança de Equipes",
+        "Planejamento Empresarial",
+        "Liderança Visionária",
+        "Pensamento Estratégico"
+      ]
+    },
+    {
+      "id": "persona_9",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Roberto Hernández",
+      "conteudo": "Roberto Hernández trabalha como executivos. com 17 anos de experiência. competências técnicas: Gestão Estratégica, Liderança de Equipes, Planejamento Empresarial, Análise de Mercado, Gestão de Mudanças, Business Intelligence. competências comportamentais: Liderança Visionária, Pensamento Estratégico, Tomada de Decisão, Comunicação Executiva, Negociação, Influência. utiliza ferramentas: Microsoft Office 365, Google Workspace, Slack, Zoom, Power BI, Tableau. educação: MBA Executivo em Liderança pela INSEAD. idiomas: inglês, espanhol, português",
+      "metadata": {
+        "categoria": "executivos",
+        "especialidade": null,
+        "experiencia": 17
+      },
+      "tags": [
+        "executivos",
+        "Gestão Estratégica",
+        "Liderança de Equipes",
+        "Planejamento Empresarial",
+        "Liderança Visionária",
+        "Pensamento Estratégico"
+      ]
+    },
+    {
+      "id": "competencia_23",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Pensamento Estratégico",
+      "conteudo": "Competência em Pensamento Estratégico aplicada no contexto de especialistas. Personas com esta competência: Carlos González, Gabriela Rodríguez, Gabriela Silva, Roberto Hernández. Ferramentas relacionadas: .",
+      "metadata": {
+        "categoria": "comportamental",
+        "nivel_medio": "expert",
+        "total_personas": 4
+      },
+      "tags": [
+        "Pensamento Estratégico",
+        "comportamental"
+      ]
+    },
+    {
+      "id": "competencia_59",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Gestão Estratégica",
+      "conteudo": "Competência em Gestão Estratégica aplicada no contexto de null. Personas com esta competência: Gabriela Rodríguez, Gabriela Silva, Roberto Hernández. Ferramentas relacionadas: Microsoft Office 365, Google Workspace, Slack, Zoom, Power BI, Tableau.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "expert",
+        "total_personas": 3
+      },
+      "tags": [
+        "Gestão Estratégica",
+        "tecnica",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Power BI",
+        "Tableau"
+      ]
+    },
+    {
+      "id": "competencia_60",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Liderança de Equipes",
+      "conteudo": "Competência em Liderança de Equipes aplicada no contexto de null. Personas com esta competência: Gabriela Rodríguez, Gabriela Silva, Roberto Hernández. Ferramentas relacionadas: Microsoft Office 365, Google Workspace, Slack, Zoom, Power BI, Tableau.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "expert",
+        "total_personas": 3
+      },
+      "tags": [
+        "Liderança de Equipes",
+        "tecnica",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Power BI",
+        "Tableau"
+      ]
+    },
+    {
+      "id": "competencia_61",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Planejamento Empresarial",
+      "conteudo": "Competência em Planejamento Empresarial aplicada no contexto de null. Personas com esta competência: Gabriela Rodríguez, Gabriela Silva, Roberto Hernández. Ferramentas relacionadas: Microsoft Office 365, Google Workspace, Slack, Zoom, Power BI, Tableau.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "expert",
+        "total_personas": 3
+      },
+      "tags": [
+        "Planejamento Empresarial",
+        "tecnica",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Power BI",
+        "Tableau"
+      ]
+    },
+    {
+      "id": "competencia_65",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Liderança Visionária",
+      "conteudo": "Competência em Liderança Visionária aplicada no contexto de executivos. Personas com esta competência: Gabriela Rodríguez, Gabriela Silva, Roberto Hernández. Ferramentas relacionadas: .",
+      "metadata": {
+        "categoria": "comportamental",
+        "nivel_medio": "expert",
+        "total_personas": 3
+      },
+      "tags": [
+        "Liderança Visionária",
+        "comportamental"
+      ]
+    }
+  ],
+  "query_examples": [
+    {
+      "tipo": "competencia_lookup",
+      "query": "Quais são as competências de Roberto Hernández?",
+      "resposta_esperada": "Lista de competências técnicas e comportamentais"
+    },
+    {
+      "tipo": "ferramenta_usage",
+      "query": "Que ferramentas Roberto Hernández sabe usar?",
+      "resposta_esperada": "Lista de ferramentas com nível de proficiência"
+    },
+    {
+      "tipo": "colaboracao_potential",
+      "query": "Com quem Roberto Hernández pode colaborar em projetos?",
+      "resposta_esperada": "Personas com competências complementares"
+    },
+    {
+      "tipo": "processo_involvement",
+      "query": "Em que processos Roberto Hernández deveria estar envolvido?",
+      "resposta_esperada": "Processos que aproveitam suas competências"
+    }
+  ],
+  "data_processamento": "2025-11-16T14:48:34.896Z"
+}

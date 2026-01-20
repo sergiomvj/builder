@@ -1,0 +1,211 @@
+{
+  "name": "John (SDR Junior) - Enviar Emails de Follow-up",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 10 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 10h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "select",
+        "table": "leads",
+        "filters": {
+          "last_contact": {
+            "lt": "NOW() - INTERVAL '2 days'"
+          },
+          "has_responded": false
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Buscar leads que não responderam após 48 horas do primeiro contato",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_ARVATE49",
+          "name": "Supabase ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(lead => ({ ...lead, email_body: `Prezado ${lead.name}, percebemos que ainda não tivemos um retorno seu. Gostaríamos de saber se há algo em que podemos ajudar ou fornecer mais informações. Aguardamos seu contato. Atenciosamente, [Seu Nome]` }));"
+      },
+      "typeVersion": 1,
+      "notes": "Personalizar corpo do email"
+    },
+    {
+      "id": "4",
+      "name": "Action",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "{{ $json.email }}",
+        "subject": "Ainda estamos aqui para você!",
+        "message": "{{ $json.email_body }}"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email de follow-up personalizado",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Action",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "operation": "update",
+        "table": "leads",
+        "filters": {
+          "id": "{{ $json.id }}"
+        },
+        "data": {
+          "follow_up_sent": true
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Marcar lead como 'follow-up enviado'",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_ARVATE49",
+          "name": "Supabase ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: John (SDR Junior) - Enviar Emails de Follow-up\nEmpresa: ARVA Tech Solutions\nPersona: John Smith\nTarefa: Enviar Emails de Follow-up\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:21.174Z",
+  "updatedAt": "2025-11-28T17:05:21.174Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "680cf6e1-5b0d-4dc7-b2c0-722d22998876",
+    "persona_nome": "John Smith",
+    "task_id": "87df00f2-ea51-4458-983f-e561ead0f617",
+    "task_title": "Enviar Emails de Follow-up",
+    "opportunity_id": "dd601985-5dbe-4329-8620-6575d60407bf",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:21.174Z"
+  }
+}

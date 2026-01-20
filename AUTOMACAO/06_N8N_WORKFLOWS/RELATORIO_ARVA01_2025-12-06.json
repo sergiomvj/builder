@@ -1,0 +1,48 @@
+{
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "empresa_nome": "ARVA Tech Solutions",
+  "generated_at": "2025-12-06T13:59:31.326Z",
+  "opportunities_processed": 3,
+  "workflows_generated": 3,
+  "workflows_saved_to_file": 3,
+  "workflows_saved_to_db": 3,
+  "workflows": [
+    {
+      "workflow_name": "Sophie (Assistente de Marketing) - Gerir CRM e Base de Clientes",
+      "persona_nome": "Sophie Dubois",
+      "task_title": "Gerir CRM e Base de Clientes",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "crm",
+        "supabase",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "Sophie (Assistente de Marketing) - Analisar Dados de Performance",
+      "persona_nome": "Sophie Dubois",
+      "task_title": "Analisar Dados de Performance",
+      "automation_score": 70,
+      "nodes_count": 7,
+      "integrations": [
+        "google-sheets",
+        "supabase",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Sophie (Assistente de Marketing) - Gerir Campanhas de Marketing Digital",
+      "persona_nome": "Sophie Dubois",
+      "task_title": "Gerir Campanhas de Marketing Digital",
+      "automation_score": 60,
+      "nodes_count": 7,
+      "integrations": [
+        "hubspot",
+        "google-analytics",
+        "gmail",
+        "slack"
+      ]
+    }
+  ]
+}

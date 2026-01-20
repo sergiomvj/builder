@@ -1,0 +1,142 @@
+version: '3.8'
+
+services:
+  # VCM Dashboard Frontend (Next.js)
+  vcm-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runner
+    container_name: vcm-dashboard
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+      - NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL}
+      - NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+      - SUPABASE_SERVICE_ROLE_KEY=${SUPABASE_SERVICE_ROLE_KEY}
+      - NEXT_PUBLIC_API_URL=http://vcm-backend:8000
+    networks:
+      - vcm-network
+    depends_on:
+      - vcm-backend
+      - postgres
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # VCM Backend Python (FastAPI + Automação)
+  vcm-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: vcm-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - LOG_LEVEL=info
+      - DATABASE_URL=postgresql://vcm:vcmpassword@postgres:5432/vcm_db
+      # Supabase Configuration
+      - NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL}
+      - NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+      - SUPABASE_SERVICE_ROLE_KEY=${SUPABASE_SERVICE_ROLE_KEY}
+      # AI API Keys
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - GOOGLE_AI_API_KEY=${GOOGLE_AI_API_KEY}
+    networks:
+      - vcm-network
+    volumes:
+      # Mount volumes for persistent data
+      - backend-data:/app/output
+      - automation-logs:/app/logs
+      - ./AUTOMACAO:/app/AUTOMACAO:rw
+    depends_on:
+      - postgres
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  # PostgreSQL Database (para logs e cache local)
+  postgres:
+    image: postgres:15-alpine
+    container_name: vcm-postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=vcm_db
+      - POSTGRES_USER=vcm
+      - POSTGRES_PASSWORD=vcmpassword
+      - POSTGRES_INITDB_ARGS=--auth-host=scram-sha-256
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - vcm-network
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U vcm -d vcm_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis (para cache e filas de processamento)
+  redis:
+    image: redis:7-alpine
+    container_name: vcm-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - vcm-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # Nginx Reverse Proxy (Opcional)
+  nginx:
+    image: nginx:alpine
+    container_name: vcm-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    networks:
+      - vcm-network
+    depends_on:
+      - vcm-dashboard
+      - vcm-backend
+    profiles:
+      - nginx
+
+networks:
+  vcm-network:
+    driver: bridge
+    name: vcm-network
+
+volumes:
+  postgres-data:
+    name: vcm-postgres-data
+  redis-data:
+    name: vcm-redis-data
+  backend-data:
+    name: vcm-backend-data
+  automation-logs:
+    name: vcm-automation-logs

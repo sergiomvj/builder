@@ -1,0 +1,112 @@
+{
+  "persona": {
+    "nome": "[Placeholder 21] Gerente de Customer Success",
+    "nacionalidade": "europeus",
+    "genero": "masculino",
+    "cargo": "Gerente de Customer Success",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Em definição",
+    "competencias": "Em definição",
+    "biografia": "Profissional experiente",
+    "personalidade": {},
+    "experiencia_anos": 3,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+    "prompt_usado": "Retrato profissional realista de um homem europeu caucasiano, gerente de Customer Success em tecnologia, idade aparente 32-35 anos, masculino, etnia caucasiano europeu ocidental, tipo físico magro atlético, altura estimada 180-185cm, cabelo cor castanho médio, cabelo comprimento curto, cabelo estilo liso penteado lateral, cabelo volume denso, olhos cor verdes claros, olhos formato amendoados expressivos, rosto formato oval angular, pele tom clara pálida, pele textura lisa com sardas leves, sobrancelhas grossas arqueadas cheias, nariz reto romano médio, boca lábios médios retos, expressão facial padrão confiante com sorriso leve, marcas únicas sardas no nariz e bochechas, acessórios permanentes óculos de armação fina preta retangular relógio prateado minimalista, postura ereta confiante, características distintivas barba por fazer leve jawline definida, estilo vestimenta padrão business casual techwear, paleta cores vestuário cinza neutro azul frio branco, fundo office moderno clean, iluminação soft studio light, renderização foto 4K retrato editorial",
+    "estilo": "business",
+    "background_tipo": "office",
+    "servico_usado": "gemini_ai",
+    "versao": 1,
+    "ativo": true,
+    "biometrics": {
+      "idade_aparente": "32-35",
+      "genero": "masculino",
+      "etnia": "caucasiano",
+      "tipo_fisico": "magro atlético",
+      "altura_estimada": "180-185cm",
+      "cabelo_cor": "castanho médio",
+      "cabelo_comprimento": "curto",
+      "cabelo_estilo": "liso penteado lateral",
+      "cabelo_volume": "denso",
+      "olhos_cor": "verdes claros",
+      "olhos_formato": "amendoados expressivos",
+      "rosto_formato": "oval angular",
+      "pele_tom": "clara pálida",
+      "pele_textura": "lisa com sardas leves",
+      "sobrancelhas": "grossas arqueadas cheias",
+      "nariz": "reto romano médio",
+      "boca_labios": "médios retos",
+      "expressao_facial_padrao": "confiante com sorriso leve",
+      "marcas_unicas": "sardas no nariz e bochechas",
+      "acessorios_permanentes": "óculos de armação fina preta retangular, relógio prateado minimalista",
+      "postura": "ereta confiante",
+      "caracteristicas_distintivas": "barba por fazer leve jawline definida",
+      "estilo_vestimenta_padrao": "business casual techwear",
+      "paleta_cores_vestuario": "cinza neutro azul frio branco"
+    },
+    "physical_description_detailed": {
+      "rosto": {
+        "formato": "oval angular com jawline definida",
+        "tom_pele": "clara pálida com subtom rosado",
+        "textura_pele": "lisa com sardas leves espalhadas no nariz e bochechas",
+        "olhos": {
+          "cor": "verdes claros com nuances hazel",
+          "formato": "amendoados expressivos com rugas de sorriso nos cantos"
+        },
+        "sobrancelhas": "grossas arqueadas cheias naturalmente alinhadas",
+        "nariz": "reto romano médio bem proporcionado",
+        "boca": "lábios médios retos com contorno definido",
+        "expressao_tipica": "confiante com sorriso leve e olhar direto"
+      },
+      "cabelo": {
+        "cor_exata": "castanho médio com reflexos dourados",
+        "comprimento": "curto 5-7cm topo mais longo",
+        "estilo": "liso penteado lateral com parte definida",
+        "volume": "denso com textura natural saudável"
+      },
+      "corpo": {
+        "altura_aproximada": "182cm",
+        "tipo_fisico": "magro atlético ombros largos cintura estreita",
+        "proporcao": "proporções equilibradas braços tonificados",
+        "postura_tipica": "ereta confiante ombros para trás queixo erguido"
+      }
+    },
+    "consistency_parameters": {
+      "rendering_style": "foto 4K retrato editorial",
+      "lens_focus": "85mm close-up half-body shot",
+      "lighting": "soft studio light",
+      "aspect_ratio": "1:1 (avatar)"
+    },
+    "history": {
+      "background_educacional": "Bacharel em Administração de Empresas com foco em TI pela universidade europeia, mestrado online em Customer Experience",
+      "experiencia_internacional": "Europeu relocado para EUA há 2 anos trabalhando em tech startups americanas",
+      "contexto_cultural": "Influências europeias ocidentais com adaptação ao estilo tech casual americano",
+      "estilo_vida": "Ativo fitness minimalista com rotina de trabalho remoto e viagens de cliente",
+      "marcos_carreira": "Promoção rápida a gerente após 3 anos de experiência em operações de sucesso ao cliente",
+      "valores_pessoais": "Profissionalismo acessível confiabilidade refletidos em aparência polida e approachable",
+      "ambiente_trabalho": "Escritório tech moderno incentiva business casual com toques executivos",
+      "redes_sociais": "Perfil LinkedIn ativo com fotos profissionais em eventos tech imagem confiante e relatable"
+    },
+    "metadados": {
+      "resolucao": "1024x1024",
+      "formato": "webp",
+      "qualidade": "ultra_high",
+      "parametros_geracao": {
+        "prompt_negativo": "blurry, low quality, distorted, cartoonish",
+        "steps": 30,
+        "cfg_scale": 8.5
+      },
+      "contexto_profissional": {
+        "cargo": "Gerente de Customer Success",
+        "industria": "tecnologia",
+        "senioridade": "mid-level"
+      }
+    }
+  },
+  "generated_at": "2025-12-03T13:40:40.722Z"
+}

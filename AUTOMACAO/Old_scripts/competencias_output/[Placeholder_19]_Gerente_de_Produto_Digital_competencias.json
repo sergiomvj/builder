@@ -1,0 +1,53 @@
+{
+  "persona_id": "28fab855-6034-497b-8758-1c2fc36f3150",
+  "full_name": "[Placeholder 19] Gerente de Produto Digital",
+  "role": "Gerente de Produto Digital",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Desenvolvimento de roadmap de produto",
+    "Metodologias ágeis (Scrum e Kanban)",
+    "Análise de dados e métricas de produto",
+    "Princípios de UX/UI e design thinking",
+    "Gestão de APIs e integrações técnicas"
+  ],
+  "competencias_comportamentais": [
+    "Liderança e influência",
+    "Comunicação eficaz",
+    "Pensamento estratégico",
+    "Resolução de problemas",
+    "Adaptabilidade e inovação"
+  ],
+  "ferramentas": [
+    "Jira",
+    "Figma",
+    "Google Analytics",
+    "Mixpanel"
+  ],
+  "tarefas_diarias": [
+    "Monitoramento de métricas de produto",
+    "Reuniões stand-up com a equipe",
+    "Priorização de backlog",
+    "Comunicação com stakeholders"
+  ],
+  "tarefas_semanais": [
+    "Revisão de sprint e retrospectives",
+    "Análise de feedback de usuários",
+    "Planejamento de features"
+  ],
+  "tarefas_mensais": [
+    "Relatórios de performance do produto",
+    "Atualização do roadmap",
+    "Revisão de orçamento e recursos"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Retenção de Usuários - 75%",
+    "KPI 2: Net Promoter Score (NPS) - 50+",
+    "KPI 3: Tempo para MVP - <45 dias"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação Product Management (ex: CSPO)",
+    "Aprofundar conhecimento em IA para produtos digitais",
+    "Melhorar habilidades de análise de dados avançada"
+  ],
+  "generated_at": "2025-12-02T18:07:31.942Z"
+}

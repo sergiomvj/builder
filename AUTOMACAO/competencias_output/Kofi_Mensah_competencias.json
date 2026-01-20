@@ -1,0 +1,53 @@
+{
+  "persona_id": "654d1988-2f0d-4fce-a771-e88d35c0f418",
+  "full_name": "Kofi Mensah",
+  "role": "Analista de QA",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "Automação de testes para agentes IA com Selenium e Pytest",
+    "Testes de API e integrações modulares com Postman",
+    "Análise de logs e debugging de comportamentos autônomos",
+    "Testes de performance e escalabilidade em ecossistemas distribuídos",
+    "Validação de aprendizado e autoaprendizado em agentes virtuais"
+  ],
+  "competencias_comportamentais": [
+    "Atenção aos detalhes e precisão em análises",
+    "Pensamento analítico e resolução de problemas complexos",
+    "Comunicação clara de relatórios técnicos",
+    "Trabalho em equipe colaborativa",
+    "Adaptabilidade a tecnologias emergentes de IA"
+  ],
+  "ferramentas": [
+    "Selenium e Pytest",
+    "Postman e JMeter",
+    "Jira e TestRail",
+    "Jenkins e Git"
+  ],
+  "tarefas_diarias": [
+    "Executar suítes de testes automatizados em agentes virtuais",
+    "Analisar logs de execução e falhas em tarefas coordenadas",
+    "Registrar e priorizar defeitos no sistema de tracking",
+    "Validar correções de bugs e regressões"
+  ],
+  "tarefas_semanais": [
+    "Revisar cobertura de testes e métricas de qualidade",
+    "Participar de reuniões de sprint e planejamento de QA",
+    "Atualizar casos de teste para novas funcionalidades modulares"
+  ],
+  "tarefas_mensais": [
+    "Gerar relatório mensal de qualidade e cobertura",
+    "Realizar auditoria de processos de teste em agentes",
+    "Propor melhorias no framework de automação de QA"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Cobertura de Testes - 90%",
+    "KPI 2: Taxa de Detecção Precoce de Bugs - 85%",
+    "KPI 3: Tempo Médio de Ciclo de Testes - 24 horas"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação ISTQB em testes de IA",
+    "Automatizar 30% adicionais de testes para agentes autônomos",
+    "Liderar workshop interno sobre QA em ecossistemas cognitivos"
+  ],
+  "generated_at": "2025-12-08T22:26:03.556Z"
+}

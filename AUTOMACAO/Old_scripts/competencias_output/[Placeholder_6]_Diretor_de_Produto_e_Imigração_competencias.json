@@ -1,0 +1,53 @@
+{
+  "persona_id": "151fdb38-7092-45b8-a0f5-ad8c4faf1c67",
+  "full_name": "[Placeholder 6] Diretor de Produto e Imigração",
+  "role": "Diretor de Produto e Imigração",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Gestão de Produto Ágil/Scrum",
+    "Conhecimento em Leis de Imigração dos EUA",
+    "Análise de Dados e Métricas de Produto",
+    "Design de UX/UI para Plataformas Digitais",
+    "Estratégias de Marketing Digital para Serviços de Imigração"
+  ],
+  "competencias_comportamentais": [
+    "Liderança Estratégica",
+    "Pensamento Inovador",
+    "Comunicação Eficaz",
+    "Negociação Avançada",
+    "Adaptabilidade a Mudanças Regulatórias"
+  ],
+  "ferramentas": [
+    "Jira/Trello",
+    "Google Analytics",
+    "Salesforce CRM",
+    "USCIS Portal e Ferramentas de Imigração"
+  ],
+  "tarefas_diarias": [
+    "Revisão de métricas de produto",
+    "Reuniões com equipe de desenvolvimento",
+    "Análise de feedback de clientes",
+    "Monitoramento de atualizações em políticas de imigração"
+  ],
+  "tarefas_semanais": [
+    "Planejamento de sprints",
+    "Reuniões com stakeholders",
+    "Análise de concorrentes"
+  ],
+  "tarefas_mensais": [
+    "Revisão do roadmap de produto",
+    "Relatórios de performance",
+    "Sessões de treinamento da equipe"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Adoção de Produto - 85%",
+    "KPI 2: Taxa de Sucesso em Imigração - 95%",
+    "KPI 3: NPS (Net Promoter Score) - 70"
+  ],
+  "objetivos_desenvolvimento": [
+    "Lançar nova funcionalidade de tracking de vistos",
+    "Otimizar processos de aprovação em 20%",
+    "Expandir parcerias com consultores de imigração"
+  ],
+  "generated_at": "2025-12-02T18:07:01.351Z"
+}

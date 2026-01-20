@@ -1,0 +1,57 @@
+{
+  "persona_id": "32288dd9-0d40-4974-bcf9-476078943a0c",
+  "full_name": "[Placeholder 10] Técnico de Infraestrutura IA Junior",
+  "role": "Técnico de Infraestrutura IA Junior",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Configuração e manutenção de servidores GPU para workloads de IA e machine learning",
+    "Gerenciamento de containers Docker e orquestração básica com Kubernetes para aplicações de IA",
+    "Monitoramento e troubleshooting de infraestrutura de IA usando ferramentas de observabilidade",
+    "Gerenciamento de armazenamento de dados em escala para datasets de treinamento de modelos",
+    "Implantação e configuração de ambientes cloud (AWS, Azure) otimizados para IA"
+  ],
+  "competencias_comportamentais": [
+    "Aprendizado contínuo e adaptação rápida a novas tecnologias de IA",
+    "Trabalho em equipe colaborativa em ambientes multidisciplinares",
+    "Atenção aos detalhes para garantir estabilidade e performance da infraestrutura",
+    "Resolução proativa de problemas sob pressão",
+    "Comunicação clara de status técnico para stakeholders não técnicos"
+  ],
+  "ferramentas": [
+    "Docker e Kubernetes",
+    "AWS (EC2, SageMaker, EKS)",
+    "Prometheus e Grafana",
+    "Terraform para IaC",
+    "NVIDIA CUDA e ferramentas de gerenciamento GPU"
+  ],
+  "tarefas_diarias": [
+    "Monitorar uptime e performance de servidores IA, garantindo 99% de disponibilidade",
+    "Verificar uso de GPUs e alocar recursos para jobs de treinamento em andamento",
+    "Executar verificações de logs e alertas em sistemas de monitoramento",
+    "Realizar backups diários de configurações críticas de infraestrutura",
+    "Resolver tickets de suporte nível 1 para falhas em ambientes de IA (média de 5 tickets/dia)"
+  ],
+  "tarefas_semanais": [
+    "Atualizar e testar imagens Docker de aplicações de IA",
+    "Realizar manutenção preventiva em clusters Kubernetes",
+    "Gerar relatórios semanais de uso de recursos de infraestrutura",
+    "Participar de reuniões de Operations para alinhamento de prioridades"
+  ],
+  "tarefas_mensais": [
+    "Auditar e otimizar custos de infraestrutura cloud para IA",
+    "Executar testes de carga em ambientes de staging para novos modelos",
+    "Atualizar documentação de procedimentos de infraestrutura IA"
+  ],
+  "kpis": [
+    "Downtime de infraestrutura IA: < 2 horas por mês",
+    "Taxa de utilização de GPUs: > 75% em workloads de produção",
+    "Tempo médio de resolução de incidentes: < 30 minutos",
+    "Disponibilidade de serviços IA: 99.5% mensalmente"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação AWS Certified Cloud Practitioner em 6 meses",
+    "Dominar Kubernetes avançado com curso prático em 3 meses",
+    "Contribuir para um repositório open-source de ferramentas de IA infra em 4 meses"
+  ],
+  "generated_at": "2025-12-01T16:14:22.129Z"
+}

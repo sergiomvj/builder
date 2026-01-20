@@ -1,0 +1,112 @@
+{
+  "persona": {
+    "nome": "[Placeholder 1] Especialista em Vistos dos EUA",
+    "nacionalidade": "nordicos",
+    "genero": "masculino",
+    "cargo": "Especialista em Vistos dos EUA",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Em definição",
+    "competencias": "Em definição",
+    "biografia": "Profissional experiente",
+    "personalidade": {},
+    "experiencia_anos": 5,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
+    "prompt_usado": "Retrato profissional realista de homem nórdico caucasiano masculino, idade aparente 30-35 anos, tipo físico magro atlético, altura estimada 1.80m-1.85m, cabelo cor loiro areia, comprimento curto, estilo liso penteado para o lado, volume denso, olhos cor azuis claros, formato amendoados expressivos, rosto formato oval, pele tom pálida, textura lisa com sardas leves, sobrancelhas grossas arqueadas, nariz reto fino, boca lábios médios retos, expressão facial padrão confiante, marcas únicas sardas leves no nariz, acessórios permanentes óculos armação fina preta e relógio minimalista prata, postura ereta confiante, características distintivas barba rala bem aparada, estilo vestimenta padrão business casual, paleta cores vestuário azul frio cinza neutro, fundo office neutro, iluminação soft studio light, estilo rendering foto 4K retrato editorial, lente 85mm close-up half-body shot, aspect ratio 1:1",
+    "estilo": "business",
+    "background_tipo": "office",
+    "servico_usado": "gemini_ai",
+    "versao": 1,
+    "ativo": true,
+    "biometrics": {
+      "idade_aparente": "30-35 anos",
+      "genero": "masculino",
+      "etnia": "caucasiano",
+      "tipo_fisico": "magro atlético",
+      "altura_estimada": "1.80m-1.85m",
+      "cabelo_cor": "loiro areia",
+      "cabelo_comprimento": "curto",
+      "cabelo_estilo": "liso penteado para o lado",
+      "cabelo_volume": "denso",
+      "olhos_cor": "azuis claros",
+      "olhos_formato": "amendoados expressivos",
+      "rosto_formato": "oval",
+      "pele_tom": "pálida",
+      "pele_textura": "lisa com sardas leves",
+      "sobrancelhas": "grossas arqueadas",
+      "nariz": "reto fino",
+      "boca_labios": "médios retos",
+      "expressao_facial_padrao": "confiante",
+      "marcas_unicas": "sardas leves no nariz",
+      "acessorios_permanentes": "óculos armação fina preta, relógio minimalista prata",
+      "postura": "ereta confiante",
+      "caracteristicas_distintivas": "barba rala bem aparada",
+      "estilo_vestimenta_padrao": "business casual",
+      "paleta_cores_vestuario": "azul frio cinza neutro"
+    },
+    "physical_description_detailed": {
+      "rosto": {
+        "formato": "oval com queixo levemente definido e maçãs de rosto altas típicas nórdicas",
+        "tom_pele": "pálida com subtom rosado frio",
+        "textura_pele": "lisa com sardas leves espalhadas no nariz e bochechas",
+        "olhos": {
+          "cor": "azuis claros com íris penetrantes",
+          "formato": "amendoados expressivos com pálpebras ligeiramente caídas"
+        },
+        "sobrancelhas": "grossas arqueadas com fios claros e densos",
+        "nariz": "reto fino com ponte alta e narinas delicadas",
+        "boca": "lábios médios retos com contorno definido e leve sorriso confiante",
+        "expressao_tipica": "confiante com olhar direto e leve sorriso nos cantos da boca"
+      },
+      "cabelo": {
+        "cor_exata": "loiro areia com reflexos dourados naturais",
+        "comprimento": "curto com laterais aparadas e topo 5-7cm",
+        "estilo": "liso penteado para o lado direito com acabamento matte",
+        "volume": "denso com fios grossos e saudáveis"
+      },
+      "corpo": {
+        "altura_aproximada": "1.82m",
+        "tipo_fisico": "magro atlético com ombros largos moderados e cintura estreita",
+        "proporcao": "proporções equilibradas com braços e pernas longas",
+        "postura_tipica": "ereta confiante com ombros para trás e cabeça erguida"
+      }
+    },
+    "consistency_parameters": {
+      "rendering_style": "foto 4K retrato editorial",
+      "lens_focus": "85mm close-up half-body shot",
+      "lighting": "soft studio light",
+      "aspect_ratio": "1:1 (avatar)"
+    },
+    "history": {
+      "background_educacional": "Bacharel em Relações Internacionais pela Universidade de Estocolmo com certificações em imigração dos EUA",
+      "experiencia_internacional": "Vivência de 2 anos em San Francisco trabalhando com vistos tech H1B",
+      "contexto_cultural": "Influências nórdicas escandinavas com minimalismo clean na aparência",
+      "estilo_vida": "Ativo com corrida e ciclismo, refletindo físico magro atlético e pele clara",
+      "marcos_carreira": "5 anos na LifewayUSA ajudando profissionais tech com vistos, moldando imagem acessível e confiável",
+      "valores_pessoais": "Precisão e confiança refletidos em grooming impecável e acessórios minimalistas",
+      "ambiente_trabalho": "Escritório tech em Operations influencia business casual com tons azul cinza",
+      "redes_sociais": "Perfil LinkedIn profissional com fotos em eventos de imigração tech"
+    },
+    "metadados": {
+      "resolucao": "1024x1024",
+      "formato": "webp",
+      "qualidade": "ultra_high",
+      "parametros_geracao": {
+        "prompt_negativo": "blurry, low quality, distorted, cartoonish",
+        "steps": 30,
+        "cfg_scale": 8.5
+      },
+      "contexto_profissional": {
+        "cargo": "Especialista em Vistos dos EUA",
+        "industria": "tecnologia",
+        "senioridade": "mid-level"
+      }
+    }
+  },
+  "generated_at": "2025-12-03T12:46:22.180Z"
+}

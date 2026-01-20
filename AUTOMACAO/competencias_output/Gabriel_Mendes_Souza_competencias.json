@@ -1,0 +1,53 @@
+{
+  "persona_id": "1b3297d6-3f11-494f-9f31-f6d98ad4079d",
+  "full_name": "Gabriel Mendes Souza",
+  "role": "Desenvolvedor Full Stack",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Desenvolvimento de sistemas web",
+    "Programação em JavaScript",
+    "Banco de dados MySQL",
+    "HTML5/CSS3",
+    "Frameworks de front-end e back-end"
+  ],
+  "competencias_comportamentais": [
+    "Trabalho em equipe",
+    "Comunicação eficaz",
+    "Resolução de problemas",
+    "Adaptabilidade",
+    "Criatividade"
+  ],
+  "ferramentas": [
+    "Visual Studio Code",
+    "Git/GitHub",
+    "Postman",
+    "MySQL Workbench"
+  ],
+  "tarefas_diarias": [
+    "Desenvolvimento de novas funcionalidades",
+    "Manutenção e correção de bugs",
+    "Reuniões de alinhamento com a equipe",
+    "Análise de requisitos"
+  ],
+  "tarefas_semanais": [
+    "Deploy de novas versões",
+    "Revisão de código",
+    "Atualização de documentação"
+  ],
+  "tarefas_mensais": [
+    "Planejamento de melhorias na plataforma",
+    "Análise de performance e otimização de código",
+    "Treinamento e capacitação"
+  ],
+  "kpis": [
+    "Entrega de novas funcionalidades - 100% concluídas",
+    "Tempo médio de resolução de bugs - Menor que 24h",
+    "Satisfação dos usuários - Índice acima de 90%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar conhecimentos em React.js",
+    "Participar de workshops sobre UX/UI design",
+    "Desenvolver habilidades de liderança"
+  ],
+  "generated_at": "2025-12-08T14:42:07.461Z"
+}

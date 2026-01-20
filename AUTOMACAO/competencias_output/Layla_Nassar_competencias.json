@@ -1,0 +1,53 @@
+{
+  "persona_id": "80dc9ba7-5800-4417-abee-bfc2f1a0e85a",
+  "full_name": "Layla Nassar",
+  "role": "Gerente de Marketing",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "Marketing Digital e Inbound",
+    "SEO/SEM e Otimização de Buscas",
+    "Análise de Dados e Google Analytics",
+    "Gestão de Conteúdo e Automação",
+    "Estratégias de Growth Hacking para Tech"
+  ],
+  "competencias_comportamentais": [
+    "Liderança de Equipes Ágeis",
+    "Comunicação Estratégica",
+    "Pensamento Inovador e Criativo",
+    "Adaptabilidade a Tecnologias Emergentes",
+    "Negociação e Relacionamento com Stakeholders"
+  ],
+  "ferramentas": [
+    "Google Analytics 4",
+    "HubSpot CRM",
+    "SEMrush",
+    "Hootsuite"
+  ],
+  "tarefas_diarias": [
+    "Monitorar campanhas de marketing digital",
+    "Analisar métricas de engajamento e tráfego",
+    "Coordenar produção de conteúdo sobre IA",
+    "Interagir com leads e prospects via CRM"
+  ],
+  "tarefas_semanais": [
+    "Reuniões de alinhamento com equipe de marketing",
+    "Planejamento e aprovação de conteúdo semanal",
+    "Relatório de performance de campanhas"
+  ],
+  "tarefas_mensais": [
+    "Avaliação estratégica de ROI de campanhas",
+    "Planejamento de funil de vendas B2B",
+    "Participação em webinars e eventos tech"
+  ],
+  "kpis": [
+    "KPI 1: Leads Qualificados - 250/mês",
+    "KPI 2: Taxa de Conversão de Leads - 4%",
+    "KPI 3: ROI de Campanhas de Marketing - 350%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprofundar conhecimento em marketing com IA e agentes autônomos",
+    "Expandir rede de contatos no ecossistema tech dos EUA",
+    "Implementar testes A/B avançados para otimização de conversões"
+  ],
+  "generated_at": "2025-12-08T22:25:28.094Z"
+}

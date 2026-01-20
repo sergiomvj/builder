@@ -1,0 +1,57 @@
+{
+  "persona_id": "af3321fb-0da6-4ba8-9553-a399253a6538",
+  "full_name": "[Placeholder 20] Engenheiro DevOps IA Pleno",
+  "role": "Engenheiro DevOps IA Pleno",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Implementação e otimização de pipelines CI/CD para modelos de IA/ML",
+    "Gerenciamento de infraestrutura como código (IaC) com ferramentas como Terraform e Ansible",
+    "Orquestração de containers e Kubernetes para workloads de IA em escala",
+    "Monitoramento, logging e observabilidade de aplicações de IA em produção (MLOps)",
+    "Integração e deployment de ferramentas MLOps como MLflow, Kubeflow e Seldon"
+  ],
+  "competencias_comportamentais": [
+    "Resolução de problemas complexos e análise root cause",
+    "Colaboração em equipes multidisciplinares (dev, data science e ops)",
+    "Aprendizado contínuo e adaptação a novas tecnologias de IA",
+    "Comunicação clara técnica e não técnica",
+    "Gestão de tempo e priorização em ambientes ágeis"
+  ],
+  "ferramentas": [
+    "Docker e Kubernetes",
+    "Terraform e Ansible",
+    "Jenkins ou GitHub Actions",
+    "Prometheus e Grafana",
+    "MLflow e Kubeflow"
+  ],
+  "tarefas_diarias": [
+    "Monitorar métricas de produção de modelos IA e resolver alertas (95% em <30min)",
+    "Revisar e mergear pull requests de infraestrutura (mínimo 5/dia)",
+    "Executar health checks em clusters Kubernetes (100% uptime diário)",
+    "Analisar logs com ELK Stack e documentar insights",
+    "Automatizar scripts de deployment rotineiros (reduzir tempo manual em 20%)"
+  ],
+  "tarefas_semanais": [
+    "Participar de daily stand-ups e sprint reviews",
+    "Realizar code reviews completos para equipe DevOps IA",
+    "Atualizar dashboards de monitoramento e relatar anomalias",
+    "Testar e validar novos pipelines em ambiente staging"
+  ],
+  "tarefas_mensais": [
+    "Auditar segurança e conformidade de infra IA (vulnerabilidades zero)",
+    "Gerar relatório de performance MLOps e propor melhorias",
+    "Treinar equipe em novas práticas ou ferramentas de DevOps IA"
+  ],
+  "kpis": [
+    "Tempo médio de deployment de modelos IA: < 15 minutos",
+    "Uptime de infraestrutura Kubernetes: 99.9%",
+    "Taxa de resolução de incidentes em SLA: 98%",
+    "Cobertura de automação em pipelines: 95%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação CKAD ou CKA em Kubernetes",
+    "Liderar projeto de migração para Kubeflow em produção",
+    "Mentorar 2 engenheiros juniores em MLOps avançado"
+  ],
+  "generated_at": "2025-12-01T16:16:08.131Z"
+}

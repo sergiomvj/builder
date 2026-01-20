@@ -1,0 +1,194 @@
+{
+  "name": "Thomas (HR Manager) - Acompanhamento de projetos chave",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 10 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 10h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "spreadsheetId": "your_spreadsheet_id",
+        "range": "Projects!A:D"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar status dos projetos chave no Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.filter(project => project.json.status === 'at_risk' || project.json.status === 'behind_schedule');"
+      },
+      "typeVersion": 1,
+      "notes": "Filtrar projetos com status 'at_risk' ou 'behind_schedule'"
+    },
+    {
+      "id": "4",
+      "name": "Send Message",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "project_updates",
+        "text": "Projeto {{ $json.name }} está com status {{ $json.status }}. Necessita intervenção."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar no Slack sobre projetos que necessitam intervenção",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "to": "lideranca@arvatech.com",
+        "body": "O projeto {{ $json.name }} está com status {{ $json.status }}. Avaliar medidas.",
+        "subject": "Intervenção Necessária em Projeto"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email para liderança sobre projetos que necessitam intervenção"
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Thomas (HR Manager) - Acompanhamento de projetos chave\nEmpresa: ARVA Tech Solutions\nPersona: Thomas Anderson\nTarefa: Acompanhamento de projetos chave\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:27.622Z",
+  "updatedAt": "2025-11-28T17:05:27.622Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "afa9c2ea-870b-4894-8d9f-bb83f8412d1a",
+    "persona_nome": "Thomas Anderson",
+    "task_id": "83e6a329-5334-43ed-bad8-8ff480cd2d61",
+    "task_title": "Acompanhamento de projetos chave",
+    "opportunity_id": "ef4067f7-5ca5-42b6-ae0d-accbff6875f7",
+    "automation_score": 65,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:27.622Z"
+  }
+}

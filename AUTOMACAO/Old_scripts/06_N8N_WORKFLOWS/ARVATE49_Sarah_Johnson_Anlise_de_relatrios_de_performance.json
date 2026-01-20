@@ -1,0 +1,194 @@
+{
+  "name": "Sarah (CEO) - Análise de relatórios de performance",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 10 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 10h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "spreadsheetId": "your_spreadsheet_id",
+        "range": "A:Z"
+      },
+      "typeVersion": 1,
+      "notes": "Ler dados do relatório de performance da planilha",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(item => ({ ...item.json, analysis: `Análise de performance: ${item.json.metric}` }));"
+      },
+      "typeVersion": 1,
+      "notes": "Analisar dados e preparar insights"
+    },
+    {
+      "id": "4",
+      "name": "Send Notification",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#performance_reports",
+        "text": "Relatório de performance diário disponível. {{ $json.analysis }}"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar insights para o canal Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "to": "team@arvatech.com",
+        "message": "Confira os insights de hoje: {{ $json.analysis }}",
+        "subject": "Relatório de Performance Diário"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email com insights para a equipe"
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Sarah (CEO) - Análise de relatórios de performance\nEmpresa: ARVA Tech Solutions\nPersona: Sarah Johnson\nTarefa: Análise de relatórios de performance\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:35.276Z",
+  "updatedAt": "2025-11-28T17:05:35.276Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "07acdccc-ac86-41cd-9c19-2c95bfc82be9",
+    "persona_nome": "Sarah Johnson",
+    "task_id": "8eb21dcf-55f8-47e3-9d57-0f1fd7ce6045",
+    "task_title": "Análise de relatórios de performance",
+    "opportunity_id": "061cb6b8-f9ff-4833-808a-cc2ca5c2c643",
+    "automation_score": 60,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:35.276Z"
+  }
+}

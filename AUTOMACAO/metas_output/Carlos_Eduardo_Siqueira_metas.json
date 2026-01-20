@@ -1,0 +1,36 @@
+{
+  "persona_id": "0311235b-6ea0-42e0-b196-bd07e1d573e9",
+  "full_name": "Carlos Eduardo Siqueira",
+  "role": "Executivo de Vendas",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades de negociação",
+      "descricao": "Participar de um curso de negociação avançada com duração de 40 horas",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 40,
+      "unidade_medida": "horas",
+      "data_prazo": "2022-12-01",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Ampliar networking na área de tecnologia e imigração",
+      "descricao": "Participar de pelo menos 3 eventos de networking específicos da área de tecnologia e imigração",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 3,
+      "unidade_medida": "eventos",
+      "data_prazo": "2022-09-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Participar de cursos de aprimoramento em vendas",
+      "descricao": "Realizar pelo menos 2 cursos de aprimoramento em vendas online ou presenciais",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "cursos",
+      "data_prazo": "2022-10-01",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:39:02.526Z"
+}

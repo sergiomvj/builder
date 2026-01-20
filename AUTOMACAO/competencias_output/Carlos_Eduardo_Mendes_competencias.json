@@ -1,0 +1,53 @@
+{
+  "persona_id": "e4b0a7aa-865a-418d-b66c-194c0c40f337",
+  "full_name": "Carlos Eduardo Mendes",
+  "role": "Gerente de Vendas",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em vendas",
+    "Negociação",
+    "Gestão de equipe de vendas",
+    "Conhecimento em marketing",
+    "Análise de mercado"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação eficaz",
+    "Liderança",
+    "Resiliência",
+    "Proatividade",
+    "Trabalho em equipe"
+  ],
+  "ferramentas": [
+    "CRM",
+    "Ferramentas de automação de vendas",
+    "Google Analytics",
+    "Microsoft Excel"
+  ],
+  "tarefas_diarias": [
+    "Acompanhamento de metas de vendas",
+    "Reuniões com a equipe",
+    "Análise de resultados de vendas",
+    "Feedback para a equipe"
+  ],
+  "tarefas_semanais": [
+    "Elaboração de estratégias de vendas",
+    "Treinamento da equipe de vendas",
+    "Desenvolvimento de campanhas de marketing"
+  ],
+  "tarefas_mensais": [
+    "Relatórios de desempenho de vendas",
+    "Revisão do planejamento estratégico de vendas",
+    "Gestão do pipeline de vendas"
+  ],
+  "kpis": [
+    "Taxa de conversão de vendas: 20% - 25%",
+    "Faturamento mensal: R$500.000 - R$600.000",
+    "Participação de mercado: 15% - 20%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de liderança",
+    "Expandir conhecimentos em marketing digital",
+    "Desenvolver estratégias de vendas mais eficientes"
+  ],
+  "generated_at": "2025-12-08T14:43:36.722Z"
+}

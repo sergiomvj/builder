@@ -1,0 +1,53 @@
+{
+  "persona_id": "e580b8b7-f556-45d3-8e7c-4cd972d3506e",
+  "full_name": "Rajesh Kumar Patel",
+  "role": "Diretor de Engenharia",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "Arquitetura de Sistemas Distribuídos e Microserviços",
+    "Inteligência Artificial e Machine Learning para Agentes Autônomos",
+    "Engenharia de Software Ágil e DevOps",
+    "Computação em Nuvem (AWS, Kubernetes)",
+    "Desenvolvimento de Plataformas Escaláveis e Autoaprendentes"
+  ],
+  "competencias_comportamentais": [
+    "Liderança Estratégica e Visão Inovadora",
+    "Gestão de Equipes de Alto Desempenho",
+    "Comunicação Eficaz com Stakeholders",
+    "Resolução de Problemas Complexos",
+    "Pensamento Adaptativo e Aprendizagem Contínua"
+  ],
+  "ferramentas": [
+    "Docker e Kubernetes",
+    "AWS e Terraform",
+    "GitHub Actions e Jenkins",
+    "TensorFlow e PyTorch"
+  ],
+  "tarefas_diarias": [
+    "Revisar progresso técnico das equipes de desenvolvimento",
+    "Monitorar pipelines de CI/CD e resolver bloqueios",
+    "Aprovar merge requests e code reviews críticos",
+    "Alinhar prioridades com product managers"
+  ],
+  "tarefas_semanais": [
+    "Conduzir reuniões de sprint planning e retrospectives",
+    "Analisar métricas de performance do sistema ARVA",
+    "Mentorar engenheiros sênior em desafios técnicos"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatórios de engenharia e roadmap técnico",
+    "Realizar avaliações de desempenho da equipe",
+    "Planejar alocações de recursos para novos features"
+  ],
+  "kpis": [
+    "KPI 1: Tempo Médio de Deploy - < 30 minutos",
+    "KPI 2: Uptime da Plataforma ARVA - 99.99%",
+    "KPI 3: Taxa de Sucesso de Agentes Autônomos - > 95%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprofundar expertise em IA multi-agente e aprendizado federado",
+    "Expandir rede de parcerias em ecossistemas de IA",
+    "Implementar programa de upskilling para 80% da equipe de engenharia"
+  ],
+  "generated_at": "2025-12-08T22:24:08.411Z"
+}

@@ -1,0 +1,59 @@
+{
+  "persona_id": "5ae4be55-7b31-4bf6-abfb-0a10e068b8d0",
+  "full_name": "Ana Beatriz Silva",
+  "role": "Assistente de Marketing",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "metas": [
+    {
+      "titulo": "Atingir 5% de taxa de engajamento nas redes",
+      "descricao": "Implementar estratégias de conteúdo otimizado para elevar a taxa média de engajamento (curtidas, comentários, shares) nas redes sociais da ARVA Tech Solutions para 5%, medido mensalmente via ferramentas como Google Analytics e Meta Business Suite.",
+      "categoria": "kpi",
+      "valor_alvo": 5,
+      "unidade_medida": "%",
+      "data_prazo": "2025-04-30",
+      "prioridade": 5,
+      "vinculada_kpi": "KPI 1: Taxa de engajamento nas redes - 5%"
+    },
+    {
+      "titulo": "Gerar 200 leads qualificados por mês",
+      "descricao": "Desenvolver e executar funis de conversão em landing pages e e-mails para gerar 200 leads qualificados mensais (contatos com interesse demonstrado em soluções ARVA), rastreados via CRM como HubSpot.",
+      "categoria": "kpi",
+      "valor_alvo": 200,
+      "unidade_medida": "leads/mês",
+      "data_prazo": "2025-05-31",
+      "prioridade": 5,
+      "vinculada_kpi": "KPI 2: Leads qualificados gerados - 200/mês"
+    },
+    {
+      "titulo": "Aumentar tráfego orgânico em 20%",
+      "descricao": "Otimizar SEO em conteúdos do blog e redes para crescer o tráfego orgânico em 20% em relação à baseline atual, medido pelo Google Analytics.",
+      "categoria": "kpi",
+      "valor_alvo": 20,
+      "unidade_medida": "%",
+      "data_prazo": "2025-06-30",
+      "prioridade": 4,
+      "vinculada_kpi": "KPI 3: Crescimento de tráfego orgânico - 20%"
+    },
+    {
+      "titulo": "Dominar ferramentas de IA para automação",
+      "descricao": "Completar treinamento e aplicar ferramentas de IA (como ChatGPT, Jasper ou Zapier com IA) em 80% das tarefas de automação de marketing, com certificação em pelo menos 3 ferramentas.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 40,
+      "unidade_medida": "horas",
+      "data_prazo": "2025-05-15",
+      "prioridade": 4,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Liderar campanha de demonstração de agentes ARVA",
+      "descricao": "Planejar, executar e relatar resultados de uma campanha completa de demonstração de agentes ARVA, gerando pelo menos 50 leads e elevando engajamento em 10%, com aprovação da equipe.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "campanha",
+      "data_prazo": "2025-07-15",
+      "prioridade": 3,
+      "vinculada_kpi": "KPI 1: Taxa de engajamento nas redes - 5%"
+    }
+  ],
+  "generated_at": "2025-12-08T22:21:59.302Z"
+}

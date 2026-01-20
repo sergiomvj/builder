@@ -1,0 +1,57 @@
+{
+  "persona_id": "6f4187e6-0394-4124-a156-6781050850d9",
+  "full_name": "[Placeholder 2] Desenvolvedor de Agentes Virtuais Pleno",
+  "role": "Desenvolvedor de Agentes Virtuais Pleno",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Desenvolvimento de agentes conversacionais usando frameworks como Rasa, Dialogflow ou Botpress",
+    "Programação em Python e JavaScript para lógica de negócios e integração de IA",
+    "Implementação de Processamento de Linguagem Natural (NLP) e NLU (Natural Language Understanding)",
+    "Integração de APIs RESTful, webhooks e serviços de terceiros em agentes virtuais",
+    "Deploy e orquestração de agentes em ambientes cloud como AWS Lex, Google Cloud ou Azure Bot Service"
+  ],
+  "competencias_comportamentais": [
+    "Resolução de problemas complexos em fluxos conversacionais",
+    "Colaboração em equipe multidisciplinar (devs, designers e produto)",
+    "Comunicação clara de requisitos técnicos para stakeholders não técnicos",
+    "Adaptabilidade a novas tecnologias de IA e chatbots",
+    "Atenção aos detalhes para garantir UX intuitiva e sem erros"
+  ],
+  "ferramentas": [
+    "Python e bibliotecas (NLTK, spaCy, TensorFlow)",
+    "Rasa ou Dialogflow para construção de bots",
+    "Git e GitHub para versionamento de código",
+    "Docker e Kubernetes para containerização",
+    "Postman ou Insomnia para testes de APIs"
+  ],
+  "tarefas_diarias": [
+    "Revisar e corrigir bugs reportados em agentes (mínimo 3 correções/dia)",
+    "Desenvolver e testar novas intenções/entidades (5+ por dia)",
+    "Executar testes unitários e de conversa (cobertura >90%)",
+    "Participar de daily stand-up e atualizar tasks no Jira/Trello",
+    "Documentar alterações de código em repositórios compartilhados"
+  ],
+  "tarefas_semanais": [
+    "Realizar code reviews de pull requests (mínimo 5/semana)",
+    "Participar de sprint planning e refinement de backlog",
+    "Monitorar métricas de performance dos agentes deployados",
+    "Colaborar em reuniões com time de produto para alinhar features"
+  ],
+  "tarefas_mensais": [
+    "Implantar novas versões de agentes em produção",
+    "Gerar relatório de KPIs e análise de uso dos agentes",
+    "Realizar treinamento ou mentoria para desenvolvedores júnior"
+  ],
+  "kpis": [
+    "Taxa de resolução na primeira interação - >85%",
+    "Tempo médio de resposta dos agentes - <2 segundos",
+    "Número de agentes novos deployados - 2 por mês",
+    "Uptime dos agentes em produção - 99,5%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação em Dialogflow ou Rasa Developer",
+    "Dominar machine learning avançado para melhoria de NLU",
+    "Contribuir para pelo menos 1 projeto open-source de chatbots"
+  ],
+  "generated_at": "2025-12-01T16:19:59.405Z"
+}

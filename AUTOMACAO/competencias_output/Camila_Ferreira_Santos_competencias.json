@@ -1,0 +1,53 @@
+{
+  "persona_id": "7bf5953b-ee96-4c4e-ab22-5058203e0111",
+  "full_name": "Camila Ferreira Santos",
+  "role": "Designer UI/UX",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Domínio de ferramentas de design (Adobe XD, Figma, Sketch)",
+    "Conhecimento em usabilidade e experiência do usuário",
+    "Capacidade de criar wireframes e protótipos interativos",
+    "Conhecimento em design responsivo",
+    "Habilidade em design visual"
+  ],
+  "competencias_comportamentais": [
+    "Criatividade",
+    "Trabalho em equipe",
+    "Comunicação eficaz",
+    "Pensamento crítico",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Adobe XD",
+    "Figma",
+    "Sketch",
+    "InVision"
+  ],
+  "tarefas_diarias": [
+    "Criar interfaces intuitivas para a plataforma",
+    "Realizar testes de usabilidade",
+    "Iterar designs com base em feedback",
+    "Colaborar com a equipe de desenvolvimento"
+  ],
+  "tarefas_semanais": [
+    "Participar de reuniões de brainstorming",
+    "Analisar métricas de uso da plataforma",
+    "Pesquisar tendências de design"
+  ],
+  "tarefas_mensais": [
+    "Realizar análises de concorrência",
+    "Apresentar propostas de melhorias de design",
+    "Participar de workshops de capacitação"
+  ],
+  "kpis": [
+    "Taxa de conversão de usuários - Atingir 20%",
+    "Tempo médio de permanência na plataforma - Aumentar em 10%",
+    "Taxa de rejeição - Reduzir para 30%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em design de interfaces",
+    "Ampliar conhecimento em experiência do usuário",
+    "Participar de cursos de especialização em UI/UX"
+  ],
+  "generated_at": "2025-12-08T14:37:12.952Z"
+}

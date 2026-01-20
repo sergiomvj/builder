@@ -1,0 +1,15 @@
+{
+  "script": "02_generate_biografias",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "attempts": [
+    {
+      "timestamp": "2025-12-08T13:30:57.139Z",
+      "total_to_retry": 1
+    },
+    {
+      "timestamp": "2025-12-08T13:32:33.179Z",
+      "total_to_retry": 1
+    }
+  ],
+  "failed_items": {}
+}

@@ -1,0 +1,201 @@
+{
+  "name": "William (Asst Admin) - Revisão de desempenho de agentes virtuai...",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 0 1 * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar no primeiro dia de cada mês à meia-noite"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "select",
+        "table": "virtual_agents_performance",
+        "filters": {
+          "month": "last_month"
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Buscar dados de desempenho dos agentes virtuais do último mês",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_ARVATE49",
+          "name": "Supabase ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(data => ({ ...data, improvement_needed: data.success_rate < 90 }));"
+      },
+      "typeVersion": 1,
+      "notes": "Identificar agentes com taxa de sucesso abaixo de 90%"
+    },
+    {
+      "id": "4",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "operation": "append",
+        "range": "Sheet1"
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar planilha do Google Sheets com agentes que precisam de melhoria",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Send Notification",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#team_updates",
+        "text": "Revisão mensal de desempenho dos agentes virtuais concluída. Verifique a planilha de melhorias necessárias."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe sobre a conclusão da revisão e onde encontrar informações",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: William (Asst Admin) - Revisão de desempenho de agentes virtuai...\nEmpresa: ARVA Tech Solutions\nPersona: William Miller\nTarefa: Revisão de desempenho de agentes virtuais\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:38.993Z",
+  "updatedAt": "2025-11-28T17:05:38.993Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "6e1019b0-7606-4488-920a-a190a098237e",
+    "persona_nome": "William Miller",
+    "task_id": "53c0d261-d9bd-4bbb-91b0-4eb598750997",
+    "task_title": "Revisão de desempenho de agentes virtuais",
+    "opportunity_id": "e00054ce-e35d-42d2-a5ee-5b01a57da33d",
+    "automation_score": 60,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:38.993Z"
+  }
+}

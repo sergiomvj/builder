@@ -1,0 +1,185 @@
+{
+  "name": "David (Asst Mkt) - Atualização diária do CRM",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 0 * * *"
+            }
+          ]
+        },
+        "timezone": "UTC"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar a atualização diária à meia-noite UTC"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "table": "new_leads",
+        "filters": {
+          "created_at": {
+            "gte": "NOW() - INTERVAL '1 day'"
+          }
+        },
+        "operation": "select"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar novos leads e oportunidades do último dia"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(item => ({ ...item, status: 'new' }));"
+      },
+      "typeVersion": 1,
+      "notes": "Preparar dados para inserção, marcando como novos"
+    },
+    {
+      "id": "4",
+      "name": "Insert Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "data": "{{ $json }}",
+        "table": "leads",
+        "operation": "insert"
+      },
+      "typeVersion": 1,
+      "notes": "Inserir novos leads e oportunidades no CRM"
+    },
+    {
+      "id": "5",
+      "name": "Send Notification",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "to": "sales@arvatech.com",
+        "message": "Novos leads e oportunidades foram adicionados ao CRM.",
+        "subject": "Atualização Diária do CRM Concluída"
+      },
+      "typeVersion": 1,
+      "notes": "Notificar a equipe de vendas sobre a atualização"
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: David (Asst Mkt) - Atualização diária do CRM\nEmpresa: ARVA Tech Solutions\nPersona: David Brown\nTarefa: Atualização diária do CRM\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:07.900Z",
+  "updatedAt": "2025-11-28T17:05:07.900Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "2841090c-7c5f-4c95-afbf-89dc4c115372",
+    "persona_nome": "David Brown",
+    "task_id": "d45160f1-c4c9-4ffe-bb38-f1a896dfa469",
+    "task_title": "Atualização diária do CRM",
+    "opportunity_id": "b4f3ce04-14ee-4779-a85e-9dd1d66e713c",
+    "automation_score": 82,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:07.900Z"
+  }
+}

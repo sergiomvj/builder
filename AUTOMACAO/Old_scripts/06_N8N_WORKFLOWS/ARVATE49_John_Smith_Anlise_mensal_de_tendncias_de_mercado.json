@@ -1,0 +1,193 @@
+{
+  "name": "John (SDR Junior) - Análise mensal de tendências de mercado",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 0 1 * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar no primeiro dia de cada mês à meia-noite"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "url": "https://api.marketdata.com/trends",
+        "method": "GET",
+        "responseFormat": "json"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar dados de tendências de mercado"
+    },
+    {
+      "id": "3",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "range": "A1:D100"
+      },
+      "typeVersion": 1,
+      "notes": "Ler dados de desempenho interno da planilha do Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(item => compareData(item.marketData, item.internalPerformance));"
+      },
+      "typeVersion": 1,
+      "notes": "Comparar dados de mercado com desempenho interno"
+    },
+    {
+      "id": "5",
+      "name": "Action",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#market-trends",
+        "text": "Análise mensal de tendências de mercado concluída. Novas oportunidades identificadas."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe via Slack sobre conclusão da análise",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: John (SDR Junior) - Análise mensal de tendências de mercado\nEmpresa: ARVA Tech Solutions\nPersona: John Smith\nTarefa: Análise mensal de tendências de mercado\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:37.470Z",
+  "updatedAt": "2025-11-28T17:05:37.470Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "680cf6e1-5b0d-4dc7-b2c0-722d22998876",
+    "persona_nome": "John Smith",
+    "task_id": "398c78ed-c2f9-4d43-9018-1bfb0ba9a1fc",
+    "task_title": "Análise mensal de tendências de mercado",
+    "opportunity_id": "6fc6b5dc-960e-42b5-ba82-571dc044c8b3",
+    "automation_score": 60,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:37.470Z"
+  }
+}

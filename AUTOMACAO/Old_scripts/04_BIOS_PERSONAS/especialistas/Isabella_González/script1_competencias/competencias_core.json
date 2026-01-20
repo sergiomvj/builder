@@ -1,0 +1,52 @@
+{
+  "persona": {
+    "nome": "Isabella González",
+    "categoria": "especialistas",
+    "especialidade": "marketing",
+    "experiencia": 9
+  },
+  "competencias": {
+    "tecnicas": [
+      "Marketing Digital",
+      "Growth Hacking",
+      "Marketing Analytics",
+      "Automação de Marketing",
+      "Inbound Marketing",
+      "Performance Marketing"
+    ],
+    "comportamentais": [
+      "Pensamento Analítico",
+      "Orientação a Dados",
+      "Inovação",
+      "Visão Estratégica",
+      "Adaptabilidade",
+      "Orientação a Resultados"
+    ],
+    "ferramentas": [
+      "Google Ads",
+      "Facebook Ads",
+      "HubSpot",
+      "Mailchimp",
+      "Google Analytics",
+      "SEMrush",
+      "Hotjar"
+    ]
+  },
+  "analise_biografia": {
+    "educacao": "MBA em Marketing Digital e Growth Hacking Certification",
+    "idiomas": [
+      "francês",
+      "português",
+      "espanhol",
+      "inglês"
+    ],
+    "secoes_extraidas": [
+      "formacao",
+      "experiencia",
+      "competencias_tecnicas",
+      "competencias_comportamentais",
+      "responsabilidades"
+    ]
+  },
+  "data_processamento": "2025-11-14T00:03:58.654Z"
+}

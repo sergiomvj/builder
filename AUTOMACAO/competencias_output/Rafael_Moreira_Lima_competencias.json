@@ -1,0 +1,53 @@
+{
+  "persona_id": "5dd9aaae-2d79-4ef2-ba1a-2ed68b3e02be",
+  "full_name": "Rafael Moreira Lima",
+  "role": "Coordenador de Vendas",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em vendas",
+    "Negociação",
+    "Gestão de equipe de vendas",
+    "Conhecimento em tecnologia",
+    "Conhecimento em serviços de imigração"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação eficaz",
+    "Liderança",
+    "Resiliência",
+    "Trabalho em equipe",
+    "Proatividade"
+  ],
+  "ferramentas": [
+    "CRM",
+    "Google Analytics",
+    "LinkedIn Sales Navigator",
+    "Microsoft Excel"
+  ],
+  "tarefas_diarias": [
+    "Realizar reuniões com a equipe de vendas",
+    "Analisar relatórios de vendas",
+    "Acompanhar o desempenho da equipe",
+    "Identificar oportunidades de melhoria"
+  ],
+  "tarefas_semanais": [
+    "Elaborar estratégias de vendas",
+    "Participar de treinamentos da empresa",
+    "Realizar follow-up com clientes"
+  ],
+  "tarefas_mensais": [
+    "Analisar o desempenho das vendas do mês anterior",
+    "Atualizar o pipeline de vendas",
+    "Participar de reuniões estratégicas"
+  ],
+  "kpis": [
+    "Taxa de conversão de vendas - 30%",
+    "Número de novos clientes - 20",
+    "Faturamento mensal - R$100.000"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de liderança",
+    "Aprofundar conhecimentos em tecnologia e serviços de imigração",
+    "Aumentar a eficiência da equipe de vendas"
+  ],
+  "generated_at": "2025-12-08T14:40:06.076Z"
+}

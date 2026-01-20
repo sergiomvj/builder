@@ -1,0 +1,205 @@
+{
+  "name": "James (Asst RH) - Relatório mensal de contratações e demis...",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 0 1 * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar no primeiro dia de cada mês à meia-noite"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "select",
+        "table": "employee_movements",
+        "filters": {
+          "date": {
+            "gte": "start_of_month()",
+            "lte": "end_of_month()"
+          }
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Buscar movimentações de funcionários do mês",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_ARVATE49",
+          "name": "Supabase ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(item => ({ ...item, report_row: `${item.type}: ${item.name} (${item.date})` }));"
+      },
+      "typeVersion": 1,
+      "notes": "Preparar linhas do relatório"
+    },
+    {
+      "id": "4",
+      "name": "Action",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "operation": "append",
+        "range": "A1"
+      },
+      "typeVersion": 1,
+      "notes": "Inserir linhas no Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "rh@arvatechsolutions.com",
+        "subject": "Relatório Mensal de Movimentações de Funcionários",
+        "message": "O relatório mensal de movimentações de funcionários foi atualizado no Google Sheets. Por favor, verifique."
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email de notificação para o RH",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: James (Asst RH) - Relatório mensal de contratações e demis...\nEmpresa: ARVA Tech Solutions\nPersona: James Wilson\nTarefa: Relatório mensal de contratações e demissões\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:24.281Z",
+  "updatedAt": "2025-11-28T17:05:24.281Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "ff4feab2-17c2-406c-9d57-609e0a46cfb1",
+    "persona_nome": "James Wilson",
+    "task_id": "c911899b-eed8-4bd0-a4a9-8efbe9f2647e",
+    "task_title": "Relatório mensal de contratações e demissões",
+    "opportunity_id": "b9f47105-8dc4-496d-ab41-5e950b67b3ac",
+    "automation_score": 68,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:24.281Z"
+  }
+}

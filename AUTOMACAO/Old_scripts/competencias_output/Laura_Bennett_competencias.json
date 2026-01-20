@@ -1,0 +1,54 @@
+{
+  "persona_id": "13eb3c7d-2a12-4f1e-bb21-9acdf0967ace",
+  "full_name": "Laura Bennett",
+  "role": "Gerente de Produtos",
+  "empresa_id": "a2845f62-59e2-48b2-8f89-8bfc6c33193f",
+  "competencias_tecnicas": [
+    "Conhecimento em inteligência artificial",
+    "Experiência em desenvolvimento de produtos tecnológicos",
+    "Habilidade em gestão de projetos de tecnologia",
+    "Conhecimento em linguagens de programação",
+    "Capacidade de análise de dados"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Trabalho em equipe",
+    "Flexibilidade",
+    "Resolução de problemas"
+  ],
+  "ferramentas": [
+    "Jira",
+    "Slack",
+    "Google Analytics",
+    "Figma"
+  ],
+  "tarefas_diarias": [
+    "Reuniões de alinhamento com a equipe",
+    "Análise de feedback dos usuários",
+    "Priorização de features do produto",
+    "Revisão de código",
+    "Comunicação com stakeholders"
+  ],
+  "tarefas_semanais": [
+    "Definição de metas para a semana",
+    "Acompanhamento do progresso do time",
+    "Atualização do roadmap do produto"
+  ],
+  "tarefas_mensais": [
+    "Análise de performance do produto",
+    "Planejamento de novas funcionalidades",
+    "Avaliação de KPIs"
+  ],
+  "kpis": [
+    "Satisfação do usuário - 90%",
+    "Retenção de clientes - 80%",
+    "Lançamento de novas funcionalidades - 2 por trimestre"
+  ],
+  "objetivos_desenvolvimento": [
+    "Desenvolver habilidades em machine learning",
+    "Aprimorar a capacidade de liderança",
+    "Expandir o networking na área de tecnologia"
+  ],
+  "generated_at": "2025-12-04T21:42:05.502Z"
+}

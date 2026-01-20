@@ -1,0 +1,53 @@
+{
+  "persona_id": "3931ae60-eec3-44af-8d89-cfe1eb405ef8",
+  "full_name": "[Placeholder 21] Especialista em Integrações RAG Pleno",
+  "role": "Especialista em Integrações RAG Pleno",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Implementação de pipelines RAG (Retrieval-Augmented Generation)",
+    "Integração com LLMs via frameworks como LangChain e LlamaIndex",
+    "Gerenciamento de bancos de vetores (Vector Databases) como Pinecone e FAISS",
+    "Otimização de retrieval e geração para performance em produção",
+    "Desenvolvimento de APIs RESTful e microservices para integrações RAG"
+  ],
+  "competencias_comportamentais": [
+    "Resolução de problemas complexos em ambientes de IA",
+    "Colaboração em equipes multidisciplinares",
+    "Comunicação clara de conceitos técnicos",
+    "Aprendizado contínuo em tecnologias emergentes",
+    "Atenção aos detalhes e foco em qualidade"
+  ],
+  "ferramentas": [
+    "LangChain",
+    "LlamaIndex",
+    "Pinecone",
+    "FAISS"
+  ],
+  "tarefas_diarias": [
+    "Monitorar e otimizar pipelines RAG em produção",
+    "Debugar e resolver incidentes em integrações",
+    "Implementar melhorias incrementais em sistemas RAG",
+    "Colaborar com desenvolvedores e stakeholders via reuniões diárias"
+  ],
+  "tarefas_semanais": [
+    "Revisar código e pull requests de integrações RAG",
+    "Realizar testes de performance e precisão de retrieval",
+    "Atualizar documentação técnica de pipelines"
+  ],
+  "tarefas_mensais": [
+    "Gerar relatórios de KPIs e performance de RAG",
+    "Planejar e prototipar novas integrações RAG",
+    "Participar de treinamentos e comunidades de IA"
+  ],
+  "kpis": [
+    "KPI 1: Tempo médio de resposta RAG - < 2 segundos",
+    "KPI 2: Taxa de precisão de retrieval - > 90%",
+    "KPI 3: Número de integrações RAG deployadas - 5 por mês"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação em LangChain ou frameworks RAG avançados",
+    "Liderar um projeto de integração RAG em produção",
+    "Contribuir para repositórios open-source de RAG"
+  ],
+  "generated_at": "2025-12-01T16:46:17.883Z"
+}

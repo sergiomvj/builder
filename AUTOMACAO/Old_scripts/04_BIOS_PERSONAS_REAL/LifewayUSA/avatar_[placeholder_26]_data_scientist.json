@@ -1,0 +1,112 @@
+{
+  "persona": {
+    "nome": "[Placeholder 26] Data Scientist",
+    "nacionalidade": "nordicos",
+    "genero": "masculino",
+    "cargo": "Data Scientist",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Em definição",
+    "competencias": "Em definição",
+    "biografia": "Profissional experiente",
+    "personalidade": {},
+    "experiencia_anos": 8,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1024&h=1024&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    "prompt_usado": "Retrato realista em foto 4K de um homem caucasiano nórdico, idade aparente 32-35 anos, masculino, etnia caucasiana nórdica, tipo físico magro atlético, altura estimada 1,80m-1,85m, cabelo cor loiro areia, comprimento curto, estilo liso, volume denso, olhos cor azuis claros, formato amendoados, rosto formato oval, pele tom pálida, textura lisa com sardas leves, sobrancelhas grossas, nariz fino, boca lábios médios, expressão facial padrão confiante, marcas únicas nenhuma, acessórios permanentes óculos de armação fina preta, postura confiante, características distintivas mandíbula definida, estilo vestimenta padrão casual tech com camisa azul clara desabotoada e jeans escuro, paleta cores vestuário azul frio cinza neutro, em ambiente office moderno com fundo desfocado de escritório tech, iluminação soft studio light, lente 85mm close-up, aspecto 1:1, ultra detalhado, DSLR look",
+    "estilo": "casual",
+    "background_tipo": "office",
+    "servico_usado": "gemini_ai",
+    "versao": 1,
+    "ativo": true,
+    "biometrics": {
+      "idade_aparente": "32-35 anos",
+      "genero": "masculino",
+      "etnia": "caucasiano",
+      "tipo_fisico": "magro atlético",
+      "altura_estimada": "1,80m - 1,85m",
+      "cabelo_cor": "loiro areia",
+      "cabelo_comprimento": "curto",
+      "cabelo_estilo": "liso",
+      "cabelo_volume": "denso",
+      "olhos_cor": "azuis claros",
+      "olhos_formato": "amendoados",
+      "rosto_formato": "oval",
+      "pele_tom": "pálida",
+      "pele_textura": "lisa com sardas leves",
+      "sobrancelhas": "grossas",
+      "nariz": "fino",
+      "boca_labios": "médios",
+      "expressao_facial_padrao": "confiante",
+      "marcas_unicas": "nenhuma",
+      "acessorios_permanentes": "óculos de armação fina preta",
+      "postura": "confiante",
+      "caracteristicas_distintivas": "mandíbula definida",
+      "estilo_vestimenta_padrao": "casual tech",
+      "paleta_cores_vestuario": "azul frio, cinza neutro"
+    },
+    "physical_description_detailed": {
+      "rosto": {
+        "formato": "oval com mandíbula definida e queixo levemente quadrado",
+        "tom_pele": "pálida com subtom rosado frio típico nórdico",
+        "textura_pele": "lisa com sardas leves espalhadas nas bochechas e nariz",
+        "olhos": {
+          "cor": "azuis claros com toques de cinza",
+          "formato": "amendoados e expressivos com pálpebras ligeiramente caídas"
+        },
+        "sobrancelhas": "grossas, retas e loiras escuras com arco sutil",
+        "nariz": "fino e reto com ponte estreita",
+        "boca": "lábios médios retos com cantos levemente ascendentes",
+        "expressao_tipica": "confiante com sorriso leve e olhar direto"
+      },
+      "cabelo": {
+        "cor_exata": "loiro areia com reflexos dourados naturais",
+        "comprimento": "curto, topo 5cm, laterais e nuca rente",
+        "estilo": "liso penteado para o lado com franja texturizada",
+        "volume": "denso e naturalmente espesso"
+      },
+      "corpo": {
+        "altura_aproximada": "1,83m",
+        "tipo_fisico": "magro atlético com ombros largos moderados e cintura estreita",
+        "proporcao": "proporções equilibradas atléticas, braços tonificados sem excesso muscular",
+        "postura_tipica": "confiante ereta com ombros relaxados para trás"
+      }
+    },
+    "consistency_parameters": {
+      "rendering_style": "realista foto 4K retrato editorial",
+      "lens_focus": "85mm close-up",
+      "lighting": "soft studio light",
+      "aspect_ratio": "1:1 (avatar)"
+    },
+    "history": {
+      "background_educacional": "Bacharel em Ciência da Computação pela Universidade de Estocolmo, mestrado em Data Science pela Stanford University",
+      "experiencia_internacional": "Trabalhou em startups tech na Suécia e relocation para EUA na LifewayUSA",
+      "contexto_cultural": "Influências nórdicas minimalistas misturadas com cultura tech californiana casual",
+      "estilo_vida": "Ativo outdoor com ciclismo e hiking, refletindo físico magro atlético e pele pálida com sardas",
+      "marcos_carreira": "8 anos de experiência, liderou projetos de ML em operations, promovido a senior mid-level",
+      "valores_pessoais": "Eficiência e inovação refletidos em estilo clean casual tech e acessórios funcionais",
+      "ambiente_trabalho": "Escritório tech moderno em LifewayUSA influencia vestimenta casual com elementos funcionais como óculos e relógio smart",
+      "redes_sociais": "Perfil LinkedIn ativo com fotos profissionais casuais, GitHub com portfólio de data projects"
+    },
+    "metadados": {
+      "resolucao": "1024x1024",
+      "formato": "webp",
+      "qualidade": "ultra_high",
+      "parametros_geracao": {
+        "prompt_negativo": "blurry, low quality, distorted, cartoonish",
+        "steps": 30,
+        "cfg_scale": 8.5
+      },
+      "contexto_profissional": {
+        "cargo": "Data Scientist",
+        "industria": "tecnologia",
+        "senioridade": "mid-senior"
+      }
+    }
+  },
+  "generated_at": "2025-12-03T13:08:54.866Z"
+}

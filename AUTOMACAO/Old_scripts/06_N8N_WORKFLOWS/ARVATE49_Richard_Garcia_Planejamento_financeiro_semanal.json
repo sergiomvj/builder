@@ -1,0 +1,200 @@
+{
+  "name": "Richard (Asst Fin) - Planejamento financeiro semanal",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * 1"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar toda segunda-feira às 9h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "spreadsheetId": "your_spreadsheet_id",
+        "range": "A:Z"
+      },
+      "typeVersion": 1,
+      "notes": "Ler dados do planejamento financeiro da semana anterior",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(item => ({ ...item, updatedData: `Calculations based on ${item.data}` }));"
+      },
+      "typeVersion": 1,
+      "notes": "Calcular previsões para a próxima semana com base nos dados"
+    },
+    {
+      "id": "4",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "operation": "update",
+        "spreadsheetId": "your_spreadsheet_id",
+        "range": "A:Z"
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar o planejamento financeiro com novas previsões",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Send Notification",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#finance",
+        "text": "Planejamento financeiro semanal atualizado com sucesso."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar o time financeiro sobre a atualização",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Richard (Asst Fin) - Planejamento financeiro semanal\nEmpresa: ARVA Tech Solutions\nPersona: Richard Garcia\nTarefa: Planejamento financeiro semanal\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:24.910Z",
+  "updatedAt": "2025-11-28T17:05:24.910Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "20ae86c4-137e-412f-9c35-99fd7ce11ebf",
+    "persona_nome": "Richard Garcia",
+    "task_id": "3a984ffe-c8ae-48bf-91f3-ea9de7a99a49",
+    "task_title": "Planejamento financeiro semanal",
+    "opportunity_id": "14566994-5614-472d-a724-5ef9226e3ec1",
+    "automation_score": 65,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:24.910Z"
+  }
+}

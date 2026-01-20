@@ -1,0 +1,112 @@
+{
+  "persona": {
+    "nome": "[Placeholder 7] Analista de Growth Marketing",
+    "nacionalidade": "africanos",
+    "genero": "masculino",
+    "cargo": "Analista de Growth Marketing",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Em definição",
+    "competencias": "Em definição",
+    "biografia": "Profissional experiente",
+    "personalidade": {},
+    "experiencia_anos": 6,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=1024&h=1024&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
+    "prompt_usado": "Retrato hiper-realista em foto 4K de um homem negro africano de 28-32 anos, analista de growth marketing em tecnologia, pele negra profunda lisa sem poros aparentes, rosto oval com traços definidos, olhos castanhos escuros amendoados expressivos, sobrancelhas grossas arqueadas cheias, nariz largo reto, boca com lábios grossos retos, expressão facial confiante com sorriso leve, cabelo preto ébano curto fade cacheado denso volumoso, barba bem aparada curta preta, tipo físico magro atlético, altura 1.78-1.85m, postura ereta confiante, usando óculos de armação fina preta retangular e relógio minimalista prateado, estilo vestimenta business casual tech com camisa azul marinho slim fit, calça chino cinza neutro e blazer leve, paleta cores azul frio cinza neutro branco, acessórios profissionais discretos, em ambiente office moderno com fundo neutro desfocado, iluminação soft studio light, lente 85mm close-up half-body shot, aspecto realista DSLR look, alta qualidade sem distorções",
+    "estilo": "business casual",
+    "background_tipo": "office",
+    "servico_usado": "gemini_ai",
+    "versao": 1,
+    "ativo": true,
+    "biometrics": {
+      "idade_aparente": "28-32 anos",
+      "genero": "masculino",
+      "etnia": "negro",
+      "tipo_fisico": "magro atlético",
+      "altura_estimada": "1.78-1.85m",
+      "cabelo_cor": "preto ébano",
+      "cabelo_comprimento": "curto",
+      "cabelo_estilo": "fade cacheado",
+      "cabelo_volume": "denso volumoso",
+      "olhos_cor": "castanhos escuros",
+      "olhos_formato": "amendoados expressivos",
+      "rosto_formato": "oval",
+      "pele_tom": "negra profunda",
+      "pele_textura": "lisa",
+      "sobrancelhas": "grossas arqueadas cheias",
+      "nariz": "largo reto",
+      "boca_labios": "grossos retos",
+      "expressao_facial_padrao": "confiante",
+      "marcas_unicas": "nenhuma",
+      "acessorios_permanentes": "óculos de armação fina preta retangular, relógio minimalista prateado",
+      "postura": "ereta confiante",
+      "caracteristicas_distintivas": "barba bem aparada curta preta",
+      "estilo_vestimenta_padrao": "business casual tech",
+      "paleta_cores_vestuario": "azul frio cinza neutro branco"
+    },
+    "physical_description_detailed": {
+      "rosto": {
+        "formato": "oval com queixo definido e maçãs de rosto proeminentes",
+        "tom_pele": "negra profunda uniforme sem variações",
+        "textura_pele": "lisa impecável sem rugas ou poros visíveis",
+        "olhos": {
+          "cor": "castanhos escuros intensos",
+          "formato": "amendoados expressivos com olhar penetrante"
+        },
+        "sobrancelhas": "grossas arqueadas cheias naturalmente alinhadas",
+        "nariz": "largo reto com narinas moderadas",
+        "boca": "lábios grossos retos em equilíbrio harmonioso",
+        "expressao_tipica": "confiante com sorriso leve e olhos atentos"
+      },
+      "cabelo": {
+        "cor_exata": "preto ébano brilhante",
+        "comprimento": "2-4 cm no topo fading para laterais",
+        "estilo": "fade cacheado moderno com linhas nítidas",
+        "volume": "denso volumoso no topo com textura natural"
+      },
+      "corpo": {
+        "altura_aproximada": "1.82m",
+        "tipo_fisico": "magro atlético com ombros largos proporcionais",
+        "proporcao": "corpo equilibrado V-shape sutil",
+        "postura_tipica": "ereta confiante com ombros relaxados para trás"
+      }
+    },
+    "consistency_parameters": {
+      "rendering_style": "foto 4K realista",
+      "lens_focus": "85mm close-up half-body shot",
+      "lighting": "soft studio light",
+      "aspect_ratio": "1:1 (avatar)"
+    },
+    "history": {
+      "background_educacional": "Bacharel em Marketing Digital pela Universidade de Lagos com MBA em Growth Hacking nos EUA",
+      "experiencia_internacional": "Estágios em startups de tech em Nigeria e relocation para USA na LifewayUSA",
+      "contexto_cultural": "Herança africana nigeriana misturada com cultura tech americana, refletida em grooming impecável e estilo híbrido",
+      "estilo_vida": "Rotina fitness diária e networking em eventos tech, mantendo aparência polida e energética",
+      "marcos_carreira": "Promoção para analista após campanhas de growth que dobraram user acquisition em 3 anos",
+      "valores_pessoais": "Inovação e eficiência refletidos em acessórios minimalistas e vestimenta funcional",
+      "ambiente_trabalho": "Escritório open-space tech em USA influencia business casual moderno e acessível",
+      "redes_sociais": "Perfil LinkedIn ativo com fotos profissionais em eventos SaaS e posts sobre A/B testing"
+    },
+    "metadados": {
+      "resolucao": "1024x1024",
+      "formato": "webp",
+      "qualidade": "ultra_high",
+      "parametros_geracao": {
+        "prompt_negativo": "blurry, low quality, distorted, cartoonish",
+        "steps": 30,
+        "cfg_scale": 8.5
+      },
+      "contexto_profissional": {
+        "cargo": "Analista de Growth Marketing",
+        "industria": "tecnologia",
+        "senioridade": "mid-level"
+      }
+    }
+  },
+  "generated_at": "2025-12-03T13:46:59.220Z"
+}

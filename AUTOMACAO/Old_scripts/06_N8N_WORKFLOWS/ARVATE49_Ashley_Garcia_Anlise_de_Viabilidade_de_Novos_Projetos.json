@@ -1,0 +1,201 @@
+{
+  "name": "Ashley (CFO) - Análise de Viabilidade de Novos Projetos",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * 1"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar toda segunda-feira às 9h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "range": "Projetos!A2:E"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar projetos propostos na planilha",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(project => ({ ...project, roi: calculateROI(project.cost, project.revenue), payback: calculatePayback(project.cost, project.monthlyRevenue) }));"
+      },
+      "typeVersion": 1,
+      "notes": "Calcular ROI e payback para cada projeto"
+    },
+    {
+      "id": "4",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "finance@arvatech.com",
+        "subject": "Análise Semanal de Viabilidade de Projetos",
+        "message": "{{ $json.projectsAnalysis }}"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar análise de viabilidade para o departamento financeiro",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Notify",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#finance",
+        "text": "Análise de viabilidade de novos projetos enviada por email."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar no Slack sobre o envio da análise",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Ashley (CFO) - Análise de Viabilidade de Novos Projetos\nEmpresa: ARVA Tech Solutions\nPersona: Ashley Garcia\nTarefa: Análise de Viabilidade de Novos Projetos\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:35.581Z",
+  "updatedAt": "2025-11-28T17:05:35.581Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "a89ce124-58f3-45d1-a7d4-bb245a35884b",
+    "persona_nome": "Ashley Garcia",
+    "task_id": "a6166027-ded9-42ce-8bd2-5a6ab6ffb957",
+    "task_title": "Análise de Viabilidade de Novos Projetos",
+    "opportunity_id": "32308957-6896-4e3a-80ff-52ea9b863cf7",
+    "automation_score": 60,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:35.581Z"
+  }
+}

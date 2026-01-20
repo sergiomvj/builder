@@ -1,0 +1,112 @@
+{
+  "persona": {
+    "nome": "[Placeholder 19] Gerente de Produto Digital",
+    "nacionalidade": "europeus",
+    "genero": "feminino",
+    "cargo": "Gerente de Produto Digital",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Em definição",
+    "competencias": "Em definição",
+    "biografia": "Profissional experiente",
+    "personalidade": {},
+    "experiencia_anos": 6,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=150&h=150&fit=crop&crop=face",
+    "prompt_usado": "Retrato profissional realista de uma mulher europeia caucasiana de 32-35 anos, gerente de produto digital em tecnologia, etnia caucasiana, tipo físico atlética esguia, altura 1.68m, cabelo castanho claro médio liso com ondas suaves denso, olhos azuis claros amendoados, rosto oval, pele clara com sardas leves lisa, sobrancelhas arqueadas cheias, nariz reto fino, boca lábios médios arqueados, expressão confiante com sorriso leve, marcas sardas no nariz, acessórios óculos armação fina preta brincos pequenos prateados relógio minimalista, postura ereta confiante, características maquiagem sutil profissional, estilo vestimenta business casual techwear, paleta cores azul frio cinza neutro branco, em ambiente office moderno com fundo desfocado, lighting soft studio light, realista foto 4K retrato editorial 50mm lens",
+    "estilo": "business",
+    "background_tipo": "office",
+    "servico_usado": "gemini_ai",
+    "versao": 1,
+    "ativo": true,
+    "biometrics": {
+      "idade_aparente": "32-35 anos",
+      "genero": "feminino",
+      "etnia": "caucasiano",
+      "tipo_fisico": "atlética esguia",
+      "altura_estimada": "1.65-1.70m",
+      "cabelo_cor": "castanho claro",
+      "cabelo_comprimento": "médio",
+      "cabelo_estilo": "liso com ondas suaves",
+      "cabelo_volume": "denso",
+      "olhos_cor": "azuis claros",
+      "olhos_formato": "amendoados",
+      "rosto_formato": "oval",
+      "pele_tom": "clara com sardas leves",
+      "pele_textura": "lisa",
+      "sobrancelhas": "arqueadas cheias",
+      "nariz": "reto fino",
+      "boca_labios": "médios arqueados",
+      "expressao_facial_padrao": "confiante com sorriso leve",
+      "marcas_unicas": "sardas no nariz",
+      "acessorios_permanentes": "óculos armação fina preta, brincos pequenos prateados, relógio minimalista",
+      "postura": "ereta confiante",
+      "caracteristicas_distintivas": "maquiagem sutil profissional",
+      "estilo_vestimenta_padrao": "business casual techwear",
+      "paleta_cores_vestuario": "azul frio cinza neutro branco"
+    },
+    "physical_description_detailed": {
+      "rosto": {
+        "formato": "oval com queixo suave e maçãs de rosto proeminentes",
+        "tom_pele": "clara com sardas leves distribuídas no nariz e bochechas",
+        "textura_pele": "lisa com poros mínimos e brilho saudável",
+        "olhos": {
+          "cor": "azuis claros com toques de cinza",
+          "formato": "amendoados expressivos com cílios longos"
+        },
+        "sobrancelhas": "arqueadas cheias e bem definidas",
+        "nariz": "reto fino com ponte delicada",
+        "boca": "lábios médios arqueados naturalmente rosados",
+        "expressao_tipica": "confiante com sorriso leve e olhar direto"
+      },
+      "cabelo": {
+        "cor_exata": "castanho claro com reflexos dourados",
+        "comprimento": "até os ombros",
+        "estilo": "liso com ondas suaves soltas",
+        "volume": "denso com movimento natural"
+      },
+      "corpo": {
+        "altura_aproximada": "1.68m",
+        "tipo_fisico": "atlética esguia com ombros retos e cintura definida",
+        "proporcao": "proporções equilibradas ombros-cintura-quadris 36-28-36",
+        "postura_tipica": "ereta confiante com ombros para trás"
+      }
+    },
+    "consistency_parameters": {
+      "rendering_style": "realista foto 4K retrato editorial",
+      "lens_focus": "50mm",
+      "lighting": "soft studio light",
+      "aspect_ratio": "1:1 (avatar)"
+    },
+    "history": {
+      "background_educacional": "Graduada em Engenharia de Software pela Universidade de Amsterdã com MBA em Gestão de Produtos pela London Business School",
+      "experiencia_internacional": "Expatriada de origem holandesa trabalhando nos EUA na LifewayUSA há 3 anos",
+      "contexto_cultural": "Influências europeias nórdicas com estilo minimalista clean",
+      "estilo_vida": "Ativa com yoga e corrida, refletindo em físico tonificado e aparência saudável",
+      "marcos_carreira": "Promoção para gerente após lançar 3 produtos digitais de sucesso em 6 anos",
+      "valores_pessoais": "Eficiência e inovação refletidos em acessórios minimalistas e look profissional acessível",
+      "ambiente_trabalho": "Tech startup em Operations influencia business casual moderno",
+      "redes_sociais": "Perfil LinkedIn ativo com fotos profissionais em eventos tech"
+    },
+    "metadados": {
+      "resolucao": "1024x1024",
+      "formato": "webp",
+      "qualidade": "ultra_high",
+      "parametros_geracao": {
+        "prompt_negativo": "blurry, low quality, distorted, cartoonish",
+        "steps": 30,
+        "cfg_scale": 8.5
+      },
+      "contexto_profissional": {
+        "cargo": "Gerente de Produto Digital",
+        "industria": "tecnologia",
+        "senioridade": "mid-level"
+      }
+    }
+  },
+  "generated_at": "2025-12-03T13:37:22.724Z"
+}

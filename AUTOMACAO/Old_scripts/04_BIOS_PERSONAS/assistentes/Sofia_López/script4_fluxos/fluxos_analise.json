@@ -1,0 +1,102 @@
+{
+  "persona": {
+    "id": 2,
+    "nome": "Sofia López",
+    "categoria": "assistentes",
+    "especialidade": null
+  },
+  "processos_aplicaveis": [],
+  "colaboracoes_envolvidas": [],
+  "automacao_participacao": [],
+  "recomendacoes_especificas": [
+    {
+      "categoria": "resolucao_gargalo",
+      "titulo": "Resolver gargalo: hr",
+      "descricao": "Apenas 1 pessoa com especialidade em hr",
+      "impacto": "crítico",
+      "prazo": "imediato",
+      "acao_recomendada": "Priorizar contratação ou desenvolvimento de backup para esta especialidade"
+    },
+    {
+      "categoria": "resolucao_gargalo",
+      "titulo": "Resolver gargalo: midias_sociais",
+      "descricao": "Apenas 1 pessoa com especialidade em midias_sociais",
+      "impacto": "crítico",
+      "prazo": "imediato",
+      "acao_recomendada": "Priorizar contratação ou desenvolvimento de backup para esta especialidade"
+    },
+    {
+      "categoria": "resolucao_gargalo",
+      "titulo": "Resolver gargalo: marketing",
+      "descricao": "Apenas 1 pessoa com especialidade em marketing",
+      "impacto": "crítico",
+      "prazo": "imediato",
+      "acao_recomendada": "Priorizar contratação ou desenvolvimento de backup para esta especialidade"
+    },
+    {
+      "categoria": "resolucao_gargalo",
+      "titulo": "Resolver gargalo: youtube",
+      "descricao": "Apenas 1 pessoa com especialidade em youtube",
+      "impacto": "crítico",
+      "prazo": "imediato",
+      "acao_recomendada": "Priorizar contratação ou desenvolvimento de backup para esta especialidade"
+    },
+    {
+      "categoria": "automacao_prioritaria",
+      "titulo": "Automatizar Lead Nurturing",
+      "descricao": "Processo com 80% de potencial de automação",
+      "impacto": "alto",
+      "prazo": "2-3 meses",
+      "roi_estimado": {
+        "economia_mensal": 3200,
+        "custo_implementacao": 10000,
+        "payback_meses": 4,
+        "roi_anual_percent": 284
+      },
+      "recursos_necessarios": [
+        "Marketing automation",
+        "CRM API",
+        "Email platform",
+        "Analytics API"
+      ]
+    },
+    {
+      "categoria": "automacao_prioritaria",
+      "titulo": "Automatizar Recrutamento e Seleção",
+      "descricao": "Processo com 70% de potencial de automação",
+      "impacto": "alto",
+      "prazo": "2-3 meses",
+      "roi_estimado": {
+        "economia_mensal": 5600,
+        "custo_implementacao": 10000,
+        "payback_meses": 2,
+        "roi_anual_percent": 572
+      },
+      "recursos_necessarios": [
+        "ATS API",
+        "Email automation",
+        "Calendar API",
+        "Assessment tools"
+      ]
+    },
+    {
+      "categoria": "automacao_prioritaria",
+      "titulo": "Automatizar Gestão de Conteúdo Multiplataforma",
+      "descricao": "Processo com 70% de potencial de automação",
+      "impacto": "alto",
+      "prazo": "2-3 meses",
+      "roi_estimado": {
+        "economia_mensal": 2800,
+        "custo_implementacao": 10000,
+        "payback_meses": 4,
+        "roi_anual_percent": 236
+      },
+      "recursos_necessarios": [
+        "Workflow automation",
+        "API integration",
+        "Notification system"
+      ]
+    }
+  ],
+  "data_processamento": "2025-11-14T00:03:59.156Z"
+}

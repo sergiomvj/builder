@@ -1,0 +1,53 @@
+{
+  "persona_id": "b38e3014-6130-4ca7-a2f9-73eb61ad9e6e",
+  "full_name": "Rohan Mehta",
+  "role": "Gerente de Vendas",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "Domínio da plataforma ARVA e agentes virtuais autônomos",
+    "Gestão avançada de CRM (Salesforce e HubSpot)",
+    "Análise de funil de vendas e forecasting preditivo",
+    "Apresentação de demonstrações técnicas de produto",
+    "Conhecimento de mercado de IA, automação e ecossistemas cognitivos"
+  ],
+  "competencias_comportamentais": [
+    "Liderança inspiradora de equipes de vendas",
+    "Negociação estratégica e fechamento de deals complexos",
+    "Comunicação persuasiva e adaptável a stakeholders",
+    "Orientação intensa para resultados e metas",
+    "Resiliência em ambientes de alta pressão e rejeição"
+  ],
+  "ferramentas": [
+    "Salesforce",
+    "HubSpot",
+    "LinkedIn Sales Navigator",
+    "Zoom e Google Workspace"
+  ],
+  "tarefas_diarias": [
+    "Revisar e atualizar pipeline de vendas no CRM",
+    "Realizar follow-ups e calls com prospects qualificados",
+    "Coordenar stand-up meetings com a equipe de vendas",
+    "Monitorar métricas diárias de performance e leads"
+  ],
+  "tarefas_semanais": [
+    "Conduzir reuniões de revisão de pipeline e coaching",
+    "Analisar relatórios semanais de vendas e ajustes",
+    "Prospectar e qualificar novas oportunidades estratégicas"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatório mensal de performance e forecasting",
+    "Planejar estratégias de vendas para o próximo mês",
+    "Realizar reuniões de alinhamento com marketing e produto"
+  ],
+  "kpis": [
+    "KPI 1: Quota de Receita - 100% ($1.2M/trimestre)",
+    "KPI 2: Taxa de Conversão de Leads - 28%",
+    "KPI 3: Crescimento do Pipeline - 35% MoM"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprofundar expertise em IA autônoma e integrações ARVA",
+    "Melhorar técnicas de liderança para escalar equipe",
+    "Expandir rede de contatos C-level no setor tech dos EUA"
+  ],
+  "generated_at": "2025-12-08T22:22:16.954Z"
+}

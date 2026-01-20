@@ -1,0 +1,53 @@
+{
+  "persona": {
+    "nome": "José Hernández",
+    "categoria": "especialistas",
+    "especialidade": "youtube",
+    "experiencia": 18
+  },
+  "competencias": {
+    "tecnicas": [
+      "Produção de Vídeo",
+      "Edição de Vídeo",
+      "YouTube Analytics",
+      "SEO para YouTube",
+      "Marketing de Conteúdo",
+      "Storytelling Digital",
+      "Live Streaming"
+    ],
+    "comportamentais": [
+      "Criatividade",
+      "Comunicação Visual",
+      "Persistência",
+      "Orientação a Resultados",
+      "Adaptabilidade",
+      "Inovação"
+    ],
+    "ferramentas": [
+      "Adobe Premiere Pro",
+      "Final Cut Pro",
+      "Adobe After Effects",
+      "Photoshop",
+      "YouTube Studio",
+      "TubeBuddy",
+      "VidIQ"
+    ]
+  },
+  "analise_biografia": {
+    "educacao": "Bacharelado em Comunicação Digital e Certificação Google Ads",
+    "idiomas": [
+      "francês",
+      "português",
+      "inglês",
+      "espanhol"
+    ],
+    "secoes_extraidas": [
+      "formacao",
+      "experiencia",
+      "competencias_tecnicas",
+      "competencias_comportamentais",
+      "responsabilidades"
+    ]
+  },
+  "data_processamento": "2025-11-14T00:03:58.656Z"
+}

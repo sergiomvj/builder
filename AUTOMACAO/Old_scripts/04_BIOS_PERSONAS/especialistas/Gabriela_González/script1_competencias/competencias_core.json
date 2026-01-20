@@ -1,0 +1,52 @@
+{
+  "persona": {
+    "nome": "Gabriela González",
+    "categoria": "especialistas",
+    "especialidade": "midias_sociais",
+    "experiencia": 15
+  },
+  "competencias": {
+    "tecnicas": [
+      "Social Media Marketing",
+      "Community Management",
+      "Gestão de Campanhas",
+      "Analytics e Métricas",
+      "Influencer Marketing",
+      "Paid Social Advertising"
+    ],
+    "comportamentais": [
+      "Comunicação Digital",
+      "Criatividade",
+      "Agilidade",
+      "Orientação a Tendências",
+      "Trabalho em Equipe",
+      "Resolução de Problemas"
+    ],
+    "ferramentas": [
+      "Facebook Business Manager",
+      "Instagram Creator Studio",
+      "Hootsuite",
+      "Buffer",
+      "Canva",
+      "Adobe Creative Suite",
+      "Google Analytics"
+    ]
+  },
+  "analise_biografia": {
+    "educacao": "Marketing Digital e Social Media, Certificação Facebook Blueprint",
+    "idiomas": [
+      "inglês",
+      "espanhol",
+      "francês",
+      "português"
+    ],
+    "secoes_extraidas": [
+      "formacao",
+      "experiencia",
+      "competencias_tecnicas",
+      "competencias_comportamentais",
+      "responsabilidades"
+    ]
+  },
+  "data_processamento": "2025-11-14T00:03:58.651Z"
+}

@@ -1,0 +1,318 @@
+{
+  "persona": {
+    "id": 5,
+    "nome": "Isabella González",
+    "categoria": "especialistas",
+    "especialidade": "marketing"
+  },
+  "processos_aplicaveis": [
+    {
+      "id": "processo_criação_de_campanha_digital",
+      "nome": "Criação de Campanha Digital",
+      "categoria": "marketing",
+      "etapas": [
+        "Briefing",
+        "Pesquisa",
+        "Criação",
+        "Aprovação",
+        "Veiculação",
+        "Monitoramento"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 5,
+          "nome": "Isabella González",
+          "categoria": "especialistas",
+          "especialidade": "marketing",
+          "nivel_competencia": "expert"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "Figma",
+        "Canva",
+        "Google Ads",
+        "Facebook Ads",
+        "Analytics"
+      ],
+      "ferramentas_disponiveis": [
+        "Google Ads",
+        "Facebook Ads",
+        "HubSpot",
+        "Mailchimp",
+        "Google Analytics",
+        "SEMrush",
+        "Hotjar"
+      ],
+      "cobertura_ferramentas": 60,
+      "automacao_potencial": 40,
+      "kpis": [
+        "CTR",
+        "CPC",
+        "ROAS",
+        "Conversions"
+      ],
+      "viabilidade": "média",
+      "custos_estimados": {
+        "setup": 8000,
+        "mensal": 4000
+      },
+      "tempo_implementacao": "3-6 semanas"
+    },
+    {
+      "id": "processo_gestão_de_conteúdo",
+      "nome": "Gestão de Conteúdo",
+      "categoria": "marketing",
+      "etapas": [
+        "Planejamento",
+        "Criação",
+        "Revisão",
+        "Agendamento",
+        "Publicação",
+        "Engajamento"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 5,
+          "nome": "Isabella González",
+          "categoria": "especialistas",
+          "especialidade": "marketing",
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 7,
+          "nome": "Gabriela Rodríguez",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 8,
+          "nome": "Gabriela Silva",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 9,
+          "nome": "Roberto Hernández",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "Hootsuite",
+        "Buffer",
+        "Canva",
+        "Google Drive",
+        "Analytics"
+      ],
+      "ferramentas_disponiveis": [
+        "Google Ads",
+        "Facebook Ads",
+        "HubSpot",
+        "Mailchimp",
+        "Google Analytics",
+        "SEMrush",
+        "Hotjar",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Power BI",
+        "Tableau"
+      ],
+      "cobertura_ferramentas": 20,
+      "automacao_potencial": 65,
+      "kpis": [
+        "Engagement rate",
+        "Reach",
+        "Brand awareness",
+        "Lead generation"
+      ],
+      "viabilidade": "média",
+      "custos_estimados": {
+        "setup": 4000,
+        "mensal": 2500
+      },
+      "tempo_implementacao": "2-3 meses"
+    },
+    {
+      "id": "processo_lead_nurturing",
+      "nome": "Lead Nurturing",
+      "categoria": "marketing",
+      "etapas": [
+        "Captura",
+        "Segmentação",
+        "Scoring",
+        "Campanhas",
+        "Conversão",
+        "Análise"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 4,
+          "nome": "Gabriela González",
+          "categoria": "especialistas",
+          "especialidade": "midias_sociais",
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 5,
+          "nome": "Isabella González",
+          "categoria": "especialistas",
+          "especialidade": "marketing",
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 7,
+          "nome": "Gabriela Rodríguez",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 8,
+          "nome": "Gabriela Silva",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 9,
+          "nome": "Roberto Hernández",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "HubSpot",
+        "Mailchimp",
+        "CRM",
+        "Analytics"
+      ],
+      "ferramentas_disponiveis": [
+        "Facebook Business Manager",
+        "Instagram Creator Studio",
+        "Hootsuite",
+        "Buffer",
+        "Canva",
+        "Adobe Creative Suite",
+        "Google Analytics",
+        "Google Ads",
+        "Facebook Ads",
+        "HubSpot",
+        "Mailchimp",
+        "SEMrush",
+        "Hotjar",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Power BI",
+        "Tableau"
+      ],
+      "cobertura_ferramentas": 75,
+      "automacao_potencial": 80,
+      "kpis": [
+        "Lead quality",
+        "Conversion rate",
+        "Cost per lead",
+        "ROI"
+      ],
+      "viabilidade": "alta",
+      "custos_estimados": {
+        "setup": 5000,
+        "mensal": 2000
+      },
+      "tempo_implementacao": "2-3 meses"
+    }
+  ],
+  "colaboracoes_envolvidas": [
+    {
+      "especialidades": [
+        "hr",
+        "marketing"
+      ],
+      "personas_envolvidas": {
+        "hr": [
+          {
+            "id": 3,
+            "nome": "Carlos González"
+          }
+        ],
+        "marketing": [
+          {
+            "id": 5,
+            "nome": "Isabella González"
+          }
+        ]
+      },
+      "processos_compartilhados": [
+        "Employer branding",
+        "Internal communications",
+        "Event management"
+      ],
+      "sinergias_identificadas": [
+        "Brand consistency",
+        "Employee advocacy",
+        "Content creation"
+      ],
+      "pontos_friccao": [
+        "Compliance requirements",
+        "Message approval",
+        "Target audiences"
+      ],
+      "ferramentas_comuns": [],
+      "potencial_colaboracao": "baixo"
+    }
+  ],
+  "automacao_participacao": [
+    {
+      "processo": "Gestão de Conteúdo",
+      "especialidade": "marketing",
+      "potencial": 65,
+      "ferramentas_necessarias": [
+        "CMS API",
+        "Social media API",
+        "Scheduling tools",
+        "Analytics integration"
+      ],
+      "roi_estimado": {
+        "economia_mensal": 1560,
+        "custo_implementacao": 10000,
+        "payback_meses": 7,
+        "roi_anual_percent": 87
+      }
+    },
+    {
+      "processo": "Lead Nurturing",
+      "especialidade": "marketing",
+      "potencial": 80,
+      "ferramentas_necessarias": [
+        "Marketing automation",
+        "CRM API",
+        "Email platform",
+        "Analytics API"
+      ],
+      "roi_estimado": {
+        "economia_mensal": 3200,
+        "custo_implementacao": 10000,
+        "payback_meses": 4,
+        "roi_anual_percent": 284
+      }
+    }
+  ],
+  "recomendacoes_especificas": [
+    {
+      "categoria": "resolucao_gargalo",
+      "titulo": "Resolver gargalo: marketing",
+      "descricao": "Apenas 1 pessoa com especialidade em marketing",
+      "impacto": "crítico",
+      "prazo": "imediato",
+      "acao_recomendada": "Priorizar contratação ou desenvolvimento de backup para esta especialidade"
+    }
+  ],
+  "data_processamento": "2025-11-14T00:03:59.163Z"
+}

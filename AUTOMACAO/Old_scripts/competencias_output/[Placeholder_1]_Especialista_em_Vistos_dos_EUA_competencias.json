@@ -1,0 +1,53 @@
+{
+  "persona_id": "ca102535-8ce6-4138-8f3e-79d916ff2e4f",
+  "full_name": "[Placeholder 1] Especialista em Vistos dos EUA",
+  "role": "Especialista em Vistos dos EUA",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Conhecimento avançado de leis e regulamentos de imigração dos EUA",
+    "Análise de elegibilidade para vistos não-imigrantes e imigrantes",
+    "Preparação e revisão de formulários DS-160, I-129 e petições USCIS",
+    "Monitoramento de status de vistos via CEAC e USCIS Case Status",
+    "Realização de entrevistas simuladas e preparação de documentação consular"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação clara e empática com clientes internacionais",
+    "Atenção meticulosa a detalhes em processos burocráticos",
+    "Resolução ágil de problemas complexos de imigração",
+    "Orientação ao cliente com foco em satisfação e retenção",
+    "Gestão eficiente de tempo e prazos sob pressão"
+  ],
+  "ferramentas": [
+    "CEAC (Consular Electronic Application Center)",
+    "USCIS Online Case Status",
+    "Microsoft Office 365 (Excel para tracking de casos)",
+    "Zoom e Microsoft Teams para consultas virtuais"
+  ],
+  "tarefas_diarias": [
+    "Responder e-mails e consultas de clientes sobre vistos",
+    "Revisar e validar documentação enviada pelos clientes",
+    "Atualizar status de aplicações no sistema interno",
+    "Preparar respostas personalizadas para dúvidas comuns"
+  ],
+  "tarefas_semanais": [
+    "Realizar reuniões de consulta com clientes",
+    "Submeter petições e formulários às autoridades dos EUA",
+    "Analisar e reportar casos em andamento à equipe"
+  ],
+  "tarefas_mensais": [
+    "Gerar relatórios de performance de vistos aprovados",
+    "Atualizar-se com novas regulamentações de imigração",
+    "Avaliar e otimizar processos internos de atendimento"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de aprovação de vistos - 90%",
+    "KPI 2: Tempo médio de processamento de casos - 30 dias",
+    "KPI 3: Índice de satisfação do cliente (NPS) - 95%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação avançada em imigração dos EUA (ex: AILA)",
+    "Aprimorar fluência em inglês jurídico e terminologia consular",
+    "Expandir rede de contatos com oficiais consulares e advogados"
+  ],
+  "generated_at": "2025-12-02T17:58:07.324Z"
+}

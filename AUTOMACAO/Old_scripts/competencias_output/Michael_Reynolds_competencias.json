@@ -1,0 +1,54 @@
+{
+  "persona_id": "c02e746b-eae6-4b3a-b405-2711652e6a69",
+  "full_name": "Michael Reynolds",
+  "role": "Analista de Suporte Técnico",
+  "empresa_id": "a2845f62-59e2-48b2-8f89-8bfc6c33193f",
+  "competencias_tecnicas": [
+    "Conhecimento em sistemas operacionais Windows e Linux",
+    "Experiência em redes de computadores",
+    "Conhecimento em linguagens de programação",
+    "Habilidade em diagnóstico e resolução de problemas técnicos",
+    "Capacidade de documentar procedimentos técnicos"
+  ],
+  "competencias_comportamentais": [
+    "Boa comunicação interpessoal",
+    "Habilidade em trabalho em equipe",
+    "Proatividade na resolução de problemas",
+    "Resiliência para lidar com situações de pressão",
+    "Capacidade de aprender constantemente"
+  ],
+  "ferramentas": [
+    "Zendesk",
+    "TeamViewer",
+    "JIRA",
+    "Wireshark"
+  ],
+  "tarefas_diarias": [
+    "Atendimento a chamados de suporte técnico",
+    "Diagnóstico e resolução de problemas técnicos",
+    "Atualização de documentação técnica",
+    "Interagir com clientes para entender suas necessidades",
+    "Colaborar com a equipe de desenvolvimento para melhorias no produto"
+  ],
+  "tarefas_semanais": [
+    "Participar de reuniões de equipe para compartilhar conhecimento",
+    "Realizar treinamentos internos para atualização de competências",
+    "Analisar métricas de desempenho do suporte técnico"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatórios de desempenho do suporte técnico",
+    "Propor melhorias nos processos de suporte técnico",
+    "Participar de eventos e feiras tecnológicas para networking"
+  ],
+  "kpis": [
+    "Satisfação do cliente - 90%",
+    "Tempo médio de resolução de chamados - 2 horas",
+    "Índice de resolução no primeiro contato - 80%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar conhecimentos em IA e agentes virtuais autônomos",
+    "Obter certificações em suporte técnico",
+    "Desenvolver habilidades de liderança para possível promoção"
+  ],
+  "generated_at": "2025-12-04T21:41:26.713Z"
+}

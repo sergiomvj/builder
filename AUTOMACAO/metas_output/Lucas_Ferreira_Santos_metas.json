@@ -1,0 +1,39 @@
+{
+  "persona_id": "e0f50fad-4bba-434f-9b52-5373cc69e3d8",
+  "full_name": "Lucas Ferreira Santos",
+  "role": "Desenvolvedor Frontend",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades em React Native",
+      "descricao": "Participar de um curso avançado de React Native e concluir pelo menos 80% das atividades práticas",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 80,
+      "unidade_medida": "%",
+      "data_prazo": "2022-12-01",
+      "prioridade": 1,
+      "vinculada_kpi": null
+    },
+    {
+      "titulo": "Participar de cursos de UX/UI design",
+      "descricao": "Realizar pelo menos dois cursos online de UX/UI design com certificação reconhecida",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "cursos",
+      "data_prazo": "2022-09-01",
+      "prioridade": 2,
+      "vinculada_kpi": null
+    },
+    {
+      "titulo": "Melhorar a comunicação interpessoal",
+      "descricao": "Participar de um workshop de comunicação eficaz e aplicar pelo menos duas técnicas aprendidas em reuniões de equipe",
+      "categoria": "performance",
+      "valor_alvo": 2,
+      "unidade_medida": "técnicas",
+      "data_prazo": "2022-10-01",
+      "prioridade": 3,
+      "vinculada_kpi": null
+    }
+  ],
+  "generated_at": "2025-12-08T14:43:06.020Z"
+}

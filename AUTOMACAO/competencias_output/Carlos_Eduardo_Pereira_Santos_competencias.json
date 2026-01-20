@@ -1,0 +1,53 @@
+{
+  "persona_id": "e9444820-938e-438f-b05f-3d4fca75ed17",
+  "full_name": "Carlos Eduardo Pereira Santos",
+  "role": "CFO",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em finanças",
+    "Análise de dados financeiros",
+    "Gestão de riscos",
+    "Planejamento financeiro",
+    "Conhecimento em contabilidade"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Tomada de decisão",
+    "Resiliência",
+    "Trabalho em equipe"
+  ],
+  "ferramentas": [
+    "Excel avançado",
+    "Sistemas ERP",
+    "Ferramentas de análise financeira",
+    "Power BI"
+  ],
+  "tarefas_diarias": [
+    "Análise de fluxo de caixa",
+    "Revisão de relatórios financeiros",
+    "Participação em reuniões estratégicas",
+    "Gestão da equipe financeira"
+  ],
+  "tarefas_semanais": [
+    "Elaboração de relatórios gerenciais",
+    "Reuniões com investidores",
+    "Acompanhamento de indicadores financeiros"
+  ],
+  "tarefas_mensais": [
+    "Planejamento financeiro de longo prazo",
+    "Elaboração de orçamento anual",
+    "Análise de viabilidade de investimentos"
+  ],
+  "kpis": [
+    "Redução de despesas em 10% - 6 meses",
+    "Aumento do ROI em 15% - 1 ano",
+    "Melhoria no índice de liquidez - 6 meses"
+  ],
+  "objetivos_desenvolvimento": [
+    "Desenvolver habilidades de negociação",
+    "Participar de cursos de liderança",
+    "Aprimorar conhecimentos em investimentos financeiros"
+  ],
+  "generated_at": "2025-12-08T14:43:15.166Z"
+}

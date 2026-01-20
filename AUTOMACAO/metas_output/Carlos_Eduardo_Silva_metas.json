@@ -1,0 +1,36 @@
+{
+  "persona_id": "21467121-222a-4841-a1a8-3ac3c590ae4f",
+  "full_name": "Carlos Eduardo Silva",
+  "role": "Desenvolvedor Backend",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar conhecimento em segurança da informação",
+      "descricao": "Realizar um curso online de segurança da informação e obter certificação relacionada ao tema",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "Certificação obtida",
+      "unidade_medida": "Certificado",
+      "data_prazo": "2022-12-01",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Participar de um projeto de integração de sistemas",
+      "descricao": "Ser alocado em um projeto de integração de sistemas da empresa LifeWayUSA e contribuir ativamente para sua implementação",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "Participação efetiva no projeto",
+      "unidade_medida": "Participação",
+      "data_prazo": "2022-10-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Desenvolver habilidades em arquitetura de software",
+      "descricao": "Realizar cursos e workshops sobre arquitetura de software e aplicar os conceitos aprendidos em projetos internos da empresa",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "Aplicação prática dos conceitos",
+      "unidade_medida": "Projetos internos",
+      "data_prazo": "2023-03-01",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:40:31.974Z"
+}

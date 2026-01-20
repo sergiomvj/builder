@@ -1,0 +1,58 @@
+[
+  {
+    "cargo": "Veterinário",
+    "topicos": [
+      "Nutrição e alimentação de ruminantes",
+      "Manejo sanitário de bovinos",
+      "Protocolos de vacinação em equinos",
+      "Diagnóstico de doenças aviárias",
+      "Legislação veterinária brasileira"
+    ],
+    "areas": [
+      "Medicina veterinária preventiva",
+      "Nutrição animal avançada",
+      "Regulamentação MAPA"
+    ]
+  },
+  {
+    "cargo": "Advogado",
+    "topicos": [
+      "Legislação de medicamentos veterinários",
+      "Regulamentação ANVISA para produtos veterinários",
+      "Contratos de distribuição B2B",
+      "Compliance em vendas de medicamentos controlados",
+      "Propriedade intelectual em fórmulas veterinárias"
+    ],
+    "areas": [
+      "Direito sanitário",
+      "Direito comercial veterinário",
+      "Regulamentação farmacêutica"
+    ]
+  },
+  {
+    "department": "Vendas",
+    "topicos": [
+      "Fluxo de vendas B2B para distribuidores veterinários",
+      "Negociação com grandes contas do agronegócio",
+      "Técnicas de prospecção em clínicas veterinárias",
+      "Ciclo de vendas consultivas para produtos técnicos",
+      "Gestão de relacionamento com cooperativas agrícolas"
+    ],
+    "areas": [
+      "Vendas B2B especializadas",
+      "Relacionamento institucional",
+      "Vendas consultivas técnicas"
+    ]
+  },
+  {
+    "personaId": "UUID_ESPECIFICA",
+    "topicos": [
+      "Tópico específico para esta persona",
+      "Outro tópico exclusivo"
+    ],
+    "areas": [
+      "Área de conhecimento exclusiva"
+    ],
+    "categoria": "especializado"
+  }
+]

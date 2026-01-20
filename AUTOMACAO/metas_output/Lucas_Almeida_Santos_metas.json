@@ -1,0 +1,36 @@
+{
+  "persona_id": "2363c5ea-9ca1-4f75-b0cc-bf321129160f",
+  "full_name": "Lucas Almeida Santos",
+  "role": "Gerente de Operações",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades de gestão",
+      "descricao": "Realizar um curso de Gestão de Projetos com certificação reconhecida internacionalmente",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "100",
+      "unidade_medida": "horas",
+      "data_prazo": "2026-06-01",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Ampliar networking na área de imigração",
+      "descricao": "Participar de pelo menos 3 eventos/congressos relacionados à imigração e estabelecer contatos com 10 profissionais influentes na área",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 10,
+      "unidade_medida": "contatos",
+      "data_prazo": "2026-06-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Participar de cursos de atualização em tecnologia",
+      "descricao": "Realizar um curso de Programação em Python e um curso de Análise de Dados com certificação",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "horas",
+      "data_prazo": "2026-06-01",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:40:52.872Z"
+}

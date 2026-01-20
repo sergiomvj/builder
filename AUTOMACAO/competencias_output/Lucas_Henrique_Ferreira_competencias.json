@@ -1,0 +1,53 @@
+{
+  "persona_id": "b04efdfa-c186-49eb-ab0c-62db9cde9b80",
+  "full_name": "Lucas Henrique Ferreira",
+  "role": "Analista de Dados",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Análise de dados",
+    "Estatística",
+    "Machine Learning",
+    "Python",
+    "SQL"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação eficaz",
+    "Trabalho em equipe",
+    "Resolução de problemas",
+    "Adaptabilidade",
+    "Pensamento analítico"
+  ],
+  "ferramentas": [
+    "Tableau",
+    "Power BI",
+    "Excel",
+    "Google Analytics"
+  ],
+  "tarefas_diarias": [
+    "Coleta e análise de dados",
+    "Elaboração de relatórios",
+    "Identificação de tendências",
+    "Manutenção de bancos de dados"
+  ],
+  "tarefas_semanais": [
+    "Apresentação de resultados",
+    "Atualização de dashboards",
+    "Revisão de processos"
+  ],
+  "tarefas_mensais": [
+    "Análise de desempenho",
+    "Identificação de oportunidades de melhoria",
+    "Participação em reuniões estratégicas"
+  ],
+  "kpis": [
+    "Acuracidade dos dados - 95%",
+    "Tempo de resposta - 24 horas",
+    "Taxa de conversão - 10%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em Machine Learning",
+    "Participar de cursos de atualização em análise de dados",
+    "Desenvolver habilidades de liderança"
+  ],
+  "generated_at": "2025-12-08T14:37:44.449Z"
+}

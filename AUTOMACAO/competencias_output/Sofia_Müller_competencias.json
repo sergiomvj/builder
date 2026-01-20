@@ -1,0 +1,54 @@
+{
+  "persona_id": "8aa69720-0770-460e-9889-16f033b258ae",
+  "full_name": "Sofia Müller",
+  "role": "UX/UI Designer",
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "competencias_tecnicas": [
+    "Conhecimento em UX design",
+    "Conhecimento em UI design",
+    "Prototipagem de interfaces",
+    "Testes de usabilidade",
+    "Familiaridade com ferramentas de design"
+  ],
+  "competencias_comportamentais": [
+    "Colaboração em equipe",
+    "Comunicação eficaz",
+    "Capacidade de resolver problemas",
+    "Adaptabilidade",
+    "Criatividade"
+  ],
+  "ferramentas": [
+    "Figma",
+    "Sketch",
+    "Adobe XD",
+    "InVision"
+  ],
+  "tarefas_diarias": [
+    "Criar wireframes",
+    "Desenvolver protótipos interativos",
+    "Realizar testes de usabilidade",
+    "Iterar designs conforme feedback",
+    "Colaborar com equipe de desenvolvimento"
+  ],
+  "tarefas_semanais": [
+    "Conduzir reuniões de brainstorming",
+    "Analisar métricas de usabilidade",
+    "Participar de workshops de design thinking"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatórios de performance de design",
+    "Participar de treinamentos de atualização em design",
+    "Realizar pesquisas de mercado"
+  ],
+  "kpis": [
+    "Satisfação do usuário - 90%",
+    "Taxa de conversão - 15%",
+    "Tempo médio de interação - 30 segundos"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em animação de interfaces",
+    "Participar de workshops de design responsivo",
+    "Explorar novas técnicas de microinterações"
+  ],
+  "generated_at": "2025-12-05T20:12:53.023Z"
+}

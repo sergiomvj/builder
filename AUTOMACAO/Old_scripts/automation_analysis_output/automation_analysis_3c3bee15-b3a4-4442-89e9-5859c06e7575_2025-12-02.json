@@ -1,0 +1,1846 @@
+{
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "empresa_nome": "LifewayUSA",
+  "analyzed_at": "2025-12-02T18:27:25.236Z",
+  "total_personas": 26,
+  "total_tasks": 262,
+  "tasks_analyzed": 262,
+  "tasks_automatable": 91,
+  "tasks_high_score": 57,
+  "analises": [
+    {
+      "persona": "[Placeholder 1] Especialista em Vistos dos EUA",
+      "tarefa": "Responder e-mails e consultas de clientes sobre vistos",
+      "score": 45,
+      "type": "webhook",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 1] Especialista em Vistos dos EUA",
+      "tarefa": "Revisar e validar documentação enviada pelos clientes",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 1] Especialista em Vistos dos EUA",
+      "tarefa": "Atualizar status de aplicações no sistema interno",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 1] Especialista em Vistos dos EUA",
+      "tarefa": "Preparar respostas personalizadas para dúvidas comuns",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 1] Especialista em Vistos dos EUA",
+      "tarefa": "Realizar reuniões de consulta com clientes",
+      "score": 15,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 1] Especialista em Vistos dos EUA",
+      "tarefa": "Submeter petições e formulários às autoridades dos EUA",
+      "score": 45,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 1] Especialista em Vistos dos EUA",
+      "tarefa": "Analisar e reportar casos em andamento à equipe",
+      "score": 55,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 1] Especialista em Vistos dos EUA",
+      "tarefa": "Gerar relatórios de performance de vistos aprovados",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 1] Especialista em Vistos dos EUA",
+      "tarefa": "Atualizar-se com novas regulamentações de imigração",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 1] Especialista em Vistos dos EUA",
+      "tarefa": "Avaliar e otimizar processos internos de atendimento",
+      "score": 35,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 10] Content Strategist Imigração",
+      "tarefa": "Monitorar engajamento em redes sociais",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 10] Content Strategist Imigração",
+      "tarefa": "Planejar e publicar conteúdo diário",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 10] Content Strategist Imigração",
+      "tarefa": "Analisar tráfego e métricas básicas",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 10] Content Strategist Imigração",
+      "tarefa": "Pesquisar tendências em imigração",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 10] Content Strategist Imigração",
+      "tarefa": "Criar calendário de conteúdo semanal",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 10] Content Strategist Imigração",
+      "tarefa": "Reunir com equipe para alinhamento",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 10] Content Strategist Imigração",
+      "tarefa": "Otimizar conteúdos existentes por SEO",
+      "score": 55,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 10] Content Strategist Imigração",
+      "tarefa": "Gerar relatório de performance mensal",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 10] Content Strategist Imigração",
+      "tarefa": "Planejar campanhas estratégicas",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 10] Content Strategist Imigração",
+      "tarefa": "Auditar e atualizar guia de imigração",
+      "score": 35,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 11] CMO - Chief Marketing Officer",
+      "tarefa": "Revisar performance de campanhas",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 11] CMO - Chief Marketing Officer",
+      "tarefa": "Reuniões com equipe de marketing",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 11] CMO - Chief Marketing Officer",
+      "tarefa": "Monitorar tendências de mercado",
+      "score": 55,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 11] CMO - Chief Marketing Officer",
+      "tarefa": "Aprovar conteúdos e criativos",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 11] CMO - Chief Marketing Officer",
+      "tarefa": "Analisar métricas semanais",
+      "score": 70,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 11] CMO - Chief Marketing Officer",
+      "tarefa": "Planejar conteúdo e campanhas",
+      "score": 35,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 11] CMO - Chief Marketing Officer",
+      "tarefa": "Reuniões com stakeholders",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 11] CMO - Chief Marketing Officer",
+      "tarefa": "Elaborar relatório de marketing",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 11] CMO - Chief Marketing Officer",
+      "tarefa": "Revisar e ajustar orçamento",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 11] CMO - Chief Marketing Officer",
+      "tarefa": "Definir metas para o próximo mês",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 12] Assistente de Marketing Digital",
+      "tarefa": "Monitorar e otimizar campanhas ativas",
+      "score": 65,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 12] Assistente de Marketing Digital",
+      "tarefa": "Responder interações nas redes sociais",
+      "score": 55,
+      "type": "webhook",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 12] Assistente de Marketing Digital",
+      "tarefa": "Analisar métricas de tráfego e engajamento",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 12] Assistente de Marketing Digital",
+      "tarefa": "Criar e agendar posts diários",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 12] Assistente de Marketing Digital",
+      "tarefa": "Gerar relatórios de desempenho semanal",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 12] Assistente de Marketing Digital",
+      "tarefa": "Planejar calendário de conteúdo",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 12] Assistente de Marketing Digital",
+      "tarefa": "Realizar A/B tests em anúncios",
+      "score": 55,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 12] Assistente de Marketing Digital",
+      "tarefa": "Preparar relatório consolidado de KPIs",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 12] Assistente de Marketing Digital",
+      "tarefa": "Planejar campanhas para o próximo mês",
+      "score": 25,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 12] Assistente de Marketing Digital",
+      "tarefa": "Avaliar ROI e ajustes estratégicos",
+      "score": 25,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 13] Gerente de Engenharia de Software",
+      "tarefa": "Acompanhar stand-ups da equipe",
+      "score": 15,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 13] Gerente de Engenharia de Software",
+      "tarefa": "Revisar pull requests e merges",
+      "score": 55,
+      "type": "webhook",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 13] Gerente de Engenharia de Software",
+      "tarefa": "Monitorar métricas de produção",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 13] Gerente de Engenharia de Software",
+      "tarefa": "Responder comunicações urgentes",
+      "score": 45,
+      "type": "event",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 13] Gerente de Engenharia de Software",
+      "tarefa": "Realizar reuniões 1:1 individuais",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 13] Gerente de Engenharia de Software",
+      "tarefa": "Planejar e revisar sprints",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 13] Gerente de Engenharia de Software",
+      "tarefa": "Analisar relatórios de performance",
+      "score": 50,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 13] Gerente de Engenharia de Software",
+      "tarefa": "Gerar relatórios executivos",
+      "score": 55,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 13] Gerente de Engenharia de Software",
+      "tarefa": "Realizar avaliações de equipe",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 13] Gerente de Engenharia de Software",
+      "tarefa": "Atualizar roadmap de projetos",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 14] CTO - Chief Technology Officer",
+      "tarefa": "Revisar relatórios de performance técnica",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 14] CTO - Chief Technology Officer",
+      "tarefa": "Reuniões com líderes de equipe",
+      "score": 20,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 14] CTO - Chief Technology Officer",
+      "tarefa": "Monitorar incidentes críticos",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 14] CTO - Chief Technology Officer",
+      "tarefa": "Avaliar novas tecnologias emergentes",
+      "score": 25,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 14] CTO - Chief Technology Officer",
+      "tarefa": "Reuniões de planejamento estratégico",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 14] CTO - Chief Technology Officer",
+      "tarefa": "Revisão de roadmaps de produto",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 14] CTO - Chief Technology Officer",
+      "tarefa": "Mentorias com engenheiros seniores",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 14] CTO - Chief Technology Officer",
+      "tarefa": "Análise de orçamento de TI",
+      "score": 55,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 14] CTO - Chief Technology Officer",
+      "tarefa": "Auditorias de segurança e compliance",
+      "score": 55,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 14] CTO - Chief Technology Officer",
+      "tarefa": "Relatórios executivos para o board",
+      "score": 55,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+      "tarefa": "Responder tickets de suporte em PT/EN",
+      "score": 45,
+      "type": "event",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+      "tarefa": "Realizar atendimentos via chat e telefone",
+      "score": 25,
+      "type": "webhook",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+      "tarefa": "Atualizar status e priorizar tickets",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+      "tarefa": "Consultar e atualizar base de conhecimento",
+      "score": 65,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+      "tarefa": "Gerar relatórios de desempenho de tickets",
+      "score": 95,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+      "tarefa": "Participar de reuniões de equipe",
+      "score": 10,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+      "tarefa": "Treinar em novos procedimentos de suporte",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+      "tarefa": "Analisar métricas de satisfação do cliente",
+      "score": 65,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+      "tarefa": "Revisar e otimizar processos de suporte",
+      "score": 25,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+      "tarefa": "Avaliar KPIs e propor melhorias",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 16] Diretor de Operações e Compliance",
+      "tarefa": "Monitorar indicadores operacionais",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 16] Diretor de Operações e Compliance",
+      "tarefa": "Revisar relatórios de compliance",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 16] Diretor de Operações e Compliance",
+      "tarefa": "Aprovar fluxos de processos",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 16] Diretor de Operações e Compliance",
+      "tarefa": "Reuniões com equipes operacionais",
+      "score": 15,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 16] Diretor de Operações e Compliance",
+      "tarefa": "Análise de riscos semanais",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 16] Diretor de Operações e Compliance",
+      "tarefa": "Reuniões de alinhamento com diretoria",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 16] Diretor de Operações e Compliance",
+      "tarefa": "Treinamentos rápidos de compliance",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 16] Diretor de Operações e Compliance",
+      "tarefa": "Elaboração de relatórios de auditoria",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 16] Diretor de Operações e Compliance",
+      "tarefa": "Revisão de políticas internas",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 16] Diretor de Operações e Compliance",
+      "tarefa": "Avaliação de KPIs operacionais",
+      "score": 65,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 17] Analista de Dados Júnior",
+      "tarefa": "Limpeza e validação de dados",
+      "score": 65,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 17] Analista de Dados Júnior",
+      "tarefa": "Geração de relatórios diários",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 17] Analista de Dados Júnior",
+      "tarefa": "Execução de consultas SQL",
+      "score": 95,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 17] Analista de Dados Júnior",
+      "tarefa": "Atualização de dashboards",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 17] Analista de Dados Júnior",
+      "tarefa": "Análise de tendências semanais",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 17] Analista de Dados Júnior",
+      "tarefa": "Reuniões de alinhamento com equipe",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 17] Analista de Dados Júnior",
+      "tarefa": "Preparação de relatórios semanais",
+      "score": 80,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 17] Analista de Dados Júnior",
+      "tarefa": "Revisão de KPIs mensais",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 17] Analista de Dados Júnior",
+      "tarefa": "Documentação de análises",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 17] Analista de Dados Júnior",
+      "tarefa": "Treinamento em novas ferramentas",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 18] Engenheiro de Machine Learning",
+      "tarefa": "Desenvolver e testar protótipos de modelos ML",
+      "score": 25,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 18] Engenheiro de Machine Learning",
+      "tarefa": "Analisar e limpar datasets",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 18] Engenheiro de Machine Learning",
+      "tarefa": "Debugar e otimizar código de ML",
+      "score": 25,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 18] Engenheiro de Machine Learning",
+      "tarefa": "Colaborar em reuniões de sprint diárias",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 18] Engenheiro de Machine Learning",
+      "tarefa": "Revisar pull requests de código",
+      "score": 55,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 18] Engenheiro de Machine Learning",
+      "tarefa": "Monitorar performance de modelos em produção",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 18] Engenheiro de Machine Learning",
+      "tarefa": "Documentar avanços e lições aprendidas",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 18] Engenheiro de Machine Learning",
+      "tarefa": "Gerar relatórios de KPIs de modelos",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 18] Engenheiro de Machine Learning",
+      "tarefa": "Participar de treinamentos e workshops",
+      "score": 15,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 18] Engenheiro de Machine Learning",
+      "tarefa": "Planejar roadmap de features ML",
+      "score": 20,
+      "type": "manual",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 19] Gerente de Produto Digital",
+      "tarefa": "Monitoramento de métricas de produto",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 19] Gerente de Produto Digital",
+      "tarefa": "Reuniões stand-up com a equipe",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 19] Gerente de Produto Digital",
+      "tarefa": "Priorização de backlog",
+      "score": 25,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 19] Gerente de Produto Digital",
+      "tarefa": "Comunicação com stakeholders",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 19] Gerente de Produto Digital",
+      "tarefa": "Revisão de sprint e retrospectives",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 19] Gerente de Produto Digital",
+      "tarefa": "Análise de feedback de usuários",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 19] Gerente de Produto Digital",
+      "tarefa": "Planejamento de features",
+      "score": 25,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 19] Gerente de Produto Digital",
+      "tarefa": "Relatórios de performance do produto",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 19] Gerente de Produto Digital",
+      "tarefa": "Atualização do roadmap",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 19] Gerente de Produto Digital",
+      "tarefa": "Revisão de orçamento e recursos",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 2] Desenvolvedor Full-Stack",
+      "tarefa": "Revisão e correção de bugs",
+      "score": 25,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 2] Desenvolvedor Full-Stack",
+      "tarefa": "Implementação de novas funcionalidades",
+      "score": 15,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 2] Desenvolvedor Full-Stack",
+      "tarefa": "Participação em reuniões diárias (stand-up)",
+      "score": 15,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 2] Desenvolvedor Full-Stack",
+      "tarefa": "Monitoramento de performance de aplicações",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 2] Desenvolvedor Full-Stack",
+      "tarefa": "Code review de pull requests",
+      "score": 65,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 2] Desenvolvedor Full-Stack",
+      "tarefa": "Atualização de documentação técnica",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 2] Desenvolvedor Full-Stack",
+      "tarefa": "Planejamento de tarefas do sprint",
+      "score": 45,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 2] Desenvolvedor Full-Stack",
+      "tarefa": "Avaliação de métricas de performance",
+      "score": 55,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 2] Desenvolvedor Full-Stack",
+      "tarefa": "Participação em treinamentos internos",
+      "score": 10,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 2] Desenvolvedor Full-Stack",
+      "tarefa": "Geração de relatórios de entregas",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 20] Especialista em Compliance Imigratória",
+      "tarefa": "Revisar e validar formulários I-9 de novos contratados",
+      "score": 55,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 20] Especialista em Compliance Imigratória",
+      "tarefa": "Monitorar status de casos imigratórios via USCIS",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 20] Especialista em Compliance Imigratória",
+      "tarefa": "Responder consultas internas sobre compliance",
+      "score": 45,
+      "type": "event",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 20] Especialista em Compliance Imigratória",
+      "tarefa": "Atualizar banco de dados de conformidade de funcionários",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 20] Especialista em Compliance Imigratória",
+      "tarefa": "Realizar auditorias parciais de conformidade I-9",
+      "score": 65,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 20] Especialista em Compliance Imigratória",
+      "tarefa": "Preparar relatórios semanais de status de casos",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 20] Especialista em Compliance Imigratória",
+      "tarefa": "Conduzir treinamentos rápidos para RH",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 20] Especialista em Compliance Imigratória",
+      "tarefa": "Executar auditorias completas de conformidade imigratória",
+      "score": 25,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 20] Especialista em Compliance Imigratória",
+      "tarefa": "Gerar relatórios mensais para liderança executiva",
+      "score": 70,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 20] Especialista em Compliance Imigratória",
+      "tarefa": "Atualizar políticas internas de compliance",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 21] Gerente de Customer Success",
+      "tarefa": "Monitorar health score das contas chave",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 21] Gerente de Customer Success",
+      "tarefa": "Responder e priorizar tickets de clientes",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 21] Gerente de Customer Success",
+      "tarefa": "Analisar métricas diárias de uso do produto",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 21] Gerente de Customer Success",
+      "tarefa": "Coordenar handoffs com suporte e vendas",
+      "score": 50,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 21] Gerente de Customer Success",
+      "tarefa": "Realizar one-on-ones com a equipe",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 21] Gerente de Customer Success",
+      "tarefa": "Revisar pipeline de upsell/cross-sell",
+      "score": 55,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 21] Gerente de Customer Success",
+      "tarefa": "Analisar tendências de churn semanal",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 21] Gerente de Customer Success",
+      "tarefa": "Gerar relatório de performance de CS",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 21] Gerente de Customer Success",
+      "tarefa": "Conduzir QBRs com clientes estratégicos",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 21] Gerente de Customer Success",
+      "tarefa": "Planejar treinamentos e upskilling da equipe",
+      "score": 25,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 23] Tester QA de Software",
+      "tarefa": "Executar testes manuais e automatizados",
+      "score": 55,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 23] Tester QA de Software",
+      "tarefa": "Registrar e rastrear defeitos em ferramentas de tracking",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 23] Tester QA de Software",
+      "tarefa": "Participar de reuniões diárias (stand-up)",
+      "score": 10,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 23] Tester QA de Software",
+      "tarefa": "Verificar e validar builds de software",
+      "score": 92,
+      "type": "event",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 23] Tester QA de Software",
+      "tarefa": "Atualizar relatórios de status de testes",
+      "score": 80,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 23] Tester QA de Software",
+      "tarefa": "Revisar requisitos e casos de teste",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 23] Tester QA de Software",
+      "tarefa": "Colaborar com desenvolvedores na resolução de bugs",
+      "score": 20,
+      "type": "event",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 23] Tester QA de Software",
+      "tarefa": "Gerar relatório mensal de qualidade de software",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 23] Tester QA de Software",
+      "tarefa": "Planejar próximo ciclo de testes",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 23] Tester QA de Software",
+      "tarefa": "Participar de retrospectivas de sprint",
+      "score": 10,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 24] UX/UI Designer",
+      "tarefa": "Revisar e iterar wireframes e protótipos",
+      "score": 15,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 24] UX/UI Designer",
+      "tarefa": "Participar de stand-ups e reuniões de equipe",
+      "score": 10,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 24] UX/UI Designer",
+      "tarefa": "Analisar feedback de usuários",
+      "score": 55,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 24] UX/UI Designer",
+      "tarefa": "Criar assets visuais para interfaces",
+      "score": 20,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 24] UX/UI Designer",
+      "tarefa": "Conduzir testes de usabilidade",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 24] UX/UI Designer",
+      "tarefa": "Colaborar com desenvolvedores em handoffs",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 24] UX/UI Designer",
+      "tarefa": "Atualizar sistema de design",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 24] UX/UI Designer",
+      "tarefa": "Apresentar relatórios de métricas UX/UI",
+      "score": 55,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 24] UX/UI Designer",
+      "tarefa": "Planejar roadmap de design para o próximo sprint",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 24] UX/UI Designer",
+      "tarefa": "Realizar auditorias de acessibilidade",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 25] CEO / Fundador",
+      "tarefa": "Reuniões com equipe executiva",
+      "score": 10,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 25] CEO / Fundador",
+      "tarefa": "Análise de relatórios financeiros",
+      "score": 55,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 25] CEO / Fundador",
+      "tarefa": "Respostas a e-mails prioritários",
+      "score": 25,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 25] CEO / Fundador",
+      "tarefa": "Monitoramento de KPIs",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 25] CEO / Fundador",
+      "tarefa": "Reuniões de planejamento estratégico",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 25] CEO / Fundador",
+      "tarefa": "Avaliação de desempenho da equipe",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 25] CEO / Fundador",
+      "tarefa": "Contato com investidores",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 25] CEO / Fundador",
+      "tarefa": "Revisão de orçamento",
+      "score": 35,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 25] CEO / Fundador",
+      "tarefa": "Planejamento de campanhas de marketing",
+      "score": 20,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 25] CEO / Fundador",
+      "tarefa": "Relatórios para o conselho",
+      "score": 25,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 26] Data Scientist",
+      "tarefa": "Limpeza e pré-processamento de dados",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 26] Data Scientist",
+      "tarefa": "Análise exploratória de dados (EDA)",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 26] Data Scientist",
+      "tarefa": "Desenvolvimento e teste de modelos",
+      "score": 25,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 26] Data Scientist",
+      "tarefa": "Geração de relatórios e dashboards",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 26] Data Scientist",
+      "tarefa": "Reuniões com stakeholders para alinhamento",
+      "score": 15,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 26] Data Scientist",
+      "tarefa": "Otimização de pipelines de dados",
+      "score": 65,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 26] Data Scientist",
+      "tarefa": "Validação de modelos e métricas",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 26] Data Scientist",
+      "tarefa": "Documentação de experimentos",
+      "score": 35,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 26] Data Scientist",
+      "tarefa": "Apresentação de resultados e insights",
+      "score": 35,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 26] Data Scientist",
+      "tarefa": "Treinamento de novos modelos em produção",
+      "score": 55,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 26] Data Scientist",
+      "tarefa": "Revisão de performance de KPIs",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 26] Data Scientist",
+      "tarefa": "Pesquisa de novas técnicas e ferramentas",
+      "score": 25,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 3] Gerente de Marketing Digital",
+      "tarefa": "Monitorar e otimizar campanhas ativas",
+      "score": 55,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 3] Gerente de Marketing Digital",
+      "tarefa": "Analisar métricas de performance em tempo real",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 3] Gerente de Marketing Digital",
+      "tarefa": "Coordenar com equipe de conteúdo",
+      "score": 20,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 3] Gerente de Marketing Digital",
+      "tarefa": "Responder consultas de stakeholders",
+      "score": 25,
+      "type": "event",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 3] Gerente de Marketing Digital",
+      "tarefa": "Reuniões de alinhamento de equipe",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 3] Gerente de Marketing Digital",
+      "tarefa": "Planejamento e aprovação de conteúdo",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 3] Gerente de Marketing Digital",
+      "tarefa": "Geração de relatórios semanais de KPIs",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 3] Gerente de Marketing Digital",
+      "tarefa": "Análise de ROI e ajustes estratégicos",
+      "score": 50,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 3] Gerente de Marketing Digital",
+      "tarefa": "Planejamento de orçamento para o próximo mês",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 3] Gerente de Marketing Digital",
+      "tarefa": "Avaliação de performance de campanhas",
+      "score": 55,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 4] Prompt Engineer para IA Conversacional",
+      "tarefa": "Criar e testar prompts para IA conversacional",
+      "score": 35,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 4] Prompt Engineer para IA Conversacional",
+      "tarefa": "Avaliar e refinar respostas geradas pela IA",
+      "score": 25,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 4] Prompt Engineer para IA Conversacional",
+      "tarefa": "Colaborar com equipes de produto e desenvolvimento",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 4] Prompt Engineer para IA Conversacional",
+      "tarefa": "Documentar e versionar bibliotecas de prompts",
+      "score": 55,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 4] Prompt Engineer para IA Conversacional",
+      "tarefa": "Analisar métricas de performance de prompts",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 4] Prompt Engineer para IA Conversacional",
+      "tarefa": "Otimizações iterativas em fluxos conversacionais",
+      "score": 35,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 4] Prompt Engineer para IA Conversacional",
+      "tarefa": "Reuniões de revisão com stakeholders",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 4] Prompt Engineer para IA Conversacional",
+      "tarefa": "Gerar relatórios de impacto e melhorias",
+      "score": 65,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 4] Prompt Engineer para IA Conversacional",
+      "tarefa": "Pesquisar novas técnicas de prompting",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 4] Prompt Engineer para IA Conversacional",
+      "tarefa": "Treinar equipe em melhores práticas de IA",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 5] Gerente de Conteúdo Imigratório",
+      "tarefa": "Revisar e aprovar conteúdos produzidos pela equipe",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 5] Gerente de Conteúdo Imigratório",
+      "tarefa": "Monitorar métricas de engajamento em tempo real",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 5] Gerente de Conteúdo Imigratório",
+      "tarefa": "Responder consultas da equipe e stakeholders",
+      "score": 25,
+      "type": "event",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 5] Gerente de Conteúdo Imigratório",
+      "tarefa": "Atualizar calendário editorial com prioridades",
+      "score": 65,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 5] Gerente de Conteúdo Imigratório",
+      "tarefa": "Realizar reuniões de alinhamento com a equipe",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 5] Gerente de Conteúdo Imigratório",
+      "tarefa": "Analisar relatórios semanais de performance",
+      "score": 55,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 5] Gerente de Conteúdo Imigratório",
+      "tarefa": "Planejar e distribuir tarefas de conteúdo semanal",
+      "score": 50,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 5] Gerente de Conteúdo Imigratório",
+      "tarefa": "Gerar relatório mensal de KPIs e insights",
+      "score": 65,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 5] Gerente de Conteúdo Imigratório",
+      "tarefa": "Atualizar guidelines com novas regulamentações imigratórias",
+      "score": 35,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 5] Gerente de Conteúdo Imigratório",
+      "tarefa": "Coordenar treinamentos e desenvolvimento da equipe",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 6] Diretor de Produto e Imigração",
+      "tarefa": "Revisão de métricas de produto",
+      "score": 80,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 6] Diretor de Produto e Imigração",
+      "tarefa": "Reuniões com equipe de desenvolvimento",
+      "score": 15,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 6] Diretor de Produto e Imigração",
+      "tarefa": "Análise de feedback de clientes",
+      "score": 65,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 6] Diretor de Produto e Imigração",
+      "tarefa": "Monitoramento de atualizações em políticas de imigração",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 6] Diretor de Produto e Imigração",
+      "tarefa": "Planejamento de sprints",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 6] Diretor de Produto e Imigração",
+      "tarefa": "Reuniões com stakeholders",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 6] Diretor de Produto e Imigração",
+      "tarefa": "Análise de concorrentes",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 6] Diretor de Produto e Imigração",
+      "tarefa": "Revisão do roadmap de produto",
+      "score": 15,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 6] Diretor de Produto e Imigração",
+      "tarefa": "Relatórios de performance",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 6] Diretor de Produto e Imigração",
+      "tarefa": "Sessões de treinamento da equipe",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 7] Analista de Growth Marketing",
+      "tarefa": "Monitorar KPIs diários",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 7] Analista de Growth Marketing",
+      "tarefa": "Analisar tráfego e conversões",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 7] Analista de Growth Marketing",
+      "tarefa": "Otimizar campanhas ativas",
+      "score": 55,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 7] Analista de Growth Marketing",
+      "tarefa": "Executar testes A/B rápidos",
+      "score": 55,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 7] Analista de Growth Marketing",
+      "tarefa": "Gerar relatórios semanais de performance",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 7] Analista de Growth Marketing",
+      "tarefa": "Planejar novos experimentos",
+      "score": 25,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 7] Analista de Growth Marketing",
+      "tarefa": "Reuniões com equipes cross-funcionais",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 7] Analista de Growth Marketing",
+      "tarefa": "Análise completa do funil de conversão",
+      "score": 45,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 7] Analista de Growth Marketing",
+      "tarefa": "Definição de metas para o próximo mês",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 7] Analista de Growth Marketing",
+      "tarefa": "Relatório estratégico de growth",
+      "score": 25,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 8] Gerente de Dados e Analytics",
+      "tarefa": "Monitorar dashboards e métricas chave",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 8] Gerente de Dados e Analytics",
+      "tarefa": "Responder consultas da equipe e stakeholders",
+      "score": 45,
+      "type": "event",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 8] Gerente de Dados e Analytics",
+      "tarefa": "Revisar qualidade de dados",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 8] Gerente de Dados e Analytics",
+      "tarefa": "Acompanhar alertas de performance",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 8] Gerente de Dados e Analytics",
+      "tarefa": "Reuniões de alinhamento com equipe",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 8] Gerente de Dados e Analytics",
+      "tarefa": "Análise de tendências e anomalias",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 8] Gerente de Dados e Analytics",
+      "tarefa": "Planejamento de entregas semanais",
+      "score": 55,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 8] Gerente de Dados e Analytics",
+      "tarefa": "Gerar relatórios executivos",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 8] Gerente de Dados e Analytics",
+      "tarefa": "Revisão de KPIs e metas",
+      "score": 55,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 8] Gerente de Dados e Analytics",
+      "tarefa": "Treinamentos e upskilling da equipe",
+      "score": 20,
+      "type": "cron",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 9] Analista de Customer Insights",
+      "tarefa": "Monitorar dashboards de métricas de clientes",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 9] Analista de Customer Insights",
+      "tarefa": "Analisar dados de engajamento e comportamento",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 9] Analista de Customer Insights",
+      "tarefa": "Responder consultas internas sobre insights",
+      "score": 25,
+      "type": "event",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 9] Analista de Customer Insights",
+      "tarefa": "Realizar limpeza e preparação de datasets",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 9] Analista de Customer Insights",
+      "tarefa": "Gerar relatórios semanais de performance",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 9] Analista de Customer Insights",
+      "tarefa": "Participar de reuniões de alinhamento de insights",
+      "score": 10,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "[Placeholder 9] Analista de Customer Insights",
+      "tarefa": "Atualizar segmentos de clientes",
+      "score": 90,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 9] Analista de Customer Insights",
+      "tarefa": "Elaborar relatório mensal de customer insights",
+      "score": 45,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "[Placeholder 9] Analista de Customer Insights",
+      "tarefa": "Analisar taxa de churn e retenção",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "[Placeholder 9] Analista de Customer Insights",
+      "tarefa": "Planejar e lançar pesquisas de satisfação",
+      "score": 55,
+      "type": "cron",
+      "roi": "medium"
+    },
+    {
+      "persona": "Carolina Pereira",
+      "tarefa": "Resposta a e-mails e chamadas",
+      "score": 45,
+      "type": "event",
+      "roi": "medium"
+    },
+    {
+      "persona": "Carolina Pereira",
+      "tarefa": "Atualização de agendas e marcação de reuniões",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "Carolina Pereira",
+      "tarefa": "Organização de arquivos e documentos",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "Carolina Pereira",
+      "tarefa": "Suporte administrativo à equipe",
+      "score": 20,
+      "type": "manual",
+      "roi": "low"
+    },
+    {
+      "persona": "Carolina Pereira",
+      "tarefa": "Preparação de relatórios semanais",
+      "score": 85,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "Carolina Pereira",
+      "tarefa": "Controle de despesas e reembolsos",
+      "score": 65,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "Carolina Pereira",
+      "tarefa": "Coordenação de suprimentos de escritório",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "Carolina Pereira",
+      "tarefa": "Conciliação de contas e faturamento",
+      "score": 75,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "Carolina Pereira",
+      "tarefa": "Elaboração de relatórios mensais de atividades",
+      "score": 70,
+      "type": "cron",
+      "roi": "high"
+    },
+    {
+      "persona": "Carolina Pereira",
+      "tarefa": "Auditoria interna de documentos",
+      "score": 55,
+      "type": "cron",
+      "roi": "medium"
+    }
+  ]
+}

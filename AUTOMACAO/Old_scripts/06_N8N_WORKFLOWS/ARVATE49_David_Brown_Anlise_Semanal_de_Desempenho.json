@@ -1,0 +1,201 @@
+{
+  "name": "David (Asst Mkt) - Análise Semanal de Desempenho",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * 1"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar toda segunda-feira às 9h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "range": "Campaigns!A2:E"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar dados de desempenho das campanhas na planilha",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(data => ({ ...data.json, performance_score: calculatePerformance(data.json) })); function calculatePerformance(data) { /* Lógica para calcular o desempenho */ return score; }"
+      },
+      "typeVersion": 1,
+      "notes": "Calcular o desempenho das campanhas"
+    },
+    {
+      "id": "4",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "direcao@arvatech.com",
+        "subject": "Relatório Semanal de Desempenho de Campanhas",
+        "message": "Aqui está o desempenho das campanhas da semana: {{ $json.performance_report }}"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email com o relatório de desempenho",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Notify",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#marketing",
+        "text": "O relatório semanal de desempenho das campanhas foi enviado à direção."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar a equipe de marketing no Slack sobre o envio do relatório",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: David (Asst Mkt) - Análise Semanal de Desempenho\nEmpresa: ARVA Tech Solutions\nPersona: David Brown\nTarefa: Análise Semanal de Desempenho\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:14.514Z",
+  "updatedAt": "2025-11-28T17:05:14.514Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "2841090c-7c5f-4c95-afbf-89dc4c115372",
+    "persona_nome": "David Brown",
+    "task_id": "d6521207-70da-4648-8c40-af1b998c43c2",
+    "task_title": "Análise Semanal de Desempenho",
+    "opportunity_id": "b7a390f3-cf71-4d0a-af5b-3b6eea481f54",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:14.514Z"
+  }
+}

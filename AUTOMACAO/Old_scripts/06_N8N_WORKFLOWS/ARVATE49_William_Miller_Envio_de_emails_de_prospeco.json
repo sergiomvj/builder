@@ -1,0 +1,199 @@
+{
+  "name": "William (SDR Analst) - Envio de emails de prospecção",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "event": "lead_qualified",
+        "description": "Quando um lead é qualificado para prospecção"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar quando um lead é marcado como qualificado"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "select",
+        "table": "leads",
+        "filters": {
+          "qualified": true,
+          "has_been_contacted": false
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Buscar leads qualificados que ainda não foram contatados",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_ARVATE49",
+          "name": "Supabase ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(lead => ({ ...lead, email_body: `Olá ${lead.name}, gostaríamos de agendar uma reunião para discutir...` }));"
+      },
+      "typeVersion": 1,
+      "notes": "Personalizar corpo do email com informações do lead"
+    },
+    {
+      "id": "4",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "{{ $json.email }}",
+        "subject": "Oportunidade de parceria com ARVA Tech Solutions",
+        "message": "{{ $json.email_body }}"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email personalizado para agendar uma reunião",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "operation": "update",
+        "table": "leads",
+        "data": {
+          "has_been_contacted": true
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Marcar lead como contatado no banco de dados",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_ARVATE49",
+          "name": "Supabase ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: William (SDR Analst) - Envio de emails de prospecção\nEmpresa: ARVA Tech Solutions\nPersona: William Miller\nTarefa: Envio de emails de prospecção\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:22.107Z",
+  "updatedAt": "2025-11-28T17:05:22.107Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "72e1bfc8-f618-40d2-9614-4cecfbdfe73d",
+    "persona_nome": "William Miller",
+    "task_id": "b63f0f6d-8fee-4516-8131-a8fed91e93b2",
+    "task_title": "Envio de emails de prospecção",
+    "opportunity_id": "97bc8019-0056-4cbf-bb82-d00e7e643c62",
+    "automation_score": 72,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:22.107Z"
+  }
+}

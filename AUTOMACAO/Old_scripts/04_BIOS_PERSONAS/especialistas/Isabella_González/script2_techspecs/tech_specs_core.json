@@ -1,0 +1,88 @@
+{
+  "persona": {
+    "nome": "Isabella González",
+    "categoria": "especialistas",
+    "especialidade": "marketing",
+    "experiencia": 9
+  },
+  "especificacoes_tecnicas": {
+    "ferramentas_utilizadas": [
+      "Google Ads",
+      "Facebook Ads",
+      "HubSpot",
+      "Mailchimp",
+      "Google Analytics",
+      "SEMrush",
+      "Hotjar"
+    ],
+    "categorias_aplicaveis": [
+      "crm_sistemas",
+      "analytics_bi"
+    ],
+    "requisitos_personalizados": {
+      "especialidade": "marketing",
+      "competencias_tecnicas": [
+        "Marketing Digital",
+        "Growth Hacking",
+        "Marketing Analytics",
+        "Automação de Marketing",
+        "Inbound Marketing",
+        "Performance Marketing"
+      ],
+      "ferramentas_principais": [
+        "Google Ads",
+        "Facebook Ads",
+        "HubSpot",
+        "Mailchimp",
+        "Google Analytics",
+        "SEMrush",
+        "Hotjar"
+      ],
+      "requisitos_especificos": [
+        "Marketing automation platform",
+        "A/B testing framework",
+        "Customer segmentation engine",
+        "ROI tracking dashboard"
+      ],
+      "integracao_sugerida": [
+        "Google Ads API",
+        "Facebook Marketing API",
+        "Email service provider APIs",
+        "CRM integration APIs"
+      ],
+      "documentacao_necessaria": [
+        "API Integration Guide",
+        "System Requirements Document",
+        "Security Configuration Guide",
+        "User Training Materials",
+        "Troubleshooting Handbook"
+      ]
+    },
+    "integracao_prioridade": "media"
+  },
+  "documentacao_tecnica": {
+    "apis_necessarias": [
+      "HubSpot CRM API",
+      "HubSpot Marketing API"
+    ],
+    "requisitos_sistema": {
+      "computacao": "2 vCPU, 4GB RAM mínimo",
+      "armazenamento": "50GB SSD mínimo",
+      "rede": "10 Mbps mínimo",
+      "seguranca": [
+        "SSL/TLS",
+        "OAuth 2.0"
+      ],
+      "backup": "diário automático"
+    },
+    "guias_implementacao": [
+      "Setup e Configuração Inicial",
+      "Integração de APIs",
+      "Configuração de Segurança",
+      "Testes de Conectividade",
+      "Deploy em Produção",
+      "Monitoramento e Manutenção"
+    ]
+  },
+  "data_processamento": "2025-11-15T12:52:57.673Z"
+}

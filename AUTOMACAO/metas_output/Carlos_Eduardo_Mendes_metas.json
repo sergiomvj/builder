@@ -1,0 +1,37 @@
+{
+  "persona_id": "e4b0a7aa-865a-418d-b66c-194c0c40f337",
+  "full_name": "Carlos Eduardo Mendes",
+  "role": "Gerente de Vendas",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades de liderança",
+      "descricao": "Participar de um curso de liderança com duração de 3 meses",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "100",
+      "unidade_medida": "horas",
+      "data_prazo": "2022-09-01",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Expandir conhecimentos em marketing digital",
+      "descricao": "Concluir um curso online de marketing digital em 4 meses",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "100",
+      "unidade_medida": "%",
+      "data_prazo": "2022-10-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Desenvolver estratégias de vendas mais eficientes",
+      "descricao": "Realizar um projeto piloto de implementação de novas estratégias de vendas em 6 meses",
+      "categoria": "performance",
+      "valor_alvo": "100",
+      "unidade_medida": "%",
+      "data_prazo": "2023-01-01",
+      "prioridade": 1,
+      "vinculada_kpi": "Taxa de conversão de vendas"
+    }
+  ],
+  "generated_at": "2025-12-08T14:43:39.721Z"
+}

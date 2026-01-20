@@ -1,0 +1,22 @@
+{
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "empresa_nome": "ARVA Tech Solutions",
+  "total_personas": 25,
+  "personas_processadas": 0,
+  "subsistemas_vcm": [
+    "PERSONAS",
+    "TAREFAS_E_METAS",
+    "PROSPECAO",
+    "COMUNICACAO",
+    "FINANCEIRO",
+    "RECURSOS_HUMANOS",
+    "MARKETING",
+    "VENDAS",
+    "SUPORTE",
+    "TECNOLOGIA",
+    "ANALYTICS",
+    "DOCUMENTACAO"
+  ],
+  "personas": [],
+  "generated_at": "2025-12-01T15:39:20.105Z"
+}

@@ -1,0 +1,201 @@
+{
+  "name": "John (SDR Junior) - Agendamento de reuniões",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 10 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 10h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "table": "leads",
+        "filters": {
+          "last_contacted": {
+            "lt": "NOW() - INTERVAL '14 days'"
+          },
+          "qualification_score": {
+            "gte": "70"
+          }
+        },
+        "operation": "select"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar leads qualificados não contatados nos últimos 14 dias"
+    },
+    {
+      "id": "3",
+      "name": "Action",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "operation": "create_event",
+        "event_type": "30min",
+        "invitee_email": "{{ $json.email }}"
+      },
+      "typeVersion": 1,
+      "notes": "Agendar reunião de 30 minutos com o lead"
+    },
+    {
+      "id": "4",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "{{ $json.email }}",
+        "subject": "Confirmação de Agendamento de Reunião",
+        "message": "Olá, {{ $json.name }}! Sua reunião foi agendada com sucesso. Por favor, confira seu calendário."
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email de confirmação de agendamento",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "set": {
+          "last_contacted": "NOW()",
+          "meeting_scheduled": true
+        },
+        "table": "leads",
+        "operation": "update"
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar registro do lead no CRM"
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: John (SDR Junior) - Agendamento de reuniões\nEmpresa: ARVA Tech Solutions\nPersona: John Smith\nTarefa: Agendamento de reuniões\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:19.586Z",
+  "updatedAt": "2025-11-28T17:05:19.586Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "680cf6e1-5b0d-4dc7-b2c0-722d22998876",
+    "persona_nome": "John Smith",
+    "task_id": "2aaa20ce-b745-427b-9efb-de525704dab0",
+    "task_title": "Agendamento de reuniões",
+    "opportunity_id": "7b89dcfd-2db8-4963-a3f2-e2b281e8090e",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:19.586Z"
+  }
+}

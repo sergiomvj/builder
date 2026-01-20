@@ -1,0 +1,4721 @@
+[
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-EST2",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégia depende de análise de dados para tomada de decisão",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão de relatórios de dados",
+        "Solicitação de análises específicas"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-EST3",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias impactam a satisfação do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre estratégias para aumentar a satisfação do cliente",
+        "Feedback sobre a eficácia das estratégias implementadas"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-FIN4",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégia e finanças estão interligadas em uma organização",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre orçamento para implementação de estratégias",
+        "Aprovação de investimentos estratégicos"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-FIN5",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégia depende de dados financeiros precisos",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre relatórios financeiros",
+        "Planejamento estratégico baseado em dados financeiros"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-FIN6",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégia e finanças estão interligadas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre orçamento",
+        "Aprovação de investimentos"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-FIN7",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégia precisa estar em conformidade com as leis",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre novas estratégias e conformidade legal",
+        "Solicitação de aprovação para implementação de estratégia"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-MAR10",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias de SEO influenciam diretamente a estratégia geral da empresa",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre mudanças no algoritmo do Google",
+        "Aprovação de novas estratégias de SEO"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-MAR11",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégia de eventos e alinhamento de metas",
+      "tipos_comunicacao": [
+        "handoff",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Aprovação de planejamento de eventos",
+        "Discussão sobre estratégia de eventos"
+      ]
+    },
+    "comunicacoes_criadas": 2
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-MAR8",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias e campanhas de marketing precisam estar alinhadas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão de novas estratégias de marketing",
+        "Aprovação de campanhas de aquisição"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-MAR9",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégia e marketing estão interligados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão de estratégias de marketing",
+        "Aprovação de campanhas de marketing"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-OPE12",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégia e operações estão interligadas em uma organização",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre implementação de estratégias",
+        "Aprovação de planos operacionais"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-OPE13",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias precisam de automação para eficiência",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre automação de novas estratégias",
+        "Aprovação de processos automatizados"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-OPE14",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégia e operações estão interligadas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre implementação de estratégias",
+        "Relatório de progresso das operações"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-PRO15",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégia e produto estão interligados no desenvolvimento de negócios",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre novos produtos",
+        "Aprovação de estratégias de produto"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-PRO16",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégia e implementação de software estão interligadas",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre a implementação de uma nova estratégia de software",
+        "Solicitação de aprovação para mudanças de software"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-QUA18",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégia e qualidade estão interligadas para o sucesso organizacional",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre a implementação de novas estratégias",
+        "Revisão de relatórios de qualidade"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-QUA19",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias precisam ser auditadas para garantir eficácia",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Auditor solicita detalhes da estratégia",
+        "Diretor solicita auditoria de nova estratégia"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-QUA20",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias impactam a qualidade e vice-versa",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre impactos de estratégias na qualidade",
+        "Solicitação de aprovação de novas estratégias"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-SUP21",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias e retenção de clientes estão interligadas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão de estratégias de retenção de clientes",
+        "Aprovação de novas iniciativas de retenção"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-SUP22",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégia impacta e depende da satisfação do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedbacks dos clientes",
+        "Planejamento de estratégias de atendimento"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégia e experiência do cliente estão interligadas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedbacks dos clientes",
+        "Planejamento de estratégias baseadas na experiência do cliente"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégia e vendas precisam estar alinhadas para atingir metas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão de metas de vendas",
+        "Aprovação de estratégias de vendas"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-VEN25",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias e aquisições de clientes estão interligadas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre novas estratégias de aquisição",
+        "Aprovação de campanhas de marketing"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias afetam retenção de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre estratégias de retenção",
+        "Solicitação de aprovação para novas iniciativas"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-EST3",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Compartilham dados para melhorar a experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Analista de Dados fornece insights para melhorar o sucesso do cliente",
+        "Especialista em Customer Success solicita análises específicas"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-FIN4",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados financeiros são necessários para tomada de decisões",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Analista fornece relatórios financeiros",
+        "Diretor solicita análises específicas"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-FIN5",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Compartilham dados para análises e relatórios financeiros",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "notification"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Analista de Dados fornece relatórios para o Contador",
+        "Contador questiona Analista de Dados sobre inconsistências nos dados"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-FIN6",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados e finanças são interdependentes em muitas decisões",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Analista de dados fornece relatórios para análise financeira",
+        "Analista financeiro solicita dados específicos"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-FIN7",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir conformidade nos dados",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "ocasional",
+      "prioridade": "high",
+      "exemplos": [
+        "Verificação de conformidade de dados",
+        "Solicitação de aprovação de uso de dados"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-MAR10",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados e SEO estão interligados para otimização de sites",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre dados de tráfego do site",
+        "Solicitação de dados para análise de palavras-chave"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-MAR8",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados influenciam estratégias de marketing",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhamento de insights de dados",
+        "Discussão sobre tendências de mercado"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-MAR9",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados analisados são usados para estratégias de marketing",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Analista de Dados fornece relatórios de desempenho",
+        "Especialista em Marketing solicita análises específicas"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-OPE12",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados analisados influenciam nas operações e entregas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Analista fornece relatórios de dados para o gerente",
+        "Gerente solicita análises específicas ao analista"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-OPE13",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham com dados e processos que podem ser interdependentes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Compartilhamento de insights de dados para automação",
+        "Discussão sobre melhoria de processos baseada em dados"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-OPE14",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados e operações estão interligados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Analista de Dados fornece insights para otimizar operações",
+        "Analista de Operações solicita dados específicos"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-PRO15",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados influenciam decisões de produto",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Analista compartilha insights de dados",
+        "Gerente faz perguntas sobre dados"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-PRO16",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos na análise e desenvolvimento de software",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre a implementação de novos recursos",
+        "Compartilhamento de insights de dados"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-PRO17",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados e qualidade estão interligados",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "QA precisa verificar a qualidade dos dados",
+        "Analista de Dados precisa de aprovação do QA"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-QUA18",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados influenciam na qualidade e auditoria",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhamento de relatórios de dados",
+        "Discussão sobre problemas de qualidade"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-QUA19",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados e processos estão interligados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Auditor precisa de dados para análise",
+        "Analista precisa de feedback sobre dados"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-QUA20",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados e qualidade estão interligados em muitas organizações",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Analista de Dados fornece relatórios para o Analista de Qualidade",
+        "Analista de Qualidade questiona dados inconsistentes"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-SUP21",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados são essenciais para retenção de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Analista fornece dados sobre comportamento do cliente",
+        "Gerente solicita análise de dados específica"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-SUP22",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados podem melhorar a eficiência do suporte ao cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Analista compartilha insights de dados com o especialista em suporte",
+        "Especialista em suporte solicita dados específicos ao analista"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados influenciam a experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhar insights de dados",
+        "Discutir melhorias na experiência do cliente"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados são essenciais para estratégias de vendas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Analista fornece relatórios de vendas",
+        "Gerente questiona sobre tendências de dados"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-VEN25",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados são essenciais para aquisição de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhamento de dados de clientes",
+        "Discussão sobre tendências de dados"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Dados influenciam estratégias de retenção de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Compartilhamento de dados de clientes",
+        "Discussão sobre tendências de retenção"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-FIN4",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para alinhar estratégias de retenção de clientes e finanças",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre orçamento para programas de retenção de clientes",
+        "Solicitação de aprovação para descontos especiais para clientes"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-MAR10",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham para otimizar a experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre feedbacks dos clientes",
+        "Planejamento de estratégias de SEO"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-MAR8",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para alinhar estratégias de aquisição e retenção de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedback dos clientes para melhorar campanhas de marketing",
+        "Aprovação de novas estratégias de aquisição de clientes"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-MAR9",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias de retenção de clientes e marketing estão interligadas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Compartilhar feedback dos clientes",
+        "Discutir campanhas de marketing"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-OPE12",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a satisfação do cliente e a eficiência operacional",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedback do cliente",
+        "Coordenação de entregas"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-OPE13",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para melhorar a experiência do cliente através da automação",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedbacks dos clientes para melhorar a automação",
+        "Notificação sobre atualizações de processos automatizados"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-OPE14",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a satisfação do cliente e eficiência operacional",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhar feedback do cliente",
+        "Discutir problemas operacionais"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-PRO15",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para alinhar expectativas do cliente e recursos do produto",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedback do cliente",
+        "Planejamento de novos recursos do produto"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-PRO16",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a satisfação do cliente e a qualidade do software",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Feedback do cliente sobre o software",
+        "Solicitação de alterações no software"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-QUA18",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a satisfação do cliente e a qualidade do serviço",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhar feedback do cliente",
+        "Solicitar auditoria de qualidade"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-QUA19",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a satisfação do cliente e a conformidade dos processos",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Auditor informa sobre não conformidades no processo de atendimento ao cliente",
+        "Especialista em Customer Success solicita esclarecimentos sobre auditoria"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-QUA20",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a satisfação do cliente e a qualidade do serviço",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhar feedback do cliente",
+        "Discutir melhorias no serviço"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-SUP21",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para garantir a satisfação e retenção do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre estratégias de retenção de clientes",
+        "Atualizações sobre feedback do cliente"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-SUP22",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham diretamente com o cliente, compartilhando informações e dados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhamento de feedback do cliente",
+        "Discussão sobre problemas do cliente"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham para melhorar a experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhar feedback do cliente",
+        "Discutir estratégias de engajamento do cliente"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para alinhar estratégias de vendas e satisfação do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedbacks dos clientes",
+        "Planejamento de estratégias de vendas"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-VEN25",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para garantir a satisfação e aquisição do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhar feedback do cliente",
+        "Discutir estratégias de aquisição"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham para manter e melhorar a experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhar feedback do cliente",
+        "Discutir estratégias de retenção"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-FIN5",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham com finanças e compartilham dados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Aprovação de relatórios financeiros",
+        "Discussão sobre estratégias financeiras"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-FIN6",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Hierarquia direta e workflows conectados na área financeira",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre relatórios financeiros",
+        "Solicitação de aprovação para pagamentos"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-FIN7",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Garantir conformidade financeira e legal",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre questões de conformidade financeira",
+        "Aprovação de relatórios financeiros"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-MAR8",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Necessidade de alinhamento de estratégias financeiras e de marketing",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Aprovação de orçamento para campanhas de marketing",
+        "Discussão sobre retorno do investimento em aquisições"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-MAR9",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para alinhar estratégias de marketing com o orçamento",
+      "tipos_comunicacao": [
+        "handoff",
+        "approval_request",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Aprovação de orçamento para campanhas",
+        "Discussão sobre ROI de campanhas"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-OPE12",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em fluxos de trabalho e tomada de decisões financeiras",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Aprovação de orçamento para operações",
+        "Relatórios financeiros das operações"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-OPE13",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para otimizar processos financeiros através da automação",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre processos financeiros a serem automatizados",
+        "Aprovação de propostas de automação"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-OPE14",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em fluxos de trabalho financeiros",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Aprovação de orçamentos",
+        "Relatórios financeiros"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-PRO15",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em planejamento financeiro e desenvolvimento de produto",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre orçamento do produto",
+        "Solicitação de aprovação para gastos com desenvolvimento de produto"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-QUA18",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em questões financeiras e de qualidade",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre auditorias financeiras",
+        "Aprovação de orçamentos para iniciativas de qualidade"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-QUA19",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em processos financeiros e auditoria",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre relatórios financeiros",
+        "Solicitação de auditoria de processos"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-QUA20",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em fluxos de trabalho financeiros e de qualidade",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Aprovação de relatórios de qualidade",
+        "Discussão sobre impactos financeiros de problemas de qualidade"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-SUP21",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Necessidade de alinhamento financeiro e retenção de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre orçamento para estratégias de retenção",
+        "Aprovação de descontos para clientes em risco"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em metas financeiras e de vendas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre previsões de vendas",
+        "Aprovação de orçamentos de vendas"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para discutir estratégias de retenção e impacto financeiro",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre o custo de retenção de clientes",
+        "Aprovação de novas estratégias de retenção"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN5",
+    "persona_b": "ARVA01-FIN6",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham com finanças e compartilham dados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhamento de relatórios financeiros",
+        "Discussão sobre previsões orçamentárias"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN5",
+    "persona_b": "ARVA01-FIN7",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir conformidade financeira e legal",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Revisão de relatórios financeiros",
+        "Consultas sobre regulamentos fiscais"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN5",
+    "persona_b": "ARVA01-OPE12",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência financeira e operacional",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre relatórios financeiros",
+        "Aprovação de orçamentos operacionais"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN5",
+    "persona_b": "ARVA01-OPE13",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham em processos que podem ser interdependentes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "O Contador precisa de dados para relatórios financeiros",
+        "O Especialista em Automação pode precisar de informações do Contador para automatizar processos"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN5",
+    "persona_b": "ARVA01-OPE14",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em fluxos de trabalho financeiros",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Contador precisa de dados de operações para relatórios",
+        "Analista precisa de aprovação do contador para despesas"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN5",
+    "persona_b": "ARVA01-PRO15",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Necessidade de alinhamento financeiro e de produto",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre orçamento do produto",
+        "Aprovação de custos relacionados ao produto"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN5",
+    "persona_b": "ARVA01-QUA18",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em relatórios financeiros e auditoria",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Revisão de relatórios financeiros",
+        "Solicitação de auditoria"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN5",
+    "persona_b": "ARVA01-QUA19",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Auditor precisa verificar os registros contábeis",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "mensal",
+      "prioridade": "high",
+      "exemplos": [
+        "Auditor solicita registros contábeis",
+        "Contador responde a perguntas do auditor"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN5",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para alinhar estratégias de vendas e impactos fiscais",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre previsões de vendas e impactos fiscais",
+        "Solicitação de aprovação para descontos especiais"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN6",
+    "persona_b": "ARVA01-FIN7",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir conformidade financeira",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Revisão de relatórios financeiros",
+        "Aprovação de transações"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN6",
+    "persona_b": "ARVA01-MAR8",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Orçamentos de marketing e análise de ROI",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Aprovação de orçamento para campanhas",
+        "Análise de retorno sobre investimentos"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN6",
+    "persona_b": "ARVA01-OPE12",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em fluxos de trabalho financeiros e operacionais",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Aprovação de orçamentos",
+        "Atualizações de status financeiro"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN6",
+    "persona_b": "ARVA01-OPE13",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para otimizar processos financeiros através da automação",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre processos financeiros que podem ser automatizados",
+        "Solicitação de aprovação para implementação de automação"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN6",
+    "persona_b": "ARVA01-OPE14",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em fluxos de trabalho e compartilhamento de dados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "normal",
+      "exemplos": [
+        "Analista Financeiro precisa de dados de operações para relatórios",
+        "Analista de Operações precisa de atualizações financeiras para planejamento"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN6",
+    "persona_b": "ARVA01-QUA18",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em relatórios financeiros e auditoria",
+      "tipos_comunicacao": [
+        "handoff",
+        "approval_request",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Analista entrega relatórios financeiros para auditoria",
+        "Gerente solicita esclarecimentos sobre dados financeiros"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN6",
+    "persona_b": "ARVA01-QUA19",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Auditor verifica processos do analista financeiro",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "mensal",
+      "prioridade": "high",
+      "exemplos": [
+        "Auditor solicita relatórios financeiros",
+        "Analista responde a perguntas do auditor"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN6",
+    "persona_b": "ARVA01-QUA20",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em processos financeiros e de qualidade",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre custos relacionados à qualidade",
+        "Notificação de problemas financeiros que afetam a qualidade"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN6",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em fluxos de trabalho e compartilhamento de dados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre previsões de vendas para planejamento financeiro",
+        "Aprovação de descontos especiais em vendas"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN7",
+    "persona_b": "ARVA01-OPE12",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a conformidade nas operações e entregas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Revisão de políticas de conformidade",
+        "Aprovação de novos processos operacionais"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN7",
+    "persona_b": "ARVA01-OPE13",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Necessidade de conformidade nos processos automatizados",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Revisão de conformidade para um novo processo automatizado",
+        "Solicitação de aprovação para alterações de conformidade"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN7",
+    "persona_b": "ARVA01-OPE14",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a conformidade nas operações",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Revisão de procedimentos operacionais",
+        "Consultas sobre conformidade"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN7",
+    "persona_b": "ARVA01-PRO15",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Garantir conformidade do produto com as leis",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Revisão de conformidade do produto",
+        "Solicitação de aprovação legal"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN7",
+    "persona_b": "ARVA01-QUA18",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham com conformidade e qualidade",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre questões de conformidade",
+        "Revisão de procedimentos de qualidade"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-FIN7",
+    "persona_b": "ARVA01-QUA19",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham na conformidade e auditoria de processos",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre conformidade legal",
+        "Revisão de auditoria de processo"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-FIN7",
+    "persona_b": "ARVA01-QUA20",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Garantir conformidade e qualidade nos processos",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Analista de Qualidade precisa aprovar processos de conformidade",
+        "Advogado de Conformidade precisa esclarecer dúvidas sobre regulamentos"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR10",
+    "persona_b": "ARVA01-MAR8",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para melhorar a visibilidade online",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão de estratégias de SEO",
+        "Relatórios de desempenho de SEO"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR10",
+    "persona_b": "ARVA01-MAR9",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham em estratégias de marketing digital",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre palavras-chave para SEO",
+        "Planejamento de campanhas de marketing digital"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR10",
+    "persona_b": "ARVA01-PRO15",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Otimização de produtos para SEO e estratégias de marketing",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre palavras-chave do produto",
+        "Aprovação de estratégias de SEO"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR10",
+    "persona_b": "ARVA01-PRO16",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para otimizar a presença online",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre implementação de tags SEO",
+        "Revisão de código para otimização de SEO"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR10",
+    "persona_b": "ARVA01-SUP21",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias de SEO podem afetar a retenção de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre palavras-chave que afetam a retenção",
+        "Notificação sobre alterações no algoritmo do Google"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR10",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Melhorar a experiência do usuário no site",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre palavras-chave para melhorar a experiência do usuário",
+        "Feedback sobre a experiência do usuário no site"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR10",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "SEO impacta diretamente as vendas online",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre palavras-chave para otimização",
+        "Relatório de desempenho SEO"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR10",
+    "persona_b": "ARVA01-VEN25",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias de SEO impactam na aquisição de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre palavras-chave para atrair clientes",
+        "Notificação sobre mudanças no algoritmo do Google"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR10",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias de SEO podem impactar a retenção de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre palavras-chave que aumentam a retenção",
+        "Notificação sobre alterações na estratégia de SEO"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR11",
+    "persona_b": "ARVA01-MAR8",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Coordenar eventos e estratégias de marketing",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Coordenação de eventos de marketing",
+        "Aprovação de estratégias de aquisição"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR11",
+    "persona_b": "ARVA01-MAR9",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Coordenação de eventos e marketing digital são interdependentes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Coordenador de eventos precisa de informações de marketing para promoção",
+        "Especialista em marketing precisa de detalhes do evento para campanhas"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR11",
+    "persona_b": "ARVA01-OPE12",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Coordenação e execução de eventos e operações",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Coordenação de logística de eventos",
+        "Aprovação de orçamentos para eventos"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR11",
+    "persona_b": "ARVA01-OPE13",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para automatizar processos de coordenação de eventos",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Automação de processos de registro de eventos",
+        "Solicitação de aprovação para alterações de processo"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR11",
+    "persona_b": "ARVA01-OPE14",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Coordenação e execução de eventos e operações",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Coordenação de logística para eventos",
+        "Aprovação de operações relacionadas a eventos"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR11",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham para melhorar a experiência do cliente em eventos",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Coordenador de Eventos precisa informar o Analista sobre detalhes do evento",
+        "Analista precisa discutir feedback do cliente com o Coordenador"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR11",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Coordenação de eventos pode impactar as vendas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Coordenador de eventos informa sobre próximos eventos",
+        "Gerente de vendas solicita detalhes do evento"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR11",
+    "persona_b": "ARVA01-VEN25",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Coordenação de eventos para aquisição de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Planejamento de eventos para atrair clientes",
+        "Feedback sobre eficácia de eventos"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR8",
+    "persona_b": "ARVA01-MAR9",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham na mesma área e têm workflows interconectados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão de estratégias de marketing",
+        "Aprovação de campanhas digitais"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR8",
+    "persona_b": "ARVA01-OPE12",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Workflows conectados e interdependência de tarefas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre campanhas de marketing e impacto nas operações",
+        "Coordenação para entrega de produtos promovidos"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR8",
+    "persona_b": "ARVA01-OPE13",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para otimizar campanhas de marketing através da automação",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre automação de campanhas de marketing",
+        "Solicitação de relatórios de desempenho de automação"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR8",
+    "persona_b": "ARVA01-OPE14",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham em áreas interdependentes para aquisição e operação",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre estratégias de marketing",
+        "Relatório de performance de operações"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR8",
+    "persona_b": "ARVA01-PRO15",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para alinhar estratégias de marketing e produto",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre estratégias de marketing para novos produtos",
+        "Solicitação de aprovação para campanhas de marketing"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR8",
+    "persona_b": "ARVA01-PRO16",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Colaboração em campanhas de marketing baseadas em tecnologia",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre implementação de novas funcionalidades no site",
+        "Solicitação de aprovação para alterações no sistema"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR8",
+    "persona_b": "ARVA01-QUA18",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Necessidade de alinhamento sobre qualidade de campanhas",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre qualidade de leads gerados",
+        "Aprovação de novas estratégias de marketing"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR8",
+    "persona_b": "ARVA01-QUA19",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Auditor verifica processos do gerente de marketing",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "mensal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Auditor solicita documentos de campanhas",
+        "Gerente solicita aprovação de processos"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR8",
+    "persona_b": "ARVA01-SUP21",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias de marketing e retenção estão interligadas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão de estratégias de marketing",
+        "Avaliação de métricas de retenção"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR8",
+    "persona_b": "ARVA01-SUP22",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Feedback do cliente para estratégias de marketing",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Feedback do cliente sobre campanha de marketing",
+        "Sugestões de melhorias baseadas em reclamações de clientes"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR8",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para melhorar a experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre estratégias de marketing",
+        "Feedback sobre a experiência do cliente"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR8",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias de marketing e vendas estão interligadas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão de estratégias de marketing para impulsionar vendas",
+        "Aprovação de campanhas de marketing"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR8",
+    "persona_b": "ARVA01-VEN25",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham na aquisição e marketing, compartilhando metas e dados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão de estratégias de aquisição",
+        "Aprovação de campanhas de marketing"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR8",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para atrair e reter clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhamento de dados sobre aquisição de clientes",
+        "Discussão sobre estratégias de retenção"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR9",
+    "persona_b": "ARVA01-OPE12",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para alinhar estratégias de marketing e operações",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre campanhas de marketing",
+        "Atualizações sobre a entrega de projetos"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR9",
+    "persona_b": "ARVA01-OPE13",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias de marketing podem necessitar de automação",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Automação de campanhas de email marketing",
+        "Integração de sistemas de marketing"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR9",
+    "persona_b": "ARVA01-PRO15",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias de marketing impactam o desenvolvimento do produto",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre estratégias de marketing",
+        "Solicitação de aprovação para campanhas de marketing"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR9",
+    "persona_b": "ARVA01-PRO16",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Colaboração em projetos de marketing digital",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre implementação de ferramentas de marketing",
+        "Solicitação de aprovação para alterações no site"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR9",
+    "persona_b": "ARVA01-SUP21",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias de marketing impactam retenção de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão de estratégias de marketing",
+        "Feedback sobre retenção de clientes"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR9",
+    "persona_b": "ARVA01-SUP22",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para alinhar estratégias de marketing e feedback do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre feedbacks de clientes para melhorar campanhas",
+        "Notificação sobre alterações nas estratégias de marketing"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR9",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para melhorar a experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhamento de dados de campanhas",
+        "Discussão sobre feedback do cliente"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-MAR9",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias de marketing impactam diretamente as vendas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão de estratégias de marketing",
+        "Análise de performance de vendas"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR9",
+    "persona_b": "ARVA01-VEN25",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias de marketing e aquisição de clientes estão interligadas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre estratégias de aquisição",
+        "Aprovação de campanhas de marketing"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-MAR9",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Estratégias de marketing e retenção estão interligadas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhar dados de campanhas de marketing",
+        "Discutir estratégias de retenção baseadas em feedback de clientes"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-OPE12",
+    "persona_b": "ARVA01-OPE13",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para otimizar e automatizar processos",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre a eficiência do processo atual",
+        "Aprovação de novos processos automatizados"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE12",
+    "persona_b": "ARVA01-OPE14",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Hierarquia direta e workflows conectados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Atualizações de status de entrega",
+        "Solicitações de aprovação de operações"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE12",
+    "persona_b": "ARVA01-PRO15",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham em áreas interdependentes para entrega de produtos",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre prazos de entrega",
+        "Aprovação de especificações de produtos"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE12",
+    "persona_b": "ARVA01-PRO16",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para entregar software de qualidade",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre prazos de entrega",
+        "Solicitação de aprovação para lançamento de software"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE12",
+    "persona_b": "ARVA01-PRO17",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Garantir a qualidade e eficiência das operações e entregas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "QA precisa aprovar a qualidade das entregas",
+        "Gerente precisa ser notificado sobre problemas de qualidade"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE12",
+    "persona_b": "ARVA01-QUA18",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em fluxos de trabalho e qualidade",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre padrões de qualidade",
+        "Revisão de auditorias"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE12",
+    "persona_b": "ARVA01-QUA19",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Auditoria e melhoria dos processos de entrega",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "mensal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Auditoria de processos de entrega",
+        "Melhorias sugeridas para processos"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE12",
+    "persona_b": "ARVA01-QUA20",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham em workflows conectados e compartilham dados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre qualidade da entrega",
+        "Solicitação de aprovação para mudanças no processo"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE12",
+    "persona_b": "ARVA01-SUP21",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos gerenciam aspectos cruciais da experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre a satisfação do cliente",
+        "Planejamento de estratégias de retenção"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE12",
+    "persona_b": "ARVA01-SUP22",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham em fluxos de trabalho interconectados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Gerente precisa saber sobre problemas de clientes",
+        "Especialista precisa de aprovação para soluções"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-OPE12",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para melhorar a experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Gerente de Operações e Entrega precisa saber sobre feedbacks dos clientes",
+        "Analista de Experiência do Cliente precisa de aprovação para implementar mudanças"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-OPE12",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Necessidade de alinhamento entre vendas e operações",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre previsões de vendas",
+        "Atualizações sobre status de entrega"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE12",
+    "persona_b": "ARVA01-VEN25",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a aquisição e entrega eficiente aos clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Coordenação de novas aquisições de clientes",
+        "Atualizações sobre status de entrega"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-OPE12",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a satisfação e retenção dos clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedbacks dos clientes",
+        "Planejamento de estratégias de retenção"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-OPE14",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para otimizar e automatizar processos operacionais",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre novas automações",
+        "Feedback sobre eficiência de processos"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-PRO15",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para alinhar a automação de processos com as necessidades do produto",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre a implementação de novas funcionalidades do produto",
+        "Solicitação de aprovação para alterações no processo de automação"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-PRO16",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para automatizar processos de software",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre a implementação de automação",
+        "Solicitação de aprovação para mudanças de software"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-PRO17",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham na otimização e qualidade de processos",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre a eficácia de um processo automatizado",
+        "Solicitação de aprovação para implementação de um novo processo"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-QUA18",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para melhorar processos e garantir qualidade",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre automação de processos",
+        "Revisão de auditoria de qualidade"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-QUA19",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para otimizar e auditar processos",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre a eficiência de um processo automatizado",
+        "Solicitação de auditoria em um processo recém-automatizado"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-QUA20",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a qualidade e eficiência dos processos automatizados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Revisão de processos automatizados",
+        "Solicitação de testes de qualidade"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-SUP21",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para melhorar a retenção de clientes através da automação",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre novas estratégias de automação para retenção de clientes",
+        "Solicitação de aprovação para implementação de novos processos automatizados"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-SUP22",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para otimizar processos de suporte ao cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Automação de tickets de suporte",
+        "Melhoria do fluxo de trabalho de suporte"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para melhorar a experiência do cliente através da automação",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedbacks dos clientes para melhorar a automação",
+        "Notificação sobre atualizações de processos automatizados"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para otimizar processos de vendas através da automação",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre automação de processos de vendas",
+        "Solicitação de aprovação para implementação de novos processos automatizados"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para otimizar processos e melhorar a retenção de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre processos que afetam a retenção de clientes",
+        "Notificação sobre mudanças em processos que podem afetar a retenção de clientes"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-OPE14",
+    "persona_b": "ARVA01-PRO15",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para melhorar a eficiência do produto",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Analista de Operações fornece feedback sobre o desempenho do produto",
+        "Gerente de Produto solicita aprovação para mudanças no produto"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE14",
+    "persona_b": "ARVA01-PRO16",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham em projetos de software e operações interdependentes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre requisitos de software",
+        "Solicitação de aprovação de mudanças operacionais"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE14",
+    "persona_b": "ARVA01-QUA18",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em processos de qualidade e operações",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre padrões de qualidade",
+        "Solicitação de auditoria de operações"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE14",
+    "persona_b": "ARVA01-QUA19",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Auditor verifica e aprimora processos que o analista executa",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Auditor solicita dados de operações para análise",
+        "Analista solicita aprovação de alterações de processo ao Auditor"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-OPE14",
+    "persona_b": "ARVA01-QUA20",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para melhorar a qualidade das operações",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Analista de Operações precisa da aprovação do Analista de Qualidade",
+        "Analista de Qualidade precisa de informações das operações"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-OPE14",
+    "persona_b": "ARVA01-SUP21",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Interdependência em retenção e operações de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre problemas operacionais que afetam a retenção de clientes",
+        "Notificação sobre mudanças nas operações que podem impactar a retenção de clientes"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-OPE14",
+    "persona_b": "ARVA01-SUP22",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Fluxos de trabalho conectados e dados compartilhados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "normal",
+      "exemplos": [
+        "Analista de Operações precisa informar sobre mudanças no processo",
+        "Especialista em Suporte ao Cliente precisa de esclarecimentos sobre operações"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-OPE14",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Fluxos de trabalho e dados compartilhados",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhamento de feedback do cliente",
+        "Discussão sobre melhorias operacionais"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-OPE14",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a satisfação e retenção do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Analista de Operações informa sobre problemas que podem afetar a retenção de clientes",
+        "Especialista em Retenção de Clientes solicita informações sobre operações que afetam a experiência do cliente"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-PRO15",
+    "persona_b": "ARVA01-PRO16",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para desenvolver e aprimorar produtos",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre novas funcionalidades do produto",
+        "Revisão de código e implementação"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-PRO15",
+    "persona_b": "ARVA01-PRO17",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Colaboração em desenvolvimento e garantia de qualidade do produto",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre novos recursos do produto",
+        "Relatório de bugs e problemas de qualidade"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-PRO15",
+    "persona_b": "ARVA01-QUA18",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a qualidade do produto e atender aos padrões",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre a qualidade do produto",
+        "Solicitação de auditoria do produto"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-PRO15",
+    "persona_b": "ARVA01-QUA19",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a conformidade dos produtos com os processos estabelecidos",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Auditoria de processos de desenvolvimento de produto",
+        "Solicitação de aprovação de alterações de processo"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-PRO15",
+    "persona_b": "ARVA01-QUA20",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Garantir a qualidade do produto e identificar melhorias",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre problemas de qualidade do produto",
+        "Solicitação de aprovação para mudanças no produto"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-PRO15",
+    "persona_b": "ARVA01-SUP21",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para melhorar o produto e reter clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedback de clientes",
+        "Planejamento de melhorias do produto"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-PRO15",
+    "persona_b": "ARVA01-SUP22",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Feedback do cliente e melhorias do produto",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Feedback do cliente para melhorias",
+        "Perguntas sobre funcionalidades do produto"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-PRO15",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a satisfação do cliente com o produto",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Feedback do cliente sobre o produto",
+        "Sugestões de melhorias baseadas na experiência do cliente"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-PRO15",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Produtos e vendas são interdependentes para o sucesso do negócio",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre previsões de vendas",
+        "Feedback sobre desempenho do produto"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-PRO15",
+    "persona_b": "ARVA01-VEN25",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para alinhar estratégias de produto e aquisição de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre novos recursos do produto",
+        "Planejamento de campanhas de aquisição de clientes"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-PRO15",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a satisfação e retenção dos clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Feedback do cliente sobre o produto",
+        "Estratégias para melhorar a retenção do cliente"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-PRO16",
+    "persona_b": "ARVA01-PRO17",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para garantir a qualidade do software",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhar bugs encontrados",
+        "Discutir soluções para problemas de software"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-PRO16",
+    "persona_b": "ARVA01-QUA18",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Garantir qualidade do software e conformidade com padrões",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Revisão de código",
+        "Auditoria de qualidade"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-PRO16",
+    "persona_b": "ARVA01-QUA19",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Auditor verifica a qualidade do software desenvolvido",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "ocasional",
+      "prioridade": "high",
+      "exemplos": [
+        "Auditor solicita informações sobre o desenvolvimento do software",
+        "Engenheiro fornece relatórios de progresso ao auditor"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-PRO16",
+    "persona_b": "ARVA01-QUA20",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para garantir a qualidade do software",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre bugs encontrados",
+        "Solicitação de aprovação para mudanças de código"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-PRO16",
+    "persona_b": "ARVA01-SUP22",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para resolver problemas técnicos e melhorar a experiência do usuário",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Suporte ao cliente precisa de ajuda para resolver um problema técnico",
+        "Engenheiro de software precisa de feedback sobre a usabilidade do software"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-PRO16",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a qualidade do software e a satisfação do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Feedback do cliente sobre o software",
+        "Sugestões de melhorias com base na experiência do cliente"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-PRO17",
+    "persona_b": "ARVA01-QUA18",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para garantir a qualidade e auditoria",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre questões de qualidade",
+        "Solicitação de aprovação para mudanças de qualidade"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-PRO17",
+    "persona_b": "ARVA01-QUA19",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Garantir a qualidade e conformidade dos processos",
+      "tipos_comunicacao": [
+        "handoff",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Auditor solicita validação de processo ao Especialista em QA",
+        "Especialista em QA envia relatório de qualidade para Auditor"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-PRO17",
+    "persona_b": "ARVA01-QUA20",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham na garantia de qualidade do produto",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhamento de relatórios de bugs",
+        "Solicitação de testes adicionais"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-PRO17",
+    "persona_b": "ARVA01-SUP22",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a qualidade do suporte ao cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "QA precisa informar sobre bugs para o suporte",
+        "Suporte precisa informar QA sobre problemas relatados pelos clientes"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-PRO17",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Garantir a qualidade da experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "QA precisa informar sobre bugs que afetam a experiência do cliente",
+        "Analista precisa informar o QA sobre feedbacks dos clientes"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-QUA18",
+    "persona_b": "ARVA01-QUA19",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos na auditoria e qualidade dos processos",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre resultados de auditoria",
+        "Solicitação de aprovação para mudanças de processo"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-QUA18",
+    "persona_b": "ARVA01-QUA20",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham na mesma área e possuem interdependência de tarefas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Revisão de procedimentos de qualidade",
+        "Discussão sobre auditorias internas"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-QUA18",
+    "persona_b": "ARVA01-SUP21",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Garantir a qualidade do serviço ao cliente e retenção",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedbacks dos clientes",
+        "Planejamento de melhorias na qualidade do serviço"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-QUA18",
+    "persona_b": "ARVA01-SUP22",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Garantir a qualidade do atendimento ao cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Revisão de procedimentos de atendimento",
+        "Feedback sobre a qualidade do suporte"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-QUA18",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Garantir a qualidade da experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedbacks dos clientes",
+        "Aprovação de mudanças no processo de atendimento ao cliente"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-QUA18",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Necessidade de alinhamento de qualidade e vendas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Discussão sobre qualidade do produto",
+        "Revisão de procedimentos de vendas"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-QUA18",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Garantir a qualidade do serviço ao cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedbacks de clientes",
+        "Melhorias no processo de retenção"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-QUA19",
+    "persona_b": "ARVA01-QUA20",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para garantir a qualidade dos processos",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Auditor compartilha relatório de auditoria com o Analista",
+        "Analista solicita esclarecimentos sobre o relatório de auditoria"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-QUA19",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Melhorar a experiência do cliente através de processos eficientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "normal",
+      "exemplos": [
+        "Auditor compartilha relatório de processo com o Analista",
+        "Analista questiona Auditor sobre possíveis melhorias no processo"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-QUA20",
+    "persona_b": "ARVA01-SUP21",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Garantir a qualidade do serviço para retenção de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedback dos clientes",
+        "Atualizações sobre as melhorias de qualidade"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-QUA20",
+    "persona_b": "ARVA01-SUP22",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Garantir a qualidade do suporte ao cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Feedback sobre a qualidade do suporte",
+        "Discussões sobre melhorias no suporte ao cliente"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-QUA20",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Melhorar a qualidade com base na experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Feedback do cliente sobre a qualidade",
+        "Melhorias baseadas na experiência do cliente"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-QUA20",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Garantir a qualidade do serviço ao cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhamento de feedback do cliente",
+        "Discussão sobre melhorias no serviço"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-SUP21",
+    "persona_b": "ARVA01-SUP22",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para reter clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedback do cliente",
+        "Estratégias de retenção de clientes"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-SUP21",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para melhorar a retenção e experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedback dos clientes",
+        "Planejamento de estratégias de retenção"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-SUP21",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos gerenciam aspectos cruciais do ciclo de vida do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre estratégias de vendas e retenção",
+        "Compartilhamento de feedback do cliente"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-SUP21",
+    "persona_b": "ARVA01-VEN25",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para adquirir e reter clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhamento de dados sobre novos clientes",
+        "Discussão sobre estratégias de retenção"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-SUP21",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Hierarquia direta e workflows conectados na retenção de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão de estratégias de retenção",
+        "Aprovação de planos de ação"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-SUP22",
+    "persona_b": "ARVA01-SUP23",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para melhorar a experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhar feedback do cliente",
+        "Discutir melhorias no suporte ao cliente"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-SUP22",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a satisfação do cliente e impulsionar as vendas",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Feedback do cliente sobre um produto",
+        "Atualização de informações de vendas"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-SUP22",
+    "persona_b": "ARVA01-VEN25",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para garantir a satisfação e retenção de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhar feedback do cliente",
+        "Discutir estratégias de aquisição"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-SUP22",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham diretamente com clientes e suas experiências",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhar feedback do cliente",
+        "Discutir estratégias de retenção"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-SUP23",
+    "persona_b": "ARVA01-VEN24",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Para alinhar estratégias de vendas e experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "semanal",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre feedback dos clientes",
+        "Planejamento de estratégias de vendas"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-SUP23",
+    "persona_b": "ARVA01-VEN25",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para melhorar a aquisição e experiência do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhar feedback dos clientes",
+        "Discutir estratégias de aquisição"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-SUP23",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Ambos trabalham para melhorar a experiência e retenção do cliente",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhar feedback dos clientes",
+        "Discutir estratégias de retenção"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-VEN24",
+    "persona_b": "ARVA01-VEN25",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para adquirir e gerenciar clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question",
+        "approval_request"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre estratégias de aquisição de clientes",
+        "Atualizações sobre o desempenho das vendas"
+      ]
+    },
+    "comunicacoes_criadas": 4
+  },
+  {
+    "persona_a": "ARVA01-VEN24",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham juntos para melhorar vendas e retenção de clientes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Discussão sobre estratégias de vendas",
+        "Feedback sobre retenção de clientes"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  },
+  {
+    "persona_a": "ARVA01-VEN25",
+    "persona_b": "ARVA01-VEN26",
+    "analise": {
+      "precisa_comunicar": true,
+      "razao": "Trabalham na mesma área com objetivos interdependentes",
+      "tipos_comunicacao": [
+        "handoff",
+        "notification",
+        "question"
+      ],
+      "frequencia": "diaria",
+      "prioridade": "high",
+      "exemplos": [
+        "Compartilhamento de dados sobre novos clientes",
+        "Discussão sobre estratégias de retenção"
+      ]
+    },
+    "comunicacoes_criadas": 3
+  }
+]

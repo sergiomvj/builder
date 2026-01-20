@@ -1,0 +1,46 @@
+const { createClient } = require('@supabase/supabase-js');
+require('dotenv').config({ path: '../../.env' });
+
+const supabaseUrl = process.env.VCM_SUPABASE_URL;
+const supabaseKey = process.env.VCM_SUPABASE_SERVICE_ROLE_KEY;
+
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+async function listarEmpresas() {
+    try {
+        const { data: empresas, error } = await supabase
+            .from('empresas')
+            .select('*')
+            .order('created_at', { ascending: false });
+
+        if (error) {
+            console.error('❌ Erro:', error);
+            return;
+        }
+
+        if (empresas && empresas.length > 0) {
+            console.log(`✅ Empresas encontradas (${empresas.length}):`);
+            empresas.forEach((empresa, index) => {
+                console.log(`\n${index + 1}. ${empresa.nome}`);
+                console.log(`   ID: ${empresa.id}`);
+                console.log(`   Código: ${empresa.codigo}`);
+                console.log(`   País: ${empresa.pais}`);
+                console.log(`   Total personas: ${empresa.total_personas}`);
+            });
+            
+            // Mostrar comando para a primeira empresa dos EUA
+            const empresaUS = empresas.find(e => e.pais === 'US');
+            if (empresaUS) {
+                console.log(`\n🎯 Comando para empresa dos EUA (${empresaUS.nome}):`);
+                console.log(`node generate_personas_reais_internacional.js --empresaId=${empresaUS.id}`);
+            }
+        } else {
+            console.log('❌ Nenhuma empresa encontrada');
+        }
+
+    } catch (error) {
+        console.error('❌ Erro:', error.message);
+    }
+}
+
+listarEmpresas();

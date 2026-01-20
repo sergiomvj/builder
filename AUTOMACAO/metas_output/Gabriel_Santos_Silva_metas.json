@@ -1,0 +1,36 @@
+{
+  "persona_id": "0db7e193-c7fd-482d-94b6-9f0ac0b45cee",
+  "full_name": "Gabriel Santos Silva",
+  "role": "Analista de Dados",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades em Machine Learning",
+      "descricao": "Realizar um curso online de Machine Learning e concluir todos os módulos até o final do terceiro trimestre de 2021.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "%",
+      "data_prazo": "2021-09-30",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Obter certificação em Análise de Dados",
+      "descricao": "Estudar para o exame de certificação em Análise de Dados e realizar a prova até o final do primeiro trimestre de 2022.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "%",
+      "data_prazo": "2022-03-31",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Melhorar habilidades de comunicação com stakeholders",
+      "descricao": "Participar de um workshop de comunicação eficaz e aplicar as técnicas aprendidas em reuniões com stakeholders ao longo do segundo trimestre de 2021.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "%",
+      "data_prazo": "2021-06-30",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:37:36.944Z"
+}

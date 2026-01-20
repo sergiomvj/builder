@@ -1,0 +1,54 @@
+{
+  "persona_id": "f7151f2d-c6a1-460d-810d-3fafabd673ff",
+  "full_name": "Mei-Ling Zhou",
+  "role": "Product Manager",
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "competencias_tecnicas": [
+    "Conhecimento em inteligência artificial",
+    "Experiência em gestão de produtos de tecnologia",
+    "Habilidades em análise de dados",
+    "Conhecimento em UX/UI design",
+    "Familiaridade com metodologias ágeis"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação eficaz",
+    "Liderança",
+    "Trabalho em equipe",
+    "Resolução de problemas",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Jira",
+    "Trello",
+    "Google Analytics",
+    "Sketch",
+    "Tableau"
+  ],
+  "tarefas_diarias": [
+    "Realizar reuniões com equipe de desenvolvimento",
+    "Analisar métricas de desempenho do produto",
+    "Atualizar o roadmap do produto",
+    "Colaborar com equipe de design na criação de novas funcionalidades"
+  ],
+  "tarefas_semanais": [
+    "Acompanhar o progresso das sprint do time de desenvolvimento",
+    "Realizar testes de usabilidade com usuários",
+    "Realizar brainstorming de novas ideias para o produto"
+  ],
+  "tarefas_mensais": [
+    "Realizar análise de mercado e concorrência",
+    "Preparar relatórios de desempenho do produto",
+    "Participar de eventos e conferências do setor"
+  ],
+  "kpis": [
+    "Aumento de X% na taxa de retenção de usuários - 80%",
+    "Lançamento de X novas funcionalidades por trimestre - 100%",
+    "Redução de X% no tempo de resposta do suporte - 70%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de liderança",
+    "Aprofundar conhecimentos em inteligência artificial",
+    "Desenvolver habilidades de negociação"
+  ],
+  "generated_at": "2025-12-05T20:12:37.570Z"
+}

@@ -1,0 +1,188 @@
+{
+  "empresa": "ARVA Tech Solutions",
+  "service": "fal",
+  "style": "professional",
+  "timestamp": "2025-12-05T15:15:47.262Z",
+  "results": [
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a8518ac/eBY708wdjcbsBXQQxdLW0_91a96546cba4489bb397f92ea76fb09a.jpg",
+      "prompt": "professional headshot portrait of a person, professional in their thirties, diverse ethnicity, professional appearance, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "76f4421e-4918-4eab-b67f-34ec44e84385"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 2463132509,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a8518ad/vznJMFMed3C7Pg-M7PRhK_c4e6dc4601a5498fb261a3682e684086.jpg",
+      "prompt": "professional headshot portrait of a person, professional in their thirties, diverse ethnicity, professional appearance, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "698a8eb6-2c7c-4758-850c-8673e38a4d63"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 147907826,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a8518ae/zyyyQQSBdaSQgDyb2qb_l_8775bcc08cd141a5a3657a27d70be683.jpg",
+      "prompt": "professional headshot portrait of a person, professional in their thirties, diverse ethnicity, professional appearance, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "c02e746b-eae6-4b3a-b405-2711652e6a69"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 1911726152,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a8518af/J8fEqG-FsgJkdxA5F2p7V_7bcebeab59554a77a6a45a9f331d64a9.jpg",
+      "prompt": "professional headshot portrait of a person, professional in their thirties, diverse ethnicity, professional appearance, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "d64c834e-78bf-4560-83a7-e4b7d7dabe81"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 1773376499,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a8518b0/PmOVReLIQmj7Yd6jl11tj_b75c305b6a104315932e1e28469a07c7.jpg",
+      "prompt": "professional headshot portrait of a person, professional in their thirties, diverse ethnicity, professional appearance, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "25a1a070-95c2-45d5-9951-add2990510c5"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 393217550,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a8518b1/5_1M_KeuAIhSFwKgRwvTd_accefdb7683243f48c75030ccfa5e4f7.jpg",
+      "prompt": "professional headshot portrait of a person, professional in their thirties, diverse ethnicity, professional appearance, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "2dba2aaf-dded-4ae5-b62a-45f5e22e07ab"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 3316892875,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a8518b2/5gX0V05QvbmVy-8QCu14D_73c40be2c81142a19aa472798abdfb2e.jpg",
+      "prompt": "professional headshot portrait of a person, professional in their thirties, diverse ethnicity, professional appearance, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "8e0bc076-393f-4501-97e0-4fa548b00add"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 3208300508,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a8518b3/y828VMAigj4UyhcwijMJ3_1628578a7e7e4f539f326d39c01e7839.jpg",
+      "prompt": "professional headshot portrait of a person, professional in their thirties, diverse ethnicity, professional appearance, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "8dec1236-54f2-4a3c-9b96-8f0a2e35321c"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 985334291,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a8518b4/MKQPoTcjiMq51K5MDSu0v_81f85af36ce1498287dbd91276fa6d05.jpg",
+      "prompt": "professional headshot portrait of a person, professional in their thirties, diverse ethnicity, professional appearance, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "d1f3e279-4bf8-4dc0-8c99-51835314b191"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 3568181379,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a8518b4/4zsO1JsGythgPnowTsMCA_67df875bc79e49ee8ce8abe9a70c623a.jpg",
+      "prompt": "professional headshot portrait of a person, professional in their thirties, diverse ethnicity, professional appearance, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "13eb3c7d-2a12-4f1e-bb21-9acdf0967ace"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 3418919027,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a8518b5/UGNHMjGsWZpkRJc7iKi5D_f3ca2721ce934f76b4b47c2039fd3c4f.jpg",
+      "prompt": "professional headshot portrait of a person, professional in their thirties, diverse ethnicity, professional appearance, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "fa1841d3-65b6-4858-b47b-687cb83072df"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 3654887401,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a8518b6/eh4Vj4_aHw_FHEEZ8osQp_102e389d9cd24a40851b929d7c6d7f6f.jpg",
+      "prompt": "professional headshot portrait of a person, professional in their thirties, diverse ethnicity, professional appearance, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "f5e86157-2b18-4801-ab6b-87d2d0af37d2"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 2600912073,
+        "inference_steps": 28
+      }
+    }
+  ]
+}

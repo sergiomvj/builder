@@ -1,0 +1,1205 @@
+[
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-MAR8",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification"
+      ],
+      "razao": "Diretor comunica estratégia aos gerentes",
+      "prioridade": "high",
+      "frequencia": "mensal"
+    },
+    "comunicacoes": 1
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-OPE12",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification"
+      ],
+      "razao": "Diretor comunica estratégia aos gerentes",
+      "prioridade": "high",
+      "frequencia": "mensal"
+    },
+    "comunicacoes": 1
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-PRO15",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification"
+      ],
+      "razao": "Diretor comunica estratégia aos gerentes",
+      "prioridade": "high",
+      "frequencia": "mensal"
+    },
+    "comunicacoes": 1
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-QUA18",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification"
+      ],
+      "razao": "Diretor comunica estratégia aos gerentes",
+      "prioridade": "high",
+      "frequencia": "mensal"
+    },
+    "comunicacoes": 1
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification"
+      ],
+      "razao": "Diretor comunica estratégia aos gerentes",
+      "prioridade": "high",
+      "frequencia": "mensal"
+    },
+    "comunicacoes": 1
+  },
+  {
+    "persona_a": "ARVA01-EST1",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification"
+      ],
+      "razao": "Diretor comunica estratégia aos gerentes",
+      "prioridade": "high",
+      "frequencia": "mensal"
+    },
+    "comunicacoes": 1
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-FIN4",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-MAR8",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-OPE12",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-PRO15",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-QUA18",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-EST2",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-FIN4",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-MAR8",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-OPE12",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-PRO15",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-QUA18",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-EST3",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-MAR8",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification"
+      ],
+      "razao": "Diretor comunica estratégia aos gerentes",
+      "prioridade": "high",
+      "frequencia": "mensal"
+    },
+    "comunicacoes": 1
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-OPE12",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification"
+      ],
+      "razao": "Diretor comunica estratégia aos gerentes",
+      "prioridade": "high",
+      "frequencia": "mensal"
+    },
+    "comunicacoes": 1
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-PRO15",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification"
+      ],
+      "razao": "Diretor comunica estratégia aos gerentes",
+      "prioridade": "high",
+      "frequencia": "mensal"
+    },
+    "comunicacoes": 1
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-QUA18",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification"
+      ],
+      "razao": "Diretor comunica estratégia aos gerentes",
+      "prioridade": "high",
+      "frequencia": "mensal"
+    },
+    "comunicacoes": 1
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification"
+      ],
+      "razao": "Diretor comunica estratégia aos gerentes",
+      "prioridade": "high",
+      "frequencia": "mensal"
+    },
+    "comunicacoes": 1
+  },
+  {
+    "persona_a": "ARVA01-FIN4",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification"
+      ],
+      "razao": "Diretor comunica estratégia aos gerentes",
+      "prioridade": "high",
+      "frequencia": "mensal"
+    },
+    "comunicacoes": 1
+  },
+  {
+    "persona_a": "ARVA01-FIN5",
+    "persona_b": "ARVA01-MAR8",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN5",
+    "persona_b": "ARVA01-OPE12",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN5",
+    "persona_b": "ARVA01-PRO15",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN5",
+    "persona_b": "ARVA01-QUA18",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN5",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN5",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN6",
+    "persona_b": "ARVA01-MAR8",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN6",
+    "persona_b": "ARVA01-OPE12",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN6",
+    "persona_b": "ARVA01-PRO15",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN6",
+    "persona_b": "ARVA01-QUA18",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN6",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN6",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN7",
+    "persona_b": "ARVA01-MAR8",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN7",
+    "persona_b": "ARVA01-OPE12",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN7",
+    "persona_b": "ARVA01-PRO15",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN7",
+    "persona_b": "ARVA01-QUA18",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN7",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-FIN7",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR10",
+    "persona_b": "ARVA01-MAR8",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR10",
+    "persona_b": "ARVA01-OPE12",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR10",
+    "persona_b": "ARVA01-PRO15",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR10",
+    "persona_b": "ARVA01-QUA18",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR10",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR10",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR11",
+    "persona_b": "ARVA01-MAR8",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR11",
+    "persona_b": "ARVA01-OPE12",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR11",
+    "persona_b": "ARVA01-PRO15",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR11",
+    "persona_b": "ARVA01-QUA18",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR11",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR11",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR9",
+    "persona_b": "ARVA01-OPE12",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR9",
+    "persona_b": "ARVA01-PRO15",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR9",
+    "persona_b": "ARVA01-QUA18",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR9",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-MAR9",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-PRO15",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-QUA18",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-OPE13",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-OPE14",
+    "persona_b": "ARVA01-PRO15",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-OPE14",
+    "persona_b": "ARVA01-QUA18",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-OPE14",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-OPE14",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-PRO16",
+    "persona_b": "ARVA01-QUA18",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-PRO16",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-PRO16",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-PRO17",
+    "persona_b": "ARVA01-QUA18",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-PRO17",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-PRO17",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-QUA19",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-QUA19",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-QUA20",
+    "persona_b": "ARVA01-SUP21",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-QUA20",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "approval_request",
+        "notification"
+      ],
+      "razao": "Relação hierárquica: operacional → gerencial",
+      "prioridade": "high",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-SUP22",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  },
+  {
+    "persona_a": "ARVA01-SUP23",
+    "persona_b": "ARVA01-VEN24",
+    "regra": {
+      "precisa": true,
+      "tipos": [
+        "notification",
+        "question"
+      ],
+      "razao": "Especialista reporta ao gerente",
+      "prioridade": "normal",
+      "frequencia": "semanal"
+    },
+    "comunicacoes": 2
+  }
+]

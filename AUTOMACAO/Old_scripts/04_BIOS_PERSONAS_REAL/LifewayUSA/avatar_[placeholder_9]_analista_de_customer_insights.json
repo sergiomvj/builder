@@ -1,0 +1,112 @@
+{
+  "persona": {
+    "nome": "[Placeholder 9] Analista de Customer Insights",
+    "nacionalidade": "latinos",
+    "genero": "feminino",
+    "cargo": "Analista de Customer Insights",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Em definição",
+    "competencias": "Em definição",
+    "biografia": "Profissional experiente",
+    "personalidade": {},
+    "experiencia_anos": 3,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=200&h=200&fit=crop&crop=face",
+    "prompt_usado": "Mulher latina jovem profissional de 25-27 anos, genero feminino, etnia latino, tipo fisico esguio atletico, altura estimada 1.65-1.70m, cabelo cor castanho escuro, cabelo comprimento medio, cabelo estilo ondulado, cabelo volume denso, olhos cor mel, olhos formato amendoados expressivos, rosto formato oval, pele tom oliva morena clara, pele textura lisa com brilho saudavel, sobrancelhas grossas arqueadas, nariz fino arrebitado, boca labios medios carnudos, expressao facial padrao sorriso leve confiante, marcas unicas nenhuma, acessorios permanentes oculos armacao preta fina brinco pequeno prata colar delicado, postura ereta confiante, caracteristicas distintivas maquiagem natural leve sorriso cativante, estilo vestimenta padrao business casual, paleta cores vestuario azul marinho branco cinza neutro, analista de customer insights em tecnologia, fundo office neutro, foto 4K realista retrato editorial",
+    "estilo": "business casual",
+    "background_tipo": "office",
+    "servico_usado": "gemini_ai",
+    "versao": 1,
+    "ativo": true,
+    "biometrics": {
+      "idade_aparente": "25-27 anos",
+      "genero": "feminino",
+      "etnia": "latino",
+      "tipo_fisico": "esguio atletico",
+      "altura_estimada": "1.65-1.70m",
+      "cabelo_cor": "castanho escuro",
+      "cabelo_comprimento": "medio",
+      "cabelo_estilo": "ondulado",
+      "cabelo_volume": "denso",
+      "olhos_cor": "mel",
+      "olhos_formato": "amendoados expressivos",
+      "rosto_formato": "oval",
+      "pele_tom": "oliva morena clara",
+      "pele_textura": "lisa com brilho saudavel",
+      "sobrancelhas": "grossas arqueadas",
+      "nariz": "fino arrebitado",
+      "boca_labios": "medios carnudos",
+      "expressao_facial_padrao": "sorriso leve confiante",
+      "marcas_unicas": "nenhuma",
+      "acessorios_permanentes": "oculos armacao preta fina, brinco pequeno prata, colar delicado",
+      "postura": "ereta confiante",
+      "caracteristicas_distintivas": "maquiagem natural leve, sorriso cativante",
+      "estilo_vestimenta_padrao": "business casual",
+      "paleta_cores_vestuario": "azul marinho, branco, cinza neutro"
+    },
+    "physical_description_detailed": {
+      "rosto": {
+        "formato": "oval suave com queixo delicado",
+        "tom_pele": "oliva morena clara uniforme",
+        "textura_pele": "lisa com brilho saudavel e poros minimos",
+        "olhos": {
+          "cor": "mel com reflexos dourados",
+          "formato": "amendoados expressivos com cílios longos"
+        },
+        "sobrancelhas": "grossas arqueadas naturalmente definidas",
+        "nariz": "fino arrebitado harmonioso",
+        "boca": "lábios medios carnudos com contorno natural",
+        "expressao_tipica": "sorriso leve confiante com olhar direto"
+      },
+      "cabelo": {
+        "cor_exata": "castanho escuro rico",
+        "comprimento": "medio ate ombros",
+        "estilo": "ondulado solto com ondas suaves",
+        "volume": "denso e brilhante"
+      },
+      "corpo": {
+        "altura_aproximada": "1.68m",
+        "tipo_fisico": "esguio atletico com curvas sutis",
+        "proporcao": "proporcoes equilibradas ombros estreitos cintura definida",
+        "postura_tipica": "ereta confiante com ombros relaxados"
+      }
+    },
+    "consistency_parameters": {
+      "rendering_style": "foto 4K realista",
+      "lens_focus": "85mm",
+      "lighting": "soft studio light",
+      "aspect_ratio": "1:1 (avatar)"
+    },
+    "history": {
+      "background_educacional": "Bacharel em Analise de Dados e Marketing pela universidade brasileira com mestrado online em EUA",
+      "experiencia_internacional": "Estagio em empresa tech no Mexico e mudanca para USA na LifewayUSA",
+      "contexto_cultural": "Influencias latinas brasileiras com adaptacao ao estilo profissional americano tech",
+      "estilo_vida": "Ativo fitness corrida urbana dieta balanceada reflete em pele saudavel e forma fisica",
+      "marcos_carreira": "Promocao apos 2 anos por analise de insights que otimizou operacoes",
+      "valores_pessoais": "Profissionalismo acessivel e inovacao refletidos em acessorios minimalistas e sorriso amigavel",
+      "ambiente_trabalho": "Escritorio tech casual influencia business casual com elementos confortaveis",
+      "redes_sociais": "Perfil LinkedIn ativo com fotos profissionais em eventos tech"
+    },
+    "metadados": {
+      "resolucao": "1024x1024",
+      "formato": "webp",
+      "qualidade": "ultra_high",
+      "parametros_geracao": {
+        "prompt_negativo": "blurry, low quality, distorted, cartoonish",
+        "steps": 30,
+        "cfg_scale": 8.5
+      },
+      "contexto_profissional": {
+        "cargo": "Analista de Customer Insights",
+        "industria": "tecnologia",
+        "senioridade": "junior"
+      }
+    }
+  },
+  "generated_at": "2025-12-03T12:52:59.994Z"
+}

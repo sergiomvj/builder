@@ -1,0 +1,59 @@
+{
+  "persona_id": "522d421e-b796-47cd-ade5-9faa650e62d0",
+  "full_name": "Élise Moreau",
+  "role": "Gerente de Produto",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "metas": [
+    {
+      "titulo": "Atingir 85% de Retenção de Usuários",
+      "descricao": "Implementar 3 novas features de engajamento para elevar a taxa de retenção mensal de usuários ativos para 85%, medido via analytics internos.",
+      "categoria": "kpi",
+      "valor_alvo": 85,
+      "unidade_medida": "%",
+      "data_prazo": "2025-06-01",
+      "prioridade": 5,
+      "vinculada_kpi": "Taxa de Retenção de Usuários - 85%"
+    },
+    {
+      "titulo": "Reduzir Tempo de Lançamento para 4 Semanas",
+      "descricao": "Otimizar o pipeline de desenvolvimento com sprints ágeis para reduzir o tempo médio de lançamento de features para 4 semanas, rastreando 10 features.",
+      "categoria": "performance",
+      "valor_alvo": 4,
+      "unidade_medida": "semanas",
+      "data_prazo": "2025-05-15",
+      "prioridade": 4,
+      "vinculada_kpi": "Tempo Médio para Lançamento de Features - 4 semanas"
+    },
+    {
+      "titulo": "Alcançar NPS de 75",
+      "descricao": "Conduzir 4 rodadas de pesquisas de satisfação e implementar melhorias baseadas em feedback para elevar o Net Promoter Score para 75.",
+      "categoria": "kpi",
+      "valor_alvo": 75,
+      "unidade_medida": "pontos",
+      "data_prazo": "2025-06-01",
+      "prioridade": 4,
+      "vinculada_kpi": "Net Promoter Score (NPS) - 75"
+    },
+    {
+      "titulo": "Lançar Agente Autônomo Escalável",
+      "descricao": "Liderar equipe cross-funcional para desenvolver e lançar um novo agente autônomo escalável em produção, validado com 1000 usuários iniciais.",
+      "categoria": "performance",
+      "valor_alvo": 1,
+      "unidade_medida": "lançamentos",
+      "data_prazo": "2025-06-01",
+      "prioridade": 5,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Expandir Rede com 5 Parcerias nos EUA",
+      "descricao": "Realizar 20 outreachs e fechar 5 parcerias estratégicas com empresas de tech nos EUA, documentadas em MOUs.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 5,
+      "unidade_medida": "parcerias",
+      "data_prazo": "2025-04-30",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    }
+  ],
+  "generated_at": "2025-12-08T22:28:17.246Z"
+}

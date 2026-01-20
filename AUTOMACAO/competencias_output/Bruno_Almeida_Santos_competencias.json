@@ -1,0 +1,52 @@
+{
+  "persona_id": "67c40425-d62f-4ab2-8405-d6824362ad40",
+  "full_name": "Bruno Almeida Santos",
+  "role": "COO",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Gestão de projetos",
+    "Análise de dados",
+    "Gestão de equipe",
+    "Negociação",
+    "Conhecimento em imigração"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Resolução de problemas",
+    "Tomada de decisão",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Microsoft Office",
+    "Google Analytics",
+    "Trello",
+    "Slack"
+  ],
+  "tarefas_diarias": [
+    "Reuniões de alinhamento com equipe",
+    "Acompanhamento de indicadores",
+    "Resolução de conflitos"
+  ],
+  "tarefas_semanais": [
+    "Elaboração de relatórios de desempenho",
+    "Definição de metas para a equipe",
+    "Feedback individual aos colaboradores"
+  ],
+  "tarefas_mensais": [
+    "Planejamento estratégico",
+    "Avaliação de resultados do mês anterior",
+    "Implementação de melhorias no processo"
+  ],
+  "kpis": [
+    "Satisfação do cliente - 90%",
+    "Eficiência operacional - 95%",
+    "Crescimento de usuários ativos - 10%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Desenvolver habilidades de liderança",
+    "Aprimorar conhecimento em imigração",
+    "Implementar novas estratégias de crescimento"
+  ],
+  "generated_at": "2025-12-08T14:36:52.200Z"
+}

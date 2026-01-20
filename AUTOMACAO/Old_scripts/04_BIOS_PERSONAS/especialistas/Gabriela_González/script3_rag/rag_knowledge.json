@@ -1,0 +1,494 @@
+{
+  "persona_profile": {
+    "id": 4,
+    "persona_key": "Gabriela_González",
+    "nome_completo": "Gabriela González",
+    "categoria": "especialistas",
+    "especialidade": "midias_sociais",
+    "experiencia_anos": 15,
+    "biografia": {
+      "educacao": "Marketing Digital e Social Media, Certificação Facebook Blueprint",
+      "idiomas": [
+        "inglês",
+        "espanhol",
+        "francês",
+        "português"
+      ],
+      "secoes_extraidas": [
+        "formacao",
+        "experiencia",
+        "competencias_tecnicas",
+        "competencias_comportamentais",
+        "responsabilidades"
+      ]
+    },
+    "competencias": {
+      "tecnicas": [
+        {
+          "id": "4_t_1",
+          "nome": "Social Media Marketing",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Social Media Marketing aplicada no contexto de midias_sociais"
+        },
+        {
+          "id": "4_t_2",
+          "nome": "Community Management",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Community Management aplicada no contexto de midias_sociais"
+        },
+        {
+          "id": "4_t_3",
+          "nome": "Gestão de Campanhas",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Gestão de Campanhas aplicada no contexto de midias_sociais"
+        },
+        {
+          "id": "4_t_4",
+          "nome": "Analytics e Métricas",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Analytics e Métricas aplicada no contexto de midias_sociais"
+        },
+        {
+          "id": "4_t_5",
+          "nome": "Influencer Marketing",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Influencer Marketing aplicada no contexto de midias_sociais"
+        },
+        {
+          "id": "4_t_6",
+          "nome": "Paid Social Advertising",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Paid Social Advertising aplicada no contexto de midias_sociais"
+        }
+      ],
+      "comportamentais": [
+        {
+          "id": "4_c_1",
+          "nome": "Comunicação Digital",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Comunicação Digital aplicada no contexto de especialistas"
+        },
+        {
+          "id": "4_c_2",
+          "nome": "Criatividade",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Criatividade aplicada no contexto de especialistas"
+        },
+        {
+          "id": "4_c_3",
+          "nome": "Agilidade",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Agilidade aplicada no contexto de especialistas"
+        },
+        {
+          "id": "4_c_4",
+          "nome": "Orientação a Tendências",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Orientação a Tendências aplicada no contexto de especialistas"
+        },
+        {
+          "id": "4_c_5",
+          "nome": "Trabalho em Equipe",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Colaboração produtiva com diferentes perfis profissionais"
+        },
+        {
+          "id": "4_c_6",
+          "nome": "Resolução de Problemas",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Resolução de Problemas aplicada no contexto de especialistas"
+        }
+      ]
+    },
+    "ferramentas": [
+      {
+        "id": "4_f_1",
+        "nome": "Facebook Business Manager",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "4_f_2",
+        "nome": "Instagram Creator Studio",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "4_f_3",
+        "nome": "Hootsuite",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "4_f_4",
+        "nome": "Buffer",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "4_f_5",
+        "nome": "Canva",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "4_f_6",
+        "nome": "Adobe Creative Suite",
+        "categoria_uso": "design",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "4_f_7",
+        "nome": "Google Analytics",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      }
+    ],
+    "search_metadata": {
+      "tags": [
+        "especialistas",
+        "midias_sociais",
+        "Social Media Marketing",
+        "Community Management",
+        "Gestão de Campanhas",
+        "Comunicação Digital",
+        "Criatividade"
+      ],
+      "embedding_text": "Gabriela González trabalha como especialistas. especialista em midias_sociais. com 15 anos de experiência. competências técnicas: Social Media Marketing, Community Management, Gestão de Campanhas, Analytics e Métricas, Influencer Marketing, Paid Social Advertising. competências comportamentais: Comunicação Digital, Criatividade, Agilidade, Orientação a Tendências, Trabalho em Equipe, Resolução de Problemas. utiliza ferramentas: Facebook Business Manager, Instagram Creator Studio, Hootsuite, Buffer, Canva, Adobe Creative Suite, Google Analytics. educação: Marketing Digital e Social Media, Certificação Facebook Blueprint. idiomas: inglês, espanhol, francês, português",
+      "update_timestamp": "2025-11-16T14:48:34.870Z"
+    }
+  },
+  "relacionamentos": {
+    "competencias_relacionadas": [
+      {
+        "persona_id": 4,
+        "competencia_nome": "Social Media Marketing",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 4,
+        "competencia_nome": "Community Management",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 4,
+        "competencia_nome": "Gestão de Campanhas",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 4,
+        "competencia_nome": "Analytics e Métricas",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 4,
+        "competencia_nome": "Influencer Marketing",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 4,
+        "competencia_nome": "Paid Social Advertising",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 4,
+        "competencia_nome": "Comunicação Digital",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 4,
+        "competencia_nome": "Criatividade",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 4,
+        "competencia_nome": "Agilidade",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 4,
+        "competencia_nome": "Orientação a Tendências",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 4,
+        "competencia_nome": "Trabalho em Equipe",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 4,
+        "competencia_nome": "Resolução de Problemas",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      }
+    ],
+    "ferramentas_relacionadas": [
+      {
+        "persona_id": 4,
+        "ferramenta_nome": "Facebook Business Manager",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 4,
+        "ferramenta_nome": "Instagram Creator Studio",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 4,
+        "ferramenta_nome": "Hootsuite",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 4,
+        "ferramenta_nome": "Buffer",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 4,
+        "ferramenta_nome": "Canva",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 4,
+        "ferramenta_nome": "Adobe Creative Suite",
+        "proficiencia": "expert",
+        "categoria_uso": "design"
+      },
+      {
+        "persona_id": 4,
+        "ferramenta_nome": "Google Analytics",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      }
+    ]
+  },
+  "contextos_relevantes": [
+    {
+      "id": "persona_3",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Carlos González",
+      "conteudo": "Carlos González trabalha como especialistas. especialista em hr. com 14 anos de experiência. competências técnicas: Gestão de Talentos, Recrutamento e Seleção, Desenvolvimento Organizacional, Gestão de Performance, Políticas de RH, Employee Experience, People Analytics. competências comportamentais: Liderança Empática, Comunicação Assertiva, Mediação de Conflitos, Pensamento Estratégico, Orientação a Pessoas, Adaptabilidade Cultural. utiliza ferramentas: HRIS Systems, ATS (Applicant Tracking Systems), Microsoft Office 365, Google Workspace, Slack, Zoom, LinkedIn Recruiter. educação: Pós-graduação em Gestão de Pessoas e MBA em Recursos Humanos. idiomas: inglês, espanhol, português, francês",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "hr",
+        "experiencia": 14
+      },
+      "tags": [
+        "especialistas",
+        "hr",
+        "Gestão de Talentos",
+        "Recrutamento e Seleção",
+        "Desenvolvimento Organizacional",
+        "Liderança Empática",
+        "Comunicação Assertiva"
+      ]
+    },
+    {
+      "id": "persona_4",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Gabriela González",
+      "conteudo": "Gabriela González trabalha como especialistas. especialista em midias_sociais. com 15 anos de experiência. competências técnicas: Social Media Marketing, Community Management, Gestão de Campanhas, Analytics e Métricas, Influencer Marketing, Paid Social Advertising. competências comportamentais: Comunicação Digital, Criatividade, Agilidade, Orientação a Tendências, Trabalho em Equipe, Resolução de Problemas. utiliza ferramentas: Facebook Business Manager, Instagram Creator Studio, Hootsuite, Buffer, Canva, Adobe Creative Suite, Google Analytics. educação: Marketing Digital e Social Media, Certificação Facebook Blueprint. idiomas: inglês, espanhol, francês, português",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "midias_sociais",
+        "experiencia": 15
+      },
+      "tags": [
+        "especialistas",
+        "midias_sociais",
+        "Social Media Marketing",
+        "Community Management",
+        "Gestão de Campanhas",
+        "Comunicação Digital",
+        "Criatividade"
+      ]
+    },
+    {
+      "id": "persona_5",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Isabella González",
+      "conteudo": "Isabella González trabalha como especialistas. especialista em marketing. com 9 anos de experiência. competências técnicas: Marketing Digital, Growth Hacking, Marketing Analytics, Automação de Marketing, Inbound Marketing, Performance Marketing. competências comportamentais: Pensamento Analítico, Orientação a Dados, Inovação, Visão Estratégica, Adaptabilidade, Orientação a Resultados. utiliza ferramentas: Google Ads, Facebook Ads, HubSpot, Mailchimp, Google Analytics, SEMrush, Hotjar. educação: MBA em Marketing Digital e Growth Hacking Certification. idiomas: francês, português, espanhol, inglês",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "marketing",
+        "experiencia": 9
+      },
+      "tags": [
+        "especialistas",
+        "marketing",
+        "Marketing Digital",
+        "Growth Hacking",
+        "Marketing Analytics",
+        "Pensamento Analítico",
+        "Orientação a Dados"
+      ]
+    },
+    {
+      "id": "persona_6",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de José Hernández",
+      "conteudo": "José Hernández trabalha como especialistas. especialista em youtube. com 18 anos de experiência. competências técnicas: Produção de Vídeo, Edição de Vídeo, YouTube Analytics, SEO para YouTube, Marketing de Conteúdo, Storytelling Digital, Live Streaming. competências comportamentais: Criatividade, Comunicação Visual, Persistência, Orientação a Resultados, Adaptabilidade, Inovação. utiliza ferramentas: Adobe Premiere Pro, Final Cut Pro, Adobe After Effects, Photoshop, YouTube Studio, TubeBuddy, VidIQ. educação: Bacharelado em Comunicação Digital e Certificação Google Ads. idiomas: francês, português, inglês, espanhol",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "youtube",
+        "experiencia": 18
+      },
+      "tags": [
+        "especialistas",
+        "youtube",
+        "Produção de Vídeo",
+        "Edição de Vídeo",
+        "YouTube Analytics",
+        "Criatividade",
+        "Comunicação Visual"
+      ]
+    },
+    {
+      "id": "competencia_26",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Social Media Marketing",
+      "conteudo": "Competência em Social Media Marketing aplicada no contexto de midias_sociais. Personas com esta competência: Gabriela González. Ferramentas relacionadas: Facebook Business Manager, Instagram Creator Studio, Hootsuite, Buffer, Canva, Adobe Creative Suite, Google Analytics.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "expert",
+        "total_personas": 1
+      },
+      "tags": [
+        "Social Media Marketing",
+        "tecnica",
+        "Facebook Business Manager",
+        "Instagram Creator Studio",
+        "Hootsuite",
+        "Buffer",
+        "Canva",
+        "Adobe Creative Suite",
+        "Google Analytics"
+      ]
+    },
+    {
+      "id": "competencia_27",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Community Management",
+      "conteudo": "Competência em Community Management aplicada no contexto de midias_sociais. Personas com esta competência: Gabriela González. Ferramentas relacionadas: Facebook Business Manager, Instagram Creator Studio, Hootsuite, Buffer, Canva, Adobe Creative Suite, Google Analytics.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "expert",
+        "total_personas": 1
+      },
+      "tags": [
+        "Community Management",
+        "tecnica",
+        "Facebook Business Manager",
+        "Instagram Creator Studio",
+        "Hootsuite",
+        "Buffer",
+        "Canva",
+        "Adobe Creative Suite",
+        "Google Analytics"
+      ]
+    },
+    {
+      "id": "competencia_28",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Gestão de Campanhas",
+      "conteudo": "Competência em Gestão de Campanhas aplicada no contexto de midias_sociais. Personas com esta competência: Gabriela González. Ferramentas relacionadas: Facebook Business Manager, Instagram Creator Studio, Hootsuite, Buffer, Canva, Adobe Creative Suite, Google Analytics.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "expert",
+        "total_personas": 1
+      },
+      "tags": [
+        "Gestão de Campanhas",
+        "tecnica",
+        "Facebook Business Manager",
+        "Instagram Creator Studio",
+        "Hootsuite",
+        "Buffer",
+        "Canva",
+        "Adobe Creative Suite",
+        "Google Analytics"
+      ]
+    },
+    {
+      "id": "competencia_32",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Comunicação Digital",
+      "conteudo": "Competência em Comunicação Digital aplicada no contexto de especialistas. Personas com esta competência: Gabriela González. Ferramentas relacionadas: .",
+      "metadata": {
+        "categoria": "comportamental",
+        "nivel_medio": "expert",
+        "total_personas": 1
+      },
+      "tags": [
+        "Comunicação Digital",
+        "comportamental"
+      ]
+    },
+    {
+      "id": "competencia_33",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Criatividade",
+      "conteudo": "Competência em Criatividade aplicada no contexto de especialistas. Personas com esta competência: Gabriela González, José Hernández. Ferramentas relacionadas: .",
+      "metadata": {
+        "categoria": "comportamental",
+        "nivel_medio": "expert",
+        "total_personas": 2
+      },
+      "tags": [
+        "Criatividade",
+        "comportamental"
+      ]
+    }
+  ],
+  "query_examples": [
+    {
+      "tipo": "competencia_lookup",
+      "query": "Quais são as competências de Gabriela González?",
+      "resposta_esperada": "Lista de competências técnicas e comportamentais"
+    },
+    {
+      "tipo": "ferramenta_usage",
+      "query": "Que ferramentas Gabriela González sabe usar?",
+      "resposta_esperada": "Lista de ferramentas com nível de proficiência"
+    },
+    {
+      "tipo": "colaboracao_potential",
+      "query": "Com quem Gabriela González pode colaborar em projetos?",
+      "resposta_esperada": "Personas com competências complementares"
+    },
+    {
+      "tipo": "processo_involvement",
+      "query": "Em que processos Gabriela González deveria estar envolvido?",
+      "resposta_esperada": "Processos que aproveitam suas competências"
+    }
+  ],
+  "data_processamento": "2025-11-16T14:48:34.882Z"
+}

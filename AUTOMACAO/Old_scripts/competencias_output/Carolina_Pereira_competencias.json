@@ -1,0 +1,53 @@
+{
+  "persona_id": "a23c7abe-67bf-4495-8ce0-45647087c8bb",
+  "full_name": "Carolina Pereira",
+  "role": "Assistente Administrativo",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Gestão de agendas e calendários",
+    "Elaboração de relatórios administrativos",
+    "Controle de estoque e suprimentos",
+    "Processamento de documentos e arquivamento digital",
+    "Atendimento telefônico e e-mail profissional"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação clara e eficaz",
+    "Organização e gerenciamento de tempo",
+    "Atenção aos detalhes",
+    "Trabalho em equipe colaborativo",
+    "Proatividade e resolução de problemas"
+  ],
+  "ferramentas": [
+    "Microsoft Office Suite (Excel, Word, PowerPoint)",
+    "Google Workspace (Docs, Sheets, Calendar)",
+    "Sistema ERP (ex: SAP ou similar)",
+    "Ferramentas de videoconferência (Zoom, Teams)"
+  ],
+  "tarefas_diarias": [
+    "Resposta a e-mails e chamadas",
+    "Atualização de agendas e marcação de reuniões",
+    "Organização de arquivos e documentos",
+    "Suporte administrativo à equipe"
+  ],
+  "tarefas_semanais": [
+    "Preparação de relatórios semanais",
+    "Controle de despesas e reembolsos",
+    "Coordenação de suprimentos de escritório"
+  ],
+  "tarefas_mensais": [
+    "Conciliação de contas e faturamento",
+    "Elaboração de relatórios mensais de atividades",
+    "Auditoria interna de documentos"
+  ],
+  "kpis": [
+    "Taxa de precisão em relatórios - 98%",
+    "Tempo médio de resposta a e-mails - 2 horas",
+    "Índice de satisfação da equipe - 95%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação em Microsoft Office Advanced",
+    "Melhorar habilidades em ferramentas de automação (ex: Power Automate)",
+    "Participar de curso de gestão administrativa"
+  ],
+  "generated_at": "2025-12-02T18:00:42.735Z"
+}

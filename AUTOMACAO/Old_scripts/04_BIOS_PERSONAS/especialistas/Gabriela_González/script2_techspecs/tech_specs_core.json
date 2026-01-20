@@ -1,0 +1,85 @@
+{
+  "persona": {
+    "nome": "Gabriela González",
+    "categoria": "especialistas",
+    "especialidade": "midias_sociais",
+    "experiencia": 15
+  },
+  "especificacoes_tecnicas": {
+    "ferramentas_utilizadas": [
+      "Facebook Business Manager",
+      "Instagram Creator Studio",
+      "Hootsuite",
+      "Buffer",
+      "Canva",
+      "Adobe Creative Suite",
+      "Google Analytics"
+    ],
+    "categorias_aplicaveis": [
+      "desenvolvimento_design",
+      "analytics_bi"
+    ],
+    "requisitos_personalizados": {
+      "especialidade": "midias_sociais",
+      "competencias_tecnicas": [
+        "Social Media Marketing",
+        "Community Management",
+        "Gestão de Campanhas",
+        "Analytics e Métricas",
+        "Influencer Marketing",
+        "Paid Social Advertising"
+      ],
+      "ferramentas_principais": [
+        "Facebook Business Manager",
+        "Instagram Creator Studio",
+        "Hootsuite",
+        "Buffer",
+        "Canva",
+        "Adobe Creative Suite",
+        "Google Analytics"
+      ],
+      "requisitos_especificos": [
+        "Social Media Management Platform",
+        "Multi-account authentication",
+        "Content scheduling system",
+        "Analytics aggregation dashboard"
+      ],
+      "integracao_sugerida": [
+        "Facebook Graph API",
+        "Instagram Basic Display API",
+        "Twitter API v2",
+        "LinkedIn Marketing API"
+      ],
+      "documentacao_necessaria": [
+        "API Integration Guide",
+        "System Requirements Document",
+        "Security Configuration Guide",
+        "User Training Materials",
+        "Troubleshooting Handbook"
+      ]
+    },
+    "integracao_prioridade": "baixa"
+  },
+  "documentacao_tecnica": {
+    "apis_necessarias": [],
+    "requisitos_sistema": {
+      "computacao": "4 vCPU, 16GB RAM recomendado",
+      "armazenamento": "500GB SSD recomendado",
+      "rede": "10 Mbps mínimo",
+      "seguranca": [
+        "SSL/TLS",
+        "OAuth 2.0"
+      ],
+      "backup": "diário automático"
+    },
+    "guias_implementacao": [
+      "Setup e Configuração Inicial",
+      "Integração de APIs",
+      "Configuração de Segurança",
+      "Testes de Conectividade",
+      "Deploy em Produção",
+      "Monitoramento e Manutenção"
+    ]
+  },
+  "data_processamento": "2025-11-15T12:52:57.670Z"
+}

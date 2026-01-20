@@ -1,0 +1,391 @@
+{
+  "persona": {
+    "id": 4,
+    "nome": "Gabriela González",
+    "categoria": "especialistas",
+    "especialidade": "midias_sociais"
+  },
+  "processos_aplicaveis": [
+    {
+      "id": "processo_gestão_de_conteúdo_multiplataforma",
+      "nome": "Gestão de Conteúdo Multiplataforma",
+      "categoria": "midias_sociais",
+      "etapas": [
+        "Planejamento",
+        "Criação",
+        "Adaptação por plataforma",
+        "Agendamento",
+        "Monitoramento",
+        "Engajamento"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 4,
+          "nome": "Gabriela González",
+          "categoria": "especialistas",
+          "especialidade": "midias_sociais",
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 7,
+          "nome": "Gabriela Rodríguez",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 8,
+          "nome": "Gabriela Silva",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 9,
+          "nome": "Roberto Hernández",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "Hootsuite",
+        "Canva",
+        "Analytics",
+        "Scheduling tools"
+      ],
+      "ferramentas_disponiveis": [
+        "Facebook Business Manager",
+        "Instagram Creator Studio",
+        "Hootsuite",
+        "Buffer",
+        "Canva",
+        "Adobe Creative Suite",
+        "Google Analytics",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Power BI",
+        "Tableau"
+      ],
+      "cobertura_ferramentas": 75,
+      "automacao_potencial": 70,
+      "kpis": [
+        "Reach",
+        "Engagement",
+        "Follower growth",
+        "Brand mentions"
+      ],
+      "viabilidade": "alta",
+      "custos_estimados": {
+        "setup": 5000,
+        "mensal": 2000
+      },
+      "tempo_implementacao": "2-3 meses"
+    },
+    {
+      "id": "processo_influencer_marketing",
+      "nome": "Influencer Marketing",
+      "categoria": "midias_sociais",
+      "etapas": [
+        "Identificação",
+        "Outreach",
+        "Negociação",
+        "Briefing",
+        "Acompanhamento",
+        "Análise ROI"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 4,
+          "nome": "Gabriela González",
+          "categoria": "especialistas",
+          "especialidade": "midias_sociais",
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 7,
+          "nome": "Gabriela Rodríguez",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 8,
+          "nome": "Gabriela Silva",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 9,
+          "nome": "Roberto Hernández",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "expert"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "Influencer platforms",
+        "CRM",
+        "Analytics",
+        "Payment systems"
+      ],
+      "ferramentas_disponiveis": [
+        "Facebook Business Manager",
+        "Instagram Creator Studio",
+        "Hootsuite",
+        "Buffer",
+        "Canva",
+        "Adobe Creative Suite",
+        "Google Analytics",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Power BI",
+        "Tableau"
+      ],
+      "cobertura_ferramentas": 25,
+      "automacao_potencial": 50,
+      "kpis": [
+        "Reach amplification",
+        "Engagement rate",
+        "ROI",
+        "Brand alignment"
+      ],
+      "viabilidade": "média",
+      "custos_estimados": {
+        "setup": 5000,
+        "mensal": 2000
+      },
+      "tempo_implementacao": "3-6 semanas"
+    },
+    {
+      "id": "processo_crisis_management",
+      "nome": "Crisis Management",
+      "categoria": "midias_sociais",
+      "etapas": [
+        "Monitoramento",
+        "Detecção",
+        "Avaliação",
+        "Resposta",
+        "Escalação",
+        "Follow-up"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 4,
+          "nome": "Gabriela González",
+          "categoria": "especialistas",
+          "especialidade": "midias_sociais",
+          "nivel_competencia": "básico"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "Social listening",
+        "Alert systems",
+        "Communication tools"
+      ],
+      "ferramentas_disponiveis": [
+        "Facebook Business Manager",
+        "Instagram Creator Studio",
+        "Hootsuite",
+        "Buffer",
+        "Canva",
+        "Adobe Creative Suite",
+        "Google Analytics"
+      ],
+      "cobertura_ferramentas": 0,
+      "automacao_potencial": 60,
+      "kpis": [
+        "Response time",
+        "Sentiment recovery",
+        "Mention volume",
+        "Brand reputation"
+      ],
+      "viabilidade": "baixa",
+      "custos_estimados": {
+        "setup": 5000,
+        "mensal": 2000
+      },
+      "tempo_implementacao": "3-6 semanas"
+    },
+    {
+      "id": "processo_lead_nurturing",
+      "nome": "Lead Nurturing",
+      "categoria": "marketing",
+      "etapas": [
+        "Captura",
+        "Segmentação",
+        "Scoring",
+        "Campanhas",
+        "Conversão",
+        "Análise"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 4,
+          "nome": "Gabriela González",
+          "categoria": "especialistas",
+          "especialidade": "midias_sociais",
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 5,
+          "nome": "Isabella González",
+          "categoria": "especialistas",
+          "especialidade": "marketing",
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 7,
+          "nome": "Gabriela Rodríguez",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 8,
+          "nome": "Gabriela Silva",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 9,
+          "nome": "Roberto Hernández",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "HubSpot",
+        "Mailchimp",
+        "CRM",
+        "Analytics"
+      ],
+      "ferramentas_disponiveis": [
+        "Facebook Business Manager",
+        "Instagram Creator Studio",
+        "Hootsuite",
+        "Buffer",
+        "Canva",
+        "Adobe Creative Suite",
+        "Google Analytics",
+        "Google Ads",
+        "Facebook Ads",
+        "HubSpot",
+        "Mailchimp",
+        "SEMrush",
+        "Hotjar",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Power BI",
+        "Tableau"
+      ],
+      "cobertura_ferramentas": 75,
+      "automacao_potencial": 80,
+      "kpis": [
+        "Lead quality",
+        "Conversion rate",
+        "Cost per lead",
+        "ROI"
+      ],
+      "viabilidade": "alta",
+      "custos_estimados": {
+        "setup": 5000,
+        "mensal": 2000
+      },
+      "tempo_implementacao": "2-3 meses"
+    }
+  ],
+  "colaboracoes_envolvidas": [
+    {
+      "especialidades": [
+        "midias_sociais",
+        "youtube"
+      ],
+      "personas_envolvidas": {
+        "midias_sociais": [
+          {
+            "id": 4,
+            "nome": "Gabriela González"
+          }
+        ],
+        "youtube": [
+          {
+            "id": 6,
+            "nome": "José Hernández"
+          }
+        ]
+      },
+      "processos_compartilhados": [
+        "Content planning",
+        "Cross-promotion",
+        "Analytics"
+      ],
+      "sinergias_identificadas": [
+        "Content repurposing",
+        "Audience growth",
+        "Brand consistency"
+      ],
+      "pontos_friccao": [
+        "Platform-specific optimization",
+        "Resource allocation",
+        "Content formats"
+      ],
+      "ferramentas_comuns": [],
+      "potencial_colaboracao": "baixo"
+    }
+  ],
+  "automacao_participacao": [
+    {
+      "processo": "Gestão de Conteúdo Multiplataforma",
+      "especialidade": "midias_sociais",
+      "potencial": 70,
+      "ferramentas_necessarias": [
+        "Workflow automation",
+        "API integration",
+        "Notification system"
+      ],
+      "roi_estimado": {
+        "economia_mensal": 2800,
+        "custo_implementacao": 10000,
+        "payback_meses": 4,
+        "roi_anual_percent": 236
+      }
+    },
+    {
+      "processo": "Crisis Management",
+      "especialidade": "midias_sociais",
+      "potencial": 60,
+      "ferramentas_necessarias": [
+        "Workflow automation",
+        "API integration",
+        "Notification system"
+      ],
+      "roi_estimado": {
+        "economia_mensal": 2400,
+        "custo_implementacao": 10000,
+        "payback_meses": 5,
+        "roi_anual_percent": 188
+      }
+    }
+  ],
+  "recomendacoes_especificas": [
+    {
+      "categoria": "resolucao_gargalo",
+      "titulo": "Resolver gargalo: midias_sociais",
+      "descricao": "Apenas 1 pessoa com especialidade em midias_sociais",
+      "impacto": "crítico",
+      "prazo": "imediato",
+      "acao_recomendada": "Priorizar contratação ou desenvolvimento de backup para esta especialidade"
+    }
+  ],
+  "data_processamento": "2025-11-14T00:03:59.160Z"
+}

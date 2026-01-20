@@ -1,0 +1,189 @@
+{
+  "name": "William (SDR Analst) - Atualizar CRM",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 9h para iniciar a atualização do CRM"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "entity": "leads",
+        "filters": {
+          "status": "pending_update"
+        },
+        "operation": "get"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar leads com status 'pending_update'"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(lead => ({ ...lead, status: 'updated' }));"
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar status dos leads para 'updated'"
+    },
+    {
+      "id": "4",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "entity": "leads",
+        "operation": "update"
+      },
+      "typeVersion": 1,
+      "notes": "Salvar atualizações de status no CRM"
+    },
+    {
+      "id": "5",
+      "name": "Notify",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#crm_updates",
+        "text": "Atualização diária do CRM concluída com sucesso."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe via Slack sobre a conclusão da atualização",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: William (SDR Analst) - Atualizar CRM\nEmpresa: ARVA Tech Solutions\nPersona: William Miller\nTarefa: Atualizar CRM\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:14.836Z",
+  "updatedAt": "2025-11-28T17:05:14.836Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "72e1bfc8-f618-40d2-9614-4cecfbdfe73d",
+    "persona_nome": "William Miller",
+    "task_id": "d559878f-8007-46c5-94a0-d31e12f87c70",
+    "task_title": "Atualizar CRM",
+    "opportunity_id": "21a194af-0cc1-4555-8e6d-dd58285ee36d",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:14.836Z"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "persona": {
+    "id": "680cf6e1-5b0d-4dc7-b2c0-722d22998876",
+    "nome": "John Smith",
+    "biografia": "Biografia não disponível"
+  },
+  "avatar": {
+    "avatar_url": "/avatars/john_smith_avatar.svg",
+    "avatar_thumbnail_url": "/avatars/john_smith_avatar.svg",
+    "prompt_usado": "38-year-old professional man, business professional style, confident expression, corporate attire",
+    "estilo": "Profissional Simulado",
+    "background_tipo": "escritório (fallback)",
+    "servico_usado": "dicebear_local",
+    "versao": "v1.0",
+    "ativo": true,
+    "local_file": "john_smith_avatar.svg",
+    "file_size": 6253,
+    "biometrics": {
+      "genero": "masculino",
+      "idade_aparente": 38,
+      "etnia": "diverso",
+      "estatura": "média",
+      "biotipo": "profissional"
+    },
+    "history": {
+      "formacao_academica": [
+        "Administração"
+      ],
+      "experiencia_anos": 6,
+      "empresas_anteriores": [
+        "Previous Corp",
+        "Tech Solutions"
+      ],
+      "certificacoes": [
+        "Professional Certification"
+      ],
+      "idiomas": [
+        "português",
+        "inglês"
+      ]
+    },
+    "metadados": {
+      "generated_at": "2025-11-22T20:14:21.362Z",
+      "script_version": "03_nano_banana",
+      "confidence_score": 95,
+      "google_nano_banana": true
+    }
+  },
+  "generated_at": "2025-11-22T20:14:21.525Z"
+}

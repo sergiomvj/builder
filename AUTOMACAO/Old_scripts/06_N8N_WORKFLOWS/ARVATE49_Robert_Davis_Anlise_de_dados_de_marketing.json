@@ -1,0 +1,194 @@
+{
+  "name": "Robert (Mkt Mgr) - Análise de dados de marketing",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * 1"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar toda segunda-feira às 9h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "url": "https://api.marketingplatform.com/data",
+        "method": "GET",
+        "responseFormat": "json"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar dados de marketing da última semana"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(data => ({ ...data, insights: `Análise de ${data.campaign_name}: ...` }));"
+      },
+      "typeVersion": 1,
+      "notes": "Gerar insights baseados nos dados coletados"
+    },
+    {
+      "id": "4",
+      "name": "Send Notification",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#marketing-insights",
+        "text": "{{ $json.insights }}"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar insights para o canal do Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Update Spreadsheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "operation": "append",
+        "spreadsheetId": "1a2b3c",
+        "range": "Sheet1"
+      },
+      "typeVersion": 1,
+      "notes": "Registrar dados e insights na planilha do Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Robert (Mkt Mgr) - Análise de dados de marketing\nEmpresa: ARVA Tech Solutions\nPersona: Robert Davis\nTarefa: Análise de dados de marketing\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:34.041Z",
+  "updatedAt": "2025-11-28T17:05:34.041Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "299fcd37-98c4-4bea-b4de-63e3d83c5175",
+    "persona_nome": "Robert Davis",
+    "task_id": "cdc7b777-0296-46bd-85e2-1ba91818eac7",
+    "task_title": "Análise de dados de marketing",
+    "opportunity_id": "8fec8669-1fc2-45d7-b370-042f28763b88",
+    "automation_score": 60,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:34.041Z"
+  }
+}

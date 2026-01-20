@@ -1,0 +1,62 @@
+{
+  "persona": {
+    "nome": "Gabriela Rodríguez",
+    "categoria": "executivos",
+    "especialidade": null,
+    "experiencia": 18
+  },
+  "especificacoes_tecnicas": {
+    "ferramentas_utilizadas": [
+      "Microsoft Office 365",
+      "Google Workspace",
+      "Slack",
+      "Zoom",
+      "Power BI",
+      "Tableau"
+    ],
+    "categorias_aplicaveis": [
+      "produtividade_escritorio",
+      "produtividade_escritorio",
+      "comunicacao_colaboracao",
+      "comunicacao_colaboracao",
+      "analytics_bi",
+      "analytics_bi"
+    ],
+    "requisitos_personalizados": {},
+    "integracao_prioridade": "alta"
+  },
+  "documentacao_tecnica": {
+    "apis_necessarias": [
+      "Microsoft Graph API",
+      "SharePoint API",
+      "Google Workspace API",
+      "Gmail API",
+      "Drive API",
+      "Slack Web API",
+      "Slack Events API",
+      "Zoom API v2",
+      "Zoom Webhooks",
+      "Power BI REST API",
+      "Power BI Embedded API"
+    ],
+    "requisitos_sistema": {
+      "computacao": "4 vCPU, 8GB RAM recomendado",
+      "armazenamento": "50GB SSD mínimo",
+      "rede": "50 Mbps recomendado",
+      "seguranca": [
+        "SSL/TLS",
+        "OAuth 2.0"
+      ],
+      "backup": "diário automático"
+    },
+    "guias_implementacao": [
+      "Setup e Configuração Inicial",
+      "Integração de APIs",
+      "Configuração de Segurança",
+      "Testes de Conectividade",
+      "Deploy em Produção",
+      "Monitoramento e Manutenção"
+    ]
+  },
+  "data_processamento": "2025-11-15T12:52:57.677Z"
+}

@@ -1,0 +1,191 @@
+{
+  "name": "James (Asst RH) - Preparação da agenda semanal de reuniões",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 10 * * 1"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar toda segunda-feira às 10h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.googleCalendar",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "orderBy": "startTime",
+        "timeMax": "endOfWeek",
+        "timeMin": "startOfWeek",
+        "operation": "list",
+        "calendarId": "primary",
+        "singleEvents": true
+      },
+      "typeVersion": 1,
+      "notes": "Buscar reuniões agendadas para a semana"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.filter(event => event.summary.includes('RH'));"
+      },
+      "typeVersion": 1,
+      "notes": "Filtrar reuniões relacionadas ao RH"
+    },
+    {
+      "id": "4",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "to": "rh@arvatech.com",
+        "message": "{{ $json.events }}",
+        "subject": "Agenda Semanal de Reuniões RH"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email com a agenda da semana para o RH"
+    },
+    {
+      "id": "5",
+      "name": "Notify",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#rh",
+        "text": "A agenda semanal de reuniões foi enviada por email."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar no Slack sobre o envio da agenda",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: James (Asst RH) - Preparação da agenda semanal de reuniões\nEmpresa: ARVA Tech Solutions\nPersona: James Wilson\nTarefa: Preparação da agenda semanal de reuniões\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:30.104Z",
+  "updatedAt": "2025-11-28T17:05:30.104Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "ff4feab2-17c2-406c-9d57-609e0a46cfb1",
+    "persona_nome": "James Wilson",
+    "task_id": "0e4ce198-b31e-4e01-a74b-610cb6854d8a",
+    "task_title": "Preparação da agenda semanal de reuniões",
+    "opportunity_id": "d7c0147d-f543-4ec0-8536-9f25b168c620",
+    "automation_score": 65,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:30.104Z"
+  }
+}

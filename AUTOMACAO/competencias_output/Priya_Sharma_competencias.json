@@ -1,0 +1,53 @@
+{
+  "persona_id": "6a66563e-bff4-4960-b767-a42af11ba99f",
+  "full_name": "Priya Sharma",
+  "role": "Analista de Marketing Digital",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "SEO e SEM para otimização de campanhas digitais",
+    "Análise de dados com Google Analytics e ferramentas de BI",
+    "Gestão de anúncios pagos em Google Ads e Meta Ads",
+    "Automação de marketing com HubSpot e Marketo",
+    "Criação de conteúdo digital otimizado para IA e tech"
+  ],
+  "competencias_comportamentais": [
+    "Criatividade estratégica em marketing B2B",
+    "Pensamento analítico e data-driven",
+    "Comunicação eficaz com equipes multidisciplinares",
+    "Adaptabilidade a tecnologias emergentes como IA",
+    "Orientação para resultados e inovação"
+  ],
+  "ferramentas": [
+    "Google Analytics 4",
+    "HubSpot Marketing Hub",
+    "SEMrush",
+    "Google Ads e Meta Business Suite"
+  ],
+  "tarefas_diarias": [
+    "Monitoramento de métricas de campanhas em tempo real",
+    "Otimização de anúncios e landing pages",
+    "Análise de tráfego e engajamento no site ARVA",
+    "Criação e agendamento de posts em redes sociais"
+  ],
+  "tarefas_semanais": [
+    "Relatórios de performance de campanhas",
+    "Planejamento de conteúdo para a semana",
+    "Reuniões com equipe de produto para alinhamento de mensagens"
+  ],
+  "tarefas_mensais": [
+    "Análise estratégica de ROI de campanhas",
+    "Planejamento de conteúdo para o próximo mês",
+    "Auditoria de SEO e recomendações de melhoria"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de conversão de leads - 5%",
+    "KPI 2: Crescimento de tráfego orgânico - 15%",
+    "KPI 3: ROI de campanhas pagas - 300%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Certificação em Google Analytics e Ads avançado",
+    "Aprofundar conhecimentos em marketing de IA e agentes virtuais",
+    "Liderar uma campanha integrada multicanal com foco em ARVA"
+  ],
+  "generated_at": "2025-12-08T22:22:44.944Z"
+}

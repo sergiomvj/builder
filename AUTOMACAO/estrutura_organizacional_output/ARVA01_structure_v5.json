@@ -1,0 +1,706 @@
+{
+  "empresa": {
+    "id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+    "nome": "ARVA Tech Solutions",
+    "codigo": "ARVA01"
+  },
+  "blocos_funcionais": 8,
+  "okrs_total": 7,
+  "personas_criadas": 26,
+  "estrutura": [
+    {
+      "bloco": {
+        "id": "408e59a7-cae1-4120-896c-9ab311624d42",
+        "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+        "nome": "Estratégia & Gestão",
+        "objetivo": "Garantir a alinhamento estratégica e a tomada de decisões baseada em dados para o crescimento sustentável da ARVA Tech Solutions.",
+        "kpis": [
+          "MRR (Receita Recorrente Mensal)",
+          "CAGR (Taxa de Crescimento Anual Composta)",
+          "ROI (Retorno sobre Investimento)",
+          "NPS (Net Promoter Score) Global"
+        ],
+        "personas_ids": [],
+        "created_at": "2025-12-06T19:54:28.89413+00:00"
+      },
+      "cargos": [
+        {
+          "titulo": "Diretor de Estratégia",
+          "nivel_hierarquico": "gerencial",
+          "departamento": "Estratégia & Gestão",
+          "responsabilidade_resultado": "Garantir o crescimento sustentável da empresa através de um alinhamento estratégico eficiente e tomada de decisões baseadas em dados",
+          "metricas_responsabilidade": [
+            "MRR",
+            "CAGR",
+            "ROI",
+            "NPS Global"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Como o responsável por tomar as decisões estratégicas, o Diretor de Estratégia é crucial para o crescimento sustentável da empresa.",
+          "okr_owner_ids": []
+        },
+        {
+          "titulo": "Analista de Dados",
+          "nivel_hierarquico": "especialista",
+          "departamento": "Estratégia & Gestão",
+          "responsabilidade_resultado": "Fornecer insights úteis e acionáveis a partir dos dados disponíveis para auxiliar na tomada de decisões estratégicas",
+          "metricas_responsabilidade": [
+            "MRR",
+            "CAGR",
+            "ROI"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Um analista de dados é necessário para analisar as métricas e fornecer insights que ajudem a empresa a tomar decisões informadas.",
+          "okr_owner_ids": []
+        },
+        {
+          "titulo": "Especialista em Customer Success",
+          "nivel_hierarquico": "especialista",
+          "departamento": "Estratégia & Gestão",
+          "responsabilidade_resultado": "Garantir a satisfação dos clientes, refletida em um alto NPS Global",
+          "metricas_responsabilidade": [
+            "NPS Global"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "O Especialista em Customer Success é importante para manter a satisfação do cliente, o que é crucial para o crescimento sustentável da empresa.",
+          "okr_owner_ids": []
+        }
+      ],
+      "okrsRelacionados": []
+    },
+    {
+      "bloco": {
+        "id": "4bc02de7-c7e9-4d75-99c1-9dddcafdf680",
+        "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+        "nome": "Financeiro & Legal",
+        "objetivo": "Gerir os recursos financeiros e garantir a conformidade legal e regulatória da empresa.",
+        "kpis": [
+          "Margem de Lucro",
+          "Fluxo de Caixa Livre",
+          "DRE (Demonstração de Resultados)",
+          "Conformidade com Regulamentações"
+        ],
+        "personas_ids": [],
+        "created_at": "2025-12-06T19:54:28.89413+00:00"
+      },
+      "cargos": [
+        {
+          "titulo": "Diretor Financeiro",
+          "nivel_hierarquico": "gerencial",
+          "departamento": "Financeiro & Legal",
+          "responsabilidade_resultado": "Garantir a estabilidade financeira da empresa e cumprimento das regulamentações",
+          "metricas_responsabilidade": [
+            "Margem de Lucro",
+            "Fluxo de Caixa Livre",
+            "Conformidade com Regulamentações"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "É essencial para a estratégia financeira e conformidade legal da empresa",
+          "okr_owner_ids": []
+        },
+        {
+          "titulo": "Contador",
+          "nivel_hierarquico": "especialista",
+          "departamento": "Financeiro & Legal",
+          "responsabilidade_resultado": "Garantir a precisão das contas e registros financeiros",
+          "metricas_responsabilidade": [
+            "DRE (Demonstração de Resultados)"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "É crucial para manter a integridade financeira da empresa e garantir a conformidade com os regulamentos contábeis",
+          "okr_owner_ids": []
+        },
+        {
+          "titulo": "Analista Financeiro",
+          "nivel_hierarquico": "operacional",
+          "departamento": "Financeiro & Legal",
+          "responsabilidade_resultado": "Fornecer análises financeiras precisas para informar decisões de negócios",
+          "metricas_responsabilidade": [
+            "Margem de Lucro",
+            "Fluxo de Caixa Livre"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Necessário para fornecer insights financeiros que apoiem a tomada de decisão estratégica",
+          "okr_owner_ids": []
+        },
+        {
+          "titulo": "Advogado de Conformidade",
+          "nivel_hierarquico": "especialista",
+          "departamento": "Financeiro & Legal",
+          "responsabilidade_resultado": "Garantir que a empresa esteja em conformidade com todas as regulamentações legais e setoriais",
+          "metricas_responsabilidade": [
+            "Conformidade com Regulamentações"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Essencial para minimizar o risco legal e garantir a conformidade com as leis e regulamentos",
+          "okr_owner_ids": []
+        }
+      ],
+      "okrsRelacionados": []
+    },
+    {
+      "bloco": {
+        "id": "66ae6100-f775-4a04-8944-c77eb4a1e10e",
+        "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+        "nome": "Marketing & Aquisição",
+        "objetivo": "Atrair e converter leads qualificados para alimentar o funil de vendas e expandir a base de clientes.",
+        "kpis": [
+          "CPL (Custo por Lead)",
+          "Taxa de Conversão de Lead para MQL",
+          "Tráfego Orgânico e Pago",
+          "Taxa de Crescimento da Base de Leads"
+        ],
+        "personas_ids": [],
+        "created_at": "2025-12-06T19:54:28.89413+00:00"
+      },
+      "cargos": [
+        {
+          "titulo": "Gerente de Marketing & Aquisição",
+          "nivel_hierarquico": "gerencial",
+          "departamento": "Marketing & Aquisição",
+          "responsabilidade_resultado": "Garantir a geração de 200 leads qualificados mensalmente e a conversão de 25% deles para novos clientes corporativos",
+          "metricas_responsabilidade": [
+            "Número de leads qualificados mensais",
+            "Taxa de Conversão de Lead para MQL",
+            "Ciclo de vendas"
+          ],
+          "okr_titles_ownership": [
+            "Expandir carteira de clientes corporativos"
+          ],
+          "justificativa": "Este cargo é necessário para liderar a estratégia de marketing da empresa, gerenciar a equipe e ser responsável pelos principais OKRs.",
+          "okr_owner_ids": [
+            "14d0b8ff-2d66-4724-8ee8-d37abdc55fb6"
+          ]
+        },
+        {
+          "titulo": "Especialista em Marketing Digital",
+          "nivel_hierarquico": "especialista",
+          "departamento": "Marketing & Aquisição",
+          "responsabilidade_resultado": "Gerar 150 leads qualificados através de campanhas de marketing digital",
+          "metricas_responsabilidade": [
+            "Número de leads qualificados através das campanhas de marketing digital",
+            "Custo por Lead"
+          ],
+          "okr_titles_ownership": [
+            "Aumentar Leads Qualificados"
+          ],
+          "justificativa": "Este cargo é necessário para executar as campanhas de marketing digital, gerar leads e monitorar o CPL.",
+          "okr_owner_ids": [
+            "5e159f3b-de3a-47a8-8f47-ba837f729700"
+          ]
+        },
+        {
+          "titulo": "Especialista em SEO",
+          "nivel_hierarquico": "especialista",
+          "departamento": "Marketing & Aquisição",
+          "responsabilidade_resultado": "Aumentar o tráfego orgânico no site em 25%, resultando em 50 leads qualificados",
+          "metricas_responsabilidade": [
+            "Aumento percentual do tráfego orgânico",
+            "Número de leads qualificados gerados a partir do tráfego orgânico"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Este cargo é necessário para otimizar o tráfego orgânico do site e gerar leads a partir dele.",
+          "okr_owner_ids": []
+        },
+        {
+          "titulo": "Coordenador de Eventos",
+          "nivel_hierarquico": "operacional",
+          "departamento": "Marketing & Aquisição",
+          "responsabilidade_resultado": "Converter 30% dos leads de eventos webinars em leads qualificados",
+          "metricas_responsabilidade": [
+            "Taxa de conversão de leads de webinars",
+            "Número de leads qualificados de webinars"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Este cargo é necessário para organizar webinars e converter os participantes em leads qualificados.",
+          "okr_owner_ids": []
+        }
+      ],
+      "okrsRelacionados": [
+        {
+          "id": "14d0b8ff-2d66-4724-8ee8-d37abdc55fb6",
+          "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+          "objetivo_estrategico_id": "41fc9b76-8b84-4c6b-a337-09dc3265fe62",
+          "titulo": "Expandir carteira de clientes corporativos",
+          "key_result_1": "Gerar 200 leads qualificados mensalmente a partir de campanhas de marketing digital",
+          "key_result_2": "Alcançar uma taxa de conversão de 25% de leads para novos clientes corporativos",
+          "key_result_3": "Reduzir o ciclo médio de vendas em 20% (de 60 para 48 dias)",
+          "area_responsavel": "Marketing & Aquisição",
+          "owner_persona_id": null,
+          "progresso_percentual": 0,
+          "prazo": "2026-12-01",
+          "created_at": "2025-12-06T19:54:28.44306+00:00",
+          "objetivo": {
+            "id": "41fc9b76-8b84-4c6b-a337-09dc3265fe62",
+            "prazo": "2026-12-01",
+            "status": "ativo",
+            "titulo": "Expandir carteira de clientes",
+            "descricao": "Captar novos clientes em segmentos estratégicos, como varejo e saúde, para diversificar a base de receita.",
+            "created_at": "2025-12-06T19:54:28.183979+00:00",
+            "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+            "prioridade": 2,
+            "metrica_alvo": "Adquirir 50 novos clientes corporativos em 12 meses"
+          }
+        },
+        {
+          "id": "5e159f3b-de3a-47a8-8f47-ba837f729700",
+          "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+          "objetivo_estrategico_id": "b201c306-1e32-4532-bf36-6465bf6bb752",
+          "titulo": "Aumentar Leads Qualificados",
+          "key_result_1": "KR1: Gerar 150 leads qualificados através de campanhas de marketing digital",
+          "key_result_2": "KR2: Converter 30% dos leads de eventos webinars em leads qualificados",
+          "key_result_3": "KR3: Aumentar o tráfego orgânico no site em 25%, resultando em 50 leads qualificados",
+          "area_responsavel": "Marketing & Aquisição",
+          "owner_persona_id": null,
+          "progresso_percentual": 0,
+          "prazo": "2026-03-06",
+          "created_at": "2025-12-06T19:54:28.44306+00:00",
+          "objetivo": {
+            "id": "b201c306-1e32-4532-bf36-6465bf6bb752",
+            "prazo": "2026-03-06",
+            "status": "ativo",
+            "titulo": "Aumentar número de leads qualificados",
+            "descricao": "Gerar leads qualificados através de marketing digital e parcerias estratégicas, focando em empresas que necessitam de automação.",
+            "created_at": "2025-12-06T19:54:28.183979+00:00",
+            "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+            "prioridade": 3,
+            "metrica_alvo": "Gerar 200 leads qualificados por mês em 3 meses"
+          }
+        }
+      ]
+    },
+    {
+      "bloco": {
+        "id": "b3f3f8d4-bf3e-4a9a-8305-cff39bb984e2",
+        "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+        "nome": "Operações & Entrega",
+        "objetivo": "Assegurar a entrega pontual e com qualidade dos produtos/serviços, otimizando processos e recursos.",
+        "kpis": [
+          "Tempo Médio de Entrega",
+          "Taxa de Sucesso na Entrega",
+          "Produtividade da Equipe",
+          "Custo Operacional por Entrega"
+        ],
+        "personas_ids": [],
+        "created_at": "2025-12-06T19:54:28.89413+00:00"
+      },
+      "cargos": [
+        {
+          "titulo": "Gerente de Operações e Entrega",
+          "nivel_hierarquico": "gerencial",
+          "departamento": "Operações & Entrega",
+          "responsabilidade_resultado": "Garantir a entrega pontual e com qualidade dos produtos/serviços e otimização de processos e recursos.",
+          "metricas_responsabilidade": [
+            "Tempo Médio de Entrega",
+            "Taxa de Sucesso na Entrega",
+            "Produtividade da Equipe",
+            "Custo Operacional por Entrega"
+          ],
+          "okr_titles_ownership": [
+            "Reduzir tempo de implementação em 40%",
+            "Aumentar automação de processos",
+            "Redução de Custo Operacional por Cliente"
+          ],
+          "justificativa": "Este cargo é necessário para supervisionar e tomar decisões estratégicas relacionadas às operações e processos de entrega.",
+          "okr_owner_ids": [
+            "5d9cc278-c305-4135-9591-9ac06c0f728a",
+            "495c77c3-be55-4ac5-ac93-bd5b2ed2ffdc",
+            "675d18a0-6a71-4cf0-ac83-babf1b4f9b32"
+          ]
+        },
+        {
+          "titulo": "Especialista em Automação de Processos",
+          "nivel_hierarquico": "especialista",
+          "departamento": "Operações & Entrega",
+          "responsabilidade_resultado": "Contribuir para automação de 70% dos processos manuais e 80% das tarefas operacionais dos clientes atuais.",
+          "metricas_responsabilidade": [
+            "Percentual de Processos Automatizados",
+            "Tempo Médio de Execução de Tarefas Manuais"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Este cargo é necessário para identificar áreas de automação e implementar soluções, contribuindo para a eficiência das operações.",
+          "okr_owner_ids": []
+        },
+        {
+          "titulo": "Analista de Operações",
+          "nivel_hierarquico": "operacional",
+          "departamento": "Operações & Entrega",
+          "responsabilidade_resultado": "Auxiliar na execução eficiente das operações e entrega, contribuindo para a redução do tempo médio de entrega e aumento da taxa de sucesso na entrega.",
+          "metricas_responsabilidade": [
+            "Tempo Médio de Entrega",
+            "Taxa de Sucesso na Entrega"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Este cargo é necessário para executar tarefas operacionais específicas e contribuir para a eficiência geral das operações de entrega.",
+          "okr_owner_ids": []
+        }
+      ],
+      "okrsRelacionados": [
+        {
+          "id": "5d9cc278-c305-4135-9591-9ac06c0f728a",
+          "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+          "objetivo_estrategico_id": "5bd96f36-5949-41e2-a018-df62a996236c",
+          "titulo": "Reduzir tempo de implementação em 40%",
+          "key_result_1": "KR1: Diminuir o tempo médio de onboarding de novos clientes em 50% (de 10 para 5 dias úteis)",
+          "key_result_2": "KR2: Automatizar 70% dos processos manuais na fase de implementação",
+          "key_result_3": "KR3: Reduzir o número de revisões necessárias na entrega final em 40% (de 5 para 3 revisões por projeto)",
+          "area_responsavel": "Operações & Entrega",
+          "owner_persona_id": null,
+          "progresso_percentual": 0,
+          "prazo": "2026-03-06",
+          "created_at": "2025-12-06T19:54:28.44306+00:00",
+          "objetivo": {
+            "id": "5bd96f36-5949-41e2-a018-df62a996236c",
+            "prazo": "2026-03-06",
+            "status": "ativo",
+            "titulo": "Reduzir tempo médio de implementação",
+            "descricao": "Otimizar os processos internos para reduzir o tempo médio de implementação dos assistentes virtuais, garantindo maior agilidade na entrega.",
+            "created_at": "2025-12-06T19:54:28.183979+00:00",
+            "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+            "prioridade": 2,
+            "metrica_alvo": "Diminuir tempo de implementação em 40% até o final do trimestre"
+          }
+        },
+        {
+          "id": "495c77c3-be55-4ac5-ac93-bd5b2ed2ffdc",
+          "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+          "objetivo_estrategico_id": "4492f123-e233-4db7-8ecb-329f4672d13c",
+          "titulo": "Aumentar automação de processos",
+          "key_result_1": "KR1: Automatizar 80% das tarefas operacionais dos clientes atuais",
+          "key_result_2": "KR2: Reduzir o tempo médio de execução de tarefas manuais em 50%",
+          "key_result_3": "KR3: Implementar 10 novos fluxos de automação personalizados para clientes",
+          "area_responsavel": "Operações & Entrega",
+          "owner_persona_id": null,
+          "progresso_percentual": 0,
+          "prazo": "2026-09-02",
+          "created_at": "2025-12-06T19:54:28.44306+00:00",
+          "objetivo": {
+            "id": "4492f123-e233-4db7-8ecb-329f4672d13c",
+            "prazo": "2026-09-02",
+            "status": "ativo",
+            "titulo": "Aumentar automação de processos",
+            "descricao": "Ampliar a capacidade dos assistentes virtuais em automatizar tarefas complexas, reforçando a proposta de valor.",
+            "created_at": "2025-12-06T19:54:28.183979+00:00",
+            "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+            "prioridade": 3,
+            "metrica_alvo": "Automatizar 80% das tarefas operacionais dos clientes em 9 meses"
+          }
+        },
+        {
+          "id": "675d18a0-6a71-4cf0-ac83-babf1b4f9b32",
+          "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+          "objetivo_estrategico_id": "9026a32f-8f4d-4db4-a023-2f6b749d5eb6",
+          "titulo": "Redução de Custo Operacional por Cliente",
+          "key_result_1": "KR1: Reduzir o tempo médio de atendimento por cliente em 25% (Operações & Entrega)",
+          "key_result_2": "KR2: Automatizar 40% das tarefas operacionais repetitivas (Produto & Tecnologia)",
+          "key_result_3": "KR3: Diminuir o custo de aquisição de clientes (CAC) em 15% (Marketing & Aquisição)",
+          "area_responsavel": "Operações & Entrega",
+          "owner_persona_id": null,
+          "progresso_percentual": 0,
+          "prazo": "2026-06-04",
+          "created_at": "2025-12-06T19:54:28.44306+00:00",
+          "objetivo": {
+            "id": "9026a32f-8f4d-4db4-a023-2f6b749d5eb6",
+            "prazo": "2026-06-04",
+            "status": "ativo",
+            "titulo": "Reduzir custo operacional por cliente",
+            "descricao": "Otimizar o uso de recursos tecnológicos e humanos para reduzir o custo operacional por cliente atendido.",
+            "created_at": "2025-12-06T19:54:28.183979+00:00",
+            "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+            "prioridade": 2,
+            "metrica_alvo": "Diminuir custo por cliente em 20% em 6 meses"
+          }
+        }
+      ]
+    },
+    {
+      "bloco": {
+        "id": "97e54638-8e8d-42e8-b640-b98b118492f1",
+        "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+        "nome": "Produto & Tecnologia",
+        "objetivo": "Desenvolver e manter soluções tecnológicas inovadoras que atendam às necessidades dos clientes e gerem vantagem competitiva.",
+        "kpis": [
+          "Adoção de Novas Funcionalidades",
+          "Tempo Médio para Resolução de Bugs",
+          "Satisfação do Cliente com o Produto",
+          "Velocidade de Entrega de Features"
+        ],
+        "personas_ids": [],
+        "created_at": "2025-12-06T19:54:28.89413+00:00"
+      },
+      "cargos": [
+        {
+          "titulo": "Gerente de Produto",
+          "nivel_hierarquico": "gerencial",
+          "departamento": "Produto & Tecnologia",
+          "responsabilidade_resultado": "Garantir a adoção de novas funcionalidades e alta satisfação do cliente com o produto",
+          "metricas_responsabilidade": [
+            "Adoção de Novas Funcionalidades",
+            "Satisfação do Cliente com o Produto"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Como owner de OKRs, o Gerente de Produto é responsável por tomar decisões estratégicas que impactam diretamente a satisfação do cliente e a adoção de novas funcionalidades",
+          "okr_owner_ids": []
+        },
+        {
+          "titulo": "Engenheiro de Software Sênior",
+          "nivel_hierarquico": "especialista",
+          "departamento": "Produto & Tecnologia",
+          "responsabilidade_resultado": "Desenvolver e implementar novas funcionalidades no menor tempo possível",
+          "metricas_responsabilidade": [
+            "Velocidade de Entrega de Features"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "O Engenheiro de Software Sênior é essencial para a implementação de novas funcionalidades que atendam às necessidades do cliente e contribuam para a vantagem competitiva",
+          "okr_owner_ids": []
+        },
+        {
+          "titulo": "Especialista em QA",
+          "nivel_hierarquico": "especialista",
+          "departamento": "Produto & Tecnologia",
+          "responsabilidade_resultado": "Identificar e resolver bugs no menor tempo possível",
+          "metricas_responsabilidade": [
+            "Tempo Médio para Resolução de Bugs"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "O Especialista em QA é crucial para garantir a qualidade do produto e garantir que os bugs sejam resolvidos rapidamente, melhorando a satisfação do cliente",
+          "okr_owner_ids": []
+        }
+      ],
+      "okrsRelacionados": []
+    },
+    {
+      "bloco": {
+        "id": "5c792895-c8a5-4e72-bc50-8e65d7a2cfa2",
+        "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+        "nome": "Qualidade & Auditoria",
+        "objetivo": "Monitorar e garantir a qualidade dos processos e produtos, identificando oportunidades de melhoria contínua.",
+        "kpis": [
+          "Taxa de Defeitos",
+          "Conformidade com SLAs",
+          "Número de Auditorias Realizadas",
+          "Índice de Satisfação com a Qualidade"
+        ],
+        "personas_ids": [],
+        "created_at": "2025-12-06T19:54:28.89413+00:00"
+      },
+      "cargos": [
+        {
+          "titulo": "Gerente de Qualidade & Auditoria",
+          "nivel_hierarquico": "gerencial",
+          "departamento": "Qualidade & Auditoria",
+          "responsabilidade_resultado": "Garantir que a taxa de defeitos esteja abaixo do limite definido e que haja conformidade com os SLAs",
+          "metricas_responsabilidade": [
+            "Taxa de Defeitos",
+            "Conformidade com SLAs"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Necessário para supervisionar toda a operação de qualidade e auditoria, garantindo o cumprimento dos padrões",
+          "okr_owner_ids": []
+        },
+        {
+          "titulo": "Auditor de Processos",
+          "nivel_hierarquico": "especialista",
+          "departamento": "Qualidade & Auditoria",
+          "responsabilidade_resultado": "Realizar auditorias regulares para identificar oportunidades de melhoria",
+          "metricas_responsabilidade": [
+            "Número de Auditorias Realizadas"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Necessário para garantir que os processos estão sendo seguidos e que as oportunidades de melhoria são identificadas",
+          "okr_owner_ids": []
+        },
+        {
+          "titulo": "Analista de Qualidade",
+          "nivel_hierarquico": "operacional",
+          "departamento": "Qualidade & Auditoria",
+          "responsabilidade_resultado": "Garantir que os produtos estejam funcionando conforme o esperado e que a satisfação com a qualidade seja alta",
+          "metricas_responsabilidade": [
+            "Índice de Satisfação com a Qualidade"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Necessário para monitorar a qualidade dos produtos e garantir que os clientes estão satisfeitos",
+          "okr_owner_ids": []
+        }
+      ],
+      "okrsRelacionados": []
+    },
+    {
+      "bloco": {
+        "id": "86fbc43b-11ac-438c-a7cf-f65507c2980e",
+        "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+        "nome": "Suporte & Retenção",
+        "objetivo": "Oferecer suporte proativo e de alta qualidade para garantir a satisfação e a retenção dos clientes.",
+        "kpis": [
+          "CSAT (Customer Satisfaction Score)",
+          "Taxa de Retenção de Clientes",
+          "Tempo Médio de Resolução (TTR)",
+          "Taxa de Churn"
+        ],
+        "personas_ids": [],
+        "created_at": "2025-12-06T19:54:28.89413+00:00"
+      },
+      "cargos": [
+        {
+          "titulo": "Gerente de Retenção de Clientes",
+          "nivel_hierarquico": "gerencial",
+          "departamento": "Suporte & Retenção",
+          "responsabilidade_resultado": "Aumentar a retenção de clientes e reduzir a taxa de churn",
+          "metricas_responsabilidade": [
+            "Taxa de Retenção de Clientes",
+            "Taxa de Churn"
+          ],
+          "okr_titles_ownership": [
+            "Aumentar Retenção de Clientes"
+          ],
+          "justificativa": "Este cargo é necessário para liderar a estratégia de retenção de clientes e gerenciar as iniciativas de redução de churn.",
+          "okr_owner_ids": [
+            "91221954-af24-4254-92c3-6142bf649d0e"
+          ]
+        },
+        {
+          "titulo": "Especialista em Suporte ao Cliente",
+          "nivel_hierarquico": "especialista",
+          "departamento": "Suporte & Retenção",
+          "responsabilidade_resultado": "Fornecer suporte de alta qualidade aos clientes para aumentar a satisfação e retenção",
+          "metricas_responsabilidade": [
+            "CSAT (Customer Satisfaction Score)",
+            "Tempo Médio de Resolução (TTR)"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Este cargo é necessário para fornecer suporte direto aos clientes, resolver problemas e melhorar a satisfação do cliente.",
+          "okr_owner_ids": []
+        },
+        {
+          "titulo": "Analista de Experiência do Cliente",
+          "nivel_hierarquico": "especialista",
+          "departamento": "Suporte & Retenção",
+          "responsabilidade_resultado": "Analisar e melhorar a experiência do cliente para promover a lealdade e retenção",
+          "metricas_responsabilidade": [
+            "CSAT (Customer Satisfaction Score)",
+            "Net Promoter Score (NPS)"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Este cargo é necessário para coletar e analisar feedback dos clientes e implementar melhorias para aprimorar a experiência do cliente.",
+          "okr_owner_ids": []
+        }
+      ],
+      "okrsRelacionados": [
+        {
+          "id": "91221954-af24-4254-92c3-6142bf649d0e",
+          "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+          "objetivo_estrategico_id": "5ac670a9-dd1c-4808-a2ba-e28f44fe31c3",
+          "titulo": "Aumentar Retenção de Clientes",
+          "key_result_1": "KR1: Reduzir o churn rate de 25% para 10% em 6 meses",
+          "key_result_2": "KR2: Aumentar o Net Promoter Score (NPS) de 40 para 60",
+          "key_result_3": "KR3: Elevar a taxa de renovação de contratos de 70% para 85%",
+          "area_responsavel": "Suporte & Retenção",
+          "owner_persona_id": null,
+          "progresso_percentual": 0,
+          "prazo": "2026-06-04",
+          "created_at": "2025-12-06T19:54:28.44306+00:00",
+          "objetivo": {
+            "id": "5ac670a9-dd1c-4808-a2ba-e28f44fe31c3",
+            "prazo": "2026-06-04",
+            "status": "ativo",
+            "titulo": "Aumentar retenção de clientes",
+            "descricao": "Melhorar a experiência do cliente e a eficácia dos assistentes virtuais para aumentar a taxa de retenção e reduzir churn.",
+            "created_at": "2025-12-06T19:54:28.183979+00:00",
+            "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+            "prioridade": 1,
+            "metrica_alvo": "Elevar retenção de 75% para 90% em 6 meses"
+          }
+        }
+      ]
+    },
+    {
+      "bloco": {
+        "id": "97503b81-2fe6-4986-a10c-73624c81315a",
+        "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+        "nome": "Vendas & Fechamento",
+        "objetivo": "Transformar oportunidades de negócio em receita, garantindo o fechamento eficiente de contratos e a expansão de contas.",
+        "kpis": [
+          "Taxa de Conversão de MQL para Cliente",
+          "Ciclo Médio de Venda",
+          "Ticket Médio (ACV)",
+          "Taxa de Ganho (Win Rate)"
+        ],
+        "personas_ids": [],
+        "created_at": "2025-12-06T19:54:28.89413+00:00"
+      },
+      "cargos": [
+        {
+          "titulo": "Gerente de Vendas",
+          "nivel_hierarquico": "gerencial",
+          "departamento": "Vendas & Fechamento",
+          "responsabilidade_resultado": "Aumentar a base de clientes ativos e o ticket médio mensal por cliente, além de reduzir a taxa de churn mensal",
+          "metricas_responsabilidade": [
+            "Taxa de Conversão de MQL para Cliente",
+            "Ticket Médio (ACV)",
+            "Taxa de Ganho (Win Rate)",
+            "Taxa de Churn"
+          ],
+          "okr_titles_ownership": [
+            "Crescer Receita Recorrente"
+          ],
+          "justificativa": "Responsável pela estratégia de vendas e fechamento, gerenciando o time para atingir as metas do OKR.",
+          "okr_owner_ids": [
+            "7d3feb24-c005-425b-b275-4a528f12efcb"
+          ]
+        },
+        {
+          "titulo": "Especialista em Aquisição de Clientes",
+          "nivel_hierarquico": "especialista",
+          "departamento": "Vendas & Fechamento",
+          "responsabilidade_resultado": "Aumentar a taxa de conversão de MQL para Cliente",
+          "metricas_responsabilidade": [
+            "Taxa de Conversão de MQL para Cliente"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Foco na geração de leads qualificados e na conversão destes para clientes, contribuindo para o crescimento da base de clientes ativos.",
+          "okr_owner_ids": []
+        },
+        {
+          "titulo": "Especialista em Retenção de Clientes",
+          "nivel_hierarquico": "especialista",
+          "departamento": "Vendas & Fechamento",
+          "responsabilidade_resultado": "Reduzir a taxa de churn mensal para 2%",
+          "metricas_responsabilidade": [
+            "Taxa de Churn"
+          ],
+          "okr_titles_ownership": [],
+          "justificativa": "Foco em estratégias de retenção de clientes, contribuindo para a redução da taxa de churn e consequente aumento da receita recorrente.",
+          "okr_owner_ids": []
+        }
+      ],
+      "okrsRelacionados": [
+        {
+          "id": "7d3feb24-c005-425b-b275-4a528f12efcb",
+          "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+          "objetivo_estrategico_id": "ee96d245-c87d-4c32-b7b9-ed13ab1bdabd",
+          "titulo": "Crescer Receita Recorrente",
+          "key_result_1": "KR1: Aumentar base de clientes ativos em 25%",
+          "key_result_2": "KR2: Aumentar ticket médio mensal por cliente em 15%",
+          "key_result_3": "KR3: Reduzir taxa de churn mensal para 2%",
+          "area_responsavel": "Vendas & Fechamento",
+          "owner_persona_id": null,
+          "progresso_percentual": 0,
+          "prazo": "2026-12-01",
+          "created_at": "2025-12-06T19:54:28.44306+00:00",
+          "objetivo": {
+            "id": "ee96d245-c87d-4c32-b7b9-ed13ab1bdabd",
+            "prazo": "2026-12-01",
+            "status": "ativo",
+            "titulo": "Aumentar receita recorrente",
+            "descricao": "Impulsionar a receita recorrente mensal (MRR) através da aquisição de novos clientes e upselling de serviços existentes, focando em empresas de médio porte.",
+            "created_at": "2025-12-06T19:54:28.183979+00:00",
+            "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+            "prioridade": 1,
+            "metrica_alvo": "Crescer receita em 30% nos próximos 12 meses"
+          }
+        }
+      ]
+    }
+  ],
+  "gerado_em": "2025-12-06T22:47:53.024Z"
+}

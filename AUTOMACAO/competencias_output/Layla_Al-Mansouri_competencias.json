@@ -1,0 +1,53 @@
+{
+  "persona_id": "09ffa714-e7ac-49e4-9890-10a64b28d756",
+  "full_name": "Layla Al-Mansouri",
+  "role": "UX/UI Designer",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "Pesquisa e Análise de Usuários",
+    "Wireframing e Prototipagem Interativa",
+    "Design Visual e Tipografia",
+    "Design de Interações e Animações",
+    "Testes de Usabilidade e Acessibilidade"
+  ],
+  "competencias_comportamentais": [
+    "Criatividade e Inovação",
+    "Colaboração em Equipe Multidisciplinar",
+    "Resolução de Problemas Complexos",
+    "Atenção aos Detalhes",
+    "Adaptabilidade a Tecnologias Emergentes"
+  ],
+  "ferramentas": [
+    "Figma",
+    "Adobe XD",
+    "Sketch",
+    "Miro"
+  ],
+  "tarefas_diarias": [
+    "Revisar feedback de usuários da plataforma ARVA",
+    "Iterar protótipos de interfaces para agentes virtuais",
+    "Colaborar com desenvolvedores em handoffs de design",
+    "Criar sketches e moodboards para novos módulos"
+  ],
+  "tarefas_semanais": [
+    "Realizar testes de usabilidade com usuários beta",
+    "Atualizar o design system modular da ARVA",
+    "Participar de reuniões de sprint com o time de produto"
+  ],
+  "tarefas_mensais": [
+    "Auditar interfaces existentes para otimização UX",
+    "Gerar relatórios de métricas de engajamento de usuários",
+    "Explorar tendências em UX para IA autônoma"
+  ],
+  "kpis": [
+    "KPI 1: Net Promoter Score (NPS) - 85+",
+    "KPI 2: Taxa de Satisfação do Usuário - 90%",
+    "KPI 3: Tempo Médio de Handoff de Design - <48h"
+  ],
+  "objetivos_desenvolvimento": [
+    "Dominar UX para interfaces de agentes IA autônomos",
+    "Aprender design de sistemas modulares avançados",
+    "Obter certificação em Accessibility (WCAG)"
+  ],
+  "generated_at": "2025-12-08T22:24:58.961Z"
+}

@@ -1,0 +1,46 @@
+{
+  "persona_id": "d2b06c98-9788-4aa0-8f54-938c50e22506",
+  "full_name": "Carlos Eduardo Santos Silva",
+  "role": "Coordenador de Operações",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Redução de custos em projetos",
+      "descricao": "Implementar medidas que resultem em uma redução de custos de 10% nos projetos sob minha responsabilidade",
+      "categoria": "performance",
+      "valor_alvo": 10,
+      "unidade_medida": "%",
+      "data_prazo": "2026-06-01",
+      "prioridade": 1,
+      "vinculada_kpi": "Eficiência Operacional"
+    },
+    {
+      "titulo": "Aumentar índice de satisfação da equipe",
+      "descricao": "Realizar treinamentos e ações que resultem em um aumento de 10% no índice de satisfação da equipe sob minha liderança",
+      "categoria": "performance",
+      "valor_alvo": 10,
+      "unidade_medida": "%",
+      "data_prazo": "2026-06-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Participar de cursos de liderança",
+      "descricao": "Realizar um curso de liderança inspiradora até o final do próximo trimestre",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "curso",
+      "data_prazo": "2026-06-01",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Participar de workshops sobre tecnologias disruptivas",
+      "descricao": "Participar de pelo menos dois workshops sobre tecnologias disruptivas nos próximos 3 meses",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "workshops",
+      "data_prazo": "2026-06-01",
+      "prioridade": 2
+    }
+  ],
+  "generated_at": "2025-12-08T14:42:44.929Z"
+}

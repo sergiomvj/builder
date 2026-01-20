@@ -1,0 +1,57 @@
+{
+  "persona_id": "2eeed645-9119-48e3-8e1c-8a12c5c14f1b",
+  "full_name": "[Placeholder 14] Prompt Engineer Pleno",
+  "role": "Prompt Engineer Pleno",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Design avançado de prompts utilizando técnicas como chain-of-thought, few-shot e tree-of-thoughts",
+    "Conhecimento profundo de Large Language Models (LLMs) e suas limitações",
+    "Programação em Python para automação e experimentação de prompts",
+    "Avaliação quantitativa de prompts com métricas como precisão, recall e coerência",
+    "Integração de APIs de IA generativa em fluxos de trabalho operacionais"
+  ],
+  "competencias_comportamentais": [
+    "Pensamento analítico e crítico para iterar soluções de prompting",
+    "Criatividade para inovar em estruturas de prompts complexas",
+    "Atenção aos detalhes para minimizar ambiguidades e alucinações",
+    "Resolução de problemas adaptativa em cenários de IA imprevisíveis",
+    "Comunicação eficaz para colaborar com equipes multidisciplinares"
+  ],
+  "ferramentas": [
+    "OpenAI Playground e GPT models",
+    "LangChain para orquestração de prompts",
+    "Promptfoo para testes automatizados de prompts",
+    "Jupyter Notebook para experimentação iterativa",
+    "GitHub para versionamento de prompts e bibliotecas"
+  ],
+  "tarefas_diarias": [
+    "Criar e testar pelo menos 5 prompts otimizados para casos de uso específicos (taxa de sucesso >90%)",
+    "Analisar feedback de 10+ interações com IA e iterar prompts existentes",
+    "Documentar 3 novos prompts no repositório compartilhado com exemplos e métricas",
+    "Participar de stand-up diário reportando progresso e bloqueios em prompts",
+    "Monitorar performance de prompts em produção, ajustando para >95% de precisão"
+  ],
+  "tarefas_semanais": [
+    "Revisar e otimizar 20 prompts da biblioteca compartilhada",
+    "Realizar uma sessão de treinamento de 1 hora para a equipe sobre técnicas avançadas",
+    "Gerar relatório semanal de métricas de prompts (precisão, latência, custo)",
+    "Experimentar e documentar 2 novas técnicas de prompting emergentes"
+  ],
+  "tarefas_mensais": [
+    "Avaliar impacto dos prompts nos KPIs operacionais da Operations",
+    "Atualizar o guia de melhores práticas de Prompt Engineering",
+    "Propor e prototipar 1 melhoria no pipeline de automação de IA"
+  ],
+  "kpis": [
+    "Taxa de precisão média dos prompts: 95%",
+    "Número de prompts otimizados por mês: 50",
+    "Tempo médio de iteração por prompt: <2 horas",
+    "Redução de custo em chamadas de API: 15% QoQ"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação avançada em Prompt Engineering (ex: DeepLearning.AI)",
+    "Dominar frameworks como LangGraph para agentes de IA autônomos",
+    "Liderar projeto piloto de automação full de prompts em um workflow Operations"
+  ],
+  "generated_at": "2025-12-01T16:15:32.501Z"
+}

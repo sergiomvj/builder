@@ -1,0 +1,112 @@
+{
+  "persona": {
+    "nome": "[Placeholder 18] Engenheiro de Machine Learning",
+    "nacionalidade": "asiaticos",
+    "genero": "feminino",
+    "cargo": "Engenheiro de Machine Learning",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Em definição",
+    "competencias": "Em definição",
+    "biografia": "Profissional experiente",
+    "personalidade": {},
+    "experiencia_anos": 4,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1024&h=1024&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face",
+    "prompt_usado": "Highly detailed realistic portrait of a 28-year-old female East Asian ML Engineer, oval face, porcelain clear skin with smooth texture, dark brown almond-shaped expressive eyes, thin arched eyebrows, straight thin nose, medium straight lips, confident expression with subtle smile, jet black straight medium-length hair with fine volume, slim athletic build, estimated height 165cm, high cheekbones, wearing black round glasses, minimalist silver watch, business casual attire with white blouse pale blue blazer dark gray chinos, erect confident posture, office background with soft studio light, foto 4K DSLR 50mm lens close-up, ultra realistic, no blur",
+    "estilo": "business casual",
+    "background_tipo": "office",
+    "servico_usado": "gemini_ai",
+    "versao": 1,
+    "ativo": true,
+    "biometrics": {
+      "idade_aparente": "26-30 anos",
+      "genero": "feminino",
+      "etnia": "asiatico",
+      "tipo_fisico": "esguio atlético",
+      "altura_estimada": "162-168 cm",
+      "cabelo_cor": "preto azabache",
+      "cabelo_comprimento": "médio",
+      "cabelo_estilo": "liso",
+      "cabelo_volume": "fino",
+      "olhos_cor": "castanhos escuros",
+      "olhos_formato": "amendoados expressivos",
+      "rosto_formato": "oval",
+      "pele_tom": "clara porcelana",
+      "pele_textura": "lisa",
+      "sobrancelhas": "finas arqueadas",
+      "nariz": "fino reto",
+      "boca_labios": "médios retos",
+      "expressao_facial_padrao": "confiante",
+      "marcas_unicas": "nenhuma",
+      "acessorios_permanentes": "óculos pretos redondos, relógio minimalista prateado",
+      "postura": "ereta confiante",
+      "caracteristicas_distintivas": "maçãs de rosto altas proeminentes",
+      "estilo_vestimenta_padrao": "business casual tech",
+      "paleta_cores_vestuario": "cinza neutro azul frio branco"
+    },
+    "physical_description_detailed": {
+      "rosto": {
+        "formato": "oval com maçãs de rosto altas proeminentes e queixo suave arredondado",
+        "tom_pele": "clara porcelana com subtom rosado frio típico de leste asiático",
+        "textura_pele": "extremamente lisa sem poros aparentes ou imperfeições",
+        "olhos": {
+          "cor": "castanhos escuros profundos",
+          "formato": "amendoados expressivos com pálpebras duplas sutis"
+        },
+        "sobrancelhas": "finas arqueadas naturalmente definidas",
+        "nariz": "fino reto com ponte estreita e narinas delicadas",
+        "boca": "lábios médios retos com contorno preciso e leve brilho natural",
+        "expressao_tipica": "confiante com sorriso sutil nos cantos da boca e olhar direto"
+      },
+      "cabelo": {
+        "cor_exata": "preto azabache com brilho natural",
+        "comprimento": "até ombros cerca de 25-30 cm",
+        "estilo": "liso perfeitamente alinhado com leve franja lateral",
+        "volume": "fino sedoso com densidade média"
+      },
+      "corpo": {
+        "altura_aproximada": "165 cm",
+        "tipo_fisico": "esguio atlético com ombros estreitos cintura definida e pernas longas proporcionais",
+        "proporcao": "proporções equilibradas 8-heads com silhueta hourglass sutil",
+        "postura_tipica": "ereta confiante com ombros para trás e cabeça erguida"
+      }
+    },
+    "consistency_parameters": {
+      "rendering_style": "foto 4K realista",
+      "lens_focus": "50mm close-up",
+      "lighting": "soft studio light",
+      "aspect_ratio": "1:1 (avatar)"
+    },
+    "history": {
+      "background_educacional": "Bacharelado em Ciência da Computação pela UC Berkeley com foco em IA",
+      "experiencia_internacional": "Estágios em startups de Silicon Valley e colaborações remotas com equipes em Singapura",
+      "contexto_cultural": "Herança chinesa-americana influenciando estilo minimalista e elegante",
+      "estilo_vida": "Rotina de gym matinal e café tech meetups mantendo aparência fitness e polida",
+      "marcos_carreira": "Promoção para Engenheira de ML após projeto de otimização de modelos em Operations na LifewayUSA",
+      "valores_pessoais": "Eficiência e inovação refletidos em acessórios funcionais e vestimenta prática",
+      "ambiente_trabalho": "Ambiente tech casual da LifewayUSA incentivando business casual com toques profissionais",
+      "redes_sociais": "Perfil LinkedIn ativo com fotos profissionais e GitHub com portfólio de ML"
+    },
+    "metadados": {
+      "resolucao": "1024x1024",
+      "formato": "webp",
+      "qualidade": "ultra_high",
+      "parametros_geracao": {
+        "prompt_negativo": "blurry, low quality, distorted, cartoonish",
+        "steps": 30,
+        "cfg_scale": 8.5
+      },
+      "contexto_profissional": {
+        "cargo": "Engenheiro de Machine Learning",
+        "industria": "tecnologia",
+        "senioridade": "mid-level"
+      }
+    }
+  },
+  "generated_at": "2025-12-03T13:05:50.660Z"
+}

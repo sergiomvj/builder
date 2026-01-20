@@ -1,0 +1,51 @@
+{
+  "persona": {
+    "nome": "Sofia López",
+    "categoria": "assistentes",
+    "especialidade": null,
+    "experiencia": 12
+  },
+  "competencias": {
+    "tecnicas": [
+      "Gestão Administrativa",
+      "Organização de Agendas",
+      "Comunicação Empresarial",
+      "Suporte Executivo",
+      "Gestão Documental",
+      "Coordenação de Reuniões"
+    ],
+    "comportamentais": [
+      "Organização",
+      "Proatividade",
+      "Discrição",
+      "Multitasking",
+      "Comunicação Eficaz",
+      "Orientação ao Cliente Interno"
+    ],
+    "ferramentas": [
+      "Microsoft Office 365",
+      "Google Workspace",
+      "Slack",
+      "Zoom",
+      "Trello",
+      "Notion"
+    ]
+  },
+  "analise_biografia": {
+    "educacao": "Bacharelado em Comunicação Social",
+    "idiomas": [
+      "espanhol",
+      "português",
+      "francês",
+      "inglês"
+    ],
+    "secoes_extraidas": [
+      "formacao",
+      "experiencia",
+      "competencias_tecnicas",
+      "competencias_comportamentais",
+      "responsabilidades"
+    ]
+  },
+  "data_processamento": "2025-11-14T00:03:58.647Z"
+}

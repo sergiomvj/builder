@@ -1,0 +1,314 @@
+[
+  {
+    "persona_code": "ARVA01-EST1",
+    "full_name": "[A GERAR]",
+    "role": "Diretor de Estratégia",
+    "prompt": "Realistic professional headshot of a confident 39-year-old European Strategy Director, neutral expression, in professional attire, with a neutral or corporate background, under soft professional lighting",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 39,
+      "etnia": "european"
+    }
+  },
+  {
+    "persona_code": "ARVA01-EST2",
+    "full_name": "[A GERAR]",
+    "role": "Analista de Dados",
+    "prompt": "Professional headshot of a confident 29-year-old European data analyst, gender-neutral, in business attire, friendly expression, neutral or corporate background, soft professional lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "neutral or corporate",
+      "idade_aparente": 29,
+      "etnia": "european"
+    }
+  },
+  {
+    "persona_code": "ARVA01-EST3",
+    "full_name": "[A GERAR]",
+    "role": "Especialista em Customer Success",
+    "prompt": "Realistic professional headshot of an assured 30-year-old American, dressed in customer success appropriate attire, friendly expression, in a modern office or with a neutral background, soft and professional lighting.",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office or neutral background",
+      "idade_aparente": 30,
+      "etnia": "American"
+    }
+  },
+  {
+    "persona_code": "ARVA01-FIN4",
+    "full_name": "[A GERAR]",
+    "role": "Diretor Financeiro",
+    "prompt": "Realistic professional headshot of a confident 39-year-old Brazilian Finance Director, dressed in business attire, with a friendly expression, in a corporate office environment with neutral backdrop and professional soft lighting.",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "corporate office",
+      "idade_aparente": 39,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "ARVA01-FIN5",
+    "full_name": "[A GERAR]",
+    "role": "Contador",
+    "prompt": "Headshot of a confident 29-year-old American accountant, professional attire, friendly expression, neutral or corporate background, soft professional lighting, photorealistic quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 29,
+      "etnia": "americanos"
+    }
+  },
+  {
+    "persona_code": "ARVA01-FIN6",
+    "full_name": "[A GERAR]",
+    "role": "Analista Financeiro",
+    "prompt": "Professional headshot of a confident 28-year-old Asian analyst, gender-neutral professional attire, friendly expression, neutral or corporate background, high-quality soft lighting",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "corporate office",
+      "idade_aparente": 28,
+      "etnia": "asiaticos"
+    }
+  },
+  {
+    "persona_code": "ARVA01-FIN7",
+    "full_name": "[A GERAR]",
+    "role": "Advogado de Conformidade",
+    "prompt": "Professional headshot of a confident, 30-year-old, nordic individual in compliance lawyer role, dressed in appropriate business attire, friendly expression, within a corporative environment, under soft professional lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "nordic"
+    }
+  },
+  {
+    "persona_code": "ARVA01-MAR10",
+    "full_name": "[A GERAR]",
+    "role": "Especialista em SEO",
+    "prompt": "Realistic professional headshot of a confident 28-year-old American SEO specialist, in smart business attire, friendly expression, neutral or corporate office background, with soft professional lighting.",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 28,
+      "etnia": "americanos"
+    }
+  },
+  {
+    "persona_code": "ARVA01-MAR11",
+    "full_name": "[A GERAR]",
+    "role": "Coordenador de Eventos",
+    "prompt": "27-year-old American events coordinator, professional attire, confident and friendly expression, neutral or corporate background, soft professional lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "corporate background",
+      "idade_aparente": 27,
+      "etnia": "americanos"
+    }
+  },
+  {
+    "persona_code": "ARVA01-MAR8",
+    "full_name": "[A GERAR]",
+    "role": "Gerente de Marketing & Aquisição",
+    "prompt": "Realistic professional headshot of a confident 32-year-old European, in marketing managerial attire, friendly expression, neutral or modern corporate background, soft professional lighting",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 32,
+      "etnia": "europeus"
+    }
+  },
+  {
+    "persona_code": "ARVA01-MAR9",
+    "full_name": "[A GERAR]",
+    "role": "Especialista em Marketing Digital",
+    "prompt": "A 29-year-old European expert in digital marketing, gender nonspecific, professionally dressed, exuding confidence with a friendly smile, under gentle professional lighting, with a neutral or corporate background.",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 29,
+      "etnia": "europeus"
+    }
+  },
+  {
+    "persona_code": "ARVA01-OPE12",
+    "full_name": "[A GERAR]",
+    "role": "Gerente de Operações e Entrega",
+    "prompt": "Professional headshot of a 35-year-old American, in business attire suitable for an Operations and Delivery Manager, with a confident and friendly expression, in a modern office environment with a neutral background, under professional soft lighting",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 35,
+      "etnia": "americanos"
+    }
+  },
+  {
+    "persona_code": "ARVA01-OPE13",
+    "full_name": "[A GERAR]",
+    "role": "Especialista em Automação de Processos",
+    "prompt": "Realistic professional headshot of a 29-year-old nordic, gender-neutral individual, specialized in process automation. Dressed in professional attire, exhibiting a friendly and confident expression, against a neutral or modern office background, soft professional lighting.",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 29,
+      "etnia": "nordicos"
+    }
+  },
+  {
+    "persona_code": "ARVA01-OPE14",
+    "full_name": "[A GERAR]",
+    "role": "Analista de Operações",
+    "prompt": "Realistic professional headshot of a confident 28-year-old Brazilian operations analyst, dressed in business attire, with a friendly expression. Background is a modern office or neutral, with soft and professional lighting.",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 28,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "ARVA01-PRO15",
+    "full_name": "[A GERAR]",
+    "role": "Gerente de Produto",
+    "prompt": "Professional headshot of a confident 35-year-old Brazilian product manager, in business attire, with a welcoming expression, against a neutral or corporate background, under soft professional lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "neutral or corporate background",
+      "idade_aparente": 35,
+      "etnia": "Brazilian"
+    }
+  },
+  {
+    "persona_code": "ARVA01-PRO16",
+    "full_name": "[A GERAR]",
+    "role": "Engenheiro de Software Sênior",
+    "prompt": "High-quality professional headshot of a confident 31-year-old Asian software engineer. Dressed in professional attire, friendly demeanor, neutral or corporate office background, under soft and professional lighting.",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 31,
+      "etnia": "asiaticos"
+    }
+  },
+  {
+    "persona_code": "ARVA01-PRO17",
+    "full_name": "[A GERAR]",
+    "role": "Especialista em QA",
+    "prompt": "Realistic professional portrait of a 30-year-old Nordic QA specialist, gender-neutral, in business attire, with a confident and friendly expression. Background is a modern office with neutral lighting.",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "nordicos"
+    }
+  },
+  {
+    "persona_code": "ARVA01-QUA18",
+    "full_name": "[A GERAR]",
+    "role": "Gerente de Qualidade & Auditoria",
+    "prompt": "Realistic professional headshot of a confident 32-year-old American, in quality manager attire, friendly expression, neutral or corporate background, softly lit, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 32,
+      "etnia": "americanos"
+    }
+  },
+  {
+    "persona_code": "ARVA01-QUA19",
+    "full_name": "[A GERAR]",
+    "role": "Auditor de Processos",
+    "prompt": "Professional headshot of a confident 29-year-old Brazilian, in auditor attire, friendly expression, neutral or corporate office background, soft professional lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 29,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "ARVA01-QUA20",
+    "full_name": "[A GERAR]",
+    "role": "Analista de Qualidade",
+    "prompt": "Realistic professional photo of a 26-year-old American quality analyst, in appropriate business attire, with a confident yet friendly expression. The backdrop is a neutral or corporate environment with soft, professional lighting.",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office or neutral",
+      "idade_aparente": 26,
+      "etnia": "American"
+    }
+  },
+  {
+    "persona_code": "ARVA01-SUP21",
+    "full_name": "[A GERAR]",
+    "role": "Gerente de Retenção de Clientes",
+    "prompt": "Professional headshot of a confident 35-year-old European, business attire, friendly smile, modern corporate background, soft professional lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 35,
+      "etnia": "europeus"
+    }
+  },
+  {
+    "persona_code": "ARVA01-SUP22",
+    "full_name": "[A GERAR]",
+    "role": "Especialista em Suporte ao Cliente",
+    "prompt": "Professional headshot of a confident 28-year-old Brazilian customer support specialist, business attire, friendly expression, neutral or corporate background, soft professional lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 28,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "ARVA01-SUP23",
+    "full_name": "[A GERAR]",
+    "role": "Analista de Experiência do Cliente",
+    "prompt": "Professional headshot of a confident 30-year-old Russian, customer experience analyst, wearing professional attire, friendly expression, in a corporate environment, with soft and professional lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "corporate environment",
+      "idade_aparente": 30,
+      "etnia": "russos"
+    }
+  },
+  {
+    "persona_code": "ARVA01-VEN24",
+    "full_name": "[A GERAR]",
+    "role": "Gerente de Vendas",
+    "prompt": "Professional headshot of a confident 34-year-old Brazilian sales manager, in business attire, friendly smile, neutral or corporate background, soft and professional lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office or neutral background",
+      "idade_aparente": 34,
+      "etnia": "Brazilian"
+    }
+  },
+  {
+    "persona_code": "ARVA01-VEN25",
+    "full_name": "[A GERAR]",
+    "role": "Especialista em Aquisição de Clientes",
+    "prompt": "Realistic professional headshot of a confident 30-year-old Brazilian, dressed in business attire suitable for a Customer Acquisition Specialist, neutral or corporate background, friendly expression, under soft and professional lighting",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "ARVA01-VEN26",
+    "full_name": "[A GERAR]",
+    "role": "Especialista em Retenção de Clientes",
+    "prompt": "Realistic professional headshot of a confident 29-year-old Asian customer retention specialist, wearing professional attire, friendly expression, neutral or corporate background, soft professional lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 29,
+      "etnia": "asiaticos"
+    }
+  }
+]

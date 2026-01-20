@@ -1,0 +1,37 @@
+{
+  "empresa": "LifeWayUSA - Tecnologia e Serviços de Imigração",
+  "estrutura_organizacional": {
+    "CEO": {
+      "subordinados": {
+        "CTO": {
+          "subordinados": {
+            "Desenvolvedor Senior": {},
+            "Designer": {}
+          }
+        },
+        "Gerente de Vendas": {
+          "subordinados": {
+            "Vendedor Sênior": {},
+            "Vendedor Júnior": {}
+          }
+        },
+        "Gerente de RH": {
+          "subordinados": {
+            "Analista de RH": {},
+            "Assistente de RH": {}
+          }
+        },
+        "Gerente de Suporte ao Cliente": {
+          "subordinados": {
+            "Técnico de Suporte": {},
+            "Assistente de Suporte": {}
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "gerado_em": "2025-12-08T12:30:26.247Z",
+    "metodo": "llm_analysis"
+  }
+}

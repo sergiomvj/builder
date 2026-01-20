@@ -1,0 +1,53 @@
+{
+  "persona_id": "7d1b6cd1-78d4-4316-a7ce-1621fcdabcf5",
+  "full_name": "Gabriel Costa Ramos",
+  "role": "Especialista em Vendas",
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "competencias_tecnicas": [
+    "Conhecimento em inteligência artificial",
+    "Experiência em vendas no setor de tecnologia",
+    "Habilidade em negociação",
+    "Conhecimento em CRM",
+    "Experiência em gestão de carteira de clientes"
+  ],
+  "competencias_comportamentais": [
+    "Proatividade",
+    "Orientação para resultados",
+    "Boa comunicação",
+    "Capacidade de trabalho em equipe",
+    "Resiliência"
+  ],
+  "ferramentas": [
+    "Salesforce",
+    "HubSpot",
+    "LinkedIn Sales Navigator",
+    "Google Analytics"
+  ],
+  "tarefas_diarias": [
+    "Prospectar novos clientes",
+    "Realizar follow-up com leads",
+    "Elaborar propostas comerciais",
+    "Realizar apresentações de vendas"
+  ],
+  "tarefas_semanais": [
+    "Participar de reuniões de equipe",
+    "Analisar métricas de desempenho de vendas",
+    "Participar de treinamentos de produtos"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatórios de vendas",
+    "Participar de eventos do setor de tecnologia",
+    "Realizar visitas a clientes estratégicos"
+  ],
+  "kpis": [
+    "Taxa de conversão de leads - 20%",
+    "Receita gerada - $100,000",
+    "Número de novas contas fechadas - 5"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de negociação",
+    "Aumentar conhecimento em inteligência artificial",
+    "Desenvolver estratégias de upselling e cross-selling"
+  ],
+  "generated_at": "2025-12-05T20:13:10.419Z"
+}

@@ -1,0 +1,36 @@
+{
+  "persona_id": "1b3297d6-3f11-494f-9f31-f6d98ad4079d",
+  "full_name": "Gabriel Mendes Souza",
+  "role": "Desenvolvedor Full Stack",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades em React.js",
+      "descricao": "Participar de cursos online e workshops específicos sobre React.js, dedicando pelo menos 10 horas por semana ao estudo e prática da tecnologia.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "horas",
+      "data_prazo": "2026-06-01",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Participar de 3 workshops sobre UX/UI design",
+      "descricao": "Inscrição e participação em 3 workshops presenciais ou online sobre UX/UI design, aplicando os conceitos aprendidos em pelo menos um projeto prático.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 3,
+      "unidade_medida": "workshops",
+      "data_prazo": "2026-06-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Desenvolver habilidades de liderança",
+      "descricao": "Participar de treinamentos específicos sobre liderança, assumir a liderança de um projeto interno da equipe de desenvolvimento e receber feedback regular dos membros da equipe.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "n/a",
+      "unidade_medida": "n/a",
+      "data_prazo": "2026-06-01",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:42:10.660Z"
+}

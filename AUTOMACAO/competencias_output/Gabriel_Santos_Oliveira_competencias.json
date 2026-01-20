@@ -1,0 +1,53 @@
+{
+  "persona_id": "6ec815c0-57af-4d0a-91a2-22c8eb8c6d8e",
+  "full_name": "Gabriel Santos Oliveira",
+  "role": "Analista Financeiro",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em análise financeira",
+    "Domínio em Excel avançado",
+    "Experiência em elaboração de relatórios financeiros",
+    "Conhecimento em projeções financeiras",
+    "Habilidade em gestão de fluxo de caixa"
+  ],
+  "competencias_comportamentais": [
+    "Proatividade",
+    "Organização",
+    "Capacidade analítica",
+    "Comunicação eficaz",
+    "Trabalho em equipe"
+  ],
+  "ferramentas": [
+    "Excel",
+    "Sistemas de gestão financeira",
+    "Ferramentas de análise de dados",
+    "Softwares de projeção financeira"
+  ],
+  "tarefas_diarias": [
+    "Análise de dados financeiros",
+    "Elaboração de relatórios de desempenho",
+    "Controle de contas a pagar e a receber",
+    "Revisão de fluxo de caixa"
+  ],
+  "tarefas_semanais": [
+    "Reuniões de alinhamento com a equipe financeira",
+    "Acompanhamento de indicadores financeiros",
+    "Análise de rentabilidade de investimentos"
+  ],
+  "tarefas_mensais": [
+    "Elaboração de projeções financeiras",
+    "Revisão de orçamento anual",
+    "Análise de desempenho dos investimentos"
+  ],
+  "kpis": [
+    "Rentabilidade - 10%",
+    "Redução de custos - 5%",
+    "Fluxo de caixa positivo"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em análise de investimentos",
+    "Participar de cursos de atualização em finanças",
+    "Desenvolver habilidades de liderança na área financeira"
+  ],
+  "generated_at": "2025-12-08T14:36:31.120Z"
+}

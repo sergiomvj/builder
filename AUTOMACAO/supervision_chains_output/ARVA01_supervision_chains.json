@@ -1,0 +1,434 @@
+[
+  {
+    "executor": "ARVA01-EST2",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-EST2",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-EST2",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-EST2",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-EST3",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-EST3",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-EST3",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-EST3",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-FIN5",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-FIN5",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-FIN5",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-FIN5",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-FIN6",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-FIN6",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-FIN6",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-FIN6",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-FIN7",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-FIN7",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-FIN7",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-FIN7",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-MAR10",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-MAR10",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-MAR10",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-MAR10",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-MAR11",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-MAR11",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-MAR11",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-MAR11",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-MAR9",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-MAR9",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-MAR9",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-MAR9",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-OPE13",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-OPE13",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-OPE13",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-OPE13",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-OPE14",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-OPE14",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-OPE14",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-OPE14",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-PRO16",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-PRO16",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-PRO16",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-PRO16",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-PRO17",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-PRO17",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-PRO17",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-PRO17",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-QUA19",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-QUA19",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-QUA19",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-QUA19",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-QUA20",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-QUA20",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-QUA20",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-QUA20",
+    "supervisor": "ARVA01-EST2",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-SUP22",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-SUP22",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-SUP22",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-SUP22",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-SUP23",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-SUP23",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-SUP23",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-SUP23",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-VEN25",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-VEN25",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-VEN25",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-VEN25",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  },
+  {
+    "executor": "ARVA01-VEN26",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_ORDER",
+    "value_range": "R$ 100 - R$ 10000"
+  },
+  {
+    "executor": "ARVA01-VEN26",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_DELIVERY",
+    "value_range": "R$ 50 - R$ 5000"
+  },
+  {
+    "executor": "ARVA01-VEN26",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_SUPPORT",
+    "value_range": "R$ 0 - R$ 500"
+  },
+  {
+    "executor": "ARVA01-VEN26",
+    "supervisor": "ARVA01-EST1",
+    "task_template": "OPS_PROCESS",
+    "value_range": "R$ 1000 - R$ 20000"
+  }
+]

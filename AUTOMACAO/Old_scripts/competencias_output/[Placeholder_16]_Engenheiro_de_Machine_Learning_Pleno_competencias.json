@@ -1,0 +1,54 @@
+{
+  "persona_id": "24081b37-1f4f-4bcf-9eb6-5ff3dece796d",
+  "full_name": "[Placeholder 16] Engenheiro de Machine Learning Pleno",
+  "role": "Engenheiro de Machine Learning Pleno",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Desenvolvimento e treinamento de modelos de Machine Learning com TensorFlow e PyTorch",
+    "Processamento de dados e feature engineering utilizando Pandas e NumPy",
+    "Implementação de pipelines de ML com Scikit-learn e MLflow",
+    "Deploy de modelos em produção com Docker e Kubernetes",
+    "Otimização de hiperparâmetros e avaliação de performance de modelos"
+  ],
+  "competencias_comportamentais": [
+    "Resolução de problemas complexos de forma criativa",
+    "Trabalho colaborativo em equipes multidisciplinares",
+    "Comunicação clara de resultados técnicos para stakeholders",
+    "Aprendizado contínuo e adaptação a novas tecnologias",
+    "Foco em resultados e entrega de valor mensurável"
+  ],
+  "ferramentas": [
+    "Python, TensorFlow, PyTorch",
+    "Jupyter Notebook e VS Code",
+    "Docker e Kubernetes",
+    "AWS SageMaker e MLflow"
+  ],
+  "tarefas_diarias": [
+    "Análise e pré-processamento de dados para experimentos de ML",
+    "Treinamento e validação de modelos de machine learning",
+    "Debugging e otimização de código de ML",
+    "Colaboração em reuniões diárias de stand-up com a equipe"
+  ],
+  "tarefas_semanais": [
+    "Revisão de código e pull requests de colegas",
+    "Monitoramento de performance de modelos em produção",
+    "Atualização de pipelines de dados e automação de tarefas",
+    "Documentação de experimentos e resultados"
+  ],
+  "tarefas_mensais": [
+    "Avaliação de KPIs de modelos e relatórios de performance",
+    "Planejamento e priorização de features para sprints",
+    "Treinamentos internos sobre novas técnicas de ML"
+  ],
+  "kpis": [
+    "KPI 1: Accuracy média dos modelos - 85%",
+    "KPI 2: Tempo médio de deploy de modelo - < 48 horas",
+    "KPI 3: Número de modelos otimizados por mês - 4"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação avançada em Machine Learning (ex: Google Professional ML Engineer)",
+    "Liderar um projeto de ML end-to-end de forma independente",
+    "Contribuir para repositórios open-source de ML com pelo menos 2 PRs aprovados"
+  ],
+  "generated_at": "2025-12-01T16:45:00.349Z"
+}

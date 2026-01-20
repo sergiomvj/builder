@@ -1,0 +1,57 @@
+{
+  "persona_id": "482f4eff-c6a2-4df9-8517-7333284b0d02",
+  "full_name": "[Placeholder 25] Assistente de Marketing Digital Junior",
+  "role": "Assistente de Marketing Digital Junior",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Gestão de redes sociais: criação e agendamento de posts",
+    "Análise básica de métricas digitais com ferramentas como Google Analytics",
+    "Criação de conteúdo visual básico usando ferramentas de design",
+    "Execução de campanhas de email marketing simples",
+    "Otimização básica de SEO para conteúdos digitais"
+  ],
+  "competencias_comportamentais": [
+    "Criatividade na produção de conteúdo",
+    "Comunicação clara e persuasiva",
+    "Adaptabilidade a novas ferramentas e tendências",
+    "Atenção aos detalhes em relatórios e análises",
+    "Trabalho em equipe colaborativa"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "Meta Business Suite (Facebook/Instagram)",
+    "Canva",
+    "Mailchimp",
+    "Hootsuite ou Buffer"
+  ],
+  "tarefas_diarias": [
+    "Monitorar e responder a 100% dos comentários em redes sociais em até 2 horas",
+    "Agendar e publicar 5 posts diários nas redes sociais principais",
+    "Analisar métricas de engajamento do dia anterior e registrar em planilha",
+    "Criar 2 peças gráficas ou copies para campanhas usando Canva",
+    "Verificar performance de anúncios pagos e ajustar bids básicos (alcance 80% da meta diária)"
+  ],
+  "tarefas_semanais": [
+    "Elaborar relatório semanal de performance das redes sociais (engajamento e alcance)",
+    "Planejar e aprovar calendário de conteúdo para a próxima semana",
+    "Otimizar 3 campanhas de anúncios pagos com base em dados da semana",
+    "Participar da reunião semanal de marketing e registrar action items"
+  ],
+  "tarefas_mensais": [
+    "Gerar relatório mensal de ROI de campanhas digitais",
+    "Atualizar calendário editorial anual com tendências do mês",
+    "Realizar auditoria de SEO em 10 páginas do site da empresa"
+  ],
+  "kpis": [
+    "Taxa de engajamento nas redes sociais: 3% mensal",
+    "Crescimento de seguidores: 5% ao mês",
+    "Taxa de cliques (CTR) em anúncios: 2%",
+    "Leads gerados via marketing digital: 50 por mês"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação Google Analytics Individual Qualification em 3 meses",
+    "Dominar criação de campanhas avançadas no Google Ads em 6 meses",
+    "Desenvolver habilidades de copywriting persuasivo com curso online em 2 meses"
+  ],
+  "generated_at": "2025-12-01T16:17:08.198Z"
+}

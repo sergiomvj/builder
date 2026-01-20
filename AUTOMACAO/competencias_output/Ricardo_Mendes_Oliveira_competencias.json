@@ -1,0 +1,53 @@
+{
+  "persona_id": "3c7e5b97-a45e-48c6-847b-026ea7b40aab",
+  "full_name": "Ricardo Mendes Oliveira",
+  "role": "Contador",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em legislação contábil",
+    "Domínio em análise de balanços",
+    "Experiência em elaboração de relatórios financeiros",
+    "Conhecimento em sistemas de gestão financeira",
+    "Habilidade em planejamento tributário"
+  ],
+  "competencias_comportamentais": [
+    "Organização",
+    "Atenção aos detalhes",
+    "Comunicação eficaz",
+    "Trabalho em equipe",
+    "Resiliência"
+  ],
+  "ferramentas": [
+    "Excel",
+    "Softwares de contabilidade",
+    "Sistemas ERP",
+    "Bancos de dados"
+  ],
+  "tarefas_diarias": [
+    "Análise de documentos contábeis",
+    "Emissão de relatórios financeiros",
+    "Conciliação bancária",
+    "Atendimento a clientes"
+  ],
+  "tarefas_semanais": [
+    "Análise de fluxo de caixa",
+    "Elaboração de balanços patrimoniais",
+    "Reuniões com a equipe financeira"
+  ],
+  "tarefas_mensais": [
+    "Apuração de impostos",
+    "Preparação de demonstrações financeiras",
+    "Revisão de processos contábeis"
+  ],
+  "kpis": [
+    "Cumprimento das obrigações fiscais - 100%",
+    "Redução de erros contábeis - 95%",
+    "Atendimento ao cliente - Índice de satisfação acima de 90%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar conhecimentos em planejamento tributário",
+    "Melhorar habilidades de análise de balanços",
+    "Participar de treinamentos sobre novas legislações contábeis"
+  ],
+  "generated_at": "2025-12-08T14:43:26.192Z"
+}

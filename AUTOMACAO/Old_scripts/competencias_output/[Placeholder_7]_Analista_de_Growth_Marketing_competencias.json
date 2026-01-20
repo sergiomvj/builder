@@ -1,0 +1,53 @@
+{
+  "persona_id": "b16d3c19-eb85-4350-95ce-137c362607a5",
+  "full_name": "[Placeholder 7] Analista de Growth Marketing",
+  "role": "Analista de Growth Marketing",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Análise de dados e métricas de growth",
+    "SEO e SEM",
+    "Automação de email marketing",
+    "Testes A/B e experimentação",
+    "SQL e ferramentas de BI"
+  ],
+  "competencias_comportamentais": [
+    "Pensamento analítico",
+    "Criatividade e inovação",
+    "Trabalho em equipe",
+    "Adaptabilidade",
+    "Orientação a resultados"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "Google Ads",
+    "HubSpot",
+    "Hotjar"
+  ],
+  "tarefas_diarias": [
+    "Monitorar KPIs diários",
+    "Analisar tráfego e conversões",
+    "Otimizar campanhas ativas",
+    "Executar testes A/B rápidos"
+  ],
+  "tarefas_semanais": [
+    "Gerar relatórios semanais de performance",
+    "Planejar novos experimentos",
+    "Reuniões com equipes cross-funcionais"
+  ],
+  "tarefas_mensais": [
+    "Análise completa do funil de conversão",
+    "Definição de metas para o próximo mês",
+    "Relatório estratégico de growth"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Conversão - 5%",
+    "KPI 2: Custo de Aquisição (CAC) - < $50",
+    "KPI 3: Crescimento de MRR - 20%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprofundar em Python para análise preditiva",
+    "Liderar projeto de expansão de mercado",
+    "Obter certificação Google Analytics 4"
+  ],
+  "generated_at": "2025-12-02T18:09:34.018Z"
+}

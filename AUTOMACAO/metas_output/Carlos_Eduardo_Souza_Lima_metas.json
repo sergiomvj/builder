@@ -1,0 +1,36 @@
+{
+  "persona_id": "0eff600e-f159-4dba-bb84-ded55645570a",
+  "full_name": "Carlos Eduardo Souza Lima",
+  "role": "Executivo de Vendas",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades de negociação",
+      "descricao": "Participar de pelo menos 3 cursos de negociação e realizar simulações de vendas mensalmente para praticar técnicas de negociação.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 3,
+      "unidade_medida": "cursos",
+      "data_prazo": "2022-12-01",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Ampliar networking no setor de imigração",
+      "descricao": "Participar de 2 eventos de networking por mês, como conferências e feiras da indústria de imigração.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "eventos",
+      "data_prazo": "2022-11-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Desenvolver estratégias de upselling",
+      "descricao": "Realizar pelo menos 5 sessões de treinamento com a equipe de vendas para desenvolver e implementar novas estratégias de upselling.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 5,
+      "unidade_medida": "sessões",
+      "data_prazo": "2022-10-01",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:39:13.156Z"
+}

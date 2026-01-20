@@ -1,0 +1,201 @@
+{
+  "name": "Lisa (SDR Senior) - Análise Semanal de Performance de Leads",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 10 * * 1"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar toda segunda-feira às 10h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "select",
+        "table": "leads",
+        "filters": {
+          "contacted_last_week": true
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Buscar leads contatados na última semana",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_ARVATE49",
+          "name": "Supabase ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(lead => ({ ...lead, success: lead.status === 'converted' }));"
+      },
+      "typeVersion": 1,
+      "notes": "Identificar leads convertidos"
+    },
+    {
+      "id": "4",
+      "name": "Transform",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "operation": "append",
+        "range": "A1"
+      },
+      "typeVersion": 1,
+      "notes": "Registrar análise em Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Action",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#leads-analysis",
+        "text": "Weekly Lead Performance Analysis completed. Check the Google Sheet for details."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe via Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Lisa (SDR Senior) - Análise Semanal de Performance de Leads\nEmpresa: ARVA Tech Solutions\nPersona: Lisa Wilson\nTarefa: Análise Semanal de Performance de Leads\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:13.582Z",
+  "updatedAt": "2025-11-28T17:05:13.582Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "32bfbb7a-148b-4113-9fb6-9caff688efcc",
+    "persona_nome": "Lisa Wilson",
+    "task_id": "b2bb843d-1221-4b21-bde1-7c88602b1dba",
+    "task_title": "Análise Semanal de Performance de Leads",
+    "opportunity_id": "c2618d0d-1939-4454-a631-842f9e144fff",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:13.582Z"
+  }
+}

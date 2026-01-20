@@ -1,0 +1,39 @@
+{
+  "persona_id": "67c40425-d62f-4ab2-8405-d6824362ad40",
+  "full_name": "Bruno Almeida Santos",
+  "role": "COO",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aumentar a satisfação do cliente",
+      "descricao": "Implementar um programa de feedback e melhorias para atingir uma taxa de satisfação do cliente de 95% até 30/09/2022.",
+      "categoria": "kpi",
+      "valor_alvo": 95,
+      "unidade_medida": "%",
+      "data_prazo": "2022-09-30",
+      "prioridade": 1,
+      "vinculada_kpi": "Satisfação do cliente"
+    },
+    {
+      "titulo": "Participar de um curso de liderança",
+      "descricao": "Realizar um curso de liderança reconhecido até 31/12/2022 para desenvolver habilidades de liderança.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "curso",
+      "data_prazo": "2022-12-31",
+      "prioridade": 2,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Implementar novas estratégias de crescimento",
+      "descricao": "Desenvolver e implementar duas novas estratégias de crescimento para a empresa até 01/06/2022.",
+      "categoria": "performance",
+      "valor_alvo": 2,
+      "unidade_medida": "estratégias",
+      "data_prazo": "2022-06-01",
+      "prioridade": 1,
+      "vinculada_kpi": ""
+    }
+  ],
+  "generated_at": "2025-12-08T14:36:55.098Z"
+}

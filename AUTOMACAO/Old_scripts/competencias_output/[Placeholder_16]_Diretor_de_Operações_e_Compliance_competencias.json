@@ -1,0 +1,53 @@
+{
+  "persona_id": "943b4067-e887-4a80-b4b2-409c3cb3f490",
+  "full_name": "[Placeholder 16] Diretor de Operações e Compliance",
+  "role": "Diretor de Operações e Compliance",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Gestão de Operações e Processos",
+    "Compliance Regulatório e Normativo",
+    "Auditoria Interna e Externa",
+    "Gestão de Riscos e Controles",
+    "Análise de Dados e Relatórios Operacionais"
+  ],
+  "competencias_comportamentais": [
+    "Liderança Estratégica",
+    "Comunicação Eficaz",
+    "Tomada de Decisão Ágil",
+    "Integridade Ética",
+    "Resolução de Conflitos"
+  ],
+  "ferramentas": [
+    "SAP ou ERP similar",
+    "Software de Compliance (ex: NAVEX)",
+    "Microsoft Excel Avançado",
+    "Tableau ou Power BI"
+  ],
+  "tarefas_diarias": [
+    "Monitorar indicadores operacionais",
+    "Revisar relatórios de compliance",
+    "Aprovar fluxos de processos",
+    "Reuniões com equipes operacionais"
+  ],
+  "tarefas_semanais": [
+    "Análise de riscos semanais",
+    "Reuniões de alinhamento com diretoria",
+    "Treinamentos rápidos de compliance"
+  ],
+  "tarefas_mensais": [
+    "Elaboração de relatórios de auditoria",
+    "Revisão de políticas internas",
+    "Avaliação de KPIs operacionais"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Conformidade - 98%",
+    "KPI 2: Tempo Médio de Resolução de Incidentes - <24h",
+    "KPI 3: Eficiência Operacional - 95%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar expertise em regulamentações internacionais",
+    "Implementar automação em processos de compliance",
+    "Desenvolver habilidades de liderança transformacional"
+  ],
+  "generated_at": "2025-12-02T18:03:31.586Z"
+}

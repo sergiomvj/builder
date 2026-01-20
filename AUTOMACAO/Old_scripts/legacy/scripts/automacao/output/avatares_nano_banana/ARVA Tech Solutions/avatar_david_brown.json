@@ -1,0 +1,50 @@
+{
+  "persona": {
+    "id": "2841090c-7c5f-4c95-afbf-89dc4c115372",
+    "nome": "David Brown",
+    "biografia": "Biografia não disponível"
+  },
+  "avatar": {
+    "avatar_url": "/avatars/david_brown_avatar.svg",
+    "avatar_thumbnail_url": "/avatars/david_brown_avatar.svg",
+    "prompt_usado": "32-year-old professional man, business professional style, confident expression, corporate attire",
+    "estilo": "Profissional Simulado",
+    "background_tipo": "escritório (fallback)",
+    "servico_usado": "dicebear_local",
+    "versao": "v1.0",
+    "ativo": true,
+    "local_file": "david_brown_avatar.svg",
+    "file_size": 4397,
+    "biometrics": {
+      "genero": "masculino",
+      "idade_aparente": 32,
+      "etnia": "diverso",
+      "estatura": "média",
+      "biotipo": "profissional"
+    },
+    "history": {
+      "formacao_academica": [
+        "Administração"
+      ],
+      "experiencia_anos": 12,
+      "empresas_anteriores": [
+        "Previous Corp",
+        "Tech Solutions"
+      ],
+      "certificacoes": [
+        "Professional Certification"
+      ],
+      "idiomas": [
+        "português",
+        "inglês"
+      ]
+    },
+    "metadados": {
+      "generated_at": "2025-11-22T20:14:06.934Z",
+      "script_version": "03_nano_banana",
+      "confidence_score": 95,
+      "google_nano_banana": true
+    }
+  },
+  "generated_at": "2025-11-22T20:14:07.102Z"
+}

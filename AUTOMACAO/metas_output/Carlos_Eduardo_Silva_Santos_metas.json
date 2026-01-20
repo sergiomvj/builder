@@ -1,0 +1,47 @@
+{
+  "persona_id": "02541a78-9a94-4f0a-925c-846318c51f20",
+  "full_name": "Carlos Eduardo Silva Santos",
+  "role": "Gerente Financeiro",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Reduzir o ciclo de caixa em 10 dias",
+      "descricao": "Implementar novos processos e estratégias para reduzir o ciclo de caixa da LifeWayUSA em 10 dias.",
+      "categoria": "kpi",
+      "valor_alvo": 10,
+      "unidade_medida": "dias",
+      "data_prazo": "2022-12-31",
+      "prioridade": 1,
+      "vinculada_kpi": "Redução do ciclo de caixa"
+    },
+    {
+      "titulo": "Aumentar a lucratividade em 15%",
+      "descricao": "Identificar oportunidades de otimização de custos e aumento da receita para alcançar um aumento de lucratividade de 15% na LifeWayUSA.",
+      "categoria": "kpi",
+      "valor_alvo": 15,
+      "unidade_medida": "%",
+      "data_prazo": "2022-12-31",
+      "prioridade": 2,
+      "vinculada_kpi": "Aumento da lucratividade"
+    },
+    {
+      "titulo": "Realizar curso de atualização em finanças corporativas",
+      "descricao": "Inscrição e conclusão de um curso de atualização em finanças corporativas para aprimorar os conhecimentos e habilidades de Carlos Eduardo Silva Santos.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "curso",
+      "data_prazo": "2022-09-30",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Aprimorar habilidades de negociação",
+      "descricao": "Participar de treinamentos e workshops de negociação para aprimorar as habilidades de negociação de Carlos Eduardo Silva Santos.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "treinamento",
+      "data_prazo": "2022-10-31",
+      "prioridade": 2
+    }
+  ],
+  "generated_at": "2025-12-08T14:38:09.381Z"
+}

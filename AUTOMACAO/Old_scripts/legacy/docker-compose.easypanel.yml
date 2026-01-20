@@ -1,0 +1,39 @@
+# Configuração específica para Easypanel
+# Cole esta configuração no campo "Docker Compose" do Easypanel
+
+version: '3.8'
+
+services:
+  vcm-dashboard:
+    image: vcm-dashboard:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vcm-dashboard
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+      - PORT=3000
+      - HOSTNAME=0.0.0.0
+    labels:
+      # Labels para Easypanel
+      - "easypanel.enable=true"
+      - "easypanel.project=vcm-dashboard"
+      - "easypanel.service=dashboard"
+      # Labels para Traefik (se usar)
+      - "traefik.enable=true"
+      - "traefik.http.routers.vcm-dashboard.rule=Host(`seu-dominio.com`)"
+      - "traefik.http.routers.vcm-dashboard.tls=true"
+      - "traefik.http.routers.vcm-dashboard.tls.certresolver=letsencrypt"
+      - "traefik.http.services.vcm-dashboard.loadbalancer.server.port=3000"
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+networks:
+  default:
+    name: easypanel

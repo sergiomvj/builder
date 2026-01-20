@@ -1,0 +1,211 @@
+{
+  "name": "Jennifer (Social Mkt) - Relatório de Desempenho Mensal",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 0 1 * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar no primeiro dia de cada mês à meia-noite"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "viewId": "your_view_id",
+        "metrics": [
+          {
+            "expression": "ga:sessions"
+          },
+          {
+            "expression": "ga:conversions"
+          }
+        ],
+        "operation": "report",
+        "dateRanges": [
+          {
+            "endDate": "yesterday",
+            "startDate": "30daysAgo"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "ga:campaign"
+          }
+        ]
+      },
+      "typeVersion": 1,
+      "notes": "Buscar dados de desempenho das campanhas do último mês"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(item => ({ ...item, roi: calculateROI(item.cost, item.revenue) }));"
+      },
+      "typeVersion": 1,
+      "notes": "Calcular ROI para cada campanha"
+    },
+    {
+      "id": "4",
+      "name": "Send Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "operation": "append",
+        "range": "A1"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar dados processados para o Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Notify",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#marketing",
+        "text": "Relatório de Desempenho Mensal atualizado no Google Sheets."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe de marketing no Slack sobre a atualização do relatório",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Jennifer (Social Mkt) - Relatório de Desempenho Mensal\nEmpresa: ARVA Tech Solutions\nPersona: Jennifer Smith\nTarefa: Relatório de Desempenho Mensal\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:10.561Z",
+  "updatedAt": "2025-11-28T17:05:10.561Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "46f07159-d384-496f-a480-45ac5c684082",
+    "persona_nome": "Jennifer Smith",
+    "task_id": "22b9872c-1b55-4f79-bcd2-326a05a4e64c",
+    "task_title": "Relatório de Desempenho Mensal",
+    "opportunity_id": "762eedab-a16c-4ce2-b824-25229b740224",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:10.561Z"
+  }
+}

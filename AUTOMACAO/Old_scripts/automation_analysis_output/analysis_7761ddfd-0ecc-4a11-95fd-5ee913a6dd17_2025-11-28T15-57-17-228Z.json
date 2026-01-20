@@ -1,0 +1,91 @@
+{
+  "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+  "empresa_nome": "ARVA Tech Solutions",
+  "analyzed_at": "2025-11-28T15:53:45.414Z",
+  "llm_used": "GPT-4-Turbo",
+  "llm_model": "gpt-4-turbo-preview",
+  "personas_analyzed": 1,
+  "total_tasks": 12,
+  "tasks_analyzed": 11,
+  "tasks_automatable": 9,
+  "tasks_high_score": 1,
+  "analyses": [
+    {
+      "task_title": "Qualificar Leads",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Atualizar CRM",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Revisar E-mails de Follow-up",
+      "automation_score": 85,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Planejar Reuniões de Vendas",
+      "automation_score": 65,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Análise de Performance de Leads",
+      "automation_score": 60,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Revisão Mensal de Estratégias de Aquisição",
+      "automation_score": 40,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Revisão diária de leads",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Envio de emails de prospecção",
+      "automation_score": 72,
+      "workflow_type": "event",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Atualização de status no CRM",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Análise semanal de performance",
+      "automation_score": 65,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Planejamento estratégico mensal",
+      "automation_score": 40,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    }
+  ]
+}

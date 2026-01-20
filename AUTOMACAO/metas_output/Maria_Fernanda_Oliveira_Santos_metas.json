@@ -1,0 +1,36 @@
+{
+  "persona_id": "75ef9f6f-25e5-4428-b25d-c98aa08d0ceb",
+  "full_name": "Maria Fernanda Oliveira Santos",
+  "role": "Gerente de Operações",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades de gestão de projetos",
+      "descricao": "Participar de um curso de gestão de projetos e aplicar os conhecimentos adquiridos em pelo menos 3 projetos da LifeWayUSA",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 3,
+      "unidade_medida": "projetos",
+      "data_prazo": "2022-12-01",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Desenvolver habilidades de negociação",
+      "descricao": "Realizar pelo menos 5 simulações de negociação com clientes e obter feedback de um mentor para melhorar as habilidades de negociação",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 5,
+      "unidade_medida": "simulações",
+      "data_prazo": "2022-10-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Aumentar conhecimento em tecnologias de imigração",
+      "descricao": "Participar de 2 workshops sobre tecnologias de imigração e apresentar um relatório resumindo as principais informações aprendidas",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "workshops",
+      "data_prazo": "2022-11-01",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:41:04.399Z"
+}

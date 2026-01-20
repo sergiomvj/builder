@@ -1,0 +1,220 @@
+{
+  "name": "Robert (Mkt Mgr) - Monitoramento de redes sociais",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 10 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 10h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "url": "https://api.twitter.com/2/tweets/search/recent",
+        "method": "GET",
+        "responseFormat": "json"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar menções recentes no Twitter"
+    },
+    {
+      "id": "3",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "url": "https://graph.facebook.com/v12.0/me/posts",
+        "method": "GET",
+        "responseFormat": "json"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar posts recentes mencionando a ARVA Tech Solutions no Facebook"
+    },
+    {
+      "id": "4",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(data => ({ ...data, platform: data.id.includes('twitter') ? 'Twitter' : 'Facebook' }));"
+      },
+      "typeVersion": 1,
+      "notes": "Adicionar identificação da plataforma aos dados"
+    },
+    {
+      "id": "5",
+      "name": "Action",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "operation": "append",
+        "range": "A:D"
+      },
+      "typeVersion": 1,
+      "notes": "Registrar menções e engajamento nas redes sociais em uma planilha do Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Action",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#social-media-monitoring",
+        "text": "Novas menções e engajamento registrados. Verifique a planilha de monitoramento."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe de marketing no Slack sobre a atualização",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1560,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Robert (Mkt Mgr) - Monitoramento de redes sociais\nEmpresa: ARVA Tech Solutions\nPersona: Robert Davis\nTarefa: Monitoramento de redes sociais\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5": {
+      "main": [
+        [
+          {
+            "node": "6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "7"
+  },
+  "createdAt": "2025-11-28T17:05:26.500Z",
+  "updatedAt": "2025-11-28T17:05:26.500Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "299fcd37-98c4-4bea-b4de-63e3d83c5175",
+    "persona_nome": "Robert Davis",
+    "task_id": "a4f7d754-e387-415b-9902-4fdf051f38c7",
+    "task_title": "Monitoramento de redes sociais",
+    "opportunity_id": "72476965-91a6-4e2e-83c7-f3760c9eeb7b",
+    "automation_score": 65,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:26.500Z"
+  }
+}

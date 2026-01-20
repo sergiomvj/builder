@@ -1,0 +1,53 @@
+{
+  "persona_id": "623e0be8-d6dd-4eb9-b6c0-3c3cf5c296fc",
+  "full_name": "Pierre Laurent",
+  "role": "Desenvolvedor Frontend IA Junior",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "HTML5 e CSS3/SCSS",
+    "JavaScript ES6+",
+    "React.js",
+    "Integração de APIs de IA (ex: OpenAI)",
+    "Design Responsivo e UI/UX"
+  ],
+  "competencias_comportamentais": [
+    "Aprendizagem rápida",
+    "Trabalho em equipe",
+    "Atenção aos detalhes",
+    "Proatividade",
+    "Comunicação eficaz"
+  ],
+  "ferramentas": [
+    "Visual Studio Code",
+    "Git/GitHub",
+    "Figma",
+    "Chrome DevTools"
+  ],
+  "tarefas_diarias": [
+    "Desenvolvimento de componentes frontend",
+    "Integração com serviços de IA",
+    "Testes e correção de bugs",
+    "Participação em stand-ups"
+  ],
+  "tarefas_semanais": [
+    "Revisão de código pull requests",
+    "Atualização de documentação",
+    "Estudo de novas features de IA"
+  ],
+  "tarefas_mensais": [
+    "Entrega de features completas",
+    "Relatório de performance",
+    "Planejamento de sprints"
+  ],
+  "kpis": [
+    "KPI 1: Componentes UI entregues - 15/mês",
+    "KPI 2: Taxa de resolução de bugs - 95%",
+    "KPI 3: Tempo de integração IA - <2 dias/feature"
+  ],
+  "objetivos_desenvolvimento": [
+    "Dominar TypeScript",
+    "Aprender TensorFlow.js",
+    "Contribuir em repositórios open-source"
+  ],
+  "generated_at": "2025-12-01T20:38:43.970Z"
+}

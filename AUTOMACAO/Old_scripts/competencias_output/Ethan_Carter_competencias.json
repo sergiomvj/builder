@@ -1,0 +1,54 @@
+{
+  "persona_id": "ba551c94-c675-4b15-b13e-f61358e202ab",
+  "full_name": "Ethan Carter",
+  "role": "Estagiário de TI, Desenvolvedor Junior",
+  "empresa_id": "a2845f62-59e2-48b2-8f89-8bfc6c33193f",
+  "competencias_tecnicas": [
+    "Conhecimento em linguagens de programação (ex: Python, Java)",
+    "Conhecimento em desenvolvimento web",
+    "Noções de bancos de dados",
+    "Conhecimento em machine learning",
+    "Habilidade em resolução de problemas"
+  ],
+  "competencias_comportamentais": [
+    "Proatividade",
+    "Trabalho em equipe",
+    "Comunicação eficaz",
+    "Adaptabilidade",
+    "Capacidade de aprendizado rápido"
+  ],
+  "ferramentas": [
+    "IDEs de desenvolvimento (ex: PyCharm, Eclipse)",
+    "Frameworks de desenvolvimento web (ex: Django, React)",
+    "Bancos de dados relacionais (ex: MySQL, PostgreSQL)",
+    "Ferramentas de versionamento de código (ex: Git)",
+    "Ferramentas de virtualização (ex: Docker)"
+  ],
+  "tarefas_diarias": [
+    "Desenvolvimento de novas funcionalidades",
+    "Manutenção de sistemas existentes",
+    "Participação em reuniões de equipe",
+    "Análise e resolução de problemas técnicos"
+  ],
+  "tarefas_semanais": [
+    "Testes de software",
+    "Revisão de código",
+    "Atualização de documentação técnica"
+  ],
+  "tarefas_mensais": [
+    "Participação em treinamentos e workshops",
+    "Apresentação de projetos para a equipe",
+    "Avaliação de novas tecnologias"
+  ],
+  "kpis": [
+    "Entregar X novas funcionalidades por mês - 90% de cumprimento",
+    "Manter taxa de bugs abaixo de Y% - 95% de cumprimento",
+    "Participar de Z treinamentos por trimestre - 100% de cumprimento"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em machine learning",
+    "Participar de projetos de desenvolvimento de agentes virtuais mais complexos",
+    "Melhorar a eficiência na resolução de problemas técnicos"
+  ],
+  "generated_at": "2025-12-05T17:00:05.693Z"
+}

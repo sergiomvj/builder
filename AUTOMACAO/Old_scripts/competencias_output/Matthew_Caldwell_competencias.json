@@ -1,0 +1,53 @@
+{
+  "persona_id": "d64c834e-78bf-4560-83a7-e4b7d7dabe81",
+  "full_name": "Matthew Caldwell",
+  "role": "CEO",
+  "empresa_id": "a2845f62-59e2-48b2-8f89-8bfc6c33193f",
+  "competencias_tecnicas": [
+    "Inteligência Artificial",
+    "Machine Learning",
+    "Visão Computacional",
+    "Processamento de Linguagem Natural",
+    "Robótica"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Inovação",
+    "Comunicação",
+    "Resolução de Problemas",
+    "Trabalho em Equipe"
+  ],
+  "ferramentas": [
+    "Python",
+    "TensorFlow",
+    "OpenCV",
+    "SpaCy"
+  ],
+  "tarefas_diarias": [
+    "Reuniões estratégicas",
+    "Acompanhamento de indicadores",
+    "Tomada de decisões importantes",
+    "Definição de metas e estratégias"
+  ],
+  "tarefas_semanais": [
+    "Análise de desempenho dos agentes virtuais",
+    "Feedback para a equipe",
+    "Planejamento de projetos"
+  ],
+  "tarefas_mensais": [
+    "Elaboração de relatórios executivos",
+    "Avaliação de resultados",
+    "Revisão de processos"
+  ],
+  "kpis": [
+    "Taxa de eficiência dos agentes virtuais - 90%",
+    "Satisfação dos clientes - 95%",
+    "Crescimento do faturamento - 20%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de liderança",
+    "Expandir conhecimentos em novas tecnologias",
+    "Estabelecer parcerias estratégicas"
+  ],
+  "generated_at": "2025-12-04T21:41:49.848Z"
+}

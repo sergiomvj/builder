@@ -1,0 +1,53 @@
+{
+  "persona_id": "d1f3e279-4bf8-4dc0-8c99-51835314b191",
+  "full_name": "Michael Jonathan Sterling",
+  "role": "CTO",
+  "empresa_id": "a2845f62-59e2-48b2-8f89-8bfc6c33193f",
+  "competencias_tecnicas": [
+    "Inteligência Artificial",
+    "Machine Learning",
+    "Visão Computacional",
+    "Processamento de Linguagem Natural",
+    "Arquitetura de Software"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Resolução de problemas",
+    "Trabalho em equipe",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "TensorFlow",
+    "PyTorch",
+    "OpenCV",
+    "NLTK"
+  ],
+  "tarefas_diarias": [
+    "Desenvolver e treinar agentes virtuais autônomos",
+    "Coordenar equipes de desenvolvimento",
+    "Analisar e otimizar algoritmos de IA",
+    "Participar de reuniões estratégicas"
+  ],
+  "tarefas_semanais": [
+    "Avaliar o desempenho dos agentes virtuais",
+    "Definir prioridades de desenvolvimento",
+    "Implementar novas funcionalidades"
+  ],
+  "tarefas_mensais": [
+    "Realizar análise de mercado e tendências tecnológicas",
+    "Elaborar planos de crescimento da equipe",
+    "Participar de eventos e conferências do setor"
+  ],
+  "kpis": [
+    "Eficiência na execução de tarefas - 95%",
+    "Inovação contínua - 100%",
+    "Satisfação da equipe - 90%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em Visão Computacional",
+    "Desenvolver estratégias de integração de agentes virtuais em diferentes plataformas",
+    "Obter certificação em Arquitetura de Software"
+  ],
+  "generated_at": "2025-12-04T21:41:57.726Z"
+}

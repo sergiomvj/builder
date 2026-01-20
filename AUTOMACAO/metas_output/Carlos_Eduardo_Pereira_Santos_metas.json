@@ -1,0 +1,39 @@
+{
+  "persona_id": "e9444820-938e-438f-b05f-3d4fca75ed17",
+  "full_name": "Carlos Eduardo Pereira Santos",
+  "role": "CFO",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Redução de despesas em 10%",
+      "descricao": "Reduzir as despesas da LifeWayUSA em 10% nos próximos 6 meses, através de análise de custos e negociação com fornecedores.",
+      "categoria": "kpi",
+      "valor_alvo": 10,
+      "unidade_medida": "%",
+      "data_prazo": "2022-12-01",
+      "prioridade": 1,
+      "vinculada_kpi": "Redução de despesas em 10% - 6 meses"
+    },
+    {
+      "titulo": "Participar de cursos de liderança",
+      "descricao": "Realizar pelo menos 2 cursos de liderança nos próximos 6 meses, a fim de aprimorar as habilidades de gestão e liderança.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "cursos",
+      "data_prazo": "2022-09-01",
+      "prioridade": 2,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Aprimorar conhecimentos em investimentos financeiros",
+      "descricao": "Estudar e participar de workshops sobre investimentos financeiros, a fim de ampliar o conhecimento nesta área nos próximos 3 meses.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 0,
+      "unidade_medida": "horas",
+      "data_prazo": "2022-06-01",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    }
+  ],
+  "generated_at": "2025-12-08T14:43:18.231Z"
+}

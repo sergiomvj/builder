@@ -1,0 +1,53 @@
+{
+  "persona_id": "efee2fcd-e574-4a89-b17d-437603f42140",
+  "full_name": "Gabriela Santos Oliveira",
+  "role": "Analista de Qualidade",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em normas de qualidade",
+    "Experiência em auditorias internas",
+    "Domínio de ferramentas da qualidade",
+    "Capacidade de análise de dados",
+    "Conhecimento em metodologias ágeis"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação eficaz",
+    "Trabalho em equipe",
+    "Proatividade",
+    "Resiliência",
+    "Gestão do tempo"
+  ],
+  "ferramentas": [
+    "FMEA",
+    "PDCA",
+    "5 Porquês",
+    "Ishikawa"
+  ],
+  "tarefas_diarias": [
+    "Realizar análise de não conformidades",
+    "Elaborar relatórios de qualidade",
+    "Realizar follow-up de ações corretivas",
+    "Participar de reuniões de melhoria contínua"
+  ],
+  "tarefas_semanais": [
+    "Realizar inspeções de processos",
+    "Analisar indicadores de qualidade",
+    "Realizar treinamentos internos"
+  ],
+  "tarefas_mensais": [
+    "Conduzir auditorias internas",
+    "Elaborar planos de ação para melhorias",
+    "Participar de reuniões de revisão de processos"
+  ],
+  "kpis": [
+    "Cumprimento das metas de qualidade - 95%",
+    "Redução de não conformidades - 10%",
+    "Aumento da satisfação do cliente - 90%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Desenvolver habilidades em gestão de projetos",
+    "Aprimorar técnicas de análise de dados",
+    "Participar de cursos de atualização em normas de qualidade"
+  ],
+  "generated_at": "2025-12-08T14:39:53.035Z"
+}

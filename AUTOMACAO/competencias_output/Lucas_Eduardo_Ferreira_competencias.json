@@ -1,0 +1,54 @@
+{
+  "persona_id": "0527e2dd-125e-464d-80d7-2c3e23461a02",
+  "full_name": "Lucas Eduardo Ferreira",
+  "role": "Desenvolvedor Pleno",
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "competencias_tecnicas": [
+    "Domínio de linguagens de programação como Python, Java e JavaScript",
+    "Experiência em desenvolvimento de sistemas distribuídos",
+    "Conhecimento em arquitetura de microserviços",
+    "Familiaridade com frameworks de IA como TensorFlow e PyTorch",
+    "Habilidade em análise de dados e machine learning"
+  ],
+  "competencias_comportamentais": [
+    "Trabalho em equipe",
+    "Resolução de problemas",
+    "Comunicação eficaz",
+    "Adaptabilidade",
+    "Pensamento crítico"
+  ],
+  "ferramentas": [
+    "IDEs como PyCharm e VS Code",
+    "Plataformas de controle de versão como Git",
+    "Bancos de dados relacionais e NoSQL",
+    "Ferramentas de automação de testes",
+    "Ambientes de containers como Docker"
+  ],
+  "tarefas_diarias": [
+    "Desenvolvimento e manutenção de agentes virtuais autônomos",
+    "Colaboração com equipe de desenvolvimento e de produto",
+    "Testes unitários e integração de código",
+    "Participação em reuniões de acompanhamento de projetos"
+  ],
+  "tarefas_semanais": [
+    "Revisão de código de colegas",
+    "Participação em treinamentos e workshops internos",
+    "Atualização de documentação de projetos"
+  ],
+  "tarefas_mensais": [
+    "Análise de métricas de desempenho dos agentes virtuais",
+    "Proposição de melhorias nos processos de desenvolvimento",
+    "Participação em eventos da empresa"
+  ],
+  "kpis": [
+    "Entrega de novas funcionalidades no prazo - 95%",
+    "Taxa de resolução de bugs - 98%",
+    "Participação em treinamentos internos - 100%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em IA e machine learning",
+    "Desenvolver competências em arquitetura de software escalável",
+    "Aprender novas linguagens de programação"
+  ],
+  "generated_at": "2025-12-05T20:13:18.635Z"
+}

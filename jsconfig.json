@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "checkJs": false,
+    "module": "esnext",
+    "target": "esnext"
+  },
+  "exclude": [
+    "node_modules",
+    ".next",
+    "AUTOMACAO",
+    "Old_Files",
+    "out",
+    "dist"
+  ]
+}

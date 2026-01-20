@@ -1,0 +1,53 @@
+{
+  "persona_id": "6684ed01-a182-42df-a911-cd0b39cf2b2f",
+  "full_name": "Amina Njeri Mwangi",
+  "role": "Product Manager",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "Desenvolvimento de Roadmaps de Produto",
+    "Metodologias Ágeis e Scrum",
+    "Princípios de UX/UI e Jornada do Usuário",
+    "Análise de Dados e Métricas de Produto",
+    "Fundamentos de IA, Machine Learning e Agentes Autônomos"
+  ],
+  "competencias_comportamentais": [
+    "Liderança e Influência",
+    "Comunicação Eficaz",
+    "Gerenciamento de Stakeholders",
+    "Resolução de Problemas Complexos",
+    "Adaptabilidade e Aprendizado Contínuo"
+  ],
+  "ferramentas": [
+    "Jira",
+    "Figma",
+    "Amplitude",
+    "Confluence"
+  ],
+  "tarefas_diarias": [
+    "Revisar métricas de produto e feedback de usuários",
+    "Participar de stand-ups diários da equipe",
+    "Priorizar e groomar o backlog de produto",
+    "Comunicar atualizações com stakeholders"
+  ],
+  "tarefas_semanais": [
+    "Realizar planejamento e revisão de sprints",
+    "Conduzir entrevistas com usuários e clientes",
+    "Analisar tendências de mercado e concorrentes"
+  ],
+  "tarefas_mensais": [
+    "Atualizar roadmap de produto e OKRs",
+    "Gerar relatórios de performance e insights",
+    "Planejar features e experimentos futuros"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Retenção de Usuários - 85%",
+    "KPI 2: Taxa de Sucesso de Deploy de Agentes - 95%",
+    "KPI 3: Net Promoter Score (NPS) - 50"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprofundar expertise em arquiteturas de agentes IA autônomos",
+    "Melhorar liderança em equipes cross-funcionais",
+    "Lançar nova funcionalidade de treinamento modular de agentes"
+  ],
+  "generated_at": "2025-12-08T22:26:32.950Z"
+}

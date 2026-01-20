@@ -1,0 +1,562 @@
+{
+  "empresa": {
+    "id": "42c29120-895d-4466-8aaa-abc47c91d507",
+    "codigo": "ARV42",
+    "nome": "ARVA Tech Solutions"
+  },
+  "data_processamento": "2025-11-14T19:46:13.525Z",
+  "total_personas": 15,
+  "personas": {
+    "CEO": {
+      "info": {
+        "nome": "Chief Executive Officer",
+        "role": "CEO",
+        "department": "Executive",
+        "specialty": "Leadership"
+      },
+      "tech_specs": {
+        "tools": [
+          "Executive Dashboard",
+          "Analytics Platform",
+          "CRM",
+          "BI Tools"
+        ],
+        "technologies": [
+          "Business Intelligence",
+          "Strategic Planning Tools",
+          "Financial Analytics"
+        ],
+        "methodologies": [
+          "Strategic Planning",
+          "OKRs",
+          "Balanced Scorecard"
+        ]
+      },
+      "infrastructure": [
+        "Executive Dashboard",
+        "Analytics Server",
+        "Secure Communication"
+      ],
+      "integration_points": [
+        "Email System",
+        "Communication Platform",
+        "Company Database",
+        "Reporting System"
+      ]
+    },
+    "CFO": {
+      "info": {
+        "nome": "Chief Financial Officer",
+        "role": "CFO",
+        "department": "Finance",
+        "specialty": "Finance"
+      },
+      "tech_specs": {
+        "tools": [
+          "SAP",
+          "Oracle",
+          "QuickBooks",
+          "Excel",
+          "Financial Modeling Tools"
+        ],
+        "technologies": [
+          "ERP Systems",
+          "Financial Analytics",
+          "Risk Management"
+        ],
+        "methodologies": [
+          "Financial Planning",
+          "Budget Management",
+          "Risk Assessment"
+        ]
+      },
+      "infrastructure": [
+        "Financial Systems",
+        "Secure Database",
+        "Backup Systems"
+      ],
+      "integration_points": [
+        "Email System",
+        "Communication Platform",
+        "Company Database",
+        "Reporting System"
+      ]
+    },
+    "CMO": {
+      "info": {
+        "nome": "Chief Marketing Officer",
+        "role": "CMO",
+        "department": "Marketing",
+        "specialty": "Marketing"
+      },
+      "tech_specs": {
+        "tools": [
+          "Google Analytics",
+          "HubSpot",
+          "Salesforce",
+          "Social Media Tools"
+        ],
+        "technologies": [
+          "Marketing Automation",
+          "CRM",
+          "Analytics",
+          "Digital Marketing"
+        ],
+        "methodologies": [
+          "Growth Hacking",
+          "Inbound Marketing",
+          "Data-Driven Marketing"
+        ]
+      },
+      "infrastructure": [
+        "Marketing Platform",
+        "Analytics Tools",
+        "Content Management"
+      ],
+      "integration_points": [
+        "Email System",
+        "Communication Platform",
+        "Company Database",
+        "Reporting System"
+      ]
+    },
+    "HRM": {
+      "info": {
+        "nome": "HR Manager",
+        "role": "Manager",
+        "department": "HR",
+        "specialty": "Human Resources"
+      },
+      "tech_specs": {
+        "tools": [
+          "Project Management Software",
+          "Team Collaboration Tools",
+          "Reporting Tools"
+        ],
+        "technologies": [
+          "Team Management",
+          "Process Optimization",
+          "Performance Analytics"
+        ],
+        "methodologies": [
+          "Team Leadership",
+          "Process Management",
+          "Performance Management"
+        ]
+      },
+      "infrastructure": [
+        "Standard Workstation",
+        "Communication Tools",
+        "Security Setup"
+      ],
+      "integration_points": [
+        "Email System",
+        "Communication Platform",
+        "Company Database",
+        "Reporting System"
+      ]
+    },
+    "SA": {
+      "info": {
+        "nome": "Systems Analyst",
+        "role": "Analyst",
+        "department": "IT",
+        "specialty": "Systems Analysis"
+      },
+      "tech_specs": {
+        "tools": [
+          "Excel",
+          "SQL",
+          "Python/R",
+          "Data Visualization Tools"
+        ],
+        "technologies": [
+          "Data Analysis",
+          "Database Management",
+          "Statistical Analysis"
+        ],
+        "methodologies": [
+          "Data Analysis",
+          "Research Methodologies",
+          "Problem Solving"
+        ]
+      },
+      "infrastructure": [
+        "Standard Workstation",
+        "Communication Tools",
+        "Security Setup"
+      ],
+      "integration_points": [
+        "Email System",
+        "Communication Platform",
+        "Company Database",
+        "Reporting System"
+      ]
+    },
+    "EA": {
+      "info": {
+        "nome": "Executive Assistant",
+        "role": "Assistant",
+        "department": "Executive",
+        "specialty": "Administrative Support"
+      },
+      "tech_specs": {
+        "tools": [
+          "Office Suite",
+          "Scheduling Tools",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "Office Automation",
+          "Communication Systems",
+          "Administrative Tools"
+        ],
+        "methodologies": [
+          "Administrative Excellence",
+          "Organization",
+          "Support Processes"
+        ]
+      },
+      "infrastructure": [
+        "Standard Workstation",
+        "Communication Tools",
+        "Security Setup"
+      ],
+      "integration_points": [
+        "Email System",
+        "Communication Platform",
+        "Company Database",
+        "Reporting System"
+      ]
+    },
+    "HRA": {
+      "info": {
+        "nome": "HR Assistant",
+        "role": "Assistant",
+        "department": "HR",
+        "specialty": "HR Support"
+      },
+      "tech_specs": {
+        "tools": [
+          "Office Suite",
+          "Scheduling Tools",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "Office Automation",
+          "Communication Systems",
+          "Administrative Tools"
+        ],
+        "methodologies": [
+          "Administrative Excellence",
+          "Organization",
+          "Support Processes"
+        ]
+      },
+      "infrastructure": [
+        "Standard Workstation",
+        "Communication Tools",
+        "Security Setup"
+      ],
+      "integration_points": [
+        "Email System",
+        "Communication Platform",
+        "Company Database",
+        "Reporting System"
+      ]
+    },
+    "PM": {
+      "info": {
+        "nome": "Project Manager",
+        "role": "Manager",
+        "department": "PMO",
+        "specialty": "Project Management"
+      },
+      "tech_specs": {
+        "tools": [
+          "Project Management Software",
+          "Team Collaboration Tools",
+          "Reporting Tools"
+        ],
+        "technologies": [
+          "Team Management",
+          "Process Optimization",
+          "Performance Analytics"
+        ],
+        "methodologies": [
+          "Team Leadership",
+          "Process Management",
+          "Performance Management"
+        ]
+      },
+      "infrastructure": [
+        "Standard Workstation",
+        "Communication Tools",
+        "Security Setup"
+      ],
+      "integration_points": [
+        "Email System",
+        "Communication Platform",
+        "Company Database",
+        "Reporting System"
+      ]
+    },
+    "ITA": {
+      "info": {
+        "nome": "IT Assistant",
+        "role": "Assistant",
+        "department": "IT",
+        "specialty": "IT Support"
+      },
+      "tech_specs": {
+        "tools": [
+          "Office Suite",
+          "Scheduling Tools",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "Office Automation",
+          "Communication Systems",
+          "Administrative Tools"
+        ],
+        "methodologies": [
+          "Administrative Excellence",
+          "Organization",
+          "Support Processes"
+        ]
+      },
+      "infrastructure": [
+        "Standard Workstation",
+        "Communication Tools",
+        "Security Setup"
+      ],
+      "integration_points": [
+        "Email System",
+        "Communication Platform",
+        "Company Database",
+        "Reporting System"
+      ]
+    },
+    "CTO": {
+      "info": {
+        "nome": "Chief Technology Officer",
+        "role": "CTO",
+        "department": "Technology",
+        "specialty": "Technology"
+      },
+      "tech_specs": {
+        "tools": [
+          "Docker",
+          "Kubernetes",
+          "AWS/Azure",
+          "Git",
+          "CI/CD",
+          "Monitoring Tools"
+        ],
+        "technologies": [
+          "Cloud Computing",
+          "Microservices",
+          "DevOps",
+          "AI/ML"
+        ],
+        "methodologies": [
+          "Agile",
+          "DevOps",
+          "Software Architecture",
+          "Technical Leadership"
+        ]
+      },
+      "infrastructure": [
+        "Cloud Infrastructure",
+        "CI/CD Pipeline",
+        "Monitoring Stack"
+      ],
+      "integration_points": [
+        "Email System",
+        "Communication Platform",
+        "Company Database",
+        "Reporting System"
+      ]
+    },
+    "DMS": {
+      "info": {
+        "nome": "Digital Marketing Specialist",
+        "role": "Specialist",
+        "department": "Marketing",
+        "specialty": "Digital Marketing"
+      },
+      "tech_specs": {
+        "tools": [
+          "Specialized Software",
+          "Industry Tools",
+          "Technical Platforms"
+        ],
+        "technologies": [
+          "Domain Expertise",
+          "Technical Specialization",
+          "Best Practices"
+        ],
+        "methodologies": [
+          "Best Practices",
+          "Continuous Learning",
+          "Technical Excellence"
+        ]
+      },
+      "infrastructure": [
+        "Standard Workstation",
+        "Communication Tools",
+        "Security Setup"
+      ],
+      "integration_points": [
+        "Email System",
+        "Communication Platform",
+        "Company Database",
+        "Reporting System"
+      ]
+    },
+    "SA_SALES": {
+      "info": {
+        "nome": "Sales Assistant",
+        "role": "Assistant",
+        "department": "Sales",
+        "specialty": "Sales Support"
+      },
+      "tech_specs": {
+        "tools": [
+          "Office Suite",
+          "Scheduling Tools",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "Office Automation",
+          "Communication Systems",
+          "Administrative Tools"
+        ],
+        "methodologies": [
+          "Administrative Excellence",
+          "Organization",
+          "Support Processes"
+        ]
+      },
+      "infrastructure": [
+        "Standard Workstation",
+        "Communication Tools",
+        "Security Setup"
+      ],
+      "integration_points": [
+        "Email System",
+        "Communication Platform",
+        "Company Database",
+        "Reporting System"
+      ]
+    },
+    "COO": {
+      "info": {
+        "nome": "Chief Operating Officer",
+        "role": "COO",
+        "department": "Operations",
+        "specialty": "Operations"
+      },
+      "tech_specs": {
+        "tools": [
+          "Project Management Tools",
+          "Process Mapping",
+          "Quality Systems"
+        ],
+        "technologies": [
+          "Operations Management",
+          "Supply Chain",
+          "Quality Assurance"
+        ],
+        "methodologies": [
+          "Lean",
+          "Six Sigma",
+          "Operations Excellence"
+        ]
+      },
+      "infrastructure": [
+        "Operations Dashboard",
+        "Process Management",
+        "Quality Systems"
+      ],
+      "integration_points": [
+        "Email System",
+        "Communication Platform",
+        "Company Database",
+        "Reporting System"
+      ]
+    },
+    "SM": {
+      "info": {
+        "nome": "Sales Manager",
+        "role": "Manager",
+        "department": "Sales",
+        "specialty": "Sales"
+      },
+      "tech_specs": {
+        "tools": [
+          "Project Management Software",
+          "Team Collaboration Tools",
+          "Reporting Tools"
+        ],
+        "technologies": [
+          "Team Management",
+          "Process Optimization",
+          "Performance Analytics"
+        ],
+        "methodologies": [
+          "Team Leadership",
+          "Process Management",
+          "Performance Management"
+        ]
+      },
+      "infrastructure": [
+        "Standard Workstation",
+        "Communication Tools",
+        "Security Setup"
+      ],
+      "integration_points": [
+        "Email System",
+        "Communication Platform",
+        "Company Database",
+        "Reporting System"
+      ]
+    },
+    "AA": {
+      "info": {
+        "nome": "Administrative Assistant",
+        "role": "Assistant",
+        "department": "Administrative",
+        "specialty": "Administration"
+      },
+      "tech_specs": {
+        "tools": [
+          "Office Suite",
+          "Scheduling Tools",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "Office Automation",
+          "Communication Systems",
+          "Administrative Tools"
+        ],
+        "methodologies": [
+          "Administrative Excellence",
+          "Organization",
+          "Support Processes"
+        ]
+      },
+      "infrastructure": [
+        "Standard Workstation",
+        "Communication Tools",
+        "Security Setup"
+      ],
+      "integration_points": [
+        "Email System",
+        "Communication Platform",
+        "Company Database",
+        "Reporting System"
+      ]
+    }
+  }
+}

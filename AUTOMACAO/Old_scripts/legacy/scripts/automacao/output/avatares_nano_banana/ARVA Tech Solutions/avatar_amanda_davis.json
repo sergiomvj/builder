@@ -1,0 +1,50 @@
+{
+  "persona": {
+    "id": "b236f0d4-3ab7-4088-92c0-92f2bd511826",
+    "nome": "Amanda Davis",
+    "biografia": "Biografia não disponível"
+  },
+  "avatar": {
+    "avatar_url": "/avatars/amanda_davis_avatar.svg",
+    "avatar_thumbnail_url": "/avatars/amanda_davis_avatar.svg",
+    "prompt_usado": "37-year-old professional woman, business professional style, confident expression, corporate attire",
+    "estilo": "Profissional Simulado",
+    "background_tipo": "escritório (fallback)",
+    "servico_usado": "dicebear_local",
+    "versao": "v1.0",
+    "ativo": true,
+    "local_file": "amanda_davis_avatar.svg",
+    "file_size": 4785,
+    "biometrics": {
+      "genero": "feminino",
+      "idade_aparente": 37,
+      "etnia": "diverso",
+      "estatura": "média",
+      "biotipo": "profissional"
+    },
+    "history": {
+      "formacao_academica": [
+        "Administração"
+      ],
+      "experiencia_anos": 12,
+      "empresas_anteriores": [
+        "Previous Corp",
+        "Tech Solutions"
+      ],
+      "certificacoes": [
+        "Professional Certification"
+      ],
+      "idiomas": [
+        "português",
+        "inglês"
+      ]
+    },
+    "metadados": {
+      "generated_at": "2025-11-22T20:13:55.469Z",
+      "script_version": "03_nano_banana",
+      "confidence_score": 95,
+      "google_nano_banana": true
+    }
+  },
+  "generated_at": "2025-11-22T20:13:55.655Z"
+}

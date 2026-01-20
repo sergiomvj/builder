@@ -1,0 +1,1208 @@
+{
+  "timestamp": "2025-11-17T14:05:39.026Z",
+  "summary": {
+    "total_tasks": 45,
+    "companies_processed": 1,
+    "personas_processed": 15,
+    "priorities": {
+      "high": 45
+    },
+    "subsystems": {
+      "email": 22,
+      "analytics": 36,
+      "crm": 7,
+      "financial": 5,
+      "marketing": 1,
+      "social": 1,
+      "bi": 1,
+      "ai": 3
+    }
+  },
+  "tasks": [
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "65b026e1-c763-42c4-bd28-92d2f7c417b8",
+      "persona_name": "David Thompson",
+      "task_id": "demo_cmo_1763388099564_0",
+      "title": "Planejamento de campanha de marketing",
+      "description": "Planejar uma campanha de marketing para apoiar os esforços de vendas de final de ano. A campanha deve ser alinhada com o orçamento e as metas de vendas.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "email",
+        "analytics"
+      ],
+      "inputs_from": [
+        "financial",
+        "crm"
+      ],
+      "outputs_to": [
+        "sales",
+        "crm"
+      ],
+      "success_criteria": "Campanha planejada dentro do orçamento com metas claras de vendas",
+      "due_date": "2025-11-18T14:01:39.564Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:01:39.564Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "65b026e1-c763-42c4-bd28-92d2f7c417b8",
+      "persona_name": "David Thompson",
+      "task_id": "demo_cmo_1763388099565_1",
+      "title": "Análise de métricas de campanhas anteriores",
+      "description": "Analisar as métricas das campanhas de marketing anteriores para identificar o que funcionou e o que não funcionou. Use essas informações para informar o planejamento da nova campanha.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 90,
+      "required_subsystems": [
+        "analytics"
+      ],
+      "inputs_from": [
+        "email"
+      ],
+      "outputs_to": [
+        "marketing"
+      ],
+      "success_criteria": "Relatório completo das métricas das campanhas anteriores",
+      "due_date": "2025-11-18T14:01:39.565Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:01:39.565Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "65b026e1-c763-42c4-bd28-92d2f7c417b8",
+      "persona_name": "David Thompson",
+      "task_id": "demo_cmo_1763388099566_2",
+      "title": "Segmentação de público para a nova campanha",
+      "description": "Identificar e segmentar o público-alvo para a nova campanha de marketing. A segmentação deve ser baseada nos dados do CRM e alinhada com as metas de vendas.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 60,
+      "required_subsystems": [
+        "email",
+        "crm"
+      ],
+      "inputs_from": [
+        "sales",
+        "crm"
+      ],
+      "outputs_to": [
+        "email"
+      ],
+      "success_criteria": "Segmentação de público completa e alinhada com as metas de vendas",
+      "due_date": "2025-11-18T14:01:39.566Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:01:39.566Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "c230ecb1-21b6-49eb-8eda-0228b16ff5fa",
+      "persona_name": "Marcus Brown",
+      "task_id": "demo_analyst_1763388115103_0",
+      "title": "Análise do Subsistema Financeiro",
+      "description": "Realizar uma análise detalhada do subsistema financeiro para auxiliar no planejamento do orçamento do próximo ano.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "analytics"
+      ],
+      "inputs_from": [
+        "CFO Robert Martinez"
+      ],
+      "outputs_to": [
+        "CFO Robert Martinez"
+      ],
+      "success_criteria": "Entrega de relatório detalhado com insights sobre o desempenho financeiro atual e projeções para o próximo ano.",
+      "due_date": "2025-11-18T14:01:55.103Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:01:55.103Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "c230ecb1-21b6-49eb-8eda-0228b16ff5fa",
+      "persona_name": "Marcus Brown",
+      "task_id": "demo_analyst_1763388115105_1",
+      "title": "Otimização do Subsistema CRM",
+      "description": "Analisar e otimizar o subsistema CRM para melhorar a aquisição de clientes e aumentar as vendas de fim de ano.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 180,
+      "required_subsystems": [
+        "analytics",
+        "email"
+      ],
+      "inputs_from": [
+        "Sales Manager Carlos Silva"
+      ],
+      "outputs_to": [
+        "Sales Manager Carlos Silva"
+      ],
+      "success_criteria": "Melhoria nos indicadores de desempenho do CRM e aumento na taxa de aquisição de clientes.",
+      "due_date": "2025-11-18T14:01:55.105Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:01:55.105Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "c230ecb1-21b6-49eb-8eda-0228b16ff5fa",
+      "persona_name": "Marcus Brown",
+      "task_id": "demo_analyst_1763388115106_2",
+      "title": "Planejamento de Campanhas de Marketing",
+      "description": "Auxiliar no planejamento de campanhas de marketing, fornecendo dados e análises do subsistema de marketing.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 150,
+      "required_subsystems": [
+        "analytics",
+        "email"
+      ],
+      "inputs_from": [
+        "CMO David Thompson"
+      ],
+      "outputs_to": [
+        "CMO David Thompson"
+      ],
+      "success_criteria": "Entrega de relatório com insights e recomendações para as campanhas de marketing.",
+      "due_date": "2025-11-18T14:01:55.106Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:01:55.106Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "9ff6a8ad-ff5f-49c1-b324-319bae1619c5",
+      "persona_name": "Jessica Wilson",
+      "task_id": "demo_assistant_1763388130043_0",
+      "title": "Assist in Budget Planning",
+      "description": "Support CFO Robert Martinez in planning the budget for the next year. Gather necessary financial data and prepare a draft budget proposal.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "email",
+        "analytics"
+      ],
+      "inputs_from": [
+        "Robert Martinez",
+        "financial subsystem"
+      ],
+      "outputs_to": [
+        "Robert Martinez"
+      ],
+      "success_criteria": "A draft budget proposal is prepared and sent to Robert Martinez",
+      "due_date": "2025-11-18T14:02:10.043Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:02:10.043Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "9ff6a8ad-ff5f-49c1-b324-319bae1619c5",
+      "persona_name": "Jessica Wilson",
+      "task_id": "demo_assistant_1763388130043_1",
+      "title": "Support Customer Acquisition",
+      "description": "Assist Sales Manager Carlos Silva in customer acquisition efforts. Prepare a list of potential customers and draft an email campaign for the same.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 90,
+      "required_subsystems": [
+        "email",
+        "crm"
+      ],
+      "inputs_from": [
+        "Carlos Silva",
+        "crm subsystem"
+      ],
+      "outputs_to": [
+        "Carlos Silva"
+      ],
+      "success_criteria": "A list of potential customers is prepared and an email campaign is drafted",
+      "due_date": "2025-11-18T14:02:10.043Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:02:10.043Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "9ff6a8ad-ff5f-49c1-b324-319bae1619c5",
+      "persona_name": "Jessica Wilson",
+      "task_id": "demo_assistant_1763388130044_2",
+      "title": "Assist in Marketing Campaign Planning",
+      "description": "Support CMO David Thompson in planning marketing campaigns. Analyze previous campaign data and prepare a report on the same.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 60,
+      "required_subsystems": [
+        "email",
+        "analytics"
+      ],
+      "inputs_from": [
+        "David Thompson",
+        "marketing subsystem"
+      ],
+      "outputs_to": [
+        "David Thompson"
+      ],
+      "success_criteria": "A report on previous marketing campaigns is prepared and sent to David Thompson",
+      "due_date": "2025-11-18T14:02:10.044Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:02:10.044Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "f9f82f68-04bf-4f77-823c-770fc934946e",
+      "persona_name": "Emily Rodriguez",
+      "task_id": "demo_manager_1763388144775_0",
+      "title": "Planejamento de Orçamento para o próximo ano",
+      "description": "Trabalhar com o CFO Robert Martinez para planejar o orçamento para o próximo ano, com foco nos subsistemas financeiro, CRM e marketing.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "analytics"
+      ],
+      "inputs_from": [
+        "Robert Martinez"
+      ],
+      "outputs_to": [
+        "CFO",
+        "CEO"
+      ],
+      "success_criteria": "Orçamento aprovado pelo CFO e CEO",
+      "due_date": "2025-11-18T14:02:24.775Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:02:24.775Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "f9f82f68-04bf-4f77-823c-770fc934946e",
+      "persona_name": "Emily Rodriguez",
+      "task_id": "demo_manager_1763388144777_1",
+      "title": "Suporte ao Gerente de Vendas na aquisição de clientes",
+      "description": "Auxiliar Carlos Silva na estratégia de aquisição de clientes para aumentar as vendas de fim de ano, utilizando o subsistema CRM.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 90,
+      "required_subsystems": [
+        "crm"
+      ],
+      "inputs_from": [
+        "Carlos Silva"
+      ],
+      "outputs_to": [
+        "Sales Manager"
+      ],
+      "success_criteria": "Aumento nas vendas de fim de ano",
+      "due_date": "2025-11-18T14:02:24.777Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:02:24.777Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "f9f82f68-04bf-4f77-823c-770fc934946e",
+      "persona_name": "Emily Rodriguez",
+      "task_id": "demo_manager_1763388144778_2",
+      "title": "Planejamento de campanhas de marketing",
+      "description": "Colaborar com o CMO David Thompson no planejamento de campanhas de marketing para apoiar os esforços de vendas, utilizando o subsistema de email marketing.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "email"
+      ],
+      "inputs_from": [
+        "David Thompson"
+      ],
+      "outputs_to": [
+        "CMO"
+      ],
+      "success_criteria": "Campanhas de marketing aprovadas pelo CMO",
+      "due_date": "2025-11-18T14:02:24.778Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:02:24.778Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "fb0be495-2e88-4a44-b133-07aae75d6dc5",
+      "persona_name": "Carlos Silva",
+      "task_id": "demo_manager_1763388163036_0",
+      "title": "Planejar e executar estratégia de aquisição de clientes",
+      "description": "Desenvolver uma estratégia detalhada para a aquisição de novos clientes para aumentar as vendas de final de ano. Isso deve incluir a identificação de mercados-alvo, a definição de mensagens-chave e a escolha de canais de aquisição.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "email",
+        "analytics"
+      ],
+      "inputs_from": [
+        "financial",
+        "crm",
+        "marketing"
+      ],
+      "outputs_to": [
+        "sales",
+        "marketing"
+      ],
+      "success_criteria": "Aumento de 10% na aquisição de novos clientes em comparação com o mesmo período do ano anterior",
+      "due_date": "2025-11-18T14:02:43.036Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:02:43.036Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "fb0be495-2e88-4a44-b133-07aae75d6dc5",
+      "persona_name": "Carlos Silva",
+      "task_id": "demo_manager_1763388163037_1",
+      "title": "Analisar dados de vendas",
+      "description": "Analisar os dados de vendas atuais para identificar tendências, oportunidades e áreas de melhoria. Isso deve informar a estratégia de aquisição de clientes e ajudar a identificar quais produtos ou serviços devem ser o foco das vendas de final de ano.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 60,
+      "required_subsystems": [
+        "analytics"
+      ],
+      "inputs_from": [
+        "crm"
+      ],
+      "outputs_to": [
+        "sales",
+        "marketing"
+      ],
+      "success_criteria": "Identificação de 3-5 oportunidades de melhoria ou áreas de foco para a estratégia de aquisição de clientes",
+      "due_date": "2025-11-18T14:02:43.037Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:02:43.037Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "fb0be495-2e88-4a44-b133-07aae75d6dc5",
+      "persona_name": "Carlos Silva",
+      "task_id": "demo_manager_1763388163038_2",
+      "title": "Coordenar com o CMO sobre campanhas de marketing",
+      "description": "Trabalhar em estreita colaboração com o CMO para garantir que as campanhas de marketing estão alinhadas com a estratégia de aquisição de clientes e focadas nos produtos ou serviços identificados durante a análise de dados de vendas.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 90,
+      "required_subsystems": [
+        "email"
+      ],
+      "inputs_from": [
+        "marketing"
+      ],
+      "outputs_to": [
+        "marketing"
+      ],
+      "success_criteria": "Desenvolvimento de uma campanha de marketing alinhada com a estratégia de aquisição de clientes e focada nos produtos ou serviços identificados",
+      "due_date": "2025-11-18T14:02:43.038Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:02:43.038Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "e0fdf869-3494-467b-8681-9818a9eace4d",
+      "persona_name": "Ana Costa",
+      "task_id": "demo_assistant_1763388177246_0",
+      "title": "Preparação do orçamento para o próximo ano",
+      "description": "Auxiliar o CFO Robert Martinez na preparação do orçamento para o próximo ano. Revisar os dados financeiros atuais e projetar os custos e receitas para o próximo ano.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "financial",
+        "analytics"
+      ],
+      "inputs_from": [
+        "Robert Martinez",
+        "financial"
+      ],
+      "outputs_to": [
+        "Robert Martinez"
+      ],
+      "success_criteria": "Orçamento completo e aprovado por Robert Martinez",
+      "due_date": "2025-11-18T14:02:57.246Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:02:57.246Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "e0fdf869-3494-467b-8681-9818a9eace4d",
+      "persona_name": "Ana Costa",
+      "task_id": "demo_assistant_1763388177247_1",
+      "title": "Suporte na aquisição de clientes",
+      "description": "Auxiliar o gerente de vendas Carlos Silva na aquisição de clientes. Organizar e atualizar o CRM com informações relevantes dos clientes.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 90,
+      "required_subsystems": [
+        "crm",
+        "analytics"
+      ],
+      "inputs_from": [
+        "Carlos Silva",
+        "crm"
+      ],
+      "outputs_to": [
+        "Carlos Silva"
+      ],
+      "success_criteria": "CRM atualizado com informações de clientes",
+      "due_date": "2025-11-18T14:02:57.247Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:02:57.247Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "e0fdf869-3494-467b-8681-9818a9eace4d",
+      "persona_name": "Ana Costa",
+      "task_id": "demo_assistant_1763388177247_2",
+      "title": "Planejamento de campanhas de marketing",
+      "description": "Auxiliar o CMO David Thompson no planejamento de campanhas de marketing. Coletar e analisar dados de campanhas anteriores e sugerir melhorias.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "marketing",
+        "analytics"
+      ],
+      "inputs_from": [
+        "David Thompson",
+        "marketing"
+      ],
+      "outputs_to": [
+        "David Thompson"
+      ],
+      "success_criteria": "Plano de campanha de marketing completo e aprovado por David Thompson",
+      "due_date": "2025-11-18T14:02:57.247Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:02:57.247Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "b4861970-5172-4915-a531-5161070298a1",
+      "persona_name": "Carolina Lima",
+      "task_id": "demo_assistant_1763388209615_0",
+      "title": "Suporte ao planejamento de orçamento do CFO",
+      "description": "Auxiliar Robert Martinez na coleta de dados necessários para o planejamento do orçamento do próximo ano. Isso pode incluir a preparação de relatórios financeiros e a análise de dados de despesas.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "analytics"
+      ],
+      "inputs_from": [
+        "Robert Martinez"
+      ],
+      "outputs_to": [
+        "Robert Martinez"
+      ],
+      "success_criteria": "Relatórios financeiros precisos e completos entregues a Robert Martinez",
+      "due_date": "2025-11-18T14:03:29.615Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:03:29.615Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "b4861970-5172-4915-a531-5161070298a1",
+      "persona_name": "Carolina Lima",
+      "task_id": "demo_assistant_1763388209616_1",
+      "title": "Apoio ao gerente de vendas na aquisição de clientes",
+      "description": "Ajudar Carlos Silva a identificar potenciais clientes para aumentar as vendas de final de ano. Isso pode envolver a análise de dados de CRM e a preparação de relatórios de vendas.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 90,
+      "required_subsystems": [
+        "analytics"
+      ],
+      "inputs_from": [
+        "Carlos Silva"
+      ],
+      "outputs_to": [
+        "Carlos Silva"
+      ],
+      "success_criteria": "Relatórios de vendas precisos e completos entregues a Carlos Silva",
+      "due_date": "2025-11-18T14:03:29.616Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:03:29.616Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "b4861970-5172-4915-a531-5161070298a1",
+      "persona_name": "Carolina Lima",
+      "task_id": "demo_assistant_1763388209617_2",
+      "title": "Suporte ao CMO na elaboração de campanhas de marketing",
+      "description": "Auxiliar David Thompson na preparação de campanhas de marketing para apoiar os esforços de vendas. Isso pode incluir a criação de segmentos de email e a análise de métricas de campanha.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "email",
+        "analytics"
+      ],
+      "inputs_from": [
+        "David Thompson"
+      ],
+      "outputs_to": [
+        "David Thompson"
+      ],
+      "success_criteria": "Segmentos de email criados e métricas de campanha analisadas e entregues a David Thompson",
+      "due_date": "2025-11-18T14:03:29.617Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:03:29.617Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "4b5880ac-5a35-4a5e-9c8b-1f1922735b44",
+      "persona_name": "Michael Anderson",
+      "task_id": "demo_ceo_1763388225833_0",
+      "title": "Revisar e aprovar o planejamento orçamentário",
+      "description": "Revisar o planejamento orçamentário para o próximo ano preparado pelo CFO Robert Martinez, fazer ajustes se necessário e dar aprovação final.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "email"
+      ],
+      "inputs_from": [
+        "Robert Martinez"
+      ],
+      "outputs_to": [
+        "Robert Martinez"
+      ],
+      "success_criteria": "Planejamento orçamentário aprovado e comunicado ao CFO",
+      "due_date": "2025-11-18T14:03:45.833Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:03:45.833Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "4b5880ac-5a35-4a5e-9c8b-1f1922735b44",
+      "persona_name": "Michael Anderson",
+      "task_id": "demo_ceo_1763388225835_1",
+      "title": "Revisar estratégia de aquisição de clientes",
+      "description": "Revisar a estratégia de aquisição de clientes proposta pelo gerente de vendas Carlos Silva, sugerir melhorias e dar aprovação final.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 90,
+      "required_subsystems": [
+        "crm"
+      ],
+      "inputs_from": [
+        "Carlos Silva"
+      ],
+      "outputs_to": [
+        "Carlos Silva"
+      ],
+      "success_criteria": "Estratégia de aquisição de clientes aprovada e comunicada ao gerente de vendas",
+      "due_date": "2025-11-18T14:03:45.835Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:03:45.835Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "4b5880ac-5a35-4a5e-9c8b-1f1922735b44",
+      "persona_name": "Michael Anderson",
+      "task_id": "demo_ceo_1763388225838_2",
+      "title": "Revisar e aprovar campanhas de marketing",
+      "description": "Revisar as campanhas de marketing propostas pelo CMO David Thompson para apoiar os esforços de vendas, sugerir ajustes e dar aprovação final.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 60,
+      "required_subsystems": [
+        "email",
+        "social"
+      ],
+      "inputs_from": [
+        "David Thompson"
+      ],
+      "outputs_to": [
+        "David Thompson"
+      ],
+      "success_criteria": "Campanhas de marketing aprovadas e comunicadas ao CMO",
+      "due_date": "2025-11-18T14:03:45.838Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:03:45.838Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "5dfc8e73-3577-4f54-ab00-8525e1d96a77",
+      "persona_name": "Robert Martinez",
+      "task_id": "demo_cfo_1763388244307_0",
+      "title": "Planejamento Orçamentário para o próximo ano",
+      "description": "Revisar e preparar o orçamento para o próximo ano, considerando as metas e objetivos da empresa",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 180,
+      "required_subsystems": [
+        "financial",
+        "analytics"
+      ],
+      "inputs_from": [
+        "Sales Manager",
+        "CMO"
+      ],
+      "outputs_to": [
+        "CEO",
+        "Board of Directors"
+      ],
+      "success_criteria": "Orçamento completo e aprovado para o próximo ano",
+      "due_date": "2025-11-18T14:04:04.307Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:04:04.307Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "5dfc8e73-3577-4f54-ab00-8525e1d96a77",
+      "persona_name": "Robert Martinez",
+      "task_id": "demo_cfo_1763388244308_1",
+      "title": "Análise de Desempenho Financeiro Atual",
+      "description": "Analisar o desempenho financeiro atual da empresa para identificar áreas de melhoria e oportunidades",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "financial",
+        "analytics",
+        "bi"
+      ],
+      "inputs_from": [
+        "Accounting Department"
+      ],
+      "outputs_to": [
+        "CEO",
+        "Board of Directors"
+      ],
+      "success_criteria": "Relatório completo de análise financeira com recomendações",
+      "due_date": "2025-11-18T14:04:04.308Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:04:04.308Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "5dfc8e73-3577-4f54-ab00-8525e1d96a77",
+      "persona_name": "Robert Martinez",
+      "task_id": "demo_cfo_1763388244309_2",
+      "title": "Revisão de Projeções de Vendas",
+      "description": "Revisar as projeções de vendas fornecidas pelo Gerente de Vendas e avaliar o impacto no orçamento",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 60,
+      "required_subsystems": [
+        "financial",
+        "crm"
+      ],
+      "inputs_from": [
+        "Sales Manager"
+      ],
+      "outputs_to": [
+        "CEO",
+        "Sales Manager"
+      ],
+      "success_criteria": "Projeções de vendas revisadas e ajustadas conforme necessário",
+      "due_date": "2025-11-18T14:04:04.309Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:04:04.309Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "5dfc8e73-3577-4f54-ab00-8525e1d96a77",
+      "persona_name": "Robert Martinez",
+      "task_id": "demo_cfo_1763388244310_3",
+      "title": "Avaliação de Campanhas de Marketing",
+      "description": "Avaliar a eficácia das campanhas de marketing atuais e planejadas em termos de ROI e impacto nas vendas",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 90,
+      "required_subsystems": [
+        "financial",
+        "analytics"
+      ],
+      "inputs_from": [
+        "CMO"
+      ],
+      "outputs_to": [
+        "CEO",
+        "CMO"
+      ],
+      "success_criteria": "Relatório completo de avaliação de marketing com recomendações",
+      "due_date": "2025-11-18T14:04:04.310Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:04:04.310Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "1eb69568-d070-4012-8437-18a0ea1891bb",
+      "persona_name": "Amanda Johnson",
+      "task_id": "demo_manager_1763388256424_0",
+      "title": "Budget Planning for Next Year",
+      "description": "Collaborate with CFO Robert Martinez to plan the budget for the next year, considering the financial priorities of the company.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "email",
+        "analytics"
+      ],
+      "inputs_from": [
+        "Robert Martinez",
+        "financial subsystem"
+      ],
+      "outputs_to": [
+        "CEO",
+        "Board of Directors"
+      ],
+      "success_criteria": "A comprehensive budget plan for the next year that aligns with the company's financial goals",
+      "due_date": "2025-11-18T14:04:16.424Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:04:16.424Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "1eb69568-d070-4012-8437-18a0ea1891bb",
+      "persona_name": "Amanda Johnson",
+      "task_id": "demo_manager_1763388256425_1",
+      "title": "Support Customer Acquisition",
+      "description": "Work with Sales Manager Carlos Silva to develop HR strategies that support customer acquisition and increase end-of-year sales.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 90,
+      "required_subsystems": [
+        "email",
+        "analytics"
+      ],
+      "inputs_from": [
+        "Carlos Silva",
+        "crm subsystem"
+      ],
+      "outputs_to": [
+        "Sales Team",
+        "Marketing Team"
+      ],
+      "success_criteria": "Effective HR strategies that contribute to increased customer acquisition",
+      "due_date": "2025-11-18T14:04:16.425Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:04:16.425Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "1eb69568-d070-4012-8437-18a0ea1891bb",
+      "persona_name": "Amanda Johnson",
+      "task_id": "demo_manager_1763388256425_2",
+      "title": "Plan HR Support for Marketing Campaigns",
+      "description": "Coordinate with CMO David Thompson to plan HR support for upcoming marketing campaigns.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 60,
+      "required_subsystems": [
+        "email",
+        "analytics"
+      ],
+      "inputs_from": [
+        "David Thompson",
+        "marketing subsystem"
+      ],
+      "outputs_to": [
+        "Marketing Team"
+      ],
+      "success_criteria": "A detailed plan for HR support for marketing campaigns",
+      "due_date": "2025-11-18T14:04:16.425Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:04:16.425Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "0e15c950-0c29-4b7d-8435-952e9d731312",
+      "persona_name": "Rachel Green",
+      "task_id": "demo_assistant_1763388271706_0",
+      "title": "Preparar relatórios financeiros para o próximo ano",
+      "description": "Coletar e organizar dados financeiros para ajudar o CFO Robert Martinez na preparação do orçamento para o próximo ano.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "analytics"
+      ],
+      "inputs_from": [
+        "financial"
+      ],
+      "outputs_to": [
+        "Robert Martinez"
+      ],
+      "success_criteria": "Relatórios financeiros precisos e completos entregues a Robert Martinez",
+      "due_date": "2025-11-18T14:04:31.706Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:04:31.706Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "0e15c950-0c29-4b7d-8435-952e9d731312",
+      "persona_name": "Rachel Green",
+      "task_id": "demo_assistant_1763388271709_1",
+      "title": "Apoiar a aquisição de clientes",
+      "description": "Ajudar o gerente de vendas Carlos Silva a adquirir novos clientes, fornecendo informações de CRM relevantes e atualizadas.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 90,
+      "required_subsystems": [
+        "analytics"
+      ],
+      "inputs_from": [
+        "crm"
+      ],
+      "outputs_to": [
+        "Carlos Silva"
+      ],
+      "success_criteria": "Informações de CRM precisas e atualizadas entregues a Carlos Silva",
+      "due_date": "2025-11-18T14:04:31.709Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:04:31.709Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "0e15c950-0c29-4b7d-8435-952e9d731312",
+      "persona_name": "Rachel Green",
+      "task_id": "demo_assistant_1763388271711_2",
+      "title": "Auxiliar na preparação de campanhas de marketing",
+      "description": "Ajudar o CMO David Thompson a planejar campanhas de marketing, fornecendo dados de email marketing e análises relevantes.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "email",
+        "analytics"
+      ],
+      "inputs_from": [
+        "marketing"
+      ],
+      "outputs_to": [
+        "David Thompson"
+      ],
+      "success_criteria": "Dados de email marketing e análises relevantes entregues a David Thompson",
+      "due_date": "2025-11-18T14:04:31.711Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:04:31.711Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "a4f590da-c4f9-4951-b1e9-7b7e6bc34ab2",
+      "persona_name": "Sarah Chen",
+      "task_id": "demo_cto_1763388288505_0",
+      "title": "Revisão do Subsistema Financeiro",
+      "description": "Revisar o subsistema financeiro para identificar possíveis melhorias e garantir que esteja pronto para o planejamento orçamentário do próximo ano.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "analytics",
+        "ai"
+      ],
+      "inputs_from": [
+        "Robert Martinez"
+      ],
+      "outputs_to": [
+        "Robert Martinez"
+      ],
+      "success_criteria": "Identificação de melhorias potenciais e garantia de que o subsistema está pronto para o planejamento orçamentário.",
+      "due_date": "2025-11-18T14:04:48.505Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:04:48.505Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "a4f590da-c4f9-4951-b1e9-7b7e6bc34ab2",
+      "persona_name": "Sarah Chen",
+      "task_id": "demo_cto_1763388288507_1",
+      "title": "Otimização do Subsistema CRM",
+      "description": "Otimizar o subsistema CRM para melhorar a aquisição de clientes e apoiar os esforços de vendas de final de ano.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 180,
+      "required_subsystems": [
+        "analytics",
+        "ai"
+      ],
+      "inputs_from": [
+        "Carlos Silva"
+      ],
+      "outputs_to": [
+        "Carlos Silva"
+      ],
+      "success_criteria": "Melhoria na eficiência do subsistema CRM e aumento na aquisição de clientes.",
+      "due_date": "2025-11-18T14:04:48.507Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:04:48.507Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "a4f590da-c4f9-4951-b1e9-7b7e6bc34ab2",
+      "persona_name": "Sarah Chen",
+      "task_id": "demo_cto_1763388288509_2",
+      "title": "Aprimoramento do Subsistema de Marketing",
+      "description": "Aprimorar o subsistema de marketing para suportar as campanhas de marketing planejadas para o final do ano.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 150,
+      "required_subsystems": [
+        "analytics",
+        "ai"
+      ],
+      "inputs_from": [
+        "David Thompson"
+      ],
+      "outputs_to": [
+        "David Thompson"
+      ],
+      "success_criteria": "Melhoria na eficiência do subsistema de marketing e suporte eficaz para as campanhas de marketing.",
+      "due_date": "2025-11-18T14:04:48.509Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:04:48.509Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "feaa0910-793a-48e2-9554-4710db8518c6",
+      "persona_name": "Jennifer Williams",
+      "task_id": "demo_coo_1763388304574_0",
+      "title": "Revisão do Orçamento Financeiro",
+      "description": "Revisar o orçamento financeiro atual e iniciar o planejamento para o próximo ano. Coordenar com o CFO para garantir que todas as projeções e alocações estejam corretas.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "analytics"
+      ],
+      "inputs_from": [
+        "CFO Robert Martinez"
+      ],
+      "outputs_to": [
+        "CFO Robert Martinez"
+      ],
+      "success_criteria": "Orçamento do próximo ano planejado e aprovado",
+      "due_date": "2025-11-18T14:05:04.574Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:05:04.574Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "feaa0910-793a-48e2-9554-4710db8518c6",
+      "persona_name": "Jennifer Williams",
+      "task_id": "demo_coo_1763388304577_1",
+      "title": "Acompanhamento de Aquisição de Clientes",
+      "description": "Monitorar o progresso da aquisição de clientes e garantir que as metas de fim de ano sejam atingidas. Trabalhar com o Gerente de Vendas para identificar quaisquer obstáculos e desenvolver planos para superá-los.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 60,
+      "required_subsystems": [
+        "crm",
+        "analytics"
+      ],
+      "inputs_from": [
+        "Sales Manager Carlos Silva"
+      ],
+      "outputs_to": [
+        "Sales Manager Carlos Silva"
+      ],
+      "success_criteria": "Metas de aquisição de clientes atingidas",
+      "due_date": "2025-11-18T14:05:04.577Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:05:04.577Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "feaa0910-793a-48e2-9554-4710db8518c6",
+      "persona_name": "Jennifer Williams",
+      "task_id": "demo_coo_1763388304580_2",
+      "title": "Planejamento de Campanhas de Marketing",
+      "description": "Colaborar com o CMO para planejar campanhas de marketing que apoiem os esforços de vendas. Garantir que as campanhas estejam alinhadas com o orçamento e as metas da empresa.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 90,
+      "required_subsystems": [
+        "email",
+        "analytics"
+      ],
+      "inputs_from": [
+        "CMO David Thompson"
+      ],
+      "outputs_to": [
+        "CMO David Thompson"
+      ],
+      "success_criteria": "Campanhas de marketing planejadas e prontas para implementação",
+      "due_date": "2025-11-18T14:05:04.580Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:05:04.580Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "e6cb6079-bb21-4ff5-afa9-c79eafd9489a",
+      "persona_name": "Lisa Park",
+      "task_id": "demo_specialist_1763388323691_0",
+      "title": "Planejar Campanha de Email Marketing",
+      "description": "Planejar uma campanha de email marketing para apoiar os esforços de vendas de fim de ano. Segmentar a base de clientes e definir mensagens relevantes para cada segmento.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "email",
+        "analytics"
+      ],
+      "inputs_from": [
+        "CRM",
+        "Sales Manager - Carlos Silva"
+      ],
+      "outputs_to": [
+        "CMO - David Thompson"
+      ],
+      "success_criteria": "Campanha planejada e aprovada pelo CMO",
+      "due_date": "2025-11-18T14:05:23.691Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:05:23.691Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "e6cb6079-bb21-4ff5-afa9-c79eafd9489a",
+      "persona_name": "Lisa Park",
+      "task_id": "demo_specialist_1763388323692_1",
+      "title": "Preparar Dashboard de Métricas da Campanha",
+      "description": "Preparar um dashboard no sistema de analytics para acompanhar as métricas da campanha de email marketing. O dashboard deve incluir KPIs como taxa de abertura, taxa de clique e conversões.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 60,
+      "required_subsystems": [
+        "analytics"
+      ],
+      "inputs_from": [
+        "email"
+      ],
+      "outputs_to": [
+        "CMO - David Thompson",
+        "Sales Manager - Carlos Silva"
+      ],
+      "success_criteria": "Dashboard preparado e aprovado pelo CMO e Sales Manager",
+      "due_date": "2025-11-18T14:05:23.692Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:05:23.692Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "18cb8624-c37a-4e8e-91dc-0d66eb929021",
+      "persona_name": "Marina Santos",
+      "task_id": "demo_assistant_1763388337998_0",
+      "title": "Support Budget Planning",
+      "description": "Assist CFO Robert Martinez in preparing the budget for the next year. Gather and organize necessary financial data.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "email",
+        "analytics"
+      ],
+      "inputs_from": [
+        "financial subsystem",
+        "Robert Martinez"
+      ],
+      "outputs_to": [
+        "Robert Martinez"
+      ],
+      "success_criteria": "Deliver a comprehensive financial report to Robert Martinez",
+      "due_date": "2025-11-18T14:05:37.998Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:05:37.998Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "18cb8624-c37a-4e8e-91dc-0d66eb929021",
+      "persona_name": "Marina Santos",
+      "task_id": "demo_assistant_1763388338000_1",
+      "title": "Assist in Customer Acquisition",
+      "description": "Support Sales Manager Carlos Silva in customer acquisition efforts. Prepare CRM data for potential customers.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 90,
+      "required_subsystems": [
+        "email",
+        "analytics"
+      ],
+      "inputs_from": [
+        "crm subsystem",
+        "Carlos Silva"
+      ],
+      "outputs_to": [
+        "Carlos Silva"
+      ],
+      "success_criteria": "Deliver a list of potential customers with relevant CRM data to Carlos Silva",
+      "due_date": "2025-11-18T14:05:38.000Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:05:38.000Z"
+    },
+    {
+      "empresa_id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+      "persona_id": "18cb8624-c37a-4e8e-91dc-0d66eb929021",
+      "persona_name": "Marina Santos",
+      "task_id": "demo_assistant_1763388338001_2",
+      "title": "Support Marketing Campaign Planning",
+      "description": "Assist CMO David Thompson in planning marketing campaigns. Prepare analytics data for campaign planning.",
+      "task_type": "daily",
+      "priority": "high",
+      "status": "pending",
+      "estimated_duration": 120,
+      "required_subsystems": [
+        "email",
+        "analytics"
+      ],
+      "inputs_from": [
+        "marketing subsystem",
+        "David Thompson"
+      ],
+      "outputs_to": [
+        "David Thompson"
+      ],
+      "success_criteria": "Deliver a comprehensive marketing analytics report to David Thompson",
+      "due_date": "2025-11-18T14:05:38.001Z",
+      "created_by": "autonomous_system",
+      "created_at": "2025-11-17T14:05:38.001Z"
+    }
+  ]
+}

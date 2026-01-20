@@ -1,0 +1,49 @@
+{
+  "persona_id": "6684ed01-a182-42df-a911-cd0b39cf2b2f",
+  "full_name": "Amina Njeri Mwangi",
+  "role": "Product Manager",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "metas": [
+    {
+      "titulo": "Lançar funcionalidade de treinamento modular",
+      "descricao": "Liderar o desenvolvimento e deploy da nova funcionalidade de treinamento modular de agentes IA, garantindo sucesso no lançamento com testes completos e aprovação de stakeholders.",
+      "categoria": "performance",
+      "valor_alvo": 1,
+      "unidade_medida": "lançamento",
+      "data_prazo": "2025-04-01",
+      "prioridade": 5,
+      "vinculada_kpi": "Taxa de Sucesso de Deploy de Agentes - 95%"
+    },
+    {
+      "titulo": "Aprofundar expertise em arquiteturas IA",
+      "descricao": "Completar 40 horas de cursos certificados e ler 3 whitepapers sobre arquiteturas de agentes IA autônomos, aplicando conhecimentos em 2 reuniões técnicas.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 40,
+      "unidade_medida": "horas",
+      "data_prazo": "2025-02-15",
+      "prioridade": 4,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Melhorar liderança cross-funcional",
+      "descricao": "Liderar 6 reuniões cross-funcionais e alcançar média de 4.5/5 em feedbacks de participantes de pelo menos 10 membros da equipe.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 4.5,
+      "unidade_medida": "/5",
+      "data_prazo": "2025-03-15",
+      "prioridade": 4,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Aumentar Taxa de Retenção de Usuários",
+      "descricao": "Implementar melhorias baseadas em dados para elevar a taxa de retenção de usuários mensais para 85%, medido via analytics da plataforma.",
+      "categoria": "kpi",
+      "valor_alvo": 85,
+      "unidade_medida": "%",
+      "data_prazo": "2025-03-01",
+      "prioridade": 5,
+      "vinculada_kpi": "Taxa de Retenção de Usuários - 85%"
+    }
+  ],
+  "generated_at": "2025-12-08T22:26:44.830Z"
+}

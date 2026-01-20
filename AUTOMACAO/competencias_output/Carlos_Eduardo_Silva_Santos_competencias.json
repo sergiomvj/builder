@@ -1,0 +1,53 @@
+{
+  "persona_id": "02541a78-9a94-4f0a-925c-846318c51f20",
+  "full_name": "Carlos Eduardo Silva Santos",
+  "role": "Gerente Financeiro",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Análise financeira",
+    "Planejamento financeiro",
+    "Gestão de tesouraria",
+    "Contabilidade",
+    "Conhecimento em legislação tributária"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Tomada de decisão",
+    "Trabalho em equipe",
+    "Gestão do tempo"
+  ],
+  "ferramentas": [
+    "Excel Avançado",
+    "Sistemas de ERP",
+    "Ferramentas de BI",
+    "Softwares de gestão financeira"
+  ],
+  "tarefas_diarias": [
+    "Análise de fluxo de caixa",
+    "Elaboração de relatórios financeiros",
+    "Aprovação de pagamentos",
+    "Reuniões com a equipe financeira"
+  ],
+  "tarefas_semanais": [
+    "Revisão de orçamento",
+    "Acompanhamento de indicadores financeiros",
+    "Planejamento de investimentos"
+  ],
+  "tarefas_mensais": [
+    "Fechamento contábil",
+    "Elaboração de projeções financeiras",
+    "Análise de rentabilidade"
+  ],
+  "kpis": [
+    "Redução do ciclo de caixa - 10 dias",
+    "Aumento da lucratividade - 15%",
+    "Redução dos custos financeiros - 20%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Realizar curso de atualização em finanças corporativas",
+    "Aprimorar habilidades de negociação",
+    "Desenvolver plano de carreira na área financeira"
+  ],
+  "generated_at": "2025-12-08T14:38:05.598Z"
+}

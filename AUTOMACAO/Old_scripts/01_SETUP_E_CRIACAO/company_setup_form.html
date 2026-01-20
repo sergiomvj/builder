@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Virtual Company Generator - Setup Avançado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .form-container {
+            padding: 40px;
+        }
+
+        .step {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .step.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .step-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 50%;
+            line-height: 50px;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .step-subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e1e1e1;
+            border-radius: 10px;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .radio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .radio-option {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .radio-option input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .radio-option .radio-label {
+            display: block;
+            padding: 20px;
+            background: #f8f9fa;
+            border: 2px solid #e1e1e1;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .radio-option input[type="radio"]:checked + .radio-label {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .number-input-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .number-input {
+            text-align: center;
+        }
+
+        .number-input label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .number-input input {
+            width: 80px;
+            padding: 10px;
+            border: 2px solid #e1e1e1;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .checkbox-option {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .checkbox-option input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .checkbox-option .checkbox-label {
+            display: block;
+            padding: 15px;
+            background: #f8f9fa;
+            border: 2px solid #e1e1e1;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .checkbox-option input[type="checkbox"]:checked + .checkbox-label {
+            background: linear-gradient(45deg, #4facfe, #00f2fe);
+            color: white;
+            border-color: #4facfe;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e1e1e1;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #f8f9fa;
+            color: #333;
+            border: 2px solid #e1e1e1;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .progress-bar {
+            height: 6px;
+            background: #e1e1e1;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(45deg, #4facfe, #00f2fe);
+            transition: width 0.3s ease;
+            border-radius: 3px;
+        }
+
+        .summary-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 5px solid #667eea;
+        }
+
+        .summary-section {
+            margin-bottom: 20px;
+        }
+
+        .summary-section h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .summary-section p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .personas-count {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .count-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .count-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .count-label {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .alert {
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .alert.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .alert.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 20px;
+            }
+            
+            .radio-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .number-input-group {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .nav-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Virtual Company Generator</h1>
+            <p>Setup Avançado com Geração Automática de Biografias</p>
+        </div>
+
+        <div class="form-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <div id="alert" class="alert"></div>
+
+            <form id="companyForm">
+                <!-- Passo 1: Informações Básicas -->
+                <div class="step active" id="step1">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <h2 class="step-title">Informações Básicas</h2>
+                        <p class="step-subtitle">Vamos começar com as informações fundamentais da sua empresa</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companyName">🏢 Nome da Empresa</label>
+                        <input type="text" id="companyName" name="companyName" required 
+                               placeholder="Ex: TechVision Solutions">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companyDomain">🌐 Domínio da Empresa</label>
+                        <input type="text" id="companyDomain" name="companyDomain" required 
+                               placeholder="Ex: techvision.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>🏭 Indústria da Empresa</label>
+                        <div class="radio-grid">
+                            <div class="radio-option">
+                                <input type="radio" id="tech" name="industry" value="tecnologia">
+                                <label for="tech" class="radio-label">💻 Tecnologia e Software</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="finance" name="industry" value="financas">
+                                <label for="finance" class="radio-label">💰 Finanças e Investimentos</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="health" name="industry" value="saude">
+                                <label for="health" class="radio-label">🏥 Saúde e Biotecnologia</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="education" name="industry" value="educacao">
+                                <label for="education" class="radio-label">🎓 Educação e Treinamento</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="ecommerce" name="industry" value="ecommerce">
+                                <label for="ecommerce" class="radio-label">🛒 E-commerce e Retail</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="consulting" name="industry" value="consultoria">
+                                <label for="consulting" class="radio-label">📊 Consultoria e Serviços</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">📝 Descrição da Empresa</label>
+                        <textarea id="description" name="description" rows="3" 
+                                placeholder="Descreva brevemente o que sua empresa faz..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="targetAudience">👥 Público-alvo Principal</label>
+                        <input type="text" id="targetAudience" name="targetAudience" 
+                               placeholder="Ex: Empresas de médio porte do setor tecnológico">
+                    </div>
+                </div>
+
+                <!-- Passo 2: Demografia -->
+                <div class="step" id="step2">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <h2 class="step-title">Demografia das Personas</h2>
+                        <p class="step-subtitle">Defina as características demográficas da sua equipe</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>🌍 Nacionalidade Predominante</label>
+                        <div class="radio-grid">
+                            <div class="radio-option">
+                                <input type="radio" id="europeus" name="nationality" value="europeus">
+                                <label for="europeus" class="radio-label">🇪🇺 Europeus<br><small>França, Alemanha, Itália...</small></label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="latinos" name="nationality" value="latinos">
+                                <label for="latinos" class="radio-label">🌎 Latinos<br><small>Brasil, México, Argentina...</small></label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="asiaticos" name="nationality" value="asiaticos">
+                                <label for="asiaticos" class="radio-label">🌏 Asiáticos<br><small>Japão, Coreia, China...</small></label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="oriente_medio" name="nationality" value="oriente_medio">
+                                <label for="oriente_medio" class="radio-label">🕌 Oriente Médio<br><small>Emirados, Israel, Turquia...</small></label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="balcas" name="nationality" value="balcas">
+                                <label for="balcas" class="radio-label">⛰️ Balcãs<br><small>Sérvia, Croácia, Bósnia...</small></label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="nordicos" name="nationality" value="nordicos">
+                                <label for="nordicos" class="radio-label">❄️ Nórdicos<br><small>Suécia, Noruega, Dinamarca...</small></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>👔 CEO da Empresa</label>
+                        <div class="radio-grid">
+                            <div class="radio-option">
+                                <input type="radio" id="ceo_male" name="ceoGender" value="masculino">
+                                <label for="ceo_male" class="radio-label">👨 Homem</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="ceo_female" name="ceoGender" value="feminino">
+                                <label for="ceo_female" class="radio-label">👩 Mulher</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Passo 3: Distribuição de Personas -->
+                <div class="step" id="step3">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <h2 class="step-title">Distribuição da Equipe</h2>
+                        <p class="step-subtitle">Defina quantos homens e mulheres em cada categoria</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>👔 Executivos (além do CEO)</label>
+                        <div class="number-input-group">
+                            <div class="number-input">
+                                <label for="execMen">👨 Homens</label>
+                                <input type="number" id="execMen" name="execMen" min="0" max="5" value="2">
+                            </div>
+                            <div class="number-input">
+                                <label for="execWomen">👩 Mulheres</label>
+                                <input type="number" id="execWomen" name="execWomen" min="0" max="5" value="2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>👨‍💼 Assistentes Executivos</label>
+                        <div class="number-input-group">
+                            <div class="number-input">
+                                <label for="assistMen">👨 Homens</label>
+                                <input type="number" id="assistMen" name="assistMen" min="0" max="8" value="2">
+                            </div>
+                            <div class="number-input">
+                                <label for="assistWomen">👩 Mulheres</label>
+                                <input type="number" id="assistWomen" name="assistWomen" min="0" max="8" value="3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>🎯 Especialistas (6 áreas: HR, YouTube, Mídias Sociais, Marketing, Financeiro, Tecnologia)</label>
+                        <div class="number-input-group">
+                            <div class="number-input">
+                                <label for="specMen">👨 Homens</label>
+                                <input type="number" id="specMen" name="specMen" min="0" max="6" value="3">
+                            </div>
+                            <div class="number-input">
+                                <label for="specWomen">👩 Mulheres</label>
+                                <input type="number" id="specWomen" name="specWomen" min="0" max="6" value="3">
+                            </div>
+                        </div>
+                        <p style="color: #666; font-size: 0.9em; margin-top: 10px;">
+                            ⚠️ O total deve ser exatamente 6 especialistas
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Passo 4: Idiomas -->
+                <div class="step" id="step4">
+                    <div class="step-header">
+                        <div class="step-number">4</div>
+                        <h2 class="step-title">Idiomas da Equipe</h2>
+                        <p class="step-subtitle">Selecione idiomas extras além dos padrões</p>
+                    </div>
+
+                    <div class="form-group">
+                        <p style="margin-bottom: 20px; padding: 15px; background: #e8f5e8; border-radius: 10px;">
+                            ✅ <strong>Idiomas padrão incluídos:</strong> Inglês, Espanhol, Português, Francês + idiomas regionais
+                        </p>
+                        
+                        <label>➕ Idiomas Extras (opcionais)</label>
+                        <div class="checkbox-grid">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="german" name="extraLanguages" value="alemão">
+                                <label for="german" class="checkbox-label">🇩🇪 Alemão</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="italian" name="extraLanguages" value="italiano">
+                                <label for="italian" class="checkbox-label">🇮🇹 Italiano</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="japanese" name="extraLanguages" value="japonês">
+                                <label for="japanese" class="checkbox-label">🇯🇵 Japonês</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="korean" name="extraLanguages" value="coreano">
+                                <label for="korean" class="checkbox-label">🇰🇷 Coreano</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="mandarin" name="extraLanguages" value="mandarim">
+                                <label for="mandarin" class="checkbox-label">🇨🇳 Mandarim</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="arabic" name="extraLanguages" value="árabe">
+                                <label for="arabic" class="checkbox-label">🇸🇦 Árabe</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="russian" name="extraLanguages" value="russo">
+                                <label for="russian" class="checkbox-label">🇷🇺 Russo</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="hindi" name="extraLanguages" value="hindi">
+                                <label for="hindi" class="checkbox-label">🇮🇳 Hindi</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Passo 5: Resumo e Confirmação -->
+                <div class="step" id="step5">
+                    <div class="step-header">
+                        <div class="step-number">5</div>
+                        <h2 class="step-title">Resumo da Configuração</h2>
+                        <p class="step-subtitle">Revise todas as informações antes de gerar a empresa</p>
+                    </div>
+
+                    <div id="summaryContent">
+                        <!-- Conteúdo será preenchido dinamicamente -->
+                    </div>
+
+                    <div class="personas-count" id="personasCount">
+                        <!-- Contadores serão preenchidos dinamicamente -->
+                    </div>
+                </div>
+
+                <!-- Navegação -->
+                <div class="nav-buttons">
+                    <button type="button" class="btn btn-secondary" id="prevBtn" onclick="previousStep()" style="display: none;">
+                        ← Anterior
+                    </button>
+                    <div></div>
+                    <button type="button" class="btn btn-primary" id="nextBtn" onclick="nextStep()">
+                        Próximo →
+                    </button>
+                    <button type="submit" class="btn btn-primary" id="submitBtn" style="display: none;">
+                        🚀 Gerar Empresa
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let currentStep = 1;
+        const totalSteps = 5;
+
+        // Atualizar barra de progresso
+        function updateProgress() {
+            const progress = (currentStep / totalSteps) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+        }
+
+        // Mostrar step atual
+        function showStep(step) {
+            // Esconder todos os steps
+            document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+            
+            // Mostrar step atual
+            document.getElementById('step' + step).classList.add('active');
+            
+            // Atualizar botões de navegação
+            document.getElementById('prevBtn').style.display = step > 1 ? 'block' : 'none';
+            document.getElementById('nextBtn').style.display = step < totalSteps ? 'block' : 'none';
+            document.getElementById('submitBtn').style.display = step === totalSteps ? 'block' : 'none';
+            
+            // Atualizar progresso
+            updateProgress();
+            
+            // Se for o último step, gerar resumo
+            if (step === totalSteps) {
+                generateSummary();
+            }
+        }
+
+        // Próximo step
+        function nextStep() {
+            if (validateCurrentStep() && currentStep < totalSteps) {
+                currentStep++;
+                showStep(currentStep);
+            }
+        }
+
+        // Step anterior
+        function previousStep() {
+            if (currentStep > 1) {
+                currentStep--;
+                showStep(currentStep);
+            }
+        }
+
+        // Validar step atual
+        function validateCurrentStep() {
+            const step = document.getElementById('step' + currentStep);
+            const requiredFields = step.querySelectorAll('input[required], select[required]');
+            
+            for (let field of requiredFields) {
+                if (!field.value.trim()) {
+                    showAlert('Por favor, preencha todos os campos obrigatórios.', 'error');
+                    field.focus();
+                    return false;
+                }
+            }
+
+            // Validações específicas por step
+            if (currentStep === 1) {
+                const industry = document.querySelector('input[name="industry"]:checked');
+                if (!industry) {
+                    showAlert('Por favor, selecione uma indústria.', 'error');
+                    return false;
+                }
+            }
+
+            if (currentStep === 2) {
+                const nationality = document.querySelector('input[name="nationality"]:checked');
+                const ceoGender = document.querySelector('input[name="ceoGender"]:checked');
+                
+                if (!nationality) {
+                    showAlert('Por favor, selecione uma nacionalidade.', 'error');
+                    return false;
+                }
+                
+                if (!ceoGender) {
+                    showAlert('Por favor, selecione o gênero do CEO.', 'error');
+                    return false;
+                }
+            }
+
+            if (currentStep === 3) {
+                const specMen = parseInt(document.getElementById('specMen').value) || 0;
+                const specWomen = parseInt(document.getElementById('specWomen').value) || 0;
+                
+                if (specMen + specWomen !== 6) {
+                    showAlert('O total de especialistas deve ser exatamente 6.', 'error');
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        // Mostrar alerta
+        function showAlert(message, type) {
+            const alert = document.getElementById('alert');
+            alert.textContent = message;
+            alert.className = 'alert ' + type;
+            alert.style.display = 'block';
+            
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 5000);
+        }
+
+        // Gerar resumo
+        function generateSummary() {
+            const formData = new FormData(document.getElementById('companyForm'));
+            
+            // Coletar idiomas extras selecionados
+            const extraLanguages = [];
+            document.querySelectorAll('input[name="extraLanguages"]:checked').forEach(checkbox => {
+                extraLanguages.push(checkbox.value);
+            });
+
+            // Calcular totais
+            const execMen = parseInt(formData.get('execMen')) || 0;
+            const execWomen = parseInt(formData.get('execWomen')) || 0;
+            const assistMen = parseInt(formData.get('assistMen')) || 0;
+            const assistWomen = parseInt(formData.get('assistWomen')) || 0;
+            const specMen = parseInt(formData.get('specMen')) || 0;
+            const specWomen = parseInt(formData.get('specWomen')) || 0;
+
+            const totalPersonas = 1 + execMen + execWomen + assistMen + assistWomen + specMen + specWomen;
+
+            // Mapas para exibição
+            const industryMap = {
+                'tecnologia': '💻 Tecnologia e Software',
+                'financas': '💰 Finanças e Investimentos',
+                'saude': '🏥 Saúde e Biotecnologia',
+                'educacao': '🎓 Educação e Treinamento',
+                'ecommerce': '🛒 E-commerce e Retail',
+                'consultoria': '📊 Consultoria e Serviços'
+            };
+
+            const nationalityMap = {
+                'europeus': '🇪🇺 Europeus',
+                'latinos': '🌎 Latinos',
+                'asiaticos': '🌏 Asiáticos',
+                'oriente_medio': '🕌 Oriente Médio',
+                'balcas': '⛰️ Balcãs',
+                'nordicos': '❄️ Nórdicos'
+            };
+
+            // Gerar HTML do resumo
+            const summaryHTML = `
+                <div class="summary-card">
+                    <div class="summary-section">
+                        <h3>🏢 Informações da Empresa</h3>
+                        <p><strong>Nome:</strong> ${formData.get('companyName')}</p>
+                        <p><strong>Domínio:</strong> ${formData.get('companyDomain')}</p>
+                        <p><strong>Indústria:</strong> ${industryMap[formData.get('industry')]}</p>
+                        <p><strong>Descrição:</strong> ${formData.get('description') || 'Não informado'}</p>
+                        <p><strong>Público-alvo:</strong> ${formData.get('targetAudience') || 'Não informado'}</p>
+                    </div>
+                    
+                    <div class="summary-section">
+                        <h3>👥 Demografia</h3>
+                        <p><strong>Nacionalidade:</strong> ${nationalityMap[formData.get('nationality')]}</p>
+                        <p><strong>CEO:</strong> ${formData.get('ceoGender') === 'masculino' ? '👨 Homem' : '👩 Mulher'}</p>
+                        ${extraLanguages.length > 0 ? `<p><strong>Idiomas extras:</strong> ${extraLanguages.join(', ')}</p>` : ''}
+                    </div>
+                </div>
+            `;
+
+            // Gerar contadores de personas
+            const countersHTML = `
+                <div class="count-card">
+                    <div class="count-number">1</div>
+                    <div class="count-label">CEO</div>
+                </div>
+                <div class="count-card">
+                    <div class="count-number">${execMen + execWomen}</div>
+                    <div class="count-label">Executivos</div>
+                </div>
+                <div class="count-card">
+                    <div class="count-number">${assistMen + assistWomen}</div>
+                    <div class="count-label">Assistentes</div>
+                </div>
+                <div class="count-card">
+                    <div class="count-number">${specMen + specWomen}</div>
+                    <div class="count-label">Especialistas</div>
+                </div>
+                <div class="count-card" style="background: linear-gradient(45deg, #667eea, #764ba2); color: white;">
+                    <div class="count-number">${totalPersonas}</div>
+                    <div class="count-label">Total de Personas</div>
+                </div>
+            `;
+
+            document.getElementById('summaryContent').innerHTML = summaryHTML;
+            document.getElementById('personasCount').innerHTML = countersHTML;
+        }
+
+        // Submeter formulário
+        document.getElementById('companyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (!validateCurrentStep()) {
+                return;
+            }
+
+            // Coletar todos os dados
+            const formData = new FormData(this);
+            
+            // Coletar idiomas extras
+            const extraLanguages = [];
+            document.querySelectorAll('input[name="extraLanguages"]:checked').forEach(checkbox => {
+                extraLanguages.push(checkbox.value);
+            });
+
+            // Preparar dados para envio
+            const companyData = {
+                name: formData.get('companyName'),
+                domain: formData.get('companyDomain'),
+                industry: formData.get('industry'),
+                description: formData.get('description'),
+                targetAudience: formData.get('targetAudience'),
+                nationality: formData.get('nationality'),
+                ceoGender: formData.get('ceoGender'),
+                execMen: parseInt(formData.get('execMen')) || 0,
+                execWomen: parseInt(formData.get('execWomen')) || 0,
+                assistMen: parseInt(formData.get('assistMen')) || 0,
+                assistWomen: parseInt(formData.get('assistWomen')) || 0,
+                specMen: parseInt(formData.get('specMen')) || 0,
+                specWomen: parseInt(formData.get('specWomen')) || 0,
+                extraLanguages: extraLanguages
+            };
+
+            // Salvar configuração localmente (JSON)
+            const dataStr = JSON.stringify(companyData, null, 2);
+            const dataBlob = new Blob([dataStr], {type: 'application/json'});
+            
+            // Download do arquivo de configuração
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(dataBlob);
+            link.download = `${companyData.name.replace(/[^a-zA-Z0-9]/g, '_')}_config.json`;
+            link.click();
+
+            // Mostrar sucesso
+            showAlert('✅ Configuração gerada com sucesso! Use este arquivo JSON com o script Python para criar a empresa.', 'success');
+            
+            // Instruções
+            setTimeout(() => {
+                alert(`🎯 PRÓXIMOS PASSOS:
+
+1. O arquivo JSON foi baixado com sua configuração
+2. Execute no terminal:
+   python 06_advanced_company_setup.py
+
+3. Ou use o arquivo JSON diretamente no Virtual Company Generator
+
+4. Suas ${1 + companyData.execMen + companyData.execWomen + companyData.assistMen + companyData.assistWomen + companyData.specMen + companyData.specWomen} personas serão criadas automaticamente com biografias completas!`);
+            }, 2000);
+        });
+
+        // Inicializar
+        updateProgress();
+
+        // Auto-ajuste de especialistas
+        document.getElementById('specMen').addEventListener('change', function() {
+            const specMen = parseInt(this.value) || 0;
+            const specWomenField = document.getElementById('specWomen');
+            specWomenField.value = Math.max(0, 6 - specMen);
+        });
+
+        document.getElementById('specWomen').addEventListener('change', function() {
+            const specWomen = parseInt(this.value) || 0;
+            const specMenField = document.getElementById('specMen');
+            specMenField.value = Math.max(0, 6 - specWomen);
+        });
+    </script>
+</body>
+</html>

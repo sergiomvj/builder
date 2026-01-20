@@ -1,0 +1,36 @@
+{
+  "persona": {
+    "nome": "[Placeholder 8] Gerente de Dados e Analytics",
+    "nacionalidade": "asiaticos",
+    "genero": "feminino",
+    "cargo": "Gerente de Dados e Analytics",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Responsabilidades técnicas e desenvolvimento",
+    "competencias": "Habilidades técnicas avançadas",
+    "biografia": "Profissional experiente com sólida formação técnica",
+    "personalidade": {},
+    "experiencia_anos": 8,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=200&h=200&fit=crop&crop=face",
+    "estilo": "business",
+    "genero": "feminino",
+    "idade_aparente": "35-40",
+    "etnia": "asiática",
+    "pele_tom": "clara",
+    "olhos_cor": "castanhos escuros",
+    "cabelo_cor": "preto",
+    "cabelo_comprimento": "médio",
+    "tipo_fisico": "esguio",
+    "altura_estimada": "1.63m",
+    "expressao_facial": "confiante",
+    "estilo_vestimenta": "business casual",
+    "acessorios": "óculos finos",
+    "caracteristicas_distintivas": "cabelo liso"
+  },
+  "generated_at": "2025-12-03T16:27:24.255Z"
+}

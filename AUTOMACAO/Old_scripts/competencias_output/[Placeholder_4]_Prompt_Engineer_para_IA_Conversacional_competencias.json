@@ -1,0 +1,53 @@
+{
+  "persona_id": "2c36a928-4665-49a6-9a08-35e1501421cd",
+  "full_name": "[Placeholder 4] Prompt Engineer para IA Conversacional",
+  "role": "Prompt Engineer para IA Conversacional",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Engenharia de Prompts Avançada",
+    "Conhecimento em Modelos de Linguagem Grandes (LLMs)",
+    "Processamento de Linguagem Natural (NLP)",
+    "Programação em Python para automação de prompts",
+    "Integração de APIs de IA Conversacional"
+  ],
+  "competencias_comportamentais": [
+    "Criatividade e Inovação",
+    "Pensamento Analítico",
+    "Atenção aos Detalhes",
+    "Resolução de Problemas Complexos",
+    "Comunicação Eficaz"
+  ],
+  "ferramentas": [
+    "ChatGPT e modelos GPT",
+    "Claude AI",
+    "LangChain",
+    "Promptfoo e Jupyter Notebook"
+  ],
+  "tarefas_diarias": [
+    "Criar e testar prompts para IA conversacional",
+    "Avaliar e refinar respostas geradas pela IA",
+    "Colaborar com equipes de produto e desenvolvimento",
+    "Documentar e versionar bibliotecas de prompts"
+  ],
+  "tarefas_semanais": [
+    "Analisar métricas de performance de prompts",
+    "Otimizações iterativas em fluxos conversacionais",
+    "Reuniões de revisão com stakeholders"
+  ],
+  "tarefas_mensais": [
+    "Gerar relatórios de impacto e melhorias",
+    "Pesquisar novas técnicas de prompting",
+    "Treinar equipe em melhores práticas de IA"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Precisão das Respostas - 95%",
+    "KPI 2: Satisfação do Usuário (NPS) - 4.5/5",
+    "KPI 3: Redução de Tokens por Interação - 20%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Dominar técnicas avançadas como Chain-of-Thought e Few-Shot",
+    "Implementar sistemas de A/B testing para prompts",
+    "Liderar projeto de otimização de chatbots da LifewayUSA"
+  ],
+  "generated_at": "2025-12-02T17:57:33.215Z"
+}

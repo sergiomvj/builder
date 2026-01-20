@@ -1,0 +1,53 @@
+{
+  "persona_id": "2dba2aaf-dded-4ae5-b62a-45f5e22e07ab",
+  "full_name": "Michael Anderson",
+  "role": "Gerente de Vendas",
+  "empresa_id": "a2845f62-59e2-48b2-8f89-8bfc6c33193f",
+  "competencias_tecnicas": [
+    "Conhecimento em inteligência artificial",
+    "Experiência em vendas de tecnologia",
+    "Habilidade em negociação",
+    "Conhecimento em CRM",
+    "Experiência em gestão de equipe de vendas"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação eficaz",
+    "Capacidade de liderança",
+    "Resiliência",
+    "Orientação para resultados",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Salesforce",
+    "LinkedIn Sales Navigator",
+    "HubSpot",
+    "Microsoft Excel"
+  ],
+  "tarefas_diarias": [
+    "Elaborar estratégias de vendas",
+    "Acompanhar e analisar indicadores de performance da equipe",
+    "Realizar reuniões com a equipe de vendas",
+    "Prospectar novos clientes"
+  ],
+  "tarefas_semanais": [
+    "Analisar relatórios de vendas",
+    "Participar de treinamentos e capacitações",
+    "Atualizar o pipeline de vendas"
+  ],
+  "tarefas_mensais": [
+    "Definir metas de vendas",
+    "Realizar reuniões de feedback com a equipe",
+    "Participar de eventos e feiras do setor"
+  ],
+  "kpis": [
+    "Taxa de conversão de vendas: 30% - 35%",
+    "Faturamento mensal: $500.000 - $600.000",
+    "Número de novos clientes conquistados: 10 - 15"
+  ],
+  "objetivos_desenvolvimento": [
+    "Desenvolver habilidades em gestão de projetos",
+    "Aprimorar técnicas de negociação",
+    "Aumentar a rede de contatos no setor de tecnologia"
+  ],
+  "generated_at": "2025-12-04T21:41:02.570Z"
+}

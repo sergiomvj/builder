@@ -1,0 +1,37 @@
+{
+  "persona_id": "2cb4f3a0-54e5-4284-9a7d-867850a15b1d",
+  "full_name": "Fernanda Costa Oliveira",
+  "role": "CMO",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aumento de Leads em Redes Sociais",
+      "descricao": "Aumentar a geração de leads através das redes sociais em 20% até 01/06/2022",
+      "categoria": "performance",
+      "valor_alvo": 20,
+      "unidade_medida": "%",
+      "data_prazo": "2022-06-01",
+      "prioridade": 1,
+      "vinculada_kpi": "Aumento de Leads"
+    },
+    {
+      "titulo": "Participação em Workshop de Negociação",
+      "descricao": "Participar de um workshop sobre habilidades de negociação até 01/09/2022",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "workshop",
+      "data_prazo": "2022-09-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Melhoria das habilidades de liderança",
+      "descricao": "Realizar um curso de especialização em Marketing Digital até 01/12/2022",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "curso",
+      "data_prazo": "2022-12-01",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:36:44.704Z"
+}

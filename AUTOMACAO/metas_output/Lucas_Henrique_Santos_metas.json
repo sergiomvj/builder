@@ -1,0 +1,39 @@
+{
+  "persona_id": "ff4e3e8b-c3dc-491a-8798-83b766d1ad1b",
+  "full_name": "Lucas Henrique Santos",
+  "role": "Desenvolvedor Backend",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades em testes automatizados",
+      "descricao": "Realizar treinamento online de testes automatizados e aplicar os conhecimentos adquiridos em pelo menos 3 projetos internos",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 3,
+      "unidade_medida": "projetos",
+      "data_prazo": "2022-12-01",
+      "prioridade": 1,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Participar de cursos de segurança da informação",
+      "descricao": "Realizar pelo menos 2 cursos de segurança da informação reconhecidos internacionalmente e aplicar os conhecimentos em projetos da LifeWayUSA",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "cursos",
+      "data_prazo": "2022-10-01",
+      "prioridade": 2,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Contribuir ativamente para a evolução da plataforma LifeWayUSA",
+      "descricao": "Desenvolver e implementar pelo menos 3 novas funcionalidades que melhorem a experiência do usuário e a eficiência do sistema",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 3,
+      "unidade_medida": "funcionalidades",
+      "data_prazo": "2022-11-01",
+      "prioridade": 3,
+      "vinculada_kpi": "Entrega de novas funcionalidades - 100% no prazo"
+    }
+  ],
+  "generated_at": "2025-12-08T14:40:21.370Z"
+}

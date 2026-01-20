@@ -1,0 +1,53 @@
+{
+  "persona_id": "4e97230c-8795-4dc1-8f77-ace8cf64b976",
+  "full_name": "Ana Carolina Oliveira Santos",
+  "role": "Designer UI/UX",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em design de interfaces",
+    "Experiência em usabilidade e experiência do usuário",
+    "Domínio de ferramentas de design (Adobe XD, Sketch, Figma)",
+    "Conhecimento em design responsivo",
+    "Habilidades em prototipagem"
+  ],
+  "competencias_comportamentais": [
+    "Criatividade",
+    "Habilidade de comunicação",
+    "Trabalho em equipe",
+    "Resolução de problemas",
+    "Proatividade"
+  ],
+  "ferramentas": [
+    "Adobe XD",
+    "Sketch",
+    "Figma",
+    "InVision"
+  ],
+  "tarefas_diarias": [
+    "Realizar pesquisas de usuários",
+    "Criar wireframes e protótipos",
+    "Realizar testes de usabilidade",
+    "Colaborar com a equipe de desenvolvimento"
+  ],
+  "tarefas_semanais": [
+    "Participar de reuniões de alinhamento",
+    "Iterar designs com base em feedback",
+    "Acompanhar métricas de uso da plataforma"
+  ],
+  "tarefas_mensais": [
+    "Realizar análises de tendências de design",
+    "Participar de workshops de capacitação",
+    "Propor melhorias na experiência do usuário"
+  ],
+  "kpis": [
+    "Taxa de conversão de novos usuários - 20%",
+    "Tempo médio de interação com a plataforma - 3 minutos",
+    "Taxa de rejeição de páginas - 15%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em design responsivo",
+    "Participar de cursos de UX/UI design",
+    "Contribuir para o aumento da satisfação dos usuários"
+  ],
+  "generated_at": "2025-12-08T14:37:23.513Z"
+}

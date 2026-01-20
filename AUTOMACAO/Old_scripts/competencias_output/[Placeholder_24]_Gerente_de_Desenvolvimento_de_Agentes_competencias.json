@@ -1,0 +1,57 @@
+{
+  "persona_id": "998369c0-46d1-4d6b-a67c-017f70584bea",
+  "full_name": "[Placeholder 24] Gerente de Desenvolvimento de Agentes",
+  "role": "Gerente de Desenvolvimento de Agentes",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Desenvolvimento e configuração de agentes autônomos em IA",
+    "Gerenciamento de pipelines CI/CD para deployment de agentes",
+    "Integração de agentes com APIs e sistemas empresariais",
+    "Análise de performance e otimização de agentes inteligentes",
+    "Proficiência em Python e frameworks como LangChain ou AutoGen"
+  ],
+  "competencias_comportamentais": [
+    "Liderança de equipes multidisciplinares",
+    "Comunicação eficaz com stakeholders",
+    "Resolução estratégica de problemas complexos",
+    "Gestão de mudanças e adaptação tecnológica",
+    "Fomento à inovação e colaboração em equipe"
+  ],
+  "ferramentas": [
+    "Jira para gerenciamento de projetos",
+    "GitHub para controle de versionamento",
+    "Docker e Kubernetes para containerização",
+    "AWS ou Azure para cloud deployment",
+    "Prometheus e Grafana para monitoramento"
+  ],
+  "tarefas_diarias": [
+    "Realizar stand-up diário com equipe (15 minutos, cobertura 100%)",
+    "Revisar 5-10 pull requests no GitHub",
+    "Monitorar métricas de performance de agentes (alerta em <5 min)",
+    "Responder comunicações urgentes (máx. 2 horas/dia)",
+    "Acompanhar progresso de tarefas no Jira (atualização diária)"
+  ],
+  "tarefas_semanais": [
+    "Conduzir code review semanal com equipe",
+    "Planejar e priorizar sprint no Jira",
+    "Reunião de alinhamento com stakeholders",
+    "Sessão de treinamento técnico para equipe"
+  ],
+  "tarefas_mensais": [
+    "Gerar relatório de performance de agentes e equipe",
+    "Avaliar e ajustar KPIs com base em dados",
+    "Planejamento estratégico para o próximo mês"
+  ],
+  "kpis": [
+    "Taxa de Sucesso dos Agentes - 95%",
+    "Tempo Médio de Desenvolvimento de Agente - 10 dias",
+    "Satisfação da Equipe (NPS) - 80%",
+    "Número de Agentes Deployados - 8 por mês"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação em LangChain ou frameworks de agentes IA",
+    "Aprimorar liderança com curso de gestão ágil",
+    "Implementar automação avançada em 2 pipelines CI/CD"
+  ],
+  "generated_at": "2025-12-01T16:22:08.556Z"
+}

@@ -1,0 +1,53 @@
+{
+  "persona_id": "b2d243f5-60ca-4664-a995-b3851cad06f5",
+  "full_name": "Michael Harrison",
+  "role": "Diretor de Produto",
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "competencias_tecnicas": [
+    "Inteligência Artificial",
+    "Machine Learning",
+    "Desenvolvimento de Software",
+    "Gestão de Produto",
+    "Visão Estratégica"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação Efetiva",
+    "Trabalho em Equipe",
+    "Resolução de Problemas",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Jira",
+    "Slack",
+    "Google Analytics",
+    "Tableau"
+  ],
+  "tarefas_diarias": [
+    "Reunião com equipe de desenvolvimento",
+    "Análise de métricas de produto",
+    "Validação de requisitos de produto",
+    "Acompanhamento do roadmap de desenvolvimento"
+  ],
+  "tarefas_semanais": [
+    "Elaboração de planos de lançamento de novas funcionalidades",
+    "Feedbacks individuais para membros da equipe",
+    "Participação em reuniões estratégicas"
+  ],
+  "tarefas_mensais": [
+    "Apresentação de resultados para a diretoria",
+    "Análise de mercado e concorrência",
+    "Definição de OKRs para o próximo mês"
+  ],
+  "kpis": [
+    "Satisfação do cliente - 90%",
+    "Aumento de receita - 20%",
+    "NPS - 9"
+  ],
+  "objetivos_desenvolvimento": [
+    "Desenvolver habilidades de negociação",
+    "Aprimorar conhecimentos em gestão de projetos",
+    "Participar de cursos de liderança"
+  ],
+  "generated_at": "2025-12-05T20:11:40.804Z"
+}

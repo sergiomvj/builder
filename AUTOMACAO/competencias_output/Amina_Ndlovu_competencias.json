@@ -1,0 +1,53 @@
+{
+  "persona_id": "3d4bf60f-0fa8-4b8a-98ae-4fa7ceac70a2",
+  "full_name": "Amina Ndlovu",
+  "role": "CEO / CTO",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "Arquitetura de Sistemas de IA Autônoma",
+    "Machine Learning e Deep Learning",
+    "Desenvolvimento de Agentes Virtuais Escaláveis",
+    "Engenharia de Cloud Computing (AWS, GCP)",
+    "Cibersegurança para Ecossistemas Cognitivos"
+  ],
+  "competencias_comportamentais": [
+    "Liderança Visionária e Inspiradora",
+    "Pensamento Estratégico Inovador",
+    "Comunicação Eficaz e Persuasiva",
+    "Resolução de Problemas Complexos",
+    "Adaptação e Aprendizado Contínuo"
+  ],
+  "ferramentas": [
+    "Python, TensorFlow e PyTorch",
+    "Kubernetes e Docker",
+    "AWS e Google Cloud Platform",
+    "Jira e GitHub"
+  ],
+  "tarefas_diarias": [
+    "Revisar progresso de desenvolvimento de agentes",
+    "Reuniões com equipe executiva e técnica",
+    "Monitorar KPIs operacionais em tempo real",
+    "Interagir com stakeholders e clientes chave"
+  ],
+  "tarefas_semanais": [
+    "Planejamento de sprints e priorização de features",
+    "Análise de performance de agentes virtuais",
+    "Mentoria e feedback para equipes de R&D"
+  ],
+  "tarefas_mensais": [
+    "Relatórios estratégicos para investidores",
+    "Revisão e ajuste de roadmap de produto",
+    "Avaliações de performance da equipe"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Adoção de Agentes - 25% QoQ",
+    "KPI 2: Eficiência Operacional dos Agentes - 98% sucesso",
+    "KPI 3: Receita Recorrente Anual - $2M ARR"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar expertise em IA Generativa Multimodal",
+    "Expandir rede de parcerias estratégicas globais",
+    "Obter certificação em Governança de IA Ética"
+  ],
+  "generated_at": "2025-12-08T22:20:54.549Z"
+}

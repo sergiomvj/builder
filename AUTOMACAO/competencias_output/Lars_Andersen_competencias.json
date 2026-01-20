@@ -1,0 +1,53 @@
+{
+  "persona_id": "99963bf8-57e0-4dd6-8777-6fd6bf29acf8",
+  "full_name": "Lars Andersen",
+  "role": "Diretor Comercial",
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "competencias_tecnicas": [
+    "Conhecimento em inteligência artificial",
+    "Experiência em vendas no setor de tecnologia",
+    "Conhecimento em automação de processos",
+    "Habilidades de negociação",
+    "Conhecimento em gestão de equipe"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação eficaz",
+    "Liderança",
+    "Resiliência",
+    "Orientação para resultados",
+    "Trabalho em equipe"
+  ],
+  "ferramentas": [
+    "CRM",
+    "Plataformas de automação de vendas",
+    "Ferramentas de análise de dados",
+    "Ferramentas de comunicação online"
+  ],
+  "tarefas_diarias": [
+    "Definição de estratégias de vendas",
+    "Gestão da equipe comercial",
+    "Análise de resultados de vendas",
+    "Atendimento a clientes estratégicos"
+  ],
+  "tarefas_semanais": [
+    "Reuniões de acompanhamento com a equipe",
+    "Elaboração de relatórios de vendas",
+    "Atualização de metas de vendas"
+  ],
+  "tarefas_mensais": [
+    "Planejamento de ações de marketing e vendas",
+    "Avaliação de desempenho da equipe comercial",
+    "Participação em eventos do setor"
+  ],
+  "kpis": [
+    "Aumento de X% nas vendas no trimestre - 20%",
+    "Taxa de conversão de leads em vendas - 30%",
+    "Aumento da satisfação do cliente - 10%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Desenvolver habilidades de gestão de times multidisciplinares",
+    "Aprimorar técnicas de negociação com clientes corporativos",
+    "Aprofundar conhecimentos em inteligência artificial aplicada a vendas"
+  ],
+  "generated_at": "2025-12-05T20:11:56.987Z"
+}

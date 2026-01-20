@@ -1,0 +1,39 @@
+{
+  "persona_id": "a1e679d0-0a09-4a89-8f9e-30c4daac82a3",
+  "full_name": "Rafael Oliveira Santos",
+  "role": "CTO",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades de liderança",
+      "descricao": "Participar de um curso de liderança com duração de 3 meses",
+      "categoria": "desenvolvimento",
+      "valor_alvo": null,
+      "unidade_medida": "curso",
+      "data_prazo": "2022-09-01",
+      "prioridade": 1,
+      "vinculada_kpi": null
+    },
+    {
+      "titulo": "Obter certificação em segurança da informação",
+      "descricao": "Estudar e obter a certificação CISSP até o final do ano",
+      "categoria": "desenvolvimento",
+      "valor_alvo": null,
+      "unidade_medida": "certificação",
+      "data_prazo": "2022-12-31",
+      "prioridade": 2,
+      "vinculada_kpi": null
+    },
+    {
+      "titulo": "Expandir rede de contatos na área de tecnologia",
+      "descricao": "Participar de pelo menos 3 eventos de tecnologia e networking nos próximos 6 meses",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 3,
+      "unidade_medida": "eventos",
+      "data_prazo": "2022-12-01",
+      "prioridade": 3,
+      "vinculada_kpi": null
+    }
+  ],
+  "generated_at": "2025-12-08T14:37:05.209Z"
+}

@@ -1,0 +1,53 @@
+{
+  "persona_id": "0db7e193-c7fd-482d-94b6-9f0ac0b45cee",
+  "full_name": "Gabriel Santos Silva",
+  "role": "Analista de Dados",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Análise de dados",
+    "Estatística",
+    "Machine Learning",
+    "SQL",
+    "Python"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação eficaz",
+    "Trabalho em equipe",
+    "Resolução de problemas",
+    "Pensamento analítico",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Tableau",
+    "Power BI",
+    "Excel",
+    "Google Analytics"
+  ],
+  "tarefas_diarias": [
+    "Análise de dados",
+    "Criação de relatórios",
+    "Extração de dados",
+    "Limpeza de dados"
+  ],
+  "tarefas_semanais": [
+    "Apresentação de resultados",
+    "Atualização de dashboards",
+    "Desenvolvimento de modelos preditivos"
+  ],
+  "tarefas_mensais": [
+    "Revisão de processos",
+    "Implementação de melhorias nos fluxos de dados",
+    "Participação em reuniões estratégicas"
+  ],
+  "kpis": [
+    "Precisão na análise de dados - 95%",
+    "Tempo médio de criação de relatórios - 2 horas",
+    "Taxa de acerto dos modelos preditivos - 85%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em Machine Learning",
+    "Obter certificação em Análise de Dados",
+    "Melhorar habilidades de comunicação com stakeholders"
+  ],
+  "generated_at": "2025-12-08T14:37:34.478Z"
+}

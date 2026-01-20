@@ -1,0 +1,191 @@
+{
+  "name": "Gabriel (Analista Financeiro) - Analisar relatórios financeiros",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1,
+      "notes": "Iniciar manualmente quando os relatórios financeiros estiverem disponíveis"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "select",
+        "table": "financial_reports",
+        "filters": {
+          "month": "CURRENT_MONTH"
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Buscar relatórios financeiros do mês atual",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_LIFEWAYUSA7647",
+          "name": "Supabase LIFEWAYUSA7647"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "range": "A1:Z100"
+      },
+      "typeVersion": 1,
+      "notes": "Ler dados financeiros adicionais do Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_LIFEWAYUSA7647",
+          "name": "Google Sheets LIFEWAYUSA7647"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(report => ({ ...report, analysis: `Análise preliminar: ${report.value > 1000 ? 'Bom desempenho' : 'Desempenho abaixo do esperado'}` }));"
+      },
+      "typeVersion": 1,
+      "notes": "Analisar dados financeiros e adicionar interpretação básica"
+    },
+    {
+      "id": "5",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "finance_team@example.com",
+        "subject": "Relatório Financeiro Analisado",
+        "message": "Os relatórios financeiros foram analisados. Veja os detalhes anexos."
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email com análise preliminar para a equipe financeira",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_LIFEWAYUSA7647",
+          "name": "Gmail LIFEWAYUSA7647"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Gabriel (Analista Financeiro) - Analisar relatórios financeiros\nEmpresa: LifeWayUSA\nPersona: Gabriel Santos Oliveira\nTarefa: Analisar relatórios financeiros\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_LIFEWAYUSA7647",
+          "name": "Slack LIFEWAYUSA7647"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-12-08T16:56:45.835Z",
+  "updatedAt": "2025-12-08T16:56:45.835Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+    "empresa_codigo": "LIFEWAYUSA7647",
+    "persona_id": "6ec815c0-57af-4d0a-91a2-22c8eb8c6d8e",
+    "persona_nome": "Gabriel Santos Oliveira",
+    "task_title": "Analisar relatórios financeiros",
+    "opportunity_id": "82dd1e7f-c868-413b-b591-ac1a44ec9c6d",
+    "automation_score": 45,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-12-08T16:56:45.835Z"
+  }
+}

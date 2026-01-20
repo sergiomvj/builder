@@ -1,0 +1,36 @@
+{
+  "persona_id": "0d1d4ad3-562e-4f8c-80d4-63b6a585c8d4",
+  "full_name": "Roberto Almeida Santos",
+  "role": "CEO",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades de liderança",
+      "descricao": "Participar de um curso de liderança executiva de 6 meses",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "horas",
+      "data_prazo": "2026-06-01",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Expandir conhecimento em tecnologia",
+      "descricao": "Realizar 3 cursos online sobre inovação tecnológica",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 3,
+      "unidade_medida": "cursos",
+      "data_prazo": "2026-06-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Desenvolver estratégias de crescimento para a empresa",
+      "descricao": "Participar de um workshop de planejamento estratégico",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "%",
+      "data_prazo": "2026-06-01",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:42:55.687Z"
+}

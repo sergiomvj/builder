@@ -1,0 +1,39 @@
+{
+  "persona_id": "c6bd2a41-15d0-4c8c-8374-3fbbba518414",
+  "full_name": "Ana Carolina Santos Oliveira",
+  "role": "Gerente de Conteúdo",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades em marketing de influência",
+      "descricao": "Participar de 2 cursos online sobre marketing de influência e aplicar os conhecimentos adquiridos em pelo menos 3 campanhas de influenciadores durante os próximos 6 meses.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "cursos",
+      "data_prazo": "2022-12-01",
+      "prioridade": 1,
+      "vinculada_kpi": null
+    },
+    {
+      "titulo": "Expandir conhecimento em estratégias de inbound marketing",
+      "descricao": "Realizar a leitura de 4 livros sobre inbound marketing e apresentar um workshop interno para a equipe de marketing sobre as principais estratégias aprendidas até o final do próximo trimestre.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 4,
+      "unidade_medida": "livros",
+      "data_prazo": "2022-09-01",
+      "prioridade": 2,
+      "vinculada_kpi": null
+    },
+    {
+      "titulo": "Desenvolver habilidades de gestão de crise",
+      "descricao": "Participar de um treinamento prático de gestão de crises e liderar a resolução de pelo menos 2 crises de reputação da empresa com sucesso nos próximos 3 meses.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "crises",
+      "data_prazo": "2022-03-01",
+      "prioridade": 3,
+      "vinculada_kpi": null
+    }
+  ],
+  "generated_at": "2025-12-08T14:39:24.349Z"
+}

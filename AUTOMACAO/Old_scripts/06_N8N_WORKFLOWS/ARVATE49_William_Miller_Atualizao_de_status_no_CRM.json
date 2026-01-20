@@ -1,0 +1,186 @@
+{
+  "name": "William (SDR Analst) - Atualização de status no CRM",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 18 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 18h para atualizar os status dos leads no CRM baseado nas interações do dia."
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "table": "interactions",
+        "filters": {
+          "date": "TODAY",
+          "status": "pending"
+        },
+        "operation": "select"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar interações do dia com status pendente."
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(interaction => ({ ...interaction, new_status: determineStatus(interaction.type) }));"
+      },
+      "typeVersion": 1,
+      "notes": "Determinar novo status baseado no tipo de interação."
+    },
+    {
+      "id": "4",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "set": {
+          "status": "{{ $json.new_status }}"
+        },
+        "table": "leads",
+        "operation": "update"
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar status do lead no CRM."
+    },
+    {
+      "id": "5",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "to": "{{ $json.sales_rep_email }}",
+        "message": "O status do lead {{ $json.lead_name }} foi atualizado para {{ $json.new_status }}.",
+        "subject": "Atualização de Status do Lead"
+      },
+      "typeVersion": 1,
+      "notes": "Notificar representante de vendas sobre a atualização."
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: William (SDR Analst) - Atualização de status no CRM\nEmpresa: ARVA Tech Solutions\nPersona: William Miller\nTarefa: Atualização de status no CRM\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:11.524Z",
+  "updatedAt": "2025-11-28T17:05:11.524Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "72e1bfc8-f618-40d2-9614-4cecfbdfe73d",
+    "persona_nome": "William Miller",
+    "task_id": "cb6d2168-084c-4fa4-8594-d7b9a42980b1",
+    "task_title": "Atualização de status no CRM",
+    "opportunity_id": "9069f526-54ba-4b13-843e-3d6e6b9621eb",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:11.524Z"
+  }
+}

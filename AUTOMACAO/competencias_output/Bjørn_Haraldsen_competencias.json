@@ -1,0 +1,53 @@
+{
+  "persona_id": "5d4fab66-0ca8-4b56-96d0-2bd91fac2524",
+  "full_name": "Bjørn Haraldsen",
+  "role": "CEO / CTO",
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "competencias_tecnicas": [
+    "Inteligência Artificial",
+    "Machine Learning",
+    "Visão Computacional",
+    "Processamento de Linguagem Natural",
+    "Arquitetura de Software"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Resolução de problemas",
+    "Trabalho em equipe",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Python",
+    "TensorFlow",
+    "OpenCV",
+    "SpaCy"
+  ],
+  "tarefas_diarias": [
+    "Gestão de equipe",
+    "Desenvolvimento de novos agentes virtuais",
+    "Definição de estratégias de crescimento",
+    "Monitoramento de desempenho"
+  ],
+  "tarefas_semanais": [
+    "Reuniões de alinhamento com a equipe",
+    "Feedback individual aos colaboradores",
+    "Análise de resultados"
+  ],
+  "tarefas_mensais": [
+    "Planejamento de novos projetos",
+    "Acompanhamento de indicadores de desempenho",
+    "Avaliação de necessidades de treinamento"
+  ],
+  "kpis": [
+    "Taxa de precisão dos agentes - 90%",
+    "Tempo médio de resposta - 2 segundos",
+    "Taxa de satisfação dos clientes - 95%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprofundar conhecimentos em Deep Learning",
+    "Desenvolver habilidades de mentoring",
+    "Ampliar rede de contatos no setor de tecnologia"
+  ],
+  "generated_at": "2025-12-05T20:11:33.063Z"
+}

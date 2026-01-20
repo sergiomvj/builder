@@ -1,0 +1,225 @@
+{
+  "name": "Ashley (CFO) - Validação de Despesas",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 9h para iniciar a revisão das despesas"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "range": "Despesas!A:D"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar despesas reportadas do dia anterior",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(item => ({ ...item.json, status: item.json.valor <= 1000 ? 'Aprovado' : 'Pendente' }));"
+      },
+      "typeVersion": 1,
+      "notes": "Aprovar automaticamente despesas abaixo de R$1000"
+    },
+    {
+      "id": "4",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "to": "{{ $json.email_responsavel }}",
+        "message": "Sua despesa de {{ $json.valor }} está pendente de aprovação. Por favor, revise.",
+        "subject": "Despesa Pendente de Aprovação"
+      },
+      "typeVersion": 1,
+      "notes": "Notificar responsável sobre despesas pendentes"
+    },
+    {
+      "id": "5",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "operation": "update",
+        "range": "Despesas!E{{ $json.row }}"
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar status da despesa na planilha",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Notify",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#financeiro",
+        "text": "Validação de despesas concluída para o dia."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe financeira sobre conclusão da validação",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1560,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Ashley (CFO) - Validação de Despesas\nEmpresa: ARVA Tech Solutions\nPersona: Ashley Garcia\nTarefa: Validação de Despesas\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5": {
+      "main": [
+        [
+          {
+            "node": "6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "7"
+  },
+  "createdAt": "2025-11-28T17:05:36.273Z",
+  "updatedAt": "2025-11-28T17:05:36.273Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "a89ce124-58f3-45d1-a7d4-bb245a35884b",
+    "persona_nome": "Ashley Garcia",
+    "task_id": "11b1c077-c116-4e13-8fdc-08a6b23a8090",
+    "task_title": "Validação de Despesas",
+    "opportunity_id": "719128c6-1f9c-41c7-8ac4-fbaf0f147948",
+    "automation_score": 60,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:36.273Z"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "name": "Ashley (CFO) - Revisão Diária de Fluxo de Caixa",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 9h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "url": "https://api.financial-management-system.com/cashflow",
+        "method": "GET",
+        "responseFormat": "json",
+        "headers": {
+          "Authorization": "Bearer YOUR_API_TOKEN"
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Buscar dados de fluxo de caixa do dia anterior"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(data => ({ ...data, status: data.balance >= 0 ? 'Healthy' : 'Alert' }));"
+      },
+      "typeVersion": 1,
+      "notes": "Avaliar saúde financeira baseada no saldo"
+    },
+    {
+      "id": "4",
+      "name": "Send Message",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "finance-team",
+        "text": "Revisão Diária de Fluxo de Caixa: {{ $json.status }}. Entradas: {{ $json.income }}, Saídas: {{ $json.expense }}, Saldo: {{ $json.balance }}"
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe financeira no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "to": "finance@arvatech.com",
+        "body": "Status: {{ $json.status }}. Detalhes: Entradas: {{ $json.income }}, Saídas: {{ $json.expense }}, Saldo: {{ $json.balance }}.",
+        "subject": "Relatório Diário de Fluxo de Caixa"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email detalhado para a equipe financeira"
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Ashley (CFO) - Revisão Diária de Fluxo de Caixa\nEmpresa: ARVA Tech Solutions\nPersona: Ashley Garcia\nTarefa: Revisão Diária de Fluxo de Caixa\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:10.886Z",
+  "updatedAt": "2025-11-28T17:05:10.886Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "a89ce124-58f3-45d1-a7d4-bb245a35884b",
+    "persona_nome": "Ashley Garcia",
+    "task_id": "7e420c9b-1e6a-4c48-a045-458948303471",
+    "task_title": "Revisão Diária de Fluxo de Caixa",
+    "opportunity_id": "b2635498-1aaa-4d0f-9ada-0e0043af18ed",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:10.886Z"
+  }
+}

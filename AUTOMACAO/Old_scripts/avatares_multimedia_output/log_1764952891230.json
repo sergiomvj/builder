@@ -1,0 +1,188 @@
+{
+  "empresa": "ARVA Tech Solutions",
+  "service": "fal",
+  "style": "professional",
+  "timestamp": "2025-12-05T16:41:31.230Z",
+  "results": [
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a851ab0/yYfxq_J_m3Kux7hyi2ynX_091358cc83724aff9f1678d9b7448bf4.jpg",
+      "prompt": "professional headshot portrait of a woman, adult professional aged 28-32, caucasiano ethnicity, médio, castanho claro longo hair, verdes eyes, clara skin tone, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "25a1a070-95c2-45d5-9951-add2990510c5"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 3155031624,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a851ab1/Q-gIzbHgccRbJQs4PtB4R_ce4cf20a29a84516a8a2705dfd56bde0.jpg",
+      "prompt": "professional headshot portrait of a woman, adult professional aged 35-40, caucasiano ethnicity, magro, loiro médio hair, azuis eyes, clara skin tone, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "698a8eb6-2c7c-4758-850c-8673e38a4d63"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 1327863653,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a851ab1/_yvy-kApYiYBFzA84NAJ7_a11e4a844a3f494b85d670ec14cf1ac1.jpg",
+      "prompt": "professional headshot portrait of a man, adult professional aged 30-35, caucasiano ethnicity, atlético, castanho claro curto hair, azuis eyes, morena clara skin tone, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "c02e746b-eae6-4b3a-b405-2711652e6a69"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 2903941213,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a851ab2/lYNXKSpUwizSNjFkIU3Zb_072d44d07b634230ae58ec820d05992d.jpg",
+      "prompt": "professional headshot portrait of a man, adult professional aged 45-50, caucasiano ethnicity, atlético, grisalho curto hair, azuis eyes, morena clara skin tone, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "d64c834e-78bf-4560-83a7-e4b7d7dabe81"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 2563006119,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a851ab3/Y201YtUMbMtLgfr14z_H__c4bf8f83d7ba476ab17d17f9b12ea88c.jpg",
+      "prompt": "professional headshot portrait of a man, adult professional aged 35-40, caucasiano ethnicity, atlético, loiro escuro curto hair, azuis eyes, clara skin tone, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "2dba2aaf-dded-4ae5-b62a-45f5e22e07ab"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 1691884374,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a851ab4/G_ay6MI4g5IK447-4Ms2K_7ee576c4297142019109371190aa28b2.jpg",
+      "prompt": "professional headshot portrait of a woman, adult professional aged 28-32, caucasiano ethnicity, magro, loiro médio hair, azuis eyes, clara skin tone, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "76f4421e-4918-4eab-b67f-34ec44e84385"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 2137837089,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a851ab5/6Nzs34KzzDeuk-ExwSE7P_af8f8cf9d7734ecaa1982ad25ca563d0.jpg",
+      "prompt": "professional headshot portrait of a man, adult professional aged 40-45, caucasiano ethnicity, atlético, castanho escuro curto hair, azuis eyes, branca skin tone, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "8e0bc076-393f-4501-97e0-4fa548b00add"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 3069662662,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a851ab6/xC_3LZXkx-a_wkzsV6QjS_aa4e86e0c1304153bdef10e4e82a738e.jpg",
+      "prompt": "professional headshot portrait of a man, adult professional aged 22-25, caucasiano ethnicity, normal, castanho claro curto hair, azuis eyes, branca skin tone, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "8dec1236-54f2-4a3c-9b96-8f0a2e35321c"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 2498529249,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a851ab6/elxGYvG4E4BBpTQFzdax4_a96187eebbb84803b7234b91354e46ba.jpg",
+      "prompt": "professional headshot portrait of a man, adult professional aged 45-50, caucasiano ethnicity, atlético, grisalho curto hair, azuis eyes, clara skin tone, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "d1f3e279-4bf8-4dc0-8c99-51835314b191"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 143453645,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a851ab7/Qwn_idJXS8gftInktIXaG_8e04013a566645aaabd32d4172db079d.jpg",
+      "prompt": "professional headshot portrait of a woman, adult professional aged 35-40, caucasiano ethnicity, magro, loiro escuro médio hair, azuis eyes, clara skin tone, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "13eb3c7d-2a12-4f1e-bb21-9acdf0967ace"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 3022041653,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a851ab8/7syvqnbrQBiouxaM0kbeV_1dbfd34459af4a038172b81a8dc83168.jpg",
+      "prompt": "professional headshot portrait of a man, adult professional aged 35-40, caucasiano ethnicity, médio, castanho curto hair, azuis eyes, clara skin tone, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "fa1841d3-65b6-4858-b47b-687cb83072df"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 974201747,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a851ab9/I5ytN6pUU66BtGvg3MY_o_b5b00691d4954070a1b1f7890ee2bd72.jpg",
+      "prompt": "professional headshot portrait of a man, adult professional aged 24-26, caucasiano ethnicity, normal, castanho claro curto hair, verdes eyes, clara skin tone, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "f5e86157-2b18-4801-ab6b-87d2d0af37d2"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 578416840,
+        "inference_steps": 28
+      }
+    }
+  ]
+}

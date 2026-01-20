@@ -1,0 +1,55 @@
+{
+  "persona_id": "6eac018e-75a7-4de8-ab7e-00f4480ed658",
+  "full_name": "Dmitri Ivanovich Volkov",
+  "role": "Gerente de Marketing",
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "competencias_tecnicas": [
+    "Conhecimento em inteligência artificial",
+    "Experiência em marketing digital",
+    "Gestão de projetos de tecnologia",
+    "Análise de dados",
+    "Conhecimento em desenvolvimento de software"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Capacidade de adaptação",
+    "Pensamento estratégico",
+    "Trabalho em equipe"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "HubSpot",
+    "Tableau",
+    "Python",
+    "CRM"
+  ],
+  "tarefas_diarias": [
+    "Elaborar estratégias de marketing",
+    "Analisar métricas de desempenho",
+    "Coordenar equipe de marketing",
+    "Criar campanhas de divulgação",
+    "Monitorar concorrência"
+  ],
+  "tarefas_semanais": [
+    "Realizar reuniões de acompanhamento",
+    "Analisar resultados das campanhas",
+    "Atualizar o planejamento estratégico"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatórios de desempenho",
+    "Planejar novas estratégias de marketing",
+    "Participar de eventos do setor"
+  ],
+  "kpis": [
+    "Aumento de leads qualificados - 20%",
+    "Taxa de conversão de vendas - 15%",
+    "Retorno sobre investimento em marketing - 10x"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar conhecimentos em inteligência artificial",
+    "Desenvolver habilidades de liderança",
+    "Melhorar a capacidade analítica"
+  ],
+  "generated_at": "2025-12-05T20:12:21.798Z"
+}

@@ -1,0 +1,29 @@
+{
+  "empresa": {
+    "id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+    "nome": "ARVA Tech Solutions",
+    "industria": "tecnologia"
+  },
+  "estrutura_gerada": {
+    "cargos_necessarios": [
+      "CEO / CTO",
+      "Diretor de Produto",
+      "Diretor de Engenharia",
+      "Diretor Comercial",
+      "Gerente de Produto",
+      "Gerente de Desenvolvimento",
+      "Gerente de Marketing",
+      "Gerente de Vendas",
+      "Product Manager",
+      "Desenvolvedor Senior Full-Stack",
+      "UX/UI Designer",
+      "Analista de Marketing Digital",
+      "Especialista em Vendas",
+      "Desenvolvedor Pleno",
+      "Analista de QA",
+      "Assistente de Marketing"
+    ]
+  },
+  "placeholders_criados": 16,
+  "timestamp": "2025-12-05T19:10:57.184Z"
+}

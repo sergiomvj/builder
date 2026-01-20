@@ -1,0 +1,53 @@
+{
+  "persona_id": "7d31351f-ba43-448e-a6e1-58cdff7ce97b",
+  "full_name": "Gabriela Santos Almeida",
+  "role": "Especialista em Marketing Digital",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em SEO",
+    "Experiência em Google Analytics",
+    "Domínio em gestão de redes sociais",
+    "Conhecimento em marketing de conteúdo",
+    "Habilidade em e-mail marketing"
+  ],
+  "competencias_comportamentais": [
+    "Proatividade",
+    "Criatividade",
+    "Boa comunicação",
+    "Capacidade de análise",
+    "Gestão do tempo"
+  ],
+  "ferramentas": [
+    "Google Ads",
+    "Facebook Ads",
+    "RD Station",
+    "Canva"
+  ],
+  "tarefas_diarias": [
+    "Elaborar campanhas de marketing digital",
+    "Analisar métricas de performance",
+    "Produzir conteúdo para redes sociais",
+    "Interagir com seguidores"
+  ],
+  "tarefas_semanais": [
+    "Realizar testes A/B em anúncios",
+    "Atualizar o blog da empresa",
+    "Criar relatórios de desempenho"
+  ],
+  "tarefas_mensais": [
+    "Planejar calendário editorial",
+    "Realizar pesquisa de mercado",
+    "Participar de reuniões de equipe"
+  ],
+  "kpis": [
+    "Aumento de tráfego orgânico em 30% - 3 meses",
+    "Taxa de conversão de leads em 20% - 6 meses",
+    "Crescimento de seguidores em 15% - 1 ano"
+  ],
+  "objetivos_desenvolvimento": [
+    "Participar de curso de SEO avançado",
+    "Desenvolver habilidades em copywriting",
+    "Aprimorar conhecimento em marketing de influência"
+  ],
+  "generated_at": "2025-12-08T14:41:34.847Z"
+}

@@ -1,0 +1,112 @@
+{
+  "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+  "empresa_nome": "ARVA Tech Solutions",
+  "analyzed_at": "2025-11-28T15:33:10.050Z",
+  "llm_used": "GPT-4-Turbo",
+  "llm_model": "gpt-4-turbo-preview",
+  "personas_analyzed": 1,
+  "total_tasks": 14,
+  "tasks_analyzed": 14,
+  "tasks_automatable": 10,
+  "tasks_high_score": 0,
+  "analyses": [
+    {
+      "task_title": "Verificar e-mails de atualizações financeiras",
+      "automation_score": 65,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Atualização diária de fluxo de caixa",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Revisão de relatórios de despesas",
+      "automation_score": 55,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Preparação do relatório financeiro semanal",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Reconciliação bancária semanal",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Análise mensal de custos e despesas",
+      "automation_score": 65,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Preparação e revisão do orçamento mensal",
+      "automation_score": 55,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Verificação diária de fluxo de caixa",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Atualização de relatórios financeiros",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Comunicação com fornecedores",
+      "automation_score": 45,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Revisão semanal de custos",
+      "automation_score": 60,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Planejamento financeiro semanal",
+      "automation_score": 65,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Análise mensal de desempenho financeiro",
+      "automation_score": 65,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Revisão e ajuste do orçamento anual",
+      "automation_score": 55,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    }
+  ]
+}

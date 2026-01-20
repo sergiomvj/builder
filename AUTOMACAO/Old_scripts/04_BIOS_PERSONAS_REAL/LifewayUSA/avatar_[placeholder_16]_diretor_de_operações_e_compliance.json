@@ -1,0 +1,112 @@
+{
+  "persona": {
+    "nome": "[Placeholder 16] Diretor de Operações e Compliance",
+    "nacionalidade": "brasileiros",
+    "genero": "feminino",
+    "cargo": "Diretor de Operações e Compliance",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Em definição",
+    "competencias": "Em definição",
+    "biografia": "Profissional experiente",
+    "personalidade": {},
+    "experiencia_anos": 11,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face",
+    "prompt_usado": "Retrato hiper-realista 4K de uma mulher brasileira de 45-50 anos, diretora de operações e compliance em tecnologia, etnia misto latino moreno, tipo físico esguio atlético, altura 1.68m, cabelo castanho escuro comprimento médio liso com ondas suaves denso, olhos castanho mel amendoados expressivos, rosto oval, pele morena clara lisa, sobrancelhas arqueadas cheias, nariz reto médio, boca lábios médios arqueados, expressão confiante séria, marcas únicas nenhuma, acessórios óculos armação fina preta brincos pérola pequenos relógio discreto prata, postura ereta confiante, características distintas maçãs de rosto altas queixo definido, estilo vestimenta executivo business com blazer cinza escuro camisa branca saia lápis preta, paleta cores vestuário cinza neutro azul frio branco, fundo escritório moderno neutro, iluminação soft studio light, lente 85mm close-up half-body shot, realista foto DSLR editorial",
+    "estilo": "business",
+    "background_tipo": "office",
+    "servico_usado": "gemini_ai",
+    "versao": 1,
+    "ativo": true,
+    "biometrics": {
+      "idade_aparente": "45-50 anos",
+      "genero": "feminino",
+      "etnia": "latino/misto",
+      "tipo_fisico": "esguio atlético",
+      "altura_estimada": "1.65-1.70m",
+      "cabelo_cor": "castanho escuro",
+      "cabelo_comprimento": "médio",
+      "cabelo_estilo": "liso com ondas suaves",
+      "cabelo_volume": "denso",
+      "olhos_cor": "castanho mel",
+      "olhos_formato": "amendoados expressivos",
+      "rosto_formato": "oval",
+      "pele_tom": "morena clara",
+      "pele_textura": "lisa",
+      "sobrancelhas": "arqueadas cheias",
+      "nariz": "reto médio",
+      "boca_labios": "médios arqueados",
+      "expressao_facial_padrao": "confiante séria",
+      "marcas_unicas": "nenhuma",
+      "acessorios_permanentes": "óculos armação fina preta, brincos pérola pequenos, relógio discreto prata",
+      "postura": "ereta confiante",
+      "caracteristicas_distintivas": "maçãs de rosto altas queixo definido",
+      "estilo_vestimenta_padrao": "executivo",
+      "paleta_cores_vestuario": "cinza neutro azul frio branco"
+    },
+    "physical_description_detailed": {
+      "rosto": {
+        "formato": "oval com maçãs de rosto altas e queixo suavemente definido",
+        "tom_pele": "morena clara com subtom quente oliva",
+        "textura_pele": "lisa com poros mínimos e brilho saudável",
+        "olhos": {
+          "cor": "castanho mel com reflexos dourados",
+          "formato": "amendoados expressivos com pálpebras levemente arqueadas"
+        },
+        "sobrancelhas": "arqueadas cheias com fios espessos naturalmente alinhados",
+        "nariz": "reto médio com ponte reta e narinas delicadas",
+        "boca": "lábios médios arqueados com contorno definido e sorriso sutil",
+        "expressao_tipica": "confiante séria com olhar penetrante e leve elevação dos cantos da boca"
+      },
+      "cabelo": {
+        "cor_exata": "castanho escuro com mechas sutis castanho chocolate",
+        "comprimento": "médio até ombros",
+        "estilo": "liso com ondas suaves soltas e repartição lateral",
+        "volume": "denso com camadas leves para movimento natural"
+      },
+      "corpo": {
+        "altura_aproximada": "1.68m",
+        "tipo_fisico": "esguio atlético com ombros alinhados e cintura definida",
+        "proporcao": "proporções equilibradas ombros estreitos quadris suaves",
+        "postura_tipica": "ereta confiante com ombros para trás e cabeça erguida"
+      }
+    },
+    "consistency_parameters": {
+      "rendering_style": "realista foto 4K retrato editorial",
+      "lens_focus": "85mm close-up half-body shot",
+      "lighting": "soft studio light",
+      "aspect_ratio": "1:1 (avatar)"
+    },
+    "history": {
+      "background_educacional": "Graduada em Engenharia de Produção pela USP com MBA em Operations Management pela FGV",
+      "experiencia_internacional": "Experiência em filiais de tech nos EUA influenciando estilo business americano adaptado",
+      "contexto_cultural": "Brasileira com herança mista europeia africana refletida na pele morena e traços expressivos",
+      "estilo_vida": "Rotina fitness e profissional equilibrada mantendo aparência tonificada e polida",
+      "marcos_carreira": "Promoção a diretora após 11 anos otimizando operações em tech startups",
+      "valores_pessoais": "Eficiência e integridade refletidos em vestimenta sóbria e acessórios minimalistas",
+      "ambiente_trabalho": "Escritório tech em LifewayUSA com dress code business casual elevando para executivo",
+      "redes_sociais": "Perfil LinkedIn profissional com fotos em eventos corporativos reforçando imagem confiante"
+    },
+    "metadados": {
+      "resolucao": "1024x1024",
+      "formato": "webp",
+      "qualidade": "ultra_high",
+      "parametros_geracao": {
+        "prompt_negativo": "blurry, low quality, distorted, cartoonish",
+        "steps": 30,
+        "cfg_scale": 8.5
+      },
+      "contexto_profissional": {
+        "cargo": "Diretor de Operações e Compliance",
+        "industria": "tecnologia",
+        "senioridade": "Alta hierarquia"
+      }
+    }
+  },
+  "generated_at": "2025-12-03T13:15:43.242Z"
+}

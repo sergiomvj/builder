@@ -1,0 +1,185 @@
+{
+  "name": "Lisa (SDR Senior) - Atualização de leads no CRM",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 9h para iniciar a atualização dos leads"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "table": "leads",
+        "filters": {
+          "needs_update": true
+        },
+        "operation": "select"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar leads que necessitam atualização"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(lead => ({ ...lead, update_notification: `Prezado ${lead.name}, suas informações foram atualizadas.` }));"
+      },
+      "typeVersion": 1,
+      "notes": "Preparar mensagem de atualização para o lead"
+    },
+    {
+      "id": "4",
+      "name": "Action",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "to": "{{ $json.email }}",
+        "message": "{{ $json.update_notification }}",
+        "subject": "Atualização de Informações"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email notificando sobre a atualização"
+    },
+    {
+      "id": "5",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "set": {
+          "needs_update": false
+        },
+        "table": "leads",
+        "operation": "update"
+      },
+      "typeVersion": 1,
+      "notes": "Marcar o lead como atualizado no CRM"
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Lisa (SDR Senior) - Atualização de leads no CRM\nEmpresa: ARVA Tech Solutions\nPersona: Lisa Wilson\nTarefa: Atualização de leads no CRM\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:13.894Z",
+  "updatedAt": "2025-11-28T17:05:13.894Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "32bfbb7a-148b-4113-9fb6-9caff688efcc",
+    "persona_nome": "Lisa Wilson",
+    "task_id": "5ca957a8-5dfb-43f7-b819-dc1ee353958a",
+    "task_title": "Atualização de leads no CRM",
+    "opportunity_id": "b1e0eede-4419-4480-80f3-8a4b762ed239",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:13.894Z"
+  }
+}

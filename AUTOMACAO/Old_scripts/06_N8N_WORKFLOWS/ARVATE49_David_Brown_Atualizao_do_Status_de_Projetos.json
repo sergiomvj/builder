@@ -1,0 +1,257 @@
+{
+  "name": "David (Asst Mkt) - Atualização do Status de Projetos",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 10 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 10h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "select",
+        "project_status": "in_progress"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar projetos em andamento"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(project => ({ ...project, update_request: `Por favor, forneça uma atualização do status para o projeto ${project.name}.` }));"
+      },
+      "typeVersion": 1,
+      "notes": "Preparar solicitação de atualização de status"
+    },
+    {
+      "id": "4",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "to": "{{ $json.project_manager_email }}",
+        "message": "{{ $json.update_request }}",
+        "subject": "Atualização de Status do Projeto Necessária"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email solicitando atualização de status"
+    },
+    {
+      "id": "5",
+      "name": "Action",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "channel": "project-updates",
+        "message": "{{ $json.update_request }}"
+      },
+      "typeVersion": 1,
+      "notes": "Postar solicitação de atualização no canal de comunicação interna"
+    },
+    {
+      "id": "6",
+      "name": "Wait",
+      "type": "n8n-nodes-base.wait",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "amount": 1,
+        "unit": "minutes"
+      },
+      "typeVersion": 1,
+      "notes": "Aguardar até as 16h para coleta de respostas"
+    },
+    {
+      "id": "7",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1560,
+        300
+      ],
+      "parameters": {
+        "subject": "Atualização de Status do Projeto Necessária",
+        "operation": "check_responses"
+      },
+      "typeVersion": 1,
+      "notes": "Verificar respostas de email de atualização de status"
+    },
+    {
+      "id": "8",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1780,
+        300
+      ],
+      "parameters": {
+        "operation": "update",
+        "status_field": "project_status_update"
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar o sistema de gestão de projetos com as respostas recebidas"
+    },
+    {
+      "id": "9",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        2000,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: David (Asst Mkt) - Atualização do Status de Projetos\nEmpresa: ARVA Tech Solutions\nPersona: David Brown\nTarefa: Atualização do Status de Projetos\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5": {
+      "main": [
+        [
+          {
+            "node": "6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "6": {
+      "main": [
+        [
+          {
+            "node": "7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "7": {
+      "main": [
+        [
+          {
+            "node": "8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "9"
+  },
+  "createdAt": "2025-11-28T17:05:38.086Z",
+  "updatedAt": "2025-11-28T17:05:38.086Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "2841090c-7c5f-4c95-afbf-89dc4c115372",
+    "persona_nome": "David Brown",
+    "task_id": "2006c022-2a20-4f6b-8706-4e67df86db21",
+    "task_title": "Atualização do Status de Projetos",
+    "opportunity_id": "773c7a9f-eed0-494f-8faf-dd9c9d54a6e7",
+    "automation_score": 60,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:38.086Z"
+  }
+}

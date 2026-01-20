@@ -1,0 +1,36 @@
+{
+  "persona": {
+    "nome": "[Placeholder 16] Diretor de Operações e Compliance",
+    "nacionalidade": "brasileiros",
+    "genero": "feminino",
+    "cargo": "Diretor de Operações e Compliance",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Responsabilidades técnicas e desenvolvimento",
+    "competencias": "Habilidades técnicas avançadas",
+    "biografia": "Profissional experiente com sólida formação técnica",
+    "personalidade": {},
+    "experiencia_anos": 11,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&h=200&fit=crop&crop=face",
+    "estilo": "business",
+    "genero": "feminino",
+    "idade_aparente": "42-48",
+    "etnia": "latina",
+    "pele_tom": "morena clara",
+    "olhos_cor": "castanhos escuros",
+    "cabelo_cor": "castanho escuro",
+    "cabelo_comprimento": "médio",
+    "tipo_fisico": "atlético",
+    "altura_estimada": "1.68m",
+    "expressao_facial": "confiante",
+    "estilo_vestimenta": "business professional",
+    "acessorios": "óculos de armação fina, brincos discretos",
+    "caracteristicas_distintivas": "cabelo ondulado"
+  },
+  "generated_at": "2025-12-03T15:55:48.533Z"
+}

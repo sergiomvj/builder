@@ -1,0 +1,13 @@
+{
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "empresa_nome": "ARVA Tech Solutions",
+  "analyzed_at": "2025-12-06T01:45:30.631Z",
+  "llm_used": "OpenAI GPT-4o",
+  "llm_model": "z-ai/glm-4.6",
+  "personas_analyzed": 16,
+  "total_tasks": 0,
+  "tasks_analyzed": 0,
+  "tasks_automatable": 0,
+  "tasks_high_score": 0,
+  "analyses": []
+}

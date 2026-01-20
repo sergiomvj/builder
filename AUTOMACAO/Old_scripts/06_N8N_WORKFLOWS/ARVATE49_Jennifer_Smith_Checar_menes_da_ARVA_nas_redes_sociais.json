@@ -1,0 +1,226 @@
+{
+  "name": "Jennifer (Social Mkt) - Checar menções da ARVA nas redes sociais",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 9h para iniciar o monitoramento de menções"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "url": "https://api.twitter.com/2/tweets/search/recent?query=ARVA",
+        "method": "GET",
+        "responseFormat": "json",
+        "headers": {
+          "Authorization": "Bearer YOUR_TWITTER_BEARER_TOKEN"
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Buscar menções recentes da ARVA no Twitter"
+    },
+    {
+      "id": "3",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "url": "https://graph.facebook.com/v9.0/me?fields=posts{message}&q=ARVA",
+        "method": "GET",
+        "responseFormat": "json",
+        "headers": {
+          "Authorization": "Bearer YOUR_FACEBOOK_ACCESS_TOKEN"
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Buscar menções da ARVA em posts do Facebook"
+    },
+    {
+      "id": "4",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(post => ({ ...post, platform: post.source === 'twitter' ? 'Twitter' : 'Facebook' }));"
+      },
+      "typeVersion": 1,
+      "notes": "Adicionar informação da plataforma de origem para cada menção"
+    },
+    {
+      "id": "5",
+      "name": "Action",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "operation": "append",
+        "range": "A1"
+      },
+      "typeVersion": 1,
+      "notes": "Registrar menções encontradas em uma planilha do Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Action",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#social-media-monitoring",
+        "text": "Novas menções da ARVA foram adicionadas à planilha de monitoramento."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe no Slack sobre a atualização",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1560,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Jennifer (Social Mkt) - Checar menções da ARVA nas redes sociais\nEmpresa: ARVA Tech Solutions\nPersona: Jennifer Smith\nTarefa: Checar menções da ARVA nas redes sociais\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5": {
+      "main": [
+        [
+          {
+            "node": "6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "7"
+  },
+  "createdAt": "2025-11-28T17:05:23.973Z",
+  "updatedAt": "2025-11-28T17:05:23.973Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "46f07159-d384-496f-a480-45ac5c684082",
+    "persona_nome": "Jennifer Smith",
+    "task_id": "629e85a3-f8cd-4c1e-88d2-736816953e84",
+    "task_title": "Checar menções da ARVA nas redes sociais",
+    "opportunity_id": "13fd8939-ea75-4983-a5b0-83b412b1a536",
+    "automation_score": 68,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:23.973Z"
+  }
+}

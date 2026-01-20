@@ -1,0 +1,1324 @@
+[
+  {
+    "id": "24081b37-1f4f-4bcf-9eb6-5ff3dece796d",
+    "atribuicoes": [
+      {
+        "titulo": "Desenvolver modelos ML para AI Skills",
+        "categoria": "tecnica",
+        "descricao": "Desenvolver e treinar modelos de machine learning para blocos modulares de competências (AI Skills) dos agentes virtuais ARVA, garantindo precisão superior a 85% em tarefas digitais específicas.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Implementar sistemas RAG",
+        "categoria": "tecnica",
+        "descricao": "Implementar mecanismos de Retrieval-Augmented Generation (RAG) nos agentes ARVA para melhorar o aprendizado contínuo a partir de dados auditáveis e feedback loops.",
+        "frequencia": "mensal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Otimizar performance em produção",
+        "categoria": "operacional",
+        "descricao": "Otimizar modelos de ML em ambiente de produção para reduzir latência dos agentes virtuais em até 20%, utilizando containers e APIs escaláveis.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Monitorar métricas de agentes",
+        "categoria": "operacional",
+        "descricao": "Monitorar e analisar métricas de performance dos agentes ARVA, como taxa de sucesso em tarefas e drift de modelo, gerando relatórios semanais para ajustes proativos.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Integrar com ArvaCheck",
+        "categoria": "tecnica",
+        "descricao": "Integrar modelos ML ao sistema ArvaCheck para auditoria ética e verificação de ações dos agentes virtuais, assegurando conformidade com padrões de controle.",
+        "frequencia": "mensal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Realizar experimentos A/B",
+        "categoria": "estrategica",
+        "descricao": "Realizar experimentos A/B em versões de modelos para novos agentes no marketplace, medindo impacto em eficiência e personalização de comportamentos.",
+        "frequencia": "trimestral",
+        "importancia": "media"
+      },
+      {
+        "titulo": "Treinar modelos com feedback",
+        "categoria": "tecnica",
+        "descricao": "Treinar iterativamente modelos utilizando loops de feedback de usuários e auditorias para aprimorar a autonomia e humanização dos robôs virtuais ARVA.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      }
+    ]
+  },
+  {
+    "id": "d2b77aad-08fb-4380-8f30-d855be094430",
+    "atribuicoes": [
+      {
+        "titulo": "Monitorar desempenho de agentes",
+        "categoria": "operacional",
+        "descricao": "Analisar métricas diárias de performance, uptime e eficiência dos robôs virtuais em produção para identificar e resolver gargalos operacionais.",
+        "frequencia": "diaria",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Coordenar deploys de módulos",
+        "categoria": "tecnica",
+        "descricao": "Gerenciar o processo de deployment de novos blocos de competências e agentes virtuais, garantindo testes e rollout sem interrupções.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Gerenciar equipe de operações",
+        "categoria": "gerencial",
+        "descricao": "Supervisionar e alocar tarefas para a equipe técnica de operações, conduzindo reuniões semanais de alinhamento e desenvolvimento de competências.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Executar auditorias ArvaCheck",
+        "categoria": "tecnica",
+        "descricao": "Realizar verificações mensais de compliance ético e auditoria das ações dos agentes virtuais utilizando o sistema ArvaCheck.",
+        "frequencia": "mensal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Otimizar escalabilidade de infraestrutura",
+        "categoria": "estrategica",
+        "descricao": "Analisar e otimizar o uso de containers, APIs e recursos para suportar a escalabilidade nativa dos agentes em ambientes de alta demanda.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Configurar feedback loops RAG",
+        "categoria": "tecnica",
+        "descricao": "Implementar e monitorar loops de feedback para o aprendizado contínuo dos agentes virtuais, integrando dados de uso real.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Avaliar agentes do marketplace",
+        "categoria": "gerencial",
+        "descricao": "Revisar e aprovar agentes submetidos ao marketplace quanto a qualidade técnica, modularidade e conformidade operacional.",
+        "frequencia": "semanal",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "e80de970-29b6-4879-9e8d-c5a169a31c55",
+    "atribuicoes": [
+      {
+        "titulo": "Supervisionar deploys de agentes",
+        "categoria": "operacional",
+        "descricao": "Supervisionar o deploy e monitoramento contínuo de agentes virtuais autônomos, garantindo uptime de 99,9% e resolução de incidentes em até 4 horas.",
+        "frequencia": "diaria",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Gerenciar ArvaCheck",
+        "categoria": "tecnica",
+        "descricao": "Gerenciar o sistema ArvaCheck para auditoria ética de ações dos agentes, realizando verificações semanais e relatórios de conformidade.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Otimizar processos escaláveis",
+        "categoria": "estrategica",
+        "descricao": "Otimizar fluxos operacionais modulares utilizando containers e APIs, visando redução de 20% nos custos de escalabilidade trimestral.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Desenvolver políticas éticas",
+        "categoria": "gerencial",
+        "descricao": "Desenvolver e atualizar políticas de ética para criação e operação de agentes humanizados, alinhadas a regulamentações US de AI.",
+        "frequencia": "trimestral",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Gerenciar equipe de Operations",
+        "categoria": "gerencial",
+        "descricao": "Gerenciar a equipe de Operations, definindo metas de performance e treinamentos em competências AI, com avaliações mensais.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Analisar KPIs operacionais",
+        "categoria": "estrategica",
+        "descricao": "Analisar KPIs de eficiência operacional dos agentes, como taxa de aprendizado contínuo e feedback loops, propondo melhorias mensais.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Coordenar marketplace",
+        "categoria": "operacional",
+        "descricao": "Coordenar integrações e suporte ao marketplace de agentes prontos, garantindo disponibilidade de 95% dos serviços para clientes.",
+        "frequencia": "semanal",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "32288dd9-0d40-4974-bcf9-476078943a0c",
+    "atribuicoes": [
+      {
+        "titulo": "Monitorar desempenho da infraestrutura IA",
+        "categoria": "operacional",
+        "descricao": "Monitorar diariamente as métricas de desempenho dos clusters de computação IA para agentes virtuais ARVA, garantindo disponibilidade acima de 99,5%. Identificar e escalar anomalias para correção imediata.",
+        "frequencia": "diaria",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Implantar atualizações em containers",
+        "categoria": "tecnica",
+        "descricao": "Implantar semanalmente atualizações em containers Kubernetes para novos AI Skills e feedback loops, validando estabilidade pós-deploy.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Otimizar alocação de recursos computacionais",
+        "categoria": "tecnica",
+        "descricao": "Analisar e otimizar mensalmente a alocação de GPUs e CPUs para suportar escalabilidade dos robôs virtuais, reduzindo custos em até 15%.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Manter sistema ArvaCheck",
+        "categoria": "tecnica",
+        "descricao": "Configurar e verificar semanalmente o sistema ArvaCheck para auditoria ética das ações dos agentes virtuais, gerando relatórios de conformidade.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Diagnosticar incidentes de infraestrutura",
+        "categoria": "operacional",
+        "descricao": "Diagnosticar e resolver incidentes em infraestrutura IA diária ou sob demanda, visando tempo médio de resolução inferior a 1 hora.",
+        "frequencia": "diaria",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Gerenciar backups de modelos IA",
+        "categoria": "tecnica",
+        "descricao": "Executar e validar mensalmente backups de modelos de IA, dados RAG e configurações para recuperação rápida em falhas.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Testar integrações de APIs para marketplace",
+        "categoria": "tecnica",
+        "descricao": "Testar e documentar trimestralmente integrações de APIs para deploy de agentes do marketplace, assegurando compatibilidade total.",
+        "frequencia": "trimestral",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "21e1bea3-787a-485a-b601-0d5a8d59c9af",
+    "atribuicoes": [
+      {
+        "titulo": "Analisar logs de ações",
+        "categoria": "tecnica",
+        "descricao": "Analisar diariamente os logs de ações dos agentes virtuais no ArvaCheck para identificar anomalias e desvios de comportamento, garantindo 100% de cobertura em tarefas críticas.",
+        "frequencia": "diaria",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Verificar conformidade ética",
+        "categoria": "operacional",
+        "descricao": "Verificar semanalmente a conformidade ética das ações executadas pelos robôs virtuais, aplicando checklists padronizados do ArvaCheck e registrando não-conformidades.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Gerar relatórios de auditoria",
+        "categoria": "tecnica",
+        "descricao": "Gerar relatórios mensais de auditoria do ArvaCheck, compilando métricas de qualidade, taxas de erro e recomendações para melhorias nos agentes.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Testar módulos de qualidade",
+        "categoria": "tecnica",
+        "descricao": "Testar trimestralmente novos módulos e atualizações do ArvaCheck, validando sua eficácia em cenários de simulação com agentes virtuais autônomos.",
+        "frequencia": "trimestral",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Investigar incidentes",
+        "categoria": "operacional",
+        "descricao": "Investigar incidentes reportados de falhas éticas ou operacionais nos agentes, determinando causas raiz e propondo ações corretivas no ArvaCheck.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Monitorar métricas de desempenho",
+        "categoria": "tecnica",
+        "descricao": "Monitorar diariamente métricas de desempenho e qualidade dos agentes via dashboard do ArvaCheck, alertando equipes sobre thresholds críticos.",
+        "frequencia": "diaria",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Colaborar em treinamentos",
+        "categoria": "gerencial",
+        "descricao": "Colaborar mensalmente na criação de materiais de treinamento sobre o uso ético do ArvaCheck para equipes de Operations e Desenvolvimento.",
+        "frequencia": "mensal",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "3931ae60-eec3-44af-8d89-cfe1eb405ef8",
+    "atribuicoes": [
+      {
+        "titulo": "Desenvolver pipelines RAG",
+        "categoria": "tecnica",
+        "descricao": "Desenvolver e integrar pipelines RAG nos agentes virtuais ARVA para aprimorar o aprendizado contínuo via recuperação de dados relevantes e feedback loops.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Otimizar retrieval de dados",
+        "categoria": "tecnica",
+        "descricao": "Otimizar algoritmos de retrieval em integrações RAG para elevar a precisão e relevância das respostas dos robôs virtuais humanizados.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Monitorar performance RAG",
+        "categoria": "operacional",
+        "descricao": "Monitorar métricas de performance dos sistemas RAG integrados, identificando anomalias e propondo ajustes para operação contínua.",
+        "frequencia": "diaria",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Integrar com blocos modulares",
+        "categoria": "tecnica",
+        "descricao": "Integrar componentes RAG com blocos de competências modulares dos agentes ARVA, garantindo modularidade total e escalabilidade.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Auditar conformidade ArvaCheck",
+        "categoria": "administrativa",
+        "descricao": "Auditar integrações RAG para verificação ética e controle via ArvaCheck, assegurando ações auditáveis dos agentes virtuais.",
+        "frequencia": "trimestral",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Testar escalabilidade RAG",
+        "categoria": "tecnica",
+        "descricao": "Executar testes de carga e escalabilidade em integrações RAG para validar suporte a containers, APIs e deploy em produção.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Colaborar em agentes marketplace",
+        "categoria": "operacional",
+        "descricao": "Colaborar com equipes para implementar e refinar RAG em agentes prontos do marketplace, alinhando com necessidades de clientes.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      }
+    ]
+  },
+  {
+    "id": "af3321fb-0da6-4ba8-9553-a399253a6538",
+    "atribuicoes": [
+      {
+        "titulo": "Gerenciar clusters de containers",
+        "categoria": "tecnica",
+        "descricao": "Gerenciar e escalar clusters Kubernetes para hospedar agentes virtuais ARVA, garantindo alta disponibilidade e performance para tarefas digitais contínuas.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Desenvolver pipelines CI/CD",
+        "categoria": "tecnica",
+        "descricao": "Construir e manter pipelines de CI/CD automatizados para deployment de modelos de IA, skills modulares e atualizações de agentes ARVA.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Monitorar performance de agentes",
+        "categoria": "operacional",
+        "descricao": "Implementar monitoramento contínuo de métricas de performance, uso de recursos e saúde dos robôs virtuais em produção utilizando ferramentas DevOps.",
+        "frequencia": "diaria",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Configurar feedback loops",
+        "categoria": "tecnica",
+        "descricao": "Configurar loops de feedback e sistemas RAG para aprendizado contínuo dos agentes ARVA, integrando com pipelines de automação.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Implementar auditoria ArvaCheck",
+        "categoria": "tecnica",
+        "descricao": "Integrar ArvaCheck nos workflows DevOps para auditoria ética, verificação e controle das ações executadas pelos agentes virtuais.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Otimizar APIs escaláveis",
+        "categoria": "tecnica",
+        "descricao": "Otimizar configurações de APIs, containers e integrações para suportar escalabilidade nativa do ecossistema ARVA e marketplace de agentes.",
+        "frequencia": "trimestral",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Resolver incidentes de produção",
+        "categoria": "operacional",
+        "descricao": "Diagnosticar e resolver incidentes operacionais em ambientes de IA, minimizando downtime nos robôs virtuais autônomos.",
+        "frequencia": "diaria",
+        "importancia": "critica"
+      }
+    ]
+  },
+  {
+    "id": "2eeed645-9119-48e3-8e1c-8a12c5c14f1b",
+    "atribuicoes": [
+      {
+        "titulo": "Desenvolver prompts humanizados",
+        "categoria": "tecnica",
+        "descricao": "Criar e refinar prompts que conferem identidade, voz e comportamento únicos aos agentes virtuais ARVA, garantindo alinhamento com objetivos específicos.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Otimizar prompts via feedback",
+        "categoria": "tecnica",
+        "descricao": "Analisar métricas de performance e loops de feedback para iterar prompts, melhorando precisão e eficiência dos robôs virtuais em tarefas digitais.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Validar prompts no ArvaCheck",
+        "categoria": "operacional",
+        "descricao": "Executar testes de auditoria ética e verificação de controle nos prompts desenvolvidos para assegurar conformidade e rastreabilidade das ações dos agentes.",
+        "frequencia": "mensal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Integrar blocos de competências",
+        "categoria": "tecnica",
+        "descricao": "Desenhar prompts modulares que combinam AI Skills para construir agentes personalizados, suportando escalabilidade via containers e APIs.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Monitorar performance em produção",
+        "categoria": "operacional",
+        "descricao": "Acompanhar métricas diárias de prompts em ambiente de produção e implementar ajustes via RAG para aprendizado contínuo dos agentes ARVA.",
+        "frequencia": "diaria",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Preparar prompts para marketplace",
+        "categoria": "estrategica",
+        "descricao": "Documentar e otimizar prompts prontos para publicação no marketplace de agentes, facilitando adoção por empresas e criadores.",
+        "frequencia": "trimestral",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "482f4eff-c6a2-4df9-8517-7333284b0d02",
+    "atribuicoes": [
+      {
+        "titulo": "Gerenciar redes sociais",
+        "categoria": "operacional",
+        "descricao": "Criar e publicar conteúdo diário nas redes sociais destacando agentes virtuais ARVA, modularidade e marketplace para aumentar engajamento e leads.",
+        "frequencia": "diaria",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Analisar métricas de campanhas",
+        "categoria": "tecnica",
+        "descricao": "Analisar semanalmente métricas de tráfego, conversões e ROI de campanhas digitais usando Google Analytics e ferramentas semelhantes, propondo ajustes.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Produzir conteúdo para blog",
+        "categoria": "estrategica",
+        "descricao": "Desenvolver artigos semanais sobre funcionalidades ARVA, como aprendizado contínuo RAG e ArvaCheck, otimizados para SEO.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Otimizar SEO do site",
+        "categoria": "tecnica",
+        "descricao": "Realizar otimizações mensais de SEO para páginas do ecossistema ARVA e marketplace de agentes prontos, monitorando rankings e tráfego orgânico.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Executar campanhas de ads pagas",
+        "categoria": "operacional",
+        "descricao": "Configurar e monitorar campanhas de Google Ads e LinkedIn Ads promovendo escalabilidade e agentes humanizados ARVA, ajustando orçamentos.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Elaborar relatórios de performance",
+        "categoria": "gerencial",
+        "descricao": "Preparar relatórios mensais de KPIs de marketing digital para a equipe de Operations, incluindo recomendações baseadas em dados.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Coordenar promoções de marketplace",
+        "categoria": "estrategica",
+        "descricao": "Coordenar promoções trimestrais online para o marketplace de agentes ARVA, colaborando com vendas para gerar trials e demos.",
+        "frequencia": "trimestral",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "4bf65f6e-1b3f-4d64-9fbe-53978667a400",
+    "atribuicoes": [
+      {
+        "titulo": "Liderar desenvolvimento de AI Skills",
+        "categoria": "tecnica",
+        "descricao": "Liderar a equipe na criação e integração de novos blocos de competências modulares (AI Skills) para agentes virtuais, garantindo alinhamento com o ecossistema ARVA e testando compatibilidade em cenários reais.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Supervisionar treinamento contínuo",
+        "categoria": "tecnica",
+        "descricao": "Supervisionar a implementação de sistemas RAG e feedback loops para o aprendizado contínuo dos robôs virtuais, monitorando taxas de melhoria em precisão e eficiência.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Gerenciar auditoria ArvaCheck",
+        "categoria": "gerencial",
+        "descricao": "Gerenciar a aplicação do sistema ArvaCheck para verificação ética e auditoria das ações dos agentes, revisando relatórios e resolvendo não-conformidades em até 48 horas.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Otimizar escalabilidade de agentes",
+        "categoria": "operacional",
+        "descricao": "Otimizar o deployment de agentes virtuais via containers e APIs, assegurando escalabilidade para cargas de trabalho crescentes e latência abaixo de 500ms.",
+        "frequencia": "trimestral",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Monitorar performance em produção",
+        "categoria": "tecnica",
+        "descricao": "Monitorar métricas de performance dos agentes em produção, como taxa de sucesso de tarefas e tempo de resposta, e coordenar otimizações baseadas em dados.",
+        "frequencia": "diaria",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Gerenciar equipe de engenharia",
+        "categoria": "gerencial",
+        "descricao": "Gerenciar a equipe de engenheiros de IA, incluindo alocação de tarefas, avaliações de desempenho trimestrais e planos de desenvolvimento profissional.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Revisar agentes para marketplace",
+        "categoria": "estrategica",
+        "descricao": "Revisar e aprovar agentes prontos para o marketplace da ARVA, validando qualidade, segurança e aderência às diretrizes éticas antes da publicação.",
+        "frequencia": "trimestral",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "a7279093-5a62-449c-97b9-2d1816d5ec43",
+    "atribuicoes": [
+      {
+        "titulo": "Análise de Performance de Agentes",
+        "categoria": "tecnica",
+        "descricao": "Analisar métricas de performance dos robôs virtuais autônomos para identificar gargalos e propor melhorias mensuráveis.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Monitoramento de Aprendizado Contínuo",
+        "categoria": "operacional",
+        "descricao": "Monitorar loops de feedback e sistemas RAG dos agentes para avaliar eficácia do aprendizado e ajustar parâmetros.",
+        "frequencia": "diaria",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Geração de Relatórios ArvaCheck",
+        "categoria": "administrativa",
+        "descricao": "Gerar relatórios de auditoria utilizando o ArvaCheck para verificar conformidade ética e ações dos agentes virtuais.",
+        "frequencia": "mensal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Otimização de AI Skills Modulares",
+        "categoria": "tecnica",
+        "descricao": "Otimizar blocos de competências modulares com base em análise de dados de uso e eficiência dos agentes.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Análise de Escalabilidade Operacional",
+        "categoria": "estrategica",
+        "descricao": "Analisar dados de automação, containers e APIs para suportar a escalabilidade nativa dos robôs virtuais.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Insights do Marketplace de Agentes",
+        "categoria": "estrategica",
+        "descricao": "Analisar dados de uso e performance de agentes do marketplace para gerar insights estratégicos e recomendações.",
+        "frequencia": "trimestral",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "53262bb0-5382-403d-9f0a-590881f4ba1d",
+    "atribuicoes": [
+      {
+        "titulo": "Projetar arquiteturas modulares",
+        "categoria": "tecnica",
+        "descricao": "Projetar arquiteturas modulares para agentes virtuais ARVA utilizando blocos de competências AI Skills, garantindo humanização e personalização.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Configurar aprendizado contínuo",
+        "categoria": "tecnica",
+        "descricao": "Configurar sistemas RAG e loops de feedback para habilitar o aprendizado contínuo e melhoria autônoma dos robôs virtuais.",
+        "frequencia": "mensal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Implementar auditoria ArvaCheck",
+        "categoria": "operacional",
+        "descricao": "Implementar e monitorar controles éticos via ArvaCheck para auditar ações dos agentes virtuais de forma contínua e verificável.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Otimizar escalabilidade",
+        "categoria": "estrategica",
+        "descricao": "Otimizar soluções de agentes para escalabilidade nativa utilizando automação, containers e APIs, visando deploy eficiente.",
+        "frequencia": "trimestral",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Desenvolver agentes para marketplace",
+        "categoria": "tecnica",
+        "descricao": "Desenvolver e testar agentes prontos para o marketplace da ARVA, alinhando com necessidades de empresas e criadores.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Analisar performance de agentes",
+        "categoria": "operacional",
+        "descricao": "Analisar métricas de performance dos agentes em produção e propor ajustes para otimizar eficiência e confiabilidade.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Documentar soluções IA",
+        "categoria": "administrativa",
+        "descricao": "Documentar arquiteturas e configurações de soluções IA para suportar manutenção, auditoria e colaboração entre equipes.",
+        "frequencia": "mensal",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "7430addb-b3f7-40f7-b098-22f1f1e136af",
+    "atribuicoes": [
+      {
+        "titulo": "Liderar estratégia operacional",
+        "categoria": "estrategica",
+        "descricao": "Desenvolver e implementar a estratégia operacional alinhada aos objetivos da ARVA Tech Solutions, garantindo escalabilidade nativa via automação e APIs para robôs virtuais autônomos.",
+        "frequencia": "trimestral",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Supervisionar operações diárias",
+        "categoria": "operacional",
+        "descricao": "Monitorar o desempenho contínuo dos agentes virtuais no ecossistema ARVA, identificando e resolvendo gargalos operacionais para manter eficiência e auditabilidade.",
+        "frequencia": "diaria",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Gerenciar equipe de operations",
+        "categoria": "gerencial",
+        "descricao": "Coordenar a equipe de operations, definindo metas mensuráveis e avaliando desempenho para suportar o aprendizado contínuo dos robôs via feedback loops.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Auditar conformidade ética",
+        "categoria": "administrativa",
+        "descricao": "Implementar e supervisionar o ArvaCheck para verificação ética e controle das ações dos agentes virtuais, assegurando compliance regulatório no setor de tecnologia nos EUA.",
+        "frequencia": "mensal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Otimizar modularidade de agentes",
+        "categoria": "tecnica",
+        "descricao": "Analisar e aprimorar blocos de competências (AI Skills) para criação de agentes humanizados, promovendo modularidade total e personalização.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Controlar orçamento operacional",
+        "categoria": "administrativa",
+        "descricao": "Elaborar e gerenciar o orçamento do departamento de operations, alocando recursos para treinamento contínuo e expansão do marketplace de agentes.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Fomentar expansão do marketplace",
+        "categoria": "estrategica",
+        "descricao": "Coordenar iniciativas para o marketplace de agentes prontos, negociando com criadores e empresas para escalar o ecossistema ARVA.",
+        "frequencia": "trimestral",
+        "importancia": "alta"
+      }
+    ]
+  },
+  {
+    "id": "6f4187e6-0394-4124-a156-6781050850d9",
+    "atribuicoes": [
+      {
+        "titulo": "Desenvolver Agentes Virtuais",
+        "categoria": "tecnica",
+        "descricao": "Desenvolver agentes virtuais modulares utilizando blocos de competências (AI Skills) para executar tarefas digitais específicas de clientes.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Configurar Aprendizado Contínuo",
+        "categoria": "tecnica",
+        "descricao": "Configurar sistemas de RAG e loops de feedback para habilitar o aprendizado contínuo e adaptação dos agentes virtuais.",
+        "frequencia": "mensal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Auditar Ações de Agentes",
+        "categoria": "operacional",
+        "descricao": "Realizar auditorias éticas e de conformidade utilizando o ArvaCheck em agentes operacionais para garantir transparência e controle.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Otimizar Desempenho",
+        "categoria": "tecnica",
+        "descricao": "Analisar métricas de performance e otimizar agentes para escalabilidade via containers e automação nativa.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Monitorar Operações Diárias",
+        "categoria": "operacional",
+        "descricao": "Monitorar o funcionamento contínuo dos agentes virtuais e resolver incidentes operacionais para minimizar downtimes.",
+        "frequencia": "diaria",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Integrar via APIs",
+        "categoria": "tecnica",
+        "descricao": "Desenvolver integrações de agentes virtuais com APIs de sistemas clientes para automação de tarefas digitais.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Preparar Agentes para Marketplace",
+        "categoria": "estrategica",
+        "descricao": "Preparar e testar agentes humanizados com identidade e personalidade para publicação no marketplace da ARVA.",
+        "frequencia": "trimestral",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "a15578cb-7b8f-46b6-9c80-03228bb5bde6",
+    "atribuicoes": [
+      {
+        "titulo": "Monitorar Desempenho de Agentes",
+        "categoria": "operacional",
+        "descricao": "Monitorar diariamente as métricas de performance dos agentes virtuais autônomos, identificando anomalias e propondo ajustes iniciais para manter uptime acima de 99%.",
+        "frequencia": "diaria",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Atender Tickets de Suporte",
+        "categoria": "operacional",
+        "descricao": "Analisar e resolver tickets de suporte relacionados ao funcionamento de agentes juniores, garantindo resolução dentro de SLAs de 4 horas para 90% dos casos.",
+        "frequencia": "diaria",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Configurar Skills Modulares",
+        "categoria": "tecnica",
+        "descricao": "Configurar e testar blocos de competências (AI Skills) para agentes virtuais, validando integração em ambientes de produção.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Executar Auditorias ArvaCheck",
+        "categoria": "tecnica",
+        "descricao": "Realizar auditorias semanais de conformidade ética e operacional nos agentes usando ArvaCheck, documentando e reportando discrepâncias.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Gerar Relatórios de Performance",
+        "categoria": "administrativa",
+        "descricao": "Compilar relatórios semanais de métricas de agentes, incluindo eficiência, feedback loops e recomendações de melhoria.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Implementar Feedback Loops",
+        "categoria": "tecnica",
+        "descricao": "Implementar loops de feedback para aprendizado contínuo dos agentes via RAG, processando dados de usuários para atualizações mensais.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Otimizar Deployments",
+        "categoria": "operacional",
+        "descricao": "Otimizar configurações de containers e APIs para escalabilidade de agentes juniores, testando cargas de produção trimestralmente.",
+        "frequencia": "trimestral",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "998369c0-46d1-4d6b-a67c-017f70584bea",
+    "atribuicoes": [
+      {
+        "titulo": "Desenvolver agentes modulares",
+        "categoria": "tecnica",
+        "descricao": "Desenvolver e customizar agentes virtuais modulares utilizando blocos de competências (AI Skills) para atender demandas operacionais específicas da ARVA Tech Solutions.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Gerenciar treinamento contínuo",
+        "categoria": "tecnica",
+        "descricao": "Gerenciar sistemas de aprendizado contínuo com RAG e feedback loops para otimizar o desempenho e a autonomia dos agentes virtuais.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Coordenar equipe de desenvolvimento",
+        "categoria": "gerencial",
+        "descricao": "Coordenar equipe de desenvolvedores na criação, teste e deployment de agentes, garantindo prazos e qualidade no departamento de Operations.",
+        "frequencia": "diaria",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Auditar ações dos agentes",
+        "categoria": "operacional",
+        "descricao": "Auditar ações dos agentes utilizando ArvaCheck para assegurar conformidade ética, operacional e auditável em todas as tarefas digitais.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Otimizar escalabilidade",
+        "categoria": "estrategica",
+        "descricao": "Otimizar soluções de escalabilidade dos agentes via automação, containers e APIs para suportar expansão do ecossistema ARVA.",
+        "frequencia": "trimestral",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Analisar performance de agentes",
+        "categoria": "tecnica",
+        "descricao": "Analisar métricas de performance dos agentes em operação e propor ajustes para melhorar eficiência e humanização.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Contribuir para marketplace",
+        "categoria": "operacional",
+        "descricao": "Contribuir para o marketplace validando e otimizando agentes prontos para empresas e criadores, alinhando com padrões da ARVA.",
+        "frequencia": "mensal",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "ca7ede6d-bff2-441f-9c1a-42e1b7d6bf56",
+    "atribuicoes": [
+      {
+        "titulo": "Desenvolver estratégias de vendas",
+        "categoria": "estrategica",
+        "descricao": "Desenvolver e implementar estratégias de vendas para o marketplace de agentes virtuais ARVA, visando alcançar metas de receita trimestral.",
+        "frequencia": "mensal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Gerenciar pipeline de vendas",
+        "categoria": "gerencial",
+        "descricao": "Gerenciar o pipeline de vendas de robôs virtuais autônomos, monitorando oportunidades e fechando negócios com clientes corporativos.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Criar campanhas de marketing",
+        "categoria": "estrategica",
+        "descricao": "Criar e executar campanhas de marketing digital destacando diferenciais como modularidade e ArvaCheck para atrair leads qualificados.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Analisar métricas de performance",
+        "categoria": "gerencial",
+        "descricao": "Analisar métricas de vendas e marketing, como taxa de conversão e ROI de campanhas, para otimizar abordagens futuras.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Coordenar equipe de vendas",
+        "categoria": "gerencial",
+        "descricao": "Coordenar a equipe de vendas e marketing, definindo metas individuais e fornecendo suporte para negociações complexas.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Negociar parcerias estratégicas",
+        "categoria": "estrategica",
+        "descricao": "Negociar parcerias com empresas para co-desenvolvimento de agentes virtuais customizados no ecossistema ARVA.",
+        "frequencia": "trimestral",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Elaborar relatórios executivos",
+        "categoria": "administrativa",
+        "descricao": "Elaborar relatórios mensais de performance de vendas e marketing para a liderança de Operations, incluindo projeções de escalabilidade.",
+        "frequencia": "mensal",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "61d11198-6110-43eb-be5a-e3d2fb8274a6",
+    "atribuicoes": [
+      {
+        "titulo": "Liderar desenvolvimento da plataforma ARVA",
+        "categoria": "tecnica",
+        "descricao": "Desenvolver e otimizar o ecossistema modular de agentes virtuais, integrando blocos de competências (AI Skills) para garantir humanização e autonomia.",
+        "frequencia": "mensal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Gerenciar escalabilidade e performance",
+        "categoria": "estrategica",
+        "descricao": "Analisar e implementar soluções de automação, containers e APIs para assegurar escalabilidade nativa dos robôs virtuais em operações contínuas.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Supervisionar sistema ArvaCheck",
+        "categoria": "gerencial",
+        "descricao": "Coordenar a auditoria, verificação e controle ético das ações dos agentes, revisando relatórios de conformidade e feedback loops.",
+        "frequencia": "mensal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Implementar aprendizado contínuo",
+        "categoria": "tecnica",
+        "descricao": "Desenvolver e monitorar mecanismos de RAG e feedback loops para treinamento contínuo dos agentes virtuais, medindo melhorias em eficiência.",
+        "frequencia": "trimestral",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Definir roadmap tecnológico",
+        "categoria": "estrategica",
+        "descricao": "Elaborar e atualizar o roadmap de tecnologia alinhado aos objetivos da Operations, priorizando inovações em IA e modularidade.",
+        "frequencia": "trimestral",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Gerenciar equipe técnica",
+        "categoria": "gerencial",
+        "descricao": "Coordenar e capacitar a equipe de Operations em competências técnicas, definindo metas de performance e alocação de recursos para projetos de agentes.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Integrar marketplace de agentes",
+        "categoria": "operacional",
+        "descricao": "Analisar e integrar agentes prontos do marketplace via APIs, garantindo compatibilidade e testes de qualidade para deployment em produção.",
+        "frequencia": "mensal",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "1f11100a-5eac-487f-afa4-e0f9b56b99e2",
+    "atribuicoes": [
+      {
+        "titulo": "Desenvolver roadmap de produto",
+        "categoria": "estrategica",
+        "descricao": "Desenvolver e atualizar o roadmap de produto para o ecossistema ARVA, priorizando novas competências modulares de AI Skills alinhadas às necessidades operacionais.",
+        "frequencia": "trimestral",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Gerenciar desenvolvimento de agentes",
+        "categoria": "gerencial",
+        "descricao": "Gerenciar o desenvolvimento de agentes virtuais humanizados, garantindo modularidade total e integração com sistemas de aprendizado contínuo como RAG e feedback loops.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Supervisionar auditorias ArvaCheck",
+        "categoria": "tecnica",
+        "descricao": "Supervisionar a implementação e verificação do sistema ArvaCheck para auditoria ética e controle das ações dos robôs virtuais em operações.",
+        "frequencia": "mensal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Otimizar escalabilidade de agentes",
+        "categoria": "operacional",
+        "descricao": "Otimizar a escalabilidade nativa dos agentes via automação, containers e APIs, visando suportar crescimento operacional contínuo.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Coordenar marketplace de agentes",
+        "categoria": "gerencial",
+        "descricao": "Coordenar o lançamento e manutenção do marketplace de agentes prontos, facilitando adoção por empresas e criadores.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Analisar métricas de performance",
+        "categoria": "tecnica",
+        "descricao": "Analisar métricas de performance dos agentes virtuais, como taxa de execução de tarefas e eficiência operacional, para propor melhorias.",
+        "frequencia": "semanal",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "4f5255a0-6183-4865-a2aa-4259cab16811",
+    "atribuicoes": [
+      {
+        "titulo": "Auditar logs de agentes",
+        "categoria": "operacional",
+        "descricao": "Analisar diariamente os logs de ações dos agentes virtuais no ArvaCheck para identificar anomalias, erros ou desvios de comportamento padrão.",
+        "frequencia": "diaria",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Verificar conformidade ética",
+        "categoria": "tecnica",
+        "descricao": "Avaliar semanalmente as ações registradas dos agentes quanto a conformidade com padrões éticos e regulatórios, emitindo alertas para não-conformidades.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Gerar relatórios de auditoria",
+        "categoria": "administrativa",
+        "descricao": "Elaborar relatórios mensais consolidados sobre resultados de auditorias ArvaCheck, incluindo métricas de integridade e recomendações para Operations.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Configurar regras de auditoria",
+        "categoria": "tecnica",
+        "descricao": "Desenvolver e atualizar semanalmente regras e alertas personalizados no ArvaCheck para monitorar riscos emergentes em agentes virtuais.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Investigar incidentes reportados",
+        "categoria": "operacional",
+        "descricao": "Investigar incidentes de auditoria identificados, determinando causas raiz e propondo ações corretivas dentro de 48 horas para mitigar riscos.",
+        "frequencia": "diaria",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Monitorar métricas de performance",
+        "categoria": "tecnica",
+        "descricao": "Monitorar semanalmente métricas chave do ArvaCheck, como taxa de detecção de anomalias e tempo médio de auditoria, ajustando processos conforme necessário.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Colaborar em melhorias do sistema",
+        "categoria": "estrategica",
+        "descricao": "Colaborar mensalmente com equipes de desenvolvimento para integrar feedback de auditorias em atualizações e otimizações do ArvaCheck.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      }
+    ]
+  },
+  {
+    "id": "06f0b005-5265-4f37-bf32-3841efe4cc82",
+    "atribuicoes": [
+      {
+        "titulo": "Gerenciar onboarding de agentes",
+        "categoria": "gerencial",
+        "descricao": "Coordenar o processo de submissão, revisão e aprovação de novos agentes virtuais no marketplace, garantindo conformidade com padrões de qualidade e ArvaCheck.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Desenvolver parcerias estratégicas",
+        "categoria": "estrategica",
+        "descricao": "Identificar potenciais parceiros, negociar acordos e onboardar criadores e empresas para expandir o catálogo de agentes prontos no marketplace.",
+        "frequencia": "mensal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Analisar métricas de marketplace",
+        "categoria": "tecnica",
+        "descricao": "Monitorar e analisar KPIs como taxa de adoção de agentes, retenção de listagens e receita gerada, propondo otimizações baseadas em dados.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Coordenar campanhas promocionais",
+        "categoria": "operacional",
+        "descricao": "Planejar e executar promoções para destacar agentes populares, atrair novos criadores e impulsionar o engajamento no marketplace.",
+        "frequencia": "mensal",
+        "importancia": "media"
+      },
+      {
+        "titulo": "Gerenciar suporte a parceiros",
+        "categoria": "gerencial",
+        "descricao": "Fornecer suporte operacional e técnico aos parceiros do marketplace, resolvendo problemas de listagem e otimizando perfis de agentes.",
+        "frequencia": "diaria",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Auditar qualidade de agentes",
+        "categoria": "tecnica",
+        "descricao": "Realizar auditorias regulares nos agentes listados utilizando ArvaCheck para assegurar conformidade ética, segurança e alinhamento com competências modulares.",
+        "frequencia": "mensal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Elaborar relatórios de performance",
+        "categoria": "administrativa",
+        "descricao": "Preparar relatórios trimestrais sobre desempenho do marketplace e parcerias, incluindo recomendações estratégicas para a liderança de Operations.",
+        "frequencia": "trimestral",
+        "importancia": "critica"
+      }
+    ]
+  },
+  {
+    "id": "32f3c90c-d8e1-4fcc-b09a-ea06c9d9a952",
+    "atribuicoes": [
+      {
+        "titulo": "Gerenciar pipeline de vendas",
+        "categoria": "operacional",
+        "descricao": "Gerenciar e atualizar o pipeline de vendas no CRM, qualificando leads interessados em agentes virtuais ARVA para priorização pela equipe.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Analisar métricas de vendas",
+        "categoria": "estrategica",
+        "descricao": "Analisar métricas de performance de vendas e uso do marketplace de agentes ARVA, identificando tendências e oportunidades de upsell.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Preparar demonstrações de produto",
+        "categoria": "tecnica",
+        "descricao": "Preparar e apoiar demonstrações de robôs virtuais autônomos para prospects, destacando modularidade e ArvaCheck.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Elaborar relatórios de vendas",
+        "categoria": "administrativa",
+        "descricao": "Elaborar relatórios semanais de vendas e conversões de leads no ecossistema ARVA para revisão da liderança de Operations.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Coordenar follow-ups de leads",
+        "categoria": "operacional",
+        "descricao": "Coordenar follow-ups automatizados com leads qualificados utilizando agentes virtuais ARVA para agilizar o ciclo de vendas.",
+        "frequencia": "diaria",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Monitorar feedback de clientes",
+        "categoria": "estrategica",
+        "descricao": "Monitorar e compilar feedback de clientes sobre agentes virtuais via loops de aprendizado contínuo, propondo ajustes operacionais.",
+        "frequencia": "mensal",
+        "importancia": "media"
+      },
+      {
+        "titulo": "Atualizar materiais de vendas",
+        "categoria": "administrativa",
+        "descricao": "Atualizar materiais de vendas e documentação de competências modulares ARVA com base em atualizações do produto.",
+        "frequencia": "trimestral",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "623e0be8-d6dd-4eb9-b6c0-3c3cf5c296fc",
+    "atribuicoes": [
+      {
+        "titulo": "Desenvolver interfaces de dashboard",
+        "categoria": "tecnica",
+        "descricao": "Desenvolver e manter componentes frontend reativos para o dashboard de gerenciamento de agentes virtuais ARVA, garantindo usabilidade para monitoramento de tarefas autônomas.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Integrar APIs de IA no frontend",
+        "categoria": "tecnica",
+        "descricao": "Integrar APIs modulares de AI Skills e RAG no frontend para permitir criação e treinamento interativo de robôs virtuais com feedback em tempo real.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Otimizar performance de UI",
+        "categoria": "operacional",
+        "descricao": "Otimizar o desempenho de interfaces frontend para suportar escalabilidade nativa, visando tempos de carregamento abaixo de 2 segundos em ambientes de containers.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Implementar ferramentas de auditoria",
+        "categoria": "tecnica",
+        "descricao": "Implementar visualizações frontend para o sistema ArvaCheck, permitindo verificação ética e auditável das ações dos agentes virtuais.",
+        "frequencia": "trimestral",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Manter marketplace de agentes",
+        "categoria": "operacional",
+        "descricao": "Manter e atualizar a interface frontend do marketplace de agentes prontos, incluindo listagens dinâmicas e filtros baseados em competências.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Realizar code reviews frontend",
+        "categoria": "tecnica",
+        "descricao": "Realizar code reviews e refatorações no código frontend da equipe de Operations, assegurando padrões de qualidade e consistência em humanização de agentes.",
+        "frequencia": "semanal",
+        "importancia": "media"
+      },
+      {
+        "titulo": "Testar responsividade de interfaces",
+        "categoria": "operacional",
+        "descricao": "Testar e corrigir responsividade das interfaces frontend em múltiplos dispositivos, garantindo acessibilidade para operações contínuas de robôs virtuais.",
+        "frequencia": "mensal",
+        "importancia": "media"
+      }
+    ]
+  },
+  {
+    "id": "5cab9d2a-87c3-409d-9c97-022b1ce6567b",
+    "atribuicoes": [
+      {
+        "titulo": "Desenvolver perfis de personalidade",
+        "categoria": "tecnica",
+        "descricao": "Desenvolver perfis de personalidade humanizados para agentes IA, definindo traços como empatia, tom de voz e comportamentos alinhados aos objetivos modulares da ARVA.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Analisar feedback de usuarios",
+        "categoria": "tecnica",
+        "descricao": "Analisar feedback de usuários e métricas de engajamento para iterar e refinar personalidades de agentes existentes, garantindo aprendizado contínuo via RAG.",
+        "frequencia": "mensal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Integrar personalidades modulares",
+        "categoria": "operacional",
+        "descricao": "Integrar personalidades com blocos de competências AI Skills em colaboração com equipes de desenvolvimento, assegurando modularidade e escalabilidade.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Realizar testes A/B",
+        "categoria": "tecnica",
+        "descricao": "Realizar testes A/B de variações de personalidades em cenários reais de operação para otimizar engajamento e performance dos robôs virtuais.",
+        "frequencia": "trimestral",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Monitorar conformidade etica",
+        "categoria": "estrategica",
+        "descricao": "Monitorar ações de agentes via ArvaCheck para verificar conformidade ética das personalidades e propor ajustes preventivos.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Criar guidelines de padronizacao",
+        "categoria": "administrativa",
+        "descricao": "Criar e atualizar guidelines e documentação para padronização de personalidades humanizadas, facilitando criação e auditoria.",
+        "frequencia": "mensal",
+        "importancia": "media"
+      },
+      {
+        "titulo": "Contribuir para marketplace",
+        "categoria": "estrategica",
+        "descricao": "Contribuir com templates de personalidades prontas para o marketplace de agentes, incluindo descrições e demonstrações auditáveis.",
+        "frequencia": "trimestral",
+        "importancia": "alta"
+      }
+    ]
+  },
+  {
+    "id": "ee75f578-361c-46ee-880c-51ec0594efe5",
+    "atribuicoes": [
+      {
+        "titulo": "Gerenciar Backlog de Agentes",
+        "categoria": "gerencial",
+        "descricao": "Gerenciar e priorizar o backlog de features e skills modulares para agentes ARVA, alinhando com objetivos operacionais e feedback de stakeholders.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Definir Requisitos Funcionais",
+        "categoria": "tecnica",
+        "descricao": "Definir user stories e requisitos para criação de agentes humanizados, considerando modularidade, personalidades e competências específicas.",
+        "frequencia": "semanal",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Monitorar Performance de Agentes",
+        "categoria": "operacional",
+        "descricao": "Monitorar métricas de performance, uptime e eficiência dos agentes em operação utilizando o sistema ArvaCheck para auditoria contínua.",
+        "frequencia": "diaria",
+        "importancia": "critica"
+      },
+      {
+        "titulo": "Coordenar Deployments",
+        "categoria": "gerencial",
+        "descricao": "Coordenar com equipes de desenvolvimento e operations para deployar atualizações em agentes, garantindo escalabilidade via containers e APIs.",
+        "frequencia": "semanal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Analisar Feedback e Iterar",
+        "categoria": "estrategica",
+        "descricao": "Analisar feedback de usuários e loops de aprendizado contínuo (RAG) para iterar nas competências e comportamentos dos agentes virtuais.",
+        "frequencia": "mensal",
+        "importancia": "alta"
+      },
+      {
+        "titulo": "Assegurar Conformidade Ética",
+        "categoria": "administrativa",
+        "descricao": "Auditar ações dos agentes via ArvaCheck para garantir controle ético, verificação e compliance com padrões regulatórios do setor de tecnologia.",
+        "frequencia": "trimestral",
+        "importancia": "critica"
+      }
+    ]
+  }
+]

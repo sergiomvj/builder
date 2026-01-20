@@ -1,0 +1,77 @@
+{
+  "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+  "empresa_nome": "ARVA Tech Solutions",
+  "analyzed_at": "2025-11-28T15:08:54.016Z",
+  "llm_used": "GPT-4-Turbo",
+  "llm_model": "gpt-4-turbo-preview",
+  "personas_analyzed": 1,
+  "total_tasks": 10,
+  "tasks_analyzed": 9,
+  "tasks_automatable": 5,
+  "tasks_high_score": 0,
+  "analyses": [
+    {
+      "task_title": "Revisão diária de leads",
+      "automation_score": 65,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Monitoramento de KPIs de SDR",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Coaching e feedback one-on-one",
+      "automation_score": 35,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Atualização de estratégias de abordagem",
+      "automation_score": 40,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Análise de desempenho mensal",
+      "automation_score": 60,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Revisão diária de leads",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Treinamento de novos SDRs",
+      "automation_score": 40,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Acompanhamento de performance",
+      "automation_score": 60,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Análise mensal de tendências de mercado",
+      "automation_score": 55,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    }
+  ]
+}

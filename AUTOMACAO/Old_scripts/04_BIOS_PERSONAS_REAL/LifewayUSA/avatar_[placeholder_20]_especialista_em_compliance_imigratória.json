@@ -1,0 +1,112 @@
+{
+  "persona": {
+    "nome": "[Placeholder 20] Especialista em Compliance Imigratória",
+    "nacionalidade": "africanos",
+    "genero": "feminino",
+    "cargo": "Especialista em Compliance Imigratória",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Em definição",
+    "competencias": "Em definição",
+    "biografia": "Profissional experiente",
+    "personalidade": {},
+    "experiencia_anos": 6,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1612348717872-4c9e3d6e74f1?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1612348717872-4c9e3d6e74f1?w=200&h=200&fit=crop&crop=face",
+    "prompt_usado": "Retrato hiper-realista em 4K de uma mulher africana de 28-32 anos, etnia negra, tipo físico slim atlético, altura 1.65-1.70m, cabelo preto ébano comprimento médio estilo cacheado volume denso, olhos castanhos escuros formato amendoados expressivos, rosto formato oval, pele tom negra profunda textura lisa, sobrancelhas grossas cheias arqueadas, nariz largo, boca lábios grossos arqueados, expressão facial padrão confiante séria, marcas únicas nenhuma, acessórios permanentes brincos discretos de pérola relógio minimalista prateado, postura ereta confiante, características distintivas maçãs de rosto altas proeminentes, estilo vestimenta padrão business formal elegante, paleta cores vestuário azul frio cinza neutro, fundo office neutro com iluminação soft studio light, lente 85mm close-up half-body shot, DSLR look cinematic lighting, aspecto profissional de especialista em compliance imigratória em tecnologia",
+    "estilo": "business",
+    "background_tipo": "office",
+    "servico_usado": "gemini_ai",
+    "versao": 1,
+    "ativo": true,
+    "biometrics": {
+      "idade_aparente": "28-32",
+      "genero": "feminino",
+      "etnia": "negro",
+      "tipo_fisico": "slim atlético",
+      "altura_estimada": "1.65-1.70m",
+      "cabelo_cor": "preto ébano",
+      "cabelo_comprimento": "médio",
+      "cabelo_estilo": "cacheado",
+      "cabelo_volume": "denso",
+      "olhos_cor": "castanhos escuros",
+      "olhos_formato": "amendoados expressivos",
+      "rosto_formato": "oval",
+      "pele_tom": "negra profunda",
+      "pele_textura": "lisa",
+      "sobrancelhas": "grossas cheias arqueadas",
+      "nariz": "largo",
+      "boca_labios": "grossos arqueados",
+      "expressao_facial_padrao": "confiante séria",
+      "marcas_unicas": "nenhuma",
+      "acessorios_permanentes": "brincos discretos de pérola, relógio minimalista prateado",
+      "postura": "ereta confiante",
+      "caracteristicas_distintivas": "maçãs de rosto altas proeminentes",
+      "estilo_vestimenta_padrao": "business formal elegante",
+      "paleta_cores_vestuario": "azul frio cinza neutro"
+    },
+    "physical_description_detailed": {
+      "rosto": {
+        "formato": "oval com maçãs de rosto altas proeminentes e queixo suavemente definido",
+        "tom_pele": "negra profunda uniforme com subtom quente",
+        "textura_pele": "lisa e bem cuidada sem imperfeições visíveis",
+        "olhos": {
+          "cor": "castanhos escuros profundos",
+          "formato": "amendoados expressivos com cílios longos e densos"
+        },
+        "sobrancelhas": "grossas cheias arqueadas naturalmente alinhadas",
+        "nariz": "largo com narinas bem proporcionadas e ponte reta",
+        "boca": "lábios grossos arqueados naturalmente cheios e simétricos",
+        "expressao_tipica": "confiante séria com leve sorriso profissional e olhar direto"
+      },
+      "cabelo": {
+        "cor_exata": "preto ébano brilhante",
+        "comprimento": "médio até ombros",
+        "estilo": "cacheado solto com cachos definidos tipo 3C",
+        "volume": "denso e natural com movimento fluido"
+      },
+      "corpo": {
+        "altura_aproximada": "1.68m",
+        "tipo_fisico": "slim atlético com curvas sutis e tônus muscular leve",
+        "proporcao": "proporções equilibradas ombros alinhados quadris moderados",
+        "postura_tipica": "ereta confiante com ombros para trás e cabeça erguida"
+      }
+    },
+    "consistency_parameters": {
+      "rendering_style": "foto 4K realista retrato editorial",
+      "lens_focus": "85mm close-up half-body shot",
+      "lighting": "soft studio light",
+      "aspect_ratio": "1:1 (avatar)"
+    },
+    "history": {
+      "background_educacional": "Bacharel em Direito Internacional com foco em imigração pela Universidade de Lagos Nigéria e mestrado em Compliance nos EUA",
+      "experiencia_internacional": "Imigração da Nigéria para EUA há 8 anos trabalhando em tech com vistos e compliance multicultural",
+      "contexto_cultural": "Raízes nigerianas influenciando estilo elegante discreto com toques tradicionais sutis como brincos de pérola",
+      "estilo_vida": "Profissional ativa fitness equilibrada com rotina de yoga refletindo em postura ereta e pele saudável",
+      "marcos_carreira": "6 anos em LifewayUSA promovida a especialista após gerenciar compliance para 500+ imigrantes em tech",
+      "valores_pessoais": "Integridade e empatia refletidos em expressão confiante séria e acessórios minimalistas",
+      "ambiente_trabalho": "Escritório tech em San Francisco influenciando vestimenta business formal com tons azul cinza modernos",
+      "redes_sociais": "Perfil LinkedIn profissional com fotos em eventos de compliance imigratória destacando imagem polida"
+    },
+    "metadados": {
+      "resolucao": "1024x1024",
+      "formato": "webp",
+      "qualidade": "ultra_high",
+      "parametros_geracao": {
+        "prompt_negativo": "blurry, low quality, distorted, cartoonish",
+        "steps": 30,
+        "cfg_scale": 8.5
+      },
+      "contexto_profissional": {
+        "cargo": "Especialista em Compliance Imigratória",
+        "industria": "tecnologia",
+        "senioridade": "mid-level"
+      }
+    }
+  },
+  "generated_at": "2025-12-03T13:25:17.440Z"
+}

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "@vcm_supabase_url",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@vcm_supabase_anon_key",
+    "SUPABASE_SERVICE_ROLE_KEY": "@vcm_supabase_service_role_key",
+    "NEXT_PUBLIC_API_URL": "@vcm_api_url"
+  }
+}

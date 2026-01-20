@@ -1,0 +1,204 @@
+{
+  "name": "John (SDR Junior) - Revisão de e-mails e mensagens",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 6 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 6h para revisar e-mails e mensagens recebidas durante a noite"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "list",
+        "to": "{{ $json.email }}",
+        "subject": "Notification",
+        "message": "Automated message"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar e-mails não lidos recebidos durante a noite",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.filter(email => email.subject.includes('lead') || email.subject.includes('urgent'));"
+      },
+      "typeVersion": 1,
+      "notes": "Filtrar e-mails que contêm 'lead' ou 'urgent' no assunto"
+    },
+    {
+      "id": "4",
+      "name": "Action",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#leads",
+        "text": "Novo lead ou questão urgente identificado: {{ $json.subject }}"
+      },
+      "typeVersion": 1,
+      "notes": "Notificar no Slack sobre novos leads ou questões urgentes",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Action",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "modify",
+        "to": "{{ $json.email }}",
+        "subject": "Notification",
+        "message": "Automated message"
+      },
+      "typeVersion": 1,
+      "notes": "Marcar e-mails como lidos após processamento",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: John (SDR Junior) - Revisão de e-mails e mensagens\nEmpresa: ARVA Tech Solutions\nPersona: John Smith\nTarefa: Revisão de e-mails e mensagens\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:33.425Z",
+  "updatedAt": "2025-11-28T17:05:33.425Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "680cf6e1-5b0d-4dc7-b2c0-722d22998876",
+    "persona_nome": "John Smith",
+    "task_id": "918655fa-65d1-4b99-a044-5b2105c3ada6",
+    "task_title": "Revisão de e-mails e mensagens",
+    "opportunity_id": "2134e34a-1e5d-4067-87ee-b8fca7dca037",
+    "automation_score": 60,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:33.425Z"
+  }
+}

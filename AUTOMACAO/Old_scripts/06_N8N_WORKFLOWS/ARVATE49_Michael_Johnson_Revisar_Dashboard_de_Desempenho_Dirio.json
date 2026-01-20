@@ -1,0 +1,199 @@
+{
+  "name": "Michael (CTO) - Revisar Dashboard de Desempenho Diário",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 10 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 10h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "range": "A:Z"
+      },
+      "typeVersion": 1,
+      "notes": "Ler dados do dashboard no Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(item => ({ ...item.json, anomaly_detected: item.json.performance < 80 }));"
+      },
+      "typeVersion": 1,
+      "notes": "Verificar desempenho abaixo do esperado (<80%)"
+    },
+    {
+      "id": "4",
+      "name": "If",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "conditions": {
+          "all": [
+            {
+              "value": true,
+              "operation": "equal",
+              "parameter": "anomaly_detected"
+            }
+          ]
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Condição para verificar se há anomalias"
+    },
+    {
+      "id": "5",
+      "name": "Send Message",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#alerts",
+        "text": "Anomalia detectada no desempenho dos agentes virtuais."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar sobre anomalias no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Michael (CTO) - Revisar Dashboard de Desempenho Diário\nEmpresa: ARVA Tech Solutions\nPersona: Michael Johnson\nTarefa: Revisar Dashboard de Desempenho Diário\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:23.667Z",
+  "updatedAt": "2025-11-28T17:05:23.667Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "fe5d76ce-f793-4f2a-9df0-1e5b6d756d10",
+    "persona_nome": "Michael Johnson",
+    "task_id": "7e3ee5ad-2b75-478b-9a66-807b3796807c",
+    "task_title": "Revisar Dashboard de Desempenho Diário",
+    "opportunity_id": "e65f09cb-713d-43d8-a5e8-fab09e7bd72e",
+    "automation_score": 70,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:23.667Z"
+  }
+}

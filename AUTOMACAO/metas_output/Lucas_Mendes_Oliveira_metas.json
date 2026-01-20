@@ -1,0 +1,39 @@
+{
+  "persona_id": "04b3b136-e242-4b8d-8fe6-5f5d91b53c26",
+  "full_name": "Lucas Mendes Oliveira",
+  "role": "Desenvolvedor Full Stack",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar conhecimento em React.js",
+      "descricao": "Realizar 3 cursos online sobre React.js e desenvolver um projeto pessoal utilizando a tecnologia",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "%",
+      "data_prazo": "2022-09-01",
+      "prioridade": 1,
+      "vinculada_kpi": null
+    },
+    {
+      "titulo": "Participar de um projeto de arquitetura de software",
+      "descricao": "Integrar a equipe de arquitetura de software em um projeto piloto da empresa LifeWayUSA",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "projeto",
+      "data_prazo": "2022-12-01",
+      "prioridade": 2,
+      "vinculada_kpi": null
+    },
+    {
+      "titulo": "Desenvolver habilidades de liderança em projetos de equipe",
+      "descricao": "Participar como líder técnico em pelo menos dois projetos de equipe durante o próximo trimestre",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "projetos",
+      "data_prazo": "2022-11-01",
+      "prioridade": 3,
+      "vinculada_kpi": null
+    }
+  ],
+  "generated_at": "2025-12-08T14:42:21.498Z"
+}

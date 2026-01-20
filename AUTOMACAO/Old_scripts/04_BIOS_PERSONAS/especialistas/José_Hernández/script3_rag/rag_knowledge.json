@@ -1,0 +1,507 @@
+{
+  "persona_profile": {
+    "id": 6,
+    "persona_key": "José_Hernández",
+    "nome_completo": "José Hernández",
+    "categoria": "especialistas",
+    "especialidade": "youtube",
+    "experiencia_anos": 18,
+    "biografia": {
+      "educacao": "Bacharelado em Comunicação Digital e Certificação Google Ads",
+      "idiomas": [
+        "francês",
+        "português",
+        "inglês",
+        "espanhol"
+      ],
+      "secoes_extraidas": [
+        "formacao",
+        "experiencia",
+        "competencias_tecnicas",
+        "competencias_comportamentais",
+        "responsabilidades"
+      ]
+    },
+    "competencias": {
+      "tecnicas": [
+        {
+          "id": "6_t_1",
+          "nome": "Produção de Vídeo",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Produção de Vídeo aplicada no contexto de youtube"
+        },
+        {
+          "id": "6_t_2",
+          "nome": "Edição de Vídeo",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Edição de Vídeo aplicada no contexto de youtube"
+        },
+        {
+          "id": "6_t_3",
+          "nome": "YouTube Analytics",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em YouTube Analytics aplicada no contexto de youtube"
+        },
+        {
+          "id": "6_t_4",
+          "nome": "SEO para YouTube",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em SEO para YouTube aplicada no contexto de youtube"
+        },
+        {
+          "id": "6_t_5",
+          "nome": "Marketing de Conteúdo",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Marketing de Conteúdo aplicada no contexto de youtube"
+        },
+        {
+          "id": "6_t_6",
+          "nome": "Storytelling Digital",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Storytelling Digital aplicada no contexto de youtube"
+        },
+        {
+          "id": "6_t_7",
+          "nome": "Live Streaming",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Live Streaming aplicada no contexto de youtube"
+        }
+      ],
+      "comportamentais": [
+        {
+          "id": "6_c_1",
+          "nome": "Criatividade",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Criatividade aplicada no contexto de especialistas"
+        },
+        {
+          "id": "6_c_2",
+          "nome": "Comunicação Visual",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Comunicação Visual aplicada no contexto de especialistas"
+        },
+        {
+          "id": "6_c_3",
+          "nome": "Persistência",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Persistência aplicada no contexto de especialistas"
+        },
+        {
+          "id": "6_c_4",
+          "nome": "Orientação a Resultados",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Orientação a Resultados aplicada no contexto de especialistas"
+        },
+        {
+          "id": "6_c_5",
+          "nome": "Adaptabilidade",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Adaptabilidade aplicada no contexto de especialistas"
+        },
+        {
+          "id": "6_c_6",
+          "nome": "Inovação",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Inovação aplicada no contexto de especialistas"
+        }
+      ]
+    },
+    "ferramentas": [
+      {
+        "id": "6_f_1",
+        "nome": "Adobe Premiere Pro",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "6_f_2",
+        "nome": "Final Cut Pro",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "6_f_3",
+        "nome": "Adobe After Effects",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "6_f_4",
+        "nome": "Photoshop",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "6_f_5",
+        "nome": "YouTube Studio",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "6_f_6",
+        "nome": "TubeBuddy",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "6_f_7",
+        "nome": "VidIQ",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      }
+    ],
+    "search_metadata": {
+      "tags": [
+        "especialistas",
+        "youtube",
+        "Produção de Vídeo",
+        "Edição de Vídeo",
+        "YouTube Analytics",
+        "Criatividade",
+        "Comunicação Visual"
+      ],
+      "embedding_text": "José Hernández trabalha como especialistas. especialista em youtube. com 18 anos de experiência. competências técnicas: Produção de Vídeo, Edição de Vídeo, YouTube Analytics, SEO para YouTube, Marketing de Conteúdo, Storytelling Digital, Live Streaming. competências comportamentais: Criatividade, Comunicação Visual, Persistência, Orientação a Resultados, Adaptabilidade, Inovação. utiliza ferramentas: Adobe Premiere Pro, Final Cut Pro, Adobe After Effects, Photoshop, YouTube Studio, TubeBuddy, VidIQ. educação: Bacharelado em Comunicação Digital e Certificação Google Ads. idiomas: francês, português, inglês, espanhol",
+      "update_timestamp": "2025-11-16T14:48:34.870Z"
+    }
+  },
+  "relacionamentos": {
+    "competencias_relacionadas": [
+      {
+        "persona_id": 6,
+        "competencia_nome": "Produção de Vídeo",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 6,
+        "competencia_nome": "Edição de Vídeo",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 6,
+        "competencia_nome": "YouTube Analytics",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 6,
+        "competencia_nome": "SEO para YouTube",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 6,
+        "competencia_nome": "Marketing de Conteúdo",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 6,
+        "competencia_nome": "Storytelling Digital",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 6,
+        "competencia_nome": "Live Streaming",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 6,
+        "competencia_nome": "Criatividade",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 6,
+        "competencia_nome": "Comunicação Visual",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 6,
+        "competencia_nome": "Persistência",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 6,
+        "competencia_nome": "Orientação a Resultados",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 6,
+        "competencia_nome": "Adaptabilidade",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 6,
+        "competencia_nome": "Inovação",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      }
+    ],
+    "ferramentas_relacionadas": [
+      {
+        "persona_id": 6,
+        "ferramenta_nome": "Adobe Premiere Pro",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 6,
+        "ferramenta_nome": "Final Cut Pro",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 6,
+        "ferramenta_nome": "Adobe After Effects",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 6,
+        "ferramenta_nome": "Photoshop",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 6,
+        "ferramenta_nome": "YouTube Studio",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 6,
+        "ferramenta_nome": "TubeBuddy",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 6,
+        "ferramenta_nome": "VidIQ",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      }
+    ]
+  },
+  "contextos_relevantes": [
+    {
+      "id": "persona_3",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Carlos González",
+      "conteudo": "Carlos González trabalha como especialistas. especialista em hr. com 14 anos de experiência. competências técnicas: Gestão de Talentos, Recrutamento e Seleção, Desenvolvimento Organizacional, Gestão de Performance, Políticas de RH, Employee Experience, People Analytics. competências comportamentais: Liderança Empática, Comunicação Assertiva, Mediação de Conflitos, Pensamento Estratégico, Orientação a Pessoas, Adaptabilidade Cultural. utiliza ferramentas: HRIS Systems, ATS (Applicant Tracking Systems), Microsoft Office 365, Google Workspace, Slack, Zoom, LinkedIn Recruiter. educação: Pós-graduação em Gestão de Pessoas e MBA em Recursos Humanos. idiomas: inglês, espanhol, português, francês",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "hr",
+        "experiencia": 14
+      },
+      "tags": [
+        "especialistas",
+        "hr",
+        "Gestão de Talentos",
+        "Recrutamento e Seleção",
+        "Desenvolvimento Organizacional",
+        "Liderança Empática",
+        "Comunicação Assertiva"
+      ]
+    },
+    {
+      "id": "persona_4",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Gabriela González",
+      "conteudo": "Gabriela González trabalha como especialistas. especialista em midias_sociais. com 15 anos de experiência. competências técnicas: Social Media Marketing, Community Management, Gestão de Campanhas, Analytics e Métricas, Influencer Marketing, Paid Social Advertising. competências comportamentais: Comunicação Digital, Criatividade, Agilidade, Orientação a Tendências, Trabalho em Equipe, Resolução de Problemas. utiliza ferramentas: Facebook Business Manager, Instagram Creator Studio, Hootsuite, Buffer, Canva, Adobe Creative Suite, Google Analytics. educação: Marketing Digital e Social Media, Certificação Facebook Blueprint. idiomas: inglês, espanhol, francês, português",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "midias_sociais",
+        "experiencia": 15
+      },
+      "tags": [
+        "especialistas",
+        "midias_sociais",
+        "Social Media Marketing",
+        "Community Management",
+        "Gestão de Campanhas",
+        "Comunicação Digital",
+        "Criatividade"
+      ]
+    },
+    {
+      "id": "persona_5",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Isabella González",
+      "conteudo": "Isabella González trabalha como especialistas. especialista em marketing. com 9 anos de experiência. competências técnicas: Marketing Digital, Growth Hacking, Marketing Analytics, Automação de Marketing, Inbound Marketing, Performance Marketing. competências comportamentais: Pensamento Analítico, Orientação a Dados, Inovação, Visão Estratégica, Adaptabilidade, Orientação a Resultados. utiliza ferramentas: Google Ads, Facebook Ads, HubSpot, Mailchimp, Google Analytics, SEMrush, Hotjar. educação: MBA em Marketing Digital e Growth Hacking Certification. idiomas: francês, português, espanhol, inglês",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "marketing",
+        "experiencia": 9
+      },
+      "tags": [
+        "especialistas",
+        "marketing",
+        "Marketing Digital",
+        "Growth Hacking",
+        "Marketing Analytics",
+        "Pensamento Analítico",
+        "Orientação a Dados"
+      ]
+    },
+    {
+      "id": "persona_6",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de José Hernández",
+      "conteudo": "José Hernández trabalha como especialistas. especialista em youtube. com 18 anos de experiência. competências técnicas: Produção de Vídeo, Edição de Vídeo, YouTube Analytics, SEO para YouTube, Marketing de Conteúdo, Storytelling Digital, Live Streaming. competências comportamentais: Criatividade, Comunicação Visual, Persistência, Orientação a Resultados, Adaptabilidade, Inovação. utiliza ferramentas: Adobe Premiere Pro, Final Cut Pro, Adobe After Effects, Photoshop, YouTube Studio, TubeBuddy, VidIQ. educação: Bacharelado em Comunicação Digital e Certificação Google Ads. idiomas: francês, português, inglês, espanhol",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "youtube",
+        "experiencia": 18
+      },
+      "tags": [
+        "especialistas",
+        "youtube",
+        "Produção de Vídeo",
+        "Edição de Vídeo",
+        "YouTube Analytics",
+        "Criatividade",
+        "Comunicação Visual"
+      ]
+    },
+    {
+      "id": "competencia_33",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Criatividade",
+      "conteudo": "Competência em Criatividade aplicada no contexto de especialistas. Personas com esta competência: Gabriela González, José Hernández. Ferramentas relacionadas: .",
+      "metadata": {
+        "categoria": "comportamental",
+        "nivel_medio": "expert",
+        "total_personas": 2
+      },
+      "tags": [
+        "Criatividade",
+        "comportamental"
+      ]
+    },
+    {
+      "id": "competencia_50",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Produção de Vídeo",
+      "conteudo": "Competência em Produção de Vídeo aplicada no contexto de youtube. Personas com esta competência: José Hernández. Ferramentas relacionadas: Adobe Premiere Pro, Final Cut Pro, Adobe After Effects, Photoshop, YouTube Studio, TubeBuddy, VidIQ.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "expert",
+        "total_personas": 1
+      },
+      "tags": [
+        "Produção de Vídeo",
+        "tecnica",
+        "Adobe Premiere Pro",
+        "Final Cut Pro",
+        "Adobe After Effects",
+        "Photoshop",
+        "YouTube Studio",
+        "TubeBuddy",
+        "VidIQ"
+      ]
+    },
+    {
+      "id": "competencia_51",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Edição de Vídeo",
+      "conteudo": "Competência em Edição de Vídeo aplicada no contexto de youtube. Personas com esta competência: José Hernández. Ferramentas relacionadas: Adobe Premiere Pro, Final Cut Pro, Adobe After Effects, Photoshop, YouTube Studio, TubeBuddy, VidIQ.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "expert",
+        "total_personas": 1
+      },
+      "tags": [
+        "Edição de Vídeo",
+        "tecnica",
+        "Adobe Premiere Pro",
+        "Final Cut Pro",
+        "Adobe After Effects",
+        "Photoshop",
+        "YouTube Studio",
+        "TubeBuddy",
+        "VidIQ"
+      ]
+    },
+    {
+      "id": "competencia_52",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência YouTube Analytics",
+      "conteudo": "Competência em YouTube Analytics aplicada no contexto de youtube. Personas com esta competência: José Hernández. Ferramentas relacionadas: Adobe Premiere Pro, Final Cut Pro, Adobe After Effects, Photoshop, YouTube Studio, TubeBuddy, VidIQ.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "expert",
+        "total_personas": 1
+      },
+      "tags": [
+        "YouTube Analytics",
+        "tecnica",
+        "Adobe Premiere Pro",
+        "Final Cut Pro",
+        "Adobe After Effects",
+        "Photoshop",
+        "YouTube Studio",
+        "TubeBuddy",
+        "VidIQ"
+      ]
+    },
+    {
+      "id": "competencia_57",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Comunicação Visual",
+      "conteudo": "Competência em Comunicação Visual aplicada no contexto de especialistas. Personas com esta competência: José Hernández. Ferramentas relacionadas: .",
+      "metadata": {
+        "categoria": "comportamental",
+        "nivel_medio": "expert",
+        "total_personas": 1
+      },
+      "tags": [
+        "Comunicação Visual",
+        "comportamental"
+      ]
+    }
+  ],
+  "query_examples": [
+    {
+      "tipo": "competencia_lookup",
+      "query": "Quais são as competências de José Hernández?",
+      "resposta_esperada": "Lista de competências técnicas e comportamentais"
+    },
+    {
+      "tipo": "ferramenta_usage",
+      "query": "Que ferramentas José Hernández sabe usar?",
+      "resposta_esperada": "Lista de ferramentas com nível de proficiência"
+    },
+    {
+      "tipo": "colaboracao_potential",
+      "query": "Com quem José Hernández pode colaborar em projetos?",
+      "resposta_esperada": "Personas com competências complementares"
+    },
+    {
+      "tipo": "processo_involvement",
+      "query": "Em que processos José Hernández deveria estar envolvido?",
+      "resposta_esperada": "Processos que aproveitam suas competências"
+    }
+  ],
+  "data_processamento": "2025-11-16T14:48:34.888Z"
+}

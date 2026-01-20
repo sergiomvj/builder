@@ -1,0 +1,995 @@
+{
+  "empresa": {
+    "id": "07870dfd-ca9d-4004-bbeb-e4aabd30d244",
+    "codigo": "ARVA63",
+    "nome": "ARVA Tech Solutions"
+  },
+  "data_processamento": "2025-11-16T14:45:45.188Z",
+  "total_personas": 15,
+  "personas": {
+    "CMO": {
+      "info": {
+        "nome": "David Thompson",
+        "role": "CMO",
+        "department": "Marketing",
+        "specialty": "Marketing",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "SA": {
+      "info": {
+        "nome": "Marcus Brown",
+        "role": "Analyst",
+        "department": "IT",
+        "specialty": "Systems Analysis",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "HRA": {
+      "info": {
+        "nome": "Jessica Wilson",
+        "role": "Assistant",
+        "department": "HR",
+        "specialty": "HR Support",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "PM": {
+      "info": {
+        "nome": "Emily Rodriguez",
+        "role": "Manager",
+        "department": "PMO",
+        "specialty": "Project Management",
+        "nivel": "Manager",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "SM": {
+      "info": {
+        "nome": "Carlos Silva",
+        "role": "Manager",
+        "department": "Sales",
+        "specialty": "Sales",
+        "nivel": "Manager",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "AA": {
+      "info": {
+        "nome": "Ana Costa",
+        "role": "Assistant",
+        "department": "Administrative",
+        "specialty": "Administration",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "ITA": {
+      "info": {
+        "nome": "Carolina Lima",
+        "role": "Assistant",
+        "department": "IT",
+        "specialty": "IT Support",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "CEO": {
+      "info": {
+        "nome": "Michael Anderson",
+        "role": "CEO",
+        "department": "Executive",
+        "specialty": "Leadership",
+        "nivel": "Executive",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "CFO": {
+      "info": {
+        "nome": "Robert Martinez",
+        "role": "CFO",
+        "department": "Finance",
+        "specialty": "Finance",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "HRM": {
+      "info": {
+        "nome": "Amanda Johnson",
+        "role": "Manager",
+        "department": "HR",
+        "specialty": "Human Resources",
+        "nivel": "Manager",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "EA": {
+      "info": {
+        "nome": "Rachel Green",
+        "role": "Assistant",
+        "department": "Executive",
+        "specialty": "Administrative Support",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "CTO": {
+      "info": {
+        "nome": "Sarah Chen",
+        "role": "CTO",
+        "department": "Technology",
+        "specialty": "Technology",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "COO": {
+      "info": {
+        "nome": "Jennifer Williams",
+        "role": "COO",
+        "department": "Operations",
+        "specialty": "Operations",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "DMS": {
+      "info": {
+        "nome": "Lisa Park",
+        "role": "Specialist",
+        "department": "Marketing",
+        "specialty": "Digital Marketing",
+        "nivel": "Specialist",
+        "template_usado": "Specialist"
+      },
+      "tech_specs": {
+        "tools": [
+          "Specialized CRM Modules",
+          "Technical Support Tools",
+          "Knowledge Base Systems",
+          "Demo Support Platforms"
+        ],
+        "technologies": [
+          "Technical CRM",
+          "Support Integration",
+          "Knowledge Management",
+          "Technical Documentation"
+        ],
+        "methodologies": [
+          "Technical Support Selling",
+          "Solution Support",
+          "Technical Consulting",
+          "Product Expertise"
+        ],
+        "sales_enablement": [
+          "Technical Documentation",
+          "Solution Support",
+          "Product Training Materials",
+          "Technical FAQs"
+        ],
+        "prospecting_tools": [],
+        "support_areas": [
+          "Technical Training",
+          "Solution Architecture",
+          "Product Demonstrations",
+          "Technical Objection Handling"
+        ]
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": false,
+        "has_sales_enablement": true,
+        "sales_focus": null,
+        "tech_specialization": "Specialist"
+      },
+      "infrastructure": [
+        "Technical Support Platform",
+        "Knowledge Base System",
+        "Demo Support Infrastructure"
+      ],
+      "integration_points": [
+        "Technical CRM Integration",
+        "Support Ticket Sync",
+        "Knowledge Base API",
+        "Product Data Sync"
+      ]
+    },
+    "SA_SALES": {
+      "info": {
+        "nome": "Marina Santos",
+        "role": "Assistant",
+        "department": "Sales",
+        "specialty": "Sales Support",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    }
+  }
+}

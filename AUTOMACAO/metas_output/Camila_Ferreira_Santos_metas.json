@@ -1,0 +1,36 @@
+{
+  "persona_id": "7bf5953b-ee96-4c4e-ab22-5058203e0111",
+  "full_name": "Camila Ferreira Santos",
+  "role": "Designer UI/UX",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades em design de interfaces",
+      "descricao": "Realizar cursos online de design de interfaces e realizar projetos práticos para aplicar os conceitos aprendidos",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "horas",
+      "data_prazo": "2026-06-01",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Ampliar conhecimento em experiência do usuário",
+      "descricao": "Participar de workshops e eventos relacionados a UX, além de realizar estudos de casos e pesquisas de mercado",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "horas",
+      "data_prazo": "2026-06-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Participar de cursos de especialização em UI/UX",
+      "descricao": "Matricular-se em um curso de especialização em UI/UX e dedicar-se ao estudo dos conteúdos propostos",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "curso",
+      "data_prazo": "2026-06-01",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:37:15.873Z"
+}

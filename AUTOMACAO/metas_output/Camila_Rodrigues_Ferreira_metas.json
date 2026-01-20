@@ -1,0 +1,39 @@
+{
+  "persona_id": "e91dce96-15eb-4b1d-b93a-b73f50c33416",
+  "full_name": "Camila Rodrigues Ferreira",
+  "role": "Gerente de Produto",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Desenvolver um novo produto",
+      "descricao": "Lançar um novo produto inovador no mercado de tecnologia para aumentar a participação da LifeWayUSA no setor. O novo produto deve atender às necessidades dos clientes e superar as expectativas do mercado.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "1",
+      "unidade_medida": "produto",
+      "data_prazo": "2026-06-01",
+      "prioridade": 1,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Aumentar a eficiência da equipe de desenvolvimento",
+      "descricao": "Implementar novos processos e ferramentas para melhorar a produtividade da equipe de desenvolvimento. Estabelecer metas mensuráveis de desempenho e acompanhar o progresso regularmente.",
+      "categoria": "performance",
+      "valor_alvo": 20,
+      "unidade_medida": "%",
+      "data_prazo": "2026-06-01",
+      "prioridade": 2,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Melhorar a experiência do usuário",
+      "descricao": "Realizar pesquisas de satisfação do usuário, identificar pontos de melhoria e implementar melhorias no produto e no atendimento ao cliente. A meta é aumentar a pontuação de satisfação do cliente em 10% nos próximos 6 meses.",
+      "categoria": "kpi",
+      "valor_alvo": 10,
+      "unidade_medida": "%",
+      "data_prazo": "2026-06-01",
+      "prioridade": 3,
+      "vinculada_kpi": "Satisfação do cliente"
+    }
+  ],
+  "generated_at": "2025-12-08T14:38:20.827Z"
+}

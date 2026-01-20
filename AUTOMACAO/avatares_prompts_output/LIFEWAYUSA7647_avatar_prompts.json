@@ -1,0 +1,482 @@
+[
+  {
+    "persona_code": "LIFEWAYUSA7647-P001",
+    "full_name": "Roberto Almeida Santos",
+    "role": "CEO",
+    "prompt": "Professional headshot of a confident 38-year-old brasileiros masculino, ceo, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 38,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P002",
+    "full_name": "Carlos Eduardo Pereira Santos",
+    "role": "CFO",
+    "prompt": "Professional headshot of a confident 37-year-old brasileiros masculino, cfo, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 37,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P003",
+    "full_name": "Fernanda Costa Oliveira",
+    "role": "CMO",
+    "prompt": "Professional headshot of a confident 37-year-old brasileiros feminino, cmo, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 37,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P004",
+    "full_name": "Bruno Almeida Santos",
+    "role": "COO",
+    "prompt": "Professional headshot of a confident 37-year-old brasileiros masculino, coo, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 37,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P005",
+    "full_name": "Rafael Oliveira Santos",
+    "role": "CTO",
+    "prompt": "Professional headshot of a confident 37-year-old brasileiros masculino, cto, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 37,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P006",
+    "full_name": "Ricardo Mendes Oliveira",
+    "role": "Contador",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros masculino, contador, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P007",
+    "full_name": "Camila Ferreira Santos",
+    "role": "Designer UI/UX",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros feminino, designer ui/ux, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P008",
+    "full_name": "Ana Carolina Oliveira Santos",
+    "role": "Designer UI/UX",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros feminino, designer ui/ux, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P009",
+    "full_name": "Gabriel Santos Silva",
+    "role": "Analista de Dados",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros masculino, analista de dados, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P010",
+    "full_name": "Lucas Henrique Ferreira",
+    "role": "Analista de Dados",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros masculino, analista de dados, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P011",
+    "full_name": "Carlos Eduardo Mendes",
+    "role": "Gerente de Vendas",
+    "prompt": "Professional headshot of a confident 33-year-old brasileiros masculino, gerente de vendas, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 33,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P012",
+    "full_name": "Carlos Eduardo Santos",
+    "role": "Gerente de Vendas",
+    "prompt": "Professional headshot of a confident 33-year-old brasileiros masculino, gerente de vendas, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 33,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P013",
+    "full_name": "Carlos Eduardo Silva Santos",
+    "role": "Gerente Financeiro",
+    "prompt": "Professional headshot of a confident 33-year-old brasileiros masculino, gerente financeiro, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 33,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P014",
+    "full_name": "Camila Rodrigues Ferreira",
+    "role": "Gerente de Produto",
+    "prompt": "Professional headshot of a confident 33-year-old brasileiros feminino, gerente de produto, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 33,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P015",
+    "full_name": "Ana Beatriz Santos Oliveira",
+    "role": "Gerente de Produto",
+    "prompt": "Professional headshot of a confident 33-year-old brasileiros feminino, gerente de produto, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 33,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P016",
+    "full_name": "Gabriel Costa Silva",
+    "role": "Analista Financeiro",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros masculino, analista financeiro, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P017",
+    "full_name": "Gabriel Santos Oliveira",
+    "role": "Analista Financeiro",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros masculino, analista financeiro, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P018",
+    "full_name": "Carlos Eduardo Souza",
+    "role": "Analista de SEO/SEM",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros masculino, analista de seo/sem, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P019",
+    "full_name": "Carlos Eduardo Siqueira",
+    "role": "Executivo de Vendas",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros masculino, executivo de vendas, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P020",
+    "full_name": "Carlos Eduardo Souza Lima",
+    "role": "Executivo de Vendas",
+    "prompt": "Professional headshot of a confident 33-year-old brasileiros masculino, executivo de vendas, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 33,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P021",
+    "full_name": "Rafael Augusto Lima",
+    "role": "Executivo de Vendas",
+    "prompt": "Professional headshot of a confident 31-year-old brasileiros masculino, executivo de vendas, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 31,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P022",
+    "full_name": "Ana Carolina Santos Oliveira",
+    "role": "Gerente de Conteúdo",
+    "prompt": "Professional headshot of a confident 32-year-old brasileiros feminino, gerente de conteúdo, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 32,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P023",
+    "full_name": "Fernanda Oliveira Santos",
+    "role": "Gerente de Marketing",
+    "prompt": "Professional headshot of a confident 33-year-old brasileiros feminino, gerente de marketing, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 33,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P024",
+    "full_name": "Mariana Ribeiro Costa",
+    "role": "Gerente de Marketing",
+    "prompt": "Professional headshot of a confident 32-year-old brasileiros feminino, gerente de marketing, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 32,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P025",
+    "full_name": "Mariana Costa Santos",
+    "role": "Analista de Qualidade",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros feminino, analista de qualidade, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P026",
+    "full_name": "Gabriela Santos Oliveira",
+    "role": "Analista de Qualidade",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros feminino, analista de qualidade, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P027",
+    "full_name": "Rafael Moreira Lima",
+    "role": "Coordenador de Vendas",
+    "prompt": "Professional headshot of a confident 32-year-old brasileiros masculino, coordenador de vendas, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 32,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P028",
+    "full_name": "Lucas Henrique Santos",
+    "role": "Desenvolvedor Backend",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros masculino, desenvolvedor backend, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P029",
+    "full_name": "Carlos Eduardo Silva",
+    "role": "Desenvolvedor Backend",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros masculino, desenvolvedor backend, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P030",
+    "full_name": "Lucas Ferreira Santos",
+    "role": "Desenvolvedor Frontend",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros masculino, desenvolvedor frontend, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P031",
+    "full_name": "Gabriel Silva Santos",
+    "role": "Desenvolvedor Frontend",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros masculino, desenvolvedor frontend, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P032",
+    "full_name": "Lucas Almeida Santos",
+    "role": "Gerente de Operações",
+    "prompt": "Professional headshot of a confident 32-year-old brasileiros masculino, gerente de operações, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 32,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P033",
+    "full_name": "Maria Fernanda Oliveira Santos",
+    "role": "Gerente de Operações",
+    "prompt": "Professional headshot of a confident 32-year-old brasileiros feminino, gerente de operações, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 32,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P034",
+    "full_name": "Lucas Henrique Silva Santos",
+    "role": "Desenvolvedor Full Stack",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros masculino, desenvolvedor full stack, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P035",
+    "full_name": "Gabriel Mendes Souza",
+    "role": "Desenvolvedor Full Stack",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros masculino, desenvolvedor full stack, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P036",
+    "full_name": "Lucas Mendes Oliveira",
+    "role": "Desenvolvedor Full Stack",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros masculino, desenvolvedor full stack, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P037",
+    "full_name": "Gabriel Costa Santos",
+    "role": "Desenvolvedor Full Stack",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros masculino, desenvolvedor full stack, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P038",
+    "full_name": "Carlos Eduardo Santos Silva",
+    "role": "Coordenador de Operações",
+    "prompt": "Professional headshot of a confident 32-year-old brasileiros masculino, coordenador de operações, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 32,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P039",
+    "full_name": "Larissa Mendes Costa",
+    "role": "Especialista em Marketing Digital",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros feminino, especialista em marketing digital, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  },
+  {
+    "persona_code": "LIFEWAYUSA7647-P040",
+    "full_name": "Gabriela Santos Almeida",
+    "role": "Especialista em Marketing Digital",
+    "prompt": "Professional headshot of a confident 30-year-old brasileiros feminino, especialista em marketing digital, business attire, warm smile, modern office background, natural lighting, high quality",
+    "metadata": {
+      "estilo": "professional headshot",
+      "ambiente": "modern office",
+      "idade_aparente": 30,
+      "etnia": "brasileiros"
+    }
+  }
+]

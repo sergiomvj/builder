@@ -1,0 +1,196 @@
+{
+  "name": "Amanda (YT Manager) - Revisão diária do desempenho do canal",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 9h para iniciar a revisão do desempenho do canal"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "url": "https://www.googleapis.com/youtube/v3/channels",
+        "method": "GET",
+        "responseFormat": "json"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar métricas de visualização, engajamento e crescimento do canal"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(data => ({ ...data, report: `Visualizações: ${data.views}, Engajamento: ${data.likes}, Crescimento: ${data.subscribers}` }));"
+      },
+      "typeVersion": 1,
+      "notes": "Preparar relatório com as métricas coletadas"
+    },
+    {
+      "id": "4",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "manager@arvatech.com",
+        "subject": "Relatório Diário de Desempenho do Canal",
+        "message": "{{ $json.report }}"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar relatório por email para o gestor",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Notify",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#channel-performance",
+        "text": "Relatório diário de desempenho enviado para o gestor."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe no Slack sobre o envio do relatório",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Amanda (YT Manager) - Revisão diária do desempenho do canal\nEmpresa: ARVA Tech Solutions\nPersona: Amanda Davis\nTarefa: Revisão diária do desempenho do canal\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:08.670Z",
+  "updatedAt": "2025-11-28T17:05:08.670Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "b236f0d4-3ab7-4088-92c0-92f2bd511826",
+    "persona_nome": "Amanda Davis",
+    "task_id": "86e1b4c8-7171-43f2-a904-f29a7111e5c0",
+    "task_title": "Revisão diária do desempenho do canal",
+    "opportunity_id": "bc845aa8-85e1-462d-9da9-8bb4278d544a",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:08.670Z"
+  }
+}

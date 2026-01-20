@@ -1,0 +1,59 @@
+{
+  "persona_id": "439fbd3a-f399-43b9-beb1-94429f583d8e",
+  "full_name": "Ahmad Hassan Al-Sayed",
+  "role": "Desenvolvedor Senior Full-Stack",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "metas": [
+    {
+      "titulo": "Entregar 5 features por sprint",
+      "descricao": "Manter uma média de 5 features entregues por sprint em todos os sprints dos próximos 6 meses (sprints de 2 semanas).",
+      "categoria": "kpi",
+      "valor_alvo": 5,
+      "unidade_medida": "features/sprint",
+      "data_prazo": "2025-04-01",
+      "prioridade": 4,
+      "vinculada_kpi": "Features entregues"
+    },
+    {
+      "titulo": "95% dos bugs resolvidos em <24h",
+      "descricao": "Garantir que 95% dos bugs atribuídos sejam resolvidos em menos de 24 horas ao longo de 4 meses.",
+      "categoria": "kpi",
+      "valor_alvo": 95,
+      "unidade_medida": "%",
+      "data_prazo": "2025-02-01",
+      "prioridade": 5,
+      "vinculada_kpi": "Tempo de resolução de bugs"
+    },
+    {
+      "titulo": "Alcançar 85% de cobertura de código",
+      "descricao": "Elevar a cobertura de testes unitários para 85% em todos os módulos desenvolvidos nos próximos 3 meses.",
+      "categoria": "kpi",
+      "valor_alvo": 85,
+      "unidade_medida": "%",
+      "data_prazo": "2025-01-15",
+      "prioridade": 4,
+      "vinculada_kpi": "Cobertura de código"
+    },
+    {
+      "titulo": "Dominar Multi-Agent Systems",
+      "descricao": "Completar curso avançado de 40 horas e implementar 1 protótipo funcional de Multi-Agent System relevante para ARVA.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "protótipos",
+      "data_prazo": "2025-03-01",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Liderar integração de LLMs",
+      "descricao": "Liderar o projeto de integração de 2 novos Large Language Models no stack full-stack da ARVA, com entrega de MVP.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "LLMs integrados",
+      "data_prazo": "2025-04-01",
+      "prioridade": 5,
+      "vinculada_kpi": ""
+    }
+  ],
+  "generated_at": "2025-12-08T22:23:54.119Z"
+}

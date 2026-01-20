@@ -1,0 +1,166 @@
+{
+  "name": "Thomas (HR Manager) - Revisão diária de relatórios de performa...",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 9h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "range": "A:Z"
+      },
+      "typeVersion": 1,
+      "notes": "Ler relatórios de performance dos agentes virtuais do Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(report => ({ ...report, optimization_opportunity: report.performance_metric < threshold ? true : false }));"
+      },
+      "typeVersion": 1,
+      "notes": "Identificar oportunidades de otimização baseadas em métricas de performance"
+    },
+    {
+      "id": "4",
+      "name": "Send Message",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "performance_reports",
+        "text": "Relatório diário de performance dos agentes virtuais com oportunidades de otimização identificadas."
+      },
+      "typeVersion": 1,
+      "notes": "Enviar notificação para o canal Slack com o resumo das oportunidades de otimização",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Thomas (HR Manager) - Revisão diária de relatórios de performa...\nEmpresa: ARVA Tech Solutions\nPersona: Thomas Anderson\nTarefa: Revisão diária de relatórios de performance\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "5"
+  },
+  "createdAt": "2025-11-28T17:05:18.952Z",
+  "updatedAt": "2025-11-28T17:05:18.952Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "afa9c2ea-870b-4894-8d9f-bb83f8412d1a",
+    "persona_nome": "Thomas Anderson",
+    "task_id": "3d06197f-81a4-4d9f-a710-b0e2b790929d",
+    "task_title": "Revisão diária de relatórios de performance",
+    "opportunity_id": "520e9407-95be-4e17-ac2b-1c26df59defb",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:18.952Z"
+  }
+}

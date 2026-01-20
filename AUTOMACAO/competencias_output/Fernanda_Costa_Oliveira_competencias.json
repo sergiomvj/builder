@@ -1,0 +1,53 @@
+{
+  "persona_id": "2cb4f3a0-54e5-4284-9a7d-867850a15b1d",
+  "full_name": "Fernanda Costa Oliveira",
+  "role": "CMO",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Marketing Digital",
+    "Gestão de Projetos",
+    "Análise de Dados",
+    "SEO",
+    "Gestão de Redes Sociais"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Capacidade de adaptação",
+    "Trabalho em equipe",
+    "Resolução de problemas"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "Hootsuite",
+    "Asana",
+    "Canva"
+  ],
+  "tarefas_diarias": [
+    "Elaborar campanhas de marketing",
+    "Analisar métricas de desempenho",
+    "Gerenciar conteúdo das redes sociais",
+    "Coordenar equipe de marketing"
+  ],
+  "tarefas_semanais": [
+    "Reuniões de planejamento de marketing",
+    "Atualização de relatórios de performance",
+    "Acompanhamento de leads"
+  ],
+  "tarefas_mensais": [
+    "Elaboração de relatório de resultados",
+    "Desenvolvimento de novas estratégias de marketing",
+    "Avaliação de concorrência"
+  ],
+  "kpis": [
+    "Aumento de Leads - 20%",
+    "Engajamento nas Redes Sociais - 15%",
+    "Taxa de Conversão - 10%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Realizar curso de especialização em Marketing Digital",
+    "Participar de workshops sobre liderança",
+    "Melhorar habilidades de negociação"
+  ],
+  "generated_at": "2025-12-08T14:36:41.905Z"
+}

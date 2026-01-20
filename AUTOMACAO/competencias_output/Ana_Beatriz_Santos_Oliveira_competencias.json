@@ -1,0 +1,53 @@
+{
+  "persona_id": "dd6b26cf-8361-4ab2-8d51-8b645b865faf",
+  "full_name": "Ana Beatriz Santos Oliveira",
+  "role": "Gerente de Produto",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em legislação de imigração",
+    "Experiência em gestão de projetos",
+    "Conhecimento em marketing digital",
+    "Habilidade em análise de dados",
+    "Conhecimento em desenvolvimento de produtos"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Resolução de problemas",
+    "Adaptabilidade",
+    "Trabalho em equipe"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "Trello",
+    "Canva",
+    "Microsoft Excel"
+  ],
+  "tarefas_diarias": [
+    "Análise de performance do produto",
+    "Reuniões com a equipe de desenvolvimento",
+    "Acompanhamento de métricas de marketing",
+    "Feedback aos stakeholders"
+  ],
+  "tarefas_semanais": [
+    "Definição de prioridades para o time de desenvolvimento",
+    "Atualização do roadmap do produto",
+    "Revisão de conteúdos para a plataforma"
+  ],
+  "tarefas_mensais": [
+    "Elaboração de relatórios de desempenho do produto",
+    "Planejamento de novas funcionalidades",
+    "Avaliação de feedback dos usuários"
+  ],
+  "kpis": [
+    "Satisfação do usuário - 80%",
+    "Aquisição de novos clientes - 15%",
+    "Retenção de clientes - 90%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de negociação",
+    "Expandir conhecimento em tecnologias emergentes",
+    "Desenvolver estratégias de crescimento para o produto"
+  ],
+  "generated_at": "2025-12-08T14:38:28.452Z"
+}

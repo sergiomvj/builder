@@ -1,0 +1,50 @@
+{
+  "persona": {
+    "id": "afa9c2ea-870b-4894-8d9f-bb83f8412d1a",
+    "nome": "Thomas Anderson",
+    "biografia": "Biografia não disponível"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1494790108755-2616b612b1-5c?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1494790108755-2616b612b1-5c?w=100&h=100&fit=crop&crop=face",
+    "prompt_usado": "Mulher profissional, 28-32 anos, cabelo loiro, sorriso confiante, blazer escuro",
+    "estilo": "Executiva Moderna",
+    "background_tipo": "escritório",
+    "biometrics": {
+      "genero": "feminino",
+      "idade_aparente": 30,
+      "etnia": "caucasiano",
+      "cor_cabelo": "loiro",
+      "cor_olhos": "azuis",
+      "estatura": "média",
+      "biotipo": "atlético"
+    },
+    "servico_usado": "mock_data_v1",
+    "versao": "test_1.0",
+    "ativo": true,
+    "history": {
+      "formacao_academica": [
+        "Administração"
+      ],
+      "experiencia_anos": 8,
+      "empresas_anteriores": [
+        "TechCorp",
+        "SoftwarePlus"
+      ],
+      "certificacoes": [
+        "Professional Certification"
+      ],
+      "idiomas": [
+        "português",
+        "inglês"
+      ]
+    },
+    "metadados": {
+      "generated_at": "2025-11-22T15:50:58.496Z",
+      "script_version": "03_mock",
+      "confidence_score": 95,
+      "mock_data": true
+    }
+  },
+  "generated_at": "2025-11-22T15:50:58.646Z"
+}

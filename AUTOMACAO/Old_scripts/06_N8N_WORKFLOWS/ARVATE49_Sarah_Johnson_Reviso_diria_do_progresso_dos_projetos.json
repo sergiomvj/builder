@@ -1,0 +1,193 @@
+{
+  "name": "Sarah (CEO) - Revisão diária do progresso dos projetos",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 9h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "range": "Projects!A:D"
+      },
+      "typeVersion": 1,
+      "notes": "Ler dados dos projetos no Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(project => ({ ...project, progress_status: project.progress >= project.target ? 'On Track' : 'Behind' }));"
+      },
+      "typeVersion": 1,
+      "notes": "Avaliar progresso dos projetos"
+    },
+    {
+      "id": "4",
+      "name": "Send Message",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "project-updates",
+        "text": "{{ $json.project_name }} está {{ $json.progress_status }}"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar atualização de status no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "to": "project_manager@arvatech.com",
+        "message": "O projeto {{ $json.project_name }} está {{ $json.progress_status }}. Veja mais detalhes no dashboard.",
+        "subject": "Atualização Diária do Progresso do Projeto"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email de atualização para o gerente do projeto"
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Sarah (CEO) - Revisão diária do progresso dos projetos\nEmpresa: ARVA Tech Solutions\nPersona: Sarah Johnson\nTarefa: Revisão diária do progresso dos projetos\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:26.821Z",
+  "updatedAt": "2025-11-28T17:05:26.821Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "07acdccc-ac86-41cd-9c19-2c95bfc82be9",
+    "persona_nome": "Sarah Johnson",
+    "task_id": "20c2dd52-e2ad-40ad-9b17-54d51afad04c",
+    "task_title": "Revisão diária do progresso dos projetos",
+    "opportunity_id": "169a374c-a0ed-4897-8c6f-6dcabebdab2c",
+    "automation_score": 65,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:26.821Z"
+  }
+}

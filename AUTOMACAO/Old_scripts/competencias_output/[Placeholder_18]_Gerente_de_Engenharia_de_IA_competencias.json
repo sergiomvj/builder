@@ -1,0 +1,57 @@
+{
+  "persona_id": "4bf65f6e-1b3f-4d64-9fbe-53978667a400",
+  "full_name": "[Placeholder 18] Gerente de Engenharia de IA",
+  "role": "Gerente de Engenharia de IA",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Proficiência em frameworks de Machine Learning como TensorFlow e PyTorch para desenvolvimento e otimização de modelos de IA",
+    "Gestão de pipelines MLOps, incluindo CI/CD para deploy automatizado de modelos em produção",
+    "Arquitetura de sistemas escaláveis de IA, com foco em computação em nuvem (AWS SageMaker, GCP Vertex AI)",
+    "Processamento e engenharia de dados em larga escala usando ferramentas como Apache Spark e Kafka",
+    "Otimização de performance de modelos de IA, incluindo quantização, pruning e inferência em edge devices"
+  ],
+  "competencias_comportamentais": [
+    "Liderança técnica para motivar e orientar equipes multidisciplinares de engenheiros de IA",
+    "Comunicação estratégica para alinhar expectativas técnicas com objetivos de negócios",
+    "Resolução de problemas complexos sob pressão, priorizando soluções inovadoras e viáveis",
+    "Gestão ágil de projetos, utilizando metodologias Scrum e Kanban para entregas iterativas",
+    "Pensamento estratégico para identificar oportunidades de IA que gerem valor competitivo"
+  ],
+  "ferramentas": [
+    "TensorFlow e PyTorch",
+    "Kubernetes e Docker para orquestração de containers",
+    "Jupyter Notebooks e VS Code para desenvolvimento",
+    "Jira e Confluence para gerenciamento de projetos",
+    "AWS SageMaker ou Google Cloud AI Platform"
+  ],
+  "tarefas_diarias": [
+    "Realizar code review de pelo menos 10 pull requests da equipe (média de 2h/dia)",
+    "Monitorar métricas de produção de modelos de IA, garantindo uptime >99.5% (30min/dia)",
+    "Facilitar daily stand-up meeting com a equipe de 8-10 membros (15min/dia)",
+    "Analisar logs de incidentes e resolver ou escalar em <1h (tempo médio de resposta)",
+    "Revisar progresso de tarefas no Jira, atualizando burndown chart (20min/dia)"
+  ],
+  "tarefas_semanais": [
+    "Conduzir reunião de retrospectiva e planejamento de sprint com a equipe (2h/semana)",
+    "Preparar e apresentar relatório de status de projetos para stakeholders (1h/semana)",
+    "Mentorar 2-3 engenheiros juniores em sessões de pair programming (3h/semana)",
+    "Avaliar e otimizar custos de infraestrutura de IA no cloud (1h/semana)"
+  ],
+  "tarefas_mensais": [
+    "Realizar avaliação de performance da equipe com feedback 360 graus",
+    "Atualizar roadmap de engenharia de IA alinhado aos objetivos da Operations",
+    "Auditar conformidade e segurança de modelos de IA deployados em produção"
+  ],
+  "kpis": [
+    "Taxa de deploy on-time de modelos de IA: 95%",
+    "Uptime médio dos sistemas de IA: 99.9%",
+    "Redução de tempo de inferência de modelos: 20% QoQ",
+    "Satisfação da equipe (NPS interno): 8/10"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação avançada em MLOps (ex: Google Professional Machine Learning Engineer) em 6 meses",
+    "Liderar um projeto piloto de IA generativa que reduza custos operacionais em 15%",
+    "Aprimorar habilidades de liderança com curso executivo em gestão de times técnicos (concluir em 3 meses)"
+  ],
+  "generated_at": "2025-12-01T16:17:37.206Z"
+}

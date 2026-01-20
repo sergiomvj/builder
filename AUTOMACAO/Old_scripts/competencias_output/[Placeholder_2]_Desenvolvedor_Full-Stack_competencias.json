@@ -1,0 +1,53 @@
+{
+  "persona_id": "852ffb87-9494-4d81-881f-6789b6b7ad7a",
+  "full_name": "[Placeholder 2] Desenvolvedor Full-Stack",
+  "role": "Desenvolvedor Full-Stack",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Desenvolvimento Front-end com React.js e TypeScript",
+    "Desenvolvimento Back-end com Node.js e Express",
+    "Gerenciamento de Bancos de Dados SQL (PostgreSQL) e NoSQL (MongoDB)",
+    "Criação e Integração de APIs RESTful e GraphQL",
+    "Deploy e CI/CD com Docker e Kubernetes"
+  ],
+  "competencias_comportamentais": [
+    "Trabalho em equipe colaborativo",
+    "Resolução ágil de problemas",
+    "Comunicação clara e eficaz",
+    "Aprendizado contínuo e adaptabilidade",
+    "Gestão de tempo e priorização de tarefas"
+  ],
+  "ferramentas": [
+    "Git e GitHub",
+    "Docker e Kubernetes",
+    "Visual Studio Code",
+    "Postman e Swagger"
+  ],
+  "tarefas_diarias": [
+    "Revisão e correção de bugs",
+    "Implementação de novas funcionalidades",
+    "Participação em reuniões diárias (stand-up)",
+    "Monitoramento de performance de aplicações"
+  ],
+  "tarefas_semanais": [
+    "Code review de pull requests",
+    "Atualização de documentação técnica",
+    "Planejamento de tarefas do sprint"
+  ],
+  "tarefas_mensais": [
+    "Avaliação de métricas de performance",
+    "Participação em treinamentos internos",
+    "Geração de relatórios de entregas"
+  ],
+  "kpis": [
+    "KPI 1: Features entregues - 5 por sprint",
+    "KPI 2: Tempo médio de resolução de bugs - < 4 horas",
+    "KPI 3: Cobertura de testes unitários - 80%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Dominar Next.js para otimização de front-end",
+    "Obter certificação AWS Developer Associate",
+    "Contribuir para projetos open-source relevantes"
+  ],
+  "generated_at": "2025-12-02T17:57:01.189Z"
+}

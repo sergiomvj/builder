@@ -1,0 +1,37 @@
+{
+  "persona_id": "891ee085-4822-4b1c-b23c-f40622b32edd",
+  "full_name": "Gabriel Costa Silva",
+  "role": "Analista Financeiro",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Reduzir despesas em 10%",
+      "descricao": "Reduzir as despesas mensais em 10% através de revisão de processos e negociação com fornecedores.",
+      "categoria": "performance",
+      "valor_alvo": 10,
+      "unidade_medida": "%",
+      "data_prazo": "2022-04-01",
+      "prioridade": 1,
+      "vinculada_kpi": "Redução de despesas em 10% - janeiro"
+    },
+    {
+      "titulo": "Aprimorar conhecimentos em análise de investimentos",
+      "descricao": "Realizar um curso de análise de investimentos e aplicar os novos conhecimentos em projetos financeiros da empresa.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "curso / projeto",
+      "data_prazo": "2022-05-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Desenvolver habilidades de negociação financeira",
+      "descricao": "Participar de treinamentos de negociação e aplicar as técnicas aprendidas em negociações financeiras da empresa.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "treinamento / negociação",
+      "data_prazo": "2022-06-01",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:38:41.350Z"
+}

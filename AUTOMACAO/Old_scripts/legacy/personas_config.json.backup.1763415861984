@@ -1,0 +1,214 @@
+{
+  "ceo": {
+    "nomeCompleto": "Gabriela Rodríguez",
+    "primeiroNome": "Gabriela",
+    "sobrenome": "Rodríguez",
+    "idade": 40,
+    "genero": "feminino",
+    "paisOrigem": "Chile",
+    "nacionalidade": "latinos",
+    "role": "CEO",
+    "categoria": "executivos",
+    "especializacao": "Liderança Executiva e Gestão Estratégica",
+    "educacao": "Pós-graduação em Gestão Estratégica pela PUC",
+    "anosExperiencia": 18,
+    "idiomas": [
+      "espanhol",
+      "francês",
+      "inglês",
+      "português"
+    ],
+    "biografiaMd": "# Gabriela Rodríguez\n\n## INFORMAÇÕES BÁSICAS\n- **Nome Completo:** Gabriela Rodríguez\n- **Idade:** 40 anos  \n- **Nacionalidade:** Chile\n- **Cargo:** CEO\n- **Especialização:** Liderança Executiva e Gestão Estratégica\n\n## FORMAÇÃO ACADÊMICA\nPós-graduação em Gestão Estratégica pela PUC\n\n## EXPERIÊNCIA PROFISSIONAL\nCom 18 anos de experiência no mercado, ela desenvolveu competências sólidas em:\n- Liderança de equipes multiculturais\n- Gestão de projetos complexos\n- Implementação de estratégias inovadoras\n- Otimização de processos organizacionais\n- Análise de dados e tomada de decisões\n\n## COMPETÊNCIAS LINGUÍSTICAS\n- **Idiomas:** espanhol, francês, inglês, português\n\n## RESPONSABILIDADES NA ARVA SOLUTIONS TEST\n- Implementar estratégias da Liderança Executiva e Gestão Estratégica alinhadas aos objetivos da empresa\n- Liderar iniciativas de crescimento no setor de tecnologia\n- Colaborar com equipes multifuncionais para maximizar resultados\n- Desenvolver e manter relacionamentos estratégicos com stakeholders\n- Garantir excelência operacional em todas as atividades\n\n## COMPETÊNCIAS TÉCNICAS\n- Domínio de ferramentas de gestão e análise\n- Conhecimento avançado em metodologias ágeis\n- Experiência com plataformas de automação\n- Habilidades analíticas e de business intelligence\n- Competência em negociação e gestão de conflitos\n\n## COMPETÊNCIAS COMPORTAMENTAIS\n- **Liderança:** Capacidade de inspirar e motivar equipes\n- **Comunicação:** Excelente habilidade de comunicação verbal e escrita\n- **Adaptabilidade:** Flexibilidade para se adaptar a mudanças\n- **Pensamento Estratégico:** Visão de longo prazo e planejamento\n- **Orientação a Resultados:** Foco em alcançar metas e objetivos\n- **Trabalho em Equipe:** Colaboração efetiva e sinergia\n\n## OBJETIVOS E METAS\nSua principal objetivo é contribuir para o crescimento sustentável da Arva Solutions Test, aplicando sua expertise em Liderança Executiva e Gestão Estratégica para impulsionar a inovação no setor de tecnologia e estabelecer a empresa como referência no mercado.\n\n---\n*Biografia gerada automaticamente*  \n*Data: 12/11/2025, 13:46:17*",
+    "especialidade": null,
+    "isCeo": true
+  },
+  "executivos": {
+    "exec_m_1": {
+      "nomeCompleto": "Roberto Hernández",
+      "primeiroNome": "Roberto",
+      "sobrenome": "Hernández",
+      "idade": 39,
+      "genero": "masculino",
+      "paisOrigem": "Colômbia",
+      "nacionalidade": "latinos",
+      "role": "Diretor 1",
+      "categoria": "executivos",
+      "especializacao": "Inovação e Transformação Digital",
+      "educacao": "MBA Executivo em Liderança pela INSEAD",
+      "anosExperiencia": 17,
+      "idiomas": [
+        "inglês",
+        "espanhol",
+        "português"
+      ],
+      "biografiaMd": "# Roberto Hernández\n\n## INFORMAÇÕES BÁSICAS\n- **Nome Completo:** Roberto Hernández\n- **Idade:** 39 anos  \n- **Nacionalidade:** Colômbia\n- **Cargo:** Diretor 1\n- **Especialização:** Inovação e Transformação Digital\n\n## FORMAÇÃO ACADÊMICA\nMBA Executivo em Liderança pela INSEAD\n\n## EXPERIÊNCIA PROFISSIONAL\nCom 17 anos de experiência no mercado, ele desenvolveu competências sólidas em:\n- Liderança de equipes multiculturais\n- Gestão de projetos complexos\n- Implementação de estratégias inovadoras\n- Otimização de processos organizacionais\n- Análise de dados e tomada de decisões\n\n## COMPETÊNCIAS LINGUÍSTICAS\n- **Idiomas:** inglês, espanhol, português\n\n## RESPONSABILIDADES NA ARVA SOLUTIONS TEST\n- Implementar estratégias da Inovação e Transformação Digital alinhadas aos objetivos da empresa\n- Liderar iniciativas de crescimento no setor de tecnologia\n- Colaborar com equipes multifuncionais para maximizar resultados\n- Desenvolver e manter relacionamentos estratégicos com stakeholders\n- Garantir excelência operacional em todas as atividades\n\n## COMPETÊNCIAS TÉCNICAS\n- Domínio de ferramentas de gestão e análise\n- Conhecimento avançado em metodologias ágeis\n- Experiência com plataformas de automação\n- Habilidades analíticas e de business intelligence\n- Competência em negociação e gestão de conflitos\n\n## COMPETÊNCIAS COMPORTAMENTAIS\n- **Liderança:** Capacidade de inspirar e motivar equipes\n- **Comunicação:** Excelente habilidade de comunicação verbal e escrita\n- **Adaptabilidade:** Flexibilidade para se adaptar a mudanças\n- **Pensamento Estratégico:** Visão de longo prazo e planejamento\n- **Orientação a Resultados:** Foco em alcançar metas e objetivos\n- **Trabalho em Equipe:** Colaboração efetiva e sinergia\n\n## OBJETIVOS E METAS\nSeu principal objetivo é contribuir para o crescimento sustentável da Arva Solutions Test, aplicando sua expertise em Inovação e Transformação Digital para impulsionar a inovação no setor de tecnologia e estabelecer a empresa como referência no mercado.\n\n---\n*Biografia gerada automaticamente*  \n*Data: 12/11/2025, 13:46:17*",
+      "especialidade": null,
+      "isCeo": false
+    },
+    "exec_f_1": {
+      "nomeCompleto": "Gabriela Silva",
+      "primeiroNome": "Gabriela",
+      "sobrenome": "Silva",
+      "idade": 35,
+      "genero": "feminino",
+      "paisOrigem": "Colômbia",
+      "nacionalidade": "latinos",
+      "role": "Diretora 1",
+      "categoria": "executivos",
+      "especializacao": "Operações e Eficiência Organizacional",
+      "educacao": "MBA Executivo em Liderança pela INSEAD",
+      "anosExperiencia": 13,
+      "idiomas": [
+        "francês",
+        "português",
+        "espanhol",
+        "inglês"
+      ],
+      "biografiaMd": "# Gabriela Silva\n\n## INFORMAÇÕES BÁSICAS\n- **Nome Completo:** Gabriela Silva\n- **Idade:** 35 anos  \n- **Nacionalidade:** Colômbia\n- **Cargo:** Diretora 1\n- **Especialização:** Operações e Eficiência Organizacional\n\n## FORMAÇÃO ACADÊMICA\nMBA Executivo em Liderança pela INSEAD\n\n## EXPERIÊNCIA PROFISSIONAL\nCom 13 anos de experiência no mercado, ela desenvolveu competências sólidas em:\n- Liderança de equipes multiculturais\n- Gestão de projetos complexos\n- Implementação de estratégias inovadoras\n- Otimização de processos organizacionais\n- Análise de dados e tomada de decisões\n\n## COMPETÊNCIAS LINGUÍSTICAS\n- **Idiomas:** francês, português, espanhol, inglês\n\n## RESPONSABILIDADES NA ARVA SOLUTIONS TEST\n- Implementar estratégias da Operações e Eficiência Organizacional alinhadas aos objetivos da empresa\n- Liderar iniciativas de crescimento no setor de tecnologia\n- Colaborar com equipes multifuncionais para maximizar resultados\n- Desenvolver e manter relacionamentos estratégicos com stakeholders\n- Garantir excelência operacional em todas as atividades\n\n## COMPETÊNCIAS TÉCNICAS\n- Domínio de ferramentas de gestão e análise\n- Conhecimento avançado em metodologias ágeis\n- Experiência com plataformas de automação\n- Habilidades analíticas e de business intelligence\n- Competência em negociação e gestão de conflitos\n\n## COMPETÊNCIAS COMPORTAMENTAIS\n- **Liderança:** Capacidade de inspirar e motivar equipes\n- **Comunicação:** Excelente habilidade de comunicação verbal e escrita\n- **Adaptabilidade:** Flexibilidade para se adaptar a mudanças\n- **Pensamento Estratégico:** Visão de longo prazo e planejamento\n- **Orientação a Resultados:** Foco em alcançar metas e objetivos\n- **Trabalho em Equipe:** Colaboração efetiva e sinergia\n\n## OBJETIVOS E METAS\nSua principal objetivo é contribuir para o crescimento sustentável da Arva Solutions Test, aplicando sua expertise em Operações e Eficiência Organizacional para impulsionar a inovação no setor de tecnologia e estabelecer a empresa como referência no mercado.\n\n---\n*Biografia gerada automaticamente*  \n*Data: 12/11/2025, 13:46:17*",
+      "especialidade": null,
+      "isCeo": false
+    }
+  },
+  "assistentes": {
+    "assist_m_1": {
+      "nomeCompleto": "Miguel González",
+      "primeiroNome": "Miguel",
+      "sobrenome": "González",
+      "idade": 31,
+      "genero": "masculino",
+      "paisOrigem": "Uruguai",
+      "nacionalidade": "latinos",
+      "role": "Assistente Executivo 1",
+      "categoria": "assistentes",
+      "especializacao": "Suporte Executivo e Gestão Administrativa",
+      "educacao": "Bacharelado em Comunicação Social",
+      "anosExperiencia": 9,
+      "idiomas": [
+        "francês",
+        "português",
+        "espanhol",
+        "inglês"
+      ],
+      "biografiaMd": "# Miguel González\n\n## INFORMAÇÕES BÁSICAS\n- **Nome Completo:** Miguel González\n- **Idade:** 31 anos  \n- **Nacionalidade:** Uruguai\n- **Cargo:** Assistente Executivo 1\n- **Especialização:** Suporte Executivo e Gestão Administrativa\n\n## FORMAÇÃO ACADÊMICA\nBacharelado em Comunicação Social\n\n## EXPERIÊNCIA PROFISSIONAL\nCom 9 anos de experiência no mercado, ele desenvolveu competências sólidas em:\n- Liderança de equipes multiculturais\n- Gestão de projetos complexos\n- Implementação de estratégias inovadoras\n- Otimização de processos organizacionais\n- Análise de dados e tomada de decisões\n\n## COMPETÊNCIAS LINGUÍSTICAS\n- **Idiomas:** francês, português, espanhol, inglês\n\n## RESPONSABILIDADES NA ARVA SOLUTIONS TEST\n- Implementar estratégias da Suporte Executivo e Gestão Administrativa alinhadas aos objetivos da empresa\n- Liderar iniciativas de crescimento no setor de tecnologia\n- Colaborar com equipes multifuncionais para maximizar resultados\n- Desenvolver e manter relacionamentos estratégicos com stakeholders\n- Garantir excelência operacional em todas as atividades\n\n## COMPETÊNCIAS TÉCNICAS\n- Domínio de ferramentas de gestão e análise\n- Conhecimento avançado em metodologias ágeis\n- Experiência com plataformas de automação\n- Habilidades analíticas e de business intelligence\n- Competência em negociação e gestão de conflitos\n\n## COMPETÊNCIAS COMPORTAMENTAIS\n- **Liderança:** Capacidade de inspirar e motivar equipes\n- **Comunicação:** Excelente habilidade de comunicação verbal e escrita\n- **Adaptabilidade:** Flexibilidade para se adaptar a mudanças\n- **Pensamento Estratégico:** Visão de longo prazo e planejamento\n- **Orientação a Resultados:** Foco em alcançar metas e objetivos\n- **Trabalho em Equipe:** Colaboração efetiva e sinergia\n\n## OBJETIVOS E METAS\nSeu principal objetivo é contribuir para o crescimento sustentável da Arva Solutions Test, aplicando sua expertise em Suporte Executivo e Gestão Administrativa para impulsionar a inovação no setor de tecnologia e estabelecer a empresa como referência no mercado.\n\n---\n*Biografia gerada automaticamente*  \n*Data: 12/11/2025, 13:46:17*",
+      "especialidade": null,
+      "isCeo": false
+    },
+    "assist_f_1": {
+      "nomeCompleto": "Sofia López",
+      "primeiroNome": "Sofia",
+      "sobrenome": "López",
+      "idade": 34,
+      "genero": "feminino",
+      "paisOrigem": "Colômbia",
+      "nacionalidade": "latinos",
+      "role": "Assistente Executiva 1",
+      "categoria": "assistentes",
+      "especializacao": "Suporte Executivo e Gestão Administrativa",
+      "educacao": "Bacharelado em Comunicação Social",
+      "anosExperiencia": 12,
+      "idiomas": [
+        "espanhol",
+        "português",
+        "francês",
+        "inglês"
+      ],
+      "biografiaMd": "# Sofia López\n\n## INFORMAÇÕES BÁSICAS\n- **Nome Completo:** Sofia López\n- **Idade:** 34 anos  \n- **Nacionalidade:** Colômbia\n- **Cargo:** Assistente Executiva 1\n- **Especialização:** Suporte Executivo e Gestão Administrativa\n\n## FORMAÇÃO ACADÊMICA\nBacharelado em Comunicação Social\n\n## EXPERIÊNCIA PROFISSIONAL\nCom 12 anos de experiência no mercado, ela desenvolveu competências sólidas em:\n- Liderança de equipes multiculturais\n- Gestão de projetos complexos\n- Implementação de estratégias inovadoras\n- Otimização de processos organizacionais\n- Análise de dados e tomada de decisões\n\n## COMPETÊNCIAS LINGUÍSTICAS\n- **Idiomas:** espanhol, português, francês, inglês\n\n## RESPONSABILIDADES NA ARVA SOLUTIONS TEST\n- Implementar estratégias da Suporte Executivo e Gestão Administrativa alinhadas aos objetivos da empresa\n- Liderar iniciativas de crescimento no setor de tecnologia\n- Colaborar com equipes multifuncionais para maximizar resultados\n- Desenvolver e manter relacionamentos estratégicos com stakeholders\n- Garantir excelência operacional em todas as atividades\n\n## COMPETÊNCIAS TÉCNICAS\n- Domínio de ferramentas de gestão e análise\n- Conhecimento avançado em metodologias ágeis\n- Experiência com plataformas de automação\n- Habilidades analíticas e de business intelligence\n- Competência em negociação e gestão de conflitos\n\n## COMPETÊNCIAS COMPORTAMENTAIS\n- **Liderança:** Capacidade de inspirar e motivar equipes\n- **Comunicação:** Excelente habilidade de comunicação verbal e escrita\n- **Adaptabilidade:** Flexibilidade para se adaptar a mudanças\n- **Pensamento Estratégico:** Visão de longo prazo e planejamento\n- **Orientação a Resultados:** Foco em alcançar metas e objetivos\n- **Trabalho em Equipe:** Colaboração efetiva e sinergia\n\n## OBJETIVOS E METAS\nSua principal objetivo é contribuir para o crescimento sustentável da Arva Solutions Test, aplicando sua expertise em Suporte Executivo e Gestão Administrativa para impulsionar a inovação no setor de tecnologia e estabelecer a empresa como referência no mercado.\n\n---\n*Biografia gerada automaticamente*  \n*Data: 12/11/2025, 13:46:17*",
+      "especialidade": null,
+      "isCeo": false
+    }
+  },
+  "especialistas": {
+    "espec_hr_m": {
+      "nomeCompleto": "Carlos González",
+      "primeiroNome": "Carlos",
+      "sobrenome": "González",
+      "idade": 36,
+      "genero": "masculino",
+      "paisOrigem": "México",
+      "nacionalidade": "latinos",
+      "role": "Especialista HR",
+      "categoria": "especialistas",
+      "especializacao": "Recursos Humanos e Gestão de Talentos",
+      "educacao": "Pós-graduação em Gestão de Pessoas e MBA em Recursos Humanos",
+      "anosExperiencia": 14,
+      "idiomas": [
+        "inglês",
+        "espanhol",
+        "português",
+        "francês"
+      ],
+      "biografiaMd": "# Carlos González\n\n## INFORMAÇÕES BÁSICAS\n- **Nome Completo:** Carlos González\n- **Idade:** 36 anos  \n- **Nacionalidade:** México\n- **Cargo:** Especialista HR\n- **Especialização:** Recursos Humanos e Gestão de Talentos\n\n## FORMAÇÃO ACADÊMICA\nPós-graduação em Gestão de Pessoas e MBA em Recursos Humanos\n\n## EXPERIÊNCIA PROFISSIONAL\nCom 14 anos de experiência no mercado, ele desenvolveu competências sólidas em:\n- Liderança de equipes multiculturais\n- Gestão de projetos complexos\n- Implementação de estratégias inovadoras\n- Otimização de processos organizacionais\n- Análise de dados e tomada de decisões\n\n## COMPETÊNCIAS LINGUÍSTICAS\n- **Idiomas:** inglês, espanhol, português, francês\n\n## RESPONSABILIDADES NA ARVA SOLUTIONS TEST\n- Implementar estratégias da Recursos Humanos e Gestão de Talentos alinhadas aos objetivos da empresa\n- Liderar iniciativas de crescimento no setor de tecnologia\n- Colaborar com equipes multifuncionais para maximizar resultados\n- Desenvolver e manter relacionamentos estratégicos com stakeholders\n- Garantir excelência operacional em todas as atividades\n\n## COMPETÊNCIAS TÉCNICAS\n- Domínio de ferramentas de gestão e análise\n- Conhecimento avançado em metodologias ágeis\n- Experiência com plataformas de automação\n- Habilidades analíticas e de business intelligence\n- Competência em negociação e gestão de conflitos\n\n## COMPETÊNCIAS COMPORTAMENTAIS\n- **Liderança:** Capacidade de inspirar e motivar equipes\n- **Comunicação:** Excelente habilidade de comunicação verbal e escrita\n- **Adaptabilidade:** Flexibilidade para se adaptar a mudanças\n- **Pensamento Estratégico:** Visão de longo prazo e planejamento\n- **Orientação a Resultados:** Foco em alcançar metas e objetivos\n- **Trabalho em Equipe:** Colaboração efetiva e sinergia\n\n## OBJETIVOS E METAS\nSeu principal objetivo é contribuir para o crescimento sustentável da Arva Solutions Test, aplicando sua expertise em Recursos Humanos e Gestão de Talentos para impulsionar a inovação no setor de tecnologia e estabelecer a empresa como referência no mercado.\n\n---\n*Biografia gerada automaticamente*  \n*Data: 12/11/2025, 13:46:17*",
+      "especialidade": "hr",
+      "isCeo": false
+    },
+    "espec_youtube_m": {
+      "nomeCompleto": "José Hernández",
+      "primeiroNome": "José",
+      "sobrenome": "Hernández",
+      "idade": 40,
+      "genero": "masculino",
+      "paisOrigem": "Argentina",
+      "nacionalidade": "latinos",
+      "role": "Especialista YOUTUBE",
+      "categoria": "especialistas",
+      "especializacao": "Criação de Conteúdo e YouTube Marketing",
+      "educacao": "Bacharelado em Comunicação Digital e Certificação Google Ads",
+      "anosExperiencia": 18,
+      "idiomas": [
+        "francês",
+        "português",
+        "inglês",
+        "espanhol"
+      ],
+      "biografiaMd": "# José Hernández\n\n## INFORMAÇÕES BÁSICAS\n- **Nome Completo:** José Hernández\n- **Idade:** 40 anos  \n- **Nacionalidade:** Argentina\n- **Cargo:** Especialista YOUTUBE\n- **Especialização:** Criação de Conteúdo e YouTube Marketing\n\n## FORMAÇÃO ACADÊMICA\nBacharelado em Comunicação Digital e Certificação Google Ads\n\n## EXPERIÊNCIA PROFISSIONAL\nCom 18 anos de experiência no mercado, ele desenvolveu competências sólidas em:\n- Liderança de equipes multiculturais\n- Gestão de projetos complexos\n- Implementação de estratégias inovadoras\n- Otimização de processos organizacionais\n- Análise de dados e tomada de decisões\n\n## COMPETÊNCIAS LINGUÍSTICAS\n- **Idiomas:** francês, português, inglês, espanhol\n\n## RESPONSABILIDADES NA ARVA SOLUTIONS TEST\n- Implementar estratégias da Criação de Conteúdo e YouTube Marketing alinhadas aos objetivos da empresa\n- Liderar iniciativas de crescimento no setor de tecnologia\n- Colaborar com equipes multifuncionais para maximizar resultados\n- Desenvolver e manter relacionamentos estratégicos com stakeholders\n- Garantir excelência operacional em todas as atividades\n\n## COMPETÊNCIAS TÉCNICAS\n- Domínio de ferramentas de gestão e análise\n- Conhecimento avançado em metodologias ágeis\n- Experiência com plataformas de automação\n- Habilidades analíticas e de business intelligence\n- Competência em negociação e gestão de conflitos\n\n## COMPETÊNCIAS COMPORTAMENTAIS\n- **Liderança:** Capacidade de inspirar e motivar equipes\n- **Comunicação:** Excelente habilidade de comunicação verbal e escrita\n- **Adaptabilidade:** Flexibilidade para se adaptar a mudanças\n- **Pensamento Estratégico:** Visão de longo prazo e planejamento\n- **Orientação a Resultados:** Foco em alcançar metas e objetivos\n- **Trabalho em Equipe:** Colaboração efetiva e sinergia\n\n## OBJETIVOS E METAS\nSeu principal objetivo é contribuir para o crescimento sustentável da Arva Solutions Test, aplicando sua expertise em Criação de Conteúdo e YouTube Marketing para impulsionar a inovação no setor de tecnologia e estabelecer a empresa como referência no mercado.\n\n---\n*Biografia gerada automaticamente*  \n*Data: 12/11/2025, 13:46:17*",
+      "especialidade": "youtube",
+      "isCeo": false
+    },
+    "espec_midias_sociais_f": {
+      "nomeCompleto": "Gabriela González",
+      "primeiroNome": "Gabriela",
+      "sobrenome": "González",
+      "idade": 37,
+      "genero": "feminino",
+      "paisOrigem": "Colômbia",
+      "nacionalidade": "latinos",
+      "role": "Especialista MIDIAS_SOCIAIS",
+      "categoria": "especialistas",
+      "especializacao": "Marketing Digital e Mídias Sociais",
+      "educacao": "Marketing Digital e Social Media, Certificação Facebook Blueprint",
+      "anosExperiencia": 15,
+      "idiomas": [
+        "inglês",
+        "espanhol",
+        "francês",
+        "português"
+      ],
+      "biografiaMd": "# Gabriela González\n\n## INFORMAÇÕES BÁSICAS\n- **Nome Completo:** Gabriela González\n- **Idade:** 37 anos  \n- **Nacionalidade:** Colômbia\n- **Cargo:** Especialista MIDIAS_SOCIAIS\n- **Especialização:** Marketing Digital e Mídias Sociais\n\n## FORMAÇÃO ACADÊMICA\nMarketing Digital e Social Media, Certificação Facebook Blueprint\n\n## EXPERIÊNCIA PROFISSIONAL\nCom 15 anos de experiência no mercado, ela desenvolveu competências sólidas em:\n- Liderança de equipes multiculturais\n- Gestão de projetos complexos\n- Implementação de estratégias inovadoras\n- Otimização de processos organizacionais\n- Análise de dados e tomada de decisões\n\n## COMPETÊNCIAS LINGUÍSTICAS\n- **Idiomas:** inglês, espanhol, francês, português\n\n## RESPONSABILIDADES NA ARVA SOLUTIONS TEST\n- Implementar estratégias da Marketing Digital e Mídias Sociais alinhadas aos objetivos da empresa\n- Liderar iniciativas de crescimento no setor de tecnologia\n- Colaborar com equipes multifuncionais para maximizar resultados\n- Desenvolver e manter relacionamentos estratégicos com stakeholders\n- Garantir excelência operacional em todas as atividades\n\n## COMPETÊNCIAS TÉCNICAS\n- Domínio de ferramentas de gestão e análise\n- Conhecimento avançado em metodologias ágeis\n- Experiência com plataformas de automação\n- Habilidades analíticas e de business intelligence\n- Competência em negociação e gestão de conflitos\n\n## COMPETÊNCIAS COMPORTAMENTAIS\n- **Liderança:** Capacidade de inspirar e motivar equipes\n- **Comunicação:** Excelente habilidade de comunicação verbal e escrita\n- **Adaptabilidade:** Flexibilidade para se adaptar a mudanças\n- **Pensamento Estratégico:** Visão de longo prazo e planejamento\n- **Orientação a Resultados:** Foco em alcançar metas e objetivos\n- **Trabalho em Equipe:** Colaboração efetiva e sinergia\n\n## OBJETIVOS E METAS\nSua principal objetivo é contribuir para o crescimento sustentável da Arva Solutions Test, aplicando sua expertise em Marketing Digital e Mídias Sociais para impulsionar a inovação no setor de tecnologia e estabelecer a empresa como referência no mercado.\n\n---\n*Biografia gerada automaticamente*  \n*Data: 12/11/2025, 13:46:17*",
+      "especialidade": "midias_sociais",
+      "isCeo": false
+    },
+    "espec_marketing_f": {
+      "nomeCompleto": "Isabella González",
+      "primeiroNome": "Isabella",
+      "sobrenome": "González",
+      "idade": 31,
+      "genero": "feminino",
+      "paisOrigem": "Chile",
+      "nacionalidade": "latinos",
+      "role": "Especialista MARKETING",
+      "categoria": "especialistas",
+      "especializacao": "Marketing Estratégico e Growth Hacking",
+      "educacao": "MBA em Marketing Digital e Growth Hacking Certification",
+      "anosExperiencia": 9,
+      "idiomas": [
+        "francês",
+        "português",
+        "espanhol",
+        "inglês"
+      ],
+      "biografiaMd": "# Isabella González\n\n## INFORMAÇÕES BÁSICAS\n- **Nome Completo:** Isabella González\n- **Idade:** 31 anos  \n- **Nacionalidade:** Chile\n- **Cargo:** Especialista MARKETING\n- **Especialização:** Marketing Estratégico e Growth Hacking\n\n## FORMAÇÃO ACADÊMICA\nMBA em Marketing Digital e Growth Hacking Certification\n\n## EXPERIÊNCIA PROFISSIONAL\nCom 9 anos de experiência no mercado, ela desenvolveu competências sólidas em:\n- Liderança de equipes multiculturais\n- Gestão de projetos complexos\n- Implementação de estratégias inovadoras\n- Otimização de processos organizacionais\n- Análise de dados e tomada de decisões\n\n## COMPETÊNCIAS LINGUÍSTICAS\n- **Idiomas:** francês, português, espanhol, inglês\n\n## RESPONSABILIDADES NA ARVA SOLUTIONS TEST\n- Implementar estratégias da Marketing Estratégico e Growth Hacking alinhadas aos objetivos da empresa\n- Liderar iniciativas de crescimento no setor de tecnologia\n- Colaborar com equipes multifuncionais para maximizar resultados\n- Desenvolver e manter relacionamentos estratégicos com stakeholders\n- Garantir excelência operacional em todas as atividades\n\n## COMPETÊNCIAS TÉCNICAS\n- Domínio de ferramentas de gestão e análise\n- Conhecimento avançado em metodologias ágeis\n- Experiência com plataformas de automação\n- Habilidades analíticas e de business intelligence\n- Competência em negociação e gestão de conflitos\n\n## COMPETÊNCIAS COMPORTAMENTAIS\n- **Liderança:** Capacidade de inspirar e motivar equipes\n- **Comunicação:** Excelente habilidade de comunicação verbal e escrita\n- **Adaptabilidade:** Flexibilidade para se adaptar a mudanças\n- **Pensamento Estratégico:** Visão de longo prazo e planejamento\n- **Orientação a Resultados:** Foco em alcançar metas e objetivos\n- **Trabalho em Equipe:** Colaboração efetiva e sinergia\n\n## OBJETIVOS E METAS\nSua principal objetivo é contribuir para o crescimento sustentável da Arva Solutions Test, aplicando sua expertise em Marketing Estratégico e Growth Hacking para impulsionar a inovação no setor de tecnologia e estabelecer a empresa como referência no mercado.\n\n---\n*Biografia gerada automaticamente*  \n*Data: 12/11/2025, 13:46:17*",
+      "especialidade": "marketing",
+      "isCeo": false
+    }
+  }
+}

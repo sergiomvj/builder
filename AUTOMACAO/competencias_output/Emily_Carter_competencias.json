@@ -1,0 +1,54 @@
+{
+  "persona_id": "ae643c50-367a-4cc1-b3c8-8b0df74bf005",
+  "full_name": "Emily Carter",
+  "role": "Analista de QA",
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "competencias_tecnicas": [
+    "Conhecimento em metodologias de teste de software",
+    "Experiência em automação de testes",
+    "Conhecimento em ferramentas de QA",
+    "Capacidade de identificar e relatar bugs",
+    "Conhecimento em programação"
+  ],
+  "competencias_comportamentais": [
+    "Proatividade",
+    "Trabalho em equipe",
+    "Comunicação eficaz",
+    "Resolução de problemas",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Selenium",
+    "JIRA",
+    "Postman",
+    "Git"
+  ],
+  "tarefas_diarias": [
+    "Realizar testes de software",
+    "Identificar e relatar bugs",
+    "Participar de reuniões de equipe",
+    "Automatizar testes",
+    "Documentar resultados"
+  ],
+  "tarefas_semanais": [
+    "Participar de sessões de brainstorming",
+    "Atualizar casos de teste",
+    "Analisar relatórios de testes"
+  ],
+  "tarefas_mensais": [
+    "Realizar testes de regressão",
+    "Participar de treinamentos internos",
+    "Analisar métricas de qualidade"
+  ],
+  "kpis": [
+    "Eficiência na identificação de bugs - 95% de acerto",
+    "Cobertura de testes - 90% dos casos de uso",
+    "Tempo médio de resolução de bugs - 2 dias"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de automação de testes",
+    "Participar de cursos de especialização em QA",
+    "Contribuir para a melhoria contínua dos processos de QA na empresa"
+  ],
+  "generated_at": "2025-12-05T20:13:26.592Z"
+}

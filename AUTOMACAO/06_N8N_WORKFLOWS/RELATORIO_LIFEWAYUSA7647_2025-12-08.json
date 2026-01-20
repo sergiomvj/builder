@@ -1,0 +1,35 @@
+{
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "empresa_nome": "LifeWayUSA",
+  "generated_at": "2025-12-08T16:56:45.833Z",
+  "opportunities_processed": 2,
+  "workflows_generated": 2,
+  "workflows_saved_to_file": 2,
+  "workflows_saved_to_db": 2,
+  "workflows": [
+    {
+      "workflow_name": "Gabriel (Analista Financeiro) - Analisar relatórios financeiros",
+      "persona_nome": "Gabriel Santos Oliveira",
+      "task_title": "Analisar relatórios financeiros",
+      "automation_score": 45,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "google-sheets",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "Gabriel (Analista Financeiro) - Desenvolver dashboards em Tableau",
+      "persona_nome": "Gabriel Santos Oliveira",
+      "task_title": "Desenvolver dashboards em Tableau",
+      "automation_score": 40,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "google-sheets",
+        "slack"
+      ]
+    }
+  ]
+}

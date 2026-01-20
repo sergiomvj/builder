@@ -1,0 +1,10 @@
+{
+  "script": "02_generate_competencias_grok",
+  "status": "completed",
+  "current": 5,
+  "total": 5,
+  "currentPersona": "",
+  "errors": [],
+  "startedAt": null,
+  "completedAt": "2025-12-05T17:49:36.457Z"
+}

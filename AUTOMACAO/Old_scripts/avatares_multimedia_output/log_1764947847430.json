@@ -1,0 +1,23 @@
+{
+  "empresa": "ARVA Tech Solutions",
+  "service": "fal",
+  "style": "professional",
+  "timestamp": "2025-12-05T15:17:27.430Z",
+  "results": [
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a8518c0/9tMFvStuv121QPjI6IIfk_efd7d30fe4154a97b3b5191e0be7e8f3.jpg",
+      "prompt": "professional headshot portrait of a person, professional in their thirties, diverse ethnicity, professional appearance, wearing casual business attire, jeans and blazer, polo shirt, informal professional clothing, neutral office background, natural lighting, front-facing portrait, realistic photography, high quality, professional corporate photo, IMPORTANT: adult professional only, minimum age 20, no teenagers under 18, no children, professional ${genderTerm}, realistic adult face, age-appropriate professional, workplace appropriate",
+      "personaIds": [
+        "76f4421e-4918-4eab-b67f-34ec44e84385"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 3599949717,
+        "inference_steps": 28
+      }
+    }
+  ]
+}

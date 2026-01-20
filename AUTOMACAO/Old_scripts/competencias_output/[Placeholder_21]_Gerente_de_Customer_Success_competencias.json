@@ -1,0 +1,53 @@
+{
+  "persona_id": "b3f67908-ebb5-4026-b1fe-1b9c7a420c55",
+  "full_name": "[Placeholder 21] Gerente de Customer Success",
+  "role": "Gerente de Customer Success",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Gestão de CRM (Salesforce/HubSpot)",
+    "Análise de dados de clientes e métricas de sucesso",
+    "Onboarding e adoção de produtos",
+    "Gestão de churn e retenção",
+    "Automação de fluxos de customer success"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação assertiva e empática",
+    "Liderança de equipes remotas",
+    "Resolução estratégica de problemas",
+    "Orientação para resultados e metas",
+    "Negociação e influência"
+  ],
+  "ferramentas": [
+    "Salesforce",
+    "Intercom",
+    "Google Analytics",
+    "Gainsight"
+  ],
+  "tarefas_diarias": [
+    "Monitorar health score das contas chave",
+    "Responder e priorizar tickets de clientes",
+    "Analisar métricas diárias de uso do produto",
+    "Coordenar handoffs com suporte e vendas"
+  ],
+  "tarefas_semanais": [
+    "Realizar one-on-ones com a equipe",
+    "Revisar pipeline de upsell/cross-sell",
+    "Analisar tendências de churn semanal"
+  ],
+  "tarefas_mensais": [
+    "Gerar relatório de performance de CS",
+    "Conduzir QBRs com clientes estratégicos",
+    "Planejar treinamentos e upskilling da equipe"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Retenção - 95%",
+    "KPI 2: Net Promoter Score (NPS) - 50+",
+    "KPI 3: Taxa de Expansão de Receita - 120%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Certificação avançada em Gainsight",
+    "Liderar workshop interno de CS",
+    "Aprimorar análise preditiva de churn"
+  ],
+  "generated_at": "2025-12-02T18:08:10.997Z"
+}

@@ -1,0 +1,112 @@
+{
+  "persona": {
+    "nome": "[Placeholder 6] Diretor de Produto e Imigração",
+    "nacionalidade": "brasileiros",
+    "genero": "masculino",
+    "cargo": "Diretor de Produto e Imigração",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Em definição",
+    "competencias": "Em definição",
+    "biografia": "Profissional experiente",
+    "personalidade": {},
+    "experiencia_anos": 7,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
+    "prompt_usado": "Retrato hiper-realista em 4K de um homem brasileiro de 40-45 anos, masculino, etnia latino mista, tipo físico atlético esguio, altura 1.78-1.82m, cabelo castanho escuro curto liso penteado para o lado denso, olhos castanhos escuros amendoados expressivos, rosto oval, pele morena clara lisa poros finos, sobrancelhas grossas arqueadas cheias, nariz reto médio, boca lábios médios retos, expressão facial confiante com sorriso leve, marcas únicas barba rala bem aparada, acessórios permanentes óculos de armação fina preta relógio de pulso prata, postura ereta confiante, características distintivas queixo definido maxilar forte, estilo vestimenta business casual camisa social azul marinho slim fit calça chino cinza sapato derby marrom, paleta cores vestuário azul frio cinza neutro branco, diretor de produto em tecnologia escritório moderno fundo neutro, iluminação soft studio light, DSLR look 50mm close-up",
+    "estilo": "business",
+    "background_tipo": "office",
+    "servico_usado": "gemini_ai",
+    "versao": 1,
+    "ativo": true,
+    "biometrics": {
+      "idade_aparente": "40-45 anos",
+      "genero": "masculino",
+      "etnia": "latino",
+      "tipo_fisico": "atlético esguio",
+      "altura_estimada": "1.78-1.82m",
+      "cabelo_cor": "castanho escuro",
+      "cabelo_comprimento": "curto",
+      "cabelo_estilo": "liso penteado para o lado",
+      "cabelo_volume": "denso",
+      "olhos_cor": "castanhos escuros",
+      "olhos_formato": "amendoados expressivos",
+      "rosto_formato": "oval",
+      "pele_tom": "morena clara",
+      "pele_textura": "lisa poros finos",
+      "sobrancelhas": "grossas arqueadas cheias",
+      "nariz": "reto médio",
+      "boca_labios": "médios retos",
+      "expressao_facial_padrao": "confiante com sorriso leve",
+      "marcas_unicas": "barba rala bem aparada",
+      "acessorios_permanentes": "óculos de armação fina preta, relógio de pulso prata",
+      "postura": "ereta confiante",
+      "caracteristicas_distintivas": "queixo definido maxilar forte",
+      "estilo_vestimenta_padrao": "business casual",
+      "paleta_cores_vestuario": "azul frio cinza neutro branco"
+    },
+    "physical_description_detailed": {
+      "rosto": {
+        "formato": "oval com maxilar forte e queixo definido",
+        "tom_pele": "morena clara com subtom quente oliva",
+        "textura_pele": "lisa com poros finos e sem imperfeições visíveis",
+        "olhos": {
+          "cor": "castanhos escuros profundos",
+          "formato": "amendoados expressivos com pálpebras ligeiramente caídas"
+        },
+        "sobrancelhas": "grossas arqueadas cheias naturalmente alinhadas",
+        "nariz": "reto médio com ponte reta e narinas proporcionais",
+        "boca": "lábios médios retos com contorno definido",
+        "expressao_tipica": "confiante com sorriso leve e olhar direto"
+      },
+      "cabelo": {
+        "cor_exata": "castanho escuro com reflexos naturais castanhos",
+        "comprimento": "curto 5-7cm topo 2-3cm laterais",
+        "estilo": "liso penteado para o lado com fade baixo nas laterais",
+        "volume": "denso com fios grossos bem cuidados"
+      },
+      "corpo": {
+        "altura_aproximada": "1.80m",
+        "tipo_fisico": "atlético esguio ombros largos cintura estreita",
+        "proporcao": "proporções equilibradas V-shape torso",
+        "postura_tipica": "ereta confiante ombros para trás cabeça erguida"
+      }
+    },
+    "consistency_parameters": {
+      "rendering_style": "realista foto 4K retrato editorial",
+      "lens_focus": "50mm close-up",
+      "lighting": "soft studio light",
+      "aspect_ratio": "1:1 (avatar)"
+    },
+    "history": {
+      "background_educacional": "Graduado em Engenharia de Computação pela USP com MBA em Product Management pela FGV",
+      "experiencia_internacional": "7 anos em tech com foco em imigração para EUA atuando em startups de São Paulo e agora LifewayUSA em Miami",
+      "contexto_cultural": "Brasileiro com herança mista europeia e indígena influenciando tom moreno e traços robustos adaptado a estilo tech americano",
+      "estilo_vida": "Ativo fitness corrida matinal dieta balanceada refletindo físico esguio e pele saudável",
+      "marcos_carreira": "Promoção a Diretor após lançar plataforma de imigração tech na LifewayUSA moldando imagem executiva confiante",
+      "valores_pessoais": "Inovação acessibilidade e empatia refletidos em acessórios minimalistas e postura aberta",
+      "ambiente_trabalho": "Escritório tech em USA com dress code business casual influenciando camisa slim e chinos",
+      "redes_sociais": "Perfil LinkedIn ativo com fotos profissionais em eventos tech exibindo barba rala e óculos como assinatura"
+    },
+    "metadados": {
+      "resolucao": "1024x1024",
+      "formato": "webp",
+      "qualidade": "ultra_high",
+      "parametros_geracao": {
+        "prompt_negativo": "blurry, low quality, distorted, cartoonish",
+        "steps": 30,
+        "cfg_scale": 8.5
+      },
+      "contexto_profissional": {
+        "cargo": "Diretor de Produto e Imigração",
+        "industria": "tecnologia",
+        "senioridade": "Diretor (Senior)"
+      }
+    }
+  },
+  "generated_at": "2025-12-03T13:34:21.221Z"
+}

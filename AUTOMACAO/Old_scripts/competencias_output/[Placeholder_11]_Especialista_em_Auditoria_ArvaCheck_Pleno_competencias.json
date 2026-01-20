@@ -1,0 +1,57 @@
+{
+  "persona_id": "4f5255a0-6183-4865-a2aa-4259cab16811",
+  "full_name": "[Placeholder 11] Especialista em Auditoria ArvaCheck Pleno",
+  "role": "Especialista em Auditoria ArvaCheck Pleno",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Auditoria de sistemas e processos de TI conforme normas ISO 27001 e NIST",
+    "Análise de riscos cibernéticos e conformidade regulatória (LGPD/GDPR)",
+    "Execução de testes de controle interno usando ferramentas de automação ArvaCheck",
+    "Elaboração de relatórios de auditoria com evidências e recomendações",
+    "Monitoramento contínuo de logs e alertas de segurança em ambientes cloud"
+  ],
+  "competencias_comportamentais": [
+    "Atenção aos detalhes e rigor analítico",
+    "Integridade ética e confidencialidade",
+    "Comunicação clara e persuasiva em relatórios",
+    "Resolução de problemas complexos",
+    "Adaptabilidade a novas tecnologias e regulamentações"
+  ],
+  "ferramentas": [
+    "ArvaCheck (plataforma proprietária de auditoria)",
+    "Splunk ou ELK Stack para análise de logs",
+    "Microsoft Excel Avançado e Power BI para dashboards",
+    "SQL Server para queries em bancos de dados",
+    "Jira ou Confluence para gerenciamento de auditorias"
+  ],
+  "tarefas_diarias": [
+    "Revisar 50 alertas de segurança no ArvaCheck e classificar riscos (média de 30 min por alerta)",
+    "Executar 5 testes automatizados de controles internos e registrar resultados",
+    "Analisar logs de acesso de sistemas e identificar anomalias (cobrir 100% dos logs do dia)",
+    "Atualizar dashboard de KPIs de auditoria com dados do dia anterior",
+    "Responder a 10 consultas internas sobre conformidade em até 2 horas"
+  ],
+  "tarefas_semanais": [
+    "Realizar auditoria completa em um módulo de processo operacional",
+    "Preparar relatório semanal de riscos identificados para a equipe de Operations",
+    "Treinar 2 membros da equipe em uso do ArvaCheck",
+    "Revisar e aprovar 15 planos de ação corretiva de auditorias anteriores"
+  ],
+  "tarefas_mensais": [
+    "Conduzir auditoria plena em um departamento específico com relatório final",
+    "Atualizar matriz de riscos da empresa com base em novas ameaças",
+    "Participar de reuniões de compliance e apresentar métricas de auditoria"
+  ],
+  "kpis": [
+    "Taxa de detecção de irregularidades: 95% dos riscos identificados",
+    "Tempo médio de conclusão de auditorias: 5 dias úteis por ciclo",
+    "Índice de conformidade de controles: 98% de aderência",
+    "Número de recomendações implementadas: 90% no prazo de 30 dias"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação CISA (Certified Information Systems Auditor) em 6 meses",
+    "Liderar projeto de automação de 20% das auditorias manuais em 1 ano",
+    "Mentorar junior em auditoria para promoção interna em 9 meses"
+  ],
+  "generated_at": "2025-12-01T16:21:33.499Z"
+}

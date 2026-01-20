@@ -1,0 +1,53 @@
+{
+  "persona_id": "c6bd2a41-15d0-4c8c-8374-3fbbba518414",
+  "full_name": "Ana Carolina Santos Oliveira",
+  "role": "Gerente de Conteúdo",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em SEO",
+    "Experiência em produção de conteúdo",
+    "Habilidade em gestão de equipes",
+    "Conhecimento em marketing digital",
+    "Experiência em storytelling"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Capacidade de resolução de problemas",
+    "Adaptabilidade",
+    "Organização"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "WordPress",
+    "Canva",
+    "Hootsuite"
+  ],
+  "tarefas_diarias": [
+    "Gerenciar equipe de redatores e designers",
+    "Analisar métricas de desempenho do conteúdo",
+    "Criar pautas e calendário editorial",
+    "Revisar e aprovar conteúdos"
+  ],
+  "tarefas_semanais": [
+    "Planejar estratégias de SEO",
+    "Realizar reuniões de alinhamento com a equipe",
+    "Analisar concorrência e tendências de mercado"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatórios de desempenho",
+    "Propor melhorias na estratégia de conteúdo",
+    "Participar de eventos e treinamentos para atualização"
+  ],
+  "kpis": [
+    "Taxa de conversão - 10%",
+    "Engajamento nas redes sociais - 20%",
+    "Tráfego orgânico no site - 30%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em marketing de influência",
+    "Expandir conhecimento em estratégias de inbound marketing",
+    "Desenvolver habilidades de gestão de crise"
+  ],
+  "generated_at": "2025-12-08T14:39:21.133Z"
+}

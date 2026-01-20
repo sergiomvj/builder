@@ -1,0 +1,53 @@
+{
+  "persona_id": "21467121-222a-4841-a1a8-3ac3c590ae4f",
+  "full_name": "Carlos Eduardo Silva",
+  "role": "Desenvolvedor Backend",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Desenvolvimento de APIs RESTful",
+    "Programação em Python",
+    "Conhecimento em bancos de dados SQL e NoSQL",
+    "Segurança da informação",
+    "Integração de sistemas"
+  ],
+  "competencias_comportamentais": [
+    "Trabalho em equipe",
+    "Comunicação eficaz",
+    "Resolução de problemas",
+    "Adaptabilidade",
+    "Proatividade"
+  ],
+  "ferramentas": [
+    "Visual Studio Code",
+    "Postman",
+    "Docker",
+    "Git"
+  ],
+  "tarefas_diarias": [
+    "Desenvolver e manter APIs",
+    "Analisar requisitos de negócio",
+    "Colaborar com a equipe de front-end",
+    "Realizar testes unitários"
+  ],
+  "tarefas_semanais": [
+    "Participar de reuniões de equipe",
+    "Atualizar documentação técnica",
+    "Revisar código dos colegas"
+  ],
+  "tarefas_mensais": [
+    "Avaliar novas tecnologias",
+    "Participar de treinamentos",
+    "Propor melhorias nos processos de desenvolvimento"
+  ],
+  "kpis": [
+    "Entrega de funcionalidades no prazo - 95%",
+    "Taxa de bugs resolvidos - 90%",
+    "Satisfação do cliente - 4,5/5"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar conhecimento em segurança da informação",
+    "Participar de um projeto de integração de sistemas",
+    "Desenvolver habilidades em arquitetura de software"
+  ],
+  "generated_at": "2025-12-08T14:40:29.153Z"
+}

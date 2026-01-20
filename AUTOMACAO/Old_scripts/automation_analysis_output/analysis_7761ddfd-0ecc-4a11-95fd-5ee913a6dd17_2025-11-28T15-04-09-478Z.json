@@ -1,0 +1,98 @@
+{
+  "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+  "empresa_nome": "ARVA Tech Solutions",
+  "analyzed_at": "2025-11-28T14:59:39.828Z",
+  "llm_used": "GPT-4-Turbo",
+  "llm_model": "gpt-4-turbo-preview",
+  "personas_analyzed": 1,
+  "total_tasks": 14,
+  "tasks_analyzed": 12,
+  "tasks_automatable": 8,
+  "tasks_high_score": 0,
+  "analyses": [
+    {
+      "task_title": "Revisão de Fluxo de Caixa",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Acompanhamento de KPIs Financeiros",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Validação de Despesas",
+      "automation_score": 65,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Análise de Tendências de Mercado",
+      "automation_score": 55,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Planejamento Orçamentário Mensal",
+      "automation_score": 55,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Revisão de Performance Financeira",
+      "automation_score": 65,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Revisão Diária de Fluxo de Caixa",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Aprovação de Despesas",
+      "automation_score": 55,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Monitoramento de Indicadores Financeiros",
+      "automation_score": 65,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Análise de Viabilidade de Novos Projetos",
+      "automation_score": 60,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Elaboração do Relatório Financeiro Mensal",
+      "automation_score": 60,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Planejamento Orçamentário Anual",
+      "automation_score": 40,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    }
+  ]
+}

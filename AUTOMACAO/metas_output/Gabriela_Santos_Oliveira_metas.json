@@ -1,0 +1,39 @@
+{
+  "persona_id": "efee2fcd-e574-4a89-b17d-437603f42140",
+  "full_name": "Gabriela Santos Oliveira",
+  "role": "Analista de Qualidade",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Atingir 100% de cumprimento das metas de qualidade",
+      "descricao": "Garantir que as metas de qualidade sejam atingidas, contribuindo para a excelência nos processos da empresa",
+      "categoria": "performance",
+      "valor_alvo": 100,
+      "unidade_medida": "%",
+      "data_prazo": "2026-06-01",
+      "prioridade": 1,
+      "vinculada_kpi": "Cumprimento das metas de qualidade - 95%"
+    },
+    {
+      "titulo": "Reduzir não conformidades em 10%",
+      "descricao": "Implementar ações corretivas e preventivas para reduzir em 10% as não conformidades identificadas nos processos",
+      "categoria": "performance",
+      "valor_alvo": 10,
+      "unidade_medida": "%",
+      "data_prazo": "2026-06-01",
+      "prioridade": 2,
+      "vinculada_kpi": "Redução de não conformidades - 10%"
+    },
+    {
+      "titulo": "Aprimorar técnicas de análise de dados",
+      "descricao": "Participar de cursos e workshops específicos para desenvolver habilidades em análise de dados, contribuindo para a melhoria contínua dos processos de qualidade",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 0,
+      "unidade_medida": "horas",
+      "data_prazo": "2026-06-01",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    }
+  ],
+  "generated_at": "2025-12-08T14:39:57.863Z"
+}

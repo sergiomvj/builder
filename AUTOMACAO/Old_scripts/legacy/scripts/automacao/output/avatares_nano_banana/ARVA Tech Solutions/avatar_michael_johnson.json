@@ -1,0 +1,50 @@
+{
+  "persona": {
+    "id": "fe5d76ce-f793-4f2a-9df0-1e5b6d756d10",
+    "nome": "Michael Johnson",
+    "biografia": "Biografia não disponível"
+  },
+  "avatar": {
+    "avatar_url": "/avatars/michael_johnson_avatar.svg",
+    "avatar_thumbnail_url": "/avatars/michael_johnson_avatar.svg",
+    "prompt_usado": "30-year-old professional man, business professional style, confident expression, corporate attire",
+    "estilo": "Profissional Simulado",
+    "background_tipo": "escritório (fallback)",
+    "servico_usado": "dicebear_local",
+    "versao": "v1.0",
+    "ativo": true,
+    "local_file": "michael_johnson_avatar.svg",
+    "file_size": 4666,
+    "biometrics": {
+      "genero": "masculino",
+      "idade_aparente": 30,
+      "etnia": "diverso",
+      "estatura": "média",
+      "biotipo": "profissional"
+    },
+    "history": {
+      "formacao_academica": [
+        "Administração"
+      ],
+      "experiencia_anos": 6,
+      "empresas_anteriores": [
+        "Previous Corp",
+        "Tech Solutions"
+      ],
+      "certificacoes": [
+        "Professional Certification"
+      ],
+      "idiomas": [
+        "português",
+        "inglês"
+      ]
+    },
+    "metadados": {
+      "generated_at": "2025-11-22T20:14:02.695Z",
+      "script_version": "03_nano_banana",
+      "confidence_score": 95,
+      "google_nano_banana": true
+    }
+  },
+  "generated_at": "2025-11-22T20:14:02.882Z"
+}

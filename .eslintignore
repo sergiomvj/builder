@@ -1,0 +1,9 @@
+node_modules
+.next
+out
+dist
+build
+AUTOMACAO/**/*.js
+AUTOMACAO/**/*.cjs
+AUTOMACAO/**/*.mjs
+Old_Files

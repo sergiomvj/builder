@@ -1,0 +1,53 @@
+{
+  "persona_id": "e80de970-29b6-4879-9e8d-c5a169a31c55",
+  "full_name": "[Placeholder 6] Diretor de Operações e Ética (COO)",
+  "role": "Diretor de Operações e Ética (COO)",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Gestão de operações e supply chain",
+    "Governança corporativa e compliance",
+    "Gestão de riscos operacionais e éticos",
+    "Análise de dados e métricas de performance",
+    "Otimização de processos com metodologias Lean/Six Sigma"
+  ],
+  "competencias_comportamentais": [
+    "Liderança estratégica e inspiradora",
+    "Integridade ética e transparência",
+    "Comunicação assertiva e persuasiva",
+    "Tomada de decisões sob pressão",
+    "Resolução de conflitos e negociação"
+  ],
+  "ferramentas": [
+    "ERP (SAP ou Oracle)",
+    "Plataformas de compliance (NAVEX ou MetricStream)",
+    "Ferramentas de BI (Power BI ou Tableau)",
+    "Gestão de projetos (Jira ou Microsoft Project)"
+  ],
+  "tarefas_diarias": [
+    "Monitorar indicadores operacionais chave",
+    "Revisar relatórios de conformidade ética",
+    "Coordenar reuniões com equipes operacionais",
+    "Avaliar e mitigar riscos emergentes"
+  ],
+  "tarefas_semanais": [
+    "Realizar reuniões de alinhamento estratégico",
+    "Auditar processos internos e conformidade",
+    "Analisar relatórios de performance semanal"
+  ],
+  "tarefas_mensais": [
+    "Revisar e atualizar políticas éticas",
+    "Avaliar KPIs operacionais e éticos",
+    "Planejar iniciativas de melhoria contínua"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Compliance Ético - 100%",
+    "KPI 2: Eficiência Operacional - 95%",
+    "KPI 3: Tempo de Resposta a Incidentes - <24h"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar expertise em ética de IA e dados",
+    "Obter certificação em Governança Corporativa",
+    "Expandir rede de contatos em associações éticas"
+  ],
+  "generated_at": "2025-12-01T16:45:25.402Z"
+}

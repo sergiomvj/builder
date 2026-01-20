@@ -1,0 +1,54 @@
+{
+  "persona_id": "439fbd3a-f399-43b9-beb1-94429f583d8e",
+  "full_name": "Ahmad Hassan Al-Sayed",
+  "role": "Desenvolvedor Senior Full-Stack",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "Desenvolvimento Full-Stack com Node.js, React e TypeScript",
+    "Python para IA e Machine Learning (LangChain, TensorFlow)",
+    "Arquitetura de Microserviços e APIs REST/GraphQL",
+    "DevOps: Docker, Kubernetes e CI/CD com GitHub Actions",
+    "Integração de Modelos de Linguagem Grande (LLMs) em agentes autônomos",
+    "Design de sistemas escaláveis e autoaprendentes"
+  ],
+  "competencias_comportamentais": [
+    "Liderança técnica e mentoria de equipes juniores",
+    "Resolução avançada de problemas complexos",
+    "Colaboração interdisciplinar em projetos de IA",
+    "Aprendizado contínuo e adaptação a novas tecnologias",
+    "Comunicação clara em reuniões e documentação técnica"
+  ],
+  "ferramentas": [
+    "Git e GitHub",
+    "Docker e Kubernetes",
+    "AWS (EC2, Lambda, Sagemaker)",
+    "VS Code e Jupyter Notebooks"
+  ],
+  "tarefas_diarias": [
+    "Revisão de código e pull requests de agentes virtuais",
+    "Desenvolvimento e testes de blocos modulares de competência",
+    "Debugging e otimização de performance de agentes",
+    "Participação em stand-ups diários da equipe"
+  ],
+  "tarefas_semanais": [
+    "Planejamento e refinamento de user stories para sprints",
+    "Mentoria técnica para desenvolvedores juniores",
+    "Atualização de documentação de APIs e integrações de IA"
+  ],
+  "tarefas_mensais": [
+    "Revisão de arquitetura de sistemas e escalabilidade",
+    "Realização de treinamentos internos sobre novas ferramentas de IA",
+    "Geração de relatórios de progresso e métricas de performance"
+  ],
+  "kpis": [
+    "KPI 1: Features de agentes entregues - 8 por sprint",
+    "KPI 2: Tempo médio de resolução de bugs - < 24 horas",
+    "KPI 3: Cobertura de testes em código - > 90%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação AWS Advanced Networking Specialty",
+    "Liderar o desenvolvimento de um novo módulo de autoaprendizado para agentes",
+    "Explorar e integrar frameworks emergentes de multi-agentes como AutoGen"
+  ],
+  "generated_at": "2025-12-08T22:23:40.923Z"
+}

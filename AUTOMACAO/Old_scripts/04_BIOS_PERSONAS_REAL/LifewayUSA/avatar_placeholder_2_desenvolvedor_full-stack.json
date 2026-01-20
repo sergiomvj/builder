@@ -1,0 +1,36 @@
+{
+  "persona": {
+    "nome": "[Placeholder 2] Desenvolvedor Full-Stack",
+    "nacionalidade": "nordicos",
+    "genero": "masculino",
+    "cargo": "Desenvolvedor Full-Stack",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Responsabilidades técnicas e desenvolvimento",
+    "competencias": "Habilidades técnicas avançadas",
+    "biografia": "Profissional experiente com sólida formação técnica",
+    "personalidade": {},
+    "experiencia_anos": 8,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face",
+    "estilo": "business casual",
+    "genero": "masculino",
+    "idade_aparente": "28-35",
+    "etnia": "caucasiano",
+    "pele_tom": "clara",
+    "olhos_cor": "azuis",
+    "cabelo_cor": "loiro claro",
+    "cabelo_comprimento": "curto",
+    "tipo_fisico": "atlético",
+    "altura_estimada": "1.85m",
+    "expressao_facial": "confiante",
+    "estilo_vestimenta": "business casual",
+    "acessorios": "sem acessórios",
+    "caracteristicas_distintivas": "barba bem aparada"
+  },
+  "generated_at": "2025-12-03T15:23:38.081Z"
+}

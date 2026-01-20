@@ -1,0 +1,195 @@
+{
+  "name": "Sophie (Assistente de Marketing) - Gerir CRM e Base de Clientes",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 8 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 8h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "filters": {
+          "updated_since": "yesterday"
+        },
+        "endpoint": "/contacts",
+        "operation": "get"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar contatos atualizados no CRM desde ontem"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(contact => ({ ...contact, segment: determineSegment(contact) }));"
+      },
+      "typeVersion": 1,
+      "notes": "Determinar segmento de cada contato para campanhas"
+    },
+    {
+      "id": "4",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "operation": "upsert",
+        "table": "customer_segments"
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar ou inserir segmentos de clientes no banco de dados",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_ARVA01",
+          "name": "Supabase ARVA01"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "marketing@arvatech.com",
+        "subject": "Atualização de Segmentação de Clientes",
+        "message": "A segmentação de clientes foi atualizada com sucesso."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe de marketing sobre atualização de segmentação",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVA01",
+          "name": "Gmail ARVA01"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Sophie (Assistente de Marketing) - Gerir CRM e Base de Clientes\nEmpresa: ARVA Tech Solutions\nPersona: Sophie Dubois\nTarefa: Gerir CRM e Base de Clientes\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVA01",
+          "name": "Slack ARVA01"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-12-06T13:59:31.327Z",
+  "updatedAt": "2025-12-06T13:59:31.327Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+    "empresa_codigo": "ARVA01",
+    "persona_id": "4697d8be-864d-4104-8c9a-a90c50bb7382",
+    "persona_nome": "Sophie Dubois",
+    "task_title": "Gerir CRM e Base de Clientes",
+    "opportunity_id": "6615f5bb-e614-4896-acf9-944f736c004f",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-12-06T13:59:31.327Z"
+  }
+}

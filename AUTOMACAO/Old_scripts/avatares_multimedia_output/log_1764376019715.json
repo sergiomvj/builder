@@ -1,0 +1,233 @@
+{
+  "empresa": "ARVA Tech Solutions",
+  "service": "fal",
+  "style": "professional",
+  "timestamp": "2025-11-29T00:26:59.715Z",
+  "results": [
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a843955/l3OXYWz6ZPdYZm8kDe0qi_16ec7d6f4cb64e0f9a53a9c88035d857.jpg",
+      "prompt": "professional corporate headshot, business attire, neutral background, studio lighting, professional appearance, diverse professional professional aged 30-40, Asst Fin, high quality photography, 8k resolution, realistic, professional color grading",
+      "personaIds": [
+        "20ae86c4-137e-412f-9c35-99fd7ce11ebf"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 2193149100,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a843956/j9YHFhEvIgqneEGtgrzsq_b10d37be3c6f4f4b8eefaba02dbcf7bd.jpg",
+      "prompt": "professional corporate headshot, business attire, neutral background, studio lighting, professional appearance, diverse professional professional aged 30-40, Mkt Mgr, high quality photography, 8k resolution, realistic, professional color grading",
+      "personaIds": [
+        "299fcd37-98c4-4bea-b4de-63e3d83c5175"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 1958303167,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a843957/oXPv9plnVGti_lBYMwzzB_edc9223af8774e319c73fbdd78f3503b.jpg",
+      "prompt": "professional corporate headshot, business attire, neutral background, studio lighting, professional appearance, diverse professional professional aged 30-40, SDR Senior, high quality photography, 8k resolution, realistic, professional color grading",
+      "personaIds": [
+        "32bfbb7a-148b-4113-9fb6-9caff688efcc"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 2499544901,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a843958/8-KTyOjZOobmgAhccWZWJ_d8564516087a43e995f06e6e1c128c81.jpg",
+      "prompt": "professional corporate headshot, business attire, neutral background, studio lighting, professional appearance, diverse professional professional aged 30-40, Social Mkt, high quality photography, 8k resolution, realistic, professional color grading",
+      "personaIds": [
+        "46f07159-d384-496f-a480-45ac5c684082"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 2358223593,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/kangaroo/p85TuHehV0hBu6JPAo1hx_5d62eda00b5c470e886cb12f3028a83c.jpg",
+      "prompt": "professional corporate headshot, business attire, neutral background, studio lighting, professional appearance, diverse professional professional aged 30-40, CFO, high quality photography, 8k resolution, realistic, professional color grading",
+      "personaIds": [
+        "a89ce124-58f3-45d1-a7d4-bb245a35884b"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 3263742087,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a84395a/vWjp6xgjIXrM5QPwUQNXQ_1e536479378040dbac79823af0e435e0.jpg",
+      "prompt": "professional corporate headshot, business attire, neutral background, studio lighting, professional appearance, diverse professional professional aged 30-40, SDR Mgr, high quality photography, 8k resolution, realistic, professional color grading",
+      "personaIds": [
+        "ac1149b5-947f-44b4-85ed-70e8f7ac7e8a"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 3123982949,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a84395b/9OhlkycIGN0mhnzSfZkBU_bde3fd40aca64a159b832a244f506de9.jpg",
+      "prompt": "professional corporate headshot, business attire, neutral background, studio lighting, professional appearance, diverse professional professional aged 30-40, HR Manager, high quality photography, 8k resolution, realistic, professional color grading",
+      "personaIds": [
+        "afa9c2ea-870b-4894-8d9f-bb83f8412d1a"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 832168057,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/zebra/u4qaDo3Pkj7MF2zLaBI-Q_33312f53ee594198929ef01cafd29ae7.jpg",
+      "prompt": "professional corporate headshot, business attire, neutral background, studio lighting, professional appearance, diverse professional professional aged 30-40, CTO, high quality photography, 8k resolution, realistic, professional color grading",
+      "personaIds": [
+        "fe5d76ce-f793-4f2a-9df0-1e5b6d756d10"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 108558440,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a84395d/Co8HebWLD-4o2YWt6zRoh_3a849037c0be4e58b9ff8eda4d74cbcf.jpg",
+      "prompt": "professional corporate headshot, business attire, neutral background, studio lighting, professional appearance, diverse professional professional aged 30-40, Asst Mkt, high quality photography, 8k resolution, realistic, professional color grading",
+      "personaIds": [
+        "2841090c-7c5f-4c95-afbf-89dc4c115372"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 2179340881,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a84395e/yhALl9fYTSlv2su4zPXyi_71d45fd73f734d14bb84cd4211409714.jpg",
+      "prompt": "professional corporate headshot, business attire, neutral background, studio lighting, professional appearance, diverse professional professional aged 30-40, Asst RH, high quality photography, 8k resolution, realistic, professional color grading",
+      "personaIds": [
+        "ff4feab2-17c2-406c-9d57-609e0a46cfb1"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 2432056266,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/panda/K6UtooCSD839Y1gMTkXCS_aff57b319c41466aa9ff2ecaa678a115.jpg",
+      "prompt": "professional corporate headshot, business attire, neutral background, studio lighting, professional appearance, diverse professional professional aged 30-40, YT Manager, high quality photography, 8k resolution, realistic, professional color grading",
+      "personaIds": [
+        "b236f0d4-3ab7-4088-92c0-92f2bd511826"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 477277290,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/zebra/bRkdZ4ufz3uFuuK9aQqFV_7bde1b542f4947a78724519879922caa.jpg",
+      "prompt": "professional corporate headshot, business attire, neutral background, studio lighting, professional appearance, diverse professional professional aged 30-40, CEO, high quality photography, 8k resolution, realistic, professional color grading",
+      "personaIds": [
+        "07acdccc-ac86-41cd-9c19-2c95bfc82be9"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 3760158670,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/lion/dUpC-rol57sCR0ocRm-vg_07a8a0776d4847c5862068b96e19f18f.jpg",
+      "prompt": "professional corporate headshot, business attire, neutral background, studio lighting, professional appearance, diverse professional professional aged 30-40, Asst Admin, high quality photography, 8k resolution, realistic, professional color grading",
+      "personaIds": [
+        "6e1019b0-7606-4488-920a-a190a098237e"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 4151191203,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/elephant/-RxFbRziHpfTBLKL9YQ_q_b9bc141cb59a4b14b9a08236429e972b.jpg",
+      "prompt": "professional corporate headshot, business attire, neutral background, studio lighting, professional appearance, diverse professional professional aged 30-40, SDR Junior, high quality photography, 8k resolution, realistic, professional color grading",
+      "personaIds": [
+        "680cf6e1-5b0d-4dc7-b2c0-722d22998876"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 160388805,
+        "inference_steps": 28
+      }
+    },
+    {
+      "success": true,
+      "service": "fal",
+      "imageUrl": "https://v3b.fal.media/files/b/0a843961/xrrpyUbyx6xFVqYpHEwKS_19597e537a0f4d87b46fe9b280e0362e.jpg",
+      "prompt": "professional corporate headshot, business attire, neutral background, studio lighting, professional appearance, diverse professional professional aged 30-40, SDR Analst, high quality photography, 8k resolution, realistic, professional color grading",
+      "personaIds": [
+        "72e1bfc8-f618-40d2-9614-4cecfbdfe73d"
+      ],
+      "metadata": {
+        "model": "fal-ai/flux-pro",
+        "size": "landscape_16_9",
+        "seed": 4286350873,
+        "inference_steps": 28
+      }
+    }
+  ]
+}

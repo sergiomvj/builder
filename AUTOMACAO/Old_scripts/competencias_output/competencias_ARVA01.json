@@ -1,0 +1,701 @@
+{
+  "empresa": {
+    "id": "bae6cb49-9b53-4600-9b58-084a69b66c21",
+    "codigo": "ARVA01",
+    "nome": "ARVA Tech Solutions"
+  },
+  "data_processamento": "2025-11-14T23:06:42.873Z",
+  "total_personas": 16,
+  "personas": {
+    "CEO-ARVA01": {
+      "info": {
+        "nome": "CEO da ARVA Tech Solutions",
+        "role": "Chief Executive Officer",
+        "department": "Executive",
+        "specialty": "Strategic Leadership",
+        "nivel": "Executive",
+        "template_usado": "CEO"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Liderança Estratégica",
+          "Gestão Empresarial",
+          "Visão de Negócios",
+          "Tomada de Decisão"
+        ],
+        "comportamentais": [
+          "Liderança Visionária",
+          "Comunicação Estratégica",
+          "Resiliência",
+          "Inspiração"
+        ],
+        "areas_especializacao": [
+          "Executive",
+          "Strategic Leadership"
+        ],
+        "observacoes": []
+      },
+      "nivel_experiencia": "senior",
+      "sdr_info": {
+        "is_sdr": false,
+        "sales_support": false,
+        "focus_area": null
+      }
+    },
+    "EXEC1-ARVA01": {
+      "info": {
+        "nome": "Chief Technology Officer da ARVA Tech Solutions",
+        "role": "Chief Technology Officer",
+        "department": "Technology",
+        "specialty": "Technology Leadership",
+        "nivel": "Executive",
+        "template_usado": "CTO"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Arquitetura de Sistemas",
+          "Gestão de TI",
+          "Inovação Tecnológica",
+          "DevOps",
+          "Technical Prospecting",
+          "Solution Selling",
+          "Cold Calling para CTOs",
+          "Email Outreach Técnico",
+          "LinkedIn Prospecting",
+          "Technical Demo Delivery"
+        ],
+        "comportamentais": [
+          "Pensamento Analítico",
+          "Orientação à Inovação",
+          "Liderança Técnica",
+          "Resolução de Problemas",
+          "Persuasão Técnica"
+        ],
+        "areas_especializacao": [
+          "Technology",
+          "Technology Leadership",
+          "Tech Decision Makers"
+        ],
+        "observacoes": [
+          "SDR Executive - Tech Decision Makers expertise with sales development focus"
+        ]
+      },
+      "nivel_experiencia": "senior",
+      "sdr_info": {
+        "is_sdr": true,
+        "sales_support": false,
+        "focus_area": "Tech Decision Makers"
+      }
+    },
+    "EXEC2-ARVA01": {
+      "info": {
+        "nome": "Chief Financial Officer da ARVA Tech Solutions",
+        "role": "Chief Financial Officer",
+        "department": "Finance",
+        "specialty": "Finance Leadership",
+        "nivel": "Executive",
+        "template_usado": "CFO"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Análise Financeira",
+          "Controladoria",
+          "Gestão de Riscos",
+          "Planejamento Financeiro",
+          "ROI Selling",
+          "Budget Justification",
+          "Executive Outreach",
+          "ROI-based Prospecting",
+          "Financial Objection Handling",
+          "Budget Cycle Timing"
+        ],
+        "comportamentais": [
+          "Precisão Analítica",
+          "Pensamento Estratégico",
+          "Comunicação Assertiva",
+          "Orientação a Dados",
+          "Persuasão Financeira"
+        ],
+        "areas_especializacao": [
+          "Finance",
+          "Finance Leadership",
+          "C-Level Executives"
+        ],
+        "observacoes": [
+          "SDR Executive - C-Level Executives expertise with sales development focus"
+        ]
+      },
+      "nivel_experiencia": "senior",
+      "sdr_info": {
+        "is_sdr": true,
+        "sales_support": false,
+        "focus_area": "C-Level Executives"
+      }
+    },
+    "EXEC3-ARVA01": {
+      "info": {
+        "nome": "Chief Operating Officer da ARVA Tech Solutions",
+        "role": "Chief Operating Officer",
+        "department": "Operations",
+        "specialty": "Operations Leadership",
+        "nivel": "Executive",
+        "template_usado": "COO"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Gestão Operacional",
+          "Otimização de Processos",
+          "Gestão de Projetos",
+          "Qualidade Total",
+          "Process Improvement Selling",
+          "Operations-focused Prospecting",
+          "Process Optimization Pitches",
+          "Efficiency ROI Presentations"
+        ],
+        "comportamentais": [
+          "Eficiência Operacional",
+          "Liderança Executiva",
+          "Orientação a Resultados",
+          "Gestão de Pessoas",
+          "Consultive Selling"
+        ],
+        "areas_especializacao": [
+          "Operations",
+          "Operations Leadership",
+          "Operations Directors"
+        ],
+        "observacoes": [
+          "SDR Executive - Operations Directors expertise with sales development focus"
+        ]
+      },
+      "nivel_experiencia": "senior",
+      "sdr_info": {
+        "is_sdr": true,
+        "sales_support": false,
+        "focus_area": "Operations Directors"
+      }
+    },
+    "SPEC1-ARVA01": {
+      "info": {
+        "nome": "Especialista 1 da ARVA Tech Solutions",
+        "role": "Specialist 1",
+        "department": "Technical",
+        "specialty": "Technical Expertise 1",
+        "nivel": "Specialist",
+        "template_usado": "Specialist"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Especialização Técnica",
+          "Melhores Práticas",
+          "Ferramentas Especializadas",
+          "Metodologias Avançadas",
+          "Sales Enablement"
+        ],
+        "comportamentais": [
+          "Expertise Técnica",
+          "Aprendizagem Contínua",
+          "Precisão",
+          "Orientação à Qualidade"
+        ],
+        "areas_especializacao": [
+          "Technical",
+          "Technical Expertise 1",
+          "Technical Training",
+          "Solution Architecture",
+          "Product Demonstrations"
+        ],
+        "observacoes": [
+          "Technical specialist providing sales support and solution expertise"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "sdr_info": {
+        "is_sdr": false,
+        "sales_support": true,
+        "focus_area": null
+      }
+    },
+    "SPEC2-ARVA01": {
+      "info": {
+        "nome": "Especialista 2 da ARVA Tech Solutions",
+        "role": "Specialist 2",
+        "department": "Technical",
+        "specialty": "Technical Expertise 2",
+        "nivel": "Specialist",
+        "template_usado": "Specialist"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Especialização Técnica",
+          "Melhores Práticas",
+          "Ferramentas Especializadas",
+          "Metodologias Avançadas",
+          "Sales Enablement"
+        ],
+        "comportamentais": [
+          "Expertise Técnica",
+          "Aprendizagem Contínua",
+          "Precisão",
+          "Orientação à Qualidade"
+        ],
+        "areas_especializacao": [
+          "Technical",
+          "Technical Expertise 2",
+          "Technical Training",
+          "Solution Architecture",
+          "Product Demonstrations"
+        ],
+        "observacoes": [
+          "Technical specialist providing sales support and solution expertise"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "sdr_info": {
+        "is_sdr": false,
+        "sales_support": true,
+        "focus_area": null
+      }
+    },
+    "SPEC3-ARVA01": {
+      "info": {
+        "nome": "Especialista 3 da ARVA Tech Solutions",
+        "role": "Specialist 3",
+        "department": "Technical",
+        "specialty": "Technical Expertise 3",
+        "nivel": "Specialist",
+        "template_usado": "Specialist"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Especialização Técnica",
+          "Melhores Práticas",
+          "Ferramentas Especializadas",
+          "Metodologias Avançadas",
+          "Sales Enablement"
+        ],
+        "comportamentais": [
+          "Expertise Técnica",
+          "Aprendizagem Contínua",
+          "Precisão",
+          "Orientação à Qualidade"
+        ],
+        "areas_especializacao": [
+          "Technical",
+          "Technical Expertise 3",
+          "Technical Training",
+          "Solution Architecture",
+          "Product Demonstrations"
+        ],
+        "observacoes": [
+          "Technical specialist providing sales support and solution expertise"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "sdr_info": {
+        "is_sdr": false,
+        "sales_support": true,
+        "focus_area": null
+      }
+    },
+    "SPEC4-ARVA01": {
+      "info": {
+        "nome": "Especialista 4 da ARVA Tech Solutions",
+        "role": "Specialist 4",
+        "department": "Technical",
+        "specialty": "Technical Expertise 4",
+        "nivel": "Specialist",
+        "template_usado": "Specialist"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Especialização Técnica",
+          "Melhores Práticas",
+          "Ferramentas Especializadas",
+          "Metodologias Avançadas",
+          "Sales Enablement"
+        ],
+        "comportamentais": [
+          "Expertise Técnica",
+          "Aprendizagem Contínua",
+          "Precisão",
+          "Orientação à Qualidade"
+        ],
+        "areas_especializacao": [
+          "Technical",
+          "Technical Expertise 4",
+          "Technical Training",
+          "Solution Architecture",
+          "Product Demonstrations"
+        ],
+        "observacoes": [
+          "Technical specialist providing sales support and solution expertise"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "sdr_info": {
+        "is_sdr": false,
+        "sales_support": true,
+        "focus_area": null
+      }
+    },
+    "SPEC5-ARVA01": {
+      "info": {
+        "nome": "Especialista 5 da ARVA Tech Solutions",
+        "role": "Specialist 5",
+        "department": "Technical",
+        "specialty": "Technical Expertise 5",
+        "nivel": "Specialist",
+        "template_usado": "Specialist"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Especialização Técnica",
+          "Melhores Práticas",
+          "Ferramentas Especializadas",
+          "Metodologias Avançadas",
+          "Sales Enablement"
+        ],
+        "comportamentais": [
+          "Expertise Técnica",
+          "Aprendizagem Contínua",
+          "Precisão",
+          "Orientação à Qualidade"
+        ],
+        "areas_especializacao": [
+          "Technical",
+          "Technical Expertise 5",
+          "Technical Training",
+          "Solution Architecture",
+          "Product Demonstrations"
+        ],
+        "observacoes": [
+          "Technical specialist providing sales support and solution expertise"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "sdr_info": {
+        "is_sdr": false,
+        "sales_support": true,
+        "focus_area": null
+      }
+    },
+    "SPEC6-ARVA01": {
+      "info": {
+        "nome": "Especialista 6 da ARVA Tech Solutions",
+        "role": "Specialist 6",
+        "department": "Technical",
+        "specialty": "Technical Expertise 6",
+        "nivel": "Specialist",
+        "template_usado": "Specialist"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Especialização Técnica",
+          "Melhores Práticas",
+          "Ferramentas Especializadas",
+          "Metodologias Avançadas",
+          "Sales Enablement"
+        ],
+        "comportamentais": [
+          "Expertise Técnica",
+          "Aprendizagem Contínua",
+          "Precisão",
+          "Orientação à Qualidade"
+        ],
+        "areas_especializacao": [
+          "Technical",
+          "Technical Expertise 6",
+          "Technical Training",
+          "Solution Architecture",
+          "Product Demonstrations"
+        ],
+        "observacoes": [
+          "Technical specialist providing sales support and solution expertise"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "sdr_info": {
+        "is_sdr": false,
+        "sales_support": true,
+        "focus_area": null
+      }
+    },
+    "ASST1-ARVA01": {
+      "info": {
+        "nome": "Assistente 1 da ARVA Tech Solutions",
+        "role": "Assistant 1",
+        "department": "Administrative",
+        "specialty": "Executive Support & SDR",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Suporte Administrativo",
+          "Organização de Processos",
+          "Ferramentas de Produtividade",
+          "Gestão de Agenda",
+          "CRM Management",
+          "Lead Qualification",
+          "Lead Research",
+          "Appointment Setting",
+          "CRM Data Management",
+          "Prospect Communication",
+          "Pipeline Management"
+        ],
+        "comportamentais": [
+          "Organização",
+          "Proatividade",
+          "Comunicação Clara",
+          "Suporte Eficiente",
+          "Atenção aos Detalhes"
+        ],
+        "areas_especializacao": [
+          "Administrative",
+          "Executive Support & SDR",
+          "Executive Support & Lead Management"
+        ],
+        "observacoes": [
+          "SDR Support Role - focuses on executive assistance with sales enablement"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "sdr_info": {
+        "is_sdr": true,
+        "sales_support": false,
+        "focus_area": "Executive Support & Lead Management"
+      }
+    },
+    "ASST2-ARVA01": {
+      "info": {
+        "nome": "Assistente 2 da ARVA Tech Solutions",
+        "role": "Assistant 2",
+        "department": "Administrative",
+        "specialty": "Executive Support & SDR",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Suporte Administrativo",
+          "Organização de Processos",
+          "Ferramentas de Produtividade",
+          "Gestão de Agenda",
+          "CRM Management",
+          "Lead Qualification",
+          "Lead Research",
+          "Appointment Setting",
+          "CRM Data Management",
+          "Prospect Communication",
+          "Pipeline Management"
+        ],
+        "comportamentais": [
+          "Organização",
+          "Proatividade",
+          "Comunicação Clara",
+          "Suporte Eficiente",
+          "Atenção aos Detalhes"
+        ],
+        "areas_especializacao": [
+          "Administrative",
+          "Executive Support & SDR",
+          "Executive Support & Lead Management"
+        ],
+        "observacoes": [
+          "SDR Support Role - focuses on executive assistance with sales enablement"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "sdr_info": {
+        "is_sdr": true,
+        "sales_support": false,
+        "focus_area": "Executive Support & Lead Management"
+      }
+    },
+    "ASST3-ARVA01": {
+      "info": {
+        "nome": "Assistente 3 da ARVA Tech Solutions",
+        "role": "Assistant 3",
+        "department": "Administrative",
+        "specialty": "Executive Support & SDR",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Suporte Administrativo",
+          "Organização de Processos",
+          "Ferramentas de Produtividade",
+          "Gestão de Agenda",
+          "CRM Management",
+          "Lead Qualification",
+          "Lead Research",
+          "Appointment Setting",
+          "CRM Data Management",
+          "Prospect Communication",
+          "Pipeline Management"
+        ],
+        "comportamentais": [
+          "Organização",
+          "Proatividade",
+          "Comunicação Clara",
+          "Suporte Eficiente",
+          "Atenção aos Detalhes"
+        ],
+        "areas_especializacao": [
+          "Administrative",
+          "Executive Support & SDR",
+          "Executive Support & Lead Management"
+        ],
+        "observacoes": [
+          "SDR Support Role - focuses on executive assistance with sales enablement"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "sdr_info": {
+        "is_sdr": true,
+        "sales_support": false,
+        "focus_area": "Executive Support & Lead Management"
+      }
+    },
+    "ASST4-ARVA01": {
+      "info": {
+        "nome": "Assistente 4 da ARVA Tech Solutions",
+        "role": "Assistant 4",
+        "department": "Administrative",
+        "specialty": "Executive Support & SDR",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Suporte Administrativo",
+          "Organização de Processos",
+          "Ferramentas de Produtividade",
+          "Gestão de Agenda",
+          "CRM Management",
+          "Lead Qualification",
+          "Lead Research",
+          "Appointment Setting",
+          "CRM Data Management",
+          "Prospect Communication",
+          "Pipeline Management"
+        ],
+        "comportamentais": [
+          "Organização",
+          "Proatividade",
+          "Comunicação Clara",
+          "Suporte Eficiente",
+          "Atenção aos Detalhes"
+        ],
+        "areas_especializacao": [
+          "Administrative",
+          "Executive Support & SDR",
+          "Executive Support & Lead Management"
+        ],
+        "observacoes": [
+          "SDR Support Role - focuses on executive assistance with sales enablement"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "sdr_info": {
+        "is_sdr": true,
+        "sales_support": false,
+        "focus_area": "Executive Support & Lead Management"
+      }
+    },
+    "ASST5-ARVA01": {
+      "info": {
+        "nome": "Assistente 5 da ARVA Tech Solutions",
+        "role": "Assistant 5",
+        "department": "Administrative",
+        "specialty": "Executive Support & SDR",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Suporte Administrativo",
+          "Organização de Processos",
+          "Ferramentas de Produtividade",
+          "Gestão de Agenda",
+          "CRM Management",
+          "Lead Qualification",
+          "Lead Research",
+          "Appointment Setting",
+          "CRM Data Management",
+          "Prospect Communication",
+          "Pipeline Management"
+        ],
+        "comportamentais": [
+          "Organização",
+          "Proatividade",
+          "Comunicação Clara",
+          "Suporte Eficiente",
+          "Atenção aos Detalhes"
+        ],
+        "areas_especializacao": [
+          "Administrative",
+          "Executive Support & SDR",
+          "Executive Support & Lead Management"
+        ],
+        "observacoes": [
+          "SDR Support Role - focuses on executive assistance with sales enablement"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "sdr_info": {
+        "is_sdr": true,
+        "sales_support": false,
+        "focus_area": "Executive Support & Lead Management"
+      }
+    },
+    "ASST6-ARVA01": {
+      "info": {
+        "nome": "Assistente 6 da ARVA Tech Solutions",
+        "role": "Assistant 6",
+        "department": "Administrative",
+        "specialty": "Executive Support & SDR",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Suporte Administrativo",
+          "Organização de Processos",
+          "Ferramentas de Produtividade",
+          "Gestão de Agenda",
+          "CRM Management",
+          "Lead Qualification",
+          "Lead Research",
+          "Appointment Setting",
+          "CRM Data Management",
+          "Prospect Communication",
+          "Pipeline Management"
+        ],
+        "comportamentais": [
+          "Organização",
+          "Proatividade",
+          "Comunicação Clara",
+          "Suporte Eficiente",
+          "Atenção aos Detalhes"
+        ],
+        "areas_especializacao": [
+          "Administrative",
+          "Executive Support & SDR",
+          "Executive Support & Lead Management"
+        ],
+        "observacoes": [
+          "SDR Support Role - focuses on executive assistance with sales enablement"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "sdr_info": {
+        "is_sdr": true,
+        "sales_support": false,
+        "focus_area": "Executive Support & Lead Management"
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "persona_id": "bc0415d3-8fde-49b7-b8f8-b0d165765964",
+  "full_name": "[Placeholder 23] Tester QA de Software",
+  "role": "Tester QA de Software",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Testes Manuais e Automatizados",
+    "Automação de Testes (Selenium, Cypress)",
+    "Escrita de Casos de Teste e Planos de Teste",
+    "Testes de API e Integração (Postman)",
+    "Análise de Logs e Debugging"
+  ],
+  "competencias_comportamentais": [
+    "Atenção aos Detalhes",
+    "Pensamento Analítico",
+    "Comunicação Eficaz",
+    "Trabalho em Equipe",
+    "Resolução de Problemas"
+  ],
+  "ferramentas": [
+    "JIRA",
+    "Selenium",
+    "Postman",
+    "TestRail"
+  ],
+  "tarefas_diarias": [
+    "Executar testes manuais e automatizados",
+    "Registrar e rastrear defeitos em ferramentas de tracking",
+    "Participar de reuniões diárias (stand-up)",
+    "Verificar e validar builds de software"
+  ],
+  "tarefas_semanais": [
+    "Atualizar relatórios de status de testes",
+    "Revisar requisitos e casos de teste",
+    "Colaborar com desenvolvedores na resolução de bugs"
+  ],
+  "tarefas_mensais": [
+    "Gerar relatório mensal de qualidade de software",
+    "Planejar próximo ciclo de testes",
+    "Participar de retrospectivas de sprint"
+  ],
+  "kpis": [
+    "KPI 1: Cobertura de Testes - 90%",
+    "KPI 2: Taxa de Detecção de Defeitos - 95%",
+    "KPI 3: Tempo Médio de Resolução de Bugs - 48 horas"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação ISTQB Foundation Level",
+    "Aprimorar automação de testes com novas ferramentas",
+    "Melhorar processos de teste contínuo (CI/CD)"
+  ],
+  "generated_at": "2025-12-02T18:00:11.692Z"
+}

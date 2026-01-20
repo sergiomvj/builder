@@ -1,0 +1,53 @@
+{
+  "persona_id": "dfb34f0a-0b5e-449e-bc85-3770f9a2f8d1",
+  "full_name": "[Placeholder 24] UX/UI Designer",
+  "role": "UX/UI Designer",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Design de Interface (UI)",
+    "Design de Experiência do Usuário (UX)",
+    "Prototipagem Interativa",
+    "Pesquisa de Usuários",
+    "Design Responsivo e Mobile-First"
+  ],
+  "competencias_comportamentais": [
+    "Criatividade e Inovação",
+    "Atenção aos Detalhes",
+    "Colaboração em Equipe",
+    "Comunicação Eficaz",
+    "Resolução de Problemas"
+  ],
+  "ferramentas": [
+    "Figma",
+    "Adobe XD",
+    "Sketch",
+    "Adobe Photoshop"
+  ],
+  "tarefas_diarias": [
+    "Revisar e iterar wireframes e protótipos",
+    "Participar de stand-ups e reuniões de equipe",
+    "Analisar feedback de usuários",
+    "Criar assets visuais para interfaces"
+  ],
+  "tarefas_semanais": [
+    "Conduzir testes de usabilidade",
+    "Colaborar com desenvolvedores em handoffs",
+    "Atualizar sistema de design"
+  ],
+  "tarefas_mensais": [
+    "Apresentar relatórios de métricas UX/UI",
+    "Planejar roadmap de design para o próximo sprint",
+    "Realizar auditorias de acessibilidade"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Satisfação do Usuário (NPS) - 85%",
+    "KPI 2: Tempo Médio de Conclusão de Tarefas - Reduzir 15%",
+    "KPI 3: Taxa de Adoção de Designs - 95%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação em Accessibility (WCAG)",
+    "Dominar Motion Design com After Effects",
+    "Liderar workshop interno de UX Research"
+  ],
+  "generated_at": "2025-12-02T18:12:03.923Z"
+}

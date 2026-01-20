@@ -1,0 +1,53 @@
+{
+  "persona_id": "737cc146-b6a8-4291-98c1-a8141502db38",
+  "full_name": "Mariana Costa Santos",
+  "role": "Analista de Qualidade",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em normas de qualidade",
+    "Experiência em auditorias internas",
+    "Habilidade em análise de dados",
+    "Conhecimento em metodologias ágeis",
+    "Experiência em melhoria contínua"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação eficaz",
+    "Trabalho em equipe",
+    "Resolução de problemas",
+    "Gestão do tempo",
+    "Flexibilidade"
+  ],
+  "ferramentas": [
+    "Excel",
+    "Power BI",
+    "Ferramentas de gestão de projetos",
+    "Software de gestão da qualidade"
+  ],
+  "tarefas_diarias": [
+    "Realizar auditorias internas",
+    "Analisar indicadores de qualidade",
+    "Elaborar relatórios de não conformidades",
+    "Participar de reuniões de acompanhamento"
+  ],
+  "tarefas_semanais": [
+    "Realizar reuniões de melhoria contínua",
+    "Atualizar documentos de qualidade",
+    "Analisar feedbacks dos clientes"
+  ],
+  "tarefas_mensais": [
+    "Elaborar planos de ação para correção de não conformidades",
+    "Realizar treinamentos sobre qualidade",
+    "Participar de avaliações de fornecedores"
+  ],
+  "kpis": [
+    "Taxa de conformidade - 95%",
+    "Tempo de resposta às não conformidades - 3 dias",
+    "Índice de satisfação do cliente - 90%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar conhecimentos em normas de qualidade internacionais",
+    "Desenvolver habilidades em gestão de projetos",
+    "Aumentar a eficiência na análise de dados"
+  ],
+  "generated_at": "2025-12-08T14:39:42.841Z"
+}

@@ -1,0 +1,112 @@
+{
+  "persona": {
+    "nome": "[Placeholder 2] Desenvolvedor Full-Stack",
+    "nacionalidade": "nordicos",
+    "genero": "masculino",
+    "cargo": "Desenvolvedor Full-Stack",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Em definição",
+    "competencias": "Em definição",
+    "biografia": "Profissional experiente",
+    "personalidade": {},
+    "experiencia_anos": 8,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
+    "prompt_usado": "Retrato realista em foto 4K de um homem caucasiano nórdico de 32 anos, pele pálida lisa com sardas leves, rosto oval angular, olhos azuis claros amendoados expressivos, sobrancelhas arqueadas cheias castanho claro, nariz reto fino romano, boca com lábios médios retos, expressão facial confiante com sorriso leve, cabelo loiro areia curto liso denso penteado lateral, barba leve aparada, óculos de armação fina preta retangular, postura ereta confiante, tipo físico magro atlético altura 183cm, vestindo casual techwear camisa cinza slim-fit jeans escuro tênis brancos relógio minimalista prata, paleta cores cinza neutro azul frio, em fundo office moderno com lighting soft studio light, DSLR look 50mm lens focus half-body shot aspect ratio 1:1",
+    "estilo": "casual",
+    "background_tipo": "office",
+    "servico_usado": "gemini_ai",
+    "versao": 1,
+    "ativo": true,
+    "biometrics": {
+      "idade_aparente": "30-35 anos",
+      "genero": "masculino",
+      "etnia": "caucasiano",
+      "tipo_fisico": "magro atlético",
+      "altura_estimada": "183cm",
+      "cabelo_cor": "loiro areia",
+      "cabelo_comprimento": "curto",
+      "cabelo_estilo": "liso penteado lateral",
+      "cabelo_volume": "denso",
+      "olhos_cor": "azuis claros",
+      "olhos_formato": "amendoados expressivos",
+      "rosto_formato": "oval angular",
+      "pele_tom": "pálida",
+      "pele_textura": "lisa com sardas leves",
+      "sobrancelhas": "arqueadas cheias",
+      "nariz": "reto fino romano",
+      "boca_labios": "médios retos",
+      "expressao_facial_padrao": "confiante com sorriso leve",
+      "marcas_unicas": "sardas leves no nariz e bochechas",
+      "acessorios_permanentes": "óculos de armação fina preta retangular, relógio minimalista prata",
+      "postura": "ereta confiante",
+      "caracteristicas_distintivas": "barba leve aparada maxilar definido",
+      "estilo_vestimenta_padrao": "casual techwear",
+      "paleta_cores_vestuario": "cinza neutro azul frio"
+    },
+    "physical_description_detailed": {
+      "rosto": {
+        "formato": "oval angular com maxilar definido",
+        "tom_pele": "pálida com subtom rosado",
+        "textura_pele": "lisa com sardas leves no nariz e bochechas poros finos",
+        "olhos": {
+          "cor": "azuis claros",
+          "formato": "amendoados expressivos com rugas de sorriso"
+        },
+        "sobrancelhas": "arqueadas cheias castanho claro",
+        "nariz": "reto fino com ponte romana sutil",
+        "boca": "lábios médios retos com canto ascendente",
+        "expressao_tipica": "confiante com sorriso leve e olhar direto"
+      },
+      "cabelo": {
+        "cor_exata": "loiro areia com reflexos dourados",
+        "comprimento": "5-7cm topo 2cm laterais",
+        "estilo": "liso penteado lateral com fade baixo",
+        "volume": "denso natural sem produtos excessivos"
+      },
+      "corpo": {
+        "altura_aproximada": "183cm",
+        "tipo_fisico": "magro atlético ombros largos cintura estreita",
+        "proporcao": "proporções equilibradas braços tonificados sem excesso muscular",
+        "postura_tipica": "ereta confiante ombros para trás"
+      }
+    },
+    "consistency_parameters": {
+      "rendering_style": "realista foto 4K retrato editorial",
+      "lens_focus": "50mm",
+      "lighting": "soft studio light",
+      "aspect_ratio": "1:1 (avatar)"
+    },
+    "history": {
+      "background_educacional": "Bacharel em Ciência da Computação pela Universidade de Oslo com foco em desenvolvimento web",
+      "experiencia_internacional": "Trabalhou 3 anos em startup tech na Suécia antes de mudar para EUA",
+      "contexto_cultural": "Influências nórdicas minimalistas clean refletidas em estilo casual prático",
+      "estilo_vida": "Ativo ciclista urbano adepto de fitness leve dieta saudável visível na forma física magra",
+      "marcos_carreira": "Liderou migração para cloud em projeto chave na LifewayUSA aos 28 anos",
+      "valores_pessoais": "Eficiência simplicidade refletidos em acessórios minimalistas e vestimenta funcional",
+      "ambiente_trabalho": "Ambiente tech casual na LifewayUSA permite jeans hoodies mas opta por camisa slim para meetings",
+      "redes_sociais": "Perfil LinkedIn ativo GitHub com commits regulares imagem profissional clean"
+    },
+    "metadados": {
+      "resolucao": "1024x1024",
+      "formato": "webp",
+      "qualidade": "ultra_high",
+      "parametros_geracao": {
+        "prompt_negativo": "blurry, low quality, distorted, cartoonish",
+        "steps": 30,
+        "cfg_scale": 8.5
+      },
+      "contexto_profissional": {
+        "cargo": "Desenvolvedor Full-Stack",
+        "industria": "tecnologia",
+        "senioridade": "mid-senior"
+      }
+    }
+  },
+  "generated_at": "2025-12-03T12:36:58.434Z"
+}

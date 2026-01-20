@@ -1,0 +1,14 @@
+{
+  "persona_folder": "Isabella_González",
+  "categoria": "especialistas",
+  "workflows_aplicaveis": [],
+  "implementacao_sugerida": {
+    "primeiro_workflow": null,
+    "ordem_implementacao": []
+  },
+  "recursos_necessarios": {
+    "credenciais": [],
+    "apis_integradas": []
+  },
+  "data_processamento": "2025-11-16T14:48:41.483Z"
+}

@@ -1,0 +1,53 @@
+{
+  "persona_id": "2d411f99-cfbd-4c71-bdcb-49dd455d52ab",
+  "full_name": "[Placeholder 9] Analista de Customer Insights",
+  "role": "Analista de Customer Insights",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Análise de Dados",
+    "SQL Avançado",
+    "Python para Data Science",
+    "Visualização de Dados (Tableau/Power BI)",
+    "Segmentação de Clientes"
+  ],
+  "competencias_comportamentais": [
+    "Pensamento Analítico",
+    "Comunicação Eficaz",
+    "Curiosidade e Aprendizado Contínuo",
+    "Atenção aos Detalhes",
+    "Colaboração em Equipe"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "Tableau",
+    "SQL Server/PostgreSQL",
+    "Microsoft Excel Avançado"
+  ],
+  "tarefas_diarias": [
+    "Monitorar dashboards de métricas de clientes",
+    "Analisar dados de engajamento e comportamento",
+    "Responder consultas internas sobre insights",
+    "Realizar limpeza e preparação de datasets"
+  ],
+  "tarefas_semanais": [
+    "Gerar relatórios semanais de performance",
+    "Participar de reuniões de alinhamento de insights",
+    "Atualizar segmentos de clientes"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatório mensal de customer insights",
+    "Analisar taxa de churn e retenção",
+    "Planejar e lançar pesquisas de satisfação"
+  ],
+  "kpis": [
+    "KPI 1: Net Promoter Score (NPS) - 70+",
+    "KPI 2: Taxa de Retenção de Clientes - 85%",
+    "KPI 3: Relatórios de Insights Entregues - 4 por mês"
+  ],
+  "objetivos_desenvolvimento": [
+    "Dominar Machine Learning para predições de churn",
+    "Aprimorar storytelling de dados em apresentações",
+    "Obter certificação Google Data Analytics"
+  ],
+  "generated_at": "2025-12-02T17:59:36.532Z"
+}

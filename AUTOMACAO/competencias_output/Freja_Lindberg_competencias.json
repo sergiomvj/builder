@@ -1,0 +1,53 @@
+{
+  "persona_id": "4ddd11c9-3da5-4449-aca3-e938c01c8cf9",
+  "full_name": "Freja Lindberg",
+  "role": "Analista de Marketing Digital",
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "competencias_tecnicas": [
+    "Conhecimento em SEO",
+    "Gestão de campanhas de mídias sociais",
+    "Análise de dados e métricas de marketing",
+    "Conhecimento em marketing de conteúdo",
+    "Experiência em email marketing"
+  ],
+  "competencias_comportamentais": [
+    "Proatividade",
+    "Capacidade de trabalhar em equipe",
+    "Criatividade",
+    "Resiliência",
+    "Orientação para resultados"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "Google Ads",
+    "Facebook Ads Manager",
+    "MailChimp"
+  ],
+  "tarefas_diarias": [
+    "Análise de desempenho de campanhas online",
+    "Criação de conteúdo para redes sociais",
+    "Otimização de SEO do site da empresa",
+    "Elaboração de relatórios de performance"
+  ],
+  "tarefas_semanais": [
+    "Planejamento de novas estratégias de marketing digital",
+    "Reuniões de alinhamento com a equipe de marketing",
+    "Acompanhamento de tendências do mercado"
+  ],
+  "tarefas_mensais": [
+    "Elaboração de planos de ação para melhoria de resultados",
+    "Avaliação de novas ferramentas e tecnologias para otimização de processos",
+    "Participação em eventos e workshops de marketing digital"
+  ],
+  "kpis": [
+    "Aumento de tráfego orgânico em 20% - 6 meses",
+    "Taxa de conversão de leads em clientes de 15% - trimestre",
+    "Engajamento nas redes sociais acima de 10% - mês"
+  ],
+  "objetivos_desenvolvimento": [
+    "Desenvolver habilidades em automação de marketing",
+    "Aprimorar conhecimentos em marketing de influência",
+    "Obter certificações em Google Analytics e Google Ads"
+  ],
+  "generated_at": "2025-12-05T20:13:00.956Z"
+}

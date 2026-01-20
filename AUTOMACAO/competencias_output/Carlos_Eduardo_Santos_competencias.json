@@ -1,0 +1,53 @@
+{
+  "persona_id": "34a6b429-a011-4577-b914-76f9ac7ed736",
+  "full_name": "Carlos Eduardo Santos",
+  "role": "Gerente de Vendas",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em vendas",
+    "Negociação",
+    "Gestão de equipe de vendas",
+    "Conhecimento em tecnologia",
+    "Conhecimento em imigração"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Resolução de problemas",
+    "Trabalho em equipe",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "CRM",
+    "Google Analytics",
+    "Microsoft Excel",
+    "LinkedIn Sales Navigator"
+  ],
+  "tarefas_diarias": [
+    "Elaborar estratégias de vendas",
+    "Acompanhar indicadores de desempenho da equipe",
+    "Realizar reuniões de alinhamento",
+    "Analisar resultados de vendas"
+  ],
+  "tarefas_semanais": [
+    "Treinar a equipe de vendas",
+    "Participar de reuniões de planejamento",
+    "Realizar follow-up com clientes"
+  ],
+  "tarefas_mensais": [
+    "Analisar o desempenho de vendas do mês anterior",
+    "Elaborar relatórios de vendas",
+    "Participar de treinamentos de desenvolvimento"
+  ],
+  "kpis": [
+    "Meta de vendas mensal - R$100.000,00",
+    "Taxa de conversão de leads - 20%",
+    "Ticket médio de vendas - R$1.000,00"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de liderança",
+    "Aumentar conhecimento sobre o mercado de imigração nos EUA",
+    "Desenvolver estratégias de vendas mais eficazes"
+  ],
+  "generated_at": "2025-12-08T14:37:54.999Z"
+}

@@ -1,0 +1,53 @@
+{
+  "persona_id": "e018a87a-6fdf-4b68-ad6a-29dadb967515",
+  "full_name": "[Placeholder 25] CEO / Fundador",
+  "role": "CEO / Fundador",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Gestão Estratégica",
+    "Análise Financeira",
+    "Gestão de Projetos",
+    "Marketing Digital",
+    "Gestão de Equipes Remotas"
+  ],
+  "competencias_comportamentais": [
+    "Liderança Inspiradora",
+    "Tomada de Decisão",
+    "Comunicação Eficaz",
+    "Resiliência",
+    "Visão Estratégica"
+  ],
+  "ferramentas": [
+    "Google Workspace",
+    "Slack",
+    "Salesforce",
+    "Asana"
+  ],
+  "tarefas_diarias": [
+    "Reuniões com equipe executiva",
+    "Análise de relatórios financeiros",
+    "Respostas a e-mails prioritários",
+    "Monitoramento de KPIs"
+  ],
+  "tarefas_semanais": [
+    "Reuniões de planejamento estratégico",
+    "Avaliação de desempenho da equipe",
+    "Contato com investidores"
+  ],
+  "tarefas_mensais": [
+    "Revisão de orçamento",
+    "Planejamento de campanhas de marketing",
+    "Relatórios para o conselho"
+  ],
+  "kpis": [
+    "Crescimento de Receita - 20% anual",
+    "Taxa de Retenção de Clientes - 90%",
+    "EBITDA - 15% da receita"
+  ],
+  "objetivos_desenvolvimento": [
+    "Expandir para novos mercados",
+    "Implementar IA em processos internos",
+    "Aumentar engajamento da equipe"
+  ],
+  "generated_at": "2025-12-02T18:05:59.294Z"
+}

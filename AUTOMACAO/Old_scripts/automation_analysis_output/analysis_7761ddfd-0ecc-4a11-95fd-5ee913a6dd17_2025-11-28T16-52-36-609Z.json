@@ -1,0 +1,70 @@
+{
+  "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+  "empresa_nome": "ARVA Tech Solutions",
+  "analyzed_at": "2025-11-28T16:50:08.651Z",
+  "llm_used": "GPT-4-Turbo",
+  "llm_model": "gpt-4-turbo-preview",
+  "personas_analyzed": 1,
+  "total_tasks": 13,
+  "tasks_analyzed": 8,
+  "tasks_automatable": 7,
+  "tasks_high_score": 0,
+  "analyses": [
+    {
+      "task_title": "Monitoramento de desempenho dos agentes virtuais",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Atualização de registros de funcionários",
+      "automation_score": 65,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Relatório mensal de contratações e demissões",
+      "automation_score": 68,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Atualização de registros de funcionários",
+      "automation_score": 65,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Monitoramento de assistência",
+      "automation_score": 72,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Organização de entrevistas semanais",
+      "automation_score": 65,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Relatório semanal de RH",
+      "automation_score": 65,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Planejamento de treinamento mensal",
+      "automation_score": 55,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    }
+  ]
+}

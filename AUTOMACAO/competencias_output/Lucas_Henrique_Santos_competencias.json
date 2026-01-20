@@ -1,0 +1,53 @@
+{
+  "persona_id": "ff4e3e8b-c3dc-491a-8798-83b766d1ad1b",
+  "full_name": "Lucas Henrique Santos",
+  "role": "Desenvolvedor Backend",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Desenvolvimento de APIs RESTful",
+    "Programação em Node.js",
+    "Conhecimento em bancos de dados SQL e NoSQL",
+    "Segurança da informação",
+    "Testes automatizados"
+  ],
+  "competencias_comportamentais": [
+    "Trabalho em equipe",
+    "Comunicação eficaz",
+    "Resolução de problemas",
+    "Adaptabilidade",
+    "Proatividade"
+  ],
+  "ferramentas": [
+    "Postman",
+    "MongoDB",
+    "Git",
+    "Docker"
+  ],
+  "tarefas_diarias": [
+    "Desenvolvimento de novas funcionalidades",
+    "Manutenção de código existente",
+    "Revisão de código",
+    "Participação em reuniões de equipe"
+  ],
+  "tarefas_semanais": [
+    "Análise de performance da aplicação",
+    "Implementação de melhorias sugeridas pela equipe",
+    "Atualização de documentação técnica"
+  ],
+  "tarefas_mensais": [
+    "Realização de testes de segurança da aplicação",
+    "Participação em treinamentos e workshops",
+    "Avaliação e implementação de novas tecnologias"
+  ],
+  "kpis": [
+    "Entrega de novas funcionalidades - 100% no prazo",
+    "Taxa de bugs corrigidos - 95% de resolução",
+    "Avaliação de desempenho da equipe - Nota média acima de 8"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em testes automatizados",
+    "Participar de cursos de segurança da informação",
+    "Contribuir ativamente para a evolução da plataforma LifeWayUSA"
+  ],
+  "generated_at": "2025-12-08T14:40:18.469Z"
+}

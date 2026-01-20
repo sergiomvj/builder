@@ -1,0 +1,112 @@
+{
+  "persona": {
+    "nome": "[Placeholder 14] CTO - Chief Technology Officer",
+    "nacionalidade": "americanos",
+    "genero": "feminino",
+    "cargo": "CTO - Chief Technology Officer",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Em definição",
+    "competencias": "Em definição",
+    "biografia": "Profissional experiente",
+    "personalidade": {},
+    "experiencia_anos": 3,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&h=200&fit=crop&crop=face",
+    "prompt_usado": "Retrato hiper-realista em 4K de uma mulher americana CTO de tecnologia, idade aparente 32-35 anos, genero feminino, etnia misto caucasiano-latino, tipo fisico slim atletico, altura estimada 165-170cm, cabelo cor castanho chocolate escuro, cabelo comprimento medio ate ombros, cabelo estilo ondulado solto, cabelo volume denso, olhos cor castanhos mel, olhos formato amendoados expressivos, rosto formato oval angular, pele tom oliva clara, pele textura lisa com sardas leves, sobrancelhas grossas arqueadas, nariz romano fino, boca labios medios arqueados, expressao facial padrao confiante com sorriso leve, marcas unicas sardas nas bochechas, acessorios permanentes oculos de armacao preta fina retangular relogio prata discreto, postura ereta confiante, caracteristicas distintivas covinhas leves no sorriso, estilo vestimenta padrao business casual techwear, paleta cores vestuario azul marinho cinza neutro branco, vestindo blazer azul marinho slim fit camisa branca button-down calca preta reta loafers pretos, fundo office moderno minimalista com elementos tech como laptop ao fundo, renderizacao realista foto DSLR 85mm close-up retrato editorial cinematic lighting soft studio light aspect ratio 1:1",
+    "estilo": "business",
+    "background_tipo": "office",
+    "servico_usado": "gemini_ai",
+    "versao": 1,
+    "ativo": true,
+    "biometrics": {
+      "idade_aparente": "32-35",
+      "genero": "feminino",
+      "etnia": "misto caucasiano-latino",
+      "tipo_fisico": "slim atletico",
+      "altura_estimada": "165-170cm",
+      "cabelo_cor": "castanho chocolate escuro",
+      "cabelo_comprimento": "medio",
+      "cabelo_estilo": "ondulado solto",
+      "cabelo_volume": "denso",
+      "olhos_cor": "castanhos mel",
+      "olhos_formato": "amendoados expressivos",
+      "rosto_formato": "oval angular",
+      "pele_tom": "oliva clara",
+      "pele_textura": "lisa com sardas leves",
+      "sobrancelhas": "grossas arqueadas",
+      "nariz": "romano fino",
+      "boca_labios": "medios arqueados",
+      "expressao_facial_padrao": "confiante com sorriso leve",
+      "marcas_unicas": "sardas nas bochechas",
+      "acessorios_permanentes": "oculos armacao preta fina retangular, relogio prata discreto",
+      "postura": "ereta confiante",
+      "caracteristicas_distintivas": "covinhas leves no sorriso",
+      "estilo_vestimenta_padrao": "business casual techwear",
+      "paleta_cores_vestuario": "azul marinho cinza neutro branco"
+    },
+    "physical_description_detailed": {
+      "rosto": {
+        "formato": "oval com queixo angular definido",
+        "tom_pele": "oliva clara com subtom quente",
+        "textura_pele": "lisa e radiante com sardas leves espalhadas nas bochechas",
+        "olhos": {
+          "cor": "castanhos mel com reflexos dourados",
+          "formato": "amendoados grandes e expressivos com cílios longos"
+        },
+        "sobrancelhas": "grossas arqueadas naturalmente preenchidas",
+        "nariz": "romano fino com ponte reta e narinas delicadas",
+        "boca": "labios medios arqueados com linha do sorriso definida",
+        "expressao_tipica": "confiante com sorriso leve e olhar direto"
+      },
+      "cabelo": {
+        "cor_exata": "castanho chocolate escuro com brilhos naturais",
+        "comprimento": "medio ate ombros",
+        "estilo": "ondulado solto com camadas suaves",
+        "volume": "denso e sedoso com movimento natural"
+      },
+      "corpo": {
+        "altura_aproximada": "168cm",
+        "tipo_fisico": "slim atletico com curvas sutis",
+        "proporcao": "proporcoes equilibradas ombros medios cintura definida",
+        "postura_tipica": "ereta confiante com ombros para tras"
+      }
+    },
+    "consistency_parameters": {
+      "rendering_style": "realista foto 4K retrato editorial",
+      "lens_focus": "85mm close-up",
+      "lighting": "soft studio light",
+      "aspect_ratio": "1:1 (avatar)"
+    },
+    "history": {
+      "background_educacional": "Bacharel em Ciencia da Computacao pelo MIT com mestrado em Engenharia de Software",
+      "experiencia_internacional": "Experiencia em startups de Silicon Valley influenciando estilo casual tech",
+      "contexto_cultural": "Americana com heranca latina refletida em pele oliva e expressividade facial",
+      "estilo_vida": "Estilo ativo com foco em fitness e networking tech refletido em fisico tonificado",
+      "marcos_carreira": "Promocao rapida a CTO apos liderar produto inovador na LifewayUSA",
+      "valores_pessoais": "Inovacao e eficiencia refletidos em acessorios minimalistas e postura confiante",
+      "ambiente_trabalho": "Ambiente startup tech casual influencia business casual com elementos modernos",
+      "redes_sociais": "Perfil LinkedIn ativo com fotos profissionais em eventos tech"
+    },
+    "metadados": {
+      "resolucao": "1024x1024",
+      "formato": "webp",
+      "qualidade": "ultra_high",
+      "parametros_geracao": {
+        "prompt_negativo": "blurry, low quality, distorted, cartoonish",
+        "steps": 30,
+        "cfg_scale": 8.5
+      },
+      "contexto_profissional": {
+        "cargo": "CTO - Chief Technology Officer",
+        "industria": "tecnologia",
+        "senioridade": "alta"
+      }
+    }
+  },
+  "generated_at": "2025-12-03T13:53:53.409Z"
+}

@@ -1,0 +1,241 @@
+{
+  "name": "John (SDR Junior) - Qualificar Leads",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 10 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 10h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "select",
+        "table": "leads",
+        "filters": {
+          "date_received": {
+            "gte": "NOW() - INTERVAL '1 day'"
+          }
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Buscar leads recebidos nas últimas 24 horas",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_ARVATE49",
+          "name": "Supabase ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(lead => ({ ...lead, qualification_score: lead.budget > 10000 ? 'High' : 'Low' }));"
+      },
+      "typeVersion": 1,
+      "notes": "Qualificar leads com base no orçamento"
+    },
+    {
+      "id": "4",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "operation": "update",
+        "table": "leads",
+        "data": {
+          "qualification": "{{ $json.qualification_score }}"
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar registro do lead com a qualificação",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_ARVATE49",
+          "name": "Supabase ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "{{ $json.email }}",
+        "subject": "Obrigado pelo seu interesse!",
+        "message": "Agradecemos o seu contato. Nossa equipe entrará em contato em breve!"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email de agradecimento",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Notify",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#leads",
+        "text": "Novo lead qualificado: {{ $json.name }} - Score: {{ $json.qualification_score }}"
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe de vendas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1560,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: John (SDR Junior) - Qualificar Leads\nEmpresa: ARVA Tech Solutions\nPersona: John Smith\nTarefa: Qualificar Leads\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5": {
+      "main": [
+        [
+          {
+            "node": "6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "7"
+  },
+  "createdAt": "2025-11-28T17:05:36.573Z",
+  "updatedAt": "2025-11-28T17:05:36.573Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "680cf6e1-5b0d-4dc7-b2c0-722d22998876",
+    "persona_nome": "John Smith",
+    "task_id": "8bd8723e-b715-45e0-9aa2-c5420c043971",
+    "task_title": "Qualificar Leads",
+    "opportunity_id": "e9a1de13-82da-4b5b-b247-320338ff8c1a",
+    "automation_score": 60,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:36.573Z"
+  }
+}

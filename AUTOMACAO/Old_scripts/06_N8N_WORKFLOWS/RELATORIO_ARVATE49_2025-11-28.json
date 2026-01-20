@@ -1,0 +1,1212 @@
+{
+  "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+  "empresa_nome": "ARVA Tech Solutions",
+  "generated_at": "2025-11-28T17:05:07.253Z",
+  "opportunities_processed": 99,
+  "workflows_generated": 99,
+  "workflows_saved_to_file": 99,
+  "workflows_saved_to_db": 97,
+  "workflows": [
+    {
+      "workflow_name": "William (SDR Analst) - Revisar E-mails de Follow-up",
+      "persona_nome": "William Miller",
+      "task_title": "Revisar E-mails de Follow-up",
+      "automation_score": 85,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "David (Asst Mkt) - Atualização diária do CRM",
+      "persona_nome": "David Brown",
+      "task_title": "Atualização diária do CRM",
+      "automation_score": 82,
+      "nodes_count": 6,
+      "integrations": [
+        "crm-system",
+        "email-service",
+        "data-source"
+      ]
+    },
+    {
+      "workflow_name": "Richard (Asst Fin) - Reconciliação bancária semanal",
+      "persona_nome": "Richard Garcia",
+      "task_title": "Reconciliação bancária semanal",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "email-service",
+        "banking-api"
+      ]
+    },
+    {
+      "workflow_name": "Amanda (YT Manager) - Revisão diária do desempenho do canal",
+      "persona_nome": "Amanda Davis",
+      "task_title": "Revisão diária do desempenho do canal",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "youtube-studio",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Amanda (YT Manager) - Revisão diária de desempenho de vídeos",
+      "persona_nome": "Amanda Davis",
+      "task_title": "Revisão diária de desempenho de vídeos",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "youtube-analytics",
+        "google-sheets",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "John (SDR Junior) - Atualização de status de leads",
+      "persona_nome": "John Smith",
+      "task_title": "Atualização de status de leads",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "crm-system",
+        "email-service"
+      ]
+    },
+    {
+      "workflow_name": "Ashley (CFO) - Revisão de Fluxo de Caixa",
+      "persona_nome": "Ashley Garcia",
+      "task_title": "Revisão de Fluxo de Caixa",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "email"
+      ]
+    },
+    {
+      "workflow_name": "Jennifer (Social Mkt) - Relatório de Desempenho Mensal",
+      "persona_nome": "Jennifer Smith",
+      "task_title": "Relatório de Desempenho Mensal",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "supabase",
+        "google-analytics"
+      ]
+    },
+    {
+      "workflow_name": "Ashley (CFO) - Revisão Diária de Fluxo de Caixa",
+      "persona_nome": "Ashley Garcia",
+      "task_title": "Revisão Diária de Fluxo de Caixa",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "financial-management-system",
+        "slack",
+        "email"
+      ]
+    },
+    {
+      "workflow_name": "Amanda (YT Manager) - Relatório mensal de desempenho",
+      "persona_nome": "Amanda Davis",
+      "task_title": "Relatório mensal de desempenho",
+      "automation_score": 75,
+      "nodes_count": 7,
+      "integrations": [
+        "google-sheets",
+        "gmail",
+        "slack",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "William (SDR Analst) - Atualização de status no CRM",
+      "persona_nome": "William Miller",
+      "task_title": "Atualização de status no CRM",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "crm-system",
+        "email-service",
+        "meeting-scheduler"
+      ]
+    },
+    {
+      "workflow_name": "David (Asst Mkt) - Análise semanal de performance de campan...",
+      "persona_nome": "David Brown",
+      "task_title": "Análise semanal de performance de campanhas",
+      "automation_score": 75,
+      "nodes_count": 7,
+      "integrations": [
+        "google-analytics",
+        "google-sheets",
+        "slack",
+        "email"
+      ]
+    },
+    {
+      "workflow_name": "William (SDR Analst) - Revisão diária de leads",
+      "persona_nome": "William Miller",
+      "task_title": "Revisão diária de leads",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "crm-system",
+        "google-sheets",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Lisa (SDR Senior) - Preparação de relatórios de progresso",
+      "persona_nome": "Lisa Wilson",
+      "task_title": "Preparação de relatórios de progresso",
+      "automation_score": 75,
+      "nodes_count": 7,
+      "integrations": [
+        "crm-system",
+        "google-sheets",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "Richard (Asst Fin) - Atualização diária de fluxo de caixa",
+      "persona_nome": "Richard Garcia",
+      "task_title": "Atualização diária de fluxo de caixa",
+      "automation_score": 75,
+      "nodes_count": 5,
+      "integrations": [
+        "google-sheets",
+        "email-service-provider"
+      ]
+    },
+    {
+      "workflow_name": "Lisa (SDR Senior) - Revisão Diária de Leads",
+      "persona_nome": "Lisa Wilson",
+      "task_title": "Revisão Diária de Leads",
+      "automation_score": 75,
+      "nodes_count": 7,
+      "integrations": [
+        "crm-system",
+        "slack",
+        "email-service"
+      ]
+    },
+    {
+      "workflow_name": "Lisa (SDR Senior) - Análise Semanal de Performance de Leads",
+      "persona_nome": "Lisa Wilson",
+      "task_title": "Análise Semanal de Performance de Leads",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "Lisa (SDR Senior) - Atualização de leads no CRM",
+      "persona_nome": "Lisa Wilson",
+      "task_title": "Atualização de leads no CRM",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "crm-system",
+        "email-service"
+      ]
+    },
+    {
+      "workflow_name": "Lisa (SDR Senior) - Avaliação mensal de desempenho de leads",
+      "persona_nome": "Lisa Wilson",
+      "task_title": "Avaliação mensal de desempenho de leads",
+      "automation_score": 75,
+      "nodes_count": 7,
+      "integrations": [
+        "google-sheets",
+        "hubspot",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "David (Asst Mkt) - Análise Semanal de Desempenho",
+      "persona_nome": "David Brown",
+      "task_title": "Análise Semanal de Desempenho",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "William (SDR Analst) - Atualizar CRM",
+      "persona_nome": "William Miller",
+      "task_title": "Atualizar CRM",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "crm-system",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "David (SDR Mgr) - Monitoramento de KPIs de SDR",
+      "persona_nome": "David Brown",
+      "task_title": "Monitoramento de KPIs de SDR",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "David (SDR Mgr) - Revisão diária de leads",
+      "persona_nome": "David Brown",
+      "task_title": "Revisão diária de leads",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "crm-system",
+        "email-service",
+        "internal-database"
+      ]
+    },
+    {
+      "workflow_name": "William (SDR Analst) - Qualificar Leads",
+      "persona_nome": "William Miller",
+      "task_title": "Qualificar Leads",
+      "automation_score": 75,
+      "nodes_count": 8,
+      "integrations": [
+        "crm-system",
+        "email-service",
+        "internal-database"
+      ]
+    },
+    {
+      "workflow_name": "William (Asst Admin) - Agendamento de Reuniões",
+      "persona_nome": "William Miller",
+      "task_title": "Agendamento de Reuniões",
+      "automation_score": 75,
+      "nodes_count": 7,
+      "integrations": [
+        "google-calendar",
+        "slack",
+        "email"
+      ]
+    },
+    {
+      "workflow_name": "James (Asst RH) - Monitoramento de desempenho dos agentes ...",
+      "persona_nome": "James Wilson",
+      "task_title": "Monitoramento de desempenho dos agentes virtuais",
+      "automation_score": 75,
+      "nodes_count": 5,
+      "integrations": [
+        "google-sheets",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "William (Asst Admin) - Preparar relatório semanal",
+      "persona_nome": "William Miller",
+      "task_title": "Preparar relatório semanal",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "William (Asst Admin) - Atualizar registros",
+      "persona_nome": "William Miller",
+      "task_title": "Atualizar registros",
+      "automation_score": 75,
+      "nodes_count": 7,
+      "integrations": [
+        "supabase",
+        "google-sheets",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "William (Asst Admin) - Verificar e-mails",
+      "persona_nome": "William Miller",
+      "task_title": "Verificar e-mails",
+      "automation_score": 75,
+      "nodes_count": 8,
+      "integrations": [
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Thomas (HR Manager) - Atualização de KPIs",
+      "persona_nome": "Thomas Anderson",
+      "task_title": "Atualização de KPIs",
+      "automation_score": 75,
+      "nodes_count": 7,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "Jennifer (Social Mkt) - Análise de Performance de Campanhas",
+      "persona_nome": "Jennifer Smith",
+      "task_title": "Análise de Performance de Campanhas",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "hubspot",
+        "google-analytics"
+      ]
+    },
+    {
+      "workflow_name": "Thomas (HR Manager) - Revisão diária de desempenho dos agentes",
+      "persona_nome": "Thomas Anderson",
+      "task_title": "Revisão diária de desempenho dos agentes",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "internal-monitoring-tools",
+        "slack",
+        "email"
+      ]
+    },
+    {
+      "workflow_name": "Jennifer (Social Mkt) - Publicar conteúdo programado",
+      "persona_nome": "Jennifer Smith",
+      "task_title": "Publicar conteúdo programado",
+      "automation_score": 75,
+      "nodes_count": 8,
+      "integrations": [
+        "google-sheets",
+        "facebook-api",
+        "twitter-api",
+        "instagram-api",
+        "linkedin-api"
+      ]
+    },
+    {
+      "workflow_name": "Thomas (HR Manager) - Revisão diária de relatórios de performa...",
+      "persona_nome": "Thomas Anderson",
+      "task_title": "Revisão diária de relatórios de performance",
+      "automation_score": 75,
+      "nodes_count": 5,
+      "integrations": [
+        "google-sheets",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Robert (Mkt Mgr) - Análise diária de métricas de engajament...",
+      "persona_nome": "Robert Davis",
+      "task_title": "Análise diária de métricas de engajamento",
+      "automation_score": 75,
+      "nodes_count": 9,
+      "integrations": [
+        "google-analytics",
+        "facebook-ads",
+        "twitter",
+        "instagram",
+        "slack",
+        "google-sheets"
+      ]
+    },
+    {
+      "workflow_name": "John (SDR Junior) - Agendamento de reuniões",
+      "persona_nome": "John Smith",
+      "task_title": "Agendamento de reuniões",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "crm-system",
+        "calendly",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "Richard (Asst Fin) - Atualização de relatórios financeiros",
+      "persona_nome": "Richard Garcia",
+      "task_title": "Atualização de relatórios financeiros",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Richard (Asst Fin) - Verificação diária de fluxo de caixa",
+      "persona_nome": "Richard Garcia",
+      "task_title": "Verificação diária de fluxo de caixa",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Richard (Asst Fin) - Preparação do relatório financeiro seman...",
+      "persona_nome": "Richard Garcia",
+      "task_title": "Preparação do relatório financeiro semanal",
+      "automation_score": 75,
+      "nodes_count": 7,
+      "integrations": [
+        "google-sheets",
+        "gmail",
+        "slack",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "John (SDR Junior) - Atualizar CRM",
+      "persona_nome": "John Smith",
+      "task_title": "Atualizar CRM",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "crm-system",
+        "email-service"
+      ]
+    },
+    {
+      "workflow_name": "John (SDR Junior) - Enviar Emails de Follow-up",
+      "persona_nome": "John Smith",
+      "task_title": "Enviar Emails de Follow-up",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "Lisa (SDR Senior) - Contato Inicial com Leads Prioritários",
+      "persona_nome": "Lisa Wilson",
+      "task_title": "Contato Inicial com Leads Prioritários",
+      "automation_score": 75,
+      "nodes_count": 7,
+      "integrations": [
+        "supabase",
+        "gmail",
+        "twilio"
+      ]
+    },
+    {
+      "workflow_name": "Lisa (SDR Senior) - Atualização de Status de Leads",
+      "persona_nome": "Lisa Wilson",
+      "task_title": "Atualização de Status de Leads",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "crm-system",
+        "email-service"
+      ]
+    },
+    {
+      "workflow_name": "William (SDR Analst) - Envio de emails de prospecção",
+      "persona_nome": "William Miller",
+      "task_title": "Envio de emails de prospecção",
+      "automation_score": 72,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "gmail",
+        "calendly"
+      ]
+    },
+    {
+      "workflow_name": "James (Asst RH) - Monitoramento de assistência",
+      "persona_nome": "James Wilson",
+      "task_title": "Monitoramento de assistência",
+      "automation_score": 72,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Michael (CTO) - Monitoramento de desempenho de agentes v...",
+      "persona_nome": "Michael Johnson",
+      "task_title": "Monitoramento de desempenho de agentes virtuais",
+      "automation_score": 72,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "slack",
+        "google-sheets"
+      ]
+    },
+    {
+      "workflow_name": "Robert (Mkt Mgr) - Verificar performance de campanhas",
+      "persona_nome": "Robert Davis",
+      "task_title": "Verificar performance de campanhas",
+      "automation_score": 72,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "http"
+      ]
+    },
+    {
+      "workflow_name": "John (SDR Junior) - Análise Semanal de Performance",
+      "persona_nome": "John Smith",
+      "task_title": "Análise Semanal de Performance",
+      "automation_score": 70,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "hubspot"
+      ]
+    },
+    {
+      "workflow_name": "Michael (CTO) - Revisar Dashboard de Desempenho Diário",
+      "persona_nome": "Michael Johnson",
+      "task_title": "Revisar Dashboard de Desempenho Diário",
+      "automation_score": 70,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Jennifer (Social Mkt) - Checar menções da ARVA nas redes sociais",
+      "persona_nome": "Jennifer Smith",
+      "task_title": "Checar menções da ARVA nas redes sociais",
+      "automation_score": 68,
+      "nodes_count": 7,
+      "integrations": [
+        "google-sheets",
+        "twitter-api",
+        "facebook-api",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "James (Asst RH) - Relatório mensal de contratações e demis...",
+      "persona_nome": "James Wilson",
+      "task_title": "Relatório mensal de contratações e demissões",
+      "automation_score": 68,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "google-sheets",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "David (Asst Mkt) - Relatório mensal de marketing",
+      "persona_nome": "David Brown",
+      "task_title": "Relatório mensal de marketing",
+      "automation_score": 68,
+      "nodes_count": 8,
+      "integrations": [
+        "google-sheets",
+        "facebook-api",
+        "twitter-api",
+        "google-analytics",
+        "mailchimp"
+      ]
+    },
+    {
+      "workflow_name": "Richard (Asst Fin) - Planejamento financeiro semanal",
+      "persona_nome": "Richard Garcia",
+      "task_title": "Planejamento financeiro semanal",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Richard (Asst Fin) - Análise mensal de desempenho financeiro",
+      "persona_nome": "Richard Garcia",
+      "task_title": "Análise mensal de desempenho financeiro",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "gmail",
+        "slack",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "Richard (Asst Fin) - Análise mensal de custos e despesas",
+      "persona_nome": "Richard Garcia",
+      "task_title": "Análise mensal de custos e despesas",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "gmail",
+        "slack",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "Richard (Asst Fin) - Verificar e-mails de atualizações financ...",
+      "persona_nome": "Richard Garcia",
+      "task_title": "Verificar e-mails de atualizações financeiras",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "John (SDR Junior) - Revisão semanal de desempenho",
+      "persona_nome": "John Smith",
+      "task_title": "Revisão semanal de desempenho",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "hubspot"
+      ]
+    },
+    {
+      "workflow_name": "Robert (Mkt Mgr) - Monitoramento de redes sociais",
+      "persona_nome": "Robert Davis",
+      "task_title": "Monitoramento de redes sociais",
+      "automation_score": 65,
+      "nodes_count": 7,
+      "integrations": [
+        "twitter-api",
+        "facebook-graph-api",
+        "google-sheets",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Sarah (CEO) - Revisão diária do progresso dos projetos",
+      "persona_nome": "Sarah Johnson",
+      "task_title": "Revisão diária do progresso dos projetos",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "email"
+      ]
+    },
+    {
+      "workflow_name": "Jennifer (Social Mkt) - Análise de engajamento",
+      "persona_nome": "Jennifer Smith",
+      "task_title": "Análise de engajamento",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "http"
+      ]
+    },
+    {
+      "workflow_name": "Thomas (HR Manager) - Acompanhamento de projetos chave",
+      "persona_nome": "Thomas Anderson",
+      "task_title": "Acompanhamento de projetos chave",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "email"
+      ]
+    },
+    {
+      "workflow_name": "James (Asst RH) - Relatório semanal de RH",
+      "persona_nome": "James Wilson",
+      "task_title": "Relatório semanal de RH",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "James (Asst RH) - Avaliação mensal de desempenho dos agent...",
+      "persona_nome": "James Wilson",
+      "task_title": "Avaliação mensal de desempenho dos agentes virtuais",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "James (Asst RH) - Atualização de registros de funcionários",
+      "persona_nome": "James Wilson",
+      "task_title": "Atualização de registros de funcionários",
+      "automation_score": 65,
+      "nodes_count": 4,
+      "integrations": [
+        "supabase",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "James (Asst RH) - Atualização de registros de funcionários",
+      "persona_nome": "James Wilson",
+      "task_title": "Atualização de registros de funcionários",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "hr-system",
+        "email"
+      ]
+    },
+    {
+      "workflow_name": "William (Asst Admin) - Auditoria de sistemas",
+      "persona_nome": "William Miller",
+      "task_title": "Auditoria de sistemas",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "slack",
+        "http"
+      ]
+    },
+    {
+      "workflow_name": "William (Asst Admin) - Revisão Semanal de Desempenho",
+      "persona_nome": "William Miller",
+      "task_title": "Revisão Semanal de Desempenho",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "David (SDR Mgr) - Revisão diária de leads",
+      "persona_nome": "David Brown",
+      "task_title": "Revisão diária de leads",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "crm-system",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "James (Asst RH) - Preparação da agenda semanal de reuniões",
+      "persona_nome": "James Wilson",
+      "task_title": "Preparação da agenda semanal de reuniões",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google-calendar",
+        "slack",
+        "email"
+      ]
+    },
+    {
+      "workflow_name": "William (SDR Analst) - Planejar Reuniões de Vendas",
+      "persona_nome": "William Miller",
+      "task_title": "Planejar Reuniões de Vendas",
+      "automation_score": 65,
+      "nodes_count": 7,
+      "integrations": [
+        "google-calendar",
+        "supabase",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "Ashley (CFO) - Monitoramento de Indicadores Financeiros",
+      "persona_nome": "Ashley Garcia",
+      "task_title": "Monitoramento de Indicadores Financeiros",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "bi-tool-api"
+      ]
+    },
+    {
+      "workflow_name": "William (SDR Analst) - Análise semanal de performance",
+      "persona_nome": "William Miller",
+      "task_title": "Análise semanal de performance",
+      "automation_score": 65,
+      "nodes_count": 8,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "hubspot",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "Ashley (CFO) - Revisão de Performance Financeira",
+      "persona_nome": "Ashley Garcia",
+      "task_title": "Revisão de Performance Financeira",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "David (Asst Mkt) - Monitoramento de Mídias Sociais",
+      "persona_nome": "David Brown",
+      "task_title": "Monitoramento de Mídias Sociais",
+      "automation_score": 65,
+      "nodes_count": 8,
+      "integrations": [
+        "twitter-api",
+        "facebook-graph-api",
+        "instagram-basic-display-api",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "James (Asst RH) - Organização de entrevistas semanais",
+      "persona_nome": "James Wilson",
+      "task_title": "Organização de entrevistas semanais",
+      "automation_score": 65,
+      "nodes_count": 7,
+      "integrations": [
+        "google-calendar",
+        "gmail",
+        "slack",
+        "google-sheets"
+      ]
+    },
+    {
+      "workflow_name": "Ashley (CFO) - Acompanhamento de KPIs Financeiros",
+      "persona_nome": "Ashley Garcia",
+      "task_title": "Acompanhamento de KPIs Financeiros",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "email"
+      ]
+    },
+    {
+      "workflow_name": "Amanda (YT Manager) - Relatório mensal de performance",
+      "persona_nome": "Amanda Davis",
+      "task_title": "Relatório mensal de performance",
+      "automation_score": 65,
+      "nodes_count": 7,
+      "integrations": [
+        "google-sheets",
+        "gmail",
+        "slack",
+        "youtube-analytics"
+      ]
+    },
+    {
+      "workflow_name": "David (SDR Mgr) - Acompanhamento de performance",
+      "persona_nome": "David Brown",
+      "task_title": "Acompanhamento de performance",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "Amanda (YT Manager) - Publicação de conteúdo",
+      "persona_nome": "Amanda Davis",
+      "task_title": "Publicação de conteúdo",
+      "automation_score": 60,
+      "nodes_count": 7,
+      "integrations": [
+        "google-sheets",
+        "youtube",
+        "canva",
+        "google-analytics"
+      ]
+    },
+    {
+      "workflow_name": "John (SDR Junior) - Revisão de e-mails e mensagens",
+      "persona_nome": "John Smith",
+      "task_title": "Revisão de e-mails e mensagens",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "David (SDR Mgr) - Análise de desempenho mensal",
+      "persona_nome": "David Brown",
+      "task_title": "Análise de desempenho mensal",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "Robert (Mkt Mgr) - Análise de dados de marketing",
+      "persona_nome": "Robert Davis",
+      "task_title": "Análise de dados de marketing",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "http"
+      ]
+    },
+    {
+      "workflow_name": "Jennifer (Social Mkt) - Análise de tendências de mercado",
+      "persona_nome": "Jennifer Smith",
+      "task_title": "Análise de tendências de mercado",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "http",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "Robert (Mkt Mgr) - Análise mensal de desempenho",
+      "persona_nome": "Robert Davis",
+      "task_title": "Análise mensal de desempenho",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "hubspot",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "Sarah (CEO) - Revisão diária de metas",
+      "persona_nome": "Sarah Johnson",
+      "task_title": "Revisão diária de metas",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "email"
+      ]
+    },
+    {
+      "workflow_name": "Sarah (CEO) - Análise de relatórios de performance",
+      "persona_nome": "Sarah Johnson",
+      "task_title": "Análise de relatórios de performance",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "email"
+      ]
+    },
+    {
+      "workflow_name": "Ashley (CFO) - Análise de Viabilidade de Novos Projetos",
+      "persona_nome": "Ashley Garcia",
+      "task_title": "Análise de Viabilidade de Novos Projetos",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Sarah (CEO) - Revisão financeira mensal",
+      "persona_nome": "Sarah Johnson",
+      "task_title": "Revisão financeira mensal",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "gmail",
+        "slack",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "Ashley (CFO) - Validação de Despesas",
+      "persona_nome": "Ashley Garcia",
+      "task_title": "Validação de Despesas",
+      "automation_score": 60,
+      "nodes_count": 7,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "email"
+      ]
+    },
+    {
+      "workflow_name": "John (SDR Junior) - Qualificar Leads",
+      "persona_nome": "John Smith",
+      "task_title": "Qualificar Leads",
+      "automation_score": 60,
+      "nodes_count": 7,
+      "integrations": [
+        "google-sheets",
+        "supabase",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "Richard (Asst Fin) - Revisão semanal de custos",
+      "persona_nome": "Richard Garcia",
+      "task_title": "Revisão semanal de custos",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "gmail",
+        "slack",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "William (SDR Analst) - Análise de Performance de Leads",
+      "persona_nome": "William Miller",
+      "task_title": "Análise de Performance de Leads",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "hubspot",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "John (SDR Junior) - Análise mensal de tendências de mercado",
+      "persona_nome": "John Smith",
+      "task_title": "Análise mensal de tendências de mercado",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "supabase",
+        "slack",
+        "http"
+      ]
+    },
+    {
+      "workflow_name": "William (Asst Admin) - Agendar reuniões",
+      "persona_nome": "William Miller",
+      "task_title": "Agendar reuniões",
+      "automation_score": 60,
+      "nodes_count": 8,
+      "integrations": [
+        "google-calendar",
+        "gmail",
+        "slack",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "David (Asst Mkt) - Atualização do Status de Projetos",
+      "persona_nome": "David Brown",
+      "task_title": "Atualização do Status de Projetos",
+      "automation_score": 60,
+      "nodes_count": 9,
+      "integrations": [
+        "project-management-system",
+        "email",
+        "internal-communication-tool"
+      ]
+    },
+    {
+      "workflow_name": "Ashley (CFO) - Elaboração do Relatório Financeiro Mensa...",
+      "persona_nome": "Ashley Garcia",
+      "task_title": "Elaboração do Relatório Financeiro Mensal",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "google-sheets",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "Lisa (SDR Senior) - Revisar e responder emails",
+      "persona_nome": "Lisa Wilson",
+      "task_title": "Revisar e responder emails",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "gmail",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "William (Asst Admin) - Revisão de desempenho de agentes virtuai...",
+      "persona_nome": "William Miller",
+      "task_title": "Revisão de desempenho de agentes virtuais",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "slack",
+        "google-sheets"
+      ]
+    },
+    {
+      "workflow_name": "William (Asst Admin) - Verificar Emails",
+      "persona_nome": "William Miller",
+      "task_title": "Verificar Emails",
+      "automation_score": 60,
+      "nodes_count": 6,
+      "integrations": [
+        "gmail",
+        "slack"
+      ]
+    }
+  ]
+}

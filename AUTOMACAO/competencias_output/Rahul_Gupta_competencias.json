@@ -1,0 +1,53 @@
+{
+  "persona_id": "ecd705cd-6aec-4793-985e-3c4818955a58",
+  "full_name": "Rahul Gupta",
+  "role": "Desenvolvedor Pleno",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "Programação em Python avançada",
+    "Desenvolvimento de agentes autônomos com LangChain/AutoGen",
+    "Arquitetura de microsserviços escaláveis",
+    "Containerização com Docker e orquestração Kubernetes",
+    "Integração de LLMs e APIs REST/GraphQL"
+  ],
+  "competencias_comportamentais": [
+    "Resolução criativa de problemas complexos",
+    "Colaboração eficaz em equipes ágeis",
+    "Adaptabilidade a tecnologias emergentes em IA",
+    "Atenção aos detalhes em código e testes",
+    "Comunicação clara e proativa"
+  ],
+  "ferramentas": [
+    "Git e GitHub Actions",
+    "Docker e Kubernetes",
+    "AWS (EC2, Lambda, S3)",
+    "Jupyter Notebook e VS Code"
+  ],
+  "tarefas_diarias": [
+    "Desenvolver e testar blocos modulares de agentes IA",
+    "Realizar code reviews e refatorações",
+    "Debugar issues em ambientes de staging",
+    "Atualizar documentação técnica de componentes"
+  ],
+  "tarefas_semanais": [
+    "Participar de daily stand-ups e sprint planning",
+    "Executar testes unitários e de integração",
+    "Otimizar performance de agentes autônomos"
+  ],
+  "tarefas_mensais": [
+    "Coordenar deploys em produção via CI/CD",
+    "Analisar métricas de performance de agentes",
+    "Contribuir para treinamentos internos de equipe"
+  ],
+  "kpis": [
+    "KPI 1: Features Deployed - 4 por sprint",
+    "KPI 2: Tempo Médio de Resolução de Bugs - < 24h",
+    "KPI 3: Cobertura de Testes - > 85%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprofundar em fine-tuning de LLMs para agentes",
+    "Liderar desenvolvimento de um agente completo",
+    "Obter certificação AWS Developer Associate"
+  ],
+  "generated_at": "2025-12-08T22:23:16.599Z"
+}

@@ -1,0 +1,14 @@
+{
+    "git.repositoryScanMaxDepth": 0,
+    "git.scanRepositories": [],
+    "scm.repositories.visible": 1,
+    "git.autorefresh": false,
+    "git.autofetch": false,
+    "github.gitAuthentication": false,
+    "git.ignoreLimitWarning": true,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true
+    }
+}

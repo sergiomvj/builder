@@ -1,0 +1,42 @@
+{
+  "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+  "empresa_nome": "ARVA Tech Solutions",
+  "analyzed_at": "2025-11-28T16:54:03.857Z",
+  "llm_used": "GPT-4-Turbo",
+  "llm_model": "gpt-4-turbo-preview",
+  "personas_analyzed": 1,
+  "total_tasks": 14,
+  "tasks_analyzed": 4,
+  "tasks_automatable": 3,
+  "tasks_high_score": 0,
+  "analyses": [
+    {
+      "task_title": "Atualização de status de leads",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Revisão semanal de desempenho",
+      "automation_score": 65,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Treinamento mensal de desenvolvimento de habilidades",
+      "automation_score": 40,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Análise Semanal de Performance",
+      "automation_score": 70,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    }
+  ]
+}

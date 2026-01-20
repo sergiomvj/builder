@@ -1,0 +1,37 @@
+{
+  "persona_id": "6f802aa9-1fb7-481f-b139-946481240145",
+  "full_name": "Rafael Augusto Lima",
+  "role": "Executivo de Vendas",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar Técnicas de Negociação",
+      "descricao": "Participar de pelo menos 2 cursos de negociação até o final do primeiro semestre de 2022 para melhorar as habilidades de negociação",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "cursos",
+      "data_prazo": "2022-06-30",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Expandir Rede de Contatos no Setor de Imigração",
+      "descricao": "Participar de 3 eventos do setor de imigração e estabelecer contato com pelo menos 5 novas pessoas influentes até o final do primeiro semestre de 2022",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 5,
+      "unidade_medida": "pessoas",
+      "data_prazo": "2022-06-30",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Aumentar Taxa de Conversão de Leads em 10%",
+      "descricao": "Implementar novas estratégias de follow-up e abordagem de leads para alcançar uma taxa de conversão de 22% até o final do terceiro trimestre de 2022",
+      "categoria": "performance",
+      "valor_alvo": 22,
+      "unidade_medida": "%",
+      "data_prazo": "2022-09-30",
+      "prioridade": 1,
+      "vinculada_kpi": "Taxa de conversão de leads"
+    }
+  ],
+  "generated_at": "2025-12-08T14:41:15.668Z"
+}

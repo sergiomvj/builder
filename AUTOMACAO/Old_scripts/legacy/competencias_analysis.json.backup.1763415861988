@@ -1,0 +1,593 @@
+{
+  "empresa_codigo": "TEST391445",
+  "data_processamento": "2025-11-14T00:03:58.640Z",
+  "total_personas": 9,
+  "personas": {
+    "Miguel_González": {
+      "persona": {
+        "nome": "Miguel González",
+        "categoria": "assistentes",
+        "especialidade": null,
+        "experiencia": 9
+      },
+      "competencias": {
+        "tecnicas": [
+          "Gestão Administrativa",
+          "Organização de Agendas",
+          "Comunicação Empresarial",
+          "Suporte Executivo",
+          "Gestão Documental",
+          "Coordenação de Reuniões"
+        ],
+        "comportamentais": [
+          "Organização",
+          "Proatividade",
+          "Discrição",
+          "Multitasking",
+          "Comunicação Eficaz",
+          "Orientação ao Cliente Interno"
+        ],
+        "ferramentas": [
+          "Microsoft Office 365",
+          "Google Workspace",
+          "Slack",
+          "Zoom",
+          "Trello",
+          "Notion"
+        ]
+      },
+      "analise_biografia": {
+        "educacao": "Bacharelado em Comunicação Social",
+        "idiomas": [
+          "francês",
+          "português",
+          "espanhol",
+          "inglês"
+        ],
+        "secoes_extraidas": [
+          "formacao",
+          "experiencia",
+          "competencias_tecnicas",
+          "competencias_comportamentais",
+          "responsabilidades"
+        ]
+      },
+      "data_processamento": "2025-11-14T00:03:58.644Z"
+    },
+    "Sofia_López": {
+      "persona": {
+        "nome": "Sofia López",
+        "categoria": "assistentes",
+        "especialidade": null,
+        "experiencia": 12
+      },
+      "competencias": {
+        "tecnicas": [
+          "Gestão Administrativa",
+          "Organização de Agendas",
+          "Comunicação Empresarial",
+          "Suporte Executivo",
+          "Gestão Documental",
+          "Coordenação de Reuniões"
+        ],
+        "comportamentais": [
+          "Organização",
+          "Proatividade",
+          "Discrição",
+          "Multitasking",
+          "Comunicação Eficaz",
+          "Orientação ao Cliente Interno"
+        ],
+        "ferramentas": [
+          "Microsoft Office 365",
+          "Google Workspace",
+          "Slack",
+          "Zoom",
+          "Trello",
+          "Notion"
+        ]
+      },
+      "analise_biografia": {
+        "educacao": "Bacharelado em Comunicação Social",
+        "idiomas": [
+          "espanhol",
+          "português",
+          "francês",
+          "inglês"
+        ],
+        "secoes_extraidas": [
+          "formacao",
+          "experiencia",
+          "competencias_tecnicas",
+          "competencias_comportamentais",
+          "responsabilidades"
+        ]
+      },
+      "data_processamento": "2025-11-14T00:03:58.647Z"
+    },
+    "Carlos_González": {
+      "persona": {
+        "nome": "Carlos González",
+        "categoria": "especialistas",
+        "especialidade": "hr",
+        "experiencia": 14
+      },
+      "competencias": {
+        "tecnicas": [
+          "Gestão de Talentos",
+          "Recrutamento e Seleção",
+          "Desenvolvimento Organizacional",
+          "Gestão de Performance",
+          "Políticas de RH",
+          "Employee Experience",
+          "People Analytics"
+        ],
+        "comportamentais": [
+          "Liderança Empática",
+          "Comunicação Assertiva",
+          "Mediação de Conflitos",
+          "Pensamento Estratégico",
+          "Orientação a Pessoas",
+          "Adaptabilidade Cultural"
+        ],
+        "ferramentas": [
+          "HRIS Systems",
+          "ATS (Applicant Tracking Systems)",
+          "Microsoft Office 365",
+          "Google Workspace",
+          "Slack",
+          "Zoom",
+          "LinkedIn Recruiter"
+        ]
+      },
+      "analise_biografia": {
+        "educacao": "Pós-graduação em Gestão de Pessoas e MBA em Recursos Humanos",
+        "idiomas": [
+          "inglês",
+          "espanhol",
+          "português",
+          "francês"
+        ],
+        "secoes_extraidas": [
+          "formacao",
+          "experiencia",
+          "competencias_tecnicas",
+          "competencias_comportamentais",
+          "responsabilidades"
+        ]
+      },
+      "data_processamento": "2025-11-14T00:03:58.649Z"
+    },
+    "Gabriela_González": {
+      "persona": {
+        "nome": "Gabriela González",
+        "categoria": "especialistas",
+        "especialidade": "midias_sociais",
+        "experiencia": 15
+      },
+      "competencias": {
+        "tecnicas": [
+          "Social Media Marketing",
+          "Community Management",
+          "Gestão de Campanhas",
+          "Analytics e Métricas",
+          "Influencer Marketing",
+          "Paid Social Advertising"
+        ],
+        "comportamentais": [
+          "Comunicação Digital",
+          "Criatividade",
+          "Agilidade",
+          "Orientação a Tendências",
+          "Trabalho em Equipe",
+          "Resolução de Problemas"
+        ],
+        "ferramentas": [
+          "Facebook Business Manager",
+          "Instagram Creator Studio",
+          "Hootsuite",
+          "Buffer",
+          "Canva",
+          "Adobe Creative Suite",
+          "Google Analytics"
+        ]
+      },
+      "analise_biografia": {
+        "educacao": "Marketing Digital e Social Media, Certificação Facebook Blueprint",
+        "idiomas": [
+          "inglês",
+          "espanhol",
+          "francês",
+          "português"
+        ],
+        "secoes_extraidas": [
+          "formacao",
+          "experiencia",
+          "competencias_tecnicas",
+          "competencias_comportamentais",
+          "responsabilidades"
+        ]
+      },
+      "data_processamento": "2025-11-14T00:03:58.651Z"
+    },
+    "Isabella_González": {
+      "persona": {
+        "nome": "Isabella González",
+        "categoria": "especialistas",
+        "especialidade": "marketing",
+        "experiencia": 9
+      },
+      "competencias": {
+        "tecnicas": [
+          "Marketing Digital",
+          "Growth Hacking",
+          "Marketing Analytics",
+          "Automação de Marketing",
+          "Inbound Marketing",
+          "Performance Marketing"
+        ],
+        "comportamentais": [
+          "Pensamento Analítico",
+          "Orientação a Dados",
+          "Inovação",
+          "Visão Estratégica",
+          "Adaptabilidade",
+          "Orientação a Resultados"
+        ],
+        "ferramentas": [
+          "Google Ads",
+          "Facebook Ads",
+          "HubSpot",
+          "Mailchimp",
+          "Google Analytics",
+          "SEMrush",
+          "Hotjar"
+        ]
+      },
+      "analise_biografia": {
+        "educacao": "MBA em Marketing Digital e Growth Hacking Certification",
+        "idiomas": [
+          "francês",
+          "português",
+          "espanhol",
+          "inglês"
+        ],
+        "secoes_extraidas": [
+          "formacao",
+          "experiencia",
+          "competencias_tecnicas",
+          "competencias_comportamentais",
+          "responsabilidades"
+        ]
+      },
+      "data_processamento": "2025-11-14T00:03:58.654Z"
+    },
+    "José_Hernández": {
+      "persona": {
+        "nome": "José Hernández",
+        "categoria": "especialistas",
+        "especialidade": "youtube",
+        "experiencia": 18
+      },
+      "competencias": {
+        "tecnicas": [
+          "Produção de Vídeo",
+          "Edição de Vídeo",
+          "YouTube Analytics",
+          "SEO para YouTube",
+          "Marketing de Conteúdo",
+          "Storytelling Digital",
+          "Live Streaming"
+        ],
+        "comportamentais": [
+          "Criatividade",
+          "Comunicação Visual",
+          "Persistência",
+          "Orientação a Resultados",
+          "Adaptabilidade",
+          "Inovação"
+        ],
+        "ferramentas": [
+          "Adobe Premiere Pro",
+          "Final Cut Pro",
+          "Adobe After Effects",
+          "Photoshop",
+          "YouTube Studio",
+          "TubeBuddy",
+          "VidIQ"
+        ]
+      },
+      "analise_biografia": {
+        "educacao": "Bacharelado em Comunicação Digital e Certificação Google Ads",
+        "idiomas": [
+          "francês",
+          "português",
+          "inglês",
+          "espanhol"
+        ],
+        "secoes_extraidas": [
+          "formacao",
+          "experiencia",
+          "competencias_tecnicas",
+          "competencias_comportamentais",
+          "responsabilidades"
+        ]
+      },
+      "data_processamento": "2025-11-14T00:03:58.656Z"
+    },
+    "Gabriela_Rodríguez": {
+      "persona": {
+        "nome": "Gabriela Rodríguez",
+        "categoria": "executivos",
+        "especialidade": null,
+        "experiencia": 18
+      },
+      "competencias": {
+        "tecnicas": [
+          "Gestão Estratégica",
+          "Liderança de Equipes",
+          "Planejamento Empresarial",
+          "Análise de Mercado",
+          "Gestão de Mudanças",
+          "Business Intelligence"
+        ],
+        "comportamentais": [
+          "Liderança Visionária",
+          "Pensamento Estratégico",
+          "Tomada de Decisão",
+          "Comunicação Executiva",
+          "Negociação",
+          "Influência"
+        ],
+        "ferramentas": [
+          "Microsoft Office 365",
+          "Google Workspace",
+          "Slack",
+          "Zoom",
+          "Power BI",
+          "Tableau"
+        ]
+      },
+      "analise_biografia": {
+        "educacao": "Pós-graduação em Gestão Estratégica pela PUC",
+        "idiomas": [
+          "espanhol",
+          "francês",
+          "inglês",
+          "português"
+        ],
+        "secoes_extraidas": [
+          "formacao",
+          "experiencia",
+          "competencias_tecnicas",
+          "competencias_comportamentais",
+          "responsabilidades"
+        ]
+      },
+      "data_processamento": "2025-11-14T00:03:58.659Z"
+    },
+    "Gabriela_Silva": {
+      "persona": {
+        "nome": "Gabriela Silva",
+        "categoria": "executivos",
+        "especialidade": null,
+        "experiencia": 13
+      },
+      "competencias": {
+        "tecnicas": [
+          "Gestão Estratégica",
+          "Liderança de Equipes",
+          "Planejamento Empresarial",
+          "Análise de Mercado",
+          "Gestão de Mudanças",
+          "Business Intelligence"
+        ],
+        "comportamentais": [
+          "Liderança Visionária",
+          "Pensamento Estratégico",
+          "Tomada de Decisão",
+          "Comunicação Executiva",
+          "Negociação",
+          "Influência"
+        ],
+        "ferramentas": [
+          "Microsoft Office 365",
+          "Google Workspace",
+          "Slack",
+          "Zoom",
+          "Power BI",
+          "Tableau"
+        ]
+      },
+      "analise_biografia": {
+        "educacao": "MBA Executivo em Liderança pela INSEAD",
+        "idiomas": [
+          "francês",
+          "português",
+          "espanhol",
+          "inglês"
+        ],
+        "secoes_extraidas": [
+          "formacao",
+          "experiencia",
+          "competencias_tecnicas",
+          "competencias_comportamentais",
+          "responsabilidades"
+        ]
+      },
+      "data_processamento": "2025-11-14T00:03:58.661Z"
+    },
+    "Roberto_Hernández": {
+      "persona": {
+        "nome": "Roberto Hernández",
+        "categoria": "executivos",
+        "especialidade": null,
+        "experiencia": 17
+      },
+      "competencias": {
+        "tecnicas": [
+          "Gestão Estratégica",
+          "Liderança de Equipes",
+          "Planejamento Empresarial",
+          "Análise de Mercado",
+          "Gestão de Mudanças",
+          "Business Intelligence"
+        ],
+        "comportamentais": [
+          "Liderança Visionária",
+          "Pensamento Estratégico",
+          "Tomada de Decisão",
+          "Comunicação Executiva",
+          "Negociação",
+          "Influência"
+        ],
+        "ferramentas": [
+          "Microsoft Office 365",
+          "Google Workspace",
+          "Slack",
+          "Zoom",
+          "Power BI",
+          "Tableau"
+        ]
+      },
+      "analise_biografia": {
+        "educacao": "MBA Executivo em Liderança pela INSEAD",
+        "idiomas": [
+          "inglês",
+          "espanhol",
+          "português"
+        ],
+        "secoes_extraidas": [
+          "formacao",
+          "experiencia",
+          "competencias_tecnicas",
+          "competencias_comportamentais",
+          "responsabilidades"
+        ]
+      },
+      "data_processamento": "2025-11-14T00:03:58.663Z"
+    }
+  },
+  "estatisticas": {
+    "por_categoria": {
+      "assistentes": 2,
+      "especialistas": 4,
+      "executivos": 3,
+      "suporte": 0
+    },
+    "por_especialidade": {
+      "hr": 1,
+      "midias_sociais": 1,
+      "marketing": 1,
+      "youtube": 1
+    },
+    "competencias_unicas": {
+      "tecnicas": [
+        "Gestão Administrativa",
+        "Organização de Agendas",
+        "Comunicação Empresarial",
+        "Suporte Executivo",
+        "Gestão Documental",
+        "Coordenação de Reuniões",
+        "Gestão de Talentos",
+        "Recrutamento e Seleção",
+        "Desenvolvimento Organizacional",
+        "Gestão de Performance",
+        "Políticas de RH",
+        "Employee Experience",
+        "People Analytics",
+        "Social Media Marketing",
+        "Community Management",
+        "Gestão de Campanhas",
+        "Analytics e Métricas",
+        "Influencer Marketing",
+        "Paid Social Advertising",
+        "Marketing Digital",
+        "Growth Hacking",
+        "Marketing Analytics",
+        "Automação de Marketing",
+        "Inbound Marketing",
+        "Performance Marketing",
+        "Produção de Vídeo",
+        "Edição de Vídeo",
+        "YouTube Analytics",
+        "SEO para YouTube",
+        "Marketing de Conteúdo",
+        "Storytelling Digital",
+        "Live Streaming",
+        "Gestão Estratégica",
+        "Liderança de Equipes",
+        "Planejamento Empresarial",
+        "Análise de Mercado",
+        "Gestão de Mudanças",
+        "Business Intelligence"
+      ],
+      "comportamentais": [
+        "Organização",
+        "Proatividade",
+        "Discrição",
+        "Multitasking",
+        "Comunicação Eficaz",
+        "Orientação ao Cliente Interno",
+        "Liderança Empática",
+        "Comunicação Assertiva",
+        "Mediação de Conflitos",
+        "Pensamento Estratégico",
+        "Orientação a Pessoas",
+        "Adaptabilidade Cultural",
+        "Comunicação Digital",
+        "Criatividade",
+        "Agilidade",
+        "Orientação a Tendências",
+        "Trabalho em Equipe",
+        "Resolução de Problemas",
+        "Pensamento Analítico",
+        "Orientação a Dados",
+        "Inovação",
+        "Visão Estratégica",
+        "Adaptabilidade",
+        "Orientação a Resultados",
+        "Comunicação Visual",
+        "Persistência",
+        "Liderança Visionária",
+        "Tomada de Decisão",
+        "Comunicação Executiva",
+        "Negociação",
+        "Influência"
+      ],
+      "ferramentas": [
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Trello",
+        "Notion",
+        "HRIS Systems",
+        "ATS (Applicant Tracking Systems)",
+        "LinkedIn Recruiter",
+        "Facebook Business Manager",
+        "Instagram Creator Studio",
+        "Hootsuite",
+        "Buffer",
+        "Canva",
+        "Adobe Creative Suite",
+        "Google Analytics",
+        "Google Ads",
+        "Facebook Ads",
+        "HubSpot",
+        "Mailchimp",
+        "SEMrush",
+        "Hotjar",
+        "Adobe Premiere Pro",
+        "Final Cut Pro",
+        "Adobe After Effects",
+        "Photoshop",
+        "YouTube Studio",
+        "TubeBuddy",
+        "VidIQ",
+        "Power BI",
+        "Tableau"
+      ]
+    }
+  }
+}

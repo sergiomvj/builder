@@ -1,0 +1,98 @@
+{
+  "persona": {
+    "nome": "Carlos González",
+    "categoria": "especialistas",
+    "especialidade": "hr",
+    "experiencia": 14
+  },
+  "especificacoes_tecnicas": {
+    "ferramentas_utilizadas": [
+      "HRIS Systems",
+      "ATS (Applicant Tracking Systems)",
+      "Microsoft Office 365",
+      "Google Workspace",
+      "Slack",
+      "Zoom",
+      "LinkedIn Recruiter"
+    ],
+    "categorias_aplicaveis": [
+      "produtividade_escritorio",
+      "produtividade_escritorio",
+      "comunicacao_colaboracao",
+      "comunicacao_colaboracao"
+    ],
+    "requisitos_personalizados": {
+      "especialidade": "hr",
+      "competencias_tecnicas": [
+        "Gestão de Talentos",
+        "Recrutamento e Seleção",
+        "Desenvolvimento Organizacional",
+        "Gestão de Performance",
+        "Políticas de RH",
+        "Employee Experience",
+        "People Analytics"
+      ],
+      "ferramentas_principais": [
+        "HRIS Systems",
+        "ATS (Applicant Tracking Systems)",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "LinkedIn Recruiter"
+      ],
+      "requisitos_especificos": [
+        "HRIS platform integration",
+        "Employee data privacy controls",
+        "Performance tracking system",
+        "Recruitment workflow automation"
+      ],
+      "integracao_sugerida": [
+        "ATS (Applicant Tracking) APIs",
+        "Payroll system APIs",
+        "Learning Management APIs",
+        "Background check APIs"
+      ],
+      "documentacao_necessaria": [
+        "API Integration Guide",
+        "System Requirements Document",
+        "Security Configuration Guide",
+        "User Training Materials",
+        "Troubleshooting Handbook"
+      ]
+    },
+    "integracao_prioridade": "alta"
+  },
+  "documentacao_tecnica": {
+    "apis_necessarias": [
+      "Microsoft Graph API",
+      "SharePoint API",
+      "Google Workspace API",
+      "Gmail API",
+      "Drive API",
+      "Slack Web API",
+      "Slack Events API",
+      "Zoom API v2",
+      "Zoom Webhooks"
+    ],
+    "requisitos_sistema": {
+      "computacao": "2 vCPU, 4GB RAM mínimo",
+      "armazenamento": "50GB SSD mínimo",
+      "rede": "10 Mbps mínimo",
+      "seguranca": [
+        "SSL/TLS",
+        "OAuth 2.0"
+      ],
+      "backup": "diário automático"
+    },
+    "guias_implementacao": [
+      "Setup e Configuração Inicial",
+      "Integração de APIs",
+      "Configuração de Segurança",
+      "Testes de Conectividade",
+      "Deploy em Produção",
+      "Monitoramento e Manutenção"
+    ]
+  },
+  "data_processamento": "2025-11-15T12:52:57.668Z"
+}

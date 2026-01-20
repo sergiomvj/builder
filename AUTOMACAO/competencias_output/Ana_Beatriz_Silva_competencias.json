@@ -1,0 +1,53 @@
+{
+  "persona_id": "5ae4be55-7b31-4bf6-abfb-0a10e068b8d0",
+  "full_name": "Ana Beatriz Silva",
+  "role": "Assistente de Marketing",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "Criação de conteúdo digital sobre IA e automação",
+    "Análise de métricas de marketing com Google Analytics",
+    "Gestão de campanhas em redes sociais",
+    "Otimização SEO para materiais promocionais",
+    "Edição de vídeos e gráficos para demonstrações de agentes ARVA"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação clara e persuasiva",
+    "Criatividade e inovação em campanhas",
+    "Trabalho em equipe colaborativa",
+    "Proatividade e iniciativa",
+    "Adaptabilidade a tecnologias emergentes"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "Canva",
+    "HubSpot",
+    "Hootsuite"
+  ],
+  "tarefas_diarias": [
+    "Monitorar e responder interações nas redes sociais",
+    "Criar e agendar postagens promocionais sobre ARVA",
+    "Analisar métricas diárias de engajamento",
+    "Gerenciar leads inbound via formulários"
+  ],
+  "tarefas_semanais": [
+    "Planejar calendário de conteúdo semanal",
+    "Elaborar relatório de performance de campanhas",
+    "Participar de reuniões com equipe de produto"
+  ],
+  "tarefas_mensais": [
+    "Lançar campanha de awareness sobre agentes virtuais",
+    "Analisar relatórios mensais de ROI",
+    "Atualizar estratégia de marketing digital"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de engajamento nas redes - 5%",
+    "KPI 2: Leads qualificados gerados - 200/mês",
+    "KPI 3: Crescimento de tráfego orgânico - 20%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Dominar ferramentas de IA para automação de marketing",
+    "Aprimorar habilidades em copywriting técnico sobre IA",
+    "Liderar uma campanha de demonstração de agentes ARVA"
+  ],
+  "generated_at": "2025-12-08T22:21:47.739Z"
+}

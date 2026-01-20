@@ -1,0 +1,112 @@
+{
+  "persona": {
+    "nome": "[Placeholder 17] Analista de Dados Júnior",
+    "nacionalidade": "latinos",
+    "genero": "feminino",
+    "cargo": "Analista de Dados Júnior",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Em definição",
+    "competencias": "Em definição",
+    "biografia": "Profissional experiente",
+    "personalidade": {},
+    "experiencia_anos": 5,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=150&h=150&fit=crop&crop=face",
+    "prompt_usado": "Retrato profissional realista de uma mulher latina de 26-28 anos, analista de dados júnior em tecnologia, etnia latina com pele morena clara lisa, rosto oval com maçãs de rosto altas, olhos castanhos escuros amendoados expressivos, sobrancelhas grossas arqueadas cheias, nariz médio reto, boca com lábios médios cheios arqueados, expressão facial confiante com sorriso leve, cabelo castanho escuro médio ondulado denso, tipo físico atlética magra, altura estimada 1.65-1.70m, postura ereta confiante, acessórios óculos de armação fina preta retangular brincos pequenos dourados relógio smart prateado, estilo vestimenta casual techwear com blusa cinza slim jeans azul escuro tênis brancos, paleta cores cinza neutro azul frio, fundo office neutro, rendering realista foto 4K retrato editorial 50mm soft studio light aspect 1:1",
+    "estilo": "casual",
+    "background_tipo": "office",
+    "servico_usado": "gemini_ai",
+    "versao": 1,
+    "ativo": true,
+    "biometrics": {
+      "idade_aparente": "26-28 anos",
+      "genero": "feminino",
+      "etnia": "latino",
+      "tipo_fisico": "atlética magra",
+      "altura_estimada": "1.65-1.70m",
+      "cabelo_cor": "castanho escuro",
+      "cabelo_comprimento": "médio",
+      "cabelo_estilo": "ondulado",
+      "cabelo_volume": "denso",
+      "olhos_cor": "castanhos escuros",
+      "olhos_formato": "amendoados expressivos",
+      "rosto_formato": "oval",
+      "pele_tom": "morena clara",
+      "pele_textura": "lisa",
+      "sobrancelhas": "grossas arqueadas cheias",
+      "nariz": "médio reto",
+      "boca_labios": "médios cheios arqueados",
+      "expressao_facial_padrao": "confiante sorriso leve",
+      "marcas_unicas": "nenhuma",
+      "acessorios_permanentes": "óculos armação fina preta retangular, brincos pequenos dourados, relógio smart prateado",
+      "postura": "ereta confiante",
+      "caracteristicas_distintivas": "maçãs de rosto altas",
+      "estilo_vestimenta_padrao": "casual techwear",
+      "paleta_cores_vestuario": "cinza neutro azul frio"
+    },
+    "physical_description_detailed": {
+      "rosto": {
+        "formato": "oval com maçãs de rosto altas definidas",
+        "tom_pele": "morena clara uniforme",
+        "textura_pele": "lisa com poros finos sutis",
+        "olhos": {
+          "cor": "castanhos escuros profundos",
+          "formato": "amendoados expressivos com cílios longos"
+        },
+        "sobrancelhas": "grossas arqueadas cheias naturalmente preenchidas",
+        "nariz": "médio reto com narinas delicadas",
+        "boca": "lábios médios cheios ligeiramente arqueados",
+        "expressao_tipica": "confiante com sorriso leve e olhar direto"
+      },
+      "cabelo": {
+        "cor_exata": "castanho escuro com reflexos naturais",
+        "comprimento": "até ombros",
+        "estilo": "ondulado solto com ondas suaves",
+        "volume": "denso com movimento natural"
+      },
+      "corpo": {
+        "altura_aproximada": "1.68m",
+        "tipo_fisico": "atlética magra com curvas suaves",
+        "proporcao": "proporções equilibradas ombros médios cintura definida",
+        "postura_tipica": "ereta confiante com ombros relaxados"
+      }
+    },
+    "consistency_parameters": {
+      "rendering_style": "realista foto 4K retrato editorial",
+      "lens_focus": "50mm",
+      "lighting": "soft studio light",
+      "aspect_ratio": "1:1 (avatar)"
+    },
+    "history": {
+      "background_educacional": "Bacharelado em Ciência de Dados pela universidade no Brasil, com foco em análise quantitativa",
+      "experiencia_internacional": "Estágio remoto em startup tech nos EUA influenciando estilo casual moderno",
+      "contexto_cultural": "Influências latinas brasileiras com mistura étnica visível na pele morena e traços expressivos",
+      "estilo_vida": "Rotina ativa de academia e home office refletindo em físico tonificado e vestimenta prática",
+      "marcos_carreira": "Promoção para júnior após 3 anos como estagiária moldando confiança profissional",
+      "valores_pessoais": "Eficiência e inovação refletidos em acessórios tech e aparência acessível",
+      "ambiente_trabalho": "Escritório tech casual da LifewayUSA incentivando techwear e conforto",
+      "redes_sociais": "Perfil LinkedIn ativo com fotos profissionais em eventos tech"
+    },
+    "metadados": {
+      "resolucao": "1024x1024",
+      "formato": "webp",
+      "qualidade": "ultra_high",
+      "parametros_geracao": {
+        "prompt_negativo": "blurry, low quality, distorted, cartoonish",
+        "steps": 30,
+        "cfg_scale": 8.5
+      },
+      "contexto_profissional": {
+        "cargo": "Analista de Dados Júnior",
+        "industria": "tecnologia",
+        "senioridade": "Júnior"
+      }
+    }
+  },
+  "generated_at": "2025-12-03T13:22:01.753Z"
+}

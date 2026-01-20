@@ -1,0 +1,57 @@
+{
+  "persona_id": "1f11100a-5eac-487f-afa4-e0f9b56b99e2",
+  "full_name": "[Placeholder 23] Diretora de Produto (CPO)",
+  "role": "Diretora de Produto (CPO)",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Desenvolvimento de Estratégia e Roadmap de Produto",
+    "Metodologias Ágeis de Gerenciamento de Produto (Scrum e Kanban)",
+    "Princípios de UX/UI e Design Thinking",
+    "Pesquisa de Mercado e Análise Competitiva",
+    "Análise de Métricas de Produto (AARRR e OKRs)"
+  ],
+  "competencias_comportamentais": [
+    "Liderança e Gerenciamento de Equipes",
+    "Pensamento Estratégico",
+    "Comunicação e Gerenciamento de Stakeholders",
+    "Tomada de Decisão sob Incerteza",
+    "Inovação e Criatividade"
+  ],
+  "ferramentas": [
+    "Jira",
+    "Figma",
+    "Google Analytics",
+    "Aha!",
+    "Slack"
+  ],
+  "tarefas_diarias": [
+    "Revisar e priorizar backlog de produto (top 10 itens atualizados)",
+    "Participar de daily stand-up com equipe de produto (15 minutos)",
+    "Analisar métricas chave (DAU/MAU com variação >5%)",
+    "Alinhar prioridades com stakeholders (1 reunião de 30 minutos)",
+    "Processar feedbacks de clientes (10+ tickets resolvidos)"
+  ],
+  "tarefas_semanais": [
+    "Realizar reunião de review semanal de produto",
+    "Atualizar roadmap de produto com novas prioridades",
+    "Analisar concorrência e atualizar relatório comparativo",
+    "Conduzir 1:1 com 3-5 membros da equipe"
+  ],
+  "tarefas_mensais": [
+    "Preparar relatório de performance mensal de produto",
+    "Planejar roadmap para o próximo trimestre",
+    "Realizar e resumir 10+ entrevistas com clientes"
+  ],
+  "kpis": [
+    "Taxa de Adoção de Produto - 80%",
+    "Net Promoter Score (NPS) - 50+",
+    "Velocidade de Lançamento de Features - 4 lançamentos principais/mês",
+    "Taxa de Retenção de Clientes - 90%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Melhorar colaboração cross-funcional com engenharia e vendas",
+    "Aprimorar decisões baseadas em dados com treinamentos avançados",
+    "Liderar workshops mensais de inovação em produto"
+  ],
+  "generated_at": "2025-12-01T16:21:04.857Z"
+}

@@ -1,0 +1,53 @@
+{
+  "persona_id": "8d7738bf-567e-4e5c-975f-a106aaf4d69b",
+  "full_name": "Mariana Ribeiro Costa",
+  "role": "Gerente de Marketing",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em marketing digital",
+    "Experiência em gestão de campanhas online",
+    "Análise de métricas e resultados",
+    "Conhecimento em SEO e SEM",
+    "Habilidades em design gráfico"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Resolução de problemas",
+    "Trabalho em equipe",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "Facebook Ads Manager",
+    "Canva",
+    "MailChimp"
+  ],
+  "tarefas_diarias": [
+    "Elaboração de estratégias de marketing",
+    "Monitoramento de redes sociais",
+    "Gestão de equipe",
+    "Análise de performance de campanhas"
+  ],
+  "tarefas_semanais": [
+    "Reuniões de alinhamento com a equipe",
+    "Acompanhamento de resultados",
+    "Planejamento de novas ações"
+  ],
+  "tarefas_mensais": [
+    "Elaboração de relatórios de performance",
+    "Revisão e ajustes nas estratégias",
+    "Atualização do calendário de conteúdo"
+  ],
+  "kpis": [
+    "Aumento de leads qualificados - Crescimento de 20%",
+    "Engajamento nas redes sociais - Taxa de 10%",
+    "Taxa de conversão de campanhas - 5%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar conhecimento em marketing de influência",
+    "Desenvolver habilidades em gestão de crises",
+    "Aprimorar técnicas de storytelling"
+  ],
+  "generated_at": "2025-12-08T14:41:45.836Z"
+}

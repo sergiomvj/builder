@@ -1,0 +1,436 @@
+{
+  "persona_profile": {
+    "id": 1,
+    "persona_key": "Miguel_González",
+    "nome_completo": "Miguel González",
+    "categoria": "assistentes",
+    "especialidade": null,
+    "experiencia_anos": 9,
+    "biografia": {
+      "educacao": "Bacharelado em Comunicação Social",
+      "idiomas": [
+        "francês",
+        "português",
+        "espanhol",
+        "inglês"
+      ],
+      "secoes_extraidas": [
+        "formacao",
+        "experiencia",
+        "competencias_tecnicas",
+        "competencias_comportamentais",
+        "responsabilidades"
+      ]
+    },
+    "competencias": {
+      "tecnicas": [
+        {
+          "id": "1_t_1",
+          "nome": "Gestão Administrativa",
+          "categoria": "tecnica",
+          "nivel": "avançado",
+          "contexto": "Competência em Gestão Administrativa aplicada no contexto de null"
+        },
+        {
+          "id": "1_t_2",
+          "nome": "Organização de Agendas",
+          "categoria": "tecnica",
+          "nivel": "avançado",
+          "contexto": "Competência em Organização de Agendas aplicada no contexto de null"
+        },
+        {
+          "id": "1_t_3",
+          "nome": "Comunicação Empresarial",
+          "categoria": "tecnica",
+          "nivel": "avançado",
+          "contexto": "Competência em Comunicação Empresarial aplicada no contexto de null"
+        },
+        {
+          "id": "1_t_4",
+          "nome": "Suporte Executivo",
+          "categoria": "tecnica",
+          "nivel": "avançado",
+          "contexto": "Competência em Suporte Executivo aplicada no contexto de null"
+        },
+        {
+          "id": "1_t_5",
+          "nome": "Gestão Documental",
+          "categoria": "tecnica",
+          "nivel": "avançado",
+          "contexto": "Competência em Gestão Documental aplicada no contexto de null"
+        },
+        {
+          "id": "1_t_6",
+          "nome": "Coordenação de Reuniões",
+          "categoria": "tecnica",
+          "nivel": "avançado",
+          "contexto": "Competência em Coordenação de Reuniões aplicada no contexto de null"
+        }
+      ],
+      "comportamentais": [
+        {
+          "id": "1_c_1",
+          "nome": "Organização",
+          "categoria": "comportamental",
+          "nivel": "avançado",
+          "contexto": "Competência em Organização aplicada no contexto de assistentes"
+        },
+        {
+          "id": "1_c_2",
+          "nome": "Proatividade",
+          "categoria": "comportamental",
+          "nivel": "avançado",
+          "contexto": "Competência em Proatividade aplicada no contexto de assistentes"
+        },
+        {
+          "id": "1_c_3",
+          "nome": "Discrição",
+          "categoria": "comportamental",
+          "nivel": "avançado",
+          "contexto": "Competência em Discrição aplicada no contexto de assistentes"
+        },
+        {
+          "id": "1_c_4",
+          "nome": "Multitasking",
+          "categoria": "comportamental",
+          "nivel": "avançado",
+          "contexto": "Competência em Multitasking aplicada no contexto de assistentes"
+        },
+        {
+          "id": "1_c_5",
+          "nome": "Comunicação Eficaz",
+          "categoria": "comportamental",
+          "nivel": "avançado",
+          "contexto": "Habilidade de transmitir ideias de forma clara e persuasiva"
+        },
+        {
+          "id": "1_c_6",
+          "nome": "Orientação ao Cliente Interno",
+          "categoria": "comportamental",
+          "nivel": "avançado",
+          "contexto": "Competência em Orientação ao Cliente Interno aplicada no contexto de assistentes"
+        }
+      ]
+    },
+    "ferramentas": [
+      {
+        "id": "1_f_1",
+        "nome": "Microsoft Office 365",
+        "categoria_uso": "produtividade_geral",
+        "nivel_proficiencia": "avançado"
+      },
+      {
+        "id": "1_f_2",
+        "nome": "Google Workspace",
+        "categoria_uso": "produtividade_geral",
+        "nivel_proficiencia": "avançado"
+      },
+      {
+        "id": "1_f_3",
+        "nome": "Slack",
+        "categoria_uso": "comunicacao",
+        "nivel_proficiencia": "avançado"
+      },
+      {
+        "id": "1_f_4",
+        "nome": "Zoom",
+        "categoria_uso": "comunicacao",
+        "nivel_proficiencia": "avançado"
+      },
+      {
+        "id": "1_f_5",
+        "nome": "Trello",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "1_f_6",
+        "nome": "Notion",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      }
+    ],
+    "search_metadata": {
+      "tags": [
+        "assistentes",
+        "Gestão Administrativa",
+        "Organização de Agendas",
+        "Comunicação Empresarial",
+        "Organização",
+        "Proatividade"
+      ],
+      "embedding_text": "Miguel González trabalha como assistentes. com 9 anos de experiência. competências técnicas: Gestão Administrativa, Organização de Agendas, Comunicação Empresarial, Suporte Executivo, Gestão Documental, Coordenação de Reuniões. competências comportamentais: Organização, Proatividade, Discrição, Multitasking, Comunicação Eficaz, Orientação ao Cliente Interno. utiliza ferramentas: Microsoft Office 365, Google Workspace, Slack, Zoom, Trello, Notion. educação: Bacharelado em Comunicação Social. idiomas: francês, português, espanhol, inglês",
+      "update_timestamp": "2025-11-16T14:48:34.869Z"
+    }
+  },
+  "relacionamentos": {
+    "competencias_relacionadas": [
+      {
+        "persona_id": 1,
+        "competencia_nome": "Gestão Administrativa",
+        "nivel": "avançado",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 1,
+        "competencia_nome": "Organização de Agendas",
+        "nivel": "avançado",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 1,
+        "competencia_nome": "Comunicação Empresarial",
+        "nivel": "avançado",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 1,
+        "competencia_nome": "Suporte Executivo",
+        "nivel": "avançado",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 1,
+        "competencia_nome": "Gestão Documental",
+        "nivel": "avançado",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 1,
+        "competencia_nome": "Coordenação de Reuniões",
+        "nivel": "avançado",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 1,
+        "competencia_nome": "Organização",
+        "nivel": "avançado",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 1,
+        "competencia_nome": "Proatividade",
+        "nivel": "avançado",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 1,
+        "competencia_nome": "Discrição",
+        "nivel": "avançado",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 1,
+        "competencia_nome": "Multitasking",
+        "nivel": "avançado",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 1,
+        "competencia_nome": "Comunicação Eficaz",
+        "nivel": "avançado",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 1,
+        "competencia_nome": "Orientação ao Cliente Interno",
+        "nivel": "avançado",
+        "categoria": "comportamental"
+      }
+    ],
+    "ferramentas_relacionadas": [
+      {
+        "persona_id": 1,
+        "ferramenta_nome": "Microsoft Office 365",
+        "proficiencia": "avançado",
+        "categoria_uso": "produtividade_geral"
+      },
+      {
+        "persona_id": 1,
+        "ferramenta_nome": "Google Workspace",
+        "proficiencia": "avançado",
+        "categoria_uso": "produtividade_geral"
+      },
+      {
+        "persona_id": 1,
+        "ferramenta_nome": "Slack",
+        "proficiencia": "avançado",
+        "categoria_uso": "comunicacao"
+      },
+      {
+        "persona_id": 1,
+        "ferramenta_nome": "Zoom",
+        "proficiencia": "avançado",
+        "categoria_uso": "comunicacao"
+      },
+      {
+        "persona_id": 1,
+        "ferramenta_nome": "Trello",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 1,
+        "ferramenta_nome": "Notion",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      }
+    ]
+  },
+  "contextos_relevantes": [
+    {
+      "id": "persona_1",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Miguel González",
+      "conteudo": "Miguel González trabalha como assistentes. com 9 anos de experiência. competências técnicas: Gestão Administrativa, Organização de Agendas, Comunicação Empresarial, Suporte Executivo, Gestão Documental, Coordenação de Reuniões. competências comportamentais: Organização, Proatividade, Discrição, Multitasking, Comunicação Eficaz, Orientação ao Cliente Interno. utiliza ferramentas: Microsoft Office 365, Google Workspace, Slack, Zoom, Trello, Notion. educação: Bacharelado em Comunicação Social. idiomas: francês, português, espanhol, inglês",
+      "metadata": {
+        "categoria": "assistentes",
+        "especialidade": null,
+        "experiencia": 9
+      },
+      "tags": [
+        "assistentes",
+        "Gestão Administrativa",
+        "Organização de Agendas",
+        "Comunicação Empresarial",
+        "Organização",
+        "Proatividade"
+      ]
+    },
+    {
+      "id": "persona_2",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Sofia López",
+      "conteudo": "Sofia López trabalha como assistentes. com 12 anos de experiência. competências técnicas: Gestão Administrativa, Organização de Agendas, Comunicação Empresarial, Suporte Executivo, Gestão Documental, Coordenação de Reuniões. competências comportamentais: Organização, Proatividade, Discrição, Multitasking, Comunicação Eficaz, Orientação ao Cliente Interno. utiliza ferramentas: Microsoft Office 365, Google Workspace, Slack, Zoom, Trello, Notion. educação: Bacharelado em Comunicação Social. idiomas: espanhol, português, francês, inglês",
+      "metadata": {
+        "categoria": "assistentes",
+        "especialidade": null,
+        "experiencia": 12
+      },
+      "tags": [
+        "assistentes",
+        "Gestão Administrativa",
+        "Organização de Agendas",
+        "Comunicação Empresarial",
+        "Organização",
+        "Proatividade"
+      ]
+    },
+    {
+      "id": "competencia_1",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Gestão Administrativa",
+      "conteudo": "Competência em Gestão Administrativa aplicada no contexto de null. Personas com esta competência: Miguel González, Sofia López. Ferramentas relacionadas: Microsoft Office 365, Google Workspace, Slack, Zoom, Trello, Notion.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "expert",
+        "total_personas": 2
+      },
+      "tags": [
+        "Gestão Administrativa",
+        "tecnica",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Trello",
+        "Notion"
+      ]
+    },
+    {
+      "id": "competencia_2",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Organização de Agendas",
+      "conteudo": "Competência em Organização de Agendas aplicada no contexto de null. Personas com esta competência: Miguel González, Sofia López. Ferramentas relacionadas: Microsoft Office 365, Google Workspace, Slack, Zoom, Trello, Notion.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "expert",
+        "total_personas": 2
+      },
+      "tags": [
+        "Organização de Agendas",
+        "tecnica",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Trello",
+        "Notion"
+      ]
+    },
+    {
+      "id": "competencia_3",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Comunicação Empresarial",
+      "conteudo": "Competência em Comunicação Empresarial aplicada no contexto de null. Personas com esta competência: Miguel González, Sofia López. Ferramentas relacionadas: Microsoft Office 365, Google Workspace, Slack, Zoom, Trello, Notion.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "expert",
+        "total_personas": 2
+      },
+      "tags": [
+        "Comunicação Empresarial",
+        "tecnica",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Trello",
+        "Notion"
+      ]
+    },
+    {
+      "id": "competencia_7",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Organização",
+      "conteudo": "Competência em Organização aplicada no contexto de assistentes. Personas com esta competência: Miguel González, Sofia López. Ferramentas relacionadas: .",
+      "metadata": {
+        "categoria": "comportamental",
+        "nivel_medio": "expert",
+        "total_personas": 2
+      },
+      "tags": [
+        "Organização",
+        "comportamental"
+      ]
+    },
+    {
+      "id": "competencia_8",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Proatividade",
+      "conteudo": "Competência em Proatividade aplicada no contexto de assistentes. Personas com esta competência: Miguel González, Sofia López. Ferramentas relacionadas: .",
+      "metadata": {
+        "categoria": "comportamental",
+        "nivel_medio": "expert",
+        "total_personas": 2
+      },
+      "tags": [
+        "Proatividade",
+        "comportamental"
+      ]
+    }
+  ],
+  "query_examples": [
+    {
+      "tipo": "competencia_lookup",
+      "query": "Quais são as competências de Miguel González?",
+      "resposta_esperada": "Lista de competências técnicas e comportamentais"
+    },
+    {
+      "tipo": "ferramenta_usage",
+      "query": "Que ferramentas Miguel González sabe usar?",
+      "resposta_esperada": "Lista de ferramentas com nível de proficiência"
+    },
+    {
+      "tipo": "colaboracao_potential",
+      "query": "Com quem Miguel González pode colaborar em projetos?",
+      "resposta_esperada": "Personas com competências complementares"
+    },
+    {
+      "tipo": "processo_involvement",
+      "query": "Em que processos Miguel González deveria estar envolvido?",
+      "resposta_esperada": "Processos que aproveitam suas competências"
+    }
+  ],
+  "data_processamento": "2025-11-16T14:48:34.876Z"
+}

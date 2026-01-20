@@ -1,0 +1,53 @@
+{
+  "persona_id": "a7279093-5a62-449c-97b9-2d1816d5ec43",
+  "full_name": "[Placeholder 22] Analista de Dados IA Pleno",
+  "role": "Analista de Dados IA Pleno",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Programação em Python e R para análise de dados e IA",
+    "Desenvolvimento de modelos de Machine Learning com Scikit-learn e TensorFlow",
+    "Consultas avançadas em SQL e manipulação de Big Data",
+    "Processamento de Linguagem Natural (NLP) e Visão Computacional",
+    "Estatística aplicada e validação de modelos de IA"
+  ],
+  "competencias_comportamentais": [
+    "Análise crítica e resolução de problemas complexos",
+    "Comunicação eficaz de insights para stakeholders",
+    "Trabalho em equipe e colaboração interdisciplinar",
+    "Adaptabilidade a novas tecnologias de IA",
+    "Gestão de tempo e priorização de entregas"
+  ],
+  "ferramentas": [
+    "Python (Pandas, NumPy, Scikit-learn)",
+    "SQL e BigQuery/PostgreSQL",
+    "Jupyter Notebook e Google Colab",
+    "Tableau e Power BI"
+  ],
+  "tarefas_diarias": [
+    "Limpeza e pré-processamento de dados",
+    "Análise exploratória de dados (EDA)",
+    "Monitoramento de performance de modelos IA",
+    "Geração de dashboards e relatórios diários"
+  ],
+  "tarefas_semanais": [
+    "Reuniões de alinhamento com equipe e stakeholders",
+    "Treinamento e fine-tuning de modelos de IA",
+    "Atualização de pipelines de dados automatizados"
+  ],
+  "tarefas_mensais": [
+    "Elaboração de relatórios de performance mensal",
+    "Revisão e otimização de modelos existentes",
+    "Participação em treinamentos e capacitações em IA"
+  ],
+  "kpis": [
+    "KPI 1: Precisão média dos modelos de IA - 90%",
+    "KPI 2: Tempo de deployment de modelos - < 48 horas",
+    "KPI 3: Insights acionáveis entregues - 15 por mês"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação AWS Certified Machine Learning",
+    "Liderar projeto end-to-end de IA",
+    "Aprofundar em Deep Learning com PyTorch"
+  ],
+  "generated_at": "2025-12-01T16:47:46.945Z"
+}

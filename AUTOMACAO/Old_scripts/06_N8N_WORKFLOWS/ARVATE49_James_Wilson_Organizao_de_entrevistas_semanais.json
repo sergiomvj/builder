@@ -1,0 +1,233 @@
+{
+  "name": "James (Asst RH) - Organização de entrevistas semanais",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 10 * * 1"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar toda segunda-feira às 10h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "range": "A2:E"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar entrevistas agendadas na planilha",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Loop",
+      "type": "n8n-nodes-base.splitInBatches",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "batchSize": 1
+      },
+      "typeVersion": 1,
+      "notes": "Processar cada entrevista individualmente"
+    },
+    {
+      "id": "4",
+      "name": "Action",
+      "type": "n8n-nodes-base.googleCalendar",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "event": {
+          "end": "{{ $json['end_time'] }}",
+          "start": "{{ $json['start_time'] }}",
+          "summary": "{{ $json['interviewee_name'] }} Interview",
+          "location": "{{ $json['location'] }}",
+          "description": "{{ $json['description'] }}"
+        },
+        "operation": "create"
+      },
+      "typeVersion": 1,
+      "notes": "Agendar entrevista no Google Calendar"
+    },
+    {
+      "id": "5",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "{{ $json['interviewee_email'] }}",
+        "subject": "Interview Confirmation",
+        "message": "Your interview is scheduled. Please find the details attached."
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email de confirmação para o entrevistado",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Action",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "recruitment",
+        "text": "Interview for {{ $json['interviewee_name'] }} is scheduled on {{ $json['start_time'] }}. Details have been sent to the interviewee."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe de recrutamento no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1560,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: James (Asst RH) - Organização de entrevistas semanais\nEmpresa: ARVA Tech Solutions\nPersona: James Wilson\nTarefa: Organização de entrevistas semanais\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5": {
+      "main": [
+        [
+          {
+            "node": "6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "7"
+  },
+  "createdAt": "2025-11-28T17:05:31.913Z",
+  "updatedAt": "2025-11-28T17:05:31.913Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "ff4feab2-17c2-406c-9d57-609e0a46cfb1",
+    "persona_nome": "James Wilson",
+    "task_id": "5d16c428-f2e9-4fbc-880b-d0ed38c1a125",
+    "task_title": "Organização de entrevistas semanais",
+    "opportunity_id": "954cb795-c731-4c9e-9743-5e1ca1af9b67",
+    "automation_score": 65,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:31.913Z"
+  }
+}

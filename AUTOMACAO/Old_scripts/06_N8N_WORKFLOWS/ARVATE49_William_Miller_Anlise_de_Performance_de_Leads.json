@@ -1,0 +1,203 @@
+{
+  "name": "William (SDR Analst) - Análise de Performance de Leads",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 10 * * MON"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar toda segunda-feira às 10h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.hubspot",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "filters": {
+          "created_at": {
+            "gte": "NOW() - INTERVAL '7 days'"
+          }
+        },
+        "resource": "contacts",
+        "operation": "get"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar novos leads gerados na semana",
+      "credentials": {
+        "hubspotApi": {
+          "id": "hubspot_ARVATE49",
+          "name": "HubSpot ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(lead => ({ ...lead, success: lead.score > 70 }));"
+      },
+      "typeVersion": 1,
+      "notes": "Identificar leads de sucesso"
+    },
+    {
+      "id": "4",
+      "name": "Action",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "operation": "append",
+        "spreadsheetId": "your_spreadsheet_id"
+      },
+      "typeVersion": 1,
+      "notes": "Registrar análise no Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Action",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#sales",
+        "text": "Análise semanal de performance de leads concluída. Verifique o Google Sheets para detalhes."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe de vendas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: William (SDR Analst) - Análise de Performance de Leads\nEmpresa: ARVA Tech Solutions\nPersona: William Miller\nTarefa: Análise de Performance de Leads\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:37.174Z",
+  "updatedAt": "2025-11-28T17:05:37.174Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "72e1bfc8-f618-40d2-9614-4cecfbdfe73d",
+    "persona_nome": "William Miller",
+    "task_id": "bdd267ab-84b4-419d-b691-dc9c559f5400",
+    "task_title": "Análise de Performance de Leads",
+    "opportunity_id": "08dc92e3-d7e7-4b75-9b33-cff69f17a2fc",
+    "automation_score": 60,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:37.174Z"
+  }
+}

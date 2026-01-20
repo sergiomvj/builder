@@ -1,0 +1,616 @@
+{
+  "empresa": {
+    "id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "nome": "ARVA Tech Solutions",
+    "industria": "tecnologia",
+    "pais": "Estados Unidos"
+  },
+  "atribuicoes_contextualizadas": [
+    {
+      "persona": {
+        "id": "299fcd37-98c4-4bea-b4de-63e3d83c5175",
+        "nome": "Robert Davis",
+        "cargo": "Mkt Mgr",
+        "departamento": "Marketing"
+      },
+      "atribuicoes_llm": {
+        "responsabilidades": [
+          "Executar funções de Mkt Mgr na ARVA Tech Solutions"
+        ],
+        "tarefas_diarias": [
+          "Trabalhar como Mkt Mgr",
+          "Colaborar com equipe"
+        ],
+        "entregas": [
+          "Resultados de Mkt Mgr"
+        ],
+        "kpis": [
+          "Performance em Mkt Mgr"
+        ],
+        "interacoes": [
+          "Equipe de Marketing"
+        ],
+        "autonomia": "Nível padrão para Mkt Mgr",
+        "competencias": [
+          "Habilidades de Mkt Mgr"
+        ]
+      },
+      "record_inserido": {
+        "persona_id": "299fcd37-98c4-4bea-b4de-63e3d83c5175",
+        "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+        "departamento": "Marketing",
+        "nivel_hierarquico": 5,
+        "email_corporativo": "robert.davis@arvabot.com",
+        "sistema_ci_username": "robert.davis_1763810494161",
+        "created_at": "2025-11-22T11:21:34.161Z"
+      },
+      "generated_at": "2025-11-22T11:21:34.372Z"
+    },
+    {
+      "persona": {
+        "id": "46f07159-d384-496f-a480-45ac5c684082",
+        "nome": "Jennifer Smith",
+        "cargo": "Social Mkt",
+        "departamento": "Marketing"
+      },
+      "atribuicoes_llm": {
+        "responsabilidades": [
+          "Executar funções de Social Mkt na ARVA Tech Solutions"
+        ],
+        "tarefas_diarias": [
+          "Trabalhar como Social Mkt",
+          "Colaborar com equipe"
+        ],
+        "entregas": [
+          "Resultados de Social Mkt"
+        ],
+        "kpis": [
+          "Performance em Social Mkt"
+        ],
+        "interacoes": [
+          "Equipe de Marketing"
+        ],
+        "autonomia": "Nível padrão para Social Mkt",
+        "competencias": [
+          "Habilidades de Social Mkt"
+        ]
+      },
+      "record_inserido": {
+        "persona_id": "46f07159-d384-496f-a480-45ac5c684082",
+        "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+        "departamento": "Marketing",
+        "nivel_hierarquico": 5,
+        "email_corporativo": "jennifer.smith@arvabot.com",
+        "sistema_ci_username": "jennifer.smith_1763810497217",
+        "created_at": "2025-11-22T11:21:37.217Z"
+      },
+      "generated_at": "2025-11-22T11:21:37.390Z"
+    },
+    {
+      "persona": {
+        "id": "20ae86c4-137e-412f-9c35-99fd7ce11ebf",
+        "nome": "Richard Garcia",
+        "cargo": "Asst Fin",
+        "departamento": "Assistente"
+      },
+      "atribuicoes_llm": {
+        "responsabilidades": [
+          "Executar funções de Asst Fin na ARVA Tech Solutions"
+        ],
+        "tarefas_diarias": [
+          "Trabalhar como Asst Fin",
+          "Colaborar com equipe"
+        ],
+        "entregas": [
+          "Resultados de Asst Fin"
+        ],
+        "kpis": [
+          "Performance em Asst Fin"
+        ],
+        "interacoes": [
+          "Equipe de Assistente"
+        ],
+        "autonomia": "Nível padrão para Asst Fin",
+        "competencias": [
+          "Habilidades de Asst Fin"
+        ]
+      },
+      "record_inserido": {
+        "persona_id": "20ae86c4-137e-412f-9c35-99fd7ce11ebf",
+        "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+        "departamento": "Assistente",
+        "nivel_hierarquico": 5,
+        "email_corporativo": "richard.garcia@arvabot.com",
+        "sistema_ci_username": "richard.garcia_1763810499605",
+        "created_at": "2025-11-22T11:21:39.605Z"
+      },
+      "generated_at": "2025-11-22T11:21:39.762Z"
+    },
+    {
+      "persona": {
+        "id": "32bfbb7a-148b-4113-9fb6-9caff688efcc",
+        "nome": "Lisa Wilson",
+        "cargo": "SDR Senior",
+        "departamento": "SDR"
+      },
+      "atribuicoes_llm": {
+        "responsabilidades": [
+          "Executar funções de SDR Senior na ARVA Tech Solutions"
+        ],
+        "tarefas_diarias": [
+          "Trabalhar como SDR Senior",
+          "Colaborar com equipe"
+        ],
+        "entregas": [
+          "Resultados de SDR Senior"
+        ],
+        "kpis": [
+          "Performance em SDR Senior"
+        ],
+        "interacoes": [
+          "Equipe de SDR"
+        ],
+        "autonomia": "Nível padrão para SDR Senior",
+        "competencias": [
+          "Habilidades de SDR Senior"
+        ]
+      },
+      "record_inserido": {
+        "persona_id": "32bfbb7a-148b-4113-9fb6-9caff688efcc",
+        "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+        "departamento": "SDR",
+        "nivel_hierarquico": 4,
+        "email_corporativo": "lisa.wilson@arvabot.com",
+        "sistema_ci_username": "lisa.wilson_1763810501931",
+        "created_at": "2025-11-22T11:21:41.931Z"
+      },
+      "generated_at": "2025-11-22T11:21:42.087Z"
+    },
+    {
+      "persona": {
+        "id": "ac1149b5-947f-44b4-85ed-70e8f7ac7e8a",
+        "nome": "David Brown",
+        "cargo": "SDR Mgr",
+        "departamento": "SDR"
+      },
+      "atribuicoes_llm": {
+        "responsabilidades": [
+          "Executar funções de SDR Mgr na ARVA Tech Solutions"
+        ],
+        "tarefas_diarias": [
+          "Trabalhar como SDR Mgr",
+          "Colaborar com equipe"
+        ],
+        "entregas": [
+          "Resultados de SDR Mgr"
+        ],
+        "kpis": [
+          "Performance em SDR Mgr"
+        ],
+        "interacoes": [
+          "Equipe de SDR"
+        ],
+        "autonomia": "Nível padrão para SDR Mgr",
+        "competencias": [
+          "Habilidades de SDR Mgr"
+        ]
+      },
+      "record_inserido": {
+        "persona_id": "ac1149b5-947f-44b4-85ed-70e8f7ac7e8a",
+        "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+        "departamento": "SDR",
+        "nivel_hierarquico": 5,
+        "email_corporativo": "david.brown@arvabot.com",
+        "sistema_ci_username": "david.brown_1763810504251",
+        "created_at": "2025-11-22T11:21:44.251Z"
+      },
+      "generated_at": "2025-11-22T11:21:44.411Z"
+    },
+    {
+      "persona": {
+        "id": "b236f0d4-3ab7-4088-92c0-92f2bd511826",
+        "nome": "Amanda Davis",
+        "cargo": "YT Manager",
+        "departamento": "Marketing"
+      },
+      "atribuicoes_llm": {
+        "responsabilidades": [
+          "Executar funções de YT Manager na ARVA Tech Solutions"
+        ],
+        "tarefas_diarias": [
+          "Trabalhar como YT Manager",
+          "Colaborar com equipe"
+        ],
+        "entregas": [
+          "Resultados de YT Manager"
+        ],
+        "kpis": [
+          "Performance em YT Manager"
+        ],
+        "interacoes": [
+          "Equipe de Marketing"
+        ],
+        "autonomia": "Nível padrão para YT Manager",
+        "competencias": [
+          "Habilidades de YT Manager"
+        ]
+      },
+      "record_inserido": {
+        "persona_id": "b236f0d4-3ab7-4088-92c0-92f2bd511826",
+        "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+        "departamento": "Marketing",
+        "nivel_hierarquico": 3,
+        "email_corporativo": "amanda.davis@arvabot.com",
+        "sistema_ci_username": "amanda.davis_1763810506665",
+        "created_at": "2025-11-22T11:21:46.665Z"
+      },
+      "generated_at": "2025-11-22T11:21:46.844Z"
+    },
+    {
+      "persona": {
+        "id": "afa9c2ea-870b-4894-8d9f-bb83f8412d1a",
+        "nome": "Thomas Anderson",
+        "cargo": "HR Manager",
+        "departamento": "Executivo"
+      },
+      "atribuicoes_llm": {
+        "responsabilidades": [
+          "Executar funções de HR Manager na ARVA Tech Solutions"
+        ],
+        "tarefas_diarias": [
+          "Trabalhar como HR Manager",
+          "Colaborar com equipe"
+        ],
+        "entregas": [
+          "Resultados de HR Manager"
+        ],
+        "kpis": [
+          "Performance em HR Manager"
+        ],
+        "interacoes": [
+          "Equipe de Executivo"
+        ],
+        "autonomia": "Nível padrão para HR Manager",
+        "competencias": [
+          "Habilidades de HR Manager"
+        ]
+      },
+      "record_inserido": {
+        "persona_id": "afa9c2ea-870b-4894-8d9f-bb83f8412d1a",
+        "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+        "departamento": "Executivo",
+        "nivel_hierarquico": 3,
+        "email_corporativo": "thomas.anderson@arvabot.com",
+        "sistema_ci_username": "thomas.anderson_1763810509128",
+        "created_at": "2025-11-22T11:21:49.128Z"
+      },
+      "generated_at": "2025-11-22T11:21:49.314Z"
+    },
+    {
+      "persona": {
+        "id": "fe5d76ce-f793-4f2a-9df0-1e5b6d756d10",
+        "nome": "Michael Johnson",
+        "cargo": "CTO",
+        "departamento": "Executivo"
+      },
+      "atribuicoes_llm": {
+        "responsabilidades": [
+          "Executar funções de CTO na ARVA Tech Solutions"
+        ],
+        "tarefas_diarias": [
+          "Trabalhar como CTO",
+          "Colaborar com equipe"
+        ],
+        "entregas": [
+          "Resultados de CTO"
+        ],
+        "kpis": [
+          "Performance em CTO"
+        ],
+        "interacoes": [
+          "Equipe de Executivo"
+        ],
+        "autonomia": "Nível padrão para CTO",
+        "competencias": [
+          "Habilidades de CTO"
+        ]
+      },
+      "record_inserido": {
+        "persona_id": "fe5d76ce-f793-4f2a-9df0-1e5b6d756d10",
+        "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+        "departamento": "Executivo",
+        "nivel_hierarquico": 2,
+        "email_corporativo": "michael.johnson@arvabot.com",
+        "sistema_ci_username": "michael.johnson_1763810511475",
+        "created_at": "2025-11-22T11:21:51.475Z"
+      },
+      "generated_at": "2025-11-22T11:21:51.627Z"
+    },
+    {
+      "persona": {
+        "id": "2841090c-7c5f-4c95-afbf-89dc4c115372",
+        "nome": "David Brown",
+        "cargo": "Asst Mkt",
+        "departamento": "Assistente"
+      },
+      "atribuicoes_llm": {
+        "responsabilidades": [
+          "Executar funções de Asst Mkt na ARVA Tech Solutions"
+        ],
+        "tarefas_diarias": [
+          "Trabalhar como Asst Mkt",
+          "Colaborar com equipe"
+        ],
+        "entregas": [
+          "Resultados de Asst Mkt"
+        ],
+        "kpis": [
+          "Performance em Asst Mkt"
+        ],
+        "interacoes": [
+          "Equipe de Assistente"
+        ],
+        "autonomia": "Nível padrão para Asst Mkt",
+        "competencias": [
+          "Habilidades de Asst Mkt"
+        ]
+      },
+      "record_inserido": {
+        "persona_id": "2841090c-7c5f-4c95-afbf-89dc4c115372",
+        "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+        "departamento": "Assistente",
+        "nivel_hierarquico": 5,
+        "email_corporativo": "davidbrown1@arvabot.com",
+        "sistema_ci_username": "david.brown_1763810513851",
+        "created_at": "2025-11-22T11:21:53.851Z"
+      },
+      "generated_at": "2025-11-22T11:21:54.032Z"
+    },
+    {
+      "persona": {
+        "id": "07acdccc-ac86-41cd-9c19-2c95bfc82be9",
+        "nome": "Sarah Johnson",
+        "cargo": "CEO",
+        "departamento": "Executivo"
+      },
+      "atribuicoes_llm": {
+        "responsabilidades": [
+          "Executar funções de CEO na ARVA Tech Solutions"
+        ],
+        "tarefas_diarias": [
+          "Trabalhar como CEO",
+          "Colaborar com equipe"
+        ],
+        "entregas": [
+          "Resultados de CEO"
+        ],
+        "kpis": [
+          "Performance em CEO"
+        ],
+        "interacoes": [
+          "Equipe de Executivo"
+        ],
+        "autonomia": "Nível padrão para CEO",
+        "competencias": [
+          "Habilidades de CEO"
+        ]
+      },
+      "record_inserido": {
+        "persona_id": "07acdccc-ac86-41cd-9c19-2c95bfc82be9",
+        "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+        "departamento": "Executivo",
+        "nivel_hierarquico": 1,
+        "email_corporativo": "sarah.johnson@arvabot.com",
+        "sistema_ci_username": "sarah.johnson_1763810516259",
+        "created_at": "2025-11-22T11:21:56.260Z"
+      },
+      "generated_at": "2025-11-22T11:21:56.435Z"
+    },
+    {
+      "persona": {
+        "id": "6e1019b0-7606-4488-920a-a190a098237e",
+        "nome": "William Miller",
+        "cargo": "Asst Admin",
+        "departamento": "Assistente"
+      },
+      "atribuicoes_llm": {
+        "responsabilidades": [
+          "Executar funções de Asst Admin na ARVA Tech Solutions"
+        ],
+        "tarefas_diarias": [
+          "Trabalhar como Asst Admin",
+          "Colaborar com equipe"
+        ],
+        "entregas": [
+          "Resultados de Asst Admin"
+        ],
+        "kpis": [
+          "Performance em Asst Admin"
+        ],
+        "interacoes": [
+          "Equipe de Assistente"
+        ],
+        "autonomia": "Nível padrão para Asst Admin",
+        "competencias": [
+          "Habilidades de Asst Admin"
+        ]
+      },
+      "record_inserido": {
+        "persona_id": "6e1019b0-7606-4488-920a-a190a098237e",
+        "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+        "departamento": "Assistente",
+        "nivel_hierarquico": 5,
+        "email_corporativo": "william.miller@arvabot.com",
+        "sistema_ci_username": "william.miller_1763810518639",
+        "created_at": "2025-11-22T11:21:58.639Z"
+      },
+      "generated_at": "2025-11-22T11:21:58.822Z"
+    },
+    {
+      "persona": {
+        "id": "a89ce124-58f3-45d1-a7d4-bb245a35884b",
+        "nome": "Ashley Garcia",
+        "cargo": "CFO",
+        "departamento": "Executivo"
+      },
+      "atribuicoes_llm": {
+        "responsabilidades": [
+          "Executar funções de CFO na ARVA Tech Solutions"
+        ],
+        "tarefas_diarias": [
+          "Trabalhar como CFO",
+          "Colaborar com equipe"
+        ],
+        "entregas": [
+          "Resultados de CFO"
+        ],
+        "kpis": [
+          "Performance em CFO"
+        ],
+        "interacoes": [
+          "Equipe de Executivo"
+        ],
+        "autonomia": "Nível padrão para CFO",
+        "competencias": [
+          "Habilidades de CFO"
+        ]
+      },
+      "record_inserido": {
+        "persona_id": "a89ce124-58f3-45d1-a7d4-bb245a35884b",
+        "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+        "departamento": "Executivo",
+        "nivel_hierarquico": 2,
+        "email_corporativo": "ashley.garcia@arvabot.com",
+        "sistema_ci_username": "ashley.garcia_1763810521000",
+        "created_at": "2025-11-22T11:22:01.000Z"
+      },
+      "generated_at": "2025-11-22T11:22:01.147Z"
+    },
+    {
+      "persona": {
+        "id": "680cf6e1-5b0d-4dc7-b2c0-722d22998876",
+        "nome": "John Smith",
+        "cargo": "SDR Junior",
+        "departamento": "SDR"
+      },
+      "atribuicoes_llm": {
+        "responsabilidades": [
+          "Executar funções de SDR Junior na ARVA Tech Solutions"
+        ],
+        "tarefas_diarias": [
+          "Trabalhar como SDR Junior",
+          "Colaborar com equipe"
+        ],
+        "entregas": [
+          "Resultados de SDR Junior"
+        ],
+        "kpis": [
+          "Performance em SDR Junior"
+        ],
+        "interacoes": [
+          "Equipe de SDR"
+        ],
+        "autonomia": "Nível padrão para SDR Junior",
+        "competencias": [
+          "Habilidades de SDR Junior"
+        ]
+      },
+      "record_inserido": {
+        "persona_id": "680cf6e1-5b0d-4dc7-b2c0-722d22998876",
+        "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+        "departamento": "SDR",
+        "nivel_hierarquico": 5,
+        "email_corporativo": "john.smith@arvabot.com",
+        "sistema_ci_username": "john.smith_1763810523341",
+        "created_at": "2025-11-22T11:22:03.342Z"
+      },
+      "generated_at": "2025-11-22T11:22:03.519Z"
+    },
+    {
+      "persona": {
+        "id": "ff4feab2-17c2-406c-9d57-609e0a46cfb1",
+        "nome": "James Wilson",
+        "cargo": "Asst RH",
+        "departamento": "Assistente"
+      },
+      "atribuicoes_llm": {
+        "responsabilidades": [
+          "Executar funções de Asst RH na ARVA Tech Solutions"
+        ],
+        "tarefas_diarias": [
+          "Trabalhar como Asst RH",
+          "Colaborar com equipe"
+        ],
+        "entregas": [
+          "Resultados de Asst RH"
+        ],
+        "kpis": [
+          "Performance em Asst RH"
+        ],
+        "interacoes": [
+          "Equipe de Assistente"
+        ],
+        "autonomia": "Nível padrão para Asst RH",
+        "competencias": [
+          "Habilidades de Asst RH"
+        ]
+      },
+      "record_inserido": {
+        "persona_id": "ff4feab2-17c2-406c-9d57-609e0a46cfb1",
+        "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+        "departamento": "Assistente",
+        "nivel_hierarquico": 5,
+        "email_corporativo": "james.wilson@arvabot.com",
+        "sistema_ci_username": "james.wilson_1763810525690",
+        "created_at": "2025-11-22T11:22:05.690Z"
+      },
+      "generated_at": "2025-11-22T11:22:05.861Z"
+    },
+    {
+      "persona": {
+        "id": "72e1bfc8-f618-40d2-9614-4cecfbdfe73d",
+        "nome": "William Miller",
+        "cargo": "SDR Analst",
+        "departamento": "SDR"
+      },
+      "atribuicoes_llm": {
+        "responsabilidades": [
+          "Executar funções de SDR Analst na ARVA Tech Solutions"
+        ],
+        "tarefas_diarias": [
+          "Trabalhar como SDR Analst",
+          "Colaborar com equipe"
+        ],
+        "entregas": [
+          "Resultados de SDR Analst"
+        ],
+        "kpis": [
+          "Performance em SDR Analst"
+        ],
+        "interacoes": [
+          "Equipe de SDR"
+        ],
+        "autonomia": "Nível padrão para SDR Analst",
+        "competencias": [
+          "Habilidades de SDR Analst"
+        ]
+      },
+      "record_inserido": {
+        "persona_id": "72e1bfc8-f618-40d2-9614-4cecfbdfe73d",
+        "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+        "departamento": "SDR",
+        "nivel_hierarquico": 5,
+        "email_corporativo": "williammiller1@arvabot.com",
+        "sistema_ci_username": "william.miller_1763810528033",
+        "created_at": "2025-11-22T11:22:08.033Z"
+      },
+      "generated_at": "2025-11-22T11:22:08.196Z"
+    }
+  ],
+  "estatisticas": {
+    "total_personas": 15,
+    "sucessos": 15,
+    "erros": 0,
+    "data_processamento": "2025-11-22T11:22:10.200Z"
+  }
+}

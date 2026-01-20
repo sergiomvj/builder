@@ -1,0 +1,507 @@
+{
+  "persona_profile": {
+    "id": 3,
+    "persona_key": "Carlos_González",
+    "nome_completo": "Carlos González",
+    "categoria": "especialistas",
+    "especialidade": "hr",
+    "experiencia_anos": 14,
+    "biografia": {
+      "educacao": "Pós-graduação em Gestão de Pessoas e MBA em Recursos Humanos",
+      "idiomas": [
+        "inglês",
+        "espanhol",
+        "português",
+        "francês"
+      ],
+      "secoes_extraidas": [
+        "formacao",
+        "experiencia",
+        "competencias_tecnicas",
+        "competencias_comportamentais",
+        "responsabilidades"
+      ]
+    },
+    "competencias": {
+      "tecnicas": [
+        {
+          "id": "3_t_1",
+          "nome": "Gestão de Talentos",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Gestão de Talentos aplicada no contexto de hr"
+        },
+        {
+          "id": "3_t_2",
+          "nome": "Recrutamento e Seleção",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Recrutamento e Seleção aplicada no contexto de hr"
+        },
+        {
+          "id": "3_t_3",
+          "nome": "Desenvolvimento Organizacional",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Desenvolvimento Organizacional aplicada no contexto de hr"
+        },
+        {
+          "id": "3_t_4",
+          "nome": "Gestão de Performance",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Gestão de Performance aplicada no contexto de hr"
+        },
+        {
+          "id": "3_t_5",
+          "nome": "Políticas de RH",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Políticas de RH aplicada no contexto de hr"
+        },
+        {
+          "id": "3_t_6",
+          "nome": "Employee Experience",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em Employee Experience aplicada no contexto de hr"
+        },
+        {
+          "id": "3_t_7",
+          "nome": "People Analytics",
+          "categoria": "tecnica",
+          "nivel": "expert",
+          "contexto": "Competência em People Analytics aplicada no contexto de hr"
+        }
+      ],
+      "comportamentais": [
+        {
+          "id": "3_c_1",
+          "nome": "Liderança Empática",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Liderança Empática aplicada no contexto de especialistas"
+        },
+        {
+          "id": "3_c_2",
+          "nome": "Comunicação Assertiva",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Comunicação Assertiva aplicada no contexto de especialistas"
+        },
+        {
+          "id": "3_c_3",
+          "nome": "Mediação de Conflitos",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Mediação de Conflitos aplicada no contexto de especialistas"
+        },
+        {
+          "id": "3_c_4",
+          "nome": "Pensamento Estratégico",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Pensamento Estratégico aplicada no contexto de especialistas"
+        },
+        {
+          "id": "3_c_5",
+          "nome": "Orientação a Pessoas",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Orientação a Pessoas aplicada no contexto de especialistas"
+        },
+        {
+          "id": "3_c_6",
+          "nome": "Adaptabilidade Cultural",
+          "categoria": "comportamental",
+          "nivel": "expert",
+          "contexto": "Competência em Adaptabilidade Cultural aplicada no contexto de especialistas"
+        }
+      ]
+    },
+    "ferramentas": [
+      {
+        "id": "3_f_1",
+        "nome": "HRIS Systems",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "3_f_2",
+        "nome": "ATS (Applicant Tracking Systems)",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "3_f_3",
+        "nome": "Microsoft Office 365",
+        "categoria_uso": "produtividade_geral",
+        "nivel_proficiencia": "avançado"
+      },
+      {
+        "id": "3_f_4",
+        "nome": "Google Workspace",
+        "categoria_uso": "produtividade_geral",
+        "nivel_proficiencia": "avançado"
+      },
+      {
+        "id": "3_f_5",
+        "nome": "Slack",
+        "categoria_uso": "comunicacao",
+        "nivel_proficiencia": "avançado"
+      },
+      {
+        "id": "3_f_6",
+        "nome": "Zoom",
+        "categoria_uso": "comunicacao",
+        "nivel_proficiencia": "avançado"
+      },
+      {
+        "id": "3_f_7",
+        "nome": "LinkedIn Recruiter",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      }
+    ],
+    "search_metadata": {
+      "tags": [
+        "especialistas",
+        "hr",
+        "Gestão de Talentos",
+        "Recrutamento e Seleção",
+        "Desenvolvimento Organizacional",
+        "Liderança Empática",
+        "Comunicação Assertiva"
+      ],
+      "embedding_text": "Carlos González trabalha como especialistas. especialista em hr. com 14 anos de experiência. competências técnicas: Gestão de Talentos, Recrutamento e Seleção, Desenvolvimento Organizacional, Gestão de Performance, Políticas de RH, Employee Experience, People Analytics. competências comportamentais: Liderança Empática, Comunicação Assertiva, Mediação de Conflitos, Pensamento Estratégico, Orientação a Pessoas, Adaptabilidade Cultural. utiliza ferramentas: HRIS Systems, ATS (Applicant Tracking Systems), Microsoft Office 365, Google Workspace, Slack, Zoom, LinkedIn Recruiter. educação: Pós-graduação em Gestão de Pessoas e MBA em Recursos Humanos. idiomas: inglês, espanhol, português, francês",
+      "update_timestamp": "2025-11-16T14:48:34.870Z"
+    }
+  },
+  "relacionamentos": {
+    "competencias_relacionadas": [
+      {
+        "persona_id": 3,
+        "competencia_nome": "Gestão de Talentos",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 3,
+        "competencia_nome": "Recrutamento e Seleção",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 3,
+        "competencia_nome": "Desenvolvimento Organizacional",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 3,
+        "competencia_nome": "Gestão de Performance",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 3,
+        "competencia_nome": "Políticas de RH",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 3,
+        "competencia_nome": "Employee Experience",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 3,
+        "competencia_nome": "People Analytics",
+        "nivel": "expert",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 3,
+        "competencia_nome": "Liderança Empática",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 3,
+        "competencia_nome": "Comunicação Assertiva",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 3,
+        "competencia_nome": "Mediação de Conflitos",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 3,
+        "competencia_nome": "Pensamento Estratégico",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 3,
+        "competencia_nome": "Orientação a Pessoas",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 3,
+        "competencia_nome": "Adaptabilidade Cultural",
+        "nivel": "expert",
+        "categoria": "comportamental"
+      }
+    ],
+    "ferramentas_relacionadas": [
+      {
+        "persona_id": 3,
+        "ferramenta_nome": "HRIS Systems",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 3,
+        "ferramenta_nome": "ATS (Applicant Tracking Systems)",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 3,
+        "ferramenta_nome": "Microsoft Office 365",
+        "proficiencia": "avançado",
+        "categoria_uso": "produtividade_geral"
+      },
+      {
+        "persona_id": 3,
+        "ferramenta_nome": "Google Workspace",
+        "proficiencia": "avançado",
+        "categoria_uso": "produtividade_geral"
+      },
+      {
+        "persona_id": 3,
+        "ferramenta_nome": "Slack",
+        "proficiencia": "avançado",
+        "categoria_uso": "comunicacao"
+      },
+      {
+        "persona_id": 3,
+        "ferramenta_nome": "Zoom",
+        "proficiencia": "avançado",
+        "categoria_uso": "comunicacao"
+      },
+      {
+        "persona_id": 3,
+        "ferramenta_nome": "LinkedIn Recruiter",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      }
+    ]
+  },
+  "contextos_relevantes": [
+    {
+      "id": "persona_3",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Carlos González",
+      "conteudo": "Carlos González trabalha como especialistas. especialista em hr. com 14 anos de experiência. competências técnicas: Gestão de Talentos, Recrutamento e Seleção, Desenvolvimento Organizacional, Gestão de Performance, Políticas de RH, Employee Experience, People Analytics. competências comportamentais: Liderança Empática, Comunicação Assertiva, Mediação de Conflitos, Pensamento Estratégico, Orientação a Pessoas, Adaptabilidade Cultural. utiliza ferramentas: HRIS Systems, ATS (Applicant Tracking Systems), Microsoft Office 365, Google Workspace, Slack, Zoom, LinkedIn Recruiter. educação: Pós-graduação em Gestão de Pessoas e MBA em Recursos Humanos. idiomas: inglês, espanhol, português, francês",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "hr",
+        "experiencia": 14
+      },
+      "tags": [
+        "especialistas",
+        "hr",
+        "Gestão de Talentos",
+        "Recrutamento e Seleção",
+        "Desenvolvimento Organizacional",
+        "Liderança Empática",
+        "Comunicação Assertiva"
+      ]
+    },
+    {
+      "id": "persona_4",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Gabriela González",
+      "conteudo": "Gabriela González trabalha como especialistas. especialista em midias_sociais. com 15 anos de experiência. competências técnicas: Social Media Marketing, Community Management, Gestão de Campanhas, Analytics e Métricas, Influencer Marketing, Paid Social Advertising. competências comportamentais: Comunicação Digital, Criatividade, Agilidade, Orientação a Tendências, Trabalho em Equipe, Resolução de Problemas. utiliza ferramentas: Facebook Business Manager, Instagram Creator Studio, Hootsuite, Buffer, Canva, Adobe Creative Suite, Google Analytics. educação: Marketing Digital e Social Media, Certificação Facebook Blueprint. idiomas: inglês, espanhol, francês, português",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "midias_sociais",
+        "experiencia": 15
+      },
+      "tags": [
+        "especialistas",
+        "midias_sociais",
+        "Social Media Marketing",
+        "Community Management",
+        "Gestão de Campanhas",
+        "Comunicação Digital",
+        "Criatividade"
+      ]
+    },
+    {
+      "id": "persona_5",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Isabella González",
+      "conteudo": "Isabella González trabalha como especialistas. especialista em marketing. com 9 anos de experiência. competências técnicas: Marketing Digital, Growth Hacking, Marketing Analytics, Automação de Marketing, Inbound Marketing, Performance Marketing. competências comportamentais: Pensamento Analítico, Orientação a Dados, Inovação, Visão Estratégica, Adaptabilidade, Orientação a Resultados. utiliza ferramentas: Google Ads, Facebook Ads, HubSpot, Mailchimp, Google Analytics, SEMrush, Hotjar. educação: MBA em Marketing Digital e Growth Hacking Certification. idiomas: francês, português, espanhol, inglês",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "marketing",
+        "experiencia": 9
+      },
+      "tags": [
+        "especialistas",
+        "marketing",
+        "Marketing Digital",
+        "Growth Hacking",
+        "Marketing Analytics",
+        "Pensamento Analítico",
+        "Orientação a Dados"
+      ]
+    },
+    {
+      "id": "persona_6",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de José Hernández",
+      "conteudo": "José Hernández trabalha como especialistas. especialista em youtube. com 18 anos de experiência. competências técnicas: Produção de Vídeo, Edição de Vídeo, YouTube Analytics, SEO para YouTube, Marketing de Conteúdo, Storytelling Digital, Live Streaming. competências comportamentais: Criatividade, Comunicação Visual, Persistência, Orientação a Resultados, Adaptabilidade, Inovação. utiliza ferramentas: Adobe Premiere Pro, Final Cut Pro, Adobe After Effects, Photoshop, YouTube Studio, TubeBuddy, VidIQ. educação: Bacharelado em Comunicação Digital e Certificação Google Ads. idiomas: francês, português, inglês, espanhol",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "youtube",
+        "experiencia": 18
+      },
+      "tags": [
+        "especialistas",
+        "youtube",
+        "Produção de Vídeo",
+        "Edição de Vídeo",
+        "YouTube Analytics",
+        "Criatividade",
+        "Comunicação Visual"
+      ]
+    },
+    {
+      "id": "competencia_13",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Gestão de Talentos",
+      "conteudo": "Competência em Gestão de Talentos aplicada no contexto de hr. Personas com esta competência: Carlos González. Ferramentas relacionadas: HRIS Systems, ATS (Applicant Tracking Systems), Microsoft Office 365, Google Workspace, Slack, Zoom, LinkedIn Recruiter.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "expert",
+        "total_personas": 1
+      },
+      "tags": [
+        "Gestão de Talentos",
+        "tecnica",
+        "HRIS Systems",
+        "ATS (Applicant Tracking Systems)",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "LinkedIn Recruiter"
+      ]
+    },
+    {
+      "id": "competencia_14",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Recrutamento e Seleção",
+      "conteudo": "Competência em Recrutamento e Seleção aplicada no contexto de hr. Personas com esta competência: Carlos González. Ferramentas relacionadas: HRIS Systems, ATS (Applicant Tracking Systems), Microsoft Office 365, Google Workspace, Slack, Zoom, LinkedIn Recruiter.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "expert",
+        "total_personas": 1
+      },
+      "tags": [
+        "Recrutamento e Seleção",
+        "tecnica",
+        "HRIS Systems",
+        "ATS (Applicant Tracking Systems)",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "LinkedIn Recruiter"
+      ]
+    },
+    {
+      "id": "competencia_15",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Desenvolvimento Organizacional",
+      "conteudo": "Competência em Desenvolvimento Organizacional aplicada no contexto de hr. Personas com esta competência: Carlos González. Ferramentas relacionadas: HRIS Systems, ATS (Applicant Tracking Systems), Microsoft Office 365, Google Workspace, Slack, Zoom, LinkedIn Recruiter.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "expert",
+        "total_personas": 1
+      },
+      "tags": [
+        "Desenvolvimento Organizacional",
+        "tecnica",
+        "HRIS Systems",
+        "ATS (Applicant Tracking Systems)",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "LinkedIn Recruiter"
+      ]
+    },
+    {
+      "id": "competencia_20",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Liderança Empática",
+      "conteudo": "Competência em Liderança Empática aplicada no contexto de especialistas. Personas com esta competência: Carlos González. Ferramentas relacionadas: .",
+      "metadata": {
+        "categoria": "comportamental",
+        "nivel_medio": "expert",
+        "total_personas": 1
+      },
+      "tags": [
+        "Liderança Empática",
+        "comportamental"
+      ]
+    },
+    {
+      "id": "competencia_21",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Comunicação Assertiva",
+      "conteudo": "Competência em Comunicação Assertiva aplicada no contexto de especialistas. Personas com esta competência: Carlos González. Ferramentas relacionadas: .",
+      "metadata": {
+        "categoria": "comportamental",
+        "nivel_medio": "expert",
+        "total_personas": 1
+      },
+      "tags": [
+        "Comunicação Assertiva",
+        "comportamental"
+      ]
+    }
+  ],
+  "query_examples": [
+    {
+      "tipo": "competencia_lookup",
+      "query": "Quais são as competências de Carlos González?",
+      "resposta_esperada": "Lista de competências técnicas e comportamentais"
+    },
+    {
+      "tipo": "ferramenta_usage",
+      "query": "Que ferramentas Carlos González sabe usar?",
+      "resposta_esperada": "Lista de ferramentas com nível de proficiência"
+    },
+    {
+      "tipo": "colaboracao_potential",
+      "query": "Com quem Carlos González pode colaborar em projetos?",
+      "resposta_esperada": "Personas com competências complementares"
+    },
+    {
+      "tipo": "processo_involvement",
+      "query": "Em que processos Carlos González deveria estar envolvido?",
+      "resposta_esperada": "Processos que aproveitam suas competências"
+    }
+  ],
+  "data_processamento": "2025-11-16T14:48:34.880Z"
+}

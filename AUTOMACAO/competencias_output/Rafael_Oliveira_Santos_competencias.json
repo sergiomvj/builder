@@ -1,0 +1,53 @@
+{
+  "persona_id": "a1e679d0-0a09-4a89-8f9e-30c4daac82a3",
+  "full_name": "Rafael Oliveira Santos",
+  "role": "CTO",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Desenvolvimento de software",
+    "Gestão de projetos de TI",
+    "Arquitetura de sistemas",
+    "Segurança da informação",
+    "Análise de dados"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Resolução de problemas",
+    "Trabalho em equipe",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Git",
+    "Jira",
+    "AWS",
+    "Docker"
+  ],
+  "tarefas_diarias": [
+    "Gerenciar equipe de desenvolvimento",
+    "Analisar requisitos de novos projetos",
+    "Monitorar a segurança da plataforma",
+    "Realizar reuniões com stakeholders"
+  ],
+  "tarefas_semanais": [
+    "Definir roadmap de desenvolvimento",
+    "Acompanhar o progresso dos projetos",
+    "Realizar testes de novas funcionalidades"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatórios de performance da plataforma",
+    "Planejar melhorias na arquitetura de sistemas",
+    "Participar de eventos do setor de tecnologia"
+  ],
+  "kpis": [
+    "Disponibilidade da plataforma - 99%",
+    "Tempo médio de resposta do suporte - 2 horas",
+    "Taxa de conversão de leads - 15%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de liderança",
+    "Obter certificação em segurança da informação",
+    "Expandir rede de contatos na área de tecnologia"
+  ],
+  "generated_at": "2025-12-08T14:37:02.691Z"
+}

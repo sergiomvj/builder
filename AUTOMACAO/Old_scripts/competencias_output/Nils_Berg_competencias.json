@@ -1,0 +1,53 @@
+{
+  "persona_id": "32f3c90c-d8e1-4fcc-b09a-ea06c9d9a952",
+  "full_name": "Nils Berg",
+  "role": "Analista de Vendas Junior",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Conhecimento em soluções de TI e software",
+    "Domínio de ferramentas CRM como Salesforce",
+    "Prospecção e qualificação de leads",
+    "Análise de dados de vendas e relatórios",
+    "Realização de demonstrações de produtos"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação persuasiva",
+    "Orientação a resultados",
+    "Trabalho em equipe",
+    "Resiliência e persistência",
+    "Proatividade e aprendizado contínuo"
+  ],
+  "ferramentas": [
+    "Salesforce",
+    "HubSpot",
+    "Microsoft Excel",
+    "LinkedIn Sales Navigator"
+  ],
+  "tarefas_diarias": [
+    "Prospecção de novos leads",
+    "Contato com prospects via email e telefone",
+    "Atualização do CRM com atividades",
+    "Monitoramento do pipeline de vendas"
+  ],
+  "tarefas_semanais": [
+    "Reuniões de alinhamento com a equipe de vendas",
+    "Follow-up de oportunidades em andamento",
+    "Análise semanal do funil de vendas"
+  ],
+  "tarefas_mensais": [
+    "Elaboração de relatório de performance mensal",
+    "Participação em treinamentos de produtos",
+    "Planejamento de metas para o próximo mês"
+  ],
+  "kpis": [
+    "KPI 1: Leads gerados - 50/mês",
+    "KPI 2: Taxa de conversão de leads - 15%",
+    "KPI 3: Receita gerada em vendas - R$ 50.000/mês"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar técnicas de negociação avançada",
+    "Aprofundar conhecimento técnico dos produtos ARVA",
+    "Desenvolver habilidades de liderança em equipes de vendas"
+  ],
+  "generated_at": "2025-12-01T20:38:07.251Z"
+}

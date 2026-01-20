@@ -1,0 +1,39 @@
+{
+  "persona_id": "f3345572-ad88-44ae-8455-2d3015306377",
+  "full_name": "Lucas Henrique Silva Santos",
+  "role": "Desenvolvedor Full Stack",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprender Python e React Native",
+      "descricao": "Estudar e praticar regularmente as linguagens de programação Python e React Native para ampliar habilidades como desenvolvedor Full Stack",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "N/A",
+      "unidade_medida": "N/A",
+      "data_prazo": "2022-12-01",
+      "prioridade": 1,
+      "vinculada_kpi": "N/A"
+    },
+    {
+      "titulo": "Participar de 3 cursos/workshops de tecnologia",
+      "descricao": "Inscrição e participação em 3 eventos de capacitação relacionados à tecnologia para manter-se atualizado e adquirir novos conhecimentos",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 3,
+      "unidade_medida": "cursos/workshops",
+      "data_prazo": "2023-03-01",
+      "prioridade": 2,
+      "vinculada_kpi": "N/A"
+    },
+    {
+      "titulo": "Resolver 90% dos problemas de programação sem ajuda",
+      "descricao": "Desenvolver habilidades de resolução de problemas ao enfrentar desafios de programação e buscar soluções de forma autônoma",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 90,
+      "unidade_medida": "%",
+      "data_prazo": "2023-06-01",
+      "prioridade": 3,
+      "vinculada_kpi": "N/A"
+    }
+  ],
+  "generated_at": "2025-12-08T14:41:59.416Z"
+}

@@ -1,0 +1,15 @@
+{
+  "script": "05b_generate_images_alternating",
+  "status": "concluido",
+  "current": 40,
+  "total": 40,
+  "currentPersona": "",
+  "errors": [
+    {
+      "persona": "Carlos Eduardo Santos",
+      "email": "carlos.santos1@lifewayusa.com",
+      "erro": "HTTP 500: Internal Server Error"
+    }
+  ],
+  "timestamp": "2025-12-09T19:44:59.916Z"
+}

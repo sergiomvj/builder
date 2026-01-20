@@ -1,0 +1,241 @@
+{
+  "persona": {
+    "id": 3,
+    "nome": "Carlos González",
+    "categoria": "especialistas",
+    "especialidade": "hr"
+  },
+  "processos_aplicaveis": [
+    {
+      "id": "processo_recrutamento_e_seleção",
+      "nome": "Recrutamento e Seleção",
+      "categoria": "hr",
+      "etapas": [
+        "Abertura de vaga",
+        "Triagem curricular",
+        "Entrevistas",
+        "Testes técnicos",
+        "Contratação"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 3,
+          "nome": "Carlos González",
+          "categoria": "especialistas",
+          "especialidade": "hr",
+          "nivel_competencia": "expert"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "ATS",
+        "LinkedIn Recruiter",
+        "Calendário",
+        "E-mail"
+      ],
+      "ferramentas_disponiveis": [
+        "HRIS Systems",
+        "ATS (Applicant Tracking Systems)",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "LinkedIn Recruiter"
+      ],
+      "cobertura_ferramentas": 50,
+      "automacao_potencial": 70,
+      "kpis": [
+        "Time to hire",
+        "Custo por contratação",
+        "Quality of hire"
+      ],
+      "viabilidade": "média",
+      "custos_estimados": {
+        "setup": 5000,
+        "mensal": 2000
+      },
+      "tempo_implementacao": "2-3 meses"
+    },
+    {
+      "id": "processo_onboarding_de_funcionários",
+      "nome": "Onboarding de Funcionários",
+      "categoria": "hr",
+      "etapas": [
+        "Documentação",
+        "Treinamentos",
+        "Apresentação da equipe",
+        "Setup de ferramentas",
+        "Follow-up"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 3,
+          "nome": "Carlos González",
+          "categoria": "especialistas",
+          "especialidade": "hr",
+          "nivel_competencia": "expert"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "HRIS",
+        "LMS",
+        "Slack",
+        "Office 365"
+      ],
+      "ferramentas_disponiveis": [
+        "HRIS Systems",
+        "ATS (Applicant Tracking Systems)",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "LinkedIn Recruiter"
+      ],
+      "cobertura_ferramentas": 75,
+      "automacao_potencial": 60,
+      "kpis": [
+        "Time to productivity",
+        "Employee satisfaction",
+        "Retention rate"
+      ],
+      "viabilidade": "média",
+      "custos_estimados": {
+        "setup": 3000,
+        "mensal": 1000
+      },
+      "tempo_implementacao": "3-6 semanas"
+    },
+    {
+      "id": "processo_avaliação_de_performance",
+      "nome": "Avaliação de Performance",
+      "categoria": "hr",
+      "etapas": [
+        "Setup ciclo",
+        "Autoavaliação",
+        "Avaliação 360",
+        "Calibração",
+        "Feedback"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 3,
+          "nome": "Carlos González",
+          "categoria": "especialistas",
+          "especialidade": "hr",
+          "nivel_competencia": "expert"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "Performance Management System",
+        "Calendário",
+        "Office 365"
+      ],
+      "ferramentas_disponiveis": [
+        "HRIS Systems",
+        "ATS (Applicant Tracking Systems)",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "LinkedIn Recruiter"
+      ],
+      "cobertura_ferramentas": 33,
+      "automacao_potencial": 50,
+      "kpis": [
+        "Completion rate",
+        "Manager engagement",
+        "Goal achievement"
+      ],
+      "viabilidade": "baixa",
+      "custos_estimados": {
+        "setup": 5000,
+        "mensal": 2000
+      },
+      "tempo_implementacao": "3-6 semanas"
+    }
+  ],
+  "colaboracoes_envolvidas": [
+    {
+      "especialidades": [
+        "hr",
+        "marketing"
+      ],
+      "personas_envolvidas": {
+        "hr": [
+          {
+            "id": 3,
+            "nome": "Carlos González"
+          }
+        ],
+        "marketing": [
+          {
+            "id": 5,
+            "nome": "Isabella González"
+          }
+        ]
+      },
+      "processos_compartilhados": [
+        "Employer branding",
+        "Internal communications",
+        "Event management"
+      ],
+      "sinergias_identificadas": [
+        "Brand consistency",
+        "Employee advocacy",
+        "Content creation"
+      ],
+      "pontos_friccao": [
+        "Compliance requirements",
+        "Message approval",
+        "Target audiences"
+      ],
+      "ferramentas_comuns": [],
+      "potencial_colaboracao": "baixo"
+    }
+  ],
+  "automacao_participacao": [
+    {
+      "processo": "Recrutamento e Seleção",
+      "especialidade": "hr",
+      "potencial": 70,
+      "ferramentas_necessarias": [
+        "ATS API",
+        "Email automation",
+        "Calendar API",
+        "Assessment tools"
+      ],
+      "roi_estimado": {
+        "economia_mensal": 5600,
+        "custo_implementacao": 10000,
+        "payback_meses": 2,
+        "roi_anual_percent": 572
+      }
+    },
+    {
+      "processo": "Onboarding de Funcionários",
+      "especialidade": "hr",
+      "potencial": 60,
+      "ferramentas_necessarias": [
+        "Workflow automation",
+        "API integration",
+        "Notification system"
+      ],
+      "roi_estimado": {
+        "economia_mensal": 2400,
+        "custo_implementacao": 10000,
+        "payback_meses": 5,
+        "roi_anual_percent": 188
+      }
+    }
+  ],
+  "recomendacoes_especificas": [
+    {
+      "categoria": "resolucao_gargalo",
+      "titulo": "Resolver gargalo: hr",
+      "descricao": "Apenas 1 pessoa com especialidade em hr",
+      "impacto": "crítico",
+      "prazo": "imediato",
+      "acao_recomendada": "Priorizar contratação ou desenvolvimento de backup para esta especialidade"
+    }
+  ],
+  "data_processamento": "2025-11-14T00:03:59.158Z"
+}

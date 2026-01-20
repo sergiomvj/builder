@@ -1,0 +1,224 @@
+{
+  "name": "William (Asst Admin) - Agendamento de Reuniões",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 8 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia útil às 8h para iniciar o processo de agendamento"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.googleCalendar",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "q": "Reunião Direção e Chefes de Departamento",
+        "timeMax": "tomorrow",
+        "timeMin": "today",
+        "operation": "list",
+        "calendarId": "primary"
+      },
+      "typeVersion": 1,
+      "notes": "Verificar se a reunião já está agendada para hoje"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.length === 0;"
+      },
+      "typeVersion": 1,
+      "notes": "Verificar se é necessário agendar a reunião"
+    },
+    {
+      "id": "4",
+      "name": "Action",
+      "type": "n8n-nodes-base.googleCalendar",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "end": "today 09:30",
+        "start": "today 09:00",
+        "summary": "Reunião Direção e Chefes de Departamento",
+        "attendees": [
+          "direcao@arvatech.com",
+          "chefes@arvatech.com"
+        ],
+        "operation": "insert",
+        "calendarId": "primary",
+        "description": "Discussão diária dos pontos críticos e atualizações importantes."
+      },
+      "typeVersion": 1,
+      "notes": "Agendar a reunião no Google Calendar se não estiver agendada"
+    },
+    {
+      "id": "5",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "to": "direcao@arvatech.com, chefes@arvatech.com",
+        "message": "Bom dia, lembrete que nossa reunião diária acontecerá às 9h. Por favor, preparem os pontos de discussão.",
+        "subject": "Lembrete: Reunião Direção e Chefes de Departamento"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email de lembrete no dia da reunião"
+    },
+    {
+      "id": "6",
+      "name": "Action",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#reunioes",
+        "text": "Lembrete: Reunião Direção e Chefes de Departamento hoje às 9h. Verifiquem seus emails para mais detalhes."
+      },
+      "typeVersion": 1,
+      "notes": "Enviar lembrete no Slack no dia da reunião",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1560,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: William (Asst Admin) - Agendamento de Reuniões\nEmpresa: ARVA Tech Solutions\nPersona: William Miller\nTarefa: Agendamento de Reuniões\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5": {
+      "main": [
+        [
+          {
+            "node": "6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "7"
+  },
+  "createdAt": "2025-11-28T17:05:16.103Z",
+  "updatedAt": "2025-11-28T17:05:16.103Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "6e1019b0-7606-4488-920a-a190a098237e",
+    "persona_nome": "William Miller",
+    "task_id": "75073158-adb4-4f68-a8e9-dcf72b7e2eef",
+    "task_title": "Agendamento de Reuniões",
+    "opportunity_id": "ffa57cce-77ac-4e2b-9a77-cdfdf6637ba5",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:16.103Z"
+  }
+}

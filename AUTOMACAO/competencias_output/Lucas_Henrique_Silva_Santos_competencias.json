@@ -1,0 +1,53 @@
+{
+  "persona_id": "f3345572-ad88-44ae-8455-2d3015306377",
+  "full_name": "Lucas Henrique Silva Santos",
+  "role": "Desenvolvedor Full Stack",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Desenvolvimento de aplicações web",
+    "Conhecimento em front-end e back-end",
+    "Experiência com linguagens de programação como JavaScript, Python e SQL",
+    "Conhecimento em frameworks como React, Node.js e Django",
+    "Capacidade de resolver problemas complexos"
+  ],
+  "competencias_comportamentais": [
+    "Trabalho em equipe",
+    "Comunicação eficaz",
+    "Adaptabilidade",
+    "Proatividade",
+    "Gerenciamento do tempo"
+  ],
+  "ferramentas": [
+    "Visual Studio Code",
+    "Git",
+    "Postman",
+    "MongoDB"
+  ],
+  "tarefas_diarias": [
+    "Desenvolvimento de novas funcionalidades",
+    "Manutenção de código existente",
+    "Revisão de código de colegas",
+    "Participação em reuniões de equipe"
+  ],
+  "tarefas_semanais": [
+    "Atualização de documentação técnica",
+    "Testes de integração",
+    "Implementação de melhorias sugeridas pela equipe"
+  ],
+  "tarefas_mensais": [
+    "Avaliação de performance da plataforma",
+    "Identificação de possíveis otimizações",
+    "Participação em treinamentos de novas tecnologias"
+  ],
+  "kpis": [
+    "Satisfação do usuário - 90% de aprovação",
+    "Tempo médio de resposta - 24 horas",
+    "Taxa de conversão de leads - 15%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aumentar conhecimento em novas linguagens de programação",
+    "Participar de cursos ou workshops relacionados à tecnologia",
+    "Aprimorar habilidades de resolução de problemas"
+  ],
+  "generated_at": "2025-12-08T14:41:56.306Z"
+}

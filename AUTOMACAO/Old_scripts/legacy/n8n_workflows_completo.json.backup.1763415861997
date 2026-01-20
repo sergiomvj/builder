@@ -1,0 +1,182 @@
+{
+  "empresa_codigo": "ARVA63",
+  "versao_n8n": "1.0.0",
+  "data_geracao": "2025-11-16T14:48:41.473Z",
+  "workflows": [
+    {
+      "nome": "ARVA63_Automação de Recrutamento",
+      "arquivo": "ARVA63_Automação de Recrutamento.json",
+      "processo_origem": "Recrutamento e Seleção",
+      "especialidade": "hr",
+      "prioridade": "crítica",
+      "complexidade": "média",
+      "nos_count": 6
+    },
+    {
+      "nome": "ARVA63_Automação Gestão de Conteúdo Multiplataforma",
+      "arquivo": "ARVA63_Automação Gestão de Conteúdo Multiplataforma.json",
+      "prioridade": "alta",
+      "complexidade": "média",
+      "nos_count": 8
+    },
+    {
+      "nome": "ARVA63_Automação Lead Nurturing",
+      "arquivo": "ARVA63_Automação Lead Nurturing.json",
+      "prioridade": "alta",
+      "complexidade": "média",
+      "nos_count": 8
+    }
+  ],
+  "estatisticas": {
+    "total_workflows": 3,
+    "workflows_alta_prioridade": 3,
+    "workflows_baixa_complexidade": 0,
+    "especialidades_cobertas": [
+      "hr",
+      null
+    ],
+    "integracoes_unicas": [
+      null
+    ]
+  },
+  "implementacao": {
+    "documentacao": {
+      "empresa_codigo": "ARVA63",
+      "data_geracao": "2025-11-16T14:48:41.472Z",
+      "total_workflows": 3,
+      "guia_instalacao": {
+        "pre_requisitos": [
+          "N8N instalado e configurado",
+          "Credenciais configuradas para integrações",
+          "Webhooks URLs configuradas",
+          "Permissões de API validadas"
+        ],
+        "passos_implementacao": [
+          "1. Importar workflows JSON no N8N",
+          "2. Configurar credenciais de integração",
+          "3. Testar conexões com sistemas externos",
+          "4. Ativar workflows em ambiente de teste",
+          "5. Validar execuções e ajustar parâmetros",
+          "6. Migrar para produção"
+        ],
+        "configuracoes_necessarias": {
+          "variaveis_ambiente": [
+            "N8N_HOST",
+            "N8N_PORT",
+            "N8N_PROTOCOL",
+            "WEBHOOK_URL_BASE"
+          ],
+          "credenciais_integracoes": [
+            "Slack API Token",
+            "Google Service Account",
+            "HubSpot API Key",
+            "Email SMTP Config"
+          ]
+        }
+      },
+      "workflows_implementados": [
+        {
+          "nome": "ARVA63_Automação de Recrutamento",
+          "descricao": "Automatiza processo de triagem e agendamento de entrevistas",
+          "especialidade": "hr",
+          "processo_origem": "Recrutamento e Seleção",
+          "total_nos": 6,
+          "triggers": 1,
+          "integrações": [
+            null
+          ],
+          "complexidade": "alta",
+          "tempo_estimado_setup": "6 horas"
+        },
+        {
+          "nome": "ARVA63_Automação Gestão de Conteúdo Multiplataforma",
+          "descricao": "Workflow automatizado para Gestão de Conteúdo Multiplataforma",
+          "total_nos": 8,
+          "triggers": 1,
+          "integrações": [
+            null
+          ],
+          "complexidade": "alta",
+          "tempo_estimado_setup": "7 horas"
+        },
+        {
+          "nome": "ARVA63_Automação Lead Nurturing",
+          "descricao": "Workflow automatizado para Lead Nurturing",
+          "total_nos": 8,
+          "triggers": 1,
+          "integrações": [
+            null
+          ],
+          "complexidade": "alta",
+          "tempo_estimado_setup": "7 horas"
+        }
+      ],
+      "monitoramento": {
+        "metricas_acompanhar": [
+          "Taxa de sucesso de execuções",
+          "Tempo médio de execução",
+          "Frequência de erros",
+          "Uso de recursos (CPU/Memória)",
+          "Throughput de processamento"
+        ],
+        "alertas_configurar": [
+          "Falha em workflow crítico",
+          "Execução com duração anômala",
+          "Erro de integração externa",
+          "Webhook não responsivo",
+          "Limite de API excedido"
+        ],
+        "manutencao_periodica": [
+          "Revisão mensal de performance",
+          "Atualização de credenciais",
+          "Limpeza de logs antigos",
+          "Teste de disaster recovery",
+          "Backup de workflows"
+        ]
+      },
+      "troubleshooting": {
+        "problemas_comuns": [
+          {
+            "problema": "Webhook não recebe dados",
+            "causa": "URL incorreta ou filtros de rede",
+            "solucao": "Verificar configuração de rede e URL"
+          },
+          {
+            "problema": "Falha na autenticação API",
+            "causa": "Credenciais expiradas ou inválidas",
+            "solucao": "Renovar credenciais e testar conexão"
+          },
+          {
+            "problema": "Timeout em execução",
+            "causa": "Processamento demorado ou API lenta",
+            "solucao": "Otimizar lógica ou aumentar timeout"
+          }
+        ],
+        "logs_importantes": [
+          "Execução de workflows",
+          "Erros de integração",
+          "Performance de nós",
+          "Uso de credenciais"
+        ]
+      }
+    },
+    "ordem_implementacao": [
+      {
+        "nome": "ARVA63_Automação de Recrutamento",
+        "prioridade": "crítica",
+        "ordem": 1
+      },
+      {
+        "nome": "ARVA63_Automação Gestão de Conteúdo Multiplataforma",
+        "prioridade": "alta",
+        "ordem": 2
+      },
+      {
+        "nome": "ARVA63_Automação Lead Nurturing",
+        "prioridade": "alta",
+        "ordem": 3
+      }
+    ],
+    "tempo_total_setup": "20 horas (3 dias úteis)"
+  }
+}

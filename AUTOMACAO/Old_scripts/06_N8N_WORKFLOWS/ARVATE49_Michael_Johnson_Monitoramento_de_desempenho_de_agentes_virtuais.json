@@ -1,0 +1,204 @@
+{
+  "name": "Michael (CTO) - Monitoramento de desempenho de agentes v...",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 10 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 10h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "select",
+        "table": "virtual_agents_performance",
+        "filters": {
+          "date": {
+            "eq": "YESTERDAY()"
+          }
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Buscar desempenho dos agentes virtuais do dia anterior",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_ARVATE49",
+          "name": "Supabase ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(item => ({ ...item, efficiency: item.resolved_queries / item.total_queries }));"
+      },
+      "typeVersion": 1,
+      "notes": "Calcular eficiência de cada agente"
+    },
+    {
+      "id": "4",
+      "name": "Send Message",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#monitoring",
+        "text": "Relatório diário de desempenho dos agentes virtuais disponível."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar no Slack sobre a disponibilidade do relatório",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Update Spreadsheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "spreadsheetId": "1a2b3c",
+        "range": "Sheet1!A:D"
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar planilha do Google Sheets com os novos dados de eficiência",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Michael (CTO) - Monitoramento de desempenho de agentes v...\nEmpresa: ARVA Tech Solutions\nPersona: Michael Johnson\nTarefa: Monitoramento de desempenho de agentes virtuais\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:22.725Z",
+  "updatedAt": "2025-11-28T17:05:22.725Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "fe5d76ce-f793-4f2a-9df0-1e5b6d756d10",
+    "persona_nome": "Michael Johnson",
+    "task_id": "2d2bcd82-c172-4136-862d-91974eb19c79",
+    "task_title": "Monitoramento de desempenho de agentes virtuais",
+    "opportunity_id": "53bd1a76-61e4-4c1e-adaa-eccbbcf5f7cc",
+    "automation_score": 72,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:22.725Z"
+  }
+}

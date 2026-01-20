@@ -1,0 +1,226 @@
+{
+  "name": "ARVATEST_Automação Lead Nurturing",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger Inicial",
+      "type": "n8n-nodes-base.webhook",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "path": "lead-nurturing",
+        "httpMethod": "POST",
+        "responseMode": "onReceived"
+      },
+      "typeVersion": 1,
+      "notes": "Gerado automaticamente para ARVATEST",
+      "webhookId": "ARVATEST_lead-nurturing"
+    },
+    {
+      "id": "2",
+      "name": "Processar Captura",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "functionCode": "// Processamento para: Captura\nreturn items;"
+      },
+      "typeVersion": 1,
+      "notes": "Gerado automaticamente para ARVATEST"
+    },
+    {
+      "id": "3",
+      "name": "Processar Segmentação",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "// Processamento para: Segmentação\nreturn items;"
+      },
+      "typeVersion": 1,
+      "notes": "Gerado automaticamente para ARVATEST"
+    },
+    {
+      "id": "4",
+      "name": "Processar Scoring",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "functionCode": "// Processamento para: Scoring\nreturn items;"
+      },
+      "typeVersion": 1,
+      "notes": "Gerado automaticamente para ARVATEST"
+    },
+    {
+      "id": "5",
+      "name": "Processar Campanhas",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "functionCode": "// Processamento para: Campanhas\nreturn items;"
+      },
+      "typeVersion": 1,
+      "notes": "Gerado automaticamente para ARVATEST"
+    },
+    {
+      "id": "6",
+      "name": "Processar Conversão",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "functionCode": "// Processamento para: Conversão\nreturn items;"
+      },
+      "typeVersion": 1,
+      "notes": "Gerado automaticamente para ARVATEST"
+    },
+    {
+      "id": "7",
+      "name": "Processar Análise",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1560,
+        300
+      ],
+      "parameters": {
+        "functionCode": "// Processamento para: Análise\nreturn items;"
+      },
+      "typeVersion": 1,
+      "notes": "Gerado automaticamente para ARVATEST"
+    },
+    {
+      "id": "8",
+      "name": "Notificar Conclusão",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1780,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#workflows",
+        "text": "Workflow Lead Nurturing executado com sucesso!"
+      },
+      "typeVersion": 1,
+      "notes": "Gerado automaticamente para ARVATEST",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATEST",
+          "name": "Slack ARVATEST"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5": {
+      "main": [
+        [
+          {
+            "node": "6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "6": {
+      "main": [
+        [
+          {
+            "node": "7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "7": {
+      "main": [
+        [
+          {
+            "node": "8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": "ARVATEST_Error_Handler",
+    "timezone": "America/Sao_Paulo"
+  },
+  "createdAt": "2025-11-12T17:16:07.404Z",
+  "updatedAt": "2025-11-12T17:16:07.405Z",
+  "versionId": "1",
+  "meta": {
+    "empresa": "ARVATEST",
+    "versao": "1.0.0",
+    "autor": "VCM Auto-Generator",
+    "data_criacao": "2025-11-12T17:16:07.417Z",
+    "descricao": "Workflow automatizado para Lead Nurturing"
+  }
+}

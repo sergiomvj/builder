@@ -1,0 +1,57 @@
+{
+  "persona_id": "53262bb0-5382-403d-9f0a-590881f4ba1d",
+  "full_name": "[Placeholder 7] Arquiteto de Soluções IA Pleno",
+  "role": "Arquiteto de Soluções IA Pleno",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Design de arquiteturas de soluções IA escaláveis e integráveis",
+    "Desenvolvimento e otimização de modelos de Machine Learning e Deep Learning",
+    "Integração de APIs de IA com sistemas legados e cloud-native",
+    "Gerenciamento de pipelines de dados para IA (MLOps)",
+    "Implementação de soluções de IA generativa e visão computacional"
+  ],
+  "competencias_comportamentais": [
+    "Pensamento estratégico e visão sistêmica",
+    "Resolução de problemas complexos em ambientes incertos",
+    "Comunicação técnica eficaz com stakeholders não técnicos",
+    "Colaboração interdisciplinar em equipes ágeis",
+    "Aprendizado contínuo e adaptação a novas tecnologias IA"
+  ],
+  "ferramentas": [
+    "TensorFlow e Keras",
+    "PyTorch",
+    "AWS SageMaker ou Azure ML",
+    "Kubernetes e Docker",
+    "MLflow e Kubeflow para MLOps"
+  ],
+  "tarefas_diarias": [
+    "Revisar e refinar designs de arquitetura IA para 2-3 projetos (2h/dia)",
+    "Analisar métricas de performance de modelos em produção (1h/dia)",
+    "Colaborar em code reviews de pipelines ML (1h/dia)",
+    "Documentar componentes de soluções IA (30min/dia)",
+    "Monitorar alertas de sistemas IA em produção (30min/dia)"
+  ],
+  "tarefas_semanais": [
+    "Participar de reuniões de planejamento ágil e refinement de backlog",
+    "Realizar proof-of-concepts para novas tecnologias IA",
+    "Atualizar documentação de arquiteturas e handover para equipes",
+    "Mentorar desenvolvedores juniores em práticas de IA"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatório de performance de soluções IA implementadas",
+    "Conduzir auditoria de segurança e compliance em arquiteturas IA",
+    "Planejar e executar treinamentos internos sobre novas ferramentas IA"
+  ],
+  "kpis": [
+    "Tempo médio de deployment de soluções IA: < 10 dias",
+    "Taxa de uptime de soluções IA em produção: > 99%",
+    "Satisfação dos stakeholders (NPS): > 8/10",
+    "Redução de custos operacionais por solução IA: 20% ao ano"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação AWS Certified Machine Learning - Specialty em 6 meses",
+    "Liderar 2 projetos de IA generativa end-to-end em 12 meses",
+    "Implementar práticas avançadas de MLOps em 80% dos projetos atuais"
+  ],
+  "generated_at": "2025-12-01T16:18:01.235Z"
+}

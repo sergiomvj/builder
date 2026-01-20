@@ -1,0 +1,53 @@
+{
+  "persona_id": "470b238f-0865-4149-b30a-f39a6d023952",
+  "full_name": "Khalid Al-Mansoori",
+  "role": "Diretor Comercial",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "Conhecimento avançado em IA e agentes autônomos",
+    "Gestão de pipelines de vendas SaaS",
+    "Análise de dados de mercado e funil comercial",
+    "Estratégias de precificação e monetização de plataformas tech",
+    "Integração e demonstração de soluções de software enterprise"
+  ],
+  "competencias_comportamentais": [
+    "Liderança estratégica e motivacional",
+    "Negociação de alto impacto",
+    "Comunicação persuasiva e storytelling",
+    "Orientação para resultados e accountability",
+    "Adaptabilidade em ambientes de alta inovação"
+  ],
+  "ferramentas": [
+    "Salesforce",
+    "HubSpot",
+    "Tableau",
+    "Google Workspace"
+  ],
+  "tarefas_diarias": [
+    "Revisar pipeline de vendas e oportunidades",
+    "Realizar reuniões one-on-one com equipe comercial",
+    "Prospectar e qualificar leads estratégicos",
+    "Monitorar métricas de performance em tempo real"
+  ],
+  "tarefas_semanais": [
+    "Coaching e treinamento da equipe de vendas",
+    "Reuniões de alinhamento com liderança executiva",
+    "Análise e relatório de funil semanal"
+  ],
+  "tarefas_mensais": [
+    "Revisão de metas e ajustes estratégicos",
+    "Planejamento de campanhas de prospecção",
+    "Participação em eventos de networking e demos"
+  ],
+  "kpis": [
+    "KPI 1: Receita Comercial Gerada - US$ 5M/ano",
+    "KPI 2: Taxa de Conversão de Leads - 25%",
+    "KPI 3: Crescimento do Pipeline - 40% QoQ"
+  ],
+  "objetivos_desenvolvimento": [
+    "Expandir presença em mercados enterprise nos EUA",
+    "Aumentar retenção de clientes em 15%",
+    "Desenvolver parcerias estratégicas com integradores tech"
+  ],
+  "generated_at": "2025-12-08T22:24:31.274Z"
+}

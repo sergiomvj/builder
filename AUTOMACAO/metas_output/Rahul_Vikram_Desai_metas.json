@@ -1,0 +1,59 @@
+{
+  "persona_id": "2055ba92-2029-44ba-b381-abbaed2866e9",
+  "full_name": "Rahul Vikram Desai",
+  "role": "Diretor de Produto",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "metas": [
+    {
+      "titulo": "Atingir 75% de Taxa de Adoção de Agentes",
+      "descricao": "Implementar roadmap de features para agentes de IA, monitorando adoção via dashboard interno para alcançar 75% de usuários ativos adotando pelo menos um agente.",
+      "categoria": "kpi",
+      "valor_alvo": 75,
+      "unidade_medida": "%",
+      "data_prazo": "2025-04-01",
+      "prioridade": 5,
+      "vinculada_kpi": "Taxa de Adoção de Agentes"
+    },
+    {
+      "titulo": "Alcançar 85% de Retenção de Usuários Ativos",
+      "descricao": "Lançar programa de onboarding e feedback loops para reduzir churn, visando retenção mensal de 85% em usuários ativos mensais.",
+      "categoria": "kpi",
+      "valor_alvo": 85,
+      "unidade_medida": "%",
+      "data_prazo": "2025-04-01",
+      "prioridade": 5,
+      "vinculada_kpi": "Retenção de Usuários Ativos"
+    },
+    {
+      "titulo": "Expandir Receita de Produto em 20% MoM",
+      "descricao": "Otimizar pricing e upsell features para novos módulos de IA, alcançando crescimento médio mensal de 20% na receita de produto ao longo de 6 meses.",
+      "categoria": "kpi",
+      "valor_alvo": 20,
+      "unidade_medida": "%",
+      "data_prazo": "2025-04-01",
+      "prioridade": 4,
+      "vinculada_kpi": "Crescimento de Receita de Produto"
+    },
+    {
+      "titulo": "Completar 50 horas em IA Multiagente",
+      "descricao": "Realizar treinamentos avançados e projetos práticos em ecossistemas de IA multiagente via plataformas como Coursera e hands-on com frameworks como LangChain.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 50,
+      "unidade_medida": "horas",
+      "data_prazo": "2025-03-01",
+      "prioridade": 4,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Expandir Rede com 30 Parcerias Tech Autônoma",
+      "descricao": "Participar de 5 eventos setoriais e LinkedIn outreach para adicionar 30 contatos qualificados em tecnologia autônoma, visando colaborações potenciais.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 30,
+      "unidade_medida": "contatos",
+      "data_prazo": "2025-02-01",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    }
+  ],
+  "generated_at": "2025-12-08T22:27:46.273Z"
+}

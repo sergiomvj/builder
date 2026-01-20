@@ -1,0 +1,237 @@
+{
+  "persona": {
+    "id": 6,
+    "nome": "José Hernández",
+    "categoria": "especialistas",
+    "especialidade": "youtube"
+  },
+  "processos_aplicaveis": [
+    {
+      "id": "processo_produção_de_vídeo",
+      "nome": "Produção de Vídeo",
+      "categoria": "youtube",
+      "etapas": [
+        "Planejamento",
+        "Roteiro",
+        "Gravação",
+        "Edição",
+        "Revisão",
+        "Upload"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 6,
+          "nome": "José Hernández",
+          "categoria": "especialistas",
+          "especialidade": "youtube",
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 7,
+          "nome": "Gabriela Rodríguez",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 8,
+          "nome": "Gabriela Silva",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 9,
+          "nome": "Roberto Hernández",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "Premiere Pro",
+        "After Effects",
+        "Photoshop",
+        "YouTube Studio"
+      ],
+      "ferramentas_disponiveis": [
+        "Adobe Premiere Pro",
+        "Final Cut Pro",
+        "Adobe After Effects",
+        "Photoshop",
+        "YouTube Studio",
+        "TubeBuddy",
+        "VidIQ",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Power BI",
+        "Tableau"
+      ],
+      "cobertura_ferramentas": 100,
+      "automacao_potencial": 35,
+      "kpis": [
+        "Views",
+        "Watch time",
+        "Engagement",
+        "Subscriber growth"
+      ],
+      "viabilidade": "alta",
+      "custos_estimados": {
+        "setup": 12000,
+        "mensal": 5000
+      },
+      "tempo_implementacao": "3-6 semanas"
+    },
+    {
+      "id": "processo_otimização_de_canal",
+      "nome": "Otimização de Canal",
+      "categoria": "youtube",
+      "etapas": [
+        "Análise métricas",
+        "Pesquisa palavras-chave",
+        "Otimização SEO",
+        "A/B test thumbnails",
+        "Ajustes conteúdo"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 6,
+          "nome": "José Hernández",
+          "categoria": "especialistas",
+          "especialidade": "youtube",
+          "nivel_competencia": "expert"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "YouTube Analytics",
+        "TubeBuddy",
+        "VidIQ",
+        "Photoshop"
+      ],
+      "ferramentas_disponiveis": [
+        "Adobe Premiere Pro",
+        "Final Cut Pro",
+        "Adobe After Effects",
+        "Photoshop",
+        "YouTube Studio",
+        "TubeBuddy",
+        "VidIQ"
+      ],
+      "cobertura_ferramentas": 75,
+      "automacao_potencial": 55,
+      "kpis": [
+        "CTR",
+        "Retention rate",
+        "Search ranking",
+        "Revenue"
+      ],
+      "viabilidade": "média",
+      "custos_estimados": {
+        "setup": 5000,
+        "mensal": 2000
+      },
+      "tempo_implementacao": "3-6 semanas"
+    },
+    {
+      "id": "processo_gestão_de_comunidade",
+      "nome": "Gestão de Comunidade",
+      "categoria": "youtube",
+      "etapas": [
+        "Moderação comentários",
+        "Resposta audiência",
+        "Engagement posts",
+        "Live streams",
+        "Community polls"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 6,
+          "nome": "José Hernández",
+          "categoria": "especialistas",
+          "especialidade": "youtube",
+          "nivel_competencia": "expert"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "YouTube Studio",
+        "Social Media Tools",
+        "Analytics"
+      ],
+      "ferramentas_disponiveis": [
+        "Adobe Premiere Pro",
+        "Final Cut Pro",
+        "Adobe After Effects",
+        "Photoshop",
+        "YouTube Studio",
+        "TubeBuddy",
+        "VidIQ"
+      ],
+      "cobertura_ferramentas": 33,
+      "automacao_potencial": 45,
+      "kpis": [
+        "Engagement rate",
+        "Community growth",
+        "Sentiment analysis"
+      ],
+      "viabilidade": "baixa",
+      "custos_estimados": {
+        "setup": 5000,
+        "mensal": 2000
+      },
+      "tempo_implementacao": "3-6 semanas"
+    }
+  ],
+  "colaboracoes_envolvidas": [
+    {
+      "especialidades": [
+        "midias_sociais",
+        "youtube"
+      ],
+      "personas_envolvidas": {
+        "midias_sociais": [
+          {
+            "id": 4,
+            "nome": "Gabriela González"
+          }
+        ],
+        "youtube": [
+          {
+            "id": 6,
+            "nome": "José Hernández"
+          }
+        ]
+      },
+      "processos_compartilhados": [
+        "Content planning",
+        "Cross-promotion",
+        "Analytics"
+      ],
+      "sinergias_identificadas": [
+        "Content repurposing",
+        "Audience growth",
+        "Brand consistency"
+      ],
+      "pontos_friccao": [
+        "Platform-specific optimization",
+        "Resource allocation",
+        "Content formats"
+      ],
+      "ferramentas_comuns": [],
+      "potencial_colaboracao": "baixo"
+    }
+  ],
+  "automacao_participacao": [],
+  "recomendacoes_especificas": [
+    {
+      "categoria": "resolucao_gargalo",
+      "titulo": "Resolver gargalo: youtube",
+      "descricao": "Apenas 1 pessoa com especialidade em youtube",
+      "impacto": "crítico",
+      "prazo": "imediato",
+      "acao_recomendada": "Priorizar contratação ou desenvolvimento de backup para esta especialidade"
+    }
+  ],
+  "data_processamento": "2025-11-14T00:03:59.164Z"
+}

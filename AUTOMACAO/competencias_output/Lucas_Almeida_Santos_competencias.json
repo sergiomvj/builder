@@ -1,0 +1,53 @@
+{
+  "persona_id": "2363c5ea-9ca1-4f75-b0cc-bf321129160f",
+  "full_name": "Lucas Almeida Santos",
+  "role": "Gerente de Operações",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Gestão de projetos",
+    "Gestão de equipe",
+    "Análise de dados",
+    "Conhecimento em legislação de imigração",
+    "Fluência em inglês"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Tomada de decisão",
+    "Resolução de problemas",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Microsoft Excel",
+    "Trello",
+    "Slack",
+    "Google Analytics"
+  ],
+  "tarefas_diarias": [
+    "Coordenar equipe",
+    "Analisar relatórios de desempenho",
+    "Participar de reuniões estratégicas",
+    "Monitorar indicadores de performance"
+  ],
+  "tarefas_semanais": [
+    "Elaborar planos de ação",
+    "Realizar feedbacks individuais com a equipe",
+    "Atualizar processos internos"
+  ],
+  "tarefas_mensais": [
+    "Apresentar resultados para a diretoria",
+    "Implementar melhorias nos processos",
+    "Participar de treinamentos de capacitação"
+  ],
+  "kpis": [
+    "Taxa de conversão de clientes - 20%",
+    "Satisfação dos clientes - 90%",
+    "Redução de custos operacionais - 15%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de gestão",
+    "Ampliar networking na área de imigração",
+    "Participar de cursos de atualização em tecnologia"
+  ],
+  "generated_at": "2025-12-08T14:40:49.914Z"
+}

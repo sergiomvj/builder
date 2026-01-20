@@ -1,0 +1,83 @@
+{
+  "persona": {
+    "nome": "José Hernández",
+    "categoria": "especialistas",
+    "especialidade": "youtube",
+    "experiencia": 18
+  },
+  "especificacoes_tecnicas": {
+    "ferramentas_utilizadas": [
+      "Adobe Premiere Pro",
+      "Final Cut Pro",
+      "Adobe After Effects",
+      "Photoshop",
+      "YouTube Studio",
+      "TubeBuddy",
+      "VidIQ"
+    ],
+    "categorias_aplicaveis": [],
+    "requisitos_personalizados": {
+      "especialidade": "youtube",
+      "competencias_tecnicas": [
+        "Produção de Vídeo",
+        "Edição de Vídeo",
+        "YouTube Analytics",
+        "SEO para YouTube",
+        "Marketing de Conteúdo",
+        "Storytelling Digital",
+        "Live Streaming"
+      ],
+      "ferramentas_principais": [
+        "Adobe Premiere Pro",
+        "Final Cut Pro",
+        "Adobe After Effects",
+        "Photoshop",
+        "YouTube Studio",
+        "TubeBuddy",
+        "VidIQ"
+      ],
+      "requisitos_especificos": [
+        "Storage para vídeos: mínimo 2TB",
+        "Upload speed: mínimo 100 Mbps",
+        "GPU para edição: GTX 1660 ou superior",
+        "Backup automático de projetos"
+      ],
+      "integracao_sugerida": [
+        "YouTube Data API v3",
+        "Google Drive API",
+        "Adobe Creative Cloud APIs",
+        "Analytics Reporting API"
+      ],
+      "documentacao_necessaria": [
+        "API Integration Guide",
+        "System Requirements Document",
+        "Security Configuration Guide",
+        "User Training Materials",
+        "Troubleshooting Handbook"
+      ]
+    },
+    "integracao_prioridade": "baixa"
+  },
+  "documentacao_tecnica": {
+    "apis_necessarias": [],
+    "requisitos_sistema": {
+      "computacao": "2 vCPU, 4GB RAM mínimo",
+      "armazenamento": "50GB SSD mínimo",
+      "rede": "10 Mbps mínimo",
+      "seguranca": [
+        "SSL/TLS",
+        "OAuth 2.0"
+      ],
+      "backup": "diário automático"
+    },
+    "guias_implementacao": [
+      "Setup e Configuração Inicial",
+      "Integração de APIs",
+      "Configuração de Segurança",
+      "Testes de Conectividade",
+      "Deploy em Produção",
+      "Monitoramento e Manutenção"
+    ]
+  },
+  "data_processamento": "2025-11-15T12:52:57.675Z"
+}

@@ -1,0 +1,53 @@
+{
+  "persona_id": "9876b3f7-dced-4b9e-8287-745a300ac3d6",
+  "full_name": "[Placeholder 8] Gerente de Dados e Analytics",
+  "role": "Gerente de Dados e Analytics",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "SQL Avançado",
+    "Python e R para Análise de Dados",
+    "Machine Learning e IA",
+    "Data Warehousing e ETL",
+    "Business Intelligence e Visualização de Dados"
+  ],
+  "competencias_comportamentais": [
+    "Liderança de Equipes",
+    "Comunicação Eficaz",
+    "Pensamento Estratégico e Analítico",
+    "Gestão de Projetos",
+    "Resolução de Problemas Complexos"
+  ],
+  "ferramentas": [
+    "Tableau",
+    "Power BI",
+    "Google BigQuery",
+    "AWS ou Azure"
+  ],
+  "tarefas_diarias": [
+    "Monitorar dashboards e métricas chave",
+    "Responder consultas da equipe e stakeholders",
+    "Revisar qualidade de dados",
+    "Acompanhar alertas de performance"
+  ],
+  "tarefas_semanais": [
+    "Reuniões de alinhamento com equipe",
+    "Análise de tendências e anomalias",
+    "Planejamento de entregas semanais"
+  ],
+  "tarefas_mensais": [
+    "Gerar relatórios executivos",
+    "Revisão de KPIs e metas",
+    "Treinamentos e upskilling da equipe"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Acurácia de Dados - 98%",
+    "KPI 2: Tempo Médio de Entrega de Insights - <48h",
+    "KPI 3: Adoção de Ferramentas de Analytics - 90%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação em AWS Certified Data Analytics",
+    "Aprofundar conhecimentos em GenAI para analytics preditivos",
+    "Desenvolver habilidades avançadas em gestão ágil de dados"
+  ],
+  "generated_at": "2025-12-02T18:10:07.042Z"
+}

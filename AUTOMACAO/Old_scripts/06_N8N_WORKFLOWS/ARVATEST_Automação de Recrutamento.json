@@ -1,0 +1,190 @@
+{
+  "name": "ARVATEST_Automação de Recrutamento",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Nova Candidatura",
+      "type": "n8n-nodes-base.webhook",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "path": "nova-candidatura",
+        "httpMethod": "POST",
+        "responseMode": "onReceived"
+      },
+      "typeVersion": 1,
+      "notes": "Gerado automaticamente para ARVATEST",
+      "webhookId": "ARVATEST_nova-candidatura"
+    },
+    {
+      "id": "2",
+      "name": "Processar Currículo",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(item => ({ ...item, score: calculateResumeScore(item.resume) }));"
+      },
+      "typeVersion": 1,
+      "notes": "Gerado automaticamente para ARVATEST"
+    },
+    {
+      "id": "3",
+      "name": "Score Qualificação",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "{{ $node.score >= 75 }}",
+              "operation": "equal",
+              "value2": "true"
+            }
+          ]
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Gerado automaticamente para ARVATEST"
+    },
+    {
+      "id": "4",
+      "name": "Enviar Email Aprovado",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "{{ $json.email }}",
+        "subject": "Próximas etapas - Processo seletivo",
+        "message": "Enviado automaticamente pelo VCM"
+      },
+      "typeVersion": 1,
+      "notes": "Gerado automaticamente para ARVATEST"
+    },
+    {
+      "id": "5",
+      "name": "Agendar Entrevista",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "operation": "create"
+      },
+      "typeVersion": 1,
+      "notes": "Gerado automaticamente para ARVATEST"
+    },
+    {
+      "id": "6",
+      "name": "Notificar RH",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#recrutamento",
+        "text": "Nova entrevista agendada: {{ $json.name }}"
+      },
+      "typeVersion": 1,
+      "notes": "Gerado automaticamente para ARVATEST",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATEST",
+          "name": "Slack ARVATEST"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5": {
+      "main": [
+        [
+          {
+            "node": "6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": "ARVATEST_Error_Handler",
+    "timezone": "America/Sao_Paulo"
+  },
+  "createdAt": "2025-11-12T17:16:07.404Z",
+  "updatedAt": "2025-11-12T17:16:07.405Z",
+  "versionId": "1",
+  "meta": {
+    "empresa": "ARVATEST",
+    "versao": "1.0.0",
+    "autor": "VCM Auto-Generator",
+    "data_criacao": "2025-11-12T17:16:07.416Z",
+    "descricao": "Automatiza processo de triagem e agendamento de entrevistas",
+    "especialidade": "hr",
+    "processo_origem": "Recrutamento e Seleção"
+  }
+}

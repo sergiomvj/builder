@@ -1,0 +1,53 @@
+{
+  "persona_id": "f07bfcf8-7065-41a4-bafb-6dee37122b9a",
+  "full_name": "Sarah Jenkins",
+  "role": "Gerente de RH",
+  "empresa_id": "a2845f62-59e2-48b2-8f89-8bfc6c33193f",
+  "competencias_tecnicas": [
+    "Conhecimento em gestão de recursos humanos",
+    "Experiência em recrutamento e seleção",
+    "Habilidade em desenvolvimento de treinamentos",
+    "Conhecimento em legislação trabalhista",
+    "Experiência em gestão de conflitos"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação eficaz",
+    "Liderança",
+    "Resolução de problemas",
+    "Trabalho em equipe",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Sistemas de gestão de RH",
+    "Plataformas de recrutamento online",
+    "Ferramentas de avaliação de desempenho",
+    "Softwares de treinamento online"
+  ],
+  "tarefas_diarias": [
+    "Conduzir entrevistas de seleção",
+    "Elaborar planos de treinamento",
+    "Gerenciar processos de admissão e demissão",
+    "Resolver questões relacionadas ao clima organizacional"
+  ],
+  "tarefas_semanais": [
+    "Análise de indicadores de RH",
+    "Realização de reuniões com a equipe",
+    "Acompanhamento de metas individuais"
+  ],
+  "tarefas_mensais": [
+    "Elaboração de relatórios de performance",
+    "Realização de pesquisas de clima organizacional",
+    "Revisão de políticas internas"
+  ],
+  "kpis": [
+    "Taxa de retenção de talentos - 90%",
+    "Índice de satisfação dos colaboradores - 85%",
+    "Redução de turnover - 10%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em gestão de conflitos",
+    "Participar de cursos de atualização em legislação trabalhista",
+    "Desenvolver estratégias de retenção de talentos"
+  ],
+  "generated_at": "2025-12-05T17:49:28.370Z"
+}

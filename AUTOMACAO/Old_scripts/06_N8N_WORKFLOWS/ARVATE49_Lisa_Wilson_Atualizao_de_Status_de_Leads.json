@@ -1,0 +1,186 @@
+{
+  "name": "Lisa (SDR Senior) - Atualização de Status de Leads",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 9h para iniciar a atualização dos status dos leads"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "table": "leads",
+        "filters": {
+          "status": "attempted_contact"
+        },
+        "operation": "select"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar leads com status de tentativa de contato"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(lead => ({ ...lead, note: `Última tentativa de contato em ${new Date(lead.last_contact_attempt).toLocaleDateString()}.` }));"
+      },
+      "typeVersion": 1,
+      "notes": "Adicionar nota sobre a última tentativa de contato"
+    },
+    {
+      "id": "4",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "set": {
+          "notes": "{{ $json.note }}",
+          "status": "contacted"
+        },
+        "table": "leads",
+        "operation": "update"
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar o status do lead para 'contacted' e adicionar a nota relevante"
+    },
+    {
+      "id": "5",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "to": "{{ $json.email }}",
+        "message": "Olá, o status do seu lead foi atualizado para 'contactado'. Verifique o CRM para mais detalhes.",
+        "subject": "Status do Lead Atualizado"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email de notificação sobre a atualização do status"
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Lisa (SDR Senior) - Atualização de Status de Leads\nEmpresa: ARVA Tech Solutions\nPersona: Lisa Wilson\nTarefa: Atualização de Status de Leads\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:21.793Z",
+  "updatedAt": "2025-11-28T17:05:21.793Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "32bfbb7a-148b-4113-9fb6-9caff688efcc",
+    "persona_nome": "Lisa Wilson",
+    "task_id": "5c64daac-2800-46f6-8998-a329faa3dc23",
+    "task_title": "Atualização de Status de Leads",
+    "opportunity_id": "58400351-05e4-4c09-a41f-93ea2ca41d5c",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:21.793Z"
+  }
+}

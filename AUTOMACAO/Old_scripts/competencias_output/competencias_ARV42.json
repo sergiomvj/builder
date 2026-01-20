@@ -1,0 +1,411 @@
+{
+  "empresa": {
+    "id": "42c29120-895d-4466-8aaa-abc47c91d507",
+    "codigo": "ARV42",
+    "nome": "ARVA Tech Solutions"
+  },
+  "data_processamento": "2025-11-14T19:46:00.750Z",
+  "total_personas": 15,
+  "personas": {
+    "CEO": {
+      "info": {
+        "nome": "Chief Executive Officer",
+        "role": "CEO",
+        "department": "Executive",
+        "specialty": "Leadership"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Liderança Estratégica",
+          "Gestão Empresarial",
+          "Visão de Negócios",
+          "Tomada de Decisão"
+        ],
+        "comportamentais": [
+          "Liderança Visionária",
+          "Comunicação Estratégica",
+          "Resiliência",
+          "Inspiração"
+        ]
+      },
+      "nivel_experiencia": "senior",
+      "areas_foco": [
+        "Executive",
+        "Leadership"
+      ]
+    },
+    "CFO": {
+      "info": {
+        "nome": "Chief Financial Officer",
+        "role": "CFO",
+        "department": "Finance",
+        "specialty": "Finance"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Análise Financeira",
+          "Controladoria",
+          "Gestão de Riscos",
+          "Planejamento Financeiro"
+        ],
+        "comportamentais": [
+          "Precisão Analítica",
+          "Pensamento Estratégico",
+          "Comunicação Assertiva",
+          "Orientação a Dados"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "areas_foco": [
+        "Finance"
+      ]
+    },
+    "CMO": {
+      "info": {
+        "nome": "Chief Marketing Officer",
+        "role": "CMO",
+        "department": "Marketing",
+        "specialty": "Marketing"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Marketing Digital",
+          "Estratégia de Marca",
+          "Growth Marketing",
+          "Marketing Analytics"
+        ],
+        "comportamentais": [
+          "Criatividade Estratégica",
+          "Orientação ao Cliente",
+          "Visão de Mercado",
+          "Inovação"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "areas_foco": [
+        "Marketing"
+      ]
+    },
+    "HRM": {
+      "info": {
+        "nome": "HR Manager",
+        "role": "Manager",
+        "department": "HR",
+        "specialty": "Human Resources"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Gestão de Equipes",
+          "Gestão de Projetos",
+          "KPIs e Métricas",
+          "Processos Operacionais"
+        ],
+        "comportamentais": [
+          "Liderança de Equipe",
+          "Comunicação Eficaz",
+          "Orientação a Resultados",
+          "Desenvolvimento de Pessoas"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "areas_foco": [
+        "HR",
+        "Human Resources"
+      ]
+    },
+    "SA": {
+      "info": {
+        "nome": "Systems Analyst",
+        "role": "Analyst",
+        "department": "IT",
+        "specialty": "Systems Analysis"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Análise de Dados",
+          "Modelagem de Processos",
+          "Documentação Técnica",
+          "Ferramentas de Análise"
+        ],
+        "comportamentais": [
+          "Pensamento Analítico",
+          "Atenção aos Detalhes",
+          "Resolução de Problemas",
+          "Comunicação Técnica"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "areas_foco": [
+        "IT",
+        "Systems Analysis"
+      ]
+    },
+    "EA": {
+      "info": {
+        "nome": "Executive Assistant",
+        "role": "Assistant",
+        "department": "Executive",
+        "specialty": "Administrative Support"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Suporte Administrativo",
+          "Organização de Processos",
+          "Ferramentas de Produtividade",
+          "Gestão de Agenda"
+        ],
+        "comportamentais": [
+          "Organização",
+          "Proatividade",
+          "Comunicação Clara",
+          "Suporte Eficiente"
+        ]
+      },
+      "nivel_experiencia": "junior",
+      "areas_foco": [
+        "Executive",
+        "Administrative Support"
+      ]
+    },
+    "HRA": {
+      "info": {
+        "nome": "HR Assistant",
+        "role": "Assistant",
+        "department": "HR",
+        "specialty": "HR Support"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Suporte Administrativo",
+          "Organização de Processos",
+          "Ferramentas de Produtividade",
+          "Gestão de Agenda"
+        ],
+        "comportamentais": [
+          "Organização",
+          "Proatividade",
+          "Comunicação Clara",
+          "Suporte Eficiente"
+        ]
+      },
+      "nivel_experiencia": "junior",
+      "areas_foco": [
+        "HR",
+        "HR Support"
+      ]
+    },
+    "PM": {
+      "info": {
+        "nome": "Project Manager",
+        "role": "Manager",
+        "department": "PMO",
+        "specialty": "Project Management"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Gestão de Equipes",
+          "Gestão de Projetos",
+          "KPIs e Métricas",
+          "Processos Operacionais"
+        ],
+        "comportamentais": [
+          "Liderança de Equipe",
+          "Comunicação Eficaz",
+          "Orientação a Resultados",
+          "Desenvolvimento de Pessoas"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "areas_foco": [
+        "PMO",
+        "Project Management"
+      ]
+    },
+    "ITA": {
+      "info": {
+        "nome": "IT Assistant",
+        "role": "Assistant",
+        "department": "IT",
+        "specialty": "IT Support"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Suporte Administrativo",
+          "Organização de Processos",
+          "Ferramentas de Produtividade",
+          "Gestão de Agenda"
+        ],
+        "comportamentais": [
+          "Organização",
+          "Proatividade",
+          "Comunicação Clara",
+          "Suporte Eficiente"
+        ]
+      },
+      "nivel_experiencia": "junior",
+      "areas_foco": [
+        "IT",
+        "IT Support"
+      ]
+    },
+    "CTO": {
+      "info": {
+        "nome": "Chief Technology Officer",
+        "role": "CTO",
+        "department": "Technology",
+        "specialty": "Technology"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Arquitetura de Sistemas",
+          "Gestão de TI",
+          "Inovação Tecnológica",
+          "DevOps"
+        ],
+        "comportamentais": [
+          "Pensamento Analítico",
+          "Orientação à Inovação",
+          "Liderança Técnica",
+          "Resolução de Problemas"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "areas_foco": [
+        "Technology"
+      ]
+    },
+    "DMS": {
+      "info": {
+        "nome": "Digital Marketing Specialist",
+        "role": "Specialist",
+        "department": "Marketing",
+        "specialty": "Digital Marketing"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Especialização Técnica",
+          "Melhores Práticas",
+          "Ferramentas Especializadas",
+          "Metodologias Avançadas"
+        ],
+        "comportamentais": [
+          "Expertise Técnica",
+          "Aprendizagem Contínua",
+          "Precisão",
+          "Orientação à Qualidade"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "areas_foco": [
+        "Marketing",
+        "Digital Marketing"
+      ]
+    },
+    "SA_SALES": {
+      "info": {
+        "nome": "Sales Assistant",
+        "role": "Assistant",
+        "department": "Sales",
+        "specialty": "Sales Support"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Suporte Administrativo",
+          "Organização de Processos",
+          "Ferramentas de Produtividade",
+          "Gestão de Agenda"
+        ],
+        "comportamentais": [
+          "Organização",
+          "Proatividade",
+          "Comunicação Clara",
+          "Suporte Eficiente"
+        ]
+      },
+      "nivel_experiencia": "junior",
+      "areas_foco": [
+        "Sales",
+        "Sales Support"
+      ]
+    },
+    "COO": {
+      "info": {
+        "nome": "Chief Operating Officer",
+        "role": "COO",
+        "department": "Operations",
+        "specialty": "Operations"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Gestão Operacional",
+          "Otimização de Processos",
+          "Gestão de Projetos",
+          "Qualidade Total"
+        ],
+        "comportamentais": [
+          "Eficiência Operacional",
+          "Liderança Executiva",
+          "Orientação a Resultados",
+          "Gestão de Pessoas"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "areas_foco": [
+        "Operations"
+      ]
+    },
+    "SM": {
+      "info": {
+        "nome": "Sales Manager",
+        "role": "Manager",
+        "department": "Sales",
+        "specialty": "Sales"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Gestão de Equipes",
+          "Gestão de Projetos",
+          "KPIs e Métricas",
+          "Processos Operacionais"
+        ],
+        "comportamentais": [
+          "Liderança de Equipe",
+          "Comunicação Eficaz",
+          "Orientação a Resultados",
+          "Desenvolvimento de Pessoas"
+        ]
+      },
+      "nivel_experiencia": "pleno",
+      "areas_foco": [
+        "Sales"
+      ]
+    },
+    "AA": {
+      "info": {
+        "nome": "Administrative Assistant",
+        "role": "Assistant",
+        "department": "Administrative",
+        "specialty": "Administration"
+      },
+      "competencias": {
+        "tecnicas": [
+          "Suporte Administrativo",
+          "Organização de Processos",
+          "Ferramentas de Produtividade",
+          "Gestão de Agenda"
+        ],
+        "comportamentais": [
+          "Organização",
+          "Proatividade",
+          "Comunicação Clara",
+          "Suporte Eficiente"
+        ]
+      },
+      "nivel_experiencia": "junior",
+      "areas_foco": [
+        "Administrative",
+        "Administration"
+      ]
+    }
+  }
+}

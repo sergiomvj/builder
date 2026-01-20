@@ -1,0 +1,54 @@
+{
+  "persona_id": "d0b5137e-45fd-4c03-888e-1f051a265ecb",
+  "full_name": "Michael David Thompson",
+  "role": "Gerente de Desenvolvimento",
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "competencias_tecnicas": [
+    "Desenvolvimento de agentes virtuais autônomos",
+    "Programação em linguagens como Python e Java",
+    "Machine Learning e Inteligência Artificial",
+    "Desenvolvimento de APIs",
+    "Gestão de projetos de tecnologia"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Trabalho em equipe",
+    "Resolução de problemas",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Python",
+    "Java",
+    "TensorFlow",
+    "Git",
+    "Jira"
+  ],
+  "tarefas_diarias": [
+    "Coordenar equipe de desenvolvimento",
+    "Analisar e otimizar o desempenho dos agentes virtuais",
+    "Participar de reuniões estratégicas",
+    "Garantir a entrega de projetos dentro do prazo"
+  ],
+  "tarefas_semanais": [
+    "Realizar monitoramento e manutenção dos agentes virtuais",
+    "Atualizar stakeholders sobre o progresso dos projetos",
+    "Identificar oportunidades de melhoria no processo de desenvolvimento"
+  ],
+  "tarefas_mensais": [
+    "Realizar avaliação de desempenho da equipe",
+    "Participar de eventos e conferências da área de tecnologia",
+    "Propor novas implementações para os agentes virtuais"
+  ],
+  "kpis": [
+    "Eficiência dos agentes virtuais - 95% de acerto nas tarefas",
+    "Satisfação da equipe de desenvolvimento - 90% de aprovação",
+    "Cumprimento de prazos de entrega - 100% dentro do prazo"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de liderança",
+    "Aprofundar conhecimentos em Machine Learning",
+    "Implementar novas estratégias de desenvolvimento"
+  ],
+  "generated_at": "2025-12-05T20:12:13.205Z"
+}

@@ -1,0 +1,50 @@
+{
+  "persona": {
+    "id": "299fcd37-98c4-4bea-b4de-63e3d83c5175",
+    "nome": "Robert Davis",
+    "biografia": "Biografia não disponível"
+  },
+  "avatar": {
+    "avatar_url": "/avatars/robert_davis_avatar.svg",
+    "avatar_thumbnail_url": "/avatars/robert_davis_avatar.svg",
+    "prompt_usado": "28-year-old professional man, business professional style, confident expression, corporate attire",
+    "estilo": "Profissional Simulado",
+    "background_tipo": "escritório (fallback)",
+    "servico_usado": "dicebear_local",
+    "versao": "v1.0",
+    "ativo": true,
+    "local_file": "robert_davis_avatar.svg",
+    "file_size": 4352,
+    "biometrics": {
+      "genero": "masculino",
+      "idade_aparente": 28,
+      "etnia": "diverso",
+      "estatura": "média",
+      "biotipo": "profissional"
+    },
+    "history": {
+      "formacao_academica": [
+        "Administração"
+      ],
+      "experiencia_anos": 5,
+      "empresas_anteriores": [
+        "Previous Corp",
+        "Tech Solutions"
+      ],
+      "certificacoes": [
+        "Professional Certification"
+      ],
+      "idiomas": [
+        "português",
+        "inglês"
+      ]
+    },
+    "metadados": {
+      "generated_at": "2025-11-22T20:13:37.419Z",
+      "script_version": "03_nano_banana",
+      "confidence_score": 95,
+      "google_nano_banana": true
+    }
+  },
+  "generated_at": "2025-11-22T20:13:37.661Z"
+}

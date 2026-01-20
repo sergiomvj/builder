@@ -1,0 +1,250 @@
+{
+  "name": "David (Asst Mkt) - Monitoramento de Mídias Sociais",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 10 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 10h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "url": "https://api.twitter.com/2/tweets/search/recent?query=ARVA",
+        "method": "GET",
+        "responseFormat": "json"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar menções recentes no Twitter"
+    },
+    {
+      "id": "3",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "url": "https://graph.facebook.com/v12.0/me?fields=posts{message,created_time,full_picture}&q=ARVA",
+        "method": "GET",
+        "responseFormat": "json"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar posts no Facebook mencionando ARVA"
+    },
+    {
+      "id": "4",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "url": "https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink,timestamp&access_token=YOUR_ACCESS_TOKEN",
+        "method": "GET",
+        "responseFormat": "json"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar menções no Instagram"
+    },
+    {
+      "id": "5",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(post => ({ ...post, sentiment: 'analyze sentiment' }));"
+      },
+      "typeVersion": 1,
+      "notes": "Analisar sentimento das menções"
+    },
+    {
+      "id": "6",
+      "name": "Action",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#marketing",
+        "text": "Relatório diário de menções à ARVA nas mídias sociais"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar relatório para o Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        1560,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "marketing@arvatech.com",
+        "subject": "Relatório diário de menções à ARVA",
+        "message": "Aqui está o relatório das menções à ARVA nas principais mídias sociais."
+      },
+      "typeVersion": 1,
+      "notes": "Enviar relatório por email",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1780,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: David (Asst Mkt) - Monitoramento de Mídias Sociais\nEmpresa: ARVA Tech Solutions\nPersona: David Brown\nTarefa: Monitoramento de Mídias Sociais\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5": {
+      "main": [
+        [
+          {
+            "node": "6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "6": {
+      "main": [
+        [
+          {
+            "node": "7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "8"
+  },
+  "createdAt": "2025-11-28T17:05:31.611Z",
+  "updatedAt": "2025-11-28T17:05:31.611Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "2841090c-7c5f-4c95-afbf-89dc4c115372",
+    "persona_nome": "David Brown",
+    "task_id": "d5442915-919d-4a25-825c-cad20439e60f",
+    "task_title": "Monitoramento de Mídias Sociais",
+    "opportunity_id": "bba29ffc-fdce-4c3c-970a-e4f1eecbd294",
+    "automation_score": 65,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:31.611Z"
+  }
+}

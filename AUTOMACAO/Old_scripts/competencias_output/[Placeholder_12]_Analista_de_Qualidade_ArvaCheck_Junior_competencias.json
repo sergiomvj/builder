@@ -1,0 +1,57 @@
+{
+  "persona_id": "21e1bea3-787a-485a-b601-0d5a8d59c9af",
+  "full_name": "[Placeholder 12] Analista de Qualidade ArvaCheck Junior",
+  "role": "Analista de Qualidade ArvaCheck Junior",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Execução de testes funcionais e de regressão no produto ArvaCheck",
+    "Análise de métricas de qualidade e identificação de não-conformidades",
+    "Elaboração de relatórios de qualidade utilizando dados operacionais",
+    "Monitoramento de processos de qualidade conforme normas ISO 9001",
+    "Uso básico de ferramentas de automação de testes para validações repetitivas"
+  ],
+  "competencias_comportamentais": [
+    "Atenção aos detalhes e precisão em análises",
+    "Trabalho em equipe colaborativa com operações e desenvolvimento",
+    "Resolução proativa de problemas operacionais",
+    "Comunicação clara e documentada de achados de qualidade",
+    "Adaptabilidade a mudanças em processos tecnológicos"
+  ],
+  "ferramentas": [
+    "ArvaCheck Platform",
+    "JIRA para rastreamento de issues",
+    "Microsoft Excel ou Google Sheets para análise de dados",
+    "SQL para consultas em bancos de dados de qualidade",
+    "Postman para testes de API"
+  ],
+  "tarefas_diarias": [
+    "Executar pelo menos 20 testes manuais no ArvaCheck e registrar resultados",
+    "Analisar 10 logs de erros diários e categorizar defeitos",
+    "Atualizar dashboard de métricas de qualidade com dados do dia",
+    "Revisar 5 pull requests ou entregas para verificação de qualidade",
+    "Documentar 3 não-conformidades identificadas e notificar equipe"
+  ],
+  "tarefas_semanais": [
+    "Participar de reunião de Operations para alinhamento de qualidade",
+    "Gerar relatório semanal de KPIs de qualidade e compartilhar com gestor",
+    "Realizar auditoria interna em 2 processos operacionais",
+    "Treinar 1 colega júnior em procedimento de testes ArvaCheck"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatório mensal de qualidade com análise de tendências",
+    "Participar de revisão de processos e propor 2 melhorias",
+    "Realizar calibração e validação de ferramentas de teste"
+  ],
+  "kpis": [
+    "Taxa de detecção de defeitos: 95%",
+    "Tempo médio de resolução de issues: 24 horas",
+    "Cobertura de testes: 90%",
+    "Índice de não-conformidades resolvidas: 98%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação ISTQB Foundation Level em 6 meses",
+    "Dominar automação de testes com Selenium em 3 meses",
+    "Liderar uma iniciativa de melhoria de processo de qualidade em 1 ano"
+  ],
+  "generated_at": "2025-12-01T16:13:54.022Z"
+}

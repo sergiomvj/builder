@@ -1,0 +1,39 @@
+{
+  "persona_id": "7e6ff5c7-c2f2-4a7c-bad1-a84d3d5a71e8",
+  "full_name": "Fernanda Oliveira Santos",
+  "role": "Gerente de Marketing",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aumentar tráfego no site em 20%",
+      "descricao": "Implementar estratégias de SEO e marketing de conteúdo para aumentar o tráfego no site em 20% nos próximos 6 meses.",
+      "categoria": "performance",
+      "valor_alvo": 20,
+      "unidade_medida": "%",
+      "data_prazo": "2026-06-01",
+      "prioridade": 1,
+      "vinculada_kpi": "Aumento de tráfego no site"
+    },
+    {
+      "titulo": "Aprimorar conhecimentos em análise de dados",
+      "descricao": "Participar de cursos online e workshops sobre análise de dados para aprimorar as habilidades nessa área nos próximos 3 meses.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 0,
+      "unidade_medida": "horas",
+      "data_prazo": "2022-09-01",
+      "prioridade": 2,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Desenvolver habilidades de gestão de equipe",
+      "descricao": "Participar de treinamentos e workshops de liderança para desenvolver habilidades de gestão de equipe nos próximos 6 meses.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 0,
+      "unidade_medida": "horas",
+      "data_prazo": "2022-12-01",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    }
+  ],
+  "generated_at": "2025-12-08T14:39:34.769Z"
+}

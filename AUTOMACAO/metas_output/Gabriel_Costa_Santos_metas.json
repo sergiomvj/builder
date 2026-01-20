@@ -1,0 +1,39 @@
+{
+  "persona_id": "64e29610-2944-4703-a5ef-5d3257345ac5",
+  "full_name": "Gabriel Costa Santos",
+  "role": "Desenvolvedor Full Stack",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Desenvolver e lançar um aplicativo em React Native",
+      "descricao": "Desenvolver um aplicativo completo em React Native e lançá-lo na loja de aplicativos até 30 de setembro de 2022.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "1",
+      "unidade_medida": "aplicativo",
+      "data_prazo": "2022-09-30",
+      "prioridade": 1,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Concluir o curso de segurança da informação",
+      "descricao": "Participar de um curso de segurança da informação e obter certificação até 31 de dezembro de 2022.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "1",
+      "unidade_medida": "curso",
+      "data_prazo": "2022-12-31",
+      "prioridade": 2,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Obter certificação em metodologias ágeis",
+      "descricao": "Estudar e se certificar em metodologias ágeis até 30 de junho de 2023.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "1",
+      "unidade_medida": "certificação",
+      "data_prazo": "2023-06-30",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    }
+  ],
+  "generated_at": "2025-12-08T14:42:32.601Z"
+}

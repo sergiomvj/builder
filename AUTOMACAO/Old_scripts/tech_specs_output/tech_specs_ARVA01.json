@@ -1,0 +1,1022 @@
+{
+  "empresa": {
+    "id": "0e1b6a82-ac72-43f2-974a-f3806e1ec4ce",
+    "codigo": "ARVA01",
+    "nome": "ARVA Tech Solutions"
+  },
+  "data_processamento": "2025-11-15T16:13:33.327Z",
+  "total_personas": 16,
+  "personas": {
+    "CEO-ARVA01": {
+      "info": {
+        "nome": "Kevin Anderson",
+        "role": "Chief Executive Officer",
+        "department": "Executive",
+        "specialty": "Strategic Leadership & Revenue",
+        "nivel": "Executive",
+        "template_usado": "CEO"
+      },
+      "tech_specs": {
+        "tools": [
+          "Executive Dashboard",
+          "Salesforce Analytics",
+          "HubSpot Revenue Analytics",
+          "Pipeline Analytics",
+          "Strategic CRM"
+        ],
+        "technologies": [
+          "Business Intelligence",
+          "Revenue Operations",
+          "Sales Analytics",
+          "Executive Reporting"
+        ],
+        "methodologies": [
+          "Strategic Planning",
+          "Revenue Strategy",
+          "Sales Leadership",
+          "Performance Analytics"
+        ],
+        "sales_enablement": [
+          "Revenue Dashboards",
+          "Sales Performance KPIs",
+          "Pipeline Visibility",
+          "Strategic Forecasting"
+        ],
+        "prospecting_tools": [],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": false,
+        "has_sales_enablement": true,
+        "sales_focus": null,
+        "tech_specialization": "CEO"
+      },
+      "infrastructure": [
+        "Executive Dashboard",
+        "Revenue Analytics Server",
+        "Secure Communication",
+        "Strategic Reporting Platform"
+      ],
+      "integration_points": [
+        "CRM Integration",
+        "BI Tools",
+        "Financial Systems",
+        "Revenue Analytics",
+        "Strategic Dashboards"
+      ]
+    },
+    "EXEC1-ARVA01": {
+      "info": {
+        "nome": "Mark Williams",
+        "role": "Chief Technology Officer",
+        "department": "Technology",
+        "specialty": "Technical Leadership & Sales",
+        "nivel": "Executive",
+        "template_usado": "CTO"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Technical Setup",
+          "API Integration Tools",
+          "Demo Environments",
+          "Technical CRM",
+          "Solution Architecture Tools",
+          "Docker",
+          "AWS/Azure"
+        ],
+        "technologies": [
+          "CRM Integration",
+          "Sales Tech Stack",
+          "Demo Infrastructure",
+          "Cloud Computing",
+          "Technical Sales Support"
+        ],
+        "methodologies": [
+          "Technical Sales Methodology",
+          "Solution Selling",
+          "Demo Best Practices",
+          "Technical Leadership"
+        ],
+        "sales_enablement": [
+          "Technical Demos",
+          "Solution Architecture",
+          "Technical Objection Handling",
+          "Product Integration Demos"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Technical Contact Databases",
+          "Engineer-focused Outreach Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": null,
+        "tech_specialization": "CTO"
+      },
+      "infrastructure": [
+        "Cloud Infrastructure",
+        "Demo Environment",
+        "Technical Integration Platform",
+        "Solution Architecture Tools"
+      ],
+      "integration_points": [
+        "CRM-Tech Integration",
+        "Demo Environment Sync",
+        "Technical Documentation Platform",
+        "Solution Database"
+      ]
+    },
+    "EXEC2-ARVA01": {
+      "info": {
+        "nome": "Laura Allen",
+        "role": "Chief Financial Officer",
+        "department": "Finance",
+        "specialty": "Financial Strategy & ROI Sales",
+        "nivel": "Executive",
+        "template_usado": "CFO"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Financial Reports",
+          "ROI Calculator Tools",
+          "Budget Planning CRM",
+          "Financial Analytics Platform",
+          "Excel Advanced",
+          "Financial Modeling Tools"
+        ],
+        "technologies": [
+          "Financial CRM Integration",
+          "ROI Analytics",
+          "Budget Management",
+          "Financial Forecasting"
+        ],
+        "methodologies": [
+          "ROI-Based Selling",
+          "Financial Justification",
+          "Budget Cycle Management",
+          "C-Level Selling"
+        ],
+        "sales_enablement": [
+          "ROI Calculators",
+          "Financial Presentations",
+          "Budget Justification Tools",
+          "Executive Proposals"
+        ],
+        "prospecting_tools": [
+          "Executive Contact Tools",
+          "CFO Network Platforms",
+          "Financial Industry Databases"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": null,
+        "tech_specialization": "CFO"
+      },
+      "infrastructure": [
+        "Financial CRM Integration",
+        "ROI Calculation Platform",
+        "Secure Financial Database",
+        "Budget Analytics"
+      ],
+      "integration_points": [
+        "CRM-Financial Integration",
+        "ROI Calculator API",
+        "Budget Planning Sync",
+        "Financial Reporting"
+      ]
+    },
+    "EXEC3-ARVA01": {
+      "info": {
+        "nome": "Laura Allen",
+        "role": "Chief Operating Officer",
+        "department": "Operations",
+        "specialty": "Operations Excellence & Process Sales",
+        "nivel": "Executive",
+        "template_usado": "COO"
+      },
+      "tech_specs": {
+        "tools": [
+          "Process Optimization CRM",
+          "Operations Analytics",
+          "Efficiency Tracking Tools",
+          "Project Management CRM",
+          "Process Mapping Tools"
+        ],
+        "technologies": [
+          "Operations CRM",
+          "Process Analytics",
+          "Efficiency Metrics",
+          "Operations Intelligence"
+        ],
+        "methodologies": [
+          "Process Improvement Selling",
+          "Efficiency Consulting",
+          "Operations Excellence",
+          "Consultative Selling"
+        ],
+        "sales_enablement": [
+          "Process Improvement ROI",
+          "Efficiency Case Studies",
+          "Operations Optimization Demos"
+        ],
+        "prospecting_tools": [
+          "Operations Director Contacts",
+          "Industry-specific Process Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": null,
+        "tech_specialization": "COO"
+      },
+      "infrastructure": [
+        "Operations CRM",
+        "Process Optimization Platform",
+        "Efficiency Analytics",
+        "Quality Management"
+      ],
+      "integration_points": [
+        "CRM-Operations Integration",
+        "Process Tracking Sync",
+        "Efficiency Metrics API",
+        "Quality Systems"
+      ]
+    },
+    "SPEC1-ARVA01": {
+      "info": {
+        "nome": "Paul Young",
+        "role": "Technical Specialist 1",
+        "department": "Technical",
+        "specialty": "Technical Sales Support",
+        "nivel": "Specialist",
+        "template_usado": "Specialist"
+      },
+      "tech_specs": {
+        "tools": [
+          "Specialized CRM Modules",
+          "Technical Support Tools",
+          "Knowledge Base Systems",
+          "Demo Support Platforms"
+        ],
+        "technologies": [
+          "Technical CRM",
+          "Support Integration",
+          "Knowledge Management",
+          "Technical Documentation"
+        ],
+        "methodologies": [
+          "Technical Support Selling",
+          "Solution Support",
+          "Technical Consulting",
+          "Product Expertise"
+        ],
+        "sales_enablement": [
+          "Technical Documentation",
+          "Solution Support",
+          "Product Training Materials",
+          "Technical FAQs"
+        ],
+        "prospecting_tools": [],
+        "support_areas": [
+          "Technical Training",
+          "Solution Architecture",
+          "Product Demonstrations",
+          "Technical Objection Handling"
+        ]
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": false,
+        "has_sales_enablement": true,
+        "sales_focus": null,
+        "tech_specialization": "Specialist"
+      },
+      "infrastructure": [
+        "Technical Support Platform",
+        "Knowledge Base System",
+        "Demo Support Infrastructure"
+      ],
+      "integration_points": [
+        "Technical CRM Integration",
+        "Support Ticket Sync",
+        "Knowledge Base API",
+        "Product Data Sync"
+      ]
+    },
+    "SPEC2-ARVA01": {
+      "info": {
+        "nome": "Lisa Johnson",
+        "role": "Technical Specialist 2",
+        "department": "Technical",
+        "specialty": "Technical Sales Support",
+        "nivel": "Specialist",
+        "template_usado": "Specialist"
+      },
+      "tech_specs": {
+        "tools": [
+          "Specialized CRM Modules",
+          "Technical Support Tools",
+          "Knowledge Base Systems",
+          "Demo Support Platforms"
+        ],
+        "technologies": [
+          "Technical CRM",
+          "Support Integration",
+          "Knowledge Management",
+          "Technical Documentation"
+        ],
+        "methodologies": [
+          "Technical Support Selling",
+          "Solution Support",
+          "Technical Consulting",
+          "Product Expertise"
+        ],
+        "sales_enablement": [
+          "Technical Documentation",
+          "Solution Support",
+          "Product Training Materials",
+          "Technical FAQs"
+        ],
+        "prospecting_tools": [],
+        "support_areas": [
+          "Technical Training",
+          "Solution Architecture",
+          "Product Demonstrations",
+          "Technical Objection Handling"
+        ]
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": false,
+        "has_sales_enablement": true,
+        "sales_focus": null,
+        "tech_specialization": "Specialist"
+      },
+      "infrastructure": [
+        "Technical Support Platform",
+        "Knowledge Base System",
+        "Demo Support Infrastructure"
+      ],
+      "integration_points": [
+        "Technical CRM Integration",
+        "Support Ticket Sync",
+        "Knowledge Base API",
+        "Product Data Sync"
+      ]
+    },
+    "SPEC3-ARVA01": {
+      "info": {
+        "nome": "Daniel Martinez",
+        "role": "Technical Specialist 3",
+        "department": "Technical",
+        "specialty": "Technical Sales Support",
+        "nivel": "Specialist",
+        "template_usado": "Specialist"
+      },
+      "tech_specs": {
+        "tools": [
+          "Specialized CRM Modules",
+          "Technical Support Tools",
+          "Knowledge Base Systems",
+          "Demo Support Platforms"
+        ],
+        "technologies": [
+          "Technical CRM",
+          "Support Integration",
+          "Knowledge Management",
+          "Technical Documentation"
+        ],
+        "methodologies": [
+          "Technical Support Selling",
+          "Solution Support",
+          "Technical Consulting",
+          "Product Expertise"
+        ],
+        "sales_enablement": [
+          "Technical Documentation",
+          "Solution Support",
+          "Product Training Materials",
+          "Technical FAQs"
+        ],
+        "prospecting_tools": [],
+        "support_areas": [
+          "Technical Training",
+          "Solution Architecture",
+          "Product Demonstrations",
+          "Technical Objection Handling"
+        ]
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": false,
+        "has_sales_enablement": true,
+        "sales_focus": null,
+        "tech_specialization": "Specialist"
+      },
+      "infrastructure": [
+        "Technical Support Platform",
+        "Knowledge Base System",
+        "Demo Support Infrastructure"
+      ],
+      "integration_points": [
+        "Technical CRM Integration",
+        "Support Ticket Sync",
+        "Knowledge Base API",
+        "Product Data Sync"
+      ]
+    },
+    "SPEC4-ARVA01": {
+      "info": {
+        "nome": "Michelle Smith",
+        "role": "Technical Specialist 4",
+        "department": "Technical",
+        "specialty": "Technical Sales Support",
+        "nivel": "Specialist",
+        "template_usado": "Specialist"
+      },
+      "tech_specs": {
+        "tools": [
+          "Specialized CRM Modules",
+          "Technical Support Tools",
+          "Knowledge Base Systems",
+          "Demo Support Platforms"
+        ],
+        "technologies": [
+          "Technical CRM",
+          "Support Integration",
+          "Knowledge Management",
+          "Technical Documentation"
+        ],
+        "methodologies": [
+          "Technical Support Selling",
+          "Solution Support",
+          "Technical Consulting",
+          "Product Expertise"
+        ],
+        "sales_enablement": [
+          "Technical Documentation",
+          "Solution Support",
+          "Product Training Materials",
+          "Technical FAQs"
+        ],
+        "prospecting_tools": [],
+        "support_areas": [
+          "Technical Training",
+          "Solution Architecture",
+          "Product Demonstrations",
+          "Technical Objection Handling"
+        ]
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": false,
+        "has_sales_enablement": true,
+        "sales_focus": null,
+        "tech_specialization": "Specialist"
+      },
+      "infrastructure": [
+        "Technical Support Platform",
+        "Knowledge Base System",
+        "Demo Support Infrastructure"
+      ],
+      "integration_points": [
+        "Technical CRM Integration",
+        "Support Ticket Sync",
+        "Knowledge Base API",
+        "Product Data Sync"
+      ]
+    },
+    "ASST1-ARVA01": {
+      "info": {
+        "nome": "Ashley Thompson",
+        "role": "Executive Assistant 1",
+        "department": "Administrative",
+        "specialty": "Administrative Support",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "ASST2-ARVA01": {
+      "info": {
+        "nome": "Betty Taylor",
+        "role": "Executive Assistant 2",
+        "department": "Administrative",
+        "specialty": "Administrative Support",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "ASST3-ARVA01": {
+      "info": {
+        "nome": "Maria Walker",
+        "role": "Executive Assistant 3",
+        "department": "Administrative",
+        "specialty": "Administrative Support",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "ASST4-ARVA01": {
+      "info": {
+        "nome": "Sarah Garcia",
+        "role": "Executive Assistant 4",
+        "department": "Administrative",
+        "specialty": "Administrative Support",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "ASST5-ARVA01": {
+      "info": {
+        "nome": "Michael Johnson",
+        "role": "Executive Assistant 5",
+        "department": "Administrative",
+        "specialty": "Administrative Support",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "ASST6-ARVA01": {
+      "info": {
+        "nome": "Steven Taylor",
+        "role": "Executive Assistant 6",
+        "department": "Administrative",
+        "specialty": "Administrative Support",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "ASST7-ARVA01": {
+      "info": {
+        "nome": "Kevin Anderson",
+        "role": "Executive Assistant 7",
+        "department": "Administrative",
+        "specialty": "Administrative Support",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    },
+    "ASST8-ARVA01": {
+      "info": {
+        "nome": "Matthew Miller",
+        "role": "Executive Assistant 8",
+        "department": "Administrative",
+        "specialty": "Administrative Support",
+        "nivel": "Assistant",
+        "template_usado": "Assistant"
+      },
+      "tech_specs": {
+        "tools": [
+          "Salesforce Assistant Tools",
+          "Calendar Scheduling",
+          "CRM Data Entry",
+          "Lead Research Tools",
+          "Appointment Setting Software",
+          "Communication Platforms"
+        ],
+        "technologies": [
+          "CRM Administration",
+          "Sales Support Systems",
+          "Communication Tools",
+          "Data Management"
+        ],
+        "methodologies": [
+          "SDR Best Practices",
+          "Lead Qualification",
+          "Appointment Setting",
+          "Pipeline Management",
+          "Executive Support"
+        ],
+        "sales_enablement": [
+          "Lead Research Tools",
+          "Appointment Scheduling",
+          "CRM Management",
+          "Pipeline Tracking"
+        ],
+        "prospecting_tools": [
+          "LinkedIn Sales Navigator",
+          "Lead Research Platforms",
+          "Email Sequencing Tools",
+          "Appointment Setting Systems",
+          "CRM Data Tools"
+        ],
+        "support_areas": []
+      },
+      "sdr_tech_info": {
+        "has_sdr_tools": true,
+        "has_sales_enablement": true,
+        "sales_focus": "Executive Support & Lead Management",
+        "tech_specialization": "Assistant"
+      },
+      "infrastructure": [
+        "CRM Administrative Platform",
+        "Lead Management System",
+        "Appointment Scheduling Infrastructure",
+        "Communication Hub"
+      ],
+      "integration_points": [
+        "Full CRM Integration",
+        "Calendar Sync",
+        "Email Integration",
+        "Lead Research API",
+        "Communication Platform Sync"
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "persona_id": "ecd705cd-6aec-4793-985e-3c4818955a58",
+  "full_name": "Rahul Gupta",
+  "role": "Desenvolvedor Pleno",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "metas": [
+    {
+      "titulo": "Entregar 24 Features por Sprints",
+      "descricao": "Desenvolver e deployar pelo menos 4 features por sprint durante 6 sprints consecutivos, totalizando 24 features entregues com qualidade aprovada pela equipe.",
+      "categoria": "kpi",
+      "valor_alvo": 24,
+      "unidade_medida": "features",
+      "data_prazo": "2025-04-01",
+      "prioridade": 5,
+      "vinculada_kpi": "Features Deployed"
+    },
+    {
+      "titulo": "Reduzir Tempo Médio de Bugs para <20h",
+      "descricao": "Reduzir o tempo médio de resolução de bugs reportados para menos de 20 horas, medido em pelo menos 80% dos tickets resolvidos no período.",
+      "categoria": "kpi",
+      "valor_alvo": 20,
+      "unidade_medida": "horas",
+      "data_prazo": "2025-03-15",
+      "prioridade": 4,
+      "vinculada_kpi": "Tempo Médio de Resolução de Bugs"
+    },
+    {
+      "titulo": "Atingir 90% de Cobertura de Testes",
+      "descricao": "Aumentar a cobertura de testes unitários e de integração para acima de 90% em todos os projetos pessoais e da equipe atribuídos.",
+      "categoria": "kpi",
+      "valor_alvo": 90,
+      "unidade_medida": "%",
+      "data_prazo": "2025-02-28",
+      "prioridade": 4,
+      "vinculada_kpi": "Cobertura de Testes"
+    },
+    {
+      "titulo": "Obter Certificação AWS Developer Associate",
+      "descricao": "Completar o treinamento oficial e passar no exame de certificação AWS Certified Developer - Associate com nota mínima de aprovação.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "certificação",
+      "data_prazo": "2025-03-01",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Liderar Desenvolvimento de Agente LLM",
+      "descricao": "Liderar a concepção, fine-tuning e deploy de um agente completo baseado em LLM, com pelo menos 85% de precisão em testes de benchmark.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 85,
+      "unidade_medida": "%",
+      "data_prazo": "2025-05-15",
+      "prioridade": 4,
+      "vinculada_kpi": ""
+    }
+  ],
+  "generated_at": "2025-12-08T22:23:25.863Z"
+}

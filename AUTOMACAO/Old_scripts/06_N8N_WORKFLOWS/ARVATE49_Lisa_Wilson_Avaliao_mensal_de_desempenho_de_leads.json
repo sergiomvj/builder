@@ -1,0 +1,238 @@
+{
+  "name": "Lisa (SDR Senior) - Avaliação mensal de desempenho de leads",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 0 1 * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar no primeiro dia de cada mês à meia-noite"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.hubspot",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "object": "deals",
+        "filters": {
+          "close_date": "last_month",
+          "deal_stage": "closed_won"
+        },
+        "operation": "get"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar negócios fechados no último mês",
+      "credentials": {
+        "hubspotApi": {
+          "id": "hubspot_ARVATE49",
+          "name": "HubSpot ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(deal => ({ ...deal, conversion_rate: (deal.closed_won / deal.total_leads) * 100 }));"
+      },
+      "typeVersion": 1,
+      "notes": "Calcular taxa de conversão"
+    },
+    {
+      "id": "4",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "sales@arvatech.com",
+        "subject": "Relatório Mensal de Desempenho de Leads",
+        "message": "Anexo você encontrará o relatório mensal de desempenho de leads."
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email para equipe de vendas com relatório",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Notify",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#sales",
+        "text": "O Relatório Mensal de Desempenho de Leads foi enviado para o email da equipe de vendas."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe de vendas no Slack sobre o envio do relatório",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "operation": "append",
+        "spreadsheetId": "1a2b3c",
+        "range": "Sheet1"
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar Google Sheets com taxa de conversão",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVATE49",
+          "name": "Google Sheets ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1560,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Lisa (SDR Senior) - Avaliação mensal de desempenho de leads\nEmpresa: ARVA Tech Solutions\nPersona: Lisa Wilson\nTarefa: Avaliação mensal de desempenho de leads\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5": {
+      "main": [
+        [
+          {
+            "node": "6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "7"
+  },
+  "createdAt": "2025-11-28T17:05:14.198Z",
+  "updatedAt": "2025-11-28T17:05:14.198Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "32bfbb7a-148b-4113-9fb6-9caff688efcc",
+    "persona_nome": "Lisa Wilson",
+    "task_id": "752ed855-9382-4d9d-af88-75bb040a662b",
+    "task_title": "Avaliação mensal de desempenho de leads",
+    "opportunity_id": "a9c8b685-24dc-4a0b-a84e-a6360bdfcd82",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:14.198Z"
+  }
+}

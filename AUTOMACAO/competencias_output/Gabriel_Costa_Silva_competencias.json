@@ -1,0 +1,53 @@
+{
+  "persona_id": "891ee085-4822-4b1c-b23c-f40622b32edd",
+  "full_name": "Gabriel Costa Silva",
+  "role": "Analista Financeiro",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em análise financeira",
+    "Domínio em Excel avançado",
+    "Experiência em elaboração de relatórios financeiros",
+    "Conhecimento em planejamento financeiro",
+    "Capacidade de análise de dados financeiros"
+  ],
+  "competencias_comportamentais": [
+    "Organização",
+    "Habilidade de comunicação",
+    "Capacidade de trabalhar sob pressão",
+    "Proatividade",
+    "Trabalho em equipe"
+  ],
+  "ferramentas": [
+    "Excel",
+    "Sistemas de gestão financeira",
+    "Power BI",
+    "Ferramentas de análise de dados"
+  ],
+  "tarefas_diarias": [
+    "Análise de fluxo de caixa",
+    "Elaboração de relatórios financeiros",
+    "Controle de despesas e receitas",
+    "Suporte na tomada de decisões financeiras"
+  ],
+  "tarefas_semanais": [
+    "Preparação de projeções financeiras",
+    "Revisão de indicadores financeiros",
+    "Análise de rentabilidade"
+  ],
+  "tarefas_mensais": [
+    "Elaboração de budget",
+    "Participação em reuniões estratégicas",
+    "Acompanhamento de indicadores financeiros"
+  ],
+  "kpis": [
+    "Redução de despesas em 10% - janeiro",
+    "Aumento de receitas em 15% - fevereiro",
+    "Cumprimento do orçamento estabelecido - trimestral"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar conhecimentos em análise de investimentos",
+    "Desenvolver habilidades de negociação financeira",
+    "Melhorar a capacidade de elaboração de relatórios gerenciais"
+  ],
+  "generated_at": "2025-12-08T14:38:38.635Z"
+}

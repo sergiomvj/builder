@@ -1,0 +1,53 @@
+{
+  "persona_id": "f8d57bf8-9388-4ae8-9d9c-7700d8d83946",
+  "full_name": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+  "role": "Agente de Suporte Bilíngue PT/EN",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Fluência bilíngue em Português e Inglês",
+    "Domínio de sistemas de tickets como Zendesk",
+    "Conhecimento de ferramentas CRM (ex: Salesforce)",
+    "Habilidades em troubleshooting de suporte técnico",
+    "Familiaridade com protocolos de atendimento ao cliente"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação clara e empática",
+    "Resolução ágil de problemas",
+    "Paciência e resiliência sob pressão",
+    "Orientação ao cliente",
+    "Trabalho em equipe colaborativo"
+  ],
+  "ferramentas": [
+    "Zendesk",
+    "Intercom",
+    "Slack",
+    "Google Workspace"
+  ],
+  "tarefas_diarias": [
+    "Responder tickets de suporte em PT/EN",
+    "Realizar atendimentos via chat e telefone",
+    "Atualizar status e priorizar tickets",
+    "Consultar e atualizar base de conhecimento"
+  ],
+  "tarefas_semanais": [
+    "Gerar relatórios de desempenho de tickets",
+    "Participar de reuniões de equipe",
+    "Treinar em novos procedimentos de suporte"
+  ],
+  "tarefas_mensais": [
+    "Analisar métricas de satisfação do cliente",
+    "Revisar e otimizar processos de suporte",
+    "Avaliar KPIs e propor melhorias"
+  ],
+  "kpis": [
+    "KPI 1: Tempo Médio de Resposta - < 5 minutos",
+    "KPI 2: Taxa de Resolução no 1º Contato - > 85%",
+    "KPI 3: CSAT (Satisfação Cliente) - > 95%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em ferramentas avançadas de suporte",
+    "Obter certificação bilíngue em atendimento ao cliente",
+    "Aumentar taxa de resolução de tickets complexos"
+  ],
+  "generated_at": "2025-12-02T18:11:33.370Z"
+}

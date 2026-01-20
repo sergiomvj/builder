@@ -1,0 +1,53 @@
+{
+  "persona_id": "522d421e-b796-47cd-ade5-9faa650e62d0",
+  "full_name": "Élise Moreau",
+  "role": "Gerente de Produto",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "Gestão de Produto Ágil (Scrum e Kanban)",
+    "Análise de Dados e Métricas de Produto",
+    "Conhecimentos em IA, Machine Learning e Agentes Autônomos",
+    "Design Thinking e UX/UI para Plataformas Digitais",
+    "Gerenciamento de Roadmaps e Priorização de Features"
+  ],
+  "competencias_comportamentais": [
+    "Liderança e Influência em Equipes Cross-Funcionais",
+    "Comunicação Assertiva e Apresentações Estratégicas",
+    "Resolução de Problemas Complexos",
+    "Colaboração e Trabalho em Equipe",
+    "Pensamento Estratégico e Visão de Mercado"
+  ],
+  "ferramentas": [
+    "Jira",
+    "Figma",
+    "Amplitude",
+    "Slack"
+  ],
+  "tarefas_diarias": [
+    "Revisar métricas de uso e engajamento da plataforma ARVA",
+    "Participar de stand-ups com equipes de engenharia e design",
+    "Priorizar e refinar backlog de produto",
+    "Responder comunicações de stakeholders e usuários"
+  ],
+  "tarefas_semanais": [
+    "Realizar grooming de backlog e planejamento de sprints",
+    "Analisar feedback de usuários e dados de analytics",
+    "Reuniões de alinhamento com sales e marketing"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatório de performance do produto",
+    "Atualizar roadmap estratégico da ARVA",
+    "Coordenar revisões de produto com liderança executiva"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Retenção de Usuários - 85%",
+    "KPI 2: Tempo Médio para Lançamento de Features - 4 semanas",
+    "KPI 3: Net Promoter Score (NPS) - 75"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprofundar expertise em ética e governança de IA",
+    "Liderar lançamento de novo agente autônomo escalável",
+    "Expandir rede de parcerias com empresas de tech nos EUA"
+  ],
+  "generated_at": "2025-12-08T22:28:02.397Z"
+}

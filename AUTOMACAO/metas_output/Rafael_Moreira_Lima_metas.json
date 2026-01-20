@@ -1,0 +1,56 @@
+{
+  "persona_id": "5dd9aaae-2d79-4ef2-ba1a-2ed68b3e02be",
+  "full_name": "Rafael Moreira Lima",
+  "role": "Coordenador de Vendas",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aumentar a taxa de conversão de vendas",
+      "descricao": "Implementar novas estratégias de vendas para alcançar uma taxa de conversão de vendas de 35% até 30 de junho de 2026.",
+      "categoria": "performance",
+      "valor_alvo": 35,
+      "unidade_medida": "%",
+      "data_prazo": "2026-06-30",
+      "prioridade": 1,
+      "vinculada_kpi": "Taxa de conversão de vendas"
+    },
+    {
+      "titulo": "Aumentar o número de novos clientes",
+      "descricao": "Desenvolver campanhas de prospecção para conquistar 30 novos clientes até 30 de junho de 2026.",
+      "categoria": "performance",
+      "valor_alvo": 30,
+      "unidade_medida": "unidades",
+      "data_prazo": "2026-06-30",
+      "prioridade": 2,
+      "vinculada_kpi": "Número de novos clientes"
+    },
+    {
+      "titulo": "Participar de cursos de liderança",
+      "descricao": "Matricular-se em pelo menos dois cursos de liderança até 30 de junho de 2026 para aprimorar habilidades de liderança.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "cursos",
+      "data_prazo": "2026-06-30",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Realizar treinamentos em tecnologia e serviços de imigração",
+      "descricao": "Participar de workshops e treinamentos relacionados a tecnologia e serviços de imigração até 30 de junho de 2026 para aprofundar conhecimentos na área.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "workshops",
+      "data_prazo": "2026-06-30",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Implementar novas técnicas de gestão de vendas",
+      "descricao": "Desenvolver e implementar novas técnicas de gestão de vendas para aumentar a eficiência da equipe de vendas em 20% até 30 de junho de 2026.",
+      "categoria": "performance",
+      "valor_alvo": 20,
+      "unidade_medida": "%",
+      "data_prazo": "2026-06-30",
+      "prioridade": 1
+    }
+  ],
+  "generated_at": "2025-12-08T14:40:10.699Z"
+}

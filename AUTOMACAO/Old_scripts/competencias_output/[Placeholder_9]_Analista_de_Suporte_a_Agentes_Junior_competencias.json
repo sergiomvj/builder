@@ -1,0 +1,57 @@
+{
+  "persona_id": "a15578cb-7b8f-46b6-9c80-03228bb5bde6",
+  "full_name": "[Placeholder 9] Analista de Suporte a Agentes Junior",
+  "role": "Analista de Suporte a Agentes Junior",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Resolução de tickets de suporte básico via ferramentas de helpdesk",
+    "Monitoramento de filas de atendimento e distribuição de demandas para agentes",
+    "Configuração e troubleshooting inicial em ferramentas de comunicação (chat, e-mail e VoIP)",
+    "Análise de logs de incidentes e geração de relatórios simples de performance",
+    "Uso básico de SQL para consultas em bancos de dados de tickets e métricas"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação clara e empática com agentes e equipes",
+    "Trabalho em equipe e colaboração em ambientes de operations",
+    "Atenção a detalhes para evitar erros em registros de tickets",
+    "Adaptabilidade a mudanças em processos e ferramentas",
+    "Proatividade na identificação de problemas recorrentes"
+  ],
+  "ferramentas": [
+    "Zendesk ou similar para gerenciamento de tickets",
+    "Jira para rastreamento de incidentes",
+    "Microsoft Teams ou Slack para comunicação interna",
+    "Google Workspace ou Microsoft Excel para relatórios",
+    "CRM básico como HubSpot ou Salesforce"
+  ],
+  "tarefas_diarias": [
+    "Responder e resolver pelo menos 20 tickets de suporte a agentes",
+    "Monitorar queues de atendimento e manter tempo médio de resposta abaixo de 5 minutos",
+    "Atualizar status de 50 tickets pendentes no sistema",
+    "Registrar e categorizar 100% dos incidentes reportados por agentes",
+    "Auxiliar em pelo menos 10 chamadas de suporte ao vivo para agentes"
+  ],
+  "tarefas_semanais": [
+    "Gerar relatório de performance de agentes com métricas chave",
+    "Participar de reuniões diárias de operations e compartilhar atualizações",
+    "Auditar 10% dos tickets resolvidos para qualidade",
+    "Treinar 5 novos agentes em procedimentos básicos de suporte"
+  ],
+  "tarefas_mensais": [
+    "Compilar relatório consolidado de KPIs do mês anterior",
+    "Identificar e propor 3 melhorias em processos de suporte",
+    "Participar de 1 sessão de treinamento avançado em ferramentas"
+  ],
+  "kpis": [
+    "Tempo médio de resolução de tickets - < 4 horas",
+    "Taxa de satisfação dos agentes (CSAT) - > 90%",
+    "Número de tickets resolvidos por dia - ≥ 25",
+    "Taxa de escalonamento de tickets - < 10%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Dominar SQL intermediário para análises avançadas de dados",
+    "Obter certificação em Zendesk ou ferramenta de helpdesk equivalente",
+    "Liderar uma iniciativa de melhoria de processo em suporte a agentes"
+  ],
+  "generated_at": "2025-12-01T16:18:58.686Z"
+}

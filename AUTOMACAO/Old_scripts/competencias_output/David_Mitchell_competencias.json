@@ -1,0 +1,53 @@
+{
+  "persona_id": "fa1841d3-65b6-4858-b47b-687cb83072df",
+  "full_name": "David Mitchell",
+  "role": "Desenvolvedor Senior",
+  "empresa_id": "a2845f62-59e2-48b2-8f89-8bfc6c33193f",
+  "competencias_tecnicas": [
+    "Desenvolvimento de agentes virtuais autônomos",
+    "Inteligência artificial",
+    "Machine learning",
+    "Linguagens de programação avançadas",
+    "Arquitetura de software escalável"
+  ],
+  "competencias_comportamentais": [
+    "Trabalho em equipe",
+    "Comunicação eficaz",
+    "Pensamento crítico",
+    "Resolução de problemas",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Python",
+    "TensorFlow",
+    "Docker",
+    "Git"
+  ],
+  "tarefas_diarias": [
+    "Desenvolvimento e manutenção de agentes virtuais",
+    "Colaboração com a equipe de desenvolvimento",
+    "Análise de requisitos e especificações",
+    "Testes e depuração de código"
+  ],
+  "tarefas_semanais": [
+    "Participação em reuniões de equipe",
+    "Atualização de documentação técnica",
+    "Avaliação de novas tecnologias"
+  ],
+  "tarefas_mensais": [
+    "Realização de revisões de código",
+    "Implementação de melhorias de desempenho",
+    "Participação em eventos de tecnologia"
+  ],
+  "kpis": [
+    "Entrega de projetos no prazo - 95%",
+    "Satisfação do cliente - 90%",
+    "Número de bugs corrigidos por mês - 98%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em machine learning",
+    "Participar de cursos de arquitetura de software",
+    "Desenvolver competências em liderança técnica"
+  ],
+  "generated_at": "2025-12-04T21:42:13.401Z"
+}

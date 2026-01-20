@@ -1,0 +1,55 @@
+{
+  "persona_id": "1c8ea890-6fb8-48c9-a3d1-cde6dac37cb0",
+  "full_name": "Ethan Morales",
+  "role": "Estagiário de TI",
+  "empresa_id": "a2845f62-59e2-48b2-8f89-8bfc6c33193f",
+  "competencias_tecnicas": [
+    "Conhecimento em linguagens de programação (ex: Python, Java)",
+    "Conhecimento em redes de computadores",
+    "Familiaridade com sistemas operacionais (ex: Windows, Linux)",
+    "Conhecimento em segurança da informação",
+    "Habilidade em resolução de problemas técnicos"
+  ],
+  "competencias_comportamentais": [
+    "Proatividade",
+    "Trabalho em equipe",
+    "Boa comunicação",
+    "Organização",
+    "Capacidade de aprendizado rápido"
+  ],
+  "ferramentas": [
+    "IDEs de programação (ex: PyCharm, Eclipse)",
+    "Plataformas de virtualização (ex: VMware)",
+    "Ferramentas de monitoramento de rede (ex: Wireshark)",
+    "Softwares de segurança da informação (ex: Nessus)",
+    "Sistemas de ticketing (ex: Jira)"
+  ],
+  "tarefas_diarias": [
+    "Manutenção de sistemas e redes",
+    "Suporte técnico aos usuários",
+    "Configuração de equipamentos de TI",
+    "Análise de incidentes de segurança",
+    "Atualização de documentação técnica"
+  ],
+  "tarefas_semanais": [
+    "Participação em reuniões de equipe",
+    "Desenvolvimento de pequenos projetos",
+    "Acompanhamento de indicadores de desempenho"
+  ],
+  "tarefas_mensais": [
+    "Elaboração de relatórios de desempenho",
+    "Participação em treinamentos e capacitações",
+    "Implementação de melhorias nos processos de TI"
+  ],
+  "kpis": [
+    "Eficiência na resolução de chamados - 98% de satisfação dos usuários",
+    "Redução de incidentes de segurança - 20% ao trimestre",
+    "Participação em projetos estratégicos - 100% de entrega dentro do prazo"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de programação em Python",
+    "Obter certificação em segurança da informação",
+    "Desenvolver habilidades em análise de dados"
+  ],
+  "generated_at": "2025-12-05T17:49:36.456Z"
+}

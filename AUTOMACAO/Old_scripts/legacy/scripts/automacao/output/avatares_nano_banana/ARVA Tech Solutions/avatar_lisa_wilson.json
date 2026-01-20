@@ -1,0 +1,50 @@
+{
+  "persona": {
+    "id": "32bfbb7a-148b-4113-9fb6-9caff688efcc",
+    "nome": "Lisa Wilson",
+    "biografia": "Biografia não disponível"
+  },
+  "avatar": {
+    "avatar_url": "/avatars/lisa_wilson_avatar.svg",
+    "avatar_thumbnail_url": "/avatars/lisa_wilson_avatar.svg",
+    "prompt_usado": "28-year-old professional woman, business professional style, confident expression, corporate attire",
+    "estilo": "Profissional Simulado",
+    "background_tipo": "escritório (fallback)",
+    "servico_usado": "dicebear_local",
+    "versao": "v1.0",
+    "ativo": true,
+    "local_file": "lisa_wilson_avatar.svg",
+    "file_size": 5188,
+    "biometrics": {
+      "genero": "feminino",
+      "idade_aparente": 28,
+      "etnia": "diverso",
+      "estatura": "média",
+      "biotipo": "profissional"
+    },
+    "history": {
+      "formacao_academica": [
+        "Administração"
+      ],
+      "experiencia_anos": 11,
+      "empresas_anteriores": [
+        "Previous Corp",
+        "Tech Solutions"
+      ],
+      "certificacoes": [
+        "Professional Certification"
+      ],
+      "idiomas": [
+        "português",
+        "inglês"
+      ]
+    },
+    "metadados": {
+      "generated_at": "2025-11-22T20:13:48.342Z",
+      "script_version": "03_nano_banana",
+      "confidence_score": 95,
+      "google_nano_banana": true
+    }
+  },
+  "generated_at": "2025-11-22T20:13:48.528Z"
+}

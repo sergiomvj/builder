@@ -1,0 +1,53 @@
+{
+  "persona_id": "a27b8dc4-dca8-4e9e-b51f-58019ba6a4fa",
+  "full_name": "Zhang Wei",
+  "role": "Desenvolvedor Senior Full-Stack",
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "competencias_tecnicas": [
+    "Desenvolvimento de sistemas web",
+    "Arquitetura de software",
+    "Desenvolvimento de APIs",
+    "Banco de dados",
+    "Testes automatizados"
+  ],
+  "competencias_comportamentais": [
+    "Trabalho em equipe",
+    "Comunicação eficaz",
+    "Resolução de problemas",
+    "Criatividade",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "JavaScript",
+    "React",
+    "Node.js",
+    "MongoDB"
+  ],
+  "tarefas_diarias": [
+    "Desenvolver novas funcionalidades",
+    "Realizar code reviews",
+    "Participar de reuniões de planejamento",
+    "Colaborar com outros desenvolvedores"
+  ],
+  "tarefas_semanais": [
+    "Realizar deploy de novas versões",
+    "Atualizar documentação técnica",
+    "Participar de sessões de treinamento"
+  ],
+  "tarefas_mensais": [
+    "Analisar métricas de desempenho",
+    "Propor melhorias de processos",
+    "Participar de eventos de tecnologia"
+  ],
+  "kpis": [
+    "Entrega de funcionalidades - 100% de eficiência",
+    "Taxa de bugs - 0 bugs críticos por release",
+    "Satisfação do cliente - Índice acima de 90%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar conhecimentos em Inteligência Artificial",
+    "Participar de cursos de liderança",
+    "Desenvolver habilidades de mentorship"
+  ],
+  "generated_at": "2025-12-05T20:12:45.333Z"
+}

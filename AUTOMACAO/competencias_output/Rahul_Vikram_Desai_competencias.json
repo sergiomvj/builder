@@ -1,0 +1,53 @@
+{
+  "persona_id": "2055ba92-2029-44ba-b381-abbaed2866e9",
+  "full_name": "Rahul Vikram Desai",
+  "role": "Diretor de Produto",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "Gestão de Produto Ágil e Scrum",
+    "Conhecimento em IA, Machine Learning e Agentes Autônomos",
+    "Análise de Dados e Métricas de Produto",
+    "Design Thinking e Princípios de UX/UI",
+    "Arquitetura de Software Modular e Integrações de API"
+  ],
+  "competencias_comportamentais": [
+    "Liderança Estratégica",
+    "Comunicação Eficaz e Influência",
+    "Pensamento Inovador e Criativo",
+    "Resolução de Problemas Complexos",
+    "Colaboração Interfuncional"
+  ],
+  "ferramentas": [
+    "Jira",
+    "Figma",
+    "Amplitude",
+    "Notion"
+  ],
+  "tarefas_diarias": [
+    "Revisar métricas de uso da plataforma ARVA",
+    "Priorizar backlog de produto com a equipe",
+    "Analisar feedback de usuários e agentes",
+    "Coordenar reuniões diárias de stand-up"
+  ],
+  "tarefas_semanais": [
+    "Realizar planejamento de sprint e grooming",
+    "Reunião de revisão com stakeholders",
+    "Análise de concorrência em agentes IA"
+  ],
+  "tarefas_mensais": [
+    "Elaborar roadmap de produto",
+    "Revisar OKRs e performance de agentes",
+    "Apresentar relatório executivo de produto"
+  ],
+  "kpis": [
+    "Taxa de Adoção de Agentes - 75%",
+    "Retenção de Usuários Ativos - 85%",
+    "Crescimento de Receita de Produto - 20% MoM"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprofundar expertise em ecossistemas de IA multiagente",
+    "Desenvolver habilidades avançadas em liderança de produto",
+    "Expandir rede de parcerias no setor de tecnologia autônoma"
+  ],
+  "generated_at": "2025-12-08T22:27:34.035Z"
+}

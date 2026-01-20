@@ -1,0 +1,49 @@
+{
+  "persona_id": "470b238f-0865-4149-b30a-f39a6d023952",
+  "full_name": "Khalid Al-Mansoori",
+  "role": "Diretor Comercial",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "metas": [
+    {
+      "titulo": "Expandir Pipeline nos EUA",
+      "descricao": "Gerar 150 leads qualificados de empresas enterprise nos EUA via campanhas de marketing targeted e prospecção outbound.",
+      "categoria": "kpi",
+      "valor_alvo": 150,
+      "unidade_medida": "leads",
+      "data_prazo": "2025-03-01",
+      "prioridade": 4,
+      "vinculada_kpi": "Crescimento do Pipeline - 40% QoQ"
+    },
+    {
+      "titulo": "Elevar Taxa de Conversão",
+      "descricao": "Otimizar funil de vendas para aumentar a taxa de conversão de leads em 20% através de treinamento da equipe e automação de follow-up.",
+      "categoria": "kpi",
+      "valor_alvo": 20,
+      "unidade_medida": "%",
+      "data_prazo": "2025-04-01",
+      "prioridade": 5,
+      "vinculada_kpi": "Taxa de Conversão de Leads - 25%"
+    },
+    {
+      "titulo": "Desenvolver Parcerias Tech",
+      "descricao": "Estabelecer 4 parcerias estratégicas com integradores de tecnologia para expansão de co-vendas e pipeline compartilhado.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 4,
+      "unidade_medida": "parcerias",
+      "data_prazo": "2025-03-01",
+      "prioridade": 4,
+      "vinculada_kpi": "Receita Comercial Gerada - US$ 5M/ano"
+    },
+    {
+      "titulo": "Aumentar Retenção de Clientes",
+      "descricao": "Implementar programa de sucesso do cliente para elevar a retenção em 10% medido por taxa de renovação de contratos.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 10,
+      "unidade_medida": "%",
+      "data_prazo": "2025-06-01",
+      "prioridade": 3,
+      "vinculada_kpi": "Receita Comercial Gerada - US$ 5M/ano"
+    }
+  ],
+  "generated_at": "2025-12-08T22:24:42.219Z"
+}

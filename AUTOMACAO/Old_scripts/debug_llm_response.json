@@ -1,0 +1,8 @@
+
+{
+  "cargos_necessarios": ["CEO", "CTO", "Gerente de Produtos", "Desenvolvedor Senior", "Desenvolvedor Junior", "Designer UX/UI", "Gerente de Vendas", "Analista de Marketing", "Gerente de RH", "Analista de Suporte Técnico", "Gerente Financeiro", "Estagiário de TI"],
+  "metadata": {
+    "gerado_em": "2025-12-04T21:23:28.669Z",
+    "metodo": "llm_analysis"
+  }
+}

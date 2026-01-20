@@ -1,0 +1,53 @@
+{
+  "persona_id": "ee75f578-361c-46ee-880c-51ec0594efe5",
+  "full_name": "Lucas Pereira",
+  "role": "Product Owner de Agentes Pleno",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Gestão de Product Backlog",
+    "Elaboração de User Stories e Critérios de Aceitação",
+    "Metodologias Ágeis e Scrum",
+    "Análise de Dados e Métricas de Produto",
+    "Conhecimentos em IA e Agentes Autônomos"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação Eficaz",
+    "Liderança e Influência",
+    "Resolução de Problemas",
+    "Foco no Usuário e Empatia",
+    "Adaptabilidade e Aprendizagem Contínua"
+  ],
+  "ferramentas": [
+    "Jira",
+    "Confluence",
+    "Figma",
+    "Postman"
+  ],
+  "tarefas_diarias": [
+    "Revisar e priorizar Product Backlog",
+    "Participar de Daily Stand-ups",
+    "Colaborar com equipe de desenvolvimento",
+    "Analisar feedback de usuários"
+  ],
+  "tarefas_semanais": [
+    "Realizar refinamento de backlog",
+    "Planejar e revisar sprints",
+    "Monitorar métricas de performance"
+  ],
+  "tarefas_mensais": [
+    "Gerar relatórios de progresso",
+    "Atualizar roadmap do produto",
+    "Alinhar com stakeholders"
+  ],
+  "kpis": [
+    "KPI 1: Velocidade da Equipe - 25 Story Points por Sprint",
+    "KPI 2: Net Promoter Score (NPS) - Acima de 8",
+    "KPI 3: Taxa de Entrega no Prazo - 90%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação PSPO II",
+    "Aprimorar skills em Product Management para IA",
+    "Liderar lançamento de novo agente inteligente"
+  ],
+  "generated_at": "2025-12-01T20:40:03.955Z"
+}

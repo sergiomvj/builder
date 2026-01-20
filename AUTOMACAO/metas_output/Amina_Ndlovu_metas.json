@@ -1,0 +1,59 @@
+{
+  "persona_id": "3d4bf60f-0fa8-4b8a-98ae-4fa7ceac70a2",
+  "full_name": "Amina Ndlovu",
+  "role": "CEO / CTO",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "metas": [
+    {
+      "titulo": "Aumentar Taxa de Adoção de Agentes",
+      "descricao": "Liderar iniciativas para elevar a taxa de adoção de agentes de IA em 25% quarter-over-quarter através de campanhas internas e treinamentos para equipes.",
+      "categoria": "kpi",
+      "valor_alvo": 25,
+      "unidade_medida": "% QoQ",
+      "data_prazo": "2025-03-31",
+      "prioridade": 5,
+      "vinculada_kpi": "Taxa de Adoção de Agentes - 25% QoQ"
+    },
+    {
+      "titulo": "Alcançar Eficiência de 98% nos Agentes",
+      "descricao": "Otimizar algoritmos e processos para garantir que os agentes de IA atinjam 98% de taxa de sucesso em operações, monitorando e ajustando métricas semanais.",
+      "categoria": "kpi",
+      "valor_alvo": 98,
+      "unidade_medida": "%",
+      "data_prazo": "2025-04-30",
+      "prioridade": 4,
+      "vinculada_kpi": "Eficiência Operacional dos Agentes - 98% sucesso"
+    },
+    {
+      "titulo": "Aprimorar Expertise em IA Multimodal",
+      "descricao": "Completar 50 horas de cursos avançados e projetos práticos em IA Generativa Multimodal, incluindo plataformas como Hugging Face e Google Cloud AI.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 50,
+      "unidade_medida": "horas",
+      "data_prazo": "2025-02-28",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Expandir Rede de Parcerias Globais",
+      "descricao": "Estabelecer 8 novas parcerias estratégicas com empresas de tecnologia globais, focando em América do Norte e Europa, via eventos e LinkedIn outreach.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 8,
+      "unidade_medida": "parcerias",
+      "data_prazo": "2025-04-15",
+      "prioridade": 4,
+      "vinculada_kpi": "Receita Recorrente Anual - $2M ARR"
+    },
+    {
+      "titulo": "Obter Certificação em Governança de IA",
+      "descricao": "Concluir e obter a certificação em Governança de IA Ética da IEEE ou equivalente, aplicando conhecimentos em políticas internas da ARVA Tech.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "certificação",
+      "data_prazo": "2025-03-15",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    }
+  ],
+  "generated_at": "2025-12-08T22:21:04.689Z"
+}

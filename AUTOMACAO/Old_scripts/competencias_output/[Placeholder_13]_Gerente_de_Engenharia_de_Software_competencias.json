@@ -1,0 +1,53 @@
+{
+  "persona_id": "ef21e331-5aed-4eb2-bf87-44b67eef7c49",
+  "full_name": "[Placeholder 13] Gerente de Engenharia de Software",
+  "role": "Gerente de Engenharia de Software",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Arquitetura de Software Escalável",
+    "Metodologias Ágeis (Scrum e Kanban)",
+    "Cloud Computing (AWS e Azure)",
+    "DevOps e Pipelines CI/CD",
+    "Automação de Testes e Qualidade de Software"
+  ],
+  "competencias_comportamentais": [
+    "Liderança de Equipes Técnicas",
+    "Comunicação Eficaz e Transparente",
+    "Resolução de Problemas Complexos",
+    "Gestão de Conflitos e Motivação",
+    "Mentoria e Desenvolvimento de Talentos"
+  ],
+  "ferramentas": [
+    "Jira e Confluence",
+    "GitHub/GitLab",
+    "Jenkins e Docker",
+    "Slack e Microsoft Teams"
+  ],
+  "tarefas_diarias": [
+    "Acompanhar stand-ups da equipe",
+    "Revisar pull requests e merges",
+    "Monitorar métricas de produção",
+    "Responder comunicações urgentes"
+  ],
+  "tarefas_semanais": [
+    "Realizar reuniões 1:1 individuais",
+    "Planejar e revisar sprints",
+    "Analisar relatórios de performance"
+  ],
+  "tarefas_mensais": [
+    "Gerar relatórios executivos",
+    "Realizar avaliações de equipe",
+    "Atualizar roadmap de projetos"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Sucesso em Deploys - 99%",
+    "KPI 2: Satisfação da Equipe (eNPS) - 70+",
+    "KPI 3: Tempo Médio de Resolução de Bugs - <48h"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação em liderança ágil (SAFe)",
+    "Implementar práticas avançadas de DevOps",
+    "Expandir conhecimento em IA para engenharia"
+  ],
+  "generated_at": "2025-12-02T18:04:20.816Z"
+}

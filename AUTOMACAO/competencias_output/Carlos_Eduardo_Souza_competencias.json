@@ -1,0 +1,53 @@
+{
+  "persona_id": "ac722e3c-17eb-4607-8a93-a5228cf25d49",
+  "full_name": "Carlos Eduardo Souza",
+  "role": "Analista de SEO/SEM",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento avançado em SEO e SEM",
+    "Experiência em análise de dados e otimização de conteúdo",
+    "Conhecimento em Google Analytics e outras ferramentas de análise",
+    "Capacidade de identificar tendências de mercado e concorrência",
+    "Habilidade em otimização de campanhas de publicidade online"
+  ],
+  "competencias_comportamentais": [
+    "Proatividade",
+    "Habilidade em trabalhar em equipe",
+    "Boa comunicação",
+    "Capacidade de adaptação a mudanças",
+    "Foco em resultados"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "Google Ads",
+    "Moz",
+    "Semrush"
+  ],
+  "tarefas_diarias": [
+    "Monitorar e analisar o desempenho de campanhas de SEO e SEM",
+    "Identificar oportunidades de melhorias em conteúdos e estratégias",
+    "Realizar ajustes e otimizações constantes nas campanhas",
+    "Analisar dados e apresentar relatórios com insights"
+  ],
+  "tarefas_semanais": [
+    "Realizar reuniões de alinhamento com a equipe de marketing",
+    "Acompanhar as tendências do mercado e concorrência",
+    "Implementar novas estratégias de SEO e SEM"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatórios detalhados de desempenho",
+    "Propor novas ações de melhoria baseadas em resultados",
+    "Participar de treinamentos e workshops para atualização"
+  ],
+  "kpis": [
+    "Aumento de tráfego orgânico em X%",
+    "Redução do custo por clique em Y%",
+    "Aumento da taxa de conversão em Z%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar conhecimentos em SEO técnico",
+    "Desenvolver habilidades em otimização de conteúdo para diferentes plataformas",
+    "Melhorar a análise de dados para tomada de decisões estratégicas"
+  ],
+  "generated_at": "2025-12-08T14:38:49.545Z"
+}

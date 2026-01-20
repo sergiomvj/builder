@@ -1,0 +1,53 @@
+{
+  "persona_id": "345e90a0-3113-4542-b2fa-3c65f5c207fa",
+  "full_name": "Emily Carter",
+  "role": "Designer UX/UI, Gerente de RH, Analista de Marketing",
+  "empresa_id": "a2845f62-59e2-48b2-8f89-8bfc6c33193f",
+  "competencias_tecnicas": [
+    "Design de interfaces",
+    "Experiência do usuário (UX)",
+    "Arquitetura da informação",
+    "Gestão de projetos",
+    "Marketing digital"
+  ],
+  "competencias_comportamentais": [
+    "Criatividade",
+    "Trabalho em equipe",
+    "Comunicação eficaz",
+    "Gestão do tempo",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Adobe XD",
+    "Sketch",
+    "InVision",
+    "Google Analytics"
+  ],
+  "tarefas_diarias": [
+    "Criar wireframes e protótipos",
+    "Realizar pesquisas de mercado",
+    "Analisar métricas de performance",
+    "Coordenar equipes de design"
+  ],
+  "tarefas_semanais": [
+    "Conduzir testes de usabilidade",
+    "Elaborar estratégias de marketing",
+    "Participar de reuniões de equipe"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatórios de performance",
+    "Participar de eventos de networking",
+    "Realizar treinamentos de equipe"
+  ],
+  "kpis": [
+    "Satisfação do usuário - 90%",
+    "Taxa de conversão - 15%",
+    "Engajamento nas redes sociais - 20%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em design responsivo",
+    "Participar de cursos de gestão de projetos",
+    "Desenvolver estratégias de branding"
+  ],
+  "generated_at": "2025-12-05T16:59:57.776Z"
+}

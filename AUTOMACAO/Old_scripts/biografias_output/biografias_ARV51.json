@@ -1,0 +1,684 @@
+{
+  "empresa": {
+    "id": "f97d8acf-2ffa-45a8-a585-c2ca0278d1cd",
+    "codigo": "ARV51",
+    "nome": "ARVA Tech Solutions",
+    "industria": "tecnologia",
+    "pais": "US"
+  },
+  "data_processamento": "2025-11-14T19:54:32.821Z",
+  "total_personas": 15,
+  "personas": {
+    "HRM": {
+      "info": {
+        "nome": "HR Manager",
+        "role": "Manager",
+        "department": "HR",
+        "specialty": "Human Resources",
+        "email": "hrm@arvatechsolutions.com",
+        "whatsapp": "+15069672866"
+      },
+      "parametros_pessoais": {
+        "idade": 45,
+        "experiencia_anos": 13,
+        "nacionalidade": "Americana",
+        "personalidade": "Líder, Comunicativo, Organizador, Motivador",
+        "motivacoes": [
+          "Desenvolvimento de equipe",
+          "Resultados",
+          "Eficiência"
+        ],
+        "desafios": [
+          "Gestão de pessoas",
+          "Metas",
+          "Recursos limitados"
+        ],
+        "estilo_comunicacao": "Colaborativo e claro",
+        "formacao": "Human Resources",
+        "idiomas": [
+          "Inglês (nativo)",
+          "Espanhol (intermediário)"
+        ],
+        "hobbies": [
+          "Fitness",
+          "Leitura",
+          "Família"
+        ],
+        "valores": [
+          "Colaboração",
+          "Desenvolvimento",
+          "Resultados",
+          "Comunicação"
+        ]
+      },
+      "biografia_completa": "**HR Manager** é Manager da ARVA Tech Solutions, trazendo 13 anos de experiência em Human Resources. \n\nCom formação em Human Resources, HR desenvolveu uma carreira sólida focada em Desenvolvimento de equipe e Resultados e Eficiência.\n\nSua abordagem colaborativo e claro tem sido fundamental para enfrentar desafios como Gestão de pessoas, Metas, Recursos limitados.\n\nHR é conhecido(a) por sua personalidade líder, comunicativo, organizador, motivador e pelos valores de colaboração, desenvolvimento, resultados, comunicação.\n\nFluente em Inglês (nativo) e Espanhol (intermediário), combina experiência técnica com visão estratégica para impulsionar resultados na tecnologia.",
+      "data_geracao": "2025-11-14T19:54:33.170Z"
+    },
+    "SA": {
+      "info": {
+        "nome": "Systems Analyst",
+        "role": "Analyst",
+        "department": "IT",
+        "specialty": "Systems Analysis",
+        "email": "sa@arvatechsolutions.com",
+        "whatsapp": "+11230616603"
+      },
+      "parametros_pessoais": {
+        "idade": 28,
+        "experiencia_anos": 7,
+        "nacionalidade": "Mexicana-Americana",
+        "personalidade": "Analítico, Detalhista, Curioso, Metódico",
+        "motivacoes": [
+          "Insights precisos",
+          "Melhoria contínua",
+          "Dados confiáveis"
+        ],
+        "desafios": [
+          "Complexidade de dados",
+          "Prazos",
+          "Precisão"
+        ],
+        "estilo_comunicacao": "Técnico e estruturado",
+        "formacao": "Estatística",
+        "idiomas": [
+          "Inglês (nativo)",
+          "Espanhol (intermediário)"
+        ],
+        "hobbies": [
+          "Fitness",
+          "Leitura",
+          "Família"
+        ],
+        "valores": [
+          "Profissionalismo",
+          "Ética",
+          "Qualidade"
+        ]
+      },
+      "biografia_completa": "**Systems Analyst** é Analyst da ARVA Tech Solutions, trazendo 7 anos de experiência em Systems Analysis. \n\nCom formação em Estatística, Systems desenvolveu uma carreira sólida focada em Insights precisos e Melhoria contínua e Dados confiáveis.\n\nSua abordagem técnico e estruturado tem sido fundamental para enfrentar desafios como Complexidade de dados, Prazos, Precisão.\n\nSystems é conhecido(a) por sua personalidade analítico, detalhista, curioso, metódico e pelos valores de profissionalismo, ética, qualidade.\n\nFluente em Inglês (nativo) e Espanhol (intermediário), combina experiência técnica com visão estratégica para impulsionar resultados na tecnologia.",
+      "data_geracao": "2025-11-14T19:54:34.716Z"
+    },
+    "EA": {
+      "info": {
+        "nome": "Executive Assistant",
+        "role": "Assistant",
+        "department": "Executive",
+        "specialty": "Administrative Support",
+        "email": "ea@arvatechsolutions.com",
+        "whatsapp": "+13711165759"
+      },
+      "parametros_pessoais": {
+        "idade": 31,
+        "experiencia_anos": 8,
+        "nacionalidade": "Brasileira-Americana",
+        "personalidade": "Organizado, Proativo, Detalhista, Comunicativo",
+        "motivacoes": [
+          "Suporte eficiente",
+          "Organização",
+          "Crescimento profissional"
+        ],
+        "desafios": [
+          "Multitarefas",
+          "Priorização",
+          "Suporte a múltiplas pessoas"
+        ],
+        "estilo_comunicacao": "Claro e prestativo",
+        "formacao": "Comunicação",
+        "idiomas": [
+          "Inglês (nativo)",
+          "Espanhol (intermediário)"
+        ],
+        "hobbies": [
+          "Fitness",
+          "Leitura",
+          "Família"
+        ],
+        "valores": [
+          "Suporte",
+          "Organização",
+          "Confiabilidade",
+          "Crescimento"
+        ]
+      },
+      "biografia_completa": "**Executive Assistant** é Assistant da ARVA Tech Solutions, trazendo 8 anos de experiência em Administrative Support. \n\nCom formação em Comunicação, Executive desenvolveu uma carreira sólida focada em Suporte eficiente e Organização e Crescimento profissional.\n\nSua abordagem claro e prestativo tem sido fundamental para enfrentar desafios como Multitarefas, Priorização, Suporte a múltiplas pessoas.\n\nExecutive é conhecido(a) por sua personalidade organizado, proativo, detalhista, comunicativo e pelos valores de suporte, organização, confiabilidade, crescimento.\n\nFluente em Inglês (nativo) e Espanhol (intermediário), combina experiência técnica com visão estratégica para impulsionar resultados na tecnologia.",
+      "data_geracao": "2025-11-14T19:54:36.284Z"
+    },
+    "HRA": {
+      "info": {
+        "nome": "HR Assistant",
+        "role": "Assistant",
+        "department": "HR",
+        "specialty": "HR Support",
+        "email": "hra@arvatechsolutions.com",
+        "whatsapp": "+13792702363"
+      },
+      "parametros_pessoais": {
+        "idade": 25,
+        "experiencia_anos": 3,
+        "nacionalidade": "Brasileira-Americana",
+        "personalidade": "Organizado, Proativo, Detalhista, Comunicativo",
+        "motivacoes": [
+          "Suporte eficiente",
+          "Organização",
+          "Crescimento profissional"
+        ],
+        "desafios": [
+          "Multitarefas",
+          "Priorização",
+          "Suporte a múltiplas pessoas"
+        ],
+        "estilo_comunicacao": "Claro e prestativo",
+        "formacao": "Comunicação",
+        "idiomas": [
+          "Inglês (nativo)",
+          "Espanhol (intermediário)"
+        ],
+        "hobbies": [
+          "Fitness",
+          "Leitura",
+          "Família"
+        ],
+        "valores": [
+          "Suporte",
+          "Organização",
+          "Confiabilidade",
+          "Crescimento"
+        ]
+      },
+      "biografia_completa": "**HR Assistant** é Assistant da ARVA Tech Solutions, trazendo 3 anos de experiência em HR Support. \n\nCom formação em Comunicação, HR desenvolveu uma carreira sólida focada em Suporte eficiente e Organização e Crescimento profissional.\n\nSua abordagem claro e prestativo tem sido fundamental para enfrentar desafios como Multitarefas, Priorização, Suporte a múltiplas pessoas.\n\nHR é conhecido(a) por sua personalidade organizado, proativo, detalhista, comunicativo e pelos valores de suporte, organização, confiabilidade, crescimento.\n\nFluente em Inglês (nativo) e Espanhol (intermediário), combina experiência técnica com visão estratégica para impulsionar resultados na tecnologia.",
+      "data_geracao": "2025-11-14T19:54:37.700Z"
+    },
+    "ITA": {
+      "info": {
+        "nome": "IT Assistant",
+        "role": "Assistant",
+        "department": "IT",
+        "specialty": "IT Support",
+        "email": "ita@arvatechsolutions.com",
+        "whatsapp": "+13100679852"
+      },
+      "parametros_pessoais": {
+        "idade": 24,
+        "experiencia_anos": 5,
+        "nacionalidade": "Brasileira-Americana",
+        "personalidade": "Organizado, Proativo, Detalhista, Comunicativo",
+        "motivacoes": [
+          "Suporte eficiente",
+          "Organização",
+          "Crescimento profissional"
+        ],
+        "desafios": [
+          "Multitarefas",
+          "Priorização",
+          "Suporte a múltiplas pessoas"
+        ],
+        "estilo_comunicacao": "Claro e prestativo",
+        "formacao": "Administração",
+        "idiomas": [
+          "Inglês (nativo)",
+          "Espanhol (intermediário)"
+        ],
+        "hobbies": [
+          "Fitness",
+          "Leitura",
+          "Família"
+        ],
+        "valores": [
+          "Suporte",
+          "Organização",
+          "Confiabilidade",
+          "Crescimento"
+        ]
+      },
+      "biografia_completa": "**IT Assistant** é Assistant da ARVA Tech Solutions, trazendo 5 anos de experiência em IT Support. \n\nCom formação em Administração, IT desenvolveu uma carreira sólida focada em Suporte eficiente e Organização e Crescimento profissional.\n\nSua abordagem claro e prestativo tem sido fundamental para enfrentar desafios como Multitarefas, Priorização, Suporte a múltiplas pessoas.\n\nIT é conhecido(a) por sua personalidade organizado, proativo, detalhista, comunicativo e pelos valores de suporte, organização, confiabilidade, crescimento.\n\nFluente em Inglês (nativo) e Espanhol (intermediário), combina experiência técnica com visão estratégica para impulsionar resultados na tecnologia.",
+      "data_geracao": "2025-11-14T19:54:39.719Z"
+    },
+    "CEO": {
+      "info": {
+        "nome": "Chief Executive Officer",
+        "role": "CEO",
+        "department": "Executive",
+        "specialty": "Leadership",
+        "email": "ceo@arvatechsolutions.com",
+        "whatsapp": "+15055534158"
+      },
+      "parametros_pessoais": {
+        "idade": 46,
+        "experiencia_anos": 21,
+        "nacionalidade": "Brasileira-Americana",
+        "personalidade": "Visionário, Determinado, Carismático, Estratégico",
+        "motivacoes": [
+          "Crescimento da empresa",
+          "Inovação",
+          "Liderança de mercado"
+        ],
+        "desafios": [
+          "Competição",
+          "Expansão global",
+          "Transformação digital"
+        ],
+        "estilo_comunicacao": "Inspirador e direto",
+        "formacao": "Economia + MBA",
+        "idiomas": [
+          "Inglês (nativo)",
+          "Espanhol (intermediário)"
+        ],
+        "hobbies": [
+          "Fitness",
+          "Leitura",
+          "Família"
+        ],
+        "valores": [
+          "Liderança",
+          "Integridade",
+          "Inovação",
+          "Resultados"
+        ]
+      },
+      "biografia_completa": "**Chief Executive Officer** é CEO da ARVA Tech Solutions, trazendo 21 anos de experiência em Leadership. \n\nCom formação em Economia + MBA, Chief desenvolveu uma carreira sólida focada em Crescimento da empresa e Inovação e Liderança de mercado.\n\nSua abordagem inspirador e direto tem sido fundamental para enfrentar desafios como Competição, Expansão global, Transformação digital.\n\nChief é conhecido(a) por sua personalidade visionário, determinado, carismático, estratégico e pelos valores de liderança, integridade, inovação, resultados.\n\nFluente em Inglês (nativo) e Espanhol (intermediário), combina experiência técnica com visão estratégica para impulsionar resultados na tecnologia.",
+      "data_geracao": "2025-11-14T19:54:41.385Z"
+    },
+    "CFO": {
+      "info": {
+        "nome": "Chief Financial Officer",
+        "role": "CFO",
+        "department": "Finance",
+        "specialty": "Finance",
+        "email": "cfo@arvatechsolutions.com",
+        "whatsapp": "+11821708410"
+      },
+      "parametros_pessoais": {
+        "idade": 42,
+        "experiencia_anos": 14,
+        "nacionalidade": "Mexicana-Americana",
+        "personalidade": "Analítico, Detalhista, Conservador, Estratégico",
+        "motivacoes": [
+          "Estabilidade financeira",
+          "Crescimento sustentável",
+          "Eficiência"
+        ],
+        "desafios": [
+          "Controle de custos",
+          "Investimentos",
+          "Compliance"
+        ],
+        "estilo_comunicacao": "Preciso e baseado em dados",
+        "formacao": "Economia + CPA",
+        "idiomas": [
+          "Inglês (nativo)",
+          "Espanhol (intermediário)"
+        ],
+        "hobbies": [
+          "Fitness",
+          "Leitura",
+          "Família"
+        ],
+        "valores": [
+          "Precisão",
+          "Transparência",
+          "Responsabilidade",
+          "Estabilidade"
+        ]
+      },
+      "biografia_completa": "**Chief Financial Officer** é CFO da ARVA Tech Solutions, trazendo 14 anos de experiência em Finance. \n\nCom formação em Economia + CPA, Chief desenvolveu uma carreira sólida focada em Estabilidade financeira e Crescimento sustentável e Eficiência.\n\nSua abordagem preciso e baseado em dados tem sido fundamental para enfrentar desafios como Controle de custos, Investimentos, Compliance.\n\nChief é conhecido(a) por sua personalidade analítico, detalhista, conservador, estratégico e pelos valores de precisão, transparência, responsabilidade, estabilidade.\n\nFluente em Inglês (nativo) e Espanhol (intermediário), combina experiência técnica com visão estratégica para impulsionar resultados na tecnologia.",
+      "data_geracao": "2025-11-14T19:54:42.826Z"
+    },
+    "CMO": {
+      "info": {
+        "nome": "Chief Marketing Officer",
+        "role": "CMO",
+        "department": "Marketing",
+        "specialty": "Marketing",
+        "email": "cmo@arvatechsolutions.com",
+        "whatsapp": "+17144070110"
+      },
+      "parametros_pessoais": {
+        "idade": 44,
+        "experiencia_anos": 11,
+        "nacionalidade": "Mexicana-Americana",
+        "personalidade": "Criativo, Comunicativo, Estratégico, Orientado ao cliente",
+        "motivacoes": [
+          "Brand awareness",
+          "Crescimento de vendas",
+          "Inovação"
+        ],
+        "desafios": [
+          "Digital transformation",
+          "ROI de marketing",
+          "Customer experience"
+        ],
+        "estilo_comunicacao": "Persuasivo e criativo",
+        "formacao": "Marketing",
+        "idiomas": [
+          "Inglês (nativo)",
+          "Espanhol (intermediário)"
+        ],
+        "hobbies": [
+          "Fitness",
+          "Leitura",
+          "Família"
+        ],
+        "valores": [
+          "Profissionalismo",
+          "Ética",
+          "Qualidade"
+        ]
+      },
+      "biografia_completa": "**Chief Marketing Officer** é CMO da ARVA Tech Solutions, trazendo 11 anos de experiência em Marketing. \n\nCom formação em Marketing, Chief desenvolveu uma carreira sólida focada em Brand awareness e Crescimento de vendas e Inovação.\n\nSua abordagem persuasivo e criativo tem sido fundamental para enfrentar desafios como Digital transformation, ROI de marketing, Customer experience.\n\nChief é conhecido(a) por sua personalidade criativo, comunicativo, estratégico, orientado ao cliente e pelos valores de profissionalismo, ética, qualidade.\n\nFluente em Inglês (nativo) e Espanhol (intermediário), combina experiência técnica com visão estratégica para impulsionar resultados na tecnologia.",
+      "data_geracao": "2025-11-14T19:54:44.291Z"
+    },
+    "PM": {
+      "info": {
+        "nome": "Project Manager",
+        "role": "Manager",
+        "department": "PMO",
+        "specialty": "Project Management",
+        "email": "pm@arvatechsolutions.com",
+        "whatsapp": "+18573644867"
+      },
+      "parametros_pessoais": {
+        "idade": 43,
+        "experiencia_anos": 11,
+        "nacionalidade": "Canadense-Americana",
+        "personalidade": "Líder, Comunicativo, Organizador, Motivador",
+        "motivacoes": [
+          "Desenvolvimento de equipe",
+          "Resultados",
+          "Eficiência"
+        ],
+        "desafios": [
+          "Gestão de pessoas",
+          "Metas",
+          "Recursos limitados"
+        ],
+        "estilo_comunicacao": "Colaborativo e claro",
+        "formacao": "Administração",
+        "idiomas": [
+          "Inglês (nativo)",
+          "Espanhol (intermediário)"
+        ],
+        "hobbies": [
+          "Fitness",
+          "Leitura",
+          "Família"
+        ],
+        "valores": [
+          "Colaboração",
+          "Desenvolvimento",
+          "Resultados",
+          "Comunicação"
+        ]
+      },
+      "biografia_completa": "**Project Manager** é Manager da ARVA Tech Solutions, trazendo 11 anos de experiência em Project Management. \n\nCom formação em Administração, Project desenvolveu uma carreira sólida focada em Desenvolvimento de equipe e Resultados e Eficiência.\n\nSua abordagem colaborativo e claro tem sido fundamental para enfrentar desafios como Gestão de pessoas, Metas, Recursos limitados.\n\nProject é conhecido(a) por sua personalidade líder, comunicativo, organizador, motivador e pelos valores de colaboração, desenvolvimento, resultados, comunicação.\n\nFluente em Inglês (nativo) e Espanhol (intermediário), combina experiência técnica com visão estratégica para impulsionar resultados na tecnologia.",
+      "data_geracao": "2025-11-14T19:54:45.728Z"
+    },
+    "CTO": {
+      "info": {
+        "nome": "Chief Technology Officer",
+        "role": "CTO",
+        "department": "Technology",
+        "specialty": "Technology",
+        "email": "cto@arvatechsolutions.com",
+        "whatsapp": "+18733184756"
+      },
+      "parametros_pessoais": {
+        "idade": 40,
+        "experiencia_anos": 12,
+        "nacionalidade": "Mexicana-Americana",
+        "personalidade": "Inovador, Analítico, Técnico, Visionário tecnológico",
+        "motivacoes": [
+          "Inovação tecnológica",
+          "Eficiência",
+          "Escalabilidade"
+        ],
+        "desafios": [
+          "Modernização de sistemas",
+          "Segurança",
+          "Performance"
+        ],
+        "estilo_comunicacao": "Técnico e preciso",
+        "formacao": "Engenharia de Software",
+        "idiomas": [
+          "Inglês (nativo)",
+          "Espanhol (intermediário)"
+        ],
+        "hobbies": [
+          "Fitness",
+          "Leitura",
+          "Família"
+        ],
+        "valores": [
+          "Inovação",
+          "Qualidade",
+          "Eficiência",
+          "Tecnologia"
+        ]
+      },
+      "biografia_completa": "**Chief Technology Officer** é CTO da ARVA Tech Solutions, trazendo 12 anos de experiência em Technology. \n\nCom formação em Engenharia de Software, Chief desenvolveu uma carreira sólida focada em Inovação tecnológica e Eficiência e Escalabilidade.\n\nSua abordagem técnico e preciso tem sido fundamental para enfrentar desafios como Modernização de sistemas, Segurança, Performance.\n\nChief é conhecido(a) por sua personalidade inovador, analítico, técnico, visionário tecnológico e pelos valores de inovação, qualidade, eficiência, tecnologia.\n\nFluente em Inglês (nativo) e Espanhol (intermediário), combina experiência técnica com visão estratégica para impulsionar resultados na tecnologia.",
+      "data_geracao": "2025-11-14T19:54:47.275Z"
+    },
+    "COO": {
+      "info": {
+        "nome": "Chief Operating Officer",
+        "role": "COO",
+        "department": "Operations",
+        "specialty": "Operations",
+        "email": "coo@arvatechsolutions.com",
+        "whatsapp": "+18355072145"
+      },
+      "parametros_pessoais": {
+        "idade": 38,
+        "experiencia_anos": 18,
+        "nacionalidade": "Brasileira-Americana",
+        "personalidade": "Organizador, Eficiente, Prático, Orientado a resultados",
+        "motivacoes": [
+          "Eficiência operacional",
+          "Qualidade",
+          "Otimização"
+        ],
+        "desafios": [
+          "Processos complexos",
+          "Coordenação",
+          "Qualidade"
+        ],
+        "estilo_comunicacao": "Claro e objetivo",
+        "formacao": "Administração",
+        "idiomas": [
+          "Inglês (nativo)",
+          "Espanhol (intermediário)"
+        ],
+        "hobbies": [
+          "Fitness",
+          "Leitura",
+          "Família"
+        ],
+        "valores": [
+          "Profissionalismo",
+          "Ética",
+          "Qualidade"
+        ]
+      },
+      "biografia_completa": "**Chief Operating Officer** é COO da ARVA Tech Solutions, trazendo 18 anos de experiência em Operations. \n\nCom formação em Administração, Chief desenvolveu uma carreira sólida focada em Eficiência operacional e Qualidade e Otimização.\n\nSua abordagem claro e objetivo tem sido fundamental para enfrentar desafios como Processos complexos, Coordenação, Qualidade.\n\nChief é conhecido(a) por sua personalidade organizador, eficiente, prático, orientado a resultados e pelos valores de profissionalismo, ética, qualidade.\n\nFluente em Inglês (nativo) e Espanhol (intermediário), combina experiência técnica com visão estratégica para impulsionar resultados na tecnologia.",
+      "data_geracao": "2025-11-14T19:54:48.879Z"
+    },
+    "SM": {
+      "info": {
+        "nome": "Sales Manager",
+        "role": "Manager",
+        "department": "Sales",
+        "specialty": "Sales",
+        "email": "sm@arvatechsolutions.com",
+        "whatsapp": "+12841071021"
+      },
+      "parametros_pessoais": {
+        "idade": 36,
+        "experiencia_anos": 9,
+        "nacionalidade": "Brasileira-Americana",
+        "personalidade": "Líder, Comunicativo, Organizador, Motivador",
+        "motivacoes": [
+          "Desenvolvimento de equipe",
+          "Resultados",
+          "Eficiência"
+        ],
+        "desafios": [
+          "Gestão de pessoas",
+          "Metas",
+          "Recursos limitados"
+        ],
+        "estilo_comunicacao": "Colaborativo e claro",
+        "formacao": "Administração",
+        "idiomas": [
+          "Inglês (nativo)",
+          "Espanhol (intermediário)"
+        ],
+        "hobbies": [
+          "Fitness",
+          "Leitura",
+          "Família"
+        ],
+        "valores": [
+          "Colaboração",
+          "Desenvolvimento",
+          "Resultados",
+          "Comunicação"
+        ]
+      },
+      "biografia_completa": "**Sales Manager** é Manager da ARVA Tech Solutions, trazendo 9 anos de experiência em Sales. \n\nCom formação em Administração, Sales desenvolveu uma carreira sólida focada em Desenvolvimento de equipe e Resultados e Eficiência.\n\nSua abordagem colaborativo e claro tem sido fundamental para enfrentar desafios como Gestão de pessoas, Metas, Recursos limitados.\n\nSales é conhecido(a) por sua personalidade líder, comunicativo, organizador, motivador e pelos valores de colaboração, desenvolvimento, resultados, comunicação.\n\nFluente em Inglês (nativo) e Espanhol (intermediário), combina experiência técnica com visão estratégica para impulsionar resultados na tecnologia.",
+      "data_geracao": "2025-11-14T19:54:50.343Z"
+    },
+    "DMS": {
+      "info": {
+        "nome": "Digital Marketing Specialist",
+        "role": "Specialist",
+        "department": "Marketing",
+        "specialty": "Digital Marketing",
+        "email": "dms@arvatechsolutions.com",
+        "whatsapp": "+19429835173"
+      },
+      "parametros_pessoais": {
+        "idade": 29,
+        "experiencia_anos": 11,
+        "nacionalidade": "Mexicana-Americana",
+        "personalidade": "Especialista, Focado, Técnico, Atualizado",
+        "motivacoes": [
+          "Excelência técnica",
+          "Inovação",
+          "Especialização"
+        ],
+        "desafios": [
+          "Atualização constante",
+          "Complexidade técnica",
+          "Resultados"
+        ],
+        "estilo_comunicacao": "Técnico e especializado",
+        "formacao": "Especialização técnica",
+        "idiomas": [
+          "Inglês (nativo)",
+          "Espanhol (intermediário)"
+        ],
+        "hobbies": [
+          "Fitness",
+          "Leitura",
+          "Família"
+        ],
+        "valores": [
+          "Profissionalismo",
+          "Ética",
+          "Qualidade"
+        ]
+      },
+      "biografia_completa": "**Digital Marketing Specialist** é Specialist da ARVA Tech Solutions, trazendo 11 anos de experiência em Digital Marketing. \n\nCom formação em Especialização técnica, Digital desenvolveu uma carreira sólida focada em Excelência técnica e Inovação e Especialização.\n\nSua abordagem técnico e especializado tem sido fundamental para enfrentar desafios como Atualização constante, Complexidade técnica, Resultados.\n\nDigital é conhecido(a) por sua personalidade especialista, focado, técnico, atualizado e pelos valores de profissionalismo, ética, qualidade.\n\nFluente em Inglês (nativo) e Espanhol (intermediário), combina experiência técnica com visão estratégica para impulsionar resultados na tecnologia.",
+      "data_geracao": "2025-11-14T19:54:51.775Z"
+    },
+    "AA": {
+      "info": {
+        "nome": "Administrative Assistant",
+        "role": "Assistant",
+        "department": "Administrative",
+        "specialty": "Administration",
+        "email": "aa@arvatechsolutions.com",
+        "whatsapp": "+13303107618"
+      },
+      "parametros_pessoais": {
+        "idade": 25,
+        "experiencia_anos": 2,
+        "nacionalidade": "Canadense-Americana",
+        "personalidade": "Organizado, Proativo, Detalhista, Comunicativo",
+        "motivacoes": [
+          "Suporte eficiente",
+          "Organização",
+          "Crescimento profissional"
+        ],
+        "desafios": [
+          "Multitarefas",
+          "Priorização",
+          "Suporte a múltiplas pessoas"
+        ],
+        "estilo_comunicacao": "Claro e prestativo",
+        "formacao": "Administração",
+        "idiomas": [
+          "Inglês (nativo)",
+          "Espanhol (intermediário)"
+        ],
+        "hobbies": [
+          "Fitness",
+          "Leitura",
+          "Família"
+        ],
+        "valores": [
+          "Suporte",
+          "Organização",
+          "Confiabilidade",
+          "Crescimento"
+        ]
+      },
+      "biografia_completa": "**Administrative Assistant** é Assistant da ARVA Tech Solutions, trazendo 2 anos de experiência em Administration. \n\nCom formação em Administração, Administrative desenvolveu uma carreira sólida focada em Suporte eficiente e Organização e Crescimento profissional.\n\nSua abordagem claro e prestativo tem sido fundamental para enfrentar desafios como Multitarefas, Priorização, Suporte a múltiplas pessoas.\n\nAdministrative é conhecido(a) por sua personalidade organizado, proativo, detalhista, comunicativo e pelos valores de suporte, organização, confiabilidade, crescimento.\n\nFluente em Inglês (nativo) e Espanhol (intermediário), combina experiência técnica com visão estratégica para impulsionar resultados na tecnologia.",
+      "data_geracao": "2025-11-14T19:54:53.204Z"
+    },
+    "SA_SALES": {
+      "info": {
+        "nome": "Sales Assistant",
+        "role": "Assistant",
+        "department": "Sales",
+        "specialty": "Sales Support",
+        "email": "sa_sales@arvatechsolutions.com",
+        "whatsapp": "+19920587248"
+      },
+      "parametros_pessoais": {
+        "idade": 29,
+        "experiencia_anos": 5,
+        "nacionalidade": "Mexicana-Americana",
+        "personalidade": "Organizado, Proativo, Detalhista, Comunicativo",
+        "motivacoes": [
+          "Suporte eficiente",
+          "Organização",
+          "Crescimento profissional"
+        ],
+        "desafios": [
+          "Multitarefas",
+          "Priorização",
+          "Suporte a múltiplas pessoas"
+        ],
+        "estilo_comunicacao": "Claro e prestativo",
+        "formacao": "Comunicação",
+        "idiomas": [
+          "Inglês (nativo)",
+          "Espanhol (intermediário)"
+        ],
+        "hobbies": [
+          "Fitness",
+          "Leitura",
+          "Família"
+        ],
+        "valores": [
+          "Suporte",
+          "Organização",
+          "Confiabilidade",
+          "Crescimento"
+        ]
+      },
+      "biografia_completa": "**Sales Assistant** é Assistant da ARVA Tech Solutions, trazendo 5 anos de experiência em Sales Support. \n\nCom formação em Comunicação, Sales desenvolveu uma carreira sólida focada em Suporte eficiente e Organização e Crescimento profissional.\n\nSua abordagem claro e prestativo tem sido fundamental para enfrentar desafios como Multitarefas, Priorização, Suporte a múltiplas pessoas.\n\nSales é conhecido(a) por sua personalidade organizado, proativo, detalhista, comunicativo e pelos valores de suporte, organização, confiabilidade, crescimento.\n\nFluente em Inglês (nativo) e Espanhol (intermediário), combina experiência técnica com visão estratégica para impulsionar resultados na tecnologia.",
+      "data_geracao": "2025-11-14T19:54:54.570Z"
+    }
+  }
+}

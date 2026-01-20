@@ -1,0 +1,53 @@
+{
+  "persona_id": "d2b77aad-08fb-4380-8f30-d855be094430",
+  "full_name": "[Placeholder 4] Gerente de Operações Técnicas",
+  "role": "Gerente de Operações Técnicas",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Gestão de infraestrutura de TI e cloud (AWS, Azure)",
+    "Monitoramento e observabilidade de sistemas (Prometheus, Grafana)",
+    "Automação de processos operacionais (CI/CD, Ansible)",
+    "Gerenciamento de incidentes e recuperação de desastres",
+    "Segurança operacional e conformidade (GDPR, ISO 27001)"
+  ],
+  "competencias_comportamentais": [
+    "Liderança de equipes técnicas multifuncionais",
+    "Comunicação clara com stakeholders técnicos e executivos",
+    "Resolução de problemas complexos sob pressão",
+    "Orientação para resultados e eficiência operacional",
+    "Adaptabilidade a novas tecnologias e mudanças"
+  ],
+  "ferramentas": [
+    "AWS Console e serviços",
+    "Kubernetes e Docker",
+    "Jira e ServiceNow",
+    "Terraform e Ansible"
+  ],
+  "tarefas_diarias": [
+    "Monitorar dashboards de performance e alertas",
+    "Gerenciar incidentes e escalonamentos da equipe",
+    "Coordenar plantão técnico e suporte 24/7",
+    "Analisar logs e métricas para identificar gargalos"
+  ],
+  "tarefas_semanais": [
+    "Realizar reuniões de status com equipes e stakeholders",
+    "Revisar relatórios de SLOs e SLAs",
+    "Planejar e priorizar melhorias operacionais"
+  ],
+  "tarefas_mensais": [
+    "Conduzir post-mortems de incidentes críticos",
+    "Otimizar custos de infraestrutura e recursos cloud",
+    "Atualizar planos de continuidade de negócios e DR"
+  ],
+  "kpis": [
+    "KPI 1: Disponibilidade de serviços - 99.99%",
+    "KPI 2: Tempo Médio de Resolução (MTTR) - < 30 minutos",
+    "KPI 3: Taxa de automação de tarefas - 80%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação AWS Certified DevOps Engineer",
+    "Implementar práticas SRE avançadas na operação",
+    "Desenvolver habilidades de liderança com curso executivo"
+  ],
+  "generated_at": "2025-12-01T16:45:54.829Z"
+}

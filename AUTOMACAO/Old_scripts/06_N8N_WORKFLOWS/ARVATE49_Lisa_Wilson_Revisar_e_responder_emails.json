@@ -1,0 +1,205 @@
+{
+  "name": "Lisa (SDR Senior) - Revisar e responder emails",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 9h para verificar novos emails"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "listMessages",
+        "to": "{{ $json.email }}",
+        "subject": "Notification",
+        "message": "Automated message"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar novos emails não lidos na caixa de entrada",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.filter(email => email.subject.includes('consulta') || email.subject.includes('lead'));"
+      },
+      "typeVersion": 1,
+      "notes": "Filtrar emails por assunto relacionado a consultas ou leads"
+    },
+    {
+      "id": "4",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "{{ $json.from }}",
+        "subject": "Re: {{ $json.subject }}",
+        "message": "Obrigado pelo seu contato. [Inserir resposta padrão aqui]."
+      },
+      "typeVersion": 1,
+      "notes": "Responder ao email com uma mensagem padrão",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "operation": "update",
+        "table": "emails",
+        "data": {
+          "status": "responded"
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar status do email para 'respondido' no banco de dados",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_ARVATE49",
+          "name": "Supabase ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Lisa (SDR Senior) - Revisar e responder emails\nEmpresa: ARVA Tech Solutions\nPersona: Lisa Wilson\nTarefa: Revisar e responder emails\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:38.690Z",
+  "updatedAt": "2025-11-28T17:05:38.690Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "32bfbb7a-148b-4113-9fb6-9caff688efcc",
+    "persona_nome": "Lisa Wilson",
+    "task_id": "ccb73101-7455-4c50-ab84-869891955699",
+    "task_title": "Revisar e responder emails",
+    "opportunity_id": "509bd1ba-a191-4fa2-935f-3612098f92e9",
+    "automation_score": 60,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:38.690Z"
+  }
+}

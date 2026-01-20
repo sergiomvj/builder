@@ -1,0 +1,35 @@
+{
+  "name": "vcm-autonomous-arbitrator",
+  "version": "1.0.0",
+  "description": "Sistema Autônomo de Arbitragem de Tarefas VCM com LLM",
+  "main": "autonomous_task_arbitrator.js",
+  "scripts": {
+    "start": "node autonomous_task_arbitrator.js",
+    "manual": "node autonomous_task_arbitrator.js --manual",
+    "dev": "NODE_ENV=development node autonomous_task_arbitrator.js",
+    "install-deps": "npm install",
+    "setup": "node setup_autonomous_system.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.0",
+    "openai": "^4.20.0", 
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "vcm",
+    "task-arbitration", 
+    "llm",
+    "autonomous",
+    "supabase",
+    "openai"
+  ],
+  "author": "VCM Team",
+  "license": "MIT"
+}

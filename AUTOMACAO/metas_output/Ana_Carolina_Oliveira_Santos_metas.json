@@ -1,0 +1,39 @@
+{
+  "persona_id": "4e97230c-8795-4dc1-8f77-ace8cf64b976",
+  "full_name": "Ana Carolina Oliveira Santos",
+  "role": "Designer UI/UX",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades em design responsivo",
+      "descricao": "Participar de cursos online e workshops sobre design responsivo, buscando aprofundar conhecimentos e aplicar as melhores práticas em projetos da LifeWayUSA.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "N/A",
+      "unidade_medida": "N/A",
+      "data_prazo": "2022-12-01",
+      "prioridade": 1,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Concluir curso online de UX/UI design",
+      "descricao": "Matricular-se em um curso reconhecido na área de UX/UI design e concluir todas as atividades propostas, visando aprimorar conhecimentos e habilidades na área.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "N/A",
+      "unidade_medida": "N/A",
+      "data_prazo": "2022-10-01",
+      "prioridade": 2,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Aumentar a taxa de conversão de novos usuários em 10%",
+      "descricao": "Implementar melhorias na interface da plataforma da LifeWayUSA, focando em aumentar a taxa de conversão de novos usuários em 10% dentro de 6 meses.",
+      "categoria": "kpi",
+      "valor_alvo": 10,
+      "unidade_medida": "%",
+      "data_prazo": "2022-11-01",
+      "prioridade": 3,
+      "vinculada_kpi": "Taxa de conversão de novos usuários"
+    }
+  ],
+  "generated_at": "2025-12-08T14:37:26.981Z"
+}

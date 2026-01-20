@@ -1,0 +1,53 @@
+{
+  "persona_id": "e0f50fad-4bba-434f-9b52-5373cc69e3d8",
+  "full_name": "Lucas Ferreira Santos",
+  "role": "Desenvolvedor Frontend",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Angular"
+  ],
+  "competencias_comportamentais": [
+    "Proatividade",
+    "Trabalho em equipe",
+    "Comunicação eficaz",
+    "Resolução de problemas",
+    "Flexibilidade"
+  ],
+  "ferramentas": [
+    "Visual Studio Code",
+    "Git",
+    "Figma",
+    "Adobe XD"
+  ],
+  "tarefas_diarias": [
+    "Desenvolvimento de interfaces",
+    "Manutenção de código",
+    "Testes de usabilidade",
+    "Reuniões de alinhamento"
+  ],
+  "tarefas_semanais": [
+    "Revisão de código",
+    "Implementação de novas funcionalidades",
+    "Acompanhamento de métricas"
+  ],
+  "tarefas_mensais": [
+    "Otimização de performance",
+    "Atualização de tecnologias",
+    "Elaboração de relatórios"
+  ],
+  "kpis": [
+    "Entrega de projetos no prazo - 95%",
+    "Satisfação do usuário - 4.5/5",
+    "Taxa de conversão - 10%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em React Native",
+    "Participar de cursos de UX/UI design",
+    "Melhorar a comunicação interpessoal"
+  ],
+  "generated_at": "2025-12-08T14:43:03.201Z"
+}

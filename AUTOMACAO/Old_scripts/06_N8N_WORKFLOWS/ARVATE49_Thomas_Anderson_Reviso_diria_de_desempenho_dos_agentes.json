@@ -1,0 +1,190 @@
+{
+  "name": "Thomas (HR Manager) - Revisão diária de desempenho dos agentes",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 10 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 10h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "filters": {
+          "date": "{{ yesterday }}"
+        },
+        "endpoint": "/agents/performance",
+        "operation": "get"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar dados de desempenho dos agentes do dia anterior"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(agent => ({ ...agent, performance_alert: agent.performance_score < 50 ? 'ALERT' : 'OK' }));"
+      },
+      "typeVersion": 1,
+      "notes": "Verificar agentes com desempenho abaixo do esperado"
+    },
+    {
+      "id": "4",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "to": "management@arvatech.com",
+        "message": "{{ $json.performance_report }}",
+        "subject": "Relatório de Desempenho Diário dos Agentes"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email com relatório de desempenho"
+    },
+    {
+      "id": "5",
+      "name": "Send Notification",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#agent-performance",
+        "text": "Relatório de desempenho dos agentes enviado para a gestão."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar no Slack sobre o envio do relatório",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Thomas (HR Manager) - Revisão diária de desempenho dos agentes\nEmpresa: ARVA Tech Solutions\nPersona: Thomas Anderson\nTarefa: Revisão diária de desempenho dos agentes\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:18.297Z",
+  "updatedAt": "2025-11-28T17:05:18.297Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "afa9c2ea-870b-4894-8d9f-bb83f8412d1a",
+    "persona_nome": "Thomas Anderson",
+    "task_id": "d6e82159-fb64-4aac-8503-81462b551714",
+    "task_title": "Revisão diária de desempenho dos agentes",
+    "opportunity_id": "16d52ffa-149f-4e01-839d-a9738b37f2de",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:18.297Z"
+  }
+}

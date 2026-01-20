@@ -1,0 +1,37 @@
+{
+  "persona_id": "a24b1a9e-f98f-4a2d-adb7-1d889c6c6986",
+  "full_name": "Larissa Mendes Costa",
+  "role": "Especialista em Marketing Digital",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aumentar tráfego orgânico em redes sociais",
+      "descricao": "Implementar estratégias para aumentar o tráfego orgânico nas redes sociais da LifeWayUSA em 20% até 01/06/2022",
+      "categoria": "performance",
+      "valor_alvo": 20,
+      "unidade_medida": "%",
+      "data_prazo": "2022-06-01",
+      "prioridade": 1,
+      "vinculada_kpi": "Aumento de tráfego orgânico"
+    },
+    {
+      "titulo": "Participar de 2 cursos de atualização em marketing digital",
+      "descricao": "Matricular-se em 2 cursos de atualização em marketing digital até 01/06/2022, a fim de se manter atualizada com as tendências do mercado",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "cursos",
+      "data_prazo": "2022-06-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Aprimorar habilidades em gestão de projetos",
+      "descricao": "Realizar um curso específico ou workshop em gestão de projetos até 01/06/2022, a fim de aprimorar as habilidades necessárias para liderar projetos de marketing na LifeWayUSA",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "curso",
+      "data_prazo": "2022-06-01",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:41:26.963Z"
+}

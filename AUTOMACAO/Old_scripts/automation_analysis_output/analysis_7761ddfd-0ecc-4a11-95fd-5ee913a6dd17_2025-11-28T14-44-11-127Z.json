@@ -1,0 +1,13 @@
+{
+  "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+  "empresa_nome": "ARVA Tech Solutions",
+  "analyzed_at": "2025-11-28T14:44:05.317Z",
+  "llm_used": "Gemini-1.5-Flash",
+  "llm_model": "gemini-1.5-flash",
+  "personas_analyzed": 1,
+  "total_tasks": 13,
+  "tasks_analyzed": 0,
+  "tasks_automatable": 0,
+  "tasks_high_score": 0,
+  "analyses": []
+}

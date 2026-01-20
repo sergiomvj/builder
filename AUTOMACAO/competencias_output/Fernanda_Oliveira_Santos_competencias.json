@@ -1,0 +1,53 @@
+{
+  "persona_id": "7e6ff5c7-c2f2-4a7c-bad1-a84d3d5a71e8",
+  "full_name": "Fernanda Oliveira Santos",
+  "role": "Gerente de Marketing",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em marketing digital",
+    "Experiência em gestão de equipe de marketing",
+    "Análise de mercado e concorrência",
+    "Planejamento e execução de campanhas de marketing",
+    "Gestão de redes sociais"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Capacidade de trabalhar sob pressão",
+    "Proatividade",
+    "Trabalho em equipe"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "Facebook Business Manager",
+    "MailChimp",
+    "Adobe Creative Suite"
+  ],
+  "tarefas_diarias": [
+    "Elaborar e monitorar estratégias de marketing",
+    "Gerenciar equipe de marketing",
+    "Analisar métricas de desempenho",
+    "Criar conteúdo para redes sociais"
+  ],
+  "tarefas_semanais": [
+    "Reuniões de alinhamento com a equipe",
+    "Acompanhamento de resultados das campanhas",
+    "Atualização do planejamento estratégico"
+  ],
+  "tarefas_mensais": [
+    "Elaboração de relatórios de desempenho",
+    "Análise de tendências de mercado",
+    "Avaliação de resultados de campanhas"
+  ],
+  "kpis": [
+    "Aumento de tráfego no site - 20%",
+    "Taxa de conversão de leads - 15%",
+    "Engajamento nas redes sociais - 10%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Participar de cursos de atualização em marketing digital",
+    "Desenvolver habilidades de gestão de equipe",
+    "Aprimorar conhecimentos em análise de dados"
+  ],
+  "generated_at": "2025-12-08T14:39:31.850Z"
+}

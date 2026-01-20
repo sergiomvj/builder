@@ -1,0 +1,37 @@
+{
+  "persona_id": "7d31351f-ba43-448e-a6e1-58cdff7ce97b",
+  "full_name": "Gabriela Santos Almeida",
+  "role": "Especialista em Marketing Digital",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aumentar a taxa de conversão do site em 15%",
+      "descricao": "Implementar estratégias de CRO e otimização de landing pages para aumentar a taxa de conversão do site da LifeWayUSA em 15% nos próximos 6 meses",
+      "categoria": "performance",
+      "valor_alvo": 15,
+      "unidade_medida": "%",
+      "data_prazo": "2022-12-01",
+      "prioridade": 1,
+      "vinculada_kpi": "Taxa de conversão de leads em 20%"
+    },
+    {
+      "titulo": "Concluir curso de SEO avançado",
+      "descricao": "Matricular-se e concluir um curso de SEO avançado para aprimorar as habilidades em otimização de sites nos próximos 3 meses",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "curso",
+      "data_prazo": "2022-03-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Atingir certificação em marketing de influência",
+      "descricao": "Estudar e obter uma certificação reconhecida em marketing de influência nos próximos 6 meses para aprimorar o conhecimento na área",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "certificação",
+      "data_prazo": "2022-06-01",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:41:37.966Z"
+}

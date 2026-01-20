@@ -1,0 +1,53 @@
+{
+  "persona_id": "d2b06c98-9788-4aa0-8f54-938c50e22506",
+  "full_name": "Carlos Eduardo Santos Silva",
+  "role": "Coordenador de Operações",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Gestão de Projetos",
+    "Conhecimento em Tecnologia da Informação",
+    "Análise de Dados",
+    "Gestão de Equipes",
+    "Planejamento Estratégico"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação Efetiva",
+    "Resolução de Problemas",
+    "Trabalho em Equipe",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Microsoft Project",
+    "Excel Avançado",
+    "Google Analytics",
+    "Slack"
+  ],
+  "tarefas_diarias": [
+    "Coordenar equipe de operações",
+    "Analisar indicadores de desempenho",
+    "Realizar reuniões de acompanhamento",
+    "Resolver conflitos internos"
+  ],
+  "tarefas_semanais": [
+    "Elaborar relatórios de performance",
+    "Implementar melhorias nos processos operacionais",
+    "Acompanhar o progresso de projetos"
+  ],
+  "tarefas_mensais": [
+    "Realizar avaliação de desempenho da equipe",
+    "Propor novas estratégias para otimização de resultados",
+    "Participar de reuniões estratégicas"
+  ],
+  "kpis": [
+    "Eficiência Operacional: Redução de custos em 10%",
+    "Satisfação do Cliente: Índice de satisfação acima de 90%",
+    "Cumprimento de Prazos: 100% de entregas dentro do prazo"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de gestão de projetos",
+    "Desenvolver habilidades de liderança inspiradora",
+    "Aprofundar conhecimento em tecnologias disruptivas"
+  ],
+  "generated_at": "2025-12-08T14:42:40.989Z"
+}

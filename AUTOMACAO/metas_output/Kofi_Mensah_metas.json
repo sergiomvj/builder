@@ -1,0 +1,59 @@
+{
+  "persona_id": "654d1988-2f0d-4fce-a771-e88d35c0f418",
+  "full_name": "Kofi Mensah",
+  "role": "Analista de QA",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "metas": [
+    {
+      "titulo": "Atingir 90% de Cobertura de Testes",
+      "descricao": "Implementar casos de teste adicionais para elevar a taxa de cobertura de testes para 90% em todos os projetos ativos da ARVA Tech Solutions.",
+      "categoria": "kpi",
+      "valor_alvo": 90,
+      "unidade_medida": "%",
+      "data_prazo": "2025-04-01",
+      "prioridade": 5,
+      "vinculada_kpi": "KPI 1: Taxa de Cobertura de Testes - 90%"
+    },
+    {
+      "titulo": "Detectar 85% de Bugs Precoce",
+      "descricao": "Melhorar processos de revisão para alcançar 85% de detecção precoce de bugs em ciclos de desenvolvimento iniciais.",
+      "categoria": "kpi",
+      "valor_alvo": 85,
+      "unidade_medida": "%",
+      "data_prazo": "2025-03-15",
+      "prioridade": 4,
+      "vinculada_kpi": "KPI 2: Taxa de Detecção Precoce de Bugs - 85%"
+    },
+    {
+      "titulo": "Reduzir Ciclo de Testes para 24h",
+      "descricao": "Otimizar fluxos de teste automatizados para diminuir o tempo médio de ciclo de testes para 24 horas por sprint.",
+      "categoria": "kpi",
+      "valor_alvo": 24,
+      "unidade_medida": "horas",
+      "data_prazo": "2025-04-01",
+      "prioridade": 4,
+      "vinculada_kpi": "KPI 3: Tempo Médio de Ciclo de Testes - 24 horas"
+    },
+    {
+      "titulo": "Obter Certificação ISTQB IA",
+      "descricao": "Completar e aprovar o exame ISTQB Foundation Level em Testes de Inteligência Artificial.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "certificações",
+      "data_prazo": "2025-02-28",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Automatizar 30% de Testes Adicionais",
+      "descricao": "Desenvolver scripts de automação para cobrir 30% adicionais de testes em agentes autônomos.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 30,
+      "unidade_medida": "%",
+      "data_prazo": "2025-05-01",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    }
+  ],
+  "generated_at": "2025-12-08T22:26:15.769Z"
+}

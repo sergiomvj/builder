@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TEMA GLOBAL: FUNDO BRANCO E FONTES ESCURAS */
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+  --primary: #0f172a;
+  --primary-foreground: #f8fafc;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #f1f5f9;
+  --accent-foreground: #0f172a;
+  --destructive: #ef4444;
+  --destructive-foreground: #f8fafc;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #0f172a;
+  --radius: 0.5rem;
+}
+
+/* FORÇA MODO CLARO SEMPRE - DESABILITA DARK MODE COMPLETAMENTE */
+* {
+  color-scheme: light !important;
+}
+
+html {
+  color-scheme: light !important;
+  background: #ffffff !important;
+}
+
+body {
+  color: #0f172a !important;
+  background: #ffffff !important;
+  font-family: Arial, Helvetica, sans-serif;
+  color-scheme: light !important;
+}
+
+/* FORÇA TEXTOS ESCUROS EM TODOS OS ELEMENTOS */
+h1, h2, h3, h4, h5, h6 {
+  color: #0f172a !important;
+}
+
+p, span, div, label {
+  color: #374151 !important;
+}
+
+/* FORÇA COMPONENTES SHADCN/UI MODO CLARO */
+[data-theme="dark"] {
+  --background: #ffffff !important;
+  --foreground: #0f172a !important;
+  --card: #ffffff !important;
+  --card-foreground: #0f172a !important;
+  --popover: #ffffff !important;
+  --popover-foreground: #0f172a !important;
+  --muted: #f1f5f9 !important;
+  --muted-foreground: #64748b !important;
+  --accent: #f1f5f9 !important;
+  --accent-foreground: #0f172a !important;
+  --border: #e2e8f0 !important;
+  --input: #e2e8f0 !important;
+}
+
+/* FORÇA BACKGROUNDS BRANCOS */
+.bg-white, 
+.bg-card,
+[data-theme="dark"] .bg-card {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+/* FORÇA TEXTOS ESCUROS */
+.text-foreground,
+.text-card-foreground,
+[data-theme="dark"] .text-foreground,
+[data-theme="dark"] .text-card-foreground {
+  color: #0f172a !important;
+}
+
+/* INPUTS E SELECTS */
+input, select, textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #e2e8f0 !important;
+}
+
+input::placeholder, 
+textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* BOTÕES */
+button {
+  color: inherit !important;
+}
+
+/* MODAIS E POPOVERS */
+[role="dialog"],
+[data-state="open"],
+.dialog-content,
+.popover-content {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* RESET COMPLETO DE DARK MODE */
+.dark,
+[data-theme="dark"],
+.dark *,
+[data-theme="dark"] * {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+/* BADGES E CARDS */
+.badge,
+.card {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #e2e8f0 !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

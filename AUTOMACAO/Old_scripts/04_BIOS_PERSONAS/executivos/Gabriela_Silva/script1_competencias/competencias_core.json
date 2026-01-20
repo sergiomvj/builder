@@ -1,0 +1,51 @@
+{
+  "persona": {
+    "nome": "Gabriela Silva",
+    "categoria": "executivos",
+    "especialidade": null,
+    "experiencia": 13
+  },
+  "competencias": {
+    "tecnicas": [
+      "Gestão Estratégica",
+      "Liderança de Equipes",
+      "Planejamento Empresarial",
+      "Análise de Mercado",
+      "Gestão de Mudanças",
+      "Business Intelligence"
+    ],
+    "comportamentais": [
+      "Liderança Visionária",
+      "Pensamento Estratégico",
+      "Tomada de Decisão",
+      "Comunicação Executiva",
+      "Negociação",
+      "Influência"
+    ],
+    "ferramentas": [
+      "Microsoft Office 365",
+      "Google Workspace",
+      "Slack",
+      "Zoom",
+      "Power BI",
+      "Tableau"
+    ]
+  },
+  "analise_biografia": {
+    "educacao": "MBA Executivo em Liderança pela INSEAD",
+    "idiomas": [
+      "francês",
+      "português",
+      "espanhol",
+      "inglês"
+    ],
+    "secoes_extraidas": [
+      "formacao",
+      "experiencia",
+      "competencias_tecnicas",
+      "competencias_comportamentais",
+      "responsabilidades"
+    ]
+  },
+  "data_processamento": "2025-11-14T00:03:58.661Z"
+}

@@ -1,0 +1,53 @@
+{
+  "persona_id": "2201b1d5-6ee9-4431-9dee-3839e9e2ed4d",
+  "full_name": "[Placeholder 20] Especialista em Compliance Imigratória",
+  "role": "Especialista em Compliance Imigratória",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Conhecimento avançado em legislação imigratória dos EUA (USCIS, DOL, ICE)",
+    "Auditoria e verificação de formulários I-9 e E-Verify",
+    "Gestão de petições para vistos, green cards e PERM",
+    "Análise de conformidade com regulamentos de imigração",
+    "Monitoramento de prazos e status de casos imigratórios"
+  ],
+  "competencias_comportamentais": [
+    "Atenção meticulosa aos detalhes",
+    "Integridade ética e confidencialidade",
+    "Comunicação clara e persuasiva",
+    "Gestão de tempo e priorização de tarefas",
+    "Resolução de problemas complexos e adaptabilidade"
+  ],
+  "ferramentas": [
+    "LawLogix Guardian",
+    "E-Verify",
+    "USCIS Case Status Online",
+    "Microsoft Excel e Power BI"
+  ],
+  "tarefas_diarias": [
+    "Revisar e validar formulários I-9 de novos contratados",
+    "Monitorar status de casos imigratórios via USCIS",
+    "Responder consultas internas sobre compliance",
+    "Atualizar banco de dados de conformidade de funcionários"
+  ],
+  "tarefas_semanais": [
+    "Realizar auditorias parciais de conformidade I-9",
+    "Preparar relatórios semanais de status de casos",
+    "Conduzir treinamentos rápidos para RH"
+  ],
+  "tarefas_mensais": [
+    "Executar auditorias completas de conformidade imigratória",
+    "Gerar relatórios mensais para liderança executiva",
+    "Atualizar políticas internas de compliance"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Conformidade I-9 - 100%",
+    "KPI 2: Tempo Médio de Processamento de Casos - <30 dias",
+    "KPI 3: Auditorias sem Violações - 100%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação em Compliance Imigratório (RCIC ou similar)",
+    "Aprofundar conhecimento em novas regulamentações H-1B e L-1",
+    "Liderar treinamentos avançados para equipes internas"
+  ],
+  "generated_at": "2025-12-02T18:05:28.119Z"
+}

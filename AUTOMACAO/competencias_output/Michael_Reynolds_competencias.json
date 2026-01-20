@@ -1,0 +1,53 @@
+{
+  "persona_id": "aa9442cf-af60-4212-bd3f-9f3f94fa7725",
+  "full_name": "Michael Reynolds",
+  "role": "Gerente de Desenvolvimento",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "Arquitetura de Agentes Autônomos e Sistemas Modulares",
+    "Machine Learning e Reinforcement Learning",
+    "Desenvolvimento em Python e Node.js",
+    "DevOps, CI/CD e Automação de Pipelines",
+    "Cloud Computing (AWS, Azure e Kubernetes)"
+  ],
+  "competencias_comportamentais": [
+    "Liderança de Equipes de Alto Desempenho",
+    "Gestão Ágil de Projetos (Scrum e Kanban)",
+    "Resolução de Problemas Complexos",
+    "Comunicação Eficaz com Stakeholders",
+    "Pensamento Inovador e Visão Estratégica"
+  ],
+  "ferramentas": [
+    "GitHub e GitLab",
+    "Docker e Kubernetes",
+    "Jira e Confluence",
+    "TensorFlow e PyTorch"
+  ],
+  "tarefas_diarias": [
+    "Revisão de pull requests e código",
+    "Reuniões de stand-up com a equipe",
+    "Mentoria técnica para desenvolvedores",
+    "Monitoramento de pipelines de deploy"
+  ],
+  "tarefas_semanais": [
+    "Planejamento e refinamento de sprints",
+    "Reuniões de retrospectiva",
+    "Atualizações de status com liderança"
+  ],
+  "tarefas_mensais": [
+    "Relatórios de desempenho da equipe",
+    "Revisão do roadmap de desenvolvimento",
+    "Sessões de treinamento e upskilling"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Sucesso de Deploys - 98%",
+    "KPI 2: Tempo Médio de Resolução de Bugs - <24h",
+    "KPI 3: Número de Agentes Desenvolvidos - 20 por mês"
+  ],
+  "objetivos_desenvolvimento": [
+    "Dominar frameworks avançados de IA multi-agente",
+    "Obter certificação AWS Solutions Architect",
+    "Implementar práticas de liderança servant"
+  ],
+  "generated_at": "2025-12-08T22:21:21.910Z"
+}

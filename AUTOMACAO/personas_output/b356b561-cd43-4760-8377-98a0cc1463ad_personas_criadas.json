@@ -1,0 +1,248 @@
+{
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "empresa_nome": "LifeWayUSA",
+  "total_personas": 40,
+  "timestamp": "2025-12-08T12:31:49.105Z",
+  "personas": [
+    {
+      "id": "0d1d4ad3-562e-4f8c-80d4-63b6a585c8d4",
+      "persona_code": "LIFEWAYUSA7647-P001",
+      "role": "CEO",
+      "department": "Executivo"
+    },
+    {
+      "id": "e9444820-938e-438f-b05f-3d4fca75ed17",
+      "persona_code": "LIFEWAYUSA7647-P002",
+      "role": "CFO",
+      "department": "Financeiro"
+    },
+    {
+      "id": "2cb4f3a0-54e5-4284-9a7d-867850a15b1d",
+      "persona_code": "LIFEWAYUSA7647-P003",
+      "role": "CMO",
+      "department": "Marketing"
+    },
+    {
+      "id": "67c40425-d62f-4ab2-8405-d6824362ad40",
+      "persona_code": "LIFEWAYUSA7647-P004",
+      "role": "COO",
+      "department": "Operações"
+    },
+    {
+      "id": "a1e679d0-0a09-4a89-8f9e-30c4daac82a3",
+      "persona_code": "LIFEWAYUSA7647-P005",
+      "role": "CTO",
+      "department": "Tecnologia"
+    },
+    {
+      "id": "3c7e5b97-a45e-48c6-847b-026ea7b40aab",
+      "persona_code": "LIFEWAYUSA7647-P006",
+      "role": "Contador",
+      "department": "Geral"
+    },
+    {
+      "id": "7bf5953b-ee96-4c4e-ab22-5058203e0111",
+      "persona_code": "LIFEWAYUSA7647-P007",
+      "role": "Designer UI/UX",
+      "department": "Design"
+    },
+    {
+      "id": "4e97230c-8795-4dc1-8f77-ace8cf64b976",
+      "persona_code": "LIFEWAYUSA7647-P008",
+      "role": "Designer UI/UX",
+      "department": "Design"
+    },
+    {
+      "id": "0db7e193-c7fd-482d-94b6-9f0ac0b45cee",
+      "persona_code": "LIFEWAYUSA7647-P009",
+      "role": "Analista de Dados",
+      "department": "Dados"
+    },
+    {
+      "id": "b04efdfa-c186-49eb-ab0c-62db9cde9b80",
+      "persona_code": "LIFEWAYUSA7647-P010",
+      "role": "Analista de Dados",
+      "department": "Dados"
+    },
+    {
+      "id": "e4b0a7aa-865a-418d-b66c-194c0c40f337",
+      "persona_code": "LIFEWAYUSA7647-P011",
+      "role": "Gerente de Vendas",
+      "department": "Vendas"
+    },
+    {
+      "id": "34a6b429-a011-4577-b914-76f9ac7ed736",
+      "persona_code": "LIFEWAYUSA7647-P012",
+      "role": "Gerente de Vendas",
+      "department": "Vendas"
+    },
+    {
+      "id": "02541a78-9a94-4f0a-925c-846318c51f20",
+      "persona_code": "LIFEWAYUSA7647-P013",
+      "role": "Gerente Financeiro",
+      "department": "Financeiro"
+    },
+    {
+      "id": "e91dce96-15eb-4b1d-b93a-b73f50c33416",
+      "persona_code": "LIFEWAYUSA7647-P014",
+      "role": "Gerente de Produto",
+      "department": "Produto"
+    },
+    {
+      "id": "dd6b26cf-8361-4ab2-8d51-8b645b865faf",
+      "persona_code": "LIFEWAYUSA7647-P015",
+      "role": "Gerente de Produto",
+      "department": "Produto"
+    },
+    {
+      "id": "891ee085-4822-4b1c-b23c-f40622b32edd",
+      "persona_code": "LIFEWAYUSA7647-P016",
+      "role": "Analista Financeiro",
+      "department": "Financeiro"
+    },
+    {
+      "id": "6ec815c0-57af-4d0a-91a2-22c8eb8c6d8e",
+      "persona_code": "LIFEWAYUSA7647-P017",
+      "role": "Analista Financeiro",
+      "department": "Financeiro"
+    },
+    {
+      "id": "ac722e3c-17eb-4607-8a93-a5228cf25d49",
+      "persona_code": "LIFEWAYUSA7647-P018",
+      "role": "Analista de SEO/SEM",
+      "department": "Dados"
+    },
+    {
+      "id": "0311235b-6ea0-42e0-b196-bd07e1d573e9",
+      "persona_code": "LIFEWAYUSA7647-P019",
+      "role": "Executivo de Vendas",
+      "department": "Vendas"
+    },
+    {
+      "id": "0eff600e-f159-4dba-bb84-ded55645570a",
+      "persona_code": "LIFEWAYUSA7647-P020",
+      "role": "Executivo de Vendas",
+      "department": "Vendas"
+    },
+    {
+      "id": "6f802aa9-1fb7-481f-b139-946481240145",
+      "persona_code": "LIFEWAYUSA7647-P021",
+      "role": "Executivo de Vendas",
+      "department": "Vendas"
+    },
+    {
+      "id": "c6bd2a41-15d0-4c8c-8374-3fbbba518414",
+      "persona_code": "LIFEWAYUSA7647-P022",
+      "role": "Gerente de Conteúdo",
+      "department": "Geral"
+    },
+    {
+      "id": "7e6ff5c7-c2f2-4a7c-bad1-a84d3d5a71e8",
+      "persona_code": "LIFEWAYUSA7647-P023",
+      "role": "Gerente de Marketing",
+      "department": "Marketing"
+    },
+    {
+      "id": "8d7738bf-567e-4e5c-975f-a106aaf4d69b",
+      "persona_code": "LIFEWAYUSA7647-P024",
+      "role": "Gerente de Marketing",
+      "department": "Marketing"
+    },
+    {
+      "id": "737cc146-b6a8-4291-98c1-a8141502db38",
+      "persona_code": "LIFEWAYUSA7647-P025",
+      "role": "Analista de Qualidade",
+      "department": "Qualidade"
+    },
+    {
+      "id": "efee2fcd-e574-4a89-b17d-437603f42140",
+      "persona_code": "LIFEWAYUSA7647-P026",
+      "role": "Analista de Qualidade",
+      "department": "Qualidade"
+    },
+    {
+      "id": "5dd9aaae-2d79-4ef2-ba1a-2ed68b3e02be",
+      "persona_code": "LIFEWAYUSA7647-P027",
+      "role": "Coordenador de Vendas",
+      "department": "Operações"
+    },
+    {
+      "id": "ff4e3e8b-c3dc-491a-8798-83b766d1ad1b",
+      "persona_code": "LIFEWAYUSA7647-P028",
+      "role": "Desenvolvedor Backend",
+      "department": "Engenharia"
+    },
+    {
+      "id": "21467121-222a-4841-a1a8-3ac3c590ae4f",
+      "persona_code": "LIFEWAYUSA7647-P029",
+      "role": "Desenvolvedor Backend",
+      "department": "Engenharia"
+    },
+    {
+      "id": "e0f50fad-4bba-434f-9b52-5373cc69e3d8",
+      "persona_code": "LIFEWAYUSA7647-P030",
+      "role": "Desenvolvedor Frontend",
+      "department": "Engenharia"
+    },
+    {
+      "id": "4b15bc70-ba27-45e8-bdef-a0ebe820a94a",
+      "persona_code": "LIFEWAYUSA7647-P031",
+      "role": "Desenvolvedor Frontend",
+      "department": "Engenharia"
+    },
+    {
+      "id": "2363c5ea-9ca1-4f75-b0cc-bf321129160f",
+      "persona_code": "LIFEWAYUSA7647-P032",
+      "role": "Gerente de Operações",
+      "department": "Operações"
+    },
+    {
+      "id": "75ef9f6f-25e5-4428-b25d-c98aa08d0ceb",
+      "persona_code": "LIFEWAYUSA7647-P033",
+      "role": "Gerente de Operações",
+      "department": "Operações"
+    },
+    {
+      "id": "f3345572-ad88-44ae-8455-2d3015306377",
+      "persona_code": "LIFEWAYUSA7647-P034",
+      "role": "Desenvolvedor Full Stack",
+      "department": "Engenharia"
+    },
+    {
+      "id": "1b3297d6-3f11-494f-9f31-f6d98ad4079d",
+      "persona_code": "LIFEWAYUSA7647-P035",
+      "role": "Desenvolvedor Full Stack",
+      "department": "Engenharia"
+    },
+    {
+      "id": "04b3b136-e242-4b8d-8fe6-5f5d91b53c26",
+      "persona_code": "LIFEWAYUSA7647-P036",
+      "role": "Desenvolvedor Full Stack",
+      "department": "Engenharia"
+    },
+    {
+      "id": "64e29610-2944-4703-a5ef-5d3257345ac5",
+      "persona_code": "LIFEWAYUSA7647-P037",
+      "role": "Desenvolvedor Full Stack",
+      "department": "Engenharia"
+    },
+    {
+      "id": "d2b06c98-9788-4aa0-8f54-938c50e22506",
+      "persona_code": "LIFEWAYUSA7647-P038",
+      "role": "Coordenador de Operações",
+      "department": "Operações"
+    },
+    {
+      "id": "a24b1a9e-f98f-4a2d-adb7-1d889c6c6986",
+      "persona_code": "LIFEWAYUSA7647-P039",
+      "role": "Especialista em Marketing Digital",
+      "department": "Marketing"
+    },
+    {
+      "id": "7d31351f-ba43-448e-a6e1-58cdff7ce97b",
+      "persona_code": "LIFEWAYUSA7647-P040",
+      "role": "Especialista em Marketing Digital",
+      "department": "Marketing"
+    }
+  ]
+}

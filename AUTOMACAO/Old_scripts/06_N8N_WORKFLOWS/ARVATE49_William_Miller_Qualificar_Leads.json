@@ -1,0 +1,246 @@
+{
+  "name": "William (SDR Analst) - Qualificar Leads",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 0 * * *"
+            }
+          ]
+        },
+        "timezone": "UTC"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar à meia-noite todos os dias"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "get",
+        "parameters": {
+          "created_at": {
+            "gte": "NOW() - INTERVAL '24 hours'"
+          }
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Buscar leads gerados nas últimas 24 horas"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(lead => ({ ...lead, score: calculateScore(lead) }));"
+      },
+      "typeVersion": 1,
+      "notes": "Calcular pontuação de cada lead"
+    },
+    {
+      "id": "4",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "operation": "update",
+        "parameters": {
+          "id": "{{ $json.id }}",
+          "score": "{{ $json.score }}"
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar pontuação do lead no CRM"
+    },
+    {
+      "id": "5",
+      "name": "Conditional",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "{{ $json.score >= 70 }}",
+              "operation": "equal",
+              "value2": "true"
+            }
+          ]
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Verificar se a pontuação do lead é alta"
+    },
+    {
+      "id": "6",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "to": "{{ $json.email }}",
+        "body": "Seu perfil foi identificado como uma alta oportunidade para nossos serviços.",
+        "subject": "Oportunidade de Negócio"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email para leads qualificados"
+    },
+    {
+      "id": "7",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1560,
+        300
+      ],
+      "parameters": {
+        "data": "{{ $json }}",
+        "table": "qualified_leads",
+        "operation": "insert"
+      },
+      "typeVersion": 1,
+      "notes": "Inserir lead qualificado em banco de dados interno"
+    },
+    {
+      "id": "8",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1780,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: William (SDR Analst) - Qualificar Leads\nEmpresa: ARVA Tech Solutions\nPersona: William Miller\nTarefa: Qualificar Leads\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5": {
+      "main": [
+        [
+          {
+            "node": "6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "6": {
+      "main": [
+        [
+          {
+            "node": "7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "8"
+  },
+  "createdAt": "2025-11-28T17:05:15.783Z",
+  "updatedAt": "2025-11-28T17:05:15.783Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "72e1bfc8-f618-40d2-9614-4cecfbdfe73d",
+    "persona_nome": "William Miller",
+    "task_id": "7e97ff1f-1540-4917-806a-935e3c66b93c",
+    "task_title": "Qualificar Leads",
+    "opportunity_id": "5884f8b6-7985-4b30-930f-88d720e30598",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:15.783Z"
+  }
+}

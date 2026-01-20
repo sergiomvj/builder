@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Instruções - VCM Dashboard</title>
+    <style>
+        /* Reset e Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --accent-color: #0ea5e9;
+            --text-color: #1e293b;
+            --background-color: #ffffff;
+            --border-color: #e2e8f0;
+            --sidebar-bg: #f8fafc;
+            --code-bg: #f1f5f9;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .header .version {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+
+        /* Navigation */
+        .nav-bar {
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .export-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: var(--sidebar-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Search */
+        .search-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .search-box {
+            position: relative;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1rem 1rem 3rem;
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--secondary-color);
+        }
+
+        /* Main Layout */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: var(--sidebar-bg);
+            border-radius: 10px;
+            padding: 2rem;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+
+        .sidebar h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .toc {
+            list-style: none;
+        }
+
+        .toc > li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 6px;
+            display: block;
+            transition: all 0.3s;
+        }
+
+        .toc a:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .toc ul a {
+            font-size: 0.9rem;
+            padding: 0.3rem 0.5rem;
+        }
+
+        /* Content */
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 3rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 4rem;
+            scroll-margin-top: 120px;
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .section h3 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .section h4 {
+            color: var(--text-color);
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--sidebar-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .card-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem auto;
+            font-size: 1.5rem;
+        }
+
+        /* Image Placeholders */
+        .image-placeholder {
+            background: var(--code-bg);
+            border: 2px dashed var(--border-color);
+            border-radius: 10px;
+            padding: 3rem;
+            text-align: center;
+            margin: 2rem 0;
+            color: var(--secondary-color);
+        }
+
+        .image-placeholder::before {
+            content: "📷";
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        /* Code Blocks */
+        .code-block {
+            background: var(--code-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        /* Lists */
+        .instruction-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .instruction-list li {
+            counter-increment: step-counter;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: var(--sidebar-bg);
+            border-radius: 8px;
+            position: relative;
+            padding-left: 3rem;
+        }
+
+        .instruction-list li::before {
+            content: counter(step-counter);
+            background: var(--primary-color);
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* Alert Boxes */
+        .alert {
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .alert-info {
+            background: #dbeafe;
+            border-left: 4px solid #3b82f6;
+            color: #1e40af;
+        }
+
+        .alert-warning {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            color: #92400e;
+        }
+
+        .alert-success {
+            background: #d1fae5;
+            border-left: 4px solid #10b981;
+            color: #065f46;
+        }
+
+        /* Index */
+        .index-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .index-section {
+            background: var(--sidebar-bg);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .index-section h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .index-section ul {
+            list-style: none;
+        }
+
+        .index-section li {
+            margin: 0.3rem 0;
+        }
+
+        .index-section a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .index-section a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-container {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+
+            .sidebar {
+                position: relative;
+                top: 0;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .content {
+                padding: 2rem 1rem;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .sidebar, .nav-bar, .search-container {
+                display: none;
+            }
+
+            .main-container {
+                grid-template-columns: 1fr;
+                max-width: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .content {
+                box-shadow: none;
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Manual de Instruções</h1>
+        <div class="subtitle">Virtual Company Manager Dashboard</div>
+        <div class="version">Versão 2.1 - Navegação Lateral + Módulos Enterprise Avançados</div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#overview">Visão Geral</a></li>
+                <li><a href="#modules">Módulos</a></li>
+                <li><a href="#instructions">Instruções</a></li>
+                <li><a href="#index">Índice</a></li>
+            </ul>
+            <div class="export-buttons">
+                <button class="btn btn-primary" onclick="exportToPDF()">
+                    📄 Exportar PDF
+                </button>
+                <button class="btn btn-secondary" onclick="exportToMD()">
+                    📝 Exportar MD
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search -->
+    <div class="search-container">
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-input" placeholder="Buscar no manual..." id="searchInput">
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>📚 Índice</h3>
+            <ul class="toc">
+                <li><a href="#overview">Conceito Geral</a></li>
+                <li><a href="#modules">Módulos do Sistema</a>
+                    <ul>
+                        <li><a href="#module-home">Home</a></li>
+                        <li><a href="#module-empresas">Empresas</a></li>
+                        <li><a href="#module-scripts">Scripts & Tools</a></li>
+                        <li><a href="#module-ml">Machine Learning</a></li>
+                        <li><a href="#module-auditoria">Auditoria</a></li>
+                        <li><a href="#module-config">Configurações</a></li>
+                    </ul>
+                </li>
+                <li><a href="#instructions">Instruções Detalhadas</a>
+                    <ul>
+                        <li><a href="#inst-home">Aba Home</a></li>
+                        <li><a href="#inst-empresas">Aba Empresas</a></li>
+                        <li><a href="#inst-scripts">Aba Scripts & Tools</a></li>
+                        <li><a href="#inst-ml">Aba Machine Learning</a></li>
+                        <li><a href="#inst-auditoria">Aba Auditoria</a></li>
+                        <li><a href="#inst-config">Aba Configurações</a></li>
+                    </ul>
+                </li>
+                <li><a href="#workflows">Fluxos de Trabalho</a></li>
+                <li><a href="#troubleshooting">Solução de Problemas</a></li>
+                <li><a href="#index">Índice Alfabético</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Conceito Geral -->
+            <section id="overview" class="section">
+                <h2>🎯 Conceito Geral do Sistema</h2>
+                
+                <p>O <strong>Virtual Company Manager (VCM) Dashboard</strong> é uma plataforma avançada para gestão automatizada de empresas virtuais com inteligência artificial integrada. O sistema combina automação de processos, aprendizado de máquina, auditoria completa e gestão inteligente de recursos humanos virtuais.</p>
+
+                <h3>🏗️ Arquitetura do Sistema</h3>
+                <div class="card">
+                    <div class="card-title">Componentes Principais</div>
+                    <ul>
+                        <li><strong>Frontend Dashboard:</strong> Interface React com Next.js</li>
+                        <li><strong>Backend API:</strong> Python FastAPI para automação</li>
+                        <li><strong>Database:</strong> Supabase PostgreSQL com múltiplas instâncias</li>
+                        <li><strong>ML Engine:</strong> Sistema de aprendizado contínuo</li>
+                        <li><strong>Audit System:</strong> Compliance e rastreabilidade completa</li>
+                        <li><strong>RAG Database:</strong> Base de conhecimento por empresa</li>
+                    </ul>
+                </div>
+
+                <div class="image-placeholder">
+                    <strong>Figura 1:</strong> Arquitetura Geral do Sistema VCM<br>
+                    <em>Captura de tela da visão geral mostrando todos os componentes integrados</em>
+                </div>
+
+                <h3>🎪 Funcionalidades Principais</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🏢</div>
+                        <h4>Gestão de Empresas Virtuais</h4>
+                        <p>Criação e gerenciamento completo de empresas virtuais com personas especializadas.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h4>Automação Inteligente</h4>
+                        <p>Scripts automatizados para geração de personas, competências e workflows.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧠</div>
+                        <h4>Machine Learning</h4>
+                        <p>Aprendizado contínuo com otimização automática de processos.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h4>Auditoria Completa</h4>
+                        <p>Sistema de compliance com rastreabilidade total de ações.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h4>Analytics Avançado</h4>
+                        <p>Métricas detalhadas e relatórios executivos em tempo real.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔧</div>
+                        <h4>Ferramentas Integradas</h4>
+                        <p>Suite completa de sub-sistemas e ferramentas especializadas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 🆕 Navegação Lateral -->
+            <section id="sidebar-navegacao" class="section">
+                <h2>🚀 Navegação Lateral (NOVA)</h2>
+                
+                <div class="card highlight-card">
+                    <div class="card-title">🆕 Interface Atualizada - Versão 2.1</div>
+                    <p>O sistema agora utiliza uma <strong>barra de navegação lateral</strong> moderna e intuitiva, substituindo o sistema de abas anterior. Esta mudança torna a navegação mais limpa e profissional.</p>
+                </div>
+
+                <h3>🎯 Principais Melhorias</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h4>Design Responsivo</h4>
+                        <p>Sidebar que se adapta a diferentes tamanhos de tela, com versão móvel otimizada.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h4>Sidebar Retrátil</h4>
+                        <p>Pode ser expandida ou contraída para otimizar o espaço da tela.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h4>Visual Moderno</h4>
+                        <p>Interface limpa com badges indicativos e ícones intuitivos.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Navegação Rápida</h4>
+                        <p>Acesso direto a todas as funcionalidades sem múltiplos cliques.</p>
+                    </div>
+                </div>
+
+                <h3>📋 Itens da Navegação</h3>
+                <div class="card">
+                    <table class="manual-table">
+                        <thead>
+                            <tr>
+                                <th>Ícone</th>
+                                <th>Seção</th>
+                                <th>Badge</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>🏠</td>
+                                <td>Dashboard</td>
+                                <td>-</td>
+                                <td>Painel principal com visão geral do sistema</td>
+                            </tr>
+                            <tr>
+                                <td>👥</td>
+                                <td>Personas</td>
+                                <td>Beta</td>
+                                <td>Gerenciamento de personas virtuais</td>
+                            </tr>
+                            <tr>
+                                <td>🛡️</td>
+                                <td>Auditoria</td>
+                                <td>Enterprise</td>
+                                <td>Sistema de auditoria e compliance</td>
+                            </tr>
+                            <tr>
+                                <td>📦</td>
+                                <td>Provisionamento</td>
+                                <td>Enterprise</td>
+                                <td>Criação de packages e sincronização</td>
+                            </tr>
+                            <tr>
+                                <td>📊</td>
+                                <td>Analytics</td>
+                                <td>-</td>
+                                <td>Relatórios e análises detalhadas</td>
+                            </tr>
+                            <tr>
+                                <td>🏢</td>
+                                <td>Empresas</td>
+                                <td>-</td>
+                                <td>Gestão de empresas virtuais</td>
+                            </tr>
+                            <tr>
+                                <td>⚡</td>
+                                <td>Integrações</td>
+                                <td>API</td>
+                                <td>Conexões com sistemas externos</td>
+                            </tr>
+                            <tr>
+                                <td>📖</td>
+                                <td>Manual</td>
+                                <td>Novo</td>
+                                <td>Documentação completa do sistema</td>
+                            </tr>
+                            <tr>
+                                <td>📈</td>
+                                <td>Status</td>
+                                <td>-</td>
+                                <td>Monitoramento do sistema em tempo real</td>
+                            </tr>
+                            <tr>
+                                <td>⚙️</td>
+                                <td>Configurações</td>
+                                <td>-</td>
+                                <td>Configurações globais do sistema</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>📱 Comportamento Responsivo</h3>
+                <div class="code-block">
+                    <div class="code-header">Adaptação por Dispositivo</div>
+                    <ul>
+                        <li><strong>Desktop (>768px):</strong> Sidebar sempre visível, pode ser contraída</li>
+                        <li><strong>Tablet/Mobile (<768px):</strong> Sidebar oculta por padrão, ativada por botão hamburger</li>
+                        <li><strong>Touch:</strong> Suporte completo a gestos touch para dispositivos móveis</li>
+                        <li><strong>Teclado:</strong> Navegação via teclado acessível</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 🆕 Módulos Enterprise -->
+            <section id="modulos-enterprise" class="section">
+                <h2>🏢 Módulos Enterprise (NOVA IMPLEMENTAÇÃO)</h2>
+                
+                <div class="card highlight-card">
+                    <div class="card-title">🚀 Novos Módulos Empresariais</div>
+                    <p>Implementação completa de <strong>Auditoria</strong> e <strong>Provisionamento</strong> como módulos enterprise independentes, com interface unificada e funcionalidades avançadas.</p>
+                </div>
+
+                <h3>🛡️ Módulo Auditoria</h3>
+                <div class="card">
+                    <div class="card-title">Sistema de Auditoria e Compliance</div>
+                    <p><strong>Funcionalidades principais:</strong></p>
+                    <ul>
+                        <li><strong>Rastreamento Completo:</strong> Monitoramento de todas as ações de personas</li>
+                        <li><strong>Análise de Compliance:</strong> Verificação automática de conformidade</li>
+                        <li><strong>Relatórios Automáticos:</strong> Geração de relatórios de auditoria</li>
+                        <li><strong>Detecção de Anomalias:</strong> Identificação de padrões suspeitos</li>
+                        <li><strong>Logs de Segurança:</strong> Registros detalhados de acesso e modificações</li>
+                    </ul>
+                </div>
+
+                <h3>📦 Módulo Provisionamento</h3>
+                <div class="card">
+                    <div class="card-title">Sistema de Deploy e Sincronização</div>
+                    <p><strong>Funcionalidades principais:</strong></p>
+                    <ul>
+                        <li><strong>Criação de Packages:</strong> Packages personalizados de deployment</li>
+                        <li><strong>Sincronização Bidirecionais:</strong> Sync entre sistemas local e remoto</li>
+                        <li><strong>Controle de Versões:</strong> Versionamento e rollback de mudanças</li>
+                        <li><strong>Deploy Automatizado:</strong> Implantação automática de personas</li>
+                        <li><strong>Gestão de Conflitos:</strong> Resolução inteligente de conflitos de dados</li>
+                    </ul>
+                </div>
+
+                <h3>🎯 Interface Unificada</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h4>Cards de Overview</h4>
+                        <p>Métricas principais de cada módulo em cards informativos</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h4>Navegação por Tabs</h4>
+                        <p>Alternância fácil entre módulos Auditoria e Provisionamento</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💡</div>
+                        <h4>Caixas Explicativas</h4>
+                        <p>Botão "Como Funciona" com explicações detalhadas</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏢</div>
+                        <h4>Seletor de Empresa</h4>
+                        <p>Escolha da empresa para auditoria ou provisionamento</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 🆕 Seletor de Empresa -->
+            <section id="seletor-empresa" class="section">
+                <h2>🏢 Seletor de Empresa (NOVA FUNCIONALIDADE)</h2>
+                
+                <div class="card highlight-card">
+                    <div class="card-title">🎯 Seleção Inteligente de Empresa</div>
+                    <p>Novo sistema que permite <strong>selecionar especificamente</strong> qual empresa será auditada ou provisionada, eliminando confusões e melhorando a experiência do usuário.</p>
+                </div>
+
+                <h3>🔧 Como Funciona</h3>
+                <div class="card">
+                    <h4>1. Dropdown de Empresas</h4>
+                    <ul>
+                        <li><strong>Busca Automática:</strong> Lista todas as empresas ativas do banco Supabase</li>
+                        <li><strong>Informações Detalhadas:</strong> Nome, código, indústria e status</li>
+                        <li><strong>Filtragem:</strong> Apenas empresas com status "ativa" são exibidas</li>
+                    </ul>
+                    
+                    <h4>2. Painel Informativo</h4>
+                    <ul>
+                        <li><strong>Dados da Empresa:</strong> Nome, código, indústria, status</li>
+                        <li><strong>Badges Visuais:</strong> Indicadores coloridos do status</li>
+                        <li><strong>Atualização Dinâmica:</strong> Interface se atualiza ao mudar empresa</li>
+                    </ul>
+                    
+                    <h4>3. Integração Completa</h4>
+                    <ul>
+                        <li><strong>Propagação:</strong> Empresa selecionada é passada para todos os módulos</li>
+                        <li><strong>Estado Persistente:</strong> Seleção mantida durante navegação</li>
+                        <li><strong>Sincronização:</strong> Dados específicos da empresa são carregados</li>
+                    </ul>
+                </div>
+
+                <h3>💡 Benefícios</h3>
+                <div class="code-block">
+                    <div class="code-header">Melhorias na Experiência do Usuário</div>
+                    <ul>
+                        <li><strong>Clareza:</strong> Sempre visível qual empresa está sendo operada</li>
+                        <li><strong>Segurança:</strong> Evita modificações acidentais em empresas erradas</li>
+                        <li><strong>Eficiência:</strong> Acesso rápido aos dados da empresa correta</li>
+                        <li><strong>Contexto:</strong> Informações relevantes sempre disponíveis</li>
+                    </ul>
+                </div>
+
+                <h3>📋 Fluxo de Uso</h3>
+                <div class="card">
+                    <ol>
+                        <li><strong>Acesso ao Módulo:</strong> Entre em Auditoria ou Provisionamento</li>
+                        <li><strong>Seleção:</strong> Use o dropdown para escolher a empresa</li>
+                        <li><strong>Verificação:</strong> Confirme as informações no painel</li>
+                        <li><strong>Operação:</strong> Execute as tarefas com a empresa correta</li>
+                        <li><strong>Explicações:</strong> Use "Como Funciona" se precisar de ajuda</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- 🆕 Deploy e VPS -->
+            <section id="deploy" class="section">
+                <h2>🚀 Deploy e VPS (PREPARAÇÃO)</h2>
+                
+                <div class="card highlight-card">
+                    <div class="card-title">🌐 Preparação para VPS Própria</div>
+                    <p>O sistema foi <strong>otimizado para deploy</strong> em VPS própria, com configurações de produção e containerização Docker.</p>
+                </div>
+
+                <h3>🐳 Configuração Docker</h3>
+                <div class="code-block">
+                    <div class="code-header">Arquivos de Deploy</div>
+                    <ul>
+                        <li><strong>Dockerfile:</strong> Configuração de container otimizada</li>
+                        <li><strong>docker-compose.yml:</strong> Orquestração de serviços</li>
+                        <li><strong>.env.production:</strong> Variáveis de ambiente de produção</li>
+                        <li><strong>nginx.conf:</strong> Configuração de proxy reverso</li>
+                    </ul>
+                </div>
+
+                <h3>⚙️ Configurações de Produção</h3>
+                <div class="card">
+                    <h4>Variáveis de Ambiente Necessárias:</h4>
+                    <ul>
+                        <li><code>NEXT_PUBLIC_SUPABASE_URL</code> - URL do Supabase</li>
+                        <li><code>NEXT_PUBLIC_SUPABASE_ANON_KEY</code> - Chave pública</li>
+                        <li><code>SUPABASE_SERVICE_ROLE_KEY</code> - Chave de serviço</li>
+                        <li><code>NODE_ENV=production</code> - Ambiente de produção</li>
+                        <li><code>PORT=3000</code> - Porta da aplicação</li>
+                    </ul>
+                </div>
+
+                <h3>📝 Comandos de Deploy</h3>
+                <div class="code-block">
+                    <div class="code-header">Sequência de Deploy</div>
+                    <pre><code># 1. Build da aplicação
+npm run build
+
+# 2. Build da imagem Docker
+docker build -t vcm-dashboard .
+
+# 3. Deploy com docker-compose
+docker-compose up -d
+
+# 4. Verificação
+docker ps
+curl http://localhost:3000/api/health</code></pre>
+                </div>
+
+                <h3>🔧 Monitoramento</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h4>Health Check</h4>
+                        <p>API de verificação de saúde do sistema em /api/health</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h4>Logs Estruturados</h4>
+                        <p>Sistema de logs para monitoramento em produção</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h4>Auto-restart</h4>
+                        <p>Reinicialização automática em caso de falhas</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h4>Segurança</h4>
+                        <p>Headers de segurança e configurações hardened</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 🆕 Troubleshooting Navegação Lateral -->
+            <section id="troubleshooting" class="section">
+                <h2>🔧 Troubleshooting - Navegação Lateral</h2>
+                
+                <div class="card highlight-card">
+                    <div class="card-title">❓ Problemas Comuns e Soluções</div>
+                    <p>Resolva rapidamente problemas relacionados à <strong>nova navegação lateral</strong> e aos módulos enterprise.</p>
+                </div>
+
+                <h3>🚨 Problemas de Interface</h3>
+                <div class="card">
+                    <h4>Sidebar Não Aparece</h4>
+                    <ul>
+                        <li><strong>Solução:</strong> Verifique se está em uma página válida do dashboard</li>
+                        <li><strong>Causa:</strong> Componente não carregado ou erro de JavaScript</li>
+                        <li><strong>Teste:</strong> Recarregue a página (Ctrl+F5)</li>
+                    </ul>
+                    
+                    <h4>Menu Mobile Não Funciona</h4>
+                    <ul>
+                        <li><strong>Solução:</strong> Toque no ícone hambúrguer (☰) no canto superior</li>
+                        <li><strong>Causa:</strong> Overlay não sendo exibido em telas pequenas</li>
+                        <li><strong>Teste:</strong> Verifique se está em dispositivo mobile ou janela pequena</li>
+                    </ul>
+                    
+                    <h4>Badges Não Aparecem</h4>
+                    <ul>
+                        <li><strong>Solução:</strong> Aguarde carregamento dos dados do sistema</li>
+                        <li><strong>Causa:</strong> Delay na conexão com APIs ou banco de dados</li>
+                        <li><strong>Teste:</strong> Verifique status na página Health Check</li>
+                    </ul>
+                </div>
+
+                <h3>🏢 Problemas dos Módulos Enterprise</h3>
+                <div class="card">
+                    <h4>Seletor de Empresa Vazio</h4>
+                    <ul>
+                        <li><strong>Solução:</strong> Verifique conexão com Supabase</li>
+                        <li><strong>Causa:</strong> Erro de autenticação ou empresas inativas</li>
+                        <li><strong>Teste:</strong> Confirme variáveis de ambiente (.env)</li>
+                    </ul>
+                    
+                    <h4>Módulo Não Carrega</h4>
+                    <ul>
+                        <li><strong>Solução:</strong> Limpe cache do navegador</li>
+                        <li><strong>Causa:</strong> Cache antigo interferindo com novos componentes</li>
+                        <li><strong>Teste:</strong> Modo privado/incógnito</li>
+                    </ul>
+                    
+                    <h4>Dados Não Aparecem</h4>
+                    <ul>
+                        <li><strong>Solução:</strong> Selecione empresa no dropdown primeiro</li>
+                        <li><strong>Causa:</strong> Sistema requer empresa ativa para carregar dados</li>
+                        <li><strong>Teste:</strong> Verifique se empresa tem dados cadastrados</li>
+                    </ul>
+                </div>
+
+                <h3>🔧 Troubleshooting Avançado</h3>
+                <div class="code-block">
+                    <div class="code-header">Comandos de Diagnóstico</div>
+                    <pre><code># 1. Verificar saúde do sistema
+curl http://localhost:3000/api/health
+
+# 2. Logs do container
+docker logs vcm-dashboard
+
+# 3. Reiniciar aplicação
+docker-compose restart
+
+# 4. Rebuild completo
+npm run build
+docker-compose up --build</code></pre>
+                </div>
+
+                <h3>📞 Contatos de Emergência</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Problemas Críticos</h4>
+                        <p>Sistema completamente fora do ar ou dados corrompidos</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🐛</div>
+                        <h4>Bugs de Interface</h4>
+                        <p>Sidebar não funciona ou módulos não carregam</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔑</div>
+                        <h4>Problemas de Acesso</h4>
+                        <p>Autenticação ou permissões de banco de dados</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h4>Responsividade</h4>
+                        <p>Interface móvel não funciona adequadamente</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Módulos do Sistema -->
+            <section id="modules" class="section">
+                <h2>🧩 Módulos do Sistema</h2>
+
+                <div id="module-home" class="section">
+                    <h3>🏠 Módulo Home</h3>
+                    <p>Centro de controle principal com visão geral do sistema e processo de onboarding.</p>
+                    
+                    <h4>Sub-módulos:</h4>
+                    <ul>
+                        <li><strong>Visão Geral:</strong> Dashboard executivo com métricas principais</li>
+                        <li><strong>OnBoarding:</strong> Assistente para criação de novas empresas virtuais</li>
+                    </ul>
+
+                    <div class="image-placeholder">
+                        <strong>Figura 2:</strong> Módulo Home - Visão Geral<br>
+                        <em>Screenshot do dashboard principal mostrando métricas, status e cards de resumo</em>
+                    </div>
+
+                    <div class="alert alert-info">
+                        <strong>💡 Dica:</strong> O módulo Home é sempre o ponto de partida recomendado para novos usuários.
+                    </div>
+                </div>
+
+                <div id="module-empresas" class="section">
+                    <h3>🏢 Módulo Empresas</h3>
+                    <p>Gestão completa de empresas virtuais e sistema de tarefas inteligente.</p>
+                    
+                    <h4>Sub-módulos:</h4>
+                    <ul>
+                        <li><strong>Lista de Empresas:</strong> CRUD completo de empresas virtuais</li>
+                        <li><strong>Tarefas:</strong> Gestão inteligente de tarefas e workflows</li>
+                    </ul>
+
+                    <div class="image-placeholder">
+                        <strong>Figura 3:</strong> Módulo Empresas - Lista Principal<br>
+                        <em>Interface de gestão mostrando cards de empresas com status e ações</em>
+                    </div>
+                </div>
+
+                <div id="module-scripts" class="section">
+                    <h3>⚙️ Módulo Scripts & Tools</h3>
+                    <p>Centro de automação com scripts Node.js e ferramentas especializadas.</p>
+                    
+                    <h4>Sub-módulos:</h4>
+                    <ul>
+                        <li><strong>Scripts Node.js:</strong> Execução de automações e cascata de processamento</li>
+                        <li><strong>Tools & Subsistemas:</strong> Ferramentas especializadas e sub-sistemas</li>
+                    </ul>
+
+                    <div class="image-placeholder">
+                        <strong>Figura 4:</strong> Módulo Scripts - Interface de Execução<br>
+                        <em>Painel de controle dos scripts com botões de execução e logs em tempo real</em>
+                    </div>
+                </div>
+
+                <div id="module-ml" class="section">
+                    <h3>🧠 Módulo Machine Learning</h3>
+                    <p>Sistema de aprendizado contínuo com otimização automática.</p>
+                    
+                    <h4>Funcionalidades:</h4>
+                    <ul>
+                        <li><strong>Detecção de Padrões:</strong> Análise automática de comportamentos</li>
+                        <li><strong>Otimizações Automáticas:</strong> Melhorias aplicadas automaticamente</li>
+                        <li><strong>Métricas de Performance:</strong> Acompanhamento de eficiência</li>
+                        <li><strong>Logs de Execução:</strong> Rastreamento completo de operações ML</li>
+                    </ul>
+
+                    <div class="image-placeholder">
+                        <strong>Figura 5:</strong> Módulo ML - Dashboard Principal<br>
+                        <em>Interface do sistema de ML com métricas, padrões detectados e controles</em>
+                    </div>
+                </div>
+
+                <div id="module-auditoria" class="section">
+                    <h3>🛡️ Módulo Auditoria</h3>
+                    <p>Sistema completo de compliance, segurança e rastreabilidade.</p>
+                    
+                    <h4>Funcionalidades:</h4>
+                    <ul>
+                        <li><strong>Logs de Ações:</strong> Rastreamento de todas as operações</li>
+                        <li><strong>Segurança:</strong> Monitoramento de acessos e anomalias</li>
+                        <li><strong>Compliance:</strong> Verificações automáticas de conformidade</li>
+                        <li><strong>Relatórios:</strong> Geração automática de reports executivos</li>
+                    </ul>
+
+                    <div class="image-placeholder">
+                        <strong>Figura 6:</strong> Módulo Auditoria - Dashboard de Compliance<br>
+                        <em>Interface de auditoria com alertas, logs e métricas de compliance</em>
+                    </div>
+                </div>
+
+                <div id="module-config" class="section">
+                    <h3>⚙️ Módulo Configurações</h3>
+                    <p>Centro de configurações do sistema com acesso rápido via ícone.</p>
+                    
+                    <h4>Funcionalidades:</h4>
+                    <ul>
+                        <li><strong>Configurações de Sistema:</strong> Parâmetros globais</li>
+                        <li><strong>Configurações de Usuário:</strong> Preferências pessoais</li>
+                        <li><strong>Integrations:</strong> APIs e serviços externos</li>
+                        <li><strong>Backup & Restore:</strong> Gestão de dados</li>
+                    </ul>
+
+                    <div class="image-placeholder">
+                        <strong>Figura 7:</strong> Módulo Configurações - Painel Principal<br>
+                        <em>Interface de configurações com categorias organizadas e controles</em>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Instruções Detalhadas -->
+            <section id="instructions" class="section">
+                <h2>📖 Instruções Detalhadas por Aba</h2>
+
+                <div id="inst-home" class="section">
+                    <h3>🏠 Instruções - Aba Home</h3>
+
+                    <h4>📊 Sub-aba: Visão Geral</h4>
+                    <div class="alert alert-info">
+                        <strong>Objetivo:</strong> Fornecer uma visão executiva completa do sistema com métricas principais, status de saúde e indicadores de performance.
+                    </div>
+
+                    <h4>Como Usar:</h4>
+                    <ol class="instruction-list">
+                        <li><strong>Acesso:</strong> Clique na aba "Home" no menu principal. A sub-aba "Visão Geral" é exibida por padrão.</li>
+                        <li><strong>Métricas Principais:</strong> Observe os cards de métricas que mostram total de empresas, personas ativas, status do sistema e indicadores de performance.</li>
+                        <li><strong>Status de Saúde:</strong> Verifique o indicador de conexão da API no header (ícone verde = conectado, vermelho = desconectado).</li>
+                        <li><strong>Gráficos:</strong> Analise os gráficos de tendência e distribuição para entender o comportamento do sistema.</li>
+                    </ol>
+
+                    <div class="image-placeholder">
+                        <strong>Figura 8:</strong> Home - Visão Geral Detalhada<br>
+                        <em>Cards de métricas, gráficos de performance e indicadores de status</em>
+                    </div>
+
+                    <h4>👥 Sub-aba: OnBoarding</h4>
+                    <div class="alert alert-success">
+                        <strong>Objetivo:</strong> Guiar o usuário na criação de uma nova empresa virtual com assistente passo-a-passo.
+                    </div>
+
+                    <h4>Como Usar:</h4>
+                    <ol class="instruction-list">
+                        <li><strong>Acesso:</strong> Clique na sub-aba "OnBoarding" dentro da aba Home.</li>
+                        <li><strong>Informações Básicas:</strong> Preencha nome da empresa, código, domínio, país e indústria.</li>
+                        <li><strong>Configurações Avançadas:</strong> Defina número de personas, idiomas suportados e configurações específicas.</li>
+                        <li><strong>Revisão:</strong> Confirme todas as informações antes de criar a empresa.</li>
+                        <li><strong>Execução:</strong> O sistema executará automaticamente a cascata de criação (biografias → competências → specs → RAG → workflows).</li>
+                    </ol>
+
+                    <div class="image-placeholder">
+                        <strong>Figura 9:</strong> OnBoarding - Assistente de Criação<br>
+                        <em>Formulário em passos com campos de empresa e configurações avançadas</em>
+                    </div>
+
+                    <div class="alert alert-warning">
+                        <strong>⚠️ Importante:</strong> O processo de onboarding pode levar alguns minutos. Não feche a página durante a execução.
+                    </div>
+                </div>
+
+                <div id="inst-empresas" class="section">
+                    <h3>🏢 Instruções - Aba Empresas</h3>
+
+                    <h4>📋 Sub-aba: Lista de Empresas</h4>
+                    <div class="alert alert-info">
+                        <strong>Objetivo:</strong> Gerenciar todas as empresas virtuais do sistema com operações CRUD completas.
+                    </div>
+
+                    <h4>Funcionalidades:</h4>
+                    <ol class="instruction-list">
+                        <li><strong>Visualização:</strong> Veja todas as empresas em cards organizados com informações resumidas.</li>
+                        <li><strong>Filtros:</strong> Use os filtros por status, país, indústria ou data de criação.</li>
+                        <li><strong>Busca:</strong> Utilize a barra de busca para encontrar empresas específicas.</li>
+                        <li><strong>Detalhes:</strong> Clique em uma empresa para ver informações detalhadas e personas.</li>
+                        <li><strong>Edição:</strong> Use o botão "Editar" para modificar dados da empresa.</li>
+                        <li><strong>Exclusão:</strong> Botão "Excluir" remove a empresa com confirmação de segurança.</li>
+                    </ol>
+
+                    <div class="image-placeholder">
+                        <strong>Figura 10:</strong> Empresas - Lista e Filtros<br>
+                        <em>Grid de empresas com cards, filtros e barra de busca</em>
+                    </div>
+
+                    <h4>✅ Sub-aba: Tarefas</h4>
+                    <div class="alert alert-success">
+                        <strong>Objetivo:</strong> Gestão inteligente de tarefas com atribuição automática e acompanhamento de progresso.
+                    </div>
+
+                    <h4>Como Gerenciar Tarefas:</h4>
+                    <ol class="instruction-list">
+                        <li><strong>Criar Tarefa:</strong> Clique em "Nova Tarefa" e preencha título, descrição, prioridade e prazo.</li>
+                        <li><strong>Atribuição Automática:</strong> O sistema ML sugere automaticamente a persona mais adequada.</li>
+                        <li><strong>Acompanhamento:</strong> Monitore o progresso em tempo real através dos status boards.</li>
+                        <li><strong>Colaboração:</strong> Adicione comentários e anexos às tarefas.</li>
+                        <li><strong>Relatórios:</strong> Gere relatórios de produtividade por persona ou departamento.</li>
+                    </ol>
+
+                    <div class="image-placeholder">
+                        <strong>Figura 11:</strong> Tarefas - Kanban Board<br>
+                        <em>Board estilo Kanban com colunas de status e cards de tarefas</em>
+                    </div>
+                </div>
+
+                <div id="inst-scripts" class="section">
+                    <h3>⚙️ Instruções - Aba Scripts & Tools</h3>
+
+                    <h4>🐍 Sub-aba: Scripts Node.js</h4>
+                    <div class="alert alert-info">
+                        <strong>Objetivo:</strong> Executar scripts de automação em cascata para processamento de empresas virtuais.
+                    </div>
+
+                    <h4>Ordem de Execução (Cascata Obrigatória):</h4>
+                    <ol class="instruction-list">
+                        <li><strong>Script 1 - Biografias:</strong> Gera biografias completas para todas as personas da empresa.</li>
+                        <li><strong>Script 2 - Competências:</strong> Analisa biografias e extrai competências técnicas e comportamentais.</li>
+                        <li><strong>Script 3 - Tech Specs:</strong> Define especificações técnicas e ferramentas por persona.</li>
+                        <li><strong>Script 4 - RAG Database:</strong> Popula base de conhecimento estruturada.</li>
+                        <li><strong>Script 5 - Workflows N8N:</strong> Gera workflows automatizados de negócio.</li>
+                    </ol>
+
+                    <div class="alert alert-warning">
+                        <strong>⚠️ Atenção:</strong> A ordem dos scripts é CRÍTICA. Nunca execute fora de sequência.
+                    </div>
+
+                    <div class="image-placeholder">
+                        <strong>Figura 12:</strong> Scripts - Painel de Execução<br>
+                        <em>Interface com botões de scripts em sequência e logs de execução</em>
+                    </div>
+
+                    <h4>🔧 Sub-aba: Tools & Subsistemas</h4>
+                    <div class="alert alert-success">
+                        <strong>Objetivo:</strong> Acessar ferramentas especializadas e subsistemas auxiliares.
+                    </div>
+
+                    <h4>Ferramentas Disponíveis:</h4>
+                    <ol class="instruction-list">
+                        <li><strong>Email Management:</strong> Sistema de campanhas e templates de email.</li>
+                        <li><strong>Social Media:</strong> Gestão automatizada de redes sociais.</li>
+                        <li><strong>Document Generation:</strong> Geração automática de documentos.</li>
+                        <li><strong>Analytics Engine:</strong> Motor de análises avançadas.</li>
+                        <li><strong>Integration Hub:</strong> Central de integrações com APIs externas.</li>
+                    </ol>
+
+                    <div class="image-placeholder">
+                        <strong>Figura 13:</strong> Tools - Subsistemas Disponíveis<br>
+                        <em>Grid de ferramentas com status de implementação e acessos rápidos</em>
+                    </div>
+                </div>
+
+                <div id="inst-ml" class="section">
+                    <h3>🧠 Instruções - Aba Machine Learning</h3>
+
+                    <div class="alert alert-info">
+                        <strong>Objetivo:</strong> Monitorar e controlar o sistema de aprendizado contínuo que otimiza automaticamente os processos.
+                    </div>
+
+                    <h4>🎯 Funcionalidades Principais:</h4>
+                    <ol class="instruction-list">
+                        <li><strong>Executar Ciclo ML:</strong> Clique em "Executar Ciclo ML" para iniciar análise de padrões e otimizações.</li>
+                        <li><strong>Monitorar Métricas:</strong> Acompanhe score de eficiência, padrões ativos e otimizações aplicadas.</li>
+                        <li><strong>Analisar Padrões:</strong> Revise os padrões detectados com nível de confiança e impacto.</li>
+                        <li><strong>Controlar Otimizações:</strong> Monitore otimizações em andamento e aplicadas.</li>
+                        <li><strong>Configurar Sistema:</strong> Ajuste thresholds de confiança e modo de operação.</li>
+                    </ol>
+
+                    <div class="image-placeholder">
+                        <strong>Figura 14:</strong> ML - Dashboard Completo<br>
+                        <em>Interface com métricas, padrões, otimizações e controles do sistema ML</em>
+                    </div>
+
+                    <h4>📊 Interpretação de Métricas:</h4>
+                    <div class="card">
+                        <div class="card-title">Métricas Importantes</div>
+                        <ul>
+                            <li><strong>Score de Eficiência:</strong> 0-100% - performance geral do sistema</li>
+                            <li><strong>Padrões Ativos:</strong> Número de padrões sendo aplicados atualmente</li>
+                            <li><strong>Confiança:</strong> 0-1.0 - nível de certeza do ML sobre um padrão</li>
+                            <li><strong>Impacto:</strong> % - melhoria esperada/observada</li>
+                        </ul>
+                    </div>
+
+                    <div class="alert alert-success">
+                        <strong>✅ Dica:</strong> Execute ciclos ML regularmente para manter otimizações atualizadas.
+                    </div>
+                </div>
+
+                <div id="inst-auditoria" class="section">
+                    <h3>🛡️ Instruções - Aba Auditoria</h3>
+
+                    <div class="alert alert-info">
+                        <strong>Objetivo:</strong> Monitorar compliance, segurança e rastreabilidade completa de todas as operações do sistema.
+                    </div>
+
+                    <h4>🔍 Funcionalidades de Auditoria:</h4>
+                    <ol class="instruction-list">
+                        <li><strong>Logs de Ações:</strong> Visualize todas as ações executadas com timestamp, usuário e detalhes.</li>
+                        <li><strong>Alertas de Segurança:</strong> Monitore tentativas de acesso não autorizado e anomalias.</li>
+                        <li><strong>Compliance Check:</strong> Execute verificações automáticas de conformidade LGPD/GDPR.</li>
+                        <li><strong>Relatórios Executivos:</strong> Gere relatórios detalhados para auditorias externas.</li>
+                        <li><strong>Filtros Avançados:</strong> Filtre por tipo de ação, usuário, período ou nível de risco.</li>
+                    </ol>
+
+                    <div class="image-placeholder">
+                        <strong>Figura 15:</strong> Auditoria - Dashboard de Compliance<br>
+                        <em>Interface com logs, alertas, métricas de compliance e controles de filtro</em>
+                    </div>
+
+                    <h4>⚠️ Tipos de Alertas:</h4>
+                    <div class="card">
+                        <div class="card-title">Classificação de Alertas</div>
+                        <ul>
+                            <li><strong>🔵 Info:</strong> Ações normais do sistema</li>
+                            <li><strong>🟡 Warning:</strong> Ações que requerem atenção</li>
+                            <li><strong>🟠 Error:</strong> Falhas ou problemas identificados</li>
+                            <li><strong>🔴 Critical:</strong> Problemas graves de segurança</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="inst-config" class="section">
+                    <h3>⚙️ Instruções - Aba Configurações</h3>
+
+                    <div class="alert alert-info">
+                        <strong>Objetivo:</strong> Centralizar todas as configurações do sistema para personalização e otimização.
+                    </div>
+
+                    <h4>🔧 Seções de Configuração:</h4>
+                    <ol class="instruction-list">
+                        <li><strong>Sistema Geral:</strong> Configurações globais, timeouts, limites de recursos.</li>
+                        <li><strong>Integrações:</strong> APIs externas, chaves de acesso, endpoints.</li>
+                        <li><strong>Machine Learning:</strong> Parâmetros ML, thresholds, modo de operação.</li>
+                        <li><strong>Auditoria:</strong> Níveis de log, retenção de dados, compliance settings.</li>
+                        <li><strong>Usuário:</strong> Preferências pessoais, notificações, tema.</li>
+                    </ol>
+
+                    <div class="image-placeholder">
+                        <strong>Figura 16:</strong> Configurações - Painel Organizado<br>
+                        <em>Interface de configurações com categorias e formulários específicos</em>
+                    </div>
+
+                    <div class="alert alert-warning">
+                        <strong>⚠️ Cuidado:</strong> Mudanças em configurações críticas podem afetar o funcionamento do sistema.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fluxos de Trabalho -->
+            <section id="workflows" class="section">
+                <h2>🔄 Fluxos de Trabalho Principais</h2>
+
+                <h3>📋 Fluxo Completo: Criação de Empresa Virtual</h3>
+                <ol class="instruction-list">
+                    <li><strong>OnBoarding:</strong> Use o assistente na aba Home → OnBoarding</li>
+                    <li><strong>Configuração:</strong> Defina parâmetros da empresa e personas</li>
+                    <li><strong>Execução Automática:</strong> Sistema executa cascata de scripts</li>
+                    <li><strong>Verificação:</strong> Confirme criação na aba Empresas</li>
+                    <li><strong>Ativação ML:</strong> Execute primeiro ciclo ML para otimização</li>
+                    <li><strong>Monitoramento:</strong> Acompanhe através da auditoria</li>
+                </ol>
+
+                <h3>🔧 Fluxo de Manutenção: Scripts em Cascata</h3>
+                <ol class="instruction-list">
+                    <li><strong>Seleção de Empresa:</strong> Escolha empresa na aba Scripts & Tools</li>
+                    <li><strong>Script 1:</strong> Execute geração de biografias</li>
+                    <li><strong>Script 2:</strong> Execute análise de competências</li>
+                    <li><strong>Script 3:</strong> Execute especificações técnicas</li>
+                    <li><strong>Script 4:</strong> Execute população da base RAG</li>
+                    <li><strong>Script 5:</strong> Execute geração de workflows N8N</li>
+                </ol>
+
+                <div class="alert alert-warning">
+                    <strong>⚠️ Crítico:</strong> NUNCA execute scripts fora de ordem. Dependências são obrigatórias.
+                </div>
+            </section>
+
+            <!-- Solução de Problemas -->
+            <section id="troubleshooting" class="section">
+                <h2>🔧 Solução de Problemas</h2>
+
+                <h3>🚨 Problemas Comuns</h3>
+
+                <div class="card">
+                    <div class="card-title">🔴 API Desconectada</div>
+                    <p><strong>Sintomas:</strong> Indicador vermelho no header, erro "Failed to fetch"</p>
+                    <p><strong>Solução:</strong></p>
+                    <ul>
+                        <li>Verifique se o backend Python está rodando na porta 8000</li>
+                        <li>Execute: <code>python api_bridge_real.py</code></li>
+                        <li>Clique em "Tentar Reconectar" no banner de aviso</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">⚡ Scripts Falhando</div>
+                    <p><strong>Sintomas:</strong> Scripts não executam ou retornam erro</p>
+                    <p><strong>Solução:</strong></p>
+                    <ul>
+                        <li>Verifique ordem de execução (1→2→3→4→5)</li>
+                        <li>Confirme se empresa foi selecionada</li>
+                        <li>Verifique logs na aba Auditoria</li>
+                        <li>Reinicie o backend se necessário</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">🧠 ML Não Funcionando</div>
+                    <p><strong>Sintomas:</strong> Ciclos ML não executam ou não geram otimizações</p>
+                    <p><strong>Solução:</strong></p>
+                    <ul>
+                        <li>Verifique se há dados suficientes no sistema</li>
+                        <li>Confirme configurações de threshold de confiança</li>
+                        <li>Execute ciclo manual primeiro</li>
+                        <li>Verifique logs de ML na auditoria</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">🛡️ Problemas de Auditoria</div>
+                    <p><strong>Sintomas:</strong> Logs não aparecem ou relatórios falham</p>
+                    <p><strong>Solução:</strong></p>
+                    <ul>
+                        <li>Verifique conexão com database de auditoria</li>
+                        <li>Confirme se triggers estão ativos</li>
+                        <li>Verifique permissões de escrita</li>
+                        <li>Execute limpeza de logs antigos</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Índice Alfabético -->
+            <section id="index" class="section">
+                <h2>📝 Índice Alfabético</h2>
+
+                <div class="index-grid">
+                    <div class="index-section">
+                        <h4>A-D</h4>
+                        <ul>
+                            <li><a href="#inst-auditoria">Auditoria</a></li>
+                            <li><a href="#overview">Arquitetura</a></li>
+                            <li><a href="#workflows">Automação</a></li>
+                            <li><a href="#troubleshooting">API Desconectada</a></li>
+                            <li><a href="#module-empresas">Empresas</a></li>
+                            <li><a href="#inst-config">Configurações</a></li>
+                            <li><a href="#overview">Dashboard</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="index-section">
+                        <h4>E-H</h4>
+                        <ul>
+                            <li><a href="#inst-empresas">Empresas Virtuais</a></li>
+                            <li><a href="#workflows">Fluxos de Trabalho</a></li>
+                            <li><a href="#troubleshooting">Falhas de Script</a></li>
+                            <li><a href="#inst-home">Home</a></li>
+                            <li><a href="#overview">Funcionalidades</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="index-section">
+                        <h4>I-L</h4>
+                        <ul>
+                            <li><a href="#overview">Integração</a></li>
+                            <li><a href="#inst-scripts">JavaScript/Node.js</a></li>
+                            <li><a href="#inst-empresas">Lista de Empresas</a></li>
+                            <li><a href="#inst-auditoria">Logs de Auditoria</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="index-section">
+                        <h4>M-P</h4>
+                        <ul>
+                            <li><a href="#inst-ml">Machine Learning</a></li>
+                            <li><a href="#modules">Módulos</a></li>
+                            <li><a href="#inst-home">OnBoarding</a></li>
+                            <li><a href="#inst-ml">Otimizações</a></li>
+                            <li><a href="#inst-ml">Padrões ML</a></li>
+                            <li><a href="#overview">Personas</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="index-section">
+                        <h4>Q-T</h4>
+                        <ul>
+                            <li><a href="#overview">RAG Database</a></li>
+                            <li><a href="#inst-auditoria">Relatórios</a></li>
+                            <li><a href="#inst-scripts">Scripts</a></li>
+                            <li><a href="#overview">Supabase</a></li>
+                            <li><a href="#inst-empresas">Tarefas</a></li>
+                            <li><a href="#inst-scripts">Tools</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="index-section">
+                        <h4>U-Z</h4>
+                        <ul>
+                            <li><a href="#inst-home">Visão Geral</a></li>
+                            <li><a href="#overview">Virtual Company Manager</a></li>
+                            <li><a href="#inst-scripts">Workflows N8N</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: var(--primary-color); color: white; text-align: center; padding: 2rem; margin-top: 4rem;">
+        <p><strong>Manual de Instruções - VCM Dashboard v2.0</strong></p>
+        <p>Sistema completo de gestão de empresas virtuais com ML e Auditoria</p>
+        <p style="margin-top: 1rem; opacity: 0.8;">Gerado automaticamente - Mantenha sempre atualizado</p>
+    </footer>
+
+    <script>
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const sections = document.querySelectorAll('.section');
+            
+            sections.forEach(section => {
+                const text = section.textContent.toLowerCase();
+                if (text.includes(searchTerm) || searchTerm === '') {
+                    section.style.display = 'block';
+                    // Highlight search terms
+                    if (searchTerm !== '') {
+                        highlightText(section, searchTerm);
+                    } else {
+                        removeHighlight(section);
+                    }
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        });
+
+        function highlightText(element, searchTerm) {
+            // Simple highlight implementation
+            const innerHTML = element.innerHTML;
+            const index = innerHTML.toLowerCase().indexOf(searchTerm);
+            if (index >= 0) {
+                element.innerHTML = innerHTML.substring(0, index) + 
+                    '<mark style="background: yellow; padding: 0.2rem;">' + 
+                    innerHTML.substring(index, index + searchTerm.length) + '</mark>' + 
+                    innerHTML.substring(index + searchTerm.length);
+            }
+        }
+
+        function removeHighlight(element) {
+            element.innerHTML = element.innerHTML.replace(/<mark[^>]*>([^<]+)<\/mark>/gi, '$1');
+        }
+
+        // Export to PDF
+        function exportToPDF() {
+            // Hide sidebar and search for printing
+            document.querySelector('.sidebar').style.display = 'none';
+            document.querySelector('.search-container').style.display = 'none';
+            document.querySelector('.nav-bar').style.display = 'none';
+            
+            window.print();
+            
+            // Restore elements after print
+            setTimeout(() => {
+                document.querySelector('.sidebar').style.display = 'block';
+                document.querySelector('.search-container').style.display = 'block';
+                document.querySelector('.nav-bar').style.display = 'block';
+            }, 1000);
+        }
+
+        // Export to Markdown
+        function exportToMD() {
+            const content = document.querySelector('.content');
+            let markdown = '# Manual de Instruções - VCM Dashboard\\n\\n';
+            
+            // Convert HTML to Markdown (simplified)
+            const sections = content.querySelectorAll('.section');
+            sections.forEach(section => {
+                const heading = section.querySelector('h2');
+                if (heading) {
+                    markdown += `## ${heading.textContent}\\n\\n`;
+                }
+                
+                const paragraphs = section.querySelectorAll('p');
+                paragraphs.forEach(p => {
+                    markdown += `${p.textContent}\\n\\n`;
+                });
+                
+                const lists = section.querySelectorAll('ol, ul');
+                lists.forEach(list => {
+                    const items = list.querySelectorAll('li');
+                    items.forEach((item, index) => {
+                        if (list.tagName === 'OL') {
+                            markdown += `${index + 1}. ${item.textContent}\\n`;
+                        } else {
+                            markdown += `- ${item.textContent}\\n`;
+                        }
+                    });
+                    markdown += '\\n';
+                });
+            });
+            
+            // Download as MD file
+            const blob = new Blob([markdown], { type: 'text/markdown' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Manual-VCM-Dashboard.md';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Update active nav link based on scroll position
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section[id]');
+            const navLinks = document.querySelectorAll('.toc a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                if (window.pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                    link.style.background = 'var(--primary-color)';
+                    link.style.color = 'white';
+                } else {
+                    link.style.background = 'transparent';
+                    link.style.color = 'var(--text-color)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

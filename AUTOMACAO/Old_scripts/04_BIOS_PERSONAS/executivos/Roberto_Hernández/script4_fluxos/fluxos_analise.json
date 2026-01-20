@@ -1,0 +1,507 @@
+{
+  "persona": {
+    "id": 9,
+    "nome": "Roberto Hernández",
+    "categoria": "executivos",
+    "especialidade": null
+  },
+  "processos_aplicaveis": [
+    {
+      "id": "processo_gestão_de_conteúdo_multiplataforma",
+      "nome": "Gestão de Conteúdo Multiplataforma",
+      "categoria": "midias_sociais",
+      "etapas": [
+        "Planejamento",
+        "Criação",
+        "Adaptação por plataforma",
+        "Agendamento",
+        "Monitoramento",
+        "Engajamento"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 4,
+          "nome": "Gabriela González",
+          "categoria": "especialistas",
+          "especialidade": "midias_sociais",
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 7,
+          "nome": "Gabriela Rodríguez",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 8,
+          "nome": "Gabriela Silva",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 9,
+          "nome": "Roberto Hernández",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "Hootsuite",
+        "Canva",
+        "Analytics",
+        "Scheduling tools"
+      ],
+      "ferramentas_disponiveis": [
+        "Facebook Business Manager",
+        "Instagram Creator Studio",
+        "Hootsuite",
+        "Buffer",
+        "Canva",
+        "Adobe Creative Suite",
+        "Google Analytics",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Power BI",
+        "Tableau"
+      ],
+      "cobertura_ferramentas": 75,
+      "automacao_potencial": 70,
+      "kpis": [
+        "Reach",
+        "Engagement",
+        "Follower growth",
+        "Brand mentions"
+      ],
+      "viabilidade": "alta",
+      "custos_estimados": {
+        "setup": 5000,
+        "mensal": 2000
+      },
+      "tempo_implementacao": "2-3 meses"
+    },
+    {
+      "id": "processo_influencer_marketing",
+      "nome": "Influencer Marketing",
+      "categoria": "midias_sociais",
+      "etapas": [
+        "Identificação",
+        "Outreach",
+        "Negociação",
+        "Briefing",
+        "Acompanhamento",
+        "Análise ROI"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 4,
+          "nome": "Gabriela González",
+          "categoria": "especialistas",
+          "especialidade": "midias_sociais",
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 7,
+          "nome": "Gabriela Rodríguez",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 8,
+          "nome": "Gabriela Silva",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 9,
+          "nome": "Roberto Hernández",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "expert"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "Influencer platforms",
+        "CRM",
+        "Analytics",
+        "Payment systems"
+      ],
+      "ferramentas_disponiveis": [
+        "Facebook Business Manager",
+        "Instagram Creator Studio",
+        "Hootsuite",
+        "Buffer",
+        "Canva",
+        "Adobe Creative Suite",
+        "Google Analytics",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Power BI",
+        "Tableau"
+      ],
+      "cobertura_ferramentas": 25,
+      "automacao_potencial": 50,
+      "kpis": [
+        "Reach amplification",
+        "Engagement rate",
+        "ROI",
+        "Brand alignment"
+      ],
+      "viabilidade": "média",
+      "custos_estimados": {
+        "setup": 5000,
+        "mensal": 2000
+      },
+      "tempo_implementacao": "3-6 semanas"
+    },
+    {
+      "id": "processo_gestão_de_conteúdo",
+      "nome": "Gestão de Conteúdo",
+      "categoria": "marketing",
+      "etapas": [
+        "Planejamento",
+        "Criação",
+        "Revisão",
+        "Agendamento",
+        "Publicação",
+        "Engajamento"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 5,
+          "nome": "Isabella González",
+          "categoria": "especialistas",
+          "especialidade": "marketing",
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 7,
+          "nome": "Gabriela Rodríguez",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 8,
+          "nome": "Gabriela Silva",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 9,
+          "nome": "Roberto Hernández",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "Hootsuite",
+        "Buffer",
+        "Canva",
+        "Google Drive",
+        "Analytics"
+      ],
+      "ferramentas_disponiveis": [
+        "Google Ads",
+        "Facebook Ads",
+        "HubSpot",
+        "Mailchimp",
+        "Google Analytics",
+        "SEMrush",
+        "Hotjar",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Power BI",
+        "Tableau"
+      ],
+      "cobertura_ferramentas": 20,
+      "automacao_potencial": 65,
+      "kpis": [
+        "Engagement rate",
+        "Reach",
+        "Brand awareness",
+        "Lead generation"
+      ],
+      "viabilidade": "média",
+      "custos_estimados": {
+        "setup": 4000,
+        "mensal": 2500
+      },
+      "tempo_implementacao": "2-3 meses"
+    },
+    {
+      "id": "processo_lead_nurturing",
+      "nome": "Lead Nurturing",
+      "categoria": "marketing",
+      "etapas": [
+        "Captura",
+        "Segmentação",
+        "Scoring",
+        "Campanhas",
+        "Conversão",
+        "Análise"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 4,
+          "nome": "Gabriela González",
+          "categoria": "especialistas",
+          "especialidade": "midias_sociais",
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 5,
+          "nome": "Isabella González",
+          "categoria": "especialistas",
+          "especialidade": "marketing",
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 7,
+          "nome": "Gabriela Rodríguez",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 8,
+          "nome": "Gabriela Silva",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 9,
+          "nome": "Roberto Hernández",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "HubSpot",
+        "Mailchimp",
+        "CRM",
+        "Analytics"
+      ],
+      "ferramentas_disponiveis": [
+        "Facebook Business Manager",
+        "Instagram Creator Studio",
+        "Hootsuite",
+        "Buffer",
+        "Canva",
+        "Adobe Creative Suite",
+        "Google Analytics",
+        "Google Ads",
+        "Facebook Ads",
+        "HubSpot",
+        "Mailchimp",
+        "SEMrush",
+        "Hotjar",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Power BI",
+        "Tableau"
+      ],
+      "cobertura_ferramentas": 75,
+      "automacao_potencial": 80,
+      "kpis": [
+        "Lead quality",
+        "Conversion rate",
+        "Cost per lead",
+        "ROI"
+      ],
+      "viabilidade": "alta",
+      "custos_estimados": {
+        "setup": 5000,
+        "mensal": 2000
+      },
+      "tempo_implementacao": "2-3 meses"
+    },
+    {
+      "id": "processo_produção_de_vídeo",
+      "nome": "Produção de Vídeo",
+      "categoria": "youtube",
+      "etapas": [
+        "Planejamento",
+        "Roteiro",
+        "Gravação",
+        "Edição",
+        "Revisão",
+        "Upload"
+      ],
+      "personas_disponiveis": [
+        {
+          "id": 6,
+          "nome": "José Hernández",
+          "categoria": "especialistas",
+          "especialidade": "youtube",
+          "nivel_competencia": "expert"
+        },
+        {
+          "id": 7,
+          "nome": "Gabriela Rodríguez",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 8,
+          "nome": "Gabriela Silva",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        },
+        {
+          "id": 9,
+          "nome": "Roberto Hernández",
+          "categoria": "executivos",
+          "especialidade": null,
+          "nivel_competencia": "básico"
+        }
+      ],
+      "ferramentas_necessarias": [
+        "Premiere Pro",
+        "After Effects",
+        "Photoshop",
+        "YouTube Studio"
+      ],
+      "ferramentas_disponiveis": [
+        "Adobe Premiere Pro",
+        "Final Cut Pro",
+        "Adobe After Effects",
+        "Photoshop",
+        "YouTube Studio",
+        "TubeBuddy",
+        "VidIQ",
+        "Microsoft Office 365",
+        "Google Workspace",
+        "Slack",
+        "Zoom",
+        "Power BI",
+        "Tableau"
+      ],
+      "cobertura_ferramentas": 100,
+      "automacao_potencial": 35,
+      "kpis": [
+        "Views",
+        "Watch time",
+        "Engagement",
+        "Subscriber growth"
+      ],
+      "viabilidade": "alta",
+      "custos_estimados": {
+        "setup": 12000,
+        "mensal": 5000
+      },
+      "tempo_implementacao": "3-6 semanas"
+    }
+  ],
+  "colaboracoes_envolvidas": [],
+  "automacao_participacao": [],
+  "recomendacoes_especificas": [
+    {
+      "categoria": "resolucao_gargalo",
+      "titulo": "Resolver gargalo: hr",
+      "descricao": "Apenas 1 pessoa com especialidade em hr",
+      "impacto": "crítico",
+      "prazo": "imediato",
+      "acao_recomendada": "Priorizar contratação ou desenvolvimento de backup para esta especialidade"
+    },
+    {
+      "categoria": "resolucao_gargalo",
+      "titulo": "Resolver gargalo: midias_sociais",
+      "descricao": "Apenas 1 pessoa com especialidade em midias_sociais",
+      "impacto": "crítico",
+      "prazo": "imediato",
+      "acao_recomendada": "Priorizar contratação ou desenvolvimento de backup para esta especialidade"
+    },
+    {
+      "categoria": "resolucao_gargalo",
+      "titulo": "Resolver gargalo: marketing",
+      "descricao": "Apenas 1 pessoa com especialidade em marketing",
+      "impacto": "crítico",
+      "prazo": "imediato",
+      "acao_recomendada": "Priorizar contratação ou desenvolvimento de backup para esta especialidade"
+    },
+    {
+      "categoria": "resolucao_gargalo",
+      "titulo": "Resolver gargalo: youtube",
+      "descricao": "Apenas 1 pessoa com especialidade em youtube",
+      "impacto": "crítico",
+      "prazo": "imediato",
+      "acao_recomendada": "Priorizar contratação ou desenvolvimento de backup para esta especialidade"
+    },
+    {
+      "categoria": "automacao_prioritaria",
+      "titulo": "Automatizar Lead Nurturing",
+      "descricao": "Processo com 80% de potencial de automação",
+      "impacto": "alto",
+      "prazo": "2-3 meses",
+      "roi_estimado": {
+        "economia_mensal": 3200,
+        "custo_implementacao": 10000,
+        "payback_meses": 4,
+        "roi_anual_percent": 284
+      },
+      "recursos_necessarios": [
+        "Marketing automation",
+        "CRM API",
+        "Email platform",
+        "Analytics API"
+      ]
+    },
+    {
+      "categoria": "automacao_prioritaria",
+      "titulo": "Automatizar Recrutamento e Seleção",
+      "descricao": "Processo com 70% de potencial de automação",
+      "impacto": "alto",
+      "prazo": "2-3 meses",
+      "roi_estimado": {
+        "economia_mensal": 5600,
+        "custo_implementacao": 10000,
+        "payback_meses": 2,
+        "roi_anual_percent": 572
+      },
+      "recursos_necessarios": [
+        "ATS API",
+        "Email automation",
+        "Calendar API",
+        "Assessment tools"
+      ]
+    },
+    {
+      "categoria": "automacao_prioritaria",
+      "titulo": "Automatizar Gestão de Conteúdo Multiplataforma",
+      "descricao": "Processo com 70% de potencial de automação",
+      "impacto": "alto",
+      "prazo": "2-3 meses",
+      "roi_estimado": {
+        "economia_mensal": 2800,
+        "custo_implementacao": 10000,
+        "payback_meses": 4,
+        "roi_anual_percent": 236
+      },
+      "recursos_necessarios": [
+        "Workflow automation",
+        "API integration",
+        "Notification system"
+      ]
+    }
+  ],
+  "data_processamento": "2025-11-14T00:03:59.172Z"
+}

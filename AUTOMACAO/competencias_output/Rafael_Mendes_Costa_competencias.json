@@ -1,0 +1,53 @@
+{
+  "persona_id": "790c3a32-4eb8-4e1e-ab1a-13f125f87dd7",
+  "full_name": "Rafael Mendes Costa",
+  "role": "Diretor de Engenharia",
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "competencias_tecnicas": [
+    "Gestão de projetos de engenharia",
+    "Desenvolvimento de agentes virtuais autônomos",
+    "Inteligência artificial",
+    "Programação em Python",
+    "Visão computacional"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Trabalho em equipe",
+    "Resolução de problemas",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "TensorFlow",
+    "Git",
+    "Jira",
+    "Slack"
+  ],
+  "tarefas_diarias": [
+    "Coordenar equipes de engenharia",
+    "Desenvolver e aprimorar agentes virtuais autônomos",
+    "Analisar resultados e propor melhorias",
+    "Participar de reuniões estratégicas"
+  ],
+  "tarefas_semanais": [
+    "Realizar acompanhamento de projetos em andamento",
+    "Definir metas e prazos para as equipes de engenharia",
+    "Realizar treinamentos com a equipe"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatórios de desempenho e resultados",
+    "Participar de eventos e conferências da área de tecnologia",
+    "Realizar avaliações de desempenho da equipe"
+  ],
+  "kpis": [
+    "Eficiência na entrega de projetos - 95%",
+    "Satisfação da equipe - 90%",
+    "Inovação nos agentes virtuais - 80%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de liderança",
+    "Aprofundar conhecimentos em inteligência artificial",
+    "Expandir rede de contatos na área de tecnologia"
+  ],
+  "generated_at": "2025-12-05T20:11:48.872Z"
+}

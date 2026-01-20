@@ -1,0 +1,37 @@
+{
+  "persona_id": "dd6b26cf-8361-4ab2-8d51-8b645b865faf",
+  "full_name": "Ana Beatriz Santos Oliveira",
+  "role": "Gerente de Produto",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades de negociação",
+      "descricao": "Participar de um curso de negociação avançada com certificação reconhecida internacionalmente",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "horas",
+      "data_prazo": "2022-12-01",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Expandir conhecimento em tecnologias emergentes",
+      "descricao": "Realizar 2 workshops sobre inteligência artificial e blockchain",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "unidades",
+      "data_prazo": "2022-10-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Desenvolver estratégias de crescimento para o produto",
+      "descricao": "Participar de reuniões estratégicas mensais para propor novas ideias de crescimento",
+      "categoria": "performance",
+      "valor_alvo": 100,
+      "unidade_medida": "%",
+      "data_prazo": "2022-11-01",
+      "prioridade": 3,
+      "vinculada_kpi": "Satisfação do usuário"
+    }
+  ],
+  "generated_at": "2025-12-08T14:38:30.957Z"
+}

@@ -1,0 +1,53 @@
+{
+  "persona_id": "8e0bc076-393f-4501-97e0-4fa548b00add",
+  "full_name": "Michael Robert Thompson",
+  "role": "Gerente Financeiro",
+  "empresa_id": "a2845f62-59e2-48b2-8f89-8bfc6c33193f",
+  "competencias_tecnicas": [
+    "Conhecimento avançado em finanças",
+    "Experiência em análise de dados financeiros",
+    "Domínio de ferramentas de gestão financeira",
+    "Conhecimento em contabilidade",
+    "Habilidade em previsão financeira"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Tomada de decisão",
+    "Resolução de problemas",
+    "Trabalho em equipe"
+  ],
+  "ferramentas": [
+    "Excel avançado",
+    "Sistemas de gestão financeira",
+    "Ferramentas de análise de dados",
+    "Softwares de previsão financeira"
+  ],
+  "tarefas_diarias": [
+    "Análise de fluxo de caixa",
+    "Gestão de investimentos",
+    "Elaboração de relatórios financeiros",
+    "Reuniões com a equipe financeira"
+  ],
+  "tarefas_semanais": [
+    "Revisão de orçamento",
+    "Acompanhamento de indicadores financeiros",
+    "Atualização de projeções financeiras"
+  ],
+  "tarefas_mensais": [
+    "Elaboração de planejamento financeiro",
+    "Apresentação de resultados para a diretoria",
+    "Análise de desempenho financeiro"
+  ],
+  "kpis": [
+    "Rentabilidade - 10%",
+    "Redução de custos - 5%",
+    "Acuracidade nas previsões - 95%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Participação em cursos de atualização em finanças",
+    "Desenvolvimento de habilidades de liderança",
+    "Melhoria na comunicação interdepartamental"
+  ],
+  "generated_at": "2025-12-04T21:41:34.224Z"
+}

@@ -1,0 +1,36 @@
+{
+  "persona": {
+    "nome": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+    "nacionalidade": "latinos",
+    "genero": "feminino",
+    "cargo": "Agente de Suporte Bilíngue PT/EN",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Responsabilidades técnicas e desenvolvimento",
+    "competencias": "Habilidades técnicas avançadas",
+    "biografia": "Profissional experiente com sólida formação técnica",
+    "personalidade": {},
+    "experiencia_anos": 8,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face",
+    "estilo": "business casual",
+    "genero": "feminino",
+    "idade_aparente": "28-33",
+    "etnia": "latina",
+    "pele_tom": "morena clara",
+    "olhos_cor": "castanhos escuros",
+    "cabelo_cor": "castanho escuro",
+    "cabelo_comprimento": "médio",
+    "tipo_fisico": "esguio",
+    "altura_estimada": "1.65m",
+    "expressao_facial": "amigável",
+    "estilo_vestimenta": "business casual",
+    "acessorios": "óculos finos",
+    "caracteristicas_distintivas": "sorriso acolhedor"
+  },
+  "generated_at": "2025-12-03T15:28:47.560Z"
+}

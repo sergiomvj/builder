@@ -1,0 +1,36 @@
+{
+  "persona_id": "8d7738bf-567e-4e5c-975f-a106aaf4d69b",
+  "full_name": "Mariana Ribeiro Costa",
+  "role": "Gerente de Marketing",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar conhecimento em marketing de influência",
+      "descricao": "Participar de pelo menos 3 cursos online sobre marketing de influência",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 3,
+      "unidade_medida": "cursos",
+      "data_prazo": "2022-09-01",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Desenvolver habilidades em gestão de crises",
+      "descricao": "Realizar um workshop presencial sobre gestão de crises",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "workshop",
+      "data_prazo": "2022-10-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Aprimorar técnicas de storytelling",
+      "descricao": "Participar de um curso de storytelling com foco em marketing",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "curso",
+      "data_prazo": "2022-08-01",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:41:48.292Z"
+}

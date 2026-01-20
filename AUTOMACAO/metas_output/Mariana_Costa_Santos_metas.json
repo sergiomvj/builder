@@ -1,0 +1,39 @@
+{
+  "persona_id": "737cc146-b6a8-4291-98c1-a8141502db38",
+  "full_name": "Mariana Costa Santos",
+  "role": "Analista de Qualidade",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar conhecimentos em normas de qualidade internacionais",
+      "descricao": "Realizar um curso de certificação em normas de qualidade internacionais reconhecido no mercado",
+      "categoria": "desenvolvimento",
+      "valor_alvo": null,
+      "unidade_medida": null,
+      "data_prazo": "2022-12-31",
+      "prioridade": 1,
+      "vinculada_kpi": null
+    },
+    {
+      "titulo": "Desenvolver habilidades em gestão de projetos",
+      "descricao": "Participar de um workshop prático de gestão de projetos e aplicar os conhecimentos em um projeto da empresa",
+      "categoria": "desenvolvimento",
+      "valor_alvo": null,
+      "unidade_medida": null,
+      "data_prazo": "2022-09-30",
+      "prioridade": 2,
+      "vinculada_kpi": null
+    },
+    {
+      "titulo": "Aumentar a eficiência na análise de dados",
+      "descricao": "Realizar um treinamento em ferramentas de análise de dados e melhorar a velocidade de análise em 20%",
+      "categoria": "performance",
+      "valor_alvo": 20,
+      "unidade_medida": "%",
+      "data_prazo": "2022-11-30",
+      "prioridade": 3,
+      "vinculada_kpi": null
+    }
+  ],
+  "generated_at": "2025-12-08T14:39:45.487Z"
+}

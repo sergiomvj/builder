@@ -1,0 +1,223 @@
+{
+  "name": "Sophie (Assistente de Marketing) - Analisar Dados de Performance",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 8 * * MON"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar toda segunda-feira às 8h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "range": "Campanhas!A1:D100"
+      },
+      "typeVersion": 1,
+      "notes": "Ler dados de desempenho de campanhas do Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2": {
+          "id": "gsheets_ARVA01",
+          "name": "Google Sheets ARVA01"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "operation": "select",
+        "table": "engagement_metrics",
+        "filters": {}
+      },
+      "typeVersion": 1,
+      "notes": "Buscar métricas de engajamento no Supabase",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_ARVA01",
+          "name": "Supabase ARVA01"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "functionCode": "const performanceData = items[0].json; const engagementData = items[1].json; return [{ json: { performanceData, engagementData } }];"
+      },
+      "typeVersion": 1,
+      "notes": "Combinar dados de desempenho e engajamento"
+    },
+    {
+      "id": "5",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "functionCode": "const data = items[0].json; const opportunities = analyzeData(data); return [{ json: { opportunities } }];"
+      },
+      "typeVersion": 1,
+      "notes": "Analisar dados para identificar oportunidades de melhoria"
+    },
+    {
+      "id": "6",
+      "name": "Send Notification",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#marketing",
+        "text": "Oportunidades de melhoria identificadas: {{ $json.opportunities }}"
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe de marketing no Slack sobre oportunidades",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVA01",
+          "name": "Slack ARVA01"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1560,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Sophie (Assistente de Marketing) - Analisar Dados de Performance\nEmpresa: ARVA Tech Solutions\nPersona: Sophie Dubois\nTarefa: Analisar Dados de Performance\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVA01",
+          "name": "Slack ARVA01"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5": {
+      "main": [
+        [
+          {
+            "node": "6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "7"
+  },
+  "createdAt": "2025-12-06T13:57:08.765Z",
+  "updatedAt": "2025-12-06T13:57:08.765Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+    "empresa_codigo": "ARVA01",
+    "persona_id": "4697d8be-864d-4104-8c9a-a90c50bb7382",
+    "persona_nome": "Sophie Dubois",
+    "task_title": "Analisar Dados de Performance",
+    "opportunity_id": "931715c8-b89d-447b-8770-99d93feb53ca",
+    "automation_score": 70,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-12-06T13:57:08.765Z"
+  }
+}

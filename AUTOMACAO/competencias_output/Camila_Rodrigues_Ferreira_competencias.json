@@ -1,0 +1,53 @@
+{
+  "persona_id": "e91dce96-15eb-4b1d-b93a-b73f50c33416",
+  "full_name": "Camila Rodrigues Ferreira",
+  "role": "Gerente de Produto",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em marketing digital",
+    "Experiência em gestão de projetos",
+    "Conhecimento em UX/UI design",
+    "Habilidade em análise de dados",
+    "Conhecimento em estratégias de produto"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Capacidade de tomada de decisão",
+    "Trabalho em equipe",
+    "Resolução de problemas"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "Trello",
+    "Adobe Creative Suite",
+    "Microsoft Office"
+  ],
+  "tarefas_diarias": [
+    "Análise de métricas de produto",
+    "Reuniões com equipe de desenvolvimento",
+    "Atualização do roadmap de produto",
+    "Acompanhamento de lançamentos"
+  ],
+  "tarefas_semanais": [
+    "Feedback de performance da equipe",
+    "Ajustes no planejamento estratégico",
+    "Acompanhamento de sprints de desenvolvimento"
+  ],
+  "tarefas_mensais": [
+    "Apresentação de resultados para a diretoria",
+    "Análise de mercado e concorrência",
+    "Definição de metas para o próximo ciclo"
+  ],
+  "kpis": [
+    "Satisfação do cliente - 90%",
+    "Engajamento do usuário - 80%",
+    "Aumento de conversões - 10%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Desenvolver um novo produto",
+    "Aumentar a eficiência da equipe de desenvolvimento",
+    "Melhorar a experiência do usuário"
+  ],
+  "generated_at": "2025-12-08T14:38:17.075Z"
+}

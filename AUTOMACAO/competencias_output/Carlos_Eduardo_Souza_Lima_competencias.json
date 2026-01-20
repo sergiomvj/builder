@@ -1,0 +1,53 @@
+{
+  "persona_id": "0eff600e-f159-4dba-bb84-ded55645570a",
+  "full_name": "Carlos Eduardo Souza Lima",
+  "role": "Executivo de Vendas",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em vendas B2B",
+    "Negociação de contratos",
+    "Conhecimento em tecnologia da informação",
+    "Domínio do mercado de imigração para os EUA",
+    "Análise de perfil de clientes"
+  ],
+  "competencias_comportamentais": [
+    "Proatividade",
+    "Comunicação assertiva",
+    "Resiliência",
+    "Trabalho em equipe",
+    "Pensamento estratégico"
+  ],
+  "ferramentas": [
+    "CRM",
+    "Google Analytics",
+    "LinkedIn Sales Navigator",
+    "Ferramentas de videoconferência"
+  ],
+  "tarefas_diarias": [
+    "Prospecção de novos clientes",
+    "Atendimento a leads qualificados",
+    "Elaboração de propostas comerciais",
+    "Follow-up com clientes"
+  ],
+  "tarefas_semanais": [
+    "Reuniões de alinhamento com a equipe",
+    "Análise de resultados de vendas",
+    "Treinamentos de atualização"
+  ],
+  "tarefas_mensais": [
+    "Elaboração de relatórios de desempenho",
+    "Planejamento estratégico de vendas",
+    "Participação em eventos do setor"
+  ],
+  "kpis": [
+    "Taxa de conversão de leads - 30%",
+    "Volume de vendas mensal - R$100.000,00",
+    "Índice de satisfação do cliente - 90%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de negociação",
+    "Ampliar networking no setor de imigração",
+    "Desenvolver estratégias de upselling"
+  ],
+  "generated_at": "2025-12-08T14:39:10.184Z"
+}

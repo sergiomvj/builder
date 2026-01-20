@@ -1,0 +1,53 @@
+{
+  "persona_id": "04b3b136-e242-4b8d-8fe6-5f5d91b53c26",
+  "full_name": "Lucas Mendes Oliveira",
+  "role": "Desenvolvedor Full Stack",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Desenvolvimento de aplicações web",
+    "Programação em JavaScript",
+    "Banco de dados SQL e NoSQL",
+    "Conhecimento em frameworks front-end e back-end",
+    "Integração de APIs"
+  ],
+  "competencias_comportamentais": [
+    "Trabalho em equipe",
+    "Comunicação eficaz",
+    "Proatividade",
+    "Resolução de problemas",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Visual Studio Code",
+    "Git",
+    "Postman",
+    "MongoDB"
+  ],
+  "tarefas_diarias": [
+    "Desenvolvimento de novas funcionalidades",
+    "Correção de bugs",
+    "Revisão de código",
+    "Atendimento a demandas internas"
+  ],
+  "tarefas_semanais": [
+    "Realização de reuniões de acompanhamento de projeto",
+    "Atualização de documentação técnica",
+    "Implementação de testes automatizados"
+  ],
+  "tarefas_mensais": [
+    "Análise de performance da plataforma",
+    "Identificação de possíveis melhorias",
+    "Participação em treinamentos e workshops"
+  ],
+  "kpis": [
+    "Entrega de novas funcionalidades - 100% das metas atingidas",
+    "Taxa de resolução de bugs - 95% de bugs corrigidos em até 24 horas",
+    "Satisfação dos usuários - Média de avaliação acima de 4,5"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar conhecimento em React.js",
+    "Participar de um projeto de arquitetura de software",
+    "Desenvolver habilidades de liderança em projetos de equipe"
+  ],
+  "generated_at": "2025-12-08T14:42:18.480Z"
+}

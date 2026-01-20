@@ -1,0 +1,53 @@
+{
+  "persona_id": "5cab9d2a-87c3-409d-9c97-022b1ce6567b",
+  "full_name": "Giulia Ferrari",
+  "role": "Designer de Personalidades IA Pleno",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Engenharia de Prompts Avançada",
+    "Processamento de Linguagem Natural (NLP)",
+    "Desenvolvimento de Modelos de IA Conversacionais",
+    "Programação em Python e APIs de IA",
+    "Mitigação de Viés e Ética em IA"
+  ],
+  "competencias_comportamentais": [
+    "Criatividade e Inovação",
+    "Atenção aos Detalhes",
+    "Colaboração em Equipe",
+    "Comunicação Eficaz",
+    "Adaptabilidade e Aprendizagem Contínua"
+  ],
+  "ferramentas": [
+    "OpenAI Playground e GPT Models",
+    "Hugging Face Transformers",
+    "LangChain",
+    "Figma para Design de Personas"
+  ],
+  "tarefas_diarias": [
+    "Desenvolver e refinar prompts para personalidades IA",
+    "Testar interações e cenários de uso",
+    "Revisar feedback de usuários e métricas",
+    "Documentar especificações técnicas"
+  ],
+  "tarefas_semanais": [
+    "Participar de reuniões de sprint e planejamento",
+    "Analisar performance de personalidades deployadas",
+    "Pesquisar novas tendências em IA conversacional"
+  ],
+  "tarefas_mensais": [
+    "Gerar relatórios de KPIs e melhorias",
+    "Realizar revisões de prompts com a equipe",
+    "Contribuir para treinamentos internos sobre design de IA"
+  ],
+  "kpis": [
+    "KPI 1: Personalidades Entregues - 8 por trimestre",
+    "KPI 2: Taxa de Satisfação do Usuário - 95%",
+    "KPI 3: Redução de Tokens em Prompts - 20%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Dominar fine-tuning de Large Language Models (LLMs)",
+    "Liderar um projeto de personalidade IA complexa",
+    "Obter certificação avançada em Prompt Engineering"
+  ],
+  "generated_at": "2025-12-01T20:39:26.271Z"
+}

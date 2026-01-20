@@ -1,0 +1,137 @@
+{
+  "setor": "saude",
+  "nivel_diversidade": "alta",
+  "total_personas": 8,
+  "data_geracao": "2025-11-18T15:30:00.000Z",
+  "equipe": [
+    {
+      "nome": "Dr. Carlos Eduardo",
+      "cargo": "Médico",
+      "descricao_fisica": "Dr. Carlos Eduardo é um médico de 45 anos, com tipo corporal normal e altura alta. Possui pele morena clara e cabelo grisalho ondulado bem cortado. Tem rosto oval com barba bem aparada e olhos expressivos. Usa óculos de grau elegantes e sempre veste jaleco branco impecável sobre camisa social. Sua presença inspira confiança e profissionalismo.",
+      "caracteristicas_estruturadas": {
+        "body_type": "normal",
+        "age_range": "maduro",
+        "ethnicity": "Pardo brasileiro",
+        "skin_tone": "morena clara",
+        "height": "alto",
+        "hair": {
+          "type": "ondulado",
+          "color": "grisalho",
+          "style": "corte social"
+        },
+        "facial_features": {
+          "face_shape": "oval",
+          "distinctive_features": ["barba aparada", "olhos expressivos"]
+        },
+        "clothing_style": "jaleco profissional",
+        "accessories": ["óculos de grau", "estetoscópio"]
+      }
+    },
+    {
+      "nome": "Enfermeira Ana Paula",
+      "cargo": "Enfermeiro", 
+      "descricao_fisica": "Ana Paula é uma enfermeira de 28 anos, com tipo corporal sobrepeso e altura média. Possui pele negra e cabelo crespo natural em coque alto. Tem rosto redondo com sorriso largo e bochechas salientes. Usa scrubs coloridos e sapatos confortáveis. Sua energia positiva e cuidado genuíno são evidentes em cada gesto.",
+      "caracteristicas_estruturadas": {
+        "body_type": "sobrepeso",
+        "age_range": "jovem",
+        "ethnicity": "Afro-brasileiro",
+        "skin_tone": "negra",
+        "height": "médio",
+        "hair": {
+          "type": "crespo",
+          "color": "preto",
+          "style": "coque alto"
+        },
+        "facial_features": {
+          "face_shape": "redondo",
+          "distinctive_features": ["sorriso largo", "bochechas salientes"]
+        },
+        "clothing_style": "scrubs coloridos",
+        "accessories": ["sapatos confortáveis", "crachá"]
+      }
+    },
+    {
+      "nome": "Fisioterapeuta João Pedro",
+      "cargo": "Fisioterapeuta",
+      "descricao_fisica": "João Pedro é um fisioterapeuta de 35 anos, com tipo corporal atlético e altura média. Possui pele branca e cabelo castanho claro crespo cortado curto. Tem rosto quadrado com queixo definido e sorriso confiante. Usa roupas esportivas profissionais e tênis apropriados. Sua postura e movimento demonstram conhecimento anatômico e força física.",
+      "caracteristicas_estruturadas": {
+        "body_type": "atlético",
+        "age_range": "adulto",
+        "ethnicity": "Caucasiano brasileiro",
+        "skin_tone": "branca",
+        "height": "médio",
+        "hair": {
+          "type": "crespo",
+          "color": "castanho claro", 
+          "style": "corte curto"
+        },
+        "facial_features": {
+          "face_shape": "quadrado",
+          "distinctive_features": ["queixo definido", "sorriso confiante"]
+        },
+        "clothing_style": "roupas esportivas profissionais",
+        "accessories": ["tênis apropriados", "relógio fitness"]
+      }
+    },
+    {
+      "nome": "Dra. Fernanda Costa",
+      "cargo": "Psicólogo",
+      "descricao_fisica": "Dra. Fernanda Costa é uma psicóloga de 52 anos, com tipo corporal obeso e altura baixa. Possui pele clara e cabelo grisalho liso em corte chanel. Tem rosto oval com olhos gentis e expressão acolhedora. Usa roupas sociais confortáveis em tons neutros e sapatos de salto baixo. Sua presença transmite sabedoria e empatia profunda.",
+      "caracteristicas_estruturadas": {
+        "body_type": "obeso",
+        "age_range": "maduro",
+        "ethnicity": "Caucasiano brasileiro",
+        "skin_tone": "clara",
+        "height": "baixo",
+        "hair": {
+          "type": "liso",
+          "color": "grisalho",
+          "style": "chanel"
+        },
+        "facial_features": {
+          "face_shape": "oval",
+          "distinctive_features": ["olhos gentis", "expressão acolhedora"]
+        },
+        "clothing_style": "social confortável",
+        "accessories": ["óculos de leitura", "agenda"]
+      }
+    },
+    {
+      "nome": "Dr. Rafael Santos",
+      "cargo": "Dentista",
+      "descricao_física": "Dr. Rafael Santos é um dentista de 29 anos, com tipo corporal magro e altura alta. Possui pele morena e cabelo preto liso bem penteado. Tem rosto alongado com sorriso profissional e dentes perfeitos. Usa jaleco branco sobre camisa social e sapatos sociais. Sua precisão e atenção aos detalhes são visíveis em sua apresentação impecável.",
+      "caracteristicas_estruturadas": {
+        "body_type": "magro",
+        "age_range": "jovem",
+        "ethnicity": "Pardo brasileiro",
+        "skin_tone": "morena",
+        "height": "alto",
+        "hair": {
+          "type": "liso",
+          "color": "preto",
+          "style": "penteado social"
+        },
+        "facial_features": {
+          "face_shape": "alongado",
+          "distinctive_features": ["sorriso profissional", "dentes perfeitos"]
+        },
+        "clothing_style": "jaleco sobre social",
+        "accessories": ["óculos de proteção", "luvas descartáveis"]
+      }
+    }
+  ],
+  "estatisticas_diversidade": {
+    "tipos_corporais_diferentes": 5,
+    "faixas_etarias_diferentes": 3,
+    "etnias_diferentes": 2,
+    "pessoas_acima_do_peso": 2,
+    "percentual_diversidade": 90
+  },
+  "metadados": {
+    "gerador_utilizado": "EquipeDiversaGeneratorSafe",
+    "versao_sistema": "1.0.0",
+    "filosofia_diversidade": "Representação autêntica da diversidade brasileira em ambientes corporativos",
+    "sem_loops_infinitos": true,
+    "radix_ui_removido": true
+  }
+}

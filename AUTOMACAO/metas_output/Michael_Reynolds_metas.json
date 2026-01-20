@@ -1,0 +1,49 @@
+{
+  "persona_id": "aa9442cf-af60-4212-bd3f-9f3f94fa7725",
+  "full_name": "Michael Reynolds",
+  "role": "Gerente de Desenvolvimento",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "metas": [
+    {
+      "titulo": "Atingir 98% de Taxa de Sucesso em Deploys",
+      "descricao": "Garantir que 98% dos deploys mensais sejam bem-sucedidos, implementando checklists de pré-deploy e automação de testes.",
+      "categoria": "kpi",
+      "valor_alvo": 98,
+      "unidade_medida": "%",
+      "data_prazo": "2025-04-01",
+      "prioridade": 5,
+      "vinculada_kpi": "KPI 1: Taxa de Sucesso de Deploys - 98%"
+    },
+    {
+      "titulo": "Reduzir Tempo Médio de Resolução de Bugs para 20h",
+      "descricao": "Diminuir o tempo médio de resolução de bugs críticos para menos de 20 horas, através de priorização triagem e ferramentas de monitoramento.",
+      "categoria": "kpi",
+      "valor_alvo": 20,
+      "unidade_medida": "horas",
+      "data_prazo": "2025-04-01",
+      "prioridade": 4,
+      "vinculada_kpi": "KPI 2: Tempo Médio de Resolução de Bugs - <24h"
+    },
+    {
+      "titulo": "Desenvolver 20 Agentes de IA por Mês",
+      "descricao": "Liderar a equipe para produzir e entregar 20 agentes de IA multi-agente funcionais por mês, alinhados às demandas do cliente.",
+      "categoria": "kpi",
+      "valor_alvo": 20,
+      "unidade_medida": "agentes/mês",
+      "data_prazo": "2025-05-01",
+      "prioridade": 4,
+      "vinculada_kpi": "KPI 3: Número de Agentes Desenvolvidos - 20 por mês"
+    },
+    {
+      "titulo": "Obter Certificação AWS Solutions Architect",
+      "descricao": "Completar o curso oficial e passar no exame AWS Certified Solutions Architect - Associate para aprimorar expertise em cloud.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "certificação",
+      "data_prazo": "2025-06-01",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    }
+  ],
+  "generated_at": "2025-12-08T22:21:33.717Z"
+}

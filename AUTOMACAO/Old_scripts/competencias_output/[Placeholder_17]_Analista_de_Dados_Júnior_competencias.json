@@ -1,0 +1,53 @@
+{
+  "persona_id": "707e952a-4fd8-45a3-8763-cbc3f3a98d5b",
+  "full_name": "[Placeholder 17] Analista de Dados Júnior",
+  "role": "Analista de Dados Júnior",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "SQL para consultas e manipulação de dados",
+    "Python básico (Pandas, NumPy)",
+    "Excel avançado (tabelas dinâmicas, fórmulas)",
+    "Visualização de dados com Power BI ou Tableau",
+    "Estatística descritiva e análise exploratória"
+  ],
+  "competencias_comportamentais": [
+    "Atenção aos detalhes",
+    "Trabalho em equipe",
+    "Aprendizado contínuo",
+    "Comunicação clara",
+    "Resolução de problemas"
+  ],
+  "ferramentas": [
+    "Microsoft Excel",
+    "SQL Server ou MySQL",
+    "Power BI",
+    "Python (Jupyter Notebook)"
+  ],
+  "tarefas_diarias": [
+    "Limpeza e validação de dados",
+    "Geração de relatórios diários",
+    "Execução de consultas SQL",
+    "Atualização de dashboards"
+  ],
+  "tarefas_semanais": [
+    "Análise de tendências semanais",
+    "Reuniões de alinhamento com equipe",
+    "Preparação de relatórios semanais"
+  ],
+  "tarefas_mensais": [
+    "Revisão de KPIs mensais",
+    "Documentação de análises",
+    "Treinamento em novas ferramentas"
+  ],
+  "kpis": [
+    "Relatórios entregues no prazo - 95%",
+    "Precisão de dados processados - 98%",
+    "Tempo médio de resposta a requisições - 24h"
+  ],
+  "objetivos_desenvolvimento": [
+    "Dominar Python intermediário em 6 meses",
+    "Obter certificação em Power BI",
+    "Aprimorar habilidades de storytelling com dados"
+  ],
+  "generated_at": "2025-12-02T18:04:44.069Z"
+}

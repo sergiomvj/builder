@@ -1,0 +1,53 @@
+{
+  "persona_id": "1784129f-d4fa-4786-920f-d7958fff0938",
+  "full_name": "[Placeholder 18] Engenheiro de Machine Learning",
+  "role": "Engenheiro de Machine Learning",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Python e bibliotecas de ML (TensorFlow, PyTorch)",
+    "Desenvolvimento de modelos de Machine Learning",
+    "Processamento e engenharia de features de dados",
+    "Treinamento e otimização de redes neurais",
+    "Deploy de modelos em produção (MLOps)"
+  ],
+  "competencias_comportamentais": [
+    "Resolução de problemas complexos",
+    "Trabalho colaborativo em equipes multidisciplinares",
+    "Comunicação clara de resultados técnicos",
+    "Aprendizado contínuo e adaptação a novas tecnologias",
+    "Gestão de tempo e priorização de tarefas"
+  ],
+  "ferramentas": [
+    "Jupyter Notebook",
+    "Docker e Kubernetes",
+    "Git e GitHub",
+    "AWS SageMaker"
+  ],
+  "tarefas_diarias": [
+    "Desenvolver e testar protótipos de modelos ML",
+    "Analisar e limpar datasets",
+    "Debugar e otimizar código de ML",
+    "Colaborar em reuniões de sprint diárias"
+  ],
+  "tarefas_semanais": [
+    "Revisar pull requests de código",
+    "Monitorar performance de modelos em produção",
+    "Documentar avanços e lições aprendidas"
+  ],
+  "tarefas_mensais": [
+    "Gerar relatórios de KPIs de modelos",
+    "Participar de treinamentos e workshops",
+    "Planejar roadmap de features ML"
+  ],
+  "kpis": [
+    "KPI 1: Accuracy Média de Modelos - 95%",
+    "KPI 2: Tempo de Deploy de Modelos - < 24h",
+    "KPI 3: Redução de Drift de Dados - 20%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Dominar novas técnicas de LLMs",
+    "Contribuir para projetos open-source de ML",
+    "Implementar pipelines MLOps automatizados"
+  ],
+  "generated_at": "2025-12-02T18:01:47.855Z"
+}

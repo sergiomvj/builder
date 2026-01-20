@@ -1,0 +1,39 @@
+{
+  "persona_id": "4b15bc70-ba27-45e8-bdef-a0ebe820a94a",
+  "full_name": "Gabriel Silva Santos",
+  "role": "Desenvolvedor Frontend",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades em animações CSS",
+      "descricao": "Participar de um curso online sobre animações CSS e aplicar os conhecimentos em pelo menos 3 projetos da empresa",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "% de projetos aplicados",
+      "data_prazo": "2022-12-01",
+      "prioridade": 1,
+      "vinculada_kpi": null
+    },
+    {
+      "titulo": "Participar de workshops sobre acessibilidade web",
+      "descricao": "Participar de pelo menos 3 workshops sobre acessibilidade web e implementar as boas práticas em projetos da empresa",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 3,
+      "unidade_medida": "workshops",
+      "data_prazo": "2022-09-01",
+      "prioridade": 2,
+      "vinculada_kpi": null
+    },
+    {
+      "titulo": "Desenvolver um projeto pessoal utilizando uma nova tecnologia",
+      "descricao": "Iniciar e concluir um projeto pessoal utilizando uma tecnologia ainda não dominada, com entrega até a data estipulada",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 1,
+      "unidade_medida": "projeto",
+      "data_prazo": "2022-10-01",
+      "prioridade": 3,
+      "vinculada_kpi": null
+    }
+  ],
+  "generated_at": "2025-12-08T14:40:42.330Z"
+}

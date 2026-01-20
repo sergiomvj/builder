@@ -1,0 +1,36 @@
+{
+  "persona_id": "6ec815c0-57af-4d0a-91a2-22c8eb8c6d8e",
+  "full_name": "Gabriel Santos Oliveira",
+  "role": "Analista Financeiro",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades em análise de investimentos",
+      "descricao": "Realizar um curso online de análise de investimentos e aplicar os conhecimentos adquiridos em projetos da empresa",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "horas",
+      "data_prazo": "2026-06-01",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Participar de cursos de atualização em finanças",
+      "descricao": "Realizar pelo menos 2 cursos de atualização em finanças oferecidos por instituições renomadas",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "cursos",
+      "data_prazo": "2026-06-01",
+      "prioridade": 2
+    },
+    {
+      "titulo": "Desenvolver habilidades de liderança na área financeira",
+      "descricao": "Participar de workshops de liderança e aplicar os conceitos aprendidos na gestão da equipe financeira",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 100,
+      "unidade_medida": "horas",
+      "data_prazo": "2026-06-01",
+      "prioridade": 3
+    }
+  ],
+  "generated_at": "2025-12-08T14:36:34.154Z"
+}

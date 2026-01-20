@@ -1,0 +1,96 @@
+# Docker Compose para VPS - Produção
+version: '3.8'
+
+services:
+  # Aplicação Principal VCM
+  vcm-dashboard:
+    build: 
+      context: .
+      dockerfile: Dockerfile.prod
+    container_name: vcm-dashboard
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+      - PORT=3000
+    env_file:
+      - .env.production
+    networks:
+      - vcm-network
+    volumes:
+      - ./logs:/app/logs
+    depends_on:
+      - nginx
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Nginx Proxy Reverso
+  nginx:
+    image: nginx:alpine
+    container_name: vcm-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+      - ./nginx/logs:/var/log/nginx
+    networks:
+      - vcm-network
+    depends_on:
+      - vcm-dashboard
+
+  # Monitor de Sistema (Watchtower para atualizações automáticas)
+  watchtower:
+    image: containrrr/watchtower
+    container_name: vcm-watchtower
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - WATCHTOWER_CLEANUP=true
+      - WATCHTOWER_POLL_INTERVAL=3600
+      - WATCHTOWER_INCLUDE_RESTARTING=true
+    command: vcm-dashboard
+    networks:
+      - vcm-network
+
+  # Backup Automático
+  backup:
+    image: alpine:latest
+    container_name: vcm-backup
+    restart: unless-stopped
+    volumes:
+      - ./logs:/backup/logs:ro
+      - ./backups:/backup/output
+      - ./scripts/backup.sh:/backup/backup.sh:ro
+    environment:
+      - BACKUP_SCHEDULE=0 2 * * *  # 2:00 AM diariamente
+    command: |
+      sh -c "
+        apk add --no-cache dcron curl &&
+        echo '0 2 * * * /backup/backup.sh' | crontab - &&
+        crond -f
+      "
+    networks:
+      - vcm-network
+
+networks:
+  vcm-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  nginx-logs:
+  app-logs:
+  backup-data:

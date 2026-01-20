@@ -1,0 +1,494 @@
+{
+  "persona_profile": {
+    "id": 5,
+    "persona_key": "Isabella_González",
+    "nome_completo": "Isabella González",
+    "categoria": "especialistas",
+    "especialidade": "marketing",
+    "experiencia_anos": 9,
+    "biografia": {
+      "educacao": "MBA em Marketing Digital e Growth Hacking Certification",
+      "idiomas": [
+        "francês",
+        "português",
+        "espanhol",
+        "inglês"
+      ],
+      "secoes_extraidas": [
+        "formacao",
+        "experiencia",
+        "competencias_tecnicas",
+        "competencias_comportamentais",
+        "responsabilidades"
+      ]
+    },
+    "competencias": {
+      "tecnicas": [
+        {
+          "id": "5_t_1",
+          "nome": "Marketing Digital",
+          "categoria": "tecnica",
+          "nivel": "avançado",
+          "contexto": "Estratégias de promoção e engajamento em plataformas digitais"
+        },
+        {
+          "id": "5_t_2",
+          "nome": "Growth Hacking",
+          "categoria": "tecnica",
+          "nivel": "avançado",
+          "contexto": "Competência em Growth Hacking aplicada no contexto de marketing"
+        },
+        {
+          "id": "5_t_3",
+          "nome": "Marketing Analytics",
+          "categoria": "tecnica",
+          "nivel": "avançado",
+          "contexto": "Competência em Marketing Analytics aplicada no contexto de marketing"
+        },
+        {
+          "id": "5_t_4",
+          "nome": "Automação de Marketing",
+          "categoria": "tecnica",
+          "nivel": "avançado",
+          "contexto": "Competência em Automação de Marketing aplicada no contexto de marketing"
+        },
+        {
+          "id": "5_t_5",
+          "nome": "Inbound Marketing",
+          "categoria": "tecnica",
+          "nivel": "avançado",
+          "contexto": "Competência em Inbound Marketing aplicada no contexto de marketing"
+        },
+        {
+          "id": "5_t_6",
+          "nome": "Performance Marketing",
+          "categoria": "tecnica",
+          "nivel": "avançado",
+          "contexto": "Competência em Performance Marketing aplicada no contexto de marketing"
+        }
+      ],
+      "comportamentais": [
+        {
+          "id": "5_c_1",
+          "nome": "Pensamento Analítico",
+          "categoria": "comportamental",
+          "nivel": "avançado",
+          "contexto": "Competência em Pensamento Analítico aplicada no contexto de especialistas"
+        },
+        {
+          "id": "5_c_2",
+          "nome": "Orientação a Dados",
+          "categoria": "comportamental",
+          "nivel": "avançado",
+          "contexto": "Competência em Orientação a Dados aplicada no contexto de especialistas"
+        },
+        {
+          "id": "5_c_3",
+          "nome": "Inovação",
+          "categoria": "comportamental",
+          "nivel": "avançado",
+          "contexto": "Competência em Inovação aplicada no contexto de especialistas"
+        },
+        {
+          "id": "5_c_4",
+          "nome": "Visão Estratégica",
+          "categoria": "comportamental",
+          "nivel": "avançado",
+          "contexto": "Competência em Visão Estratégica aplicada no contexto de especialistas"
+        },
+        {
+          "id": "5_c_5",
+          "nome": "Adaptabilidade",
+          "categoria": "comportamental",
+          "nivel": "avançado",
+          "contexto": "Competência em Adaptabilidade aplicada no contexto de especialistas"
+        },
+        {
+          "id": "5_c_6",
+          "nome": "Orientação a Resultados",
+          "categoria": "comportamental",
+          "nivel": "avançado",
+          "contexto": "Competência em Orientação a Resultados aplicada no contexto de especialistas"
+        }
+      ]
+    },
+    "ferramentas": [
+      {
+        "id": "5_f_1",
+        "nome": "Google Ads",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "5_f_2",
+        "nome": "Facebook Ads",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "5_f_3",
+        "nome": "HubSpot",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "5_f_4",
+        "nome": "Mailchimp",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "5_f_5",
+        "nome": "Google Analytics",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "5_f_6",
+        "nome": "SEMrush",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      },
+      {
+        "id": "5_f_7",
+        "nome": "Hotjar",
+        "categoria_uso": "especializada",
+        "nivel_proficiencia": "expert"
+      }
+    ],
+    "search_metadata": {
+      "tags": [
+        "especialistas",
+        "marketing",
+        "Marketing Digital",
+        "Growth Hacking",
+        "Marketing Analytics",
+        "Pensamento Analítico",
+        "Orientação a Dados"
+      ],
+      "embedding_text": "Isabella González trabalha como especialistas. especialista em marketing. com 9 anos de experiência. competências técnicas: Marketing Digital, Growth Hacking, Marketing Analytics, Automação de Marketing, Inbound Marketing, Performance Marketing. competências comportamentais: Pensamento Analítico, Orientação a Dados, Inovação, Visão Estratégica, Adaptabilidade, Orientação a Resultados. utiliza ferramentas: Google Ads, Facebook Ads, HubSpot, Mailchimp, Google Analytics, SEMrush, Hotjar. educação: MBA em Marketing Digital e Growth Hacking Certification. idiomas: francês, português, espanhol, inglês",
+      "update_timestamp": "2025-11-16T14:48:34.870Z"
+    }
+  },
+  "relacionamentos": {
+    "competencias_relacionadas": [
+      {
+        "persona_id": 5,
+        "competencia_nome": "Marketing Digital",
+        "nivel": "avançado",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 5,
+        "competencia_nome": "Growth Hacking",
+        "nivel": "avançado",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 5,
+        "competencia_nome": "Marketing Analytics",
+        "nivel": "avançado",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 5,
+        "competencia_nome": "Automação de Marketing",
+        "nivel": "avançado",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 5,
+        "competencia_nome": "Inbound Marketing",
+        "nivel": "avançado",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 5,
+        "competencia_nome": "Performance Marketing",
+        "nivel": "avançado",
+        "categoria": "tecnica"
+      },
+      {
+        "persona_id": 5,
+        "competencia_nome": "Pensamento Analítico",
+        "nivel": "avançado",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 5,
+        "competencia_nome": "Orientação a Dados",
+        "nivel": "avançado",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 5,
+        "competencia_nome": "Inovação",
+        "nivel": "avançado",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 5,
+        "competencia_nome": "Visão Estratégica",
+        "nivel": "avançado",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 5,
+        "competencia_nome": "Adaptabilidade",
+        "nivel": "avançado",
+        "categoria": "comportamental"
+      },
+      {
+        "persona_id": 5,
+        "competencia_nome": "Orientação a Resultados",
+        "nivel": "avançado",
+        "categoria": "comportamental"
+      }
+    ],
+    "ferramentas_relacionadas": [
+      {
+        "persona_id": 5,
+        "ferramenta_nome": "Google Ads",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 5,
+        "ferramenta_nome": "Facebook Ads",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 5,
+        "ferramenta_nome": "HubSpot",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 5,
+        "ferramenta_nome": "Mailchimp",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 5,
+        "ferramenta_nome": "Google Analytics",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 5,
+        "ferramenta_nome": "SEMrush",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      },
+      {
+        "persona_id": 5,
+        "ferramenta_nome": "Hotjar",
+        "proficiencia": "expert",
+        "categoria_uso": "especializada"
+      }
+    ]
+  },
+  "contextos_relevantes": [
+    {
+      "id": "persona_3",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Carlos González",
+      "conteudo": "Carlos González trabalha como especialistas. especialista em hr. com 14 anos de experiência. competências técnicas: Gestão de Talentos, Recrutamento e Seleção, Desenvolvimento Organizacional, Gestão de Performance, Políticas de RH, Employee Experience, People Analytics. competências comportamentais: Liderança Empática, Comunicação Assertiva, Mediação de Conflitos, Pensamento Estratégico, Orientação a Pessoas, Adaptabilidade Cultural. utiliza ferramentas: HRIS Systems, ATS (Applicant Tracking Systems), Microsoft Office 365, Google Workspace, Slack, Zoom, LinkedIn Recruiter. educação: Pós-graduação em Gestão de Pessoas e MBA em Recursos Humanos. idiomas: inglês, espanhol, português, francês",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "hr",
+        "experiencia": 14
+      },
+      "tags": [
+        "especialistas",
+        "hr",
+        "Gestão de Talentos",
+        "Recrutamento e Seleção",
+        "Desenvolvimento Organizacional",
+        "Liderança Empática",
+        "Comunicação Assertiva"
+      ]
+    },
+    {
+      "id": "persona_4",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Gabriela González",
+      "conteudo": "Gabriela González trabalha como especialistas. especialista em midias_sociais. com 15 anos de experiência. competências técnicas: Social Media Marketing, Community Management, Gestão de Campanhas, Analytics e Métricas, Influencer Marketing, Paid Social Advertising. competências comportamentais: Comunicação Digital, Criatividade, Agilidade, Orientação a Tendências, Trabalho em Equipe, Resolução de Problemas. utiliza ferramentas: Facebook Business Manager, Instagram Creator Studio, Hootsuite, Buffer, Canva, Adobe Creative Suite, Google Analytics. educação: Marketing Digital e Social Media, Certificação Facebook Blueprint. idiomas: inglês, espanhol, francês, português",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "midias_sociais",
+        "experiencia": 15
+      },
+      "tags": [
+        "especialistas",
+        "midias_sociais",
+        "Social Media Marketing",
+        "Community Management",
+        "Gestão de Campanhas",
+        "Comunicação Digital",
+        "Criatividade"
+      ]
+    },
+    {
+      "id": "persona_5",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de Isabella González",
+      "conteudo": "Isabella González trabalha como especialistas. especialista em marketing. com 9 anos de experiência. competências técnicas: Marketing Digital, Growth Hacking, Marketing Analytics, Automação de Marketing, Inbound Marketing, Performance Marketing. competências comportamentais: Pensamento Analítico, Orientação a Dados, Inovação, Visão Estratégica, Adaptabilidade, Orientação a Resultados. utiliza ferramentas: Google Ads, Facebook Ads, HubSpot, Mailchimp, Google Analytics, SEMrush, Hotjar. educação: MBA em Marketing Digital e Growth Hacking Certification. idiomas: francês, português, espanhol, inglês",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "marketing",
+        "experiencia": 9
+      },
+      "tags": [
+        "especialistas",
+        "marketing",
+        "Marketing Digital",
+        "Growth Hacking",
+        "Marketing Analytics",
+        "Pensamento Analítico",
+        "Orientação a Dados"
+      ]
+    },
+    {
+      "id": "persona_6",
+      "tipo": "persona_profile",
+      "titulo": "Perfil de José Hernández",
+      "conteudo": "José Hernández trabalha como especialistas. especialista em youtube. com 18 anos de experiência. competências técnicas: Produção de Vídeo, Edição de Vídeo, YouTube Analytics, SEO para YouTube, Marketing de Conteúdo, Storytelling Digital, Live Streaming. competências comportamentais: Criatividade, Comunicação Visual, Persistência, Orientação a Resultados, Adaptabilidade, Inovação. utiliza ferramentas: Adobe Premiere Pro, Final Cut Pro, Adobe After Effects, Photoshop, YouTube Studio, TubeBuddy, VidIQ. educação: Bacharelado em Comunicação Digital e Certificação Google Ads. idiomas: francês, português, inglês, espanhol",
+      "metadata": {
+        "categoria": "especialistas",
+        "especialidade": "youtube",
+        "experiencia": 18
+      },
+      "tags": [
+        "especialistas",
+        "youtube",
+        "Produção de Vídeo",
+        "Edição de Vídeo",
+        "YouTube Analytics",
+        "Criatividade",
+        "Comunicação Visual"
+      ]
+    },
+    {
+      "id": "competencia_38",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Marketing Digital",
+      "conteudo": "Estratégias de promoção e engajamento em plataformas digitais. Personas com esta competência: Isabella González. Ferramentas relacionadas: Google Ads, Facebook Ads, HubSpot, Mailchimp, Google Analytics, SEMrush, Hotjar.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "avançado",
+        "total_personas": 1
+      },
+      "tags": [
+        "Marketing Digital",
+        "tecnica",
+        "Google Ads",
+        "Facebook Ads",
+        "HubSpot",
+        "Mailchimp",
+        "Google Analytics",
+        "SEMrush",
+        "Hotjar"
+      ]
+    },
+    {
+      "id": "competencia_39",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Growth Hacking",
+      "conteudo": "Competência em Growth Hacking aplicada no contexto de marketing. Personas com esta competência: Isabella González. Ferramentas relacionadas: Google Ads, Facebook Ads, HubSpot, Mailchimp, Google Analytics, SEMrush, Hotjar.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "avançado",
+        "total_personas": 1
+      },
+      "tags": [
+        "Growth Hacking",
+        "tecnica",
+        "Google Ads",
+        "Facebook Ads",
+        "HubSpot",
+        "Mailchimp",
+        "Google Analytics",
+        "SEMrush",
+        "Hotjar"
+      ]
+    },
+    {
+      "id": "competencia_40",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Marketing Analytics",
+      "conteudo": "Competência em Marketing Analytics aplicada no contexto de marketing. Personas com esta competência: Isabella González. Ferramentas relacionadas: Google Ads, Facebook Ads, HubSpot, Mailchimp, Google Analytics, SEMrush, Hotjar.",
+      "metadata": {
+        "categoria": "tecnica",
+        "nivel_medio": "avançado",
+        "total_personas": 1
+      },
+      "tags": [
+        "Marketing Analytics",
+        "tecnica",
+        "Google Ads",
+        "Facebook Ads",
+        "HubSpot",
+        "Mailchimp",
+        "Google Analytics",
+        "SEMrush",
+        "Hotjar"
+      ]
+    },
+    {
+      "id": "competencia_44",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Pensamento Analítico",
+      "conteudo": "Competência em Pensamento Analítico aplicada no contexto de especialistas. Personas com esta competência: Isabella González. Ferramentas relacionadas: .",
+      "metadata": {
+        "categoria": "comportamental",
+        "nivel_medio": "avançado",
+        "total_personas": 1
+      },
+      "tags": [
+        "Pensamento Analítico",
+        "comportamental"
+      ]
+    },
+    {
+      "id": "competencia_45",
+      "tipo": "competencia_analysis",
+      "titulo": "Análise da competência Orientação a Dados",
+      "conteudo": "Competência em Orientação a Dados aplicada no contexto de especialistas. Personas com esta competência: Isabella González. Ferramentas relacionadas: .",
+      "metadata": {
+        "categoria": "comportamental",
+        "nivel_medio": "avançado",
+        "total_personas": 1
+      },
+      "tags": [
+        "Orientação a Dados",
+        "comportamental"
+      ]
+    }
+  ],
+  "query_examples": [
+    {
+      "tipo": "competencia_lookup",
+      "query": "Quais são as competências de Isabella González?",
+      "resposta_esperada": "Lista de competências técnicas e comportamentais"
+    },
+    {
+      "tipo": "ferramenta_usage",
+      "query": "Que ferramentas Isabella González sabe usar?",
+      "resposta_esperada": "Lista de ferramentas com nível de proficiência"
+    },
+    {
+      "tipo": "colaboracao_potential",
+      "query": "Com quem Isabella González pode colaborar em projetos?",
+      "resposta_esperada": "Personas com competências complementares"
+    },
+    {
+      "tipo": "processo_involvement",
+      "query": "Em que processos Isabella González deveria estar envolvido?",
+      "resposta_esperada": "Processos que aproveitam suas competências"
+    }
+  ],
+  "data_processamento": "2025-11-16T14:48:34.884Z"
+}

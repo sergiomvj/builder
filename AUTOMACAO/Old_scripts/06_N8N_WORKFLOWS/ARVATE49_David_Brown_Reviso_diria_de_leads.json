@@ -1,0 +1,193 @@
+{
+  "name": "David (SDR Mgr) - Revisão diária de leads",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 9h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "entity": "leads",
+        "filters": {
+          "status": "new",
+          "created_date": "yesterday"
+        },
+        "operation": "get"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar novos leads inseridos no dia anterior"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(lead => ({ ...lead, priority: lead.revenue_potential > 10000 ? 'high' : 'low' }));"
+      },
+      "typeVersion": 1,
+      "notes": "Categorizar leads com potencial de receita acima de 10.000 como alta prioridade"
+    },
+    {
+      "id": "4",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "entity": "leads",
+        "operation": "update",
+        "updateFields": {
+          "priority": "{{ $json.priority }}"
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar prioridade do lead no CRM"
+    },
+    {
+      "id": "5",
+      "name": "Send Notification",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#sales-team",
+        "text": "Novos leads de alta prioridade foram categorizados e estão prontos para contato."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe de vendas no Slack sobre novos leads de alta prioridade",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: David (SDR Mgr) - Revisão diária de leads\nEmpresa: ARVA Tech Solutions\nPersona: David Brown\nTarefa: Revisão diária de leads\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:29.795Z",
+  "updatedAt": "2025-11-28T17:05:29.795Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "ac1149b5-947f-44b4-85ed-70e8f7ac7e8a",
+    "persona_nome": "David Brown",
+    "task_id": "09ef13ea-0177-4eaf-9d3a-a9960219d24f",
+    "task_title": "Revisão diária de leads",
+    "opportunity_id": "30d2d23c-9857-454b-87bd-ddb677b5b3b7",
+    "automation_score": 65,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:29.795Z"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "persona_id": "0d1d4ad3-562e-4f8c-80d4-63b6a585c8d4",
+  "full_name": "Roberto Almeida Santos",
+  "role": "CEO",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em tecnologia da informação",
+    "Experiência em gestão de projetos",
+    "Conhecimento em legislação de imigração",
+    "Habilidades em negociação",
+    "Fluência em inglês"
+  ],
+  "competencias_comportamentais": [
+    "Liderança",
+    "Comunicação eficaz",
+    "Resiliência",
+    "Tomada de decisão",
+    "Trabalho em equipe"
+  ],
+  "ferramentas": [
+    "CRM",
+    "Google Analytics",
+    "Microsoft Office",
+    "Trello"
+  ],
+  "tarefas_diarias": [
+    "Reuniões com a equipe",
+    "Acompanhamento de métricas",
+    "Tomada de decisões estratégicas",
+    "Networking"
+  ],
+  "tarefas_semanais": [
+    "Análise de performance da plataforma",
+    "Feedback com a equipe",
+    "Atualização do planejamento estratégico"
+  ],
+  "tarefas_mensais": [
+    "Análise de mercado",
+    "Elaboração de relatórios executivos",
+    "Avaliação do desempenho da equipe"
+  ],
+  "kpis": [
+    "Aquisição de novos usuários: 10% de crescimento mensal - 1000 novos usuários",
+    "Taxa de conversão de leads: 20% de aumento - 500 leads qualificados por mês",
+    "Satisfação do cliente: 90% de aprovação - 4.5 de avaliação média"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de liderança",
+    "Expandir conhecimento em tecnologia",
+    "Desenvolver estratégias de crescimento para a empresa"
+  ],
+  "generated_at": "2025-12-08T14:42:53.267Z"
+}

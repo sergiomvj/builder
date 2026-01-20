@@ -1,0 +1,50 @@
+{
+  "persona": {
+    "id": "07acdccc-ac86-41cd-9c19-2c95bfc82be9",
+    "nome": "Sarah Johnson",
+    "biografia": "Biografia não disponível"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+    "prompt_usado": "Homem profissional, 30-35 anos, cabelo escuro, barba aparada, terno azul marinho",
+    "estilo": "Profissional Corporativo",
+    "background_tipo": "escritório",
+    "biometrics": {
+      "genero": "masculino",
+      "idade_aparente": 32,
+      "etnia": "caucasiano",
+      "cor_cabelo": "castanho_escuro",
+      "cor_olhos": "castanhos",
+      "estatura": "média",
+      "biotipo": "atlético"
+    },
+    "servico_usado": "mock_data_v1",
+    "versao": "test_1.0",
+    "ativo": true,
+    "history": {
+      "formacao_academica": [
+        "Administração"
+      ],
+      "experiencia_anos": 6,
+      "empresas_anteriores": [
+        "TechCorp",
+        "SoftwarePlus"
+      ],
+      "certificacoes": [
+        "Professional Certification"
+      ],
+      "idiomas": [
+        "português",
+        "inglês"
+      ]
+    },
+    "metadados": {
+      "generated_at": "2025-11-22T15:51:02.033Z",
+      "script_version": "03_mock",
+      "confidence_score": 95,
+      "mock_data": true
+    }
+  },
+  "generated_at": "2025-11-22T15:51:02.190Z"
+}

@@ -1,0 +1,187 @@
+{
+  "name": "James (Asst RH) - Atualização de registros de funcionários",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 0 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia à meia-noite"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "table": "employee_records",
+        "filters": {
+          "last_updated": {
+            "lt": "NOW() - INTERVAL '1 day'"
+          }
+        },
+        "operation": "select"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar registros de funcionários não atualizados nas últimas 24 horas"
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(employee => ({ ...employee, needs_update: true }));"
+      },
+      "typeVersion": 1,
+      "notes": "Marcar registros que precisam de atualização"
+    },
+    {
+      "id": "4",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "to": "{{ $json.manager_email }}",
+        "message": "Por favor, revise e atualize as informações dos seguintes funcionários: {{ $json.employee_names }}.",
+        "subject": "Atualização de Registro de Funcionários Pendente"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar email para gerentes solicitando atualização"
+    },
+    {
+      "id": "5",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "set": {
+          "update_requested": true
+        },
+        "table": "employee_records",
+        "operation": "update"
+      },
+      "typeVersion": 1,
+      "notes": "Marcar no sistema que a atualização foi solicitada"
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: James (Asst RH) - Atualização de registros de funcionários\nEmpresa: ARVA Tech Solutions\nPersona: James Wilson\nTarefa: Atualização de registros de funcionários\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:28.875Z",
+  "updatedAt": "2025-11-28T17:05:28.875Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "ff4feab2-17c2-406c-9d57-609e0a46cfb1",
+    "persona_nome": "James Wilson",
+    "task_id": "72694aa6-4bf7-41a0-869b-0252c1987cc0",
+    "task_title": "Atualização de registros de funcionários",
+    "opportunity_id": "c5ae4fe1-6a61-4c79-91c3-0ffc3db68d76",
+    "automation_score": 65,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:28.875Z"
+  }
+}

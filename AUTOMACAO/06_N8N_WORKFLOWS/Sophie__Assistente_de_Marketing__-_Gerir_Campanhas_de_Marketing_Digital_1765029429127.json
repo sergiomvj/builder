@@ -1,0 +1,246 @@
+{
+  "name": "Sophie (Assistente de Marketing) - Gerir Campanhas de Marketing Digital",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 8 * * 1"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar toda segunda-feira às 8h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "url": "https://api.hubspot.com/campaigns",
+        "method": "GET",
+        "responseFormat": "json",
+        "headers": {
+          "Authorization": "Bearer {{hubspot_api_key}}"
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Obter dados das campanhas de marketing do HubSpot"
+    },
+    {
+      "id": "3",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "url": "https://analytics.googleapis.com/v4/reports:batchGet",
+        "method": "POST",
+        "responseFormat": "json",
+        "headers": {
+          "Authorization": "Bearer {{google_analytics_api_key}}"
+        },
+        "body": {
+          "reportRequests": [
+            {
+              "viewId": "{{view_id}}",
+              "metrics": [
+                {
+                  "expression": "ga:sessions"
+                }
+              ],
+              "dateRanges": [
+                {
+                  "endDate": "today",
+                  "startDate": "7daysAgo"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Obter dados de performance das campanhas do Google Analytics"
+    },
+    {
+      "id": "4",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return { campaigns: items[0].json, analytics: items[1].json };"
+      },
+      "typeVersion": 1,
+      "notes": "Combinar dados de campanhas e analytics"
+    },
+    {
+      "id": "5",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "marketing@arvatech.com",
+        "subject": "Relatório Semanal de Campanhas de Marketing",
+        "message": "Veja o relatório das campanhas: {{ $json.campaigns }} e dados de performance: {{ $json.analytics }}"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar relatório semanal por email",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVA01",
+          "name": "Gmail ARVA01"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Notify",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#marketing",
+        "text": "Relatório semanal de campanhas enviado por email."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar equipe de marketing no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVA01",
+          "name": "Slack ARVA01"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1560,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Sophie (Assistente de Marketing) - Gerir Campanhas de Marketing Digital\nEmpresa: ARVA Tech Solutions\nPersona: Sophie Dubois\nTarefa: Gerir Campanhas de Marketing Digital\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVA01",
+          "name": "Slack ARVA01"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5": {
+      "main": [
+        [
+          {
+            "node": "6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "7"
+  },
+  "createdAt": "2025-12-06T13:57:09.126Z",
+  "updatedAt": "2025-12-06T13:57:09.126Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+    "empresa_codigo": "ARVA01",
+    "persona_id": "4697d8be-864d-4104-8c9a-a90c50bb7382",
+    "persona_nome": "Sophie Dubois",
+    "task_title": "Gerir Campanhas de Marketing Digital",
+    "opportunity_id": "54d5cb76-0e86-4dd8-bcdd-11b1ee6c53bd",
+    "automation_score": 60,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-12-06T13:57:09.126Z"
+  }
+}

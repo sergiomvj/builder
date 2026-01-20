@@ -1,0 +1,39 @@
+{
+  "persona_id": "b04efdfa-c186-49eb-ab0c-62db9cde9b80",
+  "full_name": "Lucas Henrique Ferreira",
+  "role": "Analista de Dados",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar habilidades em Machine Learning",
+      "descricao": "Participar de um curso avançado de Machine Learning e concluir um projeto prático utilizando essa técnica",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "Conclusão do curso e do projeto",
+      "unidade_medida": "Certificado e projeto concluído",
+      "data_prazo": "2022-12-31",
+      "prioridade": 1,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Participar de cursos de atualização em análise de dados",
+      "descricao": "Realizar pelo menos 2 cursos de atualização em análise de dados, com carga horária total de no mínimo 40 horas",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "Cursos concluídos",
+      "data_prazo": "2022-09-30",
+      "prioridade": 2,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Desenvolver habilidades de liderança",
+      "descricao": "Participar de um curso de liderança e aplicar os conhecimentos adquiridos em pelo menos um projeto ou equipe",
+      "categoria": "desenvolvimento",
+      "valor_alvo": "Aplicação prática dos conhecimentos em um projeto ou equipe",
+      "unidade_medida": "Projeto ou equipe impactada",
+      "data_prazo": "2023-03-31",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    }
+  ],
+  "generated_at": "2025-12-08T14:37:47.224Z"
+}

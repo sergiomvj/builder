@@ -1,0 +1,1132 @@
+{
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "empresa_nome": "LifewayUSA",
+  "generated_at": "2025-12-02T22:33:43.275Z",
+  "opportunities_processed": 92,
+  "workflows_generated": 92,
+  "workflows_saved_to_file": 0,
+  "workflows_saved_to_db": 92,
+  "workflows": [
+    {
+      "workflow_name": "[Placeholder (Agente de Suporte Bilíngue PT/EN) - Gerar relatórios de desempenho de ticket...",
+      "persona_nome": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+      "task_title": "Gerar relatórios de desempenho de tickets",
+      "automation_score": 95,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Dados Júnior) - Execução de consultas SQL",
+      "persona_nome": "[Placeholder 17] Analista de Dados Júnior",
+      "task_title": "Execução de consultas SQL",
+      "automation_score": 95,
+      "nodes_count": 4,
+      "integrations": [
+        "database"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Tester QA de Software) - Verificar e validar builds de software",
+      "persona_nome": "[Placeholder 23] Tester QA de Software",
+      "task_title": "Verificar e validar builds de software",
+      "automation_score": 92,
+      "nodes_count": 6,
+      "integrations": [
+        "github",
+        "jenkins",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Marketing Digital) - Geração de relatórios semanais de KPIs",
+      "persona_nome": "[Placeholder 3] Gerente de Marketing Digital",
+      "task_title": "Geração de relatórios semanais de KPIs",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "google_analytics",
+        "google_ads",
+        "facebook_business",
+        "google_sheets",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Dados Júnior) - Geração de relatórios diários",
+      "persona_nome": "[Placeholder 17] Analista de Dados Júnior",
+      "task_title": "Geração de relatórios diários",
+      "automation_score": 90,
+      "nodes_count": 6,
+      "integrations": [
+        "database",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Dados Júnior) - Atualização de dashboards",
+      "persona_nome": "[Placeholder 17] Analista de Dados Júnior",
+      "task_title": "Atualização de dashboards",
+      "automation_score": 90,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "metabase",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Customer Insights) - Atualizar segmentos de clientes",
+      "persona_nome": "[Placeholder 9] Analista de Customer Insights",
+      "task_title": "Atualizar segmentos de clientes",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "CRM",
+        "Database",
+        "Analytics"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Engenheiro de Machine Learning) - Analisar e limpar datasets",
+      "persona_nome": "[Placeholder 18] Engenheiro de Machine Learning",
+      "task_title": "Analisar e limpar datasets",
+      "automation_score": 90,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Engenheiro de Machine Learning) - Monitorar performance de modelos em prod...",
+      "persona_nome": "[Placeholder 18] Engenheiro de Machine Learning",
+      "task_title": "Monitorar performance de modelos em produção",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "mlflow",
+        "prometheus",
+        "slack",
+        "grafana"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Engenheiro de Machine Learning) - Gerar relatórios de KPIs de modelos",
+      "persona_nome": "[Placeholder 18] Engenheiro de Machine Learning",
+      "task_title": "Gerar relatórios de KPIs de modelos",
+      "automation_score": 90,
+      "nodes_count": 6,
+      "integrations": [
+        "mlflow",
+        "supabase",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Produto Digital) - Monitoramento de métricas de produto",
+      "persona_nome": "[Placeholder 19] Gerente de Produto Digital",
+      "task_title": "Monitoramento de métricas de produto",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "google_analytics",
+        "slack",
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Customer Insights) - Gerar relatórios semanais de performance",
+      "persona_nome": "[Placeholder 9] Analista de Customer Insights",
+      "task_title": "Gerar relatórios semanais de performance",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "google_sheets",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Desenvolvedor Full-Stack) - Monitoramento de performance de aplicaçõ...",
+      "persona_nome": "[Placeholder 2] Desenvolvedor Full-Stack",
+      "task_title": "Monitoramento de performance de aplicações",
+      "automation_score": 90,
+      "nodes_count": 6,
+      "integrations": [
+        "Datadog",
+        "Grafana",
+        "Slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Customer Insights) - Realizar limpeza e preparação de dataset...",
+      "persona_nome": "[Placeholder 9] Analista de Customer Insights",
+      "task_title": "Realizar limpeza e preparação de datasets",
+      "automation_score": 90,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "airflow",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Desenvolvedor Full-Stack) - Geração de relatórios de entregas",
+      "persona_nome": "[Placeholder 2] Desenvolvedor Full-Stack",
+      "task_title": "Geração de relatórios de entregas",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "gmail",
+        "pdfkit"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Especialista em Compliance Imigratória) - Monitorar status de casos imigratórios v...",
+      "persona_nome": "[Placeholder 20] Especialista em Compliance Imigratória",
+      "task_title": "Monitorar status de casos imigratórios via USCIS",
+      "automation_score": 90,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "slack",
+        "playwright"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Customer Success) - Monitorar health score das contas chave",
+      "persona_nome": "[Placeholder 21] Gerente de Customer Success",
+      "task_title": "Monitorar health score das contas chave",
+      "automation_score": 90,
+      "nodes_count": 6,
+      "integrations": [
+        "hubspot",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Customer Success) - Analisar tendências de churn semanal",
+      "persona_nome": "[Placeholder 21] Gerente de Customer Success",
+      "task_title": "Analisar tendências de churn semanal",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Dados e Analytics) - Acompanhar alertas de performance",
+      "persona_nome": "[Placeholder 8] Gerente de Dados e Analytics",
+      "task_title": "Acompanhar alertas de performance",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "grafana",
+        "prometheus",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Tester QA de Software) - Gerar relatório mensal de qualidade de s...",
+      "persona_nome": "[Placeholder 23] Tester QA de Software",
+      "task_title": "Gerar relatório mensal de qualidade de software",
+      "automation_score": 90,
+      "nodes_count": 6,
+      "integrations": [
+        "jira",
+        "github",
+        "google-sheets",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (CEO / Fundador) - Monitoramento de KPIs",
+      "persona_nome": "[Placeholder 25] CEO / Fundador",
+      "task_title": "Monitoramento de KPIs",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Data Scientist) - Limpeza e pré-processamento de dados",
+      "persona_nome": "[Placeholder 26] Data Scientist",
+      "task_title": "Limpeza e pré-processamento de dados",
+      "automation_score": 90,
+      "nodes_count": 6,
+      "integrations": [
+        "database",
+        "airflow",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Data Scientist) - Geração de relatórios e dashboards",
+      "persona_nome": "[Placeholder 26] Data Scientist",
+      "task_title": "Geração de relatórios e dashboards",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Growth Marketing) - Gerar relatórios semanais de performance",
+      "persona_nome": "[Placeholder 7] Analista de Growth Marketing",
+      "task_title": "Gerar relatórios semanais de performance",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "google-analytics",
+        "google-sheets",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Growth Marketing) - Analisar tráfego e conversões",
+      "persona_nome": "[Placeholder 7] Analista de Growth Marketing",
+      "task_title": "Analisar tráfego e conversões",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "google_analytics",
+        "google_sheets",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Growth Marketing) - Monitorar KPIs diários",
+      "persona_nome": "[Placeholder 7] Analista de Growth Marketing",
+      "task_title": "Monitorar KPIs diários",
+      "automation_score": 90,
+      "nodes_count": 6,
+      "integrations": [
+        "google_analytics",
+        "facebook_ads",
+        "slack",
+        "google_sheets"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Assistente de Marketing Digital) - Analisar métricas de tráfego e engajamen...",
+      "persona_nome": "[Placeholder 12] Assistente de Marketing Digital",
+      "task_title": "Analisar métricas de tráfego e engajamento",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "google_analytics",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Assistente de Marketing Digital) - Gerar relatórios de desempenho semanal",
+      "persona_nome": "[Placeholder 12] Assistente de Marketing Digital",
+      "task_title": "Gerar relatórios de desempenho semanal",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "google_analytics",
+        "google_ads",
+        "facebook_business",
+        "google_sheets",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Engenharia de Software) - Monitorar métricas de produção",
+      "persona_nome": "[Placeholder 13] Gerente de Engenharia de Software",
+      "task_title": "Monitorar métricas de produção",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "grafana",
+        "prometheus",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Especialista em Vistos dos EUA) - Gerar relatórios de performance de visto...",
+      "persona_nome": "[Placeholder 1] Especialista em Vistos dos EUA",
+      "task_title": "Gerar relatórios de performance de vistos aprovados",
+      "automation_score": 90,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Diretor de Operações e Compliance) - Monitorar indicadores operacionais",
+      "persona_nome": "[Placeholder 16] Diretor de Operações e Compliance",
+      "task_title": "Monitorar indicadores operacionais",
+      "automation_score": 90,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (CTO - Chief Technology Officer) - Monitorar incidentes críticos",
+      "persona_nome": "[Placeholder 14] CTO - Chief Technology Officer",
+      "task_title": "Monitorar incidentes críticos",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "slack",
+        "pagerduty",
+        "jira"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Content Strategist Imigração) - Monitorar engajamento em redes sociais",
+      "persona_nome": "[Placeholder 10] Content Strategist Imigração",
+      "task_title": "Monitorar engajamento em redes sociais",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "facebook",
+        "instagram",
+        "twitter",
+        "slack",
+        "google-sheets"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Dados e Analytics) - Revisar qualidade de dados",
+      "persona_nome": "[Placeholder 8] Gerente de Dados e Analytics",
+      "task_title": "Revisar qualidade de dados",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Produto Digital) - Relatórios de performance do produto",
+      "persona_nome": "[Placeholder 19] Gerente de Produto Digital",
+      "task_title": "Relatórios de performance do produto",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "google_analytics",
+        "supabase",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Customer Success) - Gerar relatório de performance de CS",
+      "persona_nome": "[Placeholder 21] Gerente de Customer Success",
+      "task_title": "Gerar relatório de performance de CS",
+      "automation_score": 85,
+      "nodes_count": 6,
+      "integrations": [
+        "hubspot",
+        "google_analytics",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Dados e Analytics) - Monitorar dashboards e métricas chave",
+      "persona_nome": "[Placeholder 8] Gerente de Dados e Analytics",
+      "task_title": "Monitorar dashboards e métricas chave",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "Tableau",
+        "Power BI",
+        "Slack",
+        "Gmail"
+      ]
+    },
+    {
+      "workflow_name": "Carolina (Assistente Administrativo) - Preparação de relatórios semanais",
+      "persona_nome": "Carolina Pereira",
+      "task_title": "Preparação de relatórios semanais",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "google_sheets",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Content Strategist Imigração) - Gerar relatório de performance mensal",
+      "persona_nome": "[Placeholder 10] Content Strategist Imigração",
+      "task_title": "Gerar relatório de performance mensal",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "google_analytics",
+        "google_sheets",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Carolina (Assistente Administrativo) - Organização de arquivos e documentos",
+      "persona_nome": "Carolina Pereira",
+      "task_title": "Organização de arquivos e documentos",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "google_drive",
+        "dropbox",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Diretor de Produto e Imigração) - Monitoramento de atualizações em polític...",
+      "persona_nome": "[Placeholder 6] Diretor de Produto e Imigração",
+      "task_title": "Monitoramento de atualizações em políticas de imigração",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "rss",
+        "supabase",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Carolina (Assistente Administrativo) - Atualização de agendas e marcação de reu...",
+      "persona_nome": "Carolina Pereira",
+      "task_title": "Atualização de agendas e marcação de reuniões",
+      "automation_score": 85,
+      "nodes_count": 6,
+      "integrations": [
+        "gmail",
+        "google_calendar",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Customer Insights) - Analisar taxa de churn e retenção",
+      "persona_nome": "[Placeholder 9] Analista de Customer Insights",
+      "task_title": "Analisar taxa de churn e retenção",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "CRM",
+        "Slack",
+        "Email"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Content Strategist Imigração) - Analisar tráfego e métricas básicas",
+      "persona_nome": "[Placeholder 10] Content Strategist Imigração",
+      "task_title": "Analisar tráfego e métricas básicas",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "google_analytics",
+        "slack",
+        "google_sheets"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Conteúdo Imigratório) - Monitorar métricas de engajamento em tem...",
+      "persona_nome": "[Placeholder 5] Gerente de Conteúdo Imigratório",
+      "task_title": "Monitorar métricas de engajamento em tempo real",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "google_analytics",
+        "facebook_graph_api",
+        "instagram_basic_display",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Especialista em Compliance Imigratória) - Atualizar banco de dados de conformidade...",
+      "persona_nome": "[Placeholder 20] Especialista em Compliance Imigratória",
+      "task_title": "Atualizar banco de dados de conformidade de funcionários",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "hris",
+        "slack",
+        "google_workspace"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Dados Júnior) - Análise de tendências semanais",
+      "persona_nome": "[Placeholder 17] Analista de Dados Júnior",
+      "task_title": "Análise de tendências semanais",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "slack",
+        "google_sheets"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Especialista em Vistos dos EUA) - Atualizar status de aplicações no sistem...",
+      "persona_nome": "[Placeholder 1] Especialista em Vistos dos EUA",
+      "task_title": "Atualizar status de aplicações no sistema interno",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "internal_system_api"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Customer Insights) - Monitorar dashboards de métricas de clie...",
+      "persona_nome": "[Placeholder 9] Analista de Customer Insights",
+      "task_title": "Monitorar dashboards de métricas de clientes",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Especialista em Compliance Imigratória) - Preparar relatórios semanais de status d...",
+      "persona_nome": "[Placeholder 20] Especialista em Compliance Imigratória",
+      "task_title": "Preparar relatórios semanais de status de casos",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "gmail",
+        "google_sheets"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Dados e Analytics) - Análise de tendências e anomalias",
+      "persona_nome": "[Placeholder 8] Gerente de Dados e Analytics",
+      "task_title": "Análise de tendências e anomalias",
+      "automation_score": 85,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Marketing Digital) - Analisar métricas de performance em temp...",
+      "persona_nome": "[Placeholder 3] Gerente de Marketing Digital",
+      "task_title": "Analisar métricas de performance em tempo real",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "google_analytics",
+        "google_ads",
+        "meta_business_suite",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Customer Success) - Analisar métricas diárias de uso do prod...",
+      "persona_nome": "[Placeholder 21] Gerente de Customer Success",
+      "task_title": "Analisar métricas diárias de uso do produto",
+      "automation_score": 85,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "slack",
+        "google_sheets"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Assistente de Marketing Digital) - Preparar relatório consolidado de KPIs",
+      "persona_nome": "[Placeholder 12] Assistente de Marketing Digital",
+      "task_title": "Preparar relatório consolidado de KPIs",
+      "automation_score": 80,
+      "nodes_count": 5,
+      "integrations": [
+        "google_analytics",
+        "google_ads",
+        "facebook_business",
+        "google_sheets",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Dados Júnior) - Preparação de relatórios semanais",
+      "persona_nome": "[Placeholder 17] Analista de Dados Júnior",
+      "task_title": "Preparação de relatórios semanais",
+      "automation_score": 80,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Tester QA de Software) - Atualizar relatórios de status de testes",
+      "persona_nome": "[Placeholder 23] Tester QA de Software",
+      "task_title": "Atualizar relatórios de status de testes",
+      "automation_score": 80,
+      "nodes_count": 5,
+      "integrations": [
+        "jira",
+        "testrail",
+        "google-sheets",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Diretor de Produto e Imigração) - Revisão de métricas de produto",
+      "persona_nome": "[Placeholder 6] Diretor de Produto e Imigração",
+      "task_title": "Revisão de métricas de produto",
+      "automation_score": 80,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Produto Digital) - Análise de feedback de usuários",
+      "persona_nome": "[Placeholder 19] Gerente de Produto Digital",
+      "task_title": "Análise de feedback de usuários",
+      "automation_score": 75,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "openai",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Data Scientist) - Validação de modelos e métricas",
+      "persona_nome": "[Placeholder 26] Data Scientist",
+      "task_title": "Validação de modelos e métricas",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "mlflow",
+        "supabase",
+        "slack",
+        "github"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Data Scientist) - Revisão de performance de KPIs",
+      "persona_nome": "[Placeholder 26] Data Scientist",
+      "task_title": "Revisão de performance de KPIs",
+      "automation_score": 75,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (CMO - Chief Marketing Officer) - Revisar performance de campanhas",
+      "persona_nome": "[Placeholder 11] CMO - Chief Marketing Officer",
+      "task_title": "Revisar performance de campanhas",
+      "automation_score": 75,
+      "nodes_count": 5,
+      "integrations": [
+        "google_analytics",
+        "google_ads",
+        "facebook_ads",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Data Scientist) - Análise exploratória de dados (EDA)",
+      "persona_nome": "[Placeholder 26] Data Scientist",
+      "task_title": "Análise exploratória de dados (EDA)",
+      "automation_score": 75,
+      "nodes_count": 4,
+      "integrations": [
+        "supabase",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (UX/UI Designer) - Realizar auditorias de acessibilidade",
+      "persona_nome": "[Placeholder 24] UX/UI Designer",
+      "task_title": "Realizar auditorias de acessibilidade",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "google-lighthouse",
+        "axe-core",
+        "slack",
+        "google-drive"
+      ]
+    },
+    {
+      "workflow_name": "Carolina (Assistente Administrativo) - Coordenação de suprimentos de escritório",
+      "persona_nome": "Carolina Pereira",
+      "task_title": "Coordenação de suprimentos de escritório",
+      "automation_score": 75,
+      "nodes_count": 5,
+      "integrations": [
+        "google_sheets",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Carolina (Assistente Administrativo) - Conciliação de contas e faturamento",
+      "persona_nome": "Carolina Pereira",
+      "task_title": "Conciliação de contas e faturamento",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "QuickBooks",
+        "Stripe",
+        "Plaid",
+        "Slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Diretor de Produto e Imigração) - Relatórios de performance",
+      "persona_nome": "[Placeholder 6] Diretor de Produto e Imigração",
+      "task_title": "Relatórios de performance",
+      "automation_score": 75,
+      "nodes_count": 4,
+      "integrations": [
+        "supabase",
+        "gmail",
+        "google_sheets"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Dados Júnior) - Revisão de KPIs mensais",
+      "persona_nome": "[Placeholder 17] Analista de Dados Júnior",
+      "task_title": "Revisão de KPIs mensais",
+      "automation_score": 75,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "slack",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Especialista em Vistos dos EUA) - Preparar respostas personalizadas para d...",
+      "persona_nome": "[Placeholder 1] Especialista em Vistos dos EUA",
+      "task_title": "Preparar respostas personalizadas para dúvidas comuns",
+      "automation_score": 75,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "openai",
+        "gmail"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Agente de Suporte Bilíngue PT/EN) - Atualizar status e priorizar tickets",
+      "persona_nome": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+      "task_title": "Atualizar status e priorizar tickets",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "zendesk",
+        "jira",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Tester QA de Software) - Registrar e rastrear defeitos em ferrame...",
+      "persona_nome": "[Placeholder 23] Tester QA de Software",
+      "task_title": "Registrar e rastrear defeitos em ferramentas de tracking",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "jira",
+        "slack",
+        "jenkins"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Dados e Analytics) - Gerar relatórios executivos",
+      "persona_nome": "[Placeholder 8] Gerente de Dados e Analytics",
+      "task_title": "Gerar relatórios executivos",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Prompt Engineer para IA Conversacional) - Analisar métricas de performance de prom...",
+      "persona_nome": "[Placeholder 4] Prompt Engineer para IA Conversacional",
+      "task_title": "Analisar métricas de performance de prompts",
+      "automation_score": 75,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Customer Insights) - Analisar dados de engajamento e comporta...",
+      "persona_nome": "[Placeholder 9] Analista de Customer Insights",
+      "task_title": "Analisar dados de engajamento e comportamento",
+      "automation_score": 75,
+      "nodes_count": 6,
+      "integrations": [
+        "google_analytics",
+        "supabase",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "Carolina (Assistente Administrativo) - Elaboração de relatórios mensais de ativ...",
+      "persona_nome": "Carolina Pereira",
+      "task_title": "Elaboração de relatórios mensais de atividades",
+      "automation_score": 70,
+      "nodes_count": 6,
+      "integrations": [
+        "google_sheets",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Especialista em Compliance Imigratória) - Gerar relatórios mensais para liderança ...",
+      "persona_nome": "[Placeholder 20] Especialista em Compliance Imigratória",
+      "task_title": "Gerar relatórios mensais para liderança executiva",
+      "automation_score": 70,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "gmail",
+        "google-sheets"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Prompt Engineer para IA Conversacional) - Gerar relatórios de impacto e melhorias",
+      "persona_nome": "[Placeholder 4] Prompt Engineer para IA Conversacional",
+      "task_title": "Gerar relatórios de impacto e melhorias",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "slack",
+        "google_analytics"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Conteúdo Imigratório) - Gerar relatório mensal de KPIs e insight...",
+      "persona_nome": "[Placeholder 5] Gerente de Conteúdo Imigratório",
+      "task_title": "Gerar relatório mensal de KPIs e insights",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google_analytics",
+        "google_sheets",
+        "gmail",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Diretor de Produto e Imigração) - Análise de feedback de clientes",
+      "persona_nome": "[Placeholder 6] Diretor de Produto e Imigração",
+      "task_title": "Análise de feedback de clientes",
+      "automation_score": 65,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "openai",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Data Scientist) - Otimização de pipelines de dados",
+      "persona_nome": "[Placeholder 26] Data Scientist",
+      "task_title": "Otimização de pipelines de dados",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "airflow",
+        "prometheus",
+        "grafana",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Especialista em Compliance Imigratória) - Realizar auditorias parciais de conformi...",
+      "persona_nome": "[Placeholder 20] Especialista em Compliance Imigratória",
+      "task_title": "Realizar auditorias parciais de conformidade I-9",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "google_drive",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Desenvolvedor Full-Stack) - Code review de pull requests",
+      "persona_nome": "[Placeholder 2] Desenvolvedor Full-Stack",
+      "task_title": "Code review de pull requests",
+      "automation_score": 65,
+      "nodes_count": 2,
+      "integrations": [
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Analista de Dados Júnior) - Limpeza e validação de dados",
+      "persona_nome": "[Placeholder 17] Analista de Dados Júnior",
+      "task_title": "Limpeza e validação de dados",
+      "automation_score": 65,
+      "nodes_count": 2,
+      "integrations": [
+        "supabase"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Diretor de Operações e Compliance) - Avaliação de KPIs operacionais",
+      "persona_nome": "[Placeholder 16] Diretor de Operações e Compliance",
+      "task_title": "Avaliação de KPIs operacionais",
+      "automation_score": 65,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "google_sheets",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Agente de Suporte Bilíngue PT/EN) - Analisar métricas de satisfação do clien...",
+      "persona_nome": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+      "task_title": "Analisar métricas de satisfação do cliente",
+      "automation_score": 65,
+      "nodes_count": 5,
+      "integrations": [
+        "supabase",
+        "slack",
+        "google_sheets"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Agente de Suporte Bilíngue PT/EN) - Consultar e atualizar base de conhecimen...",
+      "persona_nome": "[Placeholder 15] Agente de Suporte Bilíngue PT/EN",
+      "task_title": "Consultar e atualizar base de conhecimento",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "supabase",
+        "slack",
+        "zendesk"
+      ]
+    },
+    {
+      "workflow_name": "Carolina (Assistente Administrativo) - Controle de despesas e reembolsos",
+      "persona_nome": "Carolina Pereira",
+      "task_title": "Controle de despesas e reembolsos",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "gmail",
+        "google_sheets",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Assistente de Marketing Digital) - Monitorar e otimizar campanhas ativas",
+      "persona_nome": "[Placeholder 12] Assistente de Marketing Digital",
+      "task_title": "Monitorar e otimizar campanhas ativas",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google_ads",
+        "meta_business",
+        "google_analytics",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Gerente de Conteúdo Imigratório) - Atualizar calendário editorial com prior...",
+      "persona_nome": "[Placeholder 5] Gerente de Conteúdo Imigratório",
+      "task_title": "Atualizar calendário editorial com prioridades",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "google_calendar",
+        "airtable",
+        "slack"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (CMO - Chief Marketing Officer) - Monitorar tendências de mercado",
+      "persona_nome": "[Placeholder 11] CMO - Chief Marketing Officer",
+      "task_title": "Monitorar tendências de mercado",
+      "automation_score": 65,
+      "nodes_count": 5,
+      "integrations": [
+        "newsapi",
+        "google-trends",
+        "slack",
+        "openai"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (CMO - Chief Marketing Officer) - Analisar métricas semanais",
+      "persona_nome": "[Placeholder 11] CMO - Chief Marketing Officer",
+      "task_title": "Analisar métricas semanais",
+      "automation_score": 65,
+      "nodes_count": 5,
+      "integrations": [
+        "google_analytics",
+        "slack",
+        "google_sheets"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Assistente de Marketing Digital) - Criar e agendar posts diários",
+      "persona_nome": "[Placeholder 12] Assistente de Marketing Digital",
+      "task_title": "Criar e agendar posts diários",
+      "automation_score": 65,
+      "nodes_count": 6,
+      "integrations": [
+        "OpenAI",
+        "Google Sheets",
+        "Buffer"
+      ]
+    },
+    {
+      "workflow_name": "[Placeholder (Content Strategist Imigração) - Pesquisar tendências em imigração",
+      "persona_nome": "[Placeholder 10] Content Strategist Imigração",
+      "task_title": "Pesquisar tendências em imigração",
+      "automation_score": 60,
+      "nodes_count": 5,
+      "integrations": [
+        "news_api",
+        "rss_feeds",
+        "slack",
+        "openai"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "persona_id": "ac722e3c-17eb-4607-8a93-a5228cf25d49",
+  "full_name": "Carlos Eduardo Souza",
+  "role": "Analista de SEO/SEM",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "metas": [
+    {
+      "titulo": "Aprimorar conhecimentos em SEO técnico",
+      "descricao": "Participar de pelo menos 2 cursos online de SEO técnico nos próximos 6 meses",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "cursos",
+      "data_prazo": "2022-12-01",
+      "prioridade": 1
+    },
+    {
+      "titulo": "Desenvolver habilidades em otimização de conteúdo para diferentes plataformas",
+      "descricao": "Aumentar a taxa de engajamento em posts de diferentes plataformas em 20% nos próximos 3 meses",
+      "categoria": "performance",
+      "valor_alvo": 20,
+      "unidade_medida": "%",
+      "data_prazo": "2022-09-01",
+      "prioridade": 2,
+      "vinculada_kpi": "Aumento da taxa de conversão em Z%"
+    },
+    {
+      "titulo": "Melhorar a análise de dados para tomada de decisões estratégicas",
+      "descricao": "Participar de pelo menos 3 workshops sobre análise de dados nos próximos 6 meses",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 3,
+      "unidade_medida": "workshops",
+      "data_prazo": "2022-12-01",
+      "prioridade": 1
+    }
+  ],
+  "generated_at": "2025-12-08T14:38:52.181Z"
+}

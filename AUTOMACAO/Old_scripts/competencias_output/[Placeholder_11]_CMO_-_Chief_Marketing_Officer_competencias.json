@@ -1,0 +1,53 @@
+{
+  "persona_id": "2b3b5bd2-beed-4e51-bb5c-2da05ebec838",
+  "full_name": "[Placeholder 11] CMO - Chief Marketing Officer",
+  "role": "CMO - Chief Marketing Officer",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Estratégia de Marketing Digital",
+    "Análise de Dados e Métricas",
+    "Gestão de Marcas (Branding)",
+    "SEO e SEM",
+    "Marketing de Conteúdo"
+  ],
+  "competencias_comportamentais": [
+    "Liderança Executiva",
+    "Pensamento Estratégico",
+    "Comunicação Eficaz",
+    "Criatividade e Inovação",
+    "Negociação Avançada"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "HubSpot",
+    "Adobe Creative Suite",
+    "Hootsuite"
+  ],
+  "tarefas_diarias": [
+    "Revisar performance de campanhas",
+    "Reuniões com equipe de marketing",
+    "Monitorar tendências de mercado",
+    "Aprovar conteúdos e criativos"
+  ],
+  "tarefas_semanais": [
+    "Analisar métricas semanais",
+    "Planejar conteúdo e campanhas",
+    "Reuniões com stakeholders"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatório de marketing",
+    "Revisar e ajustar orçamento",
+    "Definir metas para o próximo mês"
+  ],
+  "kpis": [
+    "KPI 1: ROI de Campanhas - 300%",
+    "KPI 2: Taxa de Conversão - 5%",
+    "KPI 3: Crescimento de Leads - 20% mensal"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar IA em marketing personalizado",
+    "Expandir parcerias estratégicas",
+    "Obter certificação em Growth Marketing"
+  ],
+  "generated_at": "2025-12-02T18:03:02.425Z"
+}

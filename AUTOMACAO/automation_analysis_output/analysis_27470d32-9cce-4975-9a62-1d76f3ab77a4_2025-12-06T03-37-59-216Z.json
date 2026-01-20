@@ -1,0 +1,770 @@
+{
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "empresa_nome": "ARVA Tech Solutions",
+  "analyzed_at": "2025-12-06T03:22:25.257Z",
+  "llm_used": "OpenAI GPT-4o",
+  "llm_model": "z-ai/glm-4.6",
+  "personas_analyzed": 16,
+  "total_tasks": 108,
+  "tasks_analyzed": 108,
+  "tasks_automatable": 33,
+  "tasks_high_score": 2,
+  "analyses": [
+    {
+      "task_title": "Desenvolver e Executar Testes Automatizados",
+      "automation_score": 70,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Colaborar com Equipes de Desenvolvimento",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Analisar e Reportar Resultados de Testes",
+      "automation_score": 60,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Manter e Atualizar Documentação de QA",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Participar de Reuniões de Planejamento",
+      "automation_score": 20,
+      "workflow_type": "manual",
+      "roi_potential": "low",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Treinar Novos Membros da Equipe",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Implementar Melhores Práticas de QA",
+      "automation_score": 50,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Gerir Campanhas de Marketing Digital",
+      "automation_score": 60,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Aprimorar SEO do Site",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Desenvolver Conteúdo Criativo",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Analisar Dados de Performance",
+      "automation_score": 70,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Colaborar com Equipes Multidisciplinares",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "low",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Gerir CRM e Base de Clientes",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Realizar Pesquisa de Mercado",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Desenvolver Agentes Virtuais",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Gerenciar Contêineres com Docker",
+      "automation_score": 60,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Colaborar em Projetos de Equipe",
+      "automation_score": 25,
+      "workflow_type": "manual",
+      "roi_potential": "low",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Realizar Testes de Qualidade",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Documentar Processos e Soluções",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Aprimorar Habilidades em Machine Learning",
+      "automation_score": 20,
+      "workflow_type": "manual",
+      "roi_potential": "low",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Implementar Feedbacks de Usuários",
+      "automation_score": 70,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Gerenciar relacionamento com clientes",
+      "automation_score": 60,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Analisar dados de vendas",
+      "automation_score": 70,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Desenvolver propostas comerciais",
+      "automation_score": 60,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Participar de reuniões de equipe",
+      "automation_score": 25,
+      "workflow_type": "manual",
+      "roi_potential": "low",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Implementar automação de processos de vendas",
+      "automation_score": 80,
+      "workflow_type": "event",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Realizar treinamentos sobre produtos",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Avaliar concorrência",
+      "automation_score": 50,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Utilizar CRM para gestão de leads",
+      "automation_score": 75,
+      "workflow_type": "event",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Desenvolver roadmap de produto",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Gerenciar equipes multidisciplinares",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Analisar métricas de desempenho do produto",
+      "automation_score": 70,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Facilitar reuniões de stakeholders",
+      "automation_score": 45,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Conduzir pesquisas de mercado",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Promover a integração de APIs",
+      "automation_score": 70,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Desenvolver materiais de treinamento",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Implementar feedback de usuários",
+      "automation_score": 70,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Definir estratégia organizacional",
+      "automation_score": 20,
+      "workflow_type": "manual",
+      "roi_potential": "low",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Supervisionar operações gerais",
+      "automation_score": 50,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Desenvolver e otimizar a arquitetura de sistemas",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Integrar práticas de DevOps na equipe de engenharia",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Gerenciar projetos de Machine Learning",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Realizar análises de desempenho dos agentes virtuais",
+      "automation_score": 70,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Facilitar workshops de inovação e criatividade",
+      "automation_score": 20,
+      "workflow_type": "manual",
+      "roi_potential": "low",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Acompanhar tendências de tecnologia e IA",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Mentorar e desenvolver membros da equipe",
+      "automation_score": 25,
+      "workflow_type": "manual",
+      "roi_potential": "low",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Desenvolver Estratégias de Vendas",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Gerenciar Relacionamento com Clientes",
+      "automation_score": 50,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Analisar Dados de Vendas",
+      "automation_score": 70,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Treinar e Liderar Equipe de Vendas",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Integrar Novas Tecnologias",
+      "automation_score": 70,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Desenvolver Parcerias Estratégicas",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Liderar Iniciativas de Inovação",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Otimizar Campanhas de SEO",
+      "automation_score": 50,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Gerenciar Google Analytics",
+      "automation_score": 60,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Desenvolver Conteúdo Estratégico",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Automatizar Processos de Marketing",
+      "automation_score": 80,
+      "workflow_type": "webhook",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Conduzir Testes A/B",
+      "automation_score": 60,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Colaborar com Equipes Interdepartamentais",
+      "automation_score": 40,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Analisar Concorrência",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Gerenciar pipeline de vendas",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Analisar dados de desempenho",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "high",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Treinar e desenvolver equipe",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Implementar plataformas de automação",
+      "automation_score": 75,
+      "workflow_type": "event",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Estabelecer parcerias estratégicas",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Realizar reuniões de feedback",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Desenvolver estratégias de vendas",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Desenvolver e manter aplicações de agentes virtuais",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Integrar serviços na nuvem",
+      "automation_score": 60,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Colaborar com equipes de design e produto",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Liderar revisões de código",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Implementar práticas de DevOps",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Analisar e resolver problemas técnicos",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Mentorar desenvolvedores juniores",
+      "automation_score": 25,
+      "workflow_type": "manual",
+      "roi_potential": "low",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Gerenciar o ciclo de vida do produto",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Colaborar com equipes de desenvolvimento",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Analisar feedback de usuários",
+      "automation_score": 60,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Desenvolver roadmaps de produto",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Conduzir reuniões de equipe",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "low",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Implementar métricas de desempenho",
+      "automation_score": 70,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Promover a inovação contínua",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Desenvolver protótipos de interface",
+      "automation_score": 25,
+      "workflow_type": "manual",
+      "roi_potential": "low",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Realizar testes de usabilidade",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Colaborar com equipes multidisciplinares",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Criar diretrizes de design",
+      "automation_score": 25,
+      "workflow_type": "manual",
+      "roi_potential": "low",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Analisar métricas de desempenho",
+      "automation_score": 70,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Participar de workshops de inovação",
+      "automation_score": 25,
+      "workflow_type": "manual",
+      "roi_potential": "low",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Treinar novos membros da equipe",
+      "automation_score": 25,
+      "workflow_type": "manual",
+      "roi_potential": "low",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Desenvolver e implementar soluções de IA",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Gerenciar infraestrutura em nuvem",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Liderar equipe de desenvolvimento",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Facilitar comunicação entre departamentos",
+      "automation_score": 45,
+      "workflow_type": "event",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Avaliar e implementar novas tecnologias",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Realizar análises de desempenho",
+      "automation_score": 60,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Promover treinamentos e workshops",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Desenvolver e implementar estratégias de SEO/SEM",
+      "automation_score": 50,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Analisar dados de performance de campanhas",
+      "automation_score": 70,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Gerenciar automação de marketing",
+      "automation_score": 75,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Liderar iniciativas de growth hacking",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Colaborar com equipes de produto e vendas",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Criar conteúdos direcionados para campanhas",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Monitorar tendências de mercado e tecnologia",
+      "automation_score": 45,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Desenvolver e implementar roadmaps de produtos",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Analisar dados de desempenho do produto",
+      "automation_score": 70,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Colaborar com equipes de desenvolvimento",
+      "automation_score": 40,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Conduzir sessões de brainstorming",
+      "automation_score": 25,
+      "workflow_type": "manual",
+      "roi_potential": "low",
+      "complexity": "simple"
+    },
+    {
+      "task_title": "Gerir feedback de usuários",
+      "automation_score": 70,
+      "workflow_type": "cron",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    },
+    {
+      "task_title": "Fomentar parcerias estratégicas",
+      "automation_score": 45,
+      "workflow_type": "manual",
+      "roi_potential": "medium",
+      "complexity": "medium"
+    }
+  ]
+}

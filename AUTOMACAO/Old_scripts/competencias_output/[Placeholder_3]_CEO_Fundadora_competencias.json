@@ -1,0 +1,57 @@
+{
+  "persona_id": "7430addb-b3f7-40f7-b098-22f1f1e136af",
+  "full_name": "[Placeholder 3] CEO / Fundadora",
+  "role": "CEO / Fundadora",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Estratégia de Negócios e Planejamento Estratégico em Tecnologia",
+    "Gestão Financeira e Análise de Orçamentos para Startups Tech",
+    "Conhecimento Avançado em Tecnologias Emergentes (IA, Cloud Computing e Cybersecurity)",
+    "Gestão de Operações e Otimização de Processos Ágeis (Lean e DevOps)",
+    "Governança Corporativa, Compliance e Regulamentações Tech (LGPD/GDPR)"
+  ],
+  "competencias_comportamentais": [
+    "Liderança Inspiradora e Motivação de Equipes",
+    "Visão Estratégica e Pensamento Inovador",
+    "Resiliência e Gestão de Crises",
+    "Comunicação Eficaz e Negociação",
+    "Tomada de Decisões sob Incerteza e Pressão"
+  ],
+  "ferramentas": [
+    "Google Workspace / Microsoft 365",
+    "Slack / Microsoft Teams",
+    "Asana / Jira para Gerenciamento de Projetos",
+    "Tableau / Power BI para Análise de Dados",
+    "Salesforce / HubSpot para CRM e Vendas"
+  ],
+  "tarefas_diarias": [
+    "Revisar dashboard de KPIs operacionais (30 minutos diários)",
+    "Responder e-mails e comunicações prioritárias de stakeholders (1 hora diária)",
+    "Realizar 1-2 reuniões curtas de alinhamento com líderes de equipe (45 minutos cada)",
+    "Monitorar progresso de projetos tech via ferramentas ágeis (20 minutos diários)",
+    "Analisar relatórios financeiros rápidos e alertas de risco (15 minutos diários)"
+  ],
+  "tarefas_semanais": [
+    "Reunião executiva de alinhamento estratégico com C-level (2 horas/semana)",
+    "Análise detalhada de métricas de performance da empresa (1 hora/semana)",
+    "Mentoria individual com 2-3 líderes juniores (30 minutos cada/semana)",
+    "Atualização do roadmap de produtos e inovação tech (1 hora/semana)"
+  ],
+  "tarefas_mensais": [
+    "Revisão completa do orçamento e projeções financeiras",
+    "Reunião com board de diretores ou investidores",
+    "Avaliação de oportunidades de parcerias e aquisições tech"
+  ],
+  "kpis": [
+    "Crescimento de Receita Anual - 25% YoY",
+    "Margem EBITDA - 20%",
+    "Taxa de Retenção de Clientes - 92%",
+    "Tempo Médio de Resolução de Incidentes Operacionais - <4 horas"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar expertise em IA e Machine Learning para inovação estratégica",
+    "Expandir rede de contatos com investidores e parceiros tech globais",
+    "Implementar programa de liderança feminina e diversidade na empresa"
+  ],
+  "generated_at": "2025-12-01T16:19:30.229Z"
+}

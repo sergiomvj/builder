@@ -1,0 +1,57 @@
+{
+  "persona_id": "61d11198-6110-43eb-be5a-e3d2fb8274a6",
+  "full_name": "[Placeholder 17] Diretor de Tecnologia (CTO)",
+  "role": "Diretor de Tecnologia (CTO)",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Arquitetura de soluções em nuvem (AWS, Azure, GCP)",
+    "Gestão de DevOps e pipelines CI/CD",
+    "Segurança cibernética e conformidade GDPR/LGPD",
+    "Desenvolvimento de software escalável e microserviços",
+    "Governança de TI e otimização de infraestrutura"
+  ],
+  "competencias_comportamentais": [
+    "Liderança estratégica e visão de longo prazo",
+    "Pensamento inovador e gestão de inovação",
+    "Comunicação assertiva com stakeholders",
+    "Gestão de equipes multidisciplinares",
+    "Tomada de decisões sob pressão"
+  ],
+  "ferramentas": [
+    "AWS Management Console",
+    "Kubernetes e Docker",
+    "Jira para gestão de projetos",
+    "GitLab CI/CD",
+    "Datadog para monitoramento"
+  ],
+  "tarefas_diarias": [
+    "Monitorar uptime dos sistemas (meta: 99.9% diário)",
+    "Revisar 10 pull requests prioritários",
+    "Analisar alertas de segurança (resolver 100% críticos em 1h)",
+    "Participar de daily stand-up (15 minutos)",
+    "Responder comunicações executivas (máx. 2 horas)"
+  ],
+  "tarefas_semanais": [
+    "Realizar reuniões de planejamento com equipes de engenharia",
+    "Atualizar roadmap tecnológico e progresso de sprints",
+    "Mentorar 2 líderes técnicos individuais",
+    "Revisar relatórios de orçamento de TI semanal"
+  ],
+  "tarefas_mensais": [
+    "Apresentar relatório de performance tecnológica à diretoria",
+    "Avaliar e otimizar custos de infraestrutura em nuvem",
+    "Realizar revisão de performance da equipe de TI"
+  ],
+  "kpis": [
+    "Uptime dos Sistemas - 99.99%",
+    "Tempo Médio de Resolução de Incidentes - < 1 hora",
+    "Taxa de Sucesso de Deploys - 95%",
+    "Redução de Custos de Infraestrutura - 10% anual"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação avançada em arquitetura cloud (ex: AWS Solutions Architect Professional)",
+    "Implementar estratégia de IA/ML para otimizar operações",
+    "Desenvolver habilidades em liderança executiva via curso MBA Tech"
+  ],
+  "generated_at": "2025-12-01T16:20:31.286Z"
+}

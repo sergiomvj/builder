@@ -1,0 +1,49 @@
+{
+  "persona_id": "8cdc628c-7441-4833-855e-8e64c854d7a3",
+  "full_name": "Sarah Jenkins",
+  "role": "Especialista em Vendas",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "metas": [
+    {
+      "titulo": "Aumentar Taxa de Qualificação de Leads",
+      "descricao": "Implementar critérios de qualificação BANT rigorosos para elevar a taxa de qualificação de leads em 20%, alinhando com a meta de conversão de 25%, medido mensalmente via CRM.",
+      "categoria": "performance",
+      "valor_alvo": 20,
+      "unidade_medida": "% de aumento",
+      "data_prazo": "2025-03-01",
+      "prioridade": 4,
+      "vinculada_kpi": "Taxa de Conversão de Leads"
+    },
+    {
+      "titulo": "Dominar Integrações Avançadas da ARVA",
+      "descricao": "Completar curso oficial de integrações avançadas e demonstrar proficiência em pelo menos 5 integrações durante demos de vendas, com feedback de 90% de satisfação.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 5,
+      "unidade_medida": "integrações",
+      "data_prazo": "2025-02-15",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Gerar Pipeline de $500k",
+      "descricao": "Prospectar e qualificar oportunidades para construir um pipeline total de $500k em valor qualificado, rastreado no CRM semanalmente.",
+      "categoria": "kpi",
+      "valor_alvo": 500000,
+      "unidade_medida": "$",
+      "data_prazo": "2025-04-01",
+      "prioridade": 5,
+      "vinculada_kpi": "Valor de Pipeline Gerado"
+    },
+    {
+      "titulo": "Realizar 20 Demos de Produto",
+      "descricao": "Agendar e executar 20 demonstrações de produto personalizadas para leads qualificados, visando avançar 50% delas no funil de vendas.",
+      "categoria": "kpi",
+      "valor_alvo": 20,
+      "unidade_medida": "demos",
+      "data_prazo": "2025-03-15",
+      "prioridade": 4,
+      "vinculada_kpi": "Número de Demos Realizadas"
+    }
+  ],
+  "generated_at": "2025-12-08T22:27:17.849Z"
+}

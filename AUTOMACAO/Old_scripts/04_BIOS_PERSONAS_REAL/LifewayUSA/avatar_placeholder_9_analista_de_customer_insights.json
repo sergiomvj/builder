@@ -1,0 +1,36 @@
+{
+  "persona": {
+    "nome": "[Placeholder 9] Analista de Customer Insights",
+    "nacionalidade": "latinos",
+    "genero": "feminino",
+    "cargo": "Analista de Customer Insights",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Responsabilidades técnicas e desenvolvimento",
+    "competencias": "Habilidades técnicas avançadas",
+    "biografia": "Profissional experiente com sólida formação técnica",
+    "personalidade": {},
+    "experiencia_anos": 3,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=200&h=200&fit=crop&crop=face",
+    "estilo": "business",
+    "genero": "feminino",
+    "idade_aparente": "28-34",
+    "etnia": "latina",
+    "pele_tom": "morena clara",
+    "olhos_cor": "castanhos escuros",
+    "cabelo_cor": "preto",
+    "cabelo_comprimento": "médio",
+    "tipo_fisico": "esguio",
+    "altura_estimada": "1.65m",
+    "expressao_facial": "confiante",
+    "estilo_vestimenta": "business casual",
+    "acessorios": "óculos finos",
+    "caracteristicas_distintivas": "sorriso acolhedor"
+  },
+  "generated_at": "2025-12-03T15:36:50.734Z"
+}

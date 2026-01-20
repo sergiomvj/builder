@@ -1,0 +1,1342 @@
+[
+  {
+    "id": "24081b37-1f4f-4bcf-9eb6-5ff3dece796d",
+    "competencias": {
+      "kpis": [
+        "KPI 1: Accuracy média dos modelos - 85%",
+        "KPI 2: Tempo médio de deploy de modelo - < 48 horas",
+        "KPI 3: Número de modelos otimizados por mês - 4"
+      ],
+      "ferramentas": [
+        "Python, TensorFlow, PyTorch",
+        "Jupyter Notebook e VS Code",
+        "Docker e Kubernetes",
+        "AWS SageMaker e MLflow"
+      ],
+      "tarefas_diarias": [
+        "Análise e pré-processamento de dados para experimentos de ML",
+        "Treinamento e validação de modelos de machine learning",
+        "Debugging e otimização de código de ML",
+        "Colaboração em reuniões diárias de stand-up com a equipe"
+      ],
+      "tarefas_mensais": [
+        "Avaliação de KPIs de modelos e relatórios de performance",
+        "Planejamento e priorização de features para sprints",
+        "Treinamentos internos sobre novas técnicas de ML"
+      ],
+      "tarefas_semanais": [
+        "Revisão de código e pull requests de colegas",
+        "Monitoramento de performance de modelos em produção",
+        "Atualização de pipelines de dados e automação de tarefas",
+        "Documentação de experimentos e resultados"
+      ],
+      "competencias_tecnicas": [
+        "Desenvolvimento e treinamento de modelos de Machine Learning com TensorFlow e PyTorch",
+        "Processamento de dados e feature engineering utilizando Pandas e NumPy",
+        "Implementação de pipelines de ML com Scikit-learn e MLflow",
+        "Deploy de modelos em produção com Docker e Kubernetes",
+        "Otimização de hiperparâmetros e avaliação de performance de modelos"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação avançada em Machine Learning (ex: Google Professional ML Engineer)",
+        "Liderar um projeto de ML end-to-end de forma independente",
+        "Contribuir para repositórios open-source de ML com pelo menos 2 PRs aprovados"
+      ],
+      "competencias_comportamentais": [
+        "Resolução de problemas complexos de forma criativa",
+        "Trabalho colaborativo em equipes multidisciplinares",
+        "Comunicação clara de resultados técnicos para stakeholders",
+        "Aprendizado contínuo e adaptação a novas tecnologias",
+        "Foco em resultados e entrega de valor mensurável"
+      ]
+    }
+  },
+  {
+    "id": "d2b77aad-08fb-4380-8f30-d855be094430",
+    "competencias": {
+      "kpis": [
+        "KPI 1: Disponibilidade de serviços - 99.99%",
+        "KPI 2: Tempo Médio de Resolução (MTTR) - < 30 minutos",
+        "KPI 3: Taxa de automação de tarefas - 80%"
+      ],
+      "ferramentas": [
+        "AWS Console e serviços",
+        "Kubernetes e Docker",
+        "Jira e ServiceNow",
+        "Terraform e Ansible"
+      ],
+      "tarefas_diarias": [
+        "Monitorar dashboards de performance e alertas",
+        "Gerenciar incidentes e escalonamentos da equipe",
+        "Coordenar plantão técnico e suporte 24/7",
+        "Analisar logs e métricas para identificar gargalos"
+      ],
+      "tarefas_mensais": [
+        "Conduzir post-mortems de incidentes críticos",
+        "Otimizar custos de infraestrutura e recursos cloud",
+        "Atualizar planos de continuidade de negócios e DR"
+      ],
+      "tarefas_semanais": [
+        "Realizar reuniões de status com equipes e stakeholders",
+        "Revisar relatórios de SLOs e SLAs",
+        "Planejar e priorizar melhorias operacionais"
+      ],
+      "competencias_tecnicas": [
+        "Gestão de infraestrutura de TI e cloud (AWS, Azure)",
+        "Monitoramento e observabilidade de sistemas (Prometheus, Grafana)",
+        "Automação de processos operacionais (CI/CD, Ansible)",
+        "Gerenciamento de incidentes e recuperação de desastres",
+        "Segurança operacional e conformidade (GDPR, ISO 27001)"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação AWS Certified DevOps Engineer",
+        "Implementar práticas SRE avançadas na operação",
+        "Desenvolver habilidades de liderança com curso executivo"
+      ],
+      "competencias_comportamentais": [
+        "Liderança de equipes técnicas multifuncionais",
+        "Comunicação clara com stakeholders técnicos e executivos",
+        "Resolução de problemas complexos sob pressão",
+        "Orientação para resultados e eficiência operacional",
+        "Adaptabilidade a novas tecnologias e mudanças"
+      ]
+    }
+  },
+  {
+    "id": "e80de970-29b6-4879-9e8d-c5a169a31c55",
+    "competencias": {
+      "kpis": [
+        "KPI 1: Taxa de Compliance Ético - 100%",
+        "KPI 2: Eficiência Operacional - 95%",
+        "KPI 3: Tempo de Resposta a Incidentes - <24h"
+      ],
+      "ferramentas": [
+        "ERP (SAP ou Oracle)",
+        "Plataformas de compliance (NAVEX ou MetricStream)",
+        "Ferramentas de BI (Power BI ou Tableau)",
+        "Gestão de projetos (Jira ou Microsoft Project)"
+      ],
+      "tarefas_diarias": [
+        "Monitorar indicadores operacionais chave",
+        "Revisar relatórios de conformidade ética",
+        "Coordenar reuniões com equipes operacionais",
+        "Avaliar e mitigar riscos emergentes"
+      ],
+      "tarefas_mensais": [
+        "Revisar e atualizar políticas éticas",
+        "Avaliar KPIs operacionais e éticos",
+        "Planejar iniciativas de melhoria contínua"
+      ],
+      "tarefas_semanais": [
+        "Realizar reuniões de alinhamento estratégico",
+        "Auditar processos internos e conformidade",
+        "Analisar relatórios de performance semanal"
+      ],
+      "competencias_tecnicas": [
+        "Gestão de operações e supply chain",
+        "Governança corporativa e compliance",
+        "Gestão de riscos operacionais e éticos",
+        "Análise de dados e métricas de performance",
+        "Otimização de processos com metodologias Lean/Six Sigma"
+      ],
+      "objetivos_desenvolvimento": [
+        "Aprimorar expertise em ética de IA e dados",
+        "Obter certificação em Governança Corporativa",
+        "Expandir rede de contatos em associações éticas"
+      ],
+      "competencias_comportamentais": [
+        "Liderança estratégica e inspiradora",
+        "Integridade ética e transparência",
+        "Comunicação assertiva e persuasiva",
+        "Tomada de decisões sob pressão",
+        "Resolução de conflitos e negociação"
+      ]
+    }
+  },
+  {
+    "id": "32288dd9-0d40-4974-bcf9-476078943a0c",
+    "competencias": {
+      "kpis": [
+        "Downtime de infraestrutura IA: < 2 horas por mês",
+        "Taxa de utilização de GPUs: > 75% em workloads de produção",
+        "Tempo médio de resolução de incidentes: < 30 minutos",
+        "Disponibilidade de serviços IA: 99.5% mensalmente"
+      ],
+      "ferramentas": [
+        "Docker e Kubernetes",
+        "AWS (EC2, SageMaker, EKS)",
+        "Prometheus e Grafana",
+        "Terraform para IaC",
+        "NVIDIA CUDA e ferramentas de gerenciamento GPU"
+      ],
+      "tarefas_diarias": [
+        "Monitorar uptime e performance de servidores IA, garantindo 99% de disponibilidade",
+        "Verificar uso de GPUs e alocar recursos para jobs de treinamento em andamento",
+        "Executar verificações de logs e alertas em sistemas de monitoramento",
+        "Realizar backups diários de configurações críticas de infraestrutura",
+        "Resolver tickets de suporte nível 1 para falhas em ambientes de IA (média de 5 tickets/dia)"
+      ],
+      "tarefas_mensais": [
+        "Auditar e otimizar custos de infraestrutura cloud para IA",
+        "Executar testes de carga em ambientes de staging para novos modelos",
+        "Atualizar documentação de procedimentos de infraestrutura IA"
+      ],
+      "tarefas_semanais": [
+        "Atualizar e testar imagens Docker de aplicações de IA",
+        "Realizar manutenção preventiva em clusters Kubernetes",
+        "Gerar relatórios semanais de uso de recursos de infraestrutura",
+        "Participar de reuniões de Operations para alinhamento de prioridades"
+      ],
+      "competencias_tecnicas": [
+        "Configuração e manutenção de servidores GPU para workloads de IA e machine learning",
+        "Gerenciamento de containers Docker e orquestração básica com Kubernetes para aplicações de IA",
+        "Monitoramento e troubleshooting de infraestrutura de IA usando ferramentas de observabilidade",
+        "Gerenciamento de armazenamento de dados em escala para datasets de treinamento de modelos",
+        "Implantação e configuração de ambientes cloud (AWS, Azure) otimizados para IA"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação AWS Certified Cloud Practitioner em 6 meses",
+        "Dominar Kubernetes avançado com curso prático em 3 meses",
+        "Contribuir para um repositório open-source de ferramentas de IA infra em 4 meses"
+      ],
+      "competencias_comportamentais": [
+        "Aprendizado contínuo e adaptação rápida a novas tecnologias de IA",
+        "Trabalho em equipe colaborativa em ambientes multidisciplinares",
+        "Atenção aos detalhes para garantir estabilidade e performance da infraestrutura",
+        "Resolução proativa de problemas sob pressão",
+        "Comunicação clara de status técnico para stakeholders não técnicos"
+      ]
+    }
+  },
+  {
+    "id": "21e1bea3-787a-485a-b601-0d5a8d59c9af",
+    "competencias": {
+      "kpis": [
+        "Taxa de detecção de defeitos: 95%",
+        "Tempo médio de resolução de issues: 24 horas",
+        "Cobertura de testes: 90%",
+        "Índice de não-conformidades resolvidas: 98%"
+      ],
+      "ferramentas": [
+        "ArvaCheck Platform",
+        "JIRA para rastreamento de issues",
+        "Microsoft Excel ou Google Sheets para análise de dados",
+        "SQL para consultas em bancos de dados de qualidade",
+        "Postman para testes de API"
+      ],
+      "tarefas_diarias": [
+        "Executar pelo menos 20 testes manuais no ArvaCheck e registrar resultados",
+        "Analisar 10 logs de erros diários e categorizar defeitos",
+        "Atualizar dashboard de métricas de qualidade com dados do dia",
+        "Revisar 5 pull requests ou entregas para verificação de qualidade",
+        "Documentar 3 não-conformidades identificadas e notificar equipe"
+      ],
+      "tarefas_mensais": [
+        "Elaborar relatório mensal de qualidade com análise de tendências",
+        "Participar de revisão de processos e propor 2 melhorias",
+        "Realizar calibração e validação de ferramentas de teste"
+      ],
+      "tarefas_semanais": [
+        "Participar de reunião de Operations para alinhamento de qualidade",
+        "Gerar relatório semanal de KPIs de qualidade e compartilhar com gestor",
+        "Realizar auditoria interna em 2 processos operacionais",
+        "Treinar 1 colega júnior em procedimento de testes ArvaCheck"
+      ],
+      "competencias_tecnicas": [
+        "Execução de testes funcionais e de regressão no produto ArvaCheck",
+        "Análise de métricas de qualidade e identificação de não-conformidades",
+        "Elaboração de relatórios de qualidade utilizando dados operacionais",
+        "Monitoramento de processos de qualidade conforme normas ISO 9001",
+        "Uso básico de ferramentas de automação de testes para validações repetitivas"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação ISTQB Foundation Level em 6 meses",
+        "Dominar automação de testes com Selenium em 3 meses",
+        "Liderar uma iniciativa de melhoria de processo de qualidade em 1 ano"
+      ],
+      "competencias_comportamentais": [
+        "Atenção aos detalhes e precisão em análises",
+        "Trabalho em equipe colaborativa com operações e desenvolvimento",
+        "Resolução proativa de problemas operacionais",
+        "Comunicação clara e documentada de achados de qualidade",
+        "Adaptabilidade a mudanças em processos tecnológicos"
+      ]
+    }
+  },
+  {
+    "id": "3931ae60-eec3-44af-8d89-cfe1eb405ef8",
+    "competencias": {
+      "kpis": [
+        "KPI 1: Tempo médio de resposta RAG - < 2 segundos",
+        "KPI 2: Taxa de precisão de retrieval - > 90%",
+        "KPI 3: Número de integrações RAG deployadas - 5 por mês"
+      ],
+      "ferramentas": [
+        "LangChain",
+        "LlamaIndex",
+        "Pinecone",
+        "FAISS"
+      ],
+      "tarefas_diarias": [
+        "Monitorar e otimizar pipelines RAG em produção",
+        "Debugar e resolver incidentes em integrações",
+        "Implementar melhorias incrementais em sistemas RAG",
+        "Colaborar com desenvolvedores e stakeholders via reuniões diárias"
+      ],
+      "tarefas_mensais": [
+        "Gerar relatórios de KPIs e performance de RAG",
+        "Planejar e prototipar novas integrações RAG",
+        "Participar de treinamentos e comunidades de IA"
+      ],
+      "tarefas_semanais": [
+        "Revisar código e pull requests de integrações RAG",
+        "Realizar testes de performance e precisão de retrieval",
+        "Atualizar documentação técnica de pipelines"
+      ],
+      "competencias_tecnicas": [
+        "Implementação de pipelines RAG (Retrieval-Augmented Generation)",
+        "Integração com LLMs via frameworks como LangChain e LlamaIndex",
+        "Gerenciamento de bancos de vetores (Vector Databases) como Pinecone e FAISS",
+        "Otimização de retrieval e geração para performance em produção",
+        "Desenvolvimento de APIs RESTful e microservices para integrações RAG"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação em LangChain ou frameworks RAG avançados",
+        "Liderar um projeto de integração RAG em produção",
+        "Contribuir para repositórios open-source de RAG"
+      ],
+      "competencias_comportamentais": [
+        "Resolução de problemas complexos em ambientes de IA",
+        "Colaboração em equipes multidisciplinares",
+        "Comunicação clara de conceitos técnicos",
+        "Aprendizado contínuo em tecnologias emergentes",
+        "Atenção aos detalhes e foco em qualidade"
+      ]
+    }
+  },
+  {
+    "id": "af3321fb-0da6-4ba8-9553-a399253a6538",
+    "competencias": {
+      "kpis": [
+        "Tempo médio de deployment de modelos IA: < 15 minutos",
+        "Uptime de infraestrutura Kubernetes: 99.9%",
+        "Taxa de resolução de incidentes em SLA: 98%",
+        "Cobertura de automação em pipelines: 95%"
+      ],
+      "ferramentas": [
+        "Docker e Kubernetes",
+        "Terraform e Ansible",
+        "Jenkins ou GitHub Actions",
+        "Prometheus e Grafana",
+        "MLflow e Kubeflow"
+      ],
+      "tarefas_diarias": [
+        "Monitorar métricas de produção de modelos IA e resolver alertas (95% em <30min)",
+        "Revisar e mergear pull requests de infraestrutura (mínimo 5/dia)",
+        "Executar health checks em clusters Kubernetes (100% uptime diário)",
+        "Analisar logs com ELK Stack e documentar insights",
+        "Automatizar scripts de deployment rotineiros (reduzir tempo manual em 20%)"
+      ],
+      "tarefas_mensais": [
+        "Auditar segurança e conformidade de infra IA (vulnerabilidades zero)",
+        "Gerar relatório de performance MLOps e propor melhorias",
+        "Treinar equipe em novas práticas ou ferramentas de DevOps IA"
+      ],
+      "tarefas_semanais": [
+        "Participar de daily stand-ups e sprint reviews",
+        "Realizar code reviews completos para equipe DevOps IA",
+        "Atualizar dashboards de monitoramento e relatar anomalias",
+        "Testar e validar novos pipelines em ambiente staging"
+      ],
+      "competencias_tecnicas": [
+        "Implementação e otimização de pipelines CI/CD para modelos de IA/ML",
+        "Gerenciamento de infraestrutura como código (IaC) com ferramentas como Terraform e Ansible",
+        "Orquestração de containers e Kubernetes para workloads de IA em escala",
+        "Monitoramento, logging e observabilidade de aplicações de IA em produção (MLOps)",
+        "Integração e deployment de ferramentas MLOps como MLflow, Kubeflow e Seldon"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação CKAD ou CKA em Kubernetes",
+        "Liderar projeto de migração para Kubeflow em produção",
+        "Mentorar 2 engenheiros juniores em MLOps avançado"
+      ],
+      "competencias_comportamentais": [
+        "Resolução de problemas complexos e análise root cause",
+        "Colaboração em equipes multidisciplinares (dev, data science e ops)",
+        "Aprendizado contínuo e adaptação a novas tecnologias de IA",
+        "Comunicação clara técnica e não técnica",
+        "Gestão de tempo e priorização em ambientes ágeis"
+      ]
+    }
+  },
+  {
+    "id": "2eeed645-9119-48e3-8e1c-8a12c5c14f1b",
+    "competencias": {
+      "kpis": [
+        "Taxa de precisão média dos prompts: 95%",
+        "Número de prompts otimizados por mês: 50",
+        "Tempo médio de iteração por prompt: <2 horas",
+        "Redução de custo em chamadas de API: 15% QoQ"
+      ],
+      "ferramentas": [
+        "OpenAI Playground e GPT models",
+        "LangChain para orquestração de prompts",
+        "Promptfoo para testes automatizados de prompts",
+        "Jupyter Notebook para experimentação iterativa",
+        "GitHub para versionamento de prompts e bibliotecas"
+      ],
+      "tarefas_diarias": [
+        "Criar e testar pelo menos 5 prompts otimizados para casos de uso específicos (taxa de sucesso >90%)",
+        "Analisar feedback de 10+ interações com IA e iterar prompts existentes",
+        "Documentar 3 novos prompts no repositório compartilhado com exemplos e métricas",
+        "Participar de stand-up diário reportando progresso e bloqueios em prompts",
+        "Monitorar performance de prompts em produção, ajustando para >95% de precisão"
+      ],
+      "tarefas_mensais": [
+        "Avaliar impacto dos prompts nos KPIs operacionais da Operations",
+        "Atualizar o guia de melhores práticas de Prompt Engineering",
+        "Propor e prototipar 1 melhoria no pipeline de automação de IA"
+      ],
+      "tarefas_semanais": [
+        "Revisar e otimizar 20 prompts da biblioteca compartilhada",
+        "Realizar uma sessão de treinamento de 1 hora para a equipe sobre técnicas avançadas",
+        "Gerar relatório semanal de métricas de prompts (precisão, latência, custo)",
+        "Experimentar e documentar 2 novas técnicas de prompting emergentes"
+      ],
+      "competencias_tecnicas": [
+        "Design avançado de prompts utilizando técnicas como chain-of-thought, few-shot e tree-of-thoughts",
+        "Conhecimento profundo de Large Language Models (LLMs) e suas limitações",
+        "Programação em Python para automação e experimentação de prompts",
+        "Avaliação quantitativa de prompts com métricas como precisão, recall e coerência",
+        "Integração de APIs de IA generativa em fluxos de trabalho operacionais"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação avançada em Prompt Engineering (ex: DeepLearning.AI)",
+        "Dominar frameworks como LangGraph para agentes de IA autônomos",
+        "Liderar projeto piloto de automação full de prompts em um workflow Operations"
+      ],
+      "competencias_comportamentais": [
+        "Pensamento analítico e crítico para iterar soluções de prompting",
+        "Criatividade para inovar em estruturas de prompts complexas",
+        "Atenção aos detalhes para minimizar ambiguidades e alucinações",
+        "Resolução de problemas adaptativa em cenários de IA imprevisíveis",
+        "Comunicação eficaz para colaborar com equipes multidisciplinares"
+      ]
+    }
+  },
+  {
+    "id": "482f4eff-c6a2-4df9-8517-7333284b0d02",
+    "competencias": {
+      "kpis": [
+        "Taxa de engajamento nas redes sociais: 3% mensal",
+        "Crescimento de seguidores: 5% ao mês",
+        "Taxa de cliques (CTR) em anúncios: 2%",
+        "Leads gerados via marketing digital: 50 por mês"
+      ],
+      "ferramentas": [
+        "Google Analytics",
+        "Meta Business Suite (Facebook/Instagram)",
+        "Canva",
+        "Mailchimp",
+        "Hootsuite ou Buffer"
+      ],
+      "tarefas_diarias": [
+        "Monitorar e responder a 100% dos comentários em redes sociais em até 2 horas",
+        "Agendar e publicar 5 posts diários nas redes sociais principais",
+        "Analisar métricas de engajamento do dia anterior e registrar em planilha",
+        "Criar 2 peças gráficas ou copies para campanhas usando Canva",
+        "Verificar performance de anúncios pagos e ajustar bids básicos (alcance 80% da meta diária)"
+      ],
+      "tarefas_mensais": [
+        "Gerar relatório mensal de ROI de campanhas digitais",
+        "Atualizar calendário editorial anual com tendências do mês",
+        "Realizar auditoria de SEO em 10 páginas do site da empresa"
+      ],
+      "tarefas_semanais": [
+        "Elaborar relatório semanal de performance das redes sociais (engajamento e alcance)",
+        "Planejar e aprovar calendário de conteúdo para a próxima semana",
+        "Otimizar 3 campanhas de anúncios pagos com base em dados da semana",
+        "Participar da reunião semanal de marketing e registrar action items"
+      ],
+      "competencias_tecnicas": [
+        "Gestão de redes sociais: criação e agendamento de posts",
+        "Análise básica de métricas digitais com ferramentas como Google Analytics",
+        "Criação de conteúdo visual básico usando ferramentas de design",
+        "Execução de campanhas de email marketing simples",
+        "Otimização básica de SEO para conteúdos digitais"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação Google Analytics Individual Qualification em 3 meses",
+        "Dominar criação de campanhas avançadas no Google Ads em 6 meses",
+        "Desenvolver habilidades de copywriting persuasivo com curso online em 2 meses"
+      ],
+      "competencias_comportamentais": [
+        "Criatividade na produção de conteúdo",
+        "Comunicação clara e persuasiva",
+        "Adaptabilidade a novas ferramentas e tendências",
+        "Atenção aos detalhes em relatórios e análises",
+        "Trabalho em equipe colaborativa"
+      ]
+    }
+  },
+  {
+    "id": "4bf65f6e-1b3f-4d64-9fbe-53978667a400",
+    "competencias": {
+      "kpis": [
+        "Taxa de deploy on-time de modelos de IA: 95%",
+        "Uptime médio dos sistemas de IA: 99.9%",
+        "Redução de tempo de inferência de modelos: 20% QoQ",
+        "Satisfação da equipe (NPS interno): 8/10"
+      ],
+      "ferramentas": [
+        "TensorFlow e PyTorch",
+        "Kubernetes e Docker para orquestração de containers",
+        "Jupyter Notebooks e VS Code para desenvolvimento",
+        "Jira e Confluence para gerenciamento de projetos",
+        "AWS SageMaker ou Google Cloud AI Platform"
+      ],
+      "tarefas_diarias": [
+        "Realizar code review de pelo menos 10 pull requests da equipe (média de 2h/dia)",
+        "Monitorar métricas de produção de modelos de IA, garantindo uptime >99.5% (30min/dia)",
+        "Facilitar daily stand-up meeting com a equipe de 8-10 membros (15min/dia)",
+        "Analisar logs de incidentes e resolver ou escalar em <1h (tempo médio de resposta)",
+        "Revisar progresso de tarefas no Jira, atualizando burndown chart (20min/dia)"
+      ],
+      "tarefas_mensais": [
+        "Realizar avaliação de performance da equipe com feedback 360 graus",
+        "Atualizar roadmap de engenharia de IA alinhado aos objetivos da Operations",
+        "Auditar conformidade e segurança de modelos de IA deployados em produção"
+      ],
+      "tarefas_semanais": [
+        "Conduzir reunião de retrospectiva e planejamento de sprint com a equipe (2h/semana)",
+        "Preparar e apresentar relatório de status de projetos para stakeholders (1h/semana)",
+        "Mentorar 2-3 engenheiros juniores em sessões de pair programming (3h/semana)",
+        "Avaliar e otimizar custos de infraestrutura de IA no cloud (1h/semana)"
+      ],
+      "competencias_tecnicas": [
+        "Proficiência em frameworks de Machine Learning como TensorFlow e PyTorch para desenvolvimento e otimização de modelos de IA",
+        "Gestão de pipelines MLOps, incluindo CI/CD para deploy automatizado de modelos em produção",
+        "Arquitetura de sistemas escaláveis de IA, com foco em computação em nuvem (AWS SageMaker, GCP Vertex AI)",
+        "Processamento e engenharia de dados em larga escala usando ferramentas como Apache Spark e Kafka",
+        "Otimização de performance de modelos de IA, incluindo quantização, pruning e inferência em edge devices"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação avançada em MLOps (ex: Google Professional Machine Learning Engineer) em 6 meses",
+        "Liderar um projeto piloto de IA generativa que reduza custos operacionais em 15%",
+        "Aprimorar habilidades de liderança com curso executivo em gestão de times técnicos (concluir em 3 meses)"
+      ],
+      "competencias_comportamentais": [
+        "Liderança técnica para motivar e orientar equipes multidisciplinares de engenheiros de IA",
+        "Comunicação estratégica para alinhar expectativas técnicas com objetivos de negócios",
+        "Resolução de problemas complexos sob pressão, priorizando soluções inovadoras e viáveis",
+        "Gestão ágil de projetos, utilizando metodologias Scrum e Kanban para entregas iterativas",
+        "Pensamento estratégico para identificar oportunidades de IA que gerem valor competitivo"
+      ]
+    }
+  },
+  {
+    "id": "a7279093-5a62-449c-97b9-2d1816d5ec43",
+    "competencias": {
+      "kpis": [
+        "KPI 1: Precisão média dos modelos de IA - 90%",
+        "KPI 2: Tempo de deployment de modelos - < 48 horas",
+        "KPI 3: Insights acionáveis entregues - 15 por mês"
+      ],
+      "ferramentas": [
+        "Python (Pandas, NumPy, Scikit-learn)",
+        "SQL e BigQuery/PostgreSQL",
+        "Jupyter Notebook e Google Colab",
+        "Tableau e Power BI"
+      ],
+      "tarefas_diarias": [
+        "Limpeza e pré-processamento de dados",
+        "Análise exploratória de dados (EDA)",
+        "Monitoramento de performance de modelos IA",
+        "Geração de dashboards e relatórios diários"
+      ],
+      "tarefas_mensais": [
+        "Elaboração de relatórios de performance mensal",
+        "Revisão e otimização de modelos existentes",
+        "Participação em treinamentos e capacitações em IA"
+      ],
+      "tarefas_semanais": [
+        "Reuniões de alinhamento com equipe e stakeholders",
+        "Treinamento e fine-tuning de modelos de IA",
+        "Atualização de pipelines de dados automatizados"
+      ],
+      "competencias_tecnicas": [
+        "Programação em Python e R para análise de dados e IA",
+        "Desenvolvimento de modelos de Machine Learning com Scikit-learn e TensorFlow",
+        "Consultas avançadas em SQL e manipulação de Big Data",
+        "Processamento de Linguagem Natural (NLP) e Visão Computacional",
+        "Estatística aplicada e validação de modelos de IA"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação AWS Certified Machine Learning",
+        "Liderar projeto end-to-end de IA",
+        "Aprofundar em Deep Learning com PyTorch"
+      ],
+      "competencias_comportamentais": [
+        "Análise crítica e resolução de problemas complexos",
+        "Comunicação eficaz de insights para stakeholders",
+        "Trabalho em equipe e colaboração interdisciplinar",
+        "Adaptabilidade a novas tecnologias de IA",
+        "Gestão de tempo e priorização de entregas"
+      ]
+    }
+  },
+  {
+    "id": "53262bb0-5382-403d-9f0a-590881f4ba1d",
+    "competencias": {
+      "kpis": [
+        "Tempo médio de deployment de soluções IA: < 10 dias",
+        "Taxa de uptime de soluções IA em produção: > 99%",
+        "Satisfação dos stakeholders (NPS): > 8/10",
+        "Redução de custos operacionais por solução IA: 20% ao ano"
+      ],
+      "ferramentas": [
+        "TensorFlow e Keras",
+        "PyTorch",
+        "AWS SageMaker ou Azure ML",
+        "Kubernetes e Docker",
+        "MLflow e Kubeflow para MLOps"
+      ],
+      "tarefas_diarias": [
+        "Revisar e refinar designs de arquitetura IA para 2-3 projetos (2h/dia)",
+        "Analisar métricas de performance de modelos em produção (1h/dia)",
+        "Colaborar em code reviews de pipelines ML (1h/dia)",
+        "Documentar componentes de soluções IA (30min/dia)",
+        "Monitorar alertas de sistemas IA em produção (30min/dia)"
+      ],
+      "tarefas_mensais": [
+        "Elaborar relatório de performance de soluções IA implementadas",
+        "Conduzir auditoria de segurança e compliance em arquiteturas IA",
+        "Planejar e executar treinamentos internos sobre novas ferramentas IA"
+      ],
+      "tarefas_semanais": [
+        "Participar de reuniões de planejamento ágil e refinement de backlog",
+        "Realizar proof-of-concepts para novas tecnologias IA",
+        "Atualizar documentação de arquiteturas e handover para equipes",
+        "Mentorar desenvolvedores juniores em práticas de IA"
+      ],
+      "competencias_tecnicas": [
+        "Design de arquiteturas de soluções IA escaláveis e integráveis",
+        "Desenvolvimento e otimização de modelos de Machine Learning e Deep Learning",
+        "Integração de APIs de IA com sistemas legados e cloud-native",
+        "Gerenciamento de pipelines de dados para IA (MLOps)",
+        "Implementação de soluções de IA generativa e visão computacional"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação AWS Certified Machine Learning - Specialty em 6 meses",
+        "Liderar 2 projetos de IA generativa end-to-end em 12 meses",
+        "Implementar práticas avançadas de MLOps em 80% dos projetos atuais"
+      ],
+      "competencias_comportamentais": [
+        "Pensamento estratégico e visão sistêmica",
+        "Resolução de problemas complexos em ambientes incertos",
+        "Comunicação técnica eficaz com stakeholders não técnicos",
+        "Colaboração interdisciplinar em equipes ágeis",
+        "Aprendizado contínuo e adaptação a novas tecnologias IA"
+      ]
+    }
+  },
+  {
+    "id": "7430addb-b3f7-40f7-b098-22f1f1e136af",
+    "competencias": {
+      "kpis": [
+        "Crescimento de Receita Anual - 25% YoY",
+        "Margem EBITDA - 20%",
+        "Taxa de Retenção de Clientes - 92%",
+        "Tempo Médio de Resolução de Incidentes Operacionais - <4 horas"
+      ],
+      "ferramentas": [
+        "Google Workspace / Microsoft 365",
+        "Slack / Microsoft Teams",
+        "Asana / Jira para Gerenciamento de Projetos",
+        "Tableau / Power BI para Análise de Dados",
+        "Salesforce / HubSpot para CRM e Vendas"
+      ],
+      "tarefas_diarias": [
+        "Revisar dashboard de KPIs operacionais (30 minutos diários)",
+        "Responder e-mails e comunicações prioritárias de stakeholders (1 hora diária)",
+        "Realizar 1-2 reuniões curtas de alinhamento com líderes de equipe (45 minutos cada)",
+        "Monitorar progresso de projetos tech via ferramentas ágeis (20 minutos diários)",
+        "Analisar relatórios financeiros rápidos e alertas de risco (15 minutos diários)"
+      ],
+      "tarefas_mensais": [
+        "Revisão completa do orçamento e projeções financeiras",
+        "Reunião com board de diretores ou investidores",
+        "Avaliação de oportunidades de parcerias e aquisições tech"
+      ],
+      "tarefas_semanais": [
+        "Reunião executiva de alinhamento estratégico com C-level (2 horas/semana)",
+        "Análise detalhada de métricas de performance da empresa (1 hora/semana)",
+        "Mentoria individual com 2-3 líderes juniores (30 minutos cada/semana)",
+        "Atualização do roadmap de produtos e inovação tech (1 hora/semana)"
+      ],
+      "competencias_tecnicas": [
+        "Estratégia de Negócios e Planejamento Estratégico em Tecnologia",
+        "Gestão Financeira e Análise de Orçamentos para Startups Tech",
+        "Conhecimento Avançado em Tecnologias Emergentes (IA, Cloud Computing e Cybersecurity)",
+        "Gestão de Operações e Otimização de Processos Ágeis (Lean e DevOps)",
+        "Governança Corporativa, Compliance e Regulamentações Tech (LGPD/GDPR)"
+      ],
+      "objetivos_desenvolvimento": [
+        "Aprimorar expertise em IA e Machine Learning para inovação estratégica",
+        "Expandir rede de contatos com investidores e parceiros tech globais",
+        "Implementar programa de liderança feminina e diversidade na empresa"
+      ],
+      "competencias_comportamentais": [
+        "Liderança Inspiradora e Motivação de Equipes",
+        "Visão Estratégica e Pensamento Inovador",
+        "Resiliência e Gestão de Crises",
+        "Comunicação Eficaz e Negociação",
+        "Tomada de Decisões sob Incerteza e Pressão"
+      ]
+    }
+  },
+  {
+    "id": "6f4187e6-0394-4124-a156-6781050850d9",
+    "competencias": {
+      "kpis": [
+        "Taxa de resolução na primeira interação - >85%",
+        "Tempo médio de resposta dos agentes - <2 segundos",
+        "Número de agentes novos deployados - 2 por mês",
+        "Uptime dos agentes em produção - 99,5%"
+      ],
+      "ferramentas": [
+        "Python e bibliotecas (NLTK, spaCy, TensorFlow)",
+        "Rasa ou Dialogflow para construção de bots",
+        "Git e GitHub para versionamento de código",
+        "Docker e Kubernetes para containerização",
+        "Postman ou Insomnia para testes de APIs"
+      ],
+      "tarefas_diarias": [
+        "Revisar e corrigir bugs reportados em agentes (mínimo 3 correções/dia)",
+        "Desenvolver e testar novas intenções/entidades (5+ por dia)",
+        "Executar testes unitários e de conversa (cobertura >90%)",
+        "Participar de daily stand-up e atualizar tasks no Jira/Trello",
+        "Documentar alterações de código em repositórios compartilhados"
+      ],
+      "tarefas_mensais": [
+        "Implantar novas versões de agentes em produção",
+        "Gerar relatório de KPIs e análise de uso dos agentes",
+        "Realizar treinamento ou mentoria para desenvolvedores júnior"
+      ],
+      "tarefas_semanais": [
+        "Realizar code reviews de pull requests (mínimo 5/semana)",
+        "Participar de sprint planning e refinement de backlog",
+        "Monitorar métricas de performance dos agentes deployados",
+        "Colaborar em reuniões com time de produto para alinhar features"
+      ],
+      "competencias_tecnicas": [
+        "Desenvolvimento de agentes conversacionais usando frameworks como Rasa, Dialogflow ou Botpress",
+        "Programação em Python e JavaScript para lógica de negócios e integração de IA",
+        "Implementação de Processamento de Linguagem Natural (NLP) e NLU (Natural Language Understanding)",
+        "Integração de APIs RESTful, webhooks e serviços de terceiros em agentes virtuais",
+        "Deploy e orquestração de agentes em ambientes cloud como AWS Lex, Google Cloud ou Azure Bot Service"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação em Dialogflow ou Rasa Developer",
+        "Dominar machine learning avançado para melhoria de NLU",
+        "Contribuir para pelo menos 1 projeto open-source de chatbots"
+      ],
+      "competencias_comportamentais": [
+        "Resolução de problemas complexos em fluxos conversacionais",
+        "Colaboração em equipe multidisciplinar (devs, designers e produto)",
+        "Comunicação clara de requisitos técnicos para stakeholders não técnicos",
+        "Adaptabilidade a novas tecnologias de IA e chatbots",
+        "Atenção aos detalhes para garantir UX intuitiva e sem erros"
+      ]
+    }
+  },
+  {
+    "id": "a15578cb-7b8f-46b6-9c80-03228bb5bde6",
+    "competencias": {
+      "kpis": [
+        "Tempo médio de resolução de tickets - < 4 horas",
+        "Taxa de satisfação dos agentes (CSAT) - > 90%",
+        "Número de tickets resolvidos por dia - ≥ 25",
+        "Taxa de escalonamento de tickets - < 10%"
+      ],
+      "ferramentas": [
+        "Zendesk ou similar para gerenciamento de tickets",
+        "Jira para rastreamento de incidentes",
+        "Microsoft Teams ou Slack para comunicação interna",
+        "Google Workspace ou Microsoft Excel para relatórios",
+        "CRM básico como HubSpot ou Salesforce"
+      ],
+      "tarefas_diarias": [
+        "Responder e resolver pelo menos 20 tickets de suporte a agentes",
+        "Monitorar queues de atendimento e manter tempo médio de resposta abaixo de 5 minutos",
+        "Atualizar status de 50 tickets pendentes no sistema",
+        "Registrar e categorizar 100% dos incidentes reportados por agentes",
+        "Auxiliar em pelo menos 10 chamadas de suporte ao vivo para agentes"
+      ],
+      "tarefas_mensais": [
+        "Compilar relatório consolidado de KPIs do mês anterior",
+        "Identificar e propor 3 melhorias em processos de suporte",
+        "Participar de 1 sessão de treinamento avançado em ferramentas"
+      ],
+      "tarefas_semanais": [
+        "Gerar relatório de performance de agentes com métricas chave",
+        "Participar de reuniões diárias de operations e compartilhar atualizações",
+        "Auditar 10% dos tickets resolvidos para qualidade",
+        "Treinar 5 novos agentes em procedimentos básicos de suporte"
+      ],
+      "competencias_tecnicas": [
+        "Resolução de tickets de suporte básico via ferramentas de helpdesk",
+        "Monitoramento de filas de atendimento e distribuição de demandas para agentes",
+        "Configuração e troubleshooting inicial em ferramentas de comunicação (chat, e-mail e VoIP)",
+        "Análise de logs de incidentes e geração de relatórios simples de performance",
+        "Uso básico de SQL para consultas em bancos de dados de tickets e métricas"
+      ],
+      "objetivos_desenvolvimento": [
+        "Dominar SQL intermediário para análises avançadas de dados",
+        "Obter certificação em Zendesk ou ferramenta de helpdesk equivalente",
+        "Liderar uma iniciativa de melhoria de processo em suporte a agentes"
+      ],
+      "competencias_comportamentais": [
+        "Comunicação clara e empática com agentes e equipes",
+        "Trabalho em equipe e colaboração em ambientes de operations",
+        "Atenção a detalhes para evitar erros em registros de tickets",
+        "Adaptabilidade a mudanças em processos e ferramentas",
+        "Proatividade na identificação de problemas recorrentes"
+      ]
+    }
+  },
+  {
+    "id": "998369c0-46d1-4d6b-a67c-017f70584bea",
+    "competencias": {
+      "kpis": [
+        "Taxa de Sucesso dos Agentes - 95%",
+        "Tempo Médio de Desenvolvimento de Agente - 10 dias",
+        "Satisfação da Equipe (NPS) - 80%",
+        "Número de Agentes Deployados - 8 por mês"
+      ],
+      "ferramentas": [
+        "Jira para gerenciamento de projetos",
+        "GitHub para controle de versionamento",
+        "Docker e Kubernetes para containerização",
+        "AWS ou Azure para cloud deployment",
+        "Prometheus e Grafana para monitoramento"
+      ],
+      "tarefas_diarias": [
+        "Realizar stand-up diário com equipe (15 minutos, cobertura 100%)",
+        "Revisar 5-10 pull requests no GitHub",
+        "Monitorar métricas de performance de agentes (alerta em <5 min)",
+        "Responder comunicações urgentes (máx. 2 horas/dia)",
+        "Acompanhar progresso de tarefas no Jira (atualização diária)"
+      ],
+      "tarefas_mensais": [
+        "Gerar relatório de performance de agentes e equipe",
+        "Avaliar e ajustar KPIs com base em dados",
+        "Planejamento estratégico para o próximo mês"
+      ],
+      "tarefas_semanais": [
+        "Conduzir code review semanal com equipe",
+        "Planejar e priorizar sprint no Jira",
+        "Reunião de alinhamento com stakeholders",
+        "Sessão de treinamento técnico para equipe"
+      ],
+      "competencias_tecnicas": [
+        "Desenvolvimento e configuração de agentes autônomos em IA",
+        "Gerenciamento de pipelines CI/CD para deployment de agentes",
+        "Integração de agentes com APIs e sistemas empresariais",
+        "Análise de performance e otimização de agentes inteligentes",
+        "Proficiência em Python e frameworks como LangChain ou AutoGen"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação em LangChain ou frameworks de agentes IA",
+        "Aprimorar liderança com curso de gestão ágil",
+        "Implementar automação avançada em 2 pipelines CI/CD"
+      ],
+      "competencias_comportamentais": [
+        "Liderança de equipes multidisciplinares",
+        "Comunicação eficaz com stakeholders",
+        "Resolução estratégica de problemas complexos",
+        "Gestão de mudanças e adaptação tecnológica",
+        "Fomento à inovação e colaboração em equipe"
+      ]
+    }
+  },
+  {
+    "id": "ca7ede6d-bff2-441f-9c1a-42e1b7d6bf56",
+    "competencias": {
+      "kpis": [
+        "Taxa de conversão de leads em clientes - 25%",
+        "Crescimento de receita de vendas - 20% MoM",
+        "Custo de Aquisição de Cliente (CAC) - Menos de R$ 800",
+        "Net Promoter Score (NPS) de clientes - Acima de 75"
+      ],
+      "ferramentas": [
+        "Salesforce (CRM para gestão de vendas)",
+        "HubSpot (Automação de marketing e inbound)",
+        "Google Analytics (Análise de tráfego e conversões)",
+        "LinkedIn Sales Navigator (Prospecção B2B)",
+        "Tableau ou Power BI (Visualização de dados e relatórios)"
+      ],
+      "tarefas_diarias": [
+        "Monitorar e atualizar pipeline de vendas no CRM, garantindo 100% de acurácia diária",
+        "Realizar follow-up com pelo menos 20 leads qualificados via email ou call",
+        "Analisar métricas de campanhas de marketing em tempo real e ajustar bids/orçamentos",
+        "Qualificar e nutrir 15 novos leads recebidos de inbound marketing",
+        "Coordenar alinhamentos rápidos com equipe de operations para suporte a vendas"
+      ],
+      "tarefas_mensais": [
+        "Planejar e lançar campanhas de marketing digital para o próximo ciclo",
+        "Realizar avaliação de performance da equipe e ajuste de metas individuais",
+        "Participar de reuniões estratégicas de Operations para alinhar vendas com produto"
+      ],
+      "tarefas_semanais": [
+        "Conduzir reunião de vendas com equipe para revisão de pipeline e metas semanais",
+        "Gerar relatório de performance de marketing com análise de ROI de campanhas",
+        "Prospectar 50 novos contatos qualificados via LinkedIn ou cold outreach",
+        "Treinar equipe em técnicas de vendas consultivas e objeções comuns"
+      ],
+      "competencias_tecnicas": [
+        "Desenvolvimento e execução de estratégias integradas de vendas e marketing B2B em tecnologia",
+        "Gestão avançada de funil de vendas e otimização de taxas de conversão usando CRM",
+        "Análise de dados de mercado, performance de campanhas e forecasting de receitas",
+        "Automação de marketing e lead nurturing com ferramentas como HubSpot ou Marketo",
+        "Gerenciamento de contas estratégicas (Key Account Management) em soluções tech"
+      ],
+      "objetivos_desenvolvimento": [
+        "Aprimorar expertise em IA para personalização de campanhas de marketing",
+        "Expandir rede de parceiros estratégicos em eventos de tecnologia (meta: 10 novos/mês)",
+        "Implementar metodologia de vendas consultivas para aumentar ticket médio em 30%"
+      ],
+      "competencias_comportamentais": [
+        "Liderança motivacional de equipes multifuncionais",
+        "Negociação persuasiva e fechamento de deals complexos",
+        "Comunicação estratégica e apresentação de pitches de alto impacto",
+        "Orientação para resultados com foco em metas agressivas",
+        "Adaptabilidade a mudanças rápidas no mercado de tecnologia"
+      ]
+    }
+  },
+  {
+    "id": "61d11198-6110-43eb-be5a-e3d2fb8274a6",
+    "competencias": {
+      "kpis": [
+        "Uptime dos Sistemas - 99.99%",
+        "Tempo Médio de Resolução de Incidentes - < 1 hora",
+        "Taxa de Sucesso de Deploys - 95%",
+        "Redução de Custos de Infraestrutura - 10% anual"
+      ],
+      "ferramentas": [
+        "AWS Management Console",
+        "Kubernetes e Docker",
+        "Jira para gestão de projetos",
+        "GitLab CI/CD",
+        "Datadog para monitoramento"
+      ],
+      "tarefas_diarias": [
+        "Monitorar uptime dos sistemas (meta: 99.9% diário)",
+        "Revisar 10 pull requests prioritários",
+        "Analisar alertas de segurança (resolver 100% críticos em 1h)",
+        "Participar de daily stand-up (15 minutos)",
+        "Responder comunicações executivas (máx. 2 horas)"
+      ],
+      "tarefas_mensais": [
+        "Apresentar relatório de performance tecnológica à diretoria",
+        "Avaliar e otimizar custos de infraestrutura em nuvem",
+        "Realizar revisão de performance da equipe de TI"
+      ],
+      "tarefas_semanais": [
+        "Realizar reuniões de planejamento com equipes de engenharia",
+        "Atualizar roadmap tecnológico e progresso de sprints",
+        "Mentorar 2 líderes técnicos individuais",
+        "Revisar relatórios de orçamento de TI semanal"
+      ],
+      "competencias_tecnicas": [
+        "Arquitetura de soluções em nuvem (AWS, Azure, GCP)",
+        "Gestão de DevOps e pipelines CI/CD",
+        "Segurança cibernética e conformidade GDPR/LGPD",
+        "Desenvolvimento de software escalável e microserviços",
+        "Governança de TI e otimização de infraestrutura"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação avançada em arquitetura cloud (ex: AWS Solutions Architect Professional)",
+        "Implementar estratégia de IA/ML para otimizar operações",
+        "Desenvolver habilidades em liderança executiva via curso MBA Tech"
+      ],
+      "competencias_comportamentais": [
+        "Liderança estratégica e visão de longo prazo",
+        "Pensamento inovador e gestão de inovação",
+        "Comunicação assertiva com stakeholders",
+        "Gestão de equipes multidisciplinares",
+        "Tomada de decisões sob pressão"
+      ]
+    }
+  },
+  {
+    "id": "1f11100a-5eac-487f-afa4-e0f9b56b99e2",
+    "competencias": {
+      "kpis": [
+        "Taxa de Adoção de Produto - 80%",
+        "Net Promoter Score (NPS) - 50+",
+        "Velocidade de Lançamento de Features - 4 lançamentos principais/mês",
+        "Taxa de Retenção de Clientes - 90%"
+      ],
+      "ferramentas": [
+        "Jira",
+        "Figma",
+        "Google Analytics",
+        "Aha!",
+        "Slack"
+      ],
+      "tarefas_diarias": [
+        "Revisar e priorizar backlog de produto (top 10 itens atualizados)",
+        "Participar de daily stand-up com equipe de produto (15 minutos)",
+        "Analisar métricas chave (DAU/MAU com variação >5%)",
+        "Alinhar prioridades com stakeholders (1 reunião de 30 minutos)",
+        "Processar feedbacks de clientes (10+ tickets resolvidos)"
+      ],
+      "tarefas_mensais": [
+        "Preparar relatório de performance mensal de produto",
+        "Planejar roadmap para o próximo trimestre",
+        "Realizar e resumir 10+ entrevistas com clientes"
+      ],
+      "tarefas_semanais": [
+        "Realizar reunião de review semanal de produto",
+        "Atualizar roadmap de produto com novas prioridades",
+        "Analisar concorrência e atualizar relatório comparativo",
+        "Conduzir 1:1 com 3-5 membros da equipe"
+      ],
+      "competencias_tecnicas": [
+        "Desenvolvimento de Estratégia e Roadmap de Produto",
+        "Metodologias Ágeis de Gerenciamento de Produto (Scrum e Kanban)",
+        "Princípios de UX/UI e Design Thinking",
+        "Pesquisa de Mercado e Análise Competitiva",
+        "Análise de Métricas de Produto (AARRR e OKRs)"
+      ],
+      "objetivos_desenvolvimento": [
+        "Melhorar colaboração cross-funcional com engenharia e vendas",
+        "Aprimorar decisões baseadas em dados com treinamentos avançados",
+        "Liderar workshops mensais de inovação em produto"
+      ],
+      "competencias_comportamentais": [
+        "Liderança e Gerenciamento de Equipes",
+        "Pensamento Estratégico",
+        "Comunicação e Gerenciamento de Stakeholders",
+        "Tomada de Decisão sob Incerteza",
+        "Inovação e Criatividade"
+      ]
+    }
+  },
+  {
+    "id": "4f5255a0-6183-4865-a2aa-4259cab16811",
+    "competencias": {
+      "kpis": [
+        "Taxa de detecção de irregularidades: 95% dos riscos identificados",
+        "Tempo médio de conclusão de auditorias: 5 dias úteis por ciclo",
+        "Índice de conformidade de controles: 98% de aderência",
+        "Número de recomendações implementadas: 90% no prazo de 30 dias"
+      ],
+      "ferramentas": [
+        "ArvaCheck (plataforma proprietária de auditoria)",
+        "Splunk ou ELK Stack para análise de logs",
+        "Microsoft Excel Avançado e Power BI para dashboards",
+        "SQL Server para queries em bancos de dados",
+        "Jira ou Confluence para gerenciamento de auditorias"
+      ],
+      "tarefas_diarias": [
+        "Revisar 50 alertas de segurança no ArvaCheck e classificar riscos (média de 30 min por alerta)",
+        "Executar 5 testes automatizados de controles internos e registrar resultados",
+        "Analisar logs de acesso de sistemas e identificar anomalias (cobrir 100% dos logs do dia)",
+        "Atualizar dashboard de KPIs de auditoria com dados do dia anterior",
+        "Responder a 10 consultas internas sobre conformidade em até 2 horas"
+      ],
+      "tarefas_mensais": [
+        "Conduzir auditoria plena em um departamento específico com relatório final",
+        "Atualizar matriz de riscos da empresa com base em novas ameaças",
+        "Participar de reuniões de compliance e apresentar métricas de auditoria"
+      ],
+      "tarefas_semanais": [
+        "Realizar auditoria completa em um módulo de processo operacional",
+        "Preparar relatório semanal de riscos identificados para a equipe de Operations",
+        "Treinar 2 membros da equipe em uso do ArvaCheck",
+        "Revisar e aprovar 15 planos de ação corretiva de auditorias anteriores"
+      ],
+      "competencias_tecnicas": [
+        "Auditoria de sistemas e processos de TI conforme normas ISO 27001 e NIST",
+        "Análise de riscos cibernéticos e conformidade regulatória (LGPD/GDPR)",
+        "Execução de testes de controle interno usando ferramentas de automação ArvaCheck",
+        "Elaboração de relatórios de auditoria com evidências e recomendações",
+        "Monitoramento contínuo de logs e alertas de segurança em ambientes cloud"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação CISA (Certified Information Systems Auditor) em 6 meses",
+        "Liderar projeto de automação de 20% das auditorias manuais em 1 ano",
+        "Mentorar junior em auditoria para promoção interna em 9 meses"
+      ],
+      "competencias_comportamentais": [
+        "Atenção aos detalhes e rigor analítico",
+        "Integridade ética e confidencialidade",
+        "Comunicação clara e persuasiva em relatórios",
+        "Resolução de problemas complexos",
+        "Adaptabilidade a novas tecnologias e regulamentações"
+      ]
+    }
+  },
+  {
+    "id": "06f0b005-5265-4f37-bf32-3841efe4cc82",
+    "competencias": {
+      "kpis": [
+        "Número de parceiros ativos - 50 parceiros",
+        "GMV (Gross Merchandise Value) gerado - R$ 2M/mês",
+        "Taxa de retenção de sellers - 92%",
+        "NPS de satisfação de parceiros - 85+"
+      ],
+      "ferramentas": [
+        "VTEX ou Shopify para gestão de marketplace",
+        "Salesforce ou HubSpot para CRM e gerenciamento de parcerias",
+        "Google Analytics ou Amplitude para análise de dados",
+        "Tableau ou Power BI para visualização de métricas",
+        "Slack ou Microsoft Teams para comunicação com parceiros"
+      ],
+      "tarefas_diarias": [
+        "Monitorar dashboards de performance do marketplace (revisar GMV e taxa de conversão diária)",
+        "Responder a consultas e tickets de suporte de parceiros (mínimo 15 interações/dia)",
+        "Aprovar novos listings e produtos de sellers (processar 20 aprovações/dia)",
+        "Coordenar stand-up meetings com equipe de operations (15 minutos diários)",
+        "Analisar relatórios de vendas e alertas de churn (identificar 5 riscos/dia)"
+      ],
+      "tarefas_mensais": [
+        "Avaliar performance de parcerias e renegociar 5 contratos chave",
+        "Planejar e lançar campanhas de aquisição de sellers (meta: 10 novos/mês)",
+        "Apresentar relatório mensal de KPIs à diretoria executiva"
+      ],
+      "tarefas_semanais": [
+        "Realizar reuniões com parceiros estratégicos (mínimo 4 reuniões/semana)",
+        "Gerar e distribuir relatório semanal de métricas de marketplace",
+        "Prospectar e qualificar novos leads de parcerias (contatar 10 prospects/semana)",
+        "Treinar equipe em processos de onboarding (1 sessão de 1h/semana)"
+      ],
+      "competencias_tecnicas": [
+        "Gestão de plataformas de marketplace, incluindo onboarding de sellers e gerenciamento de listings",
+        "Análise de dados e métricas de performance (GMV, taxa de conversão, churn de parceiros)",
+        "Negociação e elaboração de contratos de parceria estratégica",
+        "Integração de APIs e sistemas tecnológicos para parcerias B2B",
+        "Otimização de SEO, ASO e visibilidade de produtos no marketplace"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação em gestão de marketplaces (ex: VTEX Partner Certification em 6 meses)",
+        "Completar curso avançado de negociação estratégica (em 3 meses)",
+        "Expandir rede profissional participando de 2 eventos de tech/parcerias por ano"
+      ],
+      "competencias_comportamentais": [
+        "Comunicação assertiva e persuasiva com stakeholders internos e externos",
+        "Negociação avançada e construção de relacionamentos de longo prazo",
+        "Pensamento estratégico para expansão de parcerias e marketplace",
+        "Resolução de conflitos e problemas complexos em ecossistemas de parceiros",
+        "Liderança de equipes cross-funcionais e gestão de mudanças"
+      ]
+    }
+  },
+  {
+    "id": "32f3c90c-d8e1-4fcc-b09a-ea06c9d9a952",
+    "competencias": {
+      "kpis": [
+        "KPI 1: Leads gerados - 50/mês",
+        "KPI 2: Taxa de conversão de leads - 15%",
+        "KPI 3: Receita gerada em vendas - R$ 50.000/mês"
+      ],
+      "ferramentas": [
+        "Salesforce",
+        "HubSpot",
+        "Microsoft Excel",
+        "LinkedIn Sales Navigator"
+      ],
+      "tarefas_diarias": [
+        "Prospecção de novos leads",
+        "Contato com prospects via email e telefone",
+        "Atualização do CRM com atividades",
+        "Monitoramento do pipeline de vendas"
+      ],
+      "tarefas_mensais": [
+        "Elaboração de relatório de performance mensal",
+        "Participação em treinamentos de produtos",
+        "Planejamento de metas para o próximo mês"
+      ],
+      "tarefas_semanais": [
+        "Reuniões de alinhamento com a equipe de vendas",
+        "Follow-up de oportunidades em andamento",
+        "Análise semanal do funil de vendas"
+      ],
+      "competencias_tecnicas": [
+        "Conhecimento em soluções de TI e software",
+        "Domínio de ferramentas CRM como Salesforce",
+        "Prospecção e qualificação de leads",
+        "Análise de dados de vendas e relatórios",
+        "Realização de demonstrações de produtos"
+      ],
+      "objetivos_desenvolvimento": [
+        "Aprimorar técnicas de negociação avançada",
+        "Aprofundar conhecimento técnico dos produtos ARVA",
+        "Desenvolver habilidades de liderança em equipes de vendas"
+      ],
+      "competencias_comportamentais": [
+        "Comunicação persuasiva",
+        "Orientação a resultados",
+        "Trabalho em equipe",
+        "Resiliência e persistência",
+        "Proatividade e aprendizado contínuo"
+      ]
+    }
+  },
+  {
+    "id": "623e0be8-d6dd-4eb9-b6c0-3c3cf5c296fc",
+    "competencias": {
+      "kpis": [
+        "KPI 1: Componentes UI entregues - 15/mês",
+        "KPI 2: Taxa de resolução de bugs - 95%",
+        "KPI 3: Tempo de integração IA - <2 dias/feature"
+      ],
+      "ferramentas": [
+        "Visual Studio Code",
+        "Git/GitHub",
+        "Figma",
+        "Chrome DevTools"
+      ],
+      "tarefas_diarias": [
+        "Desenvolvimento de componentes frontend",
+        "Integração com serviços de IA",
+        "Testes e correção de bugs",
+        "Participação em stand-ups"
+      ],
+      "tarefas_mensais": [
+        "Entrega de features completas",
+        "Relatório de performance",
+        "Planejamento de sprints"
+      ],
+      "tarefas_semanais": [
+        "Revisão de código pull requests",
+        "Atualização de documentação",
+        "Estudo de novas features de IA"
+      ],
+      "competencias_tecnicas": [
+        "HTML5 e CSS3/SCSS",
+        "JavaScript ES6+",
+        "React.js",
+        "Integração de APIs de IA (ex: OpenAI)",
+        "Design Responsivo e UI/UX"
+      ],
+      "objetivos_desenvolvimento": [
+        "Dominar TypeScript",
+        "Aprender TensorFlow.js",
+        "Contribuir em repositórios open-source"
+      ],
+      "competencias_comportamentais": [
+        "Aprendizagem rápida",
+        "Trabalho em equipe",
+        "Atenção aos detalhes",
+        "Proatividade",
+        "Comunicação eficaz"
+      ]
+    }
+  },
+  {
+    "id": "5cab9d2a-87c3-409d-9c97-022b1ce6567b",
+    "competencias": {
+      "kpis": [
+        "KPI 1: Personalidades Entregues - 8 por trimestre",
+        "KPI 2: Taxa de Satisfação do Usuário - 95%",
+        "KPI 3: Redução de Tokens em Prompts - 20%"
+      ],
+      "ferramentas": [
+        "OpenAI Playground e GPT Models",
+        "Hugging Face Transformers",
+        "LangChain",
+        "Figma para Design de Personas"
+      ],
+      "tarefas_diarias": [
+        "Desenvolver e refinar prompts para personalidades IA",
+        "Testar interações e cenários de uso",
+        "Revisar feedback de usuários e métricas",
+        "Documentar especificações técnicas"
+      ],
+      "tarefas_mensais": [
+        "Gerar relatórios de KPIs e melhorias",
+        "Realizar revisões de prompts com a equipe",
+        "Contribuir para treinamentos internos sobre design de IA"
+      ],
+      "tarefas_semanais": [
+        "Participar de reuniões de sprint e planejamento",
+        "Analisar performance de personalidades deployadas",
+        "Pesquisar novas tendências em IA conversacional"
+      ],
+      "competencias_tecnicas": [
+        "Engenharia de Prompts Avançada",
+        "Processamento de Linguagem Natural (NLP)",
+        "Desenvolvimento de Modelos de IA Conversacionais",
+        "Programação em Python e APIs de IA",
+        "Mitigação de Viés e Ética em IA"
+      ],
+      "objetivos_desenvolvimento": [
+        "Dominar fine-tuning de Large Language Models (LLMs)",
+        "Liderar um projeto de personalidade IA complexa",
+        "Obter certificação avançada em Prompt Engineering"
+      ],
+      "competencias_comportamentais": [
+        "Criatividade e Inovação",
+        "Atenção aos Detalhes",
+        "Colaboração em Equipe",
+        "Comunicação Eficaz",
+        "Adaptabilidade e Aprendizagem Contínua"
+      ]
+    }
+  },
+  {
+    "id": "ee75f578-361c-46ee-880c-51ec0594efe5",
+    "competencias": {
+      "kpis": [
+        "KPI 1: Velocidade da Equipe - 25 Story Points por Sprint",
+        "KPI 2: Net Promoter Score (NPS) - Acima de 8",
+        "KPI 3: Taxa de Entrega no Prazo - 90%"
+      ],
+      "ferramentas": [
+        "Jira",
+        "Confluence",
+        "Figma",
+        "Postman"
+      ],
+      "tarefas_diarias": [
+        "Revisar e priorizar Product Backlog",
+        "Participar de Daily Stand-ups",
+        "Colaborar com equipe de desenvolvimento",
+        "Analisar feedback de usuários"
+      ],
+      "tarefas_mensais": [
+        "Gerar relatórios de progresso",
+        "Atualizar roadmap do produto",
+        "Alinhar com stakeholders"
+      ],
+      "tarefas_semanais": [
+        "Realizar refinamento de backlog",
+        "Planejar e revisar sprints",
+        "Monitorar métricas de performance"
+      ],
+      "competencias_tecnicas": [
+        "Gestão de Product Backlog",
+        "Elaboração de User Stories e Critérios de Aceitação",
+        "Metodologias Ágeis e Scrum",
+        "Análise de Dados e Métricas de Produto",
+        "Conhecimentos em IA e Agentes Autônomos"
+      ],
+      "objetivos_desenvolvimento": [
+        "Obter certificação PSPO II",
+        "Aprimorar skills em Product Management para IA",
+        "Liderar lançamento de novo agente inteligente"
+      ],
+      "competencias_comportamentais": [
+        "Comunicação Eficaz",
+        "Liderança e Influência",
+        "Resolução de Problemas",
+        "Foco no Usuário e Empatia",
+        "Adaptabilidade e Aprendizagem Contínua"
+      ]
+    }
+  }
+]

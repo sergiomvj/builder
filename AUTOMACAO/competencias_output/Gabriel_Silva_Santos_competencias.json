@@ -1,0 +1,53 @@
+{
+  "persona_id": "4b15bc70-ba27-45e8-bdef-a0ebe820a94a",
+  "full_name": "Gabriel Silva Santos",
+  "role": "Desenvolvedor Frontend",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React",
+    "Bootstrap"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação eficaz",
+    "Trabalho em equipe",
+    "Resolução de problemas",
+    "Adaptabilidade",
+    "Criatividade"
+  ],
+  "ferramentas": [
+    "Visual Studio Code",
+    "Git",
+    "Adobe XD",
+    "Figma"
+  ],
+  "tarefas_diarias": [
+    "Desenvolver interfaces responsivas",
+    "Realizar testes de usabilidade",
+    "Colaborar com a equipe de design",
+    "Manter o código limpo e organizado"
+  ],
+  "tarefas_semanais": [
+    "Participar de reuniões de acompanhamento do projeto",
+    "Realizar revisões de código",
+    "Atualizar documentação técnica"
+  ],
+  "tarefas_mensais": [
+    "Analisar métricas de performance do site",
+    "Propor melhorias para a experiência do usuário",
+    "Participar de treinamentos de atualização tecnológica"
+  ],
+  "kpis": [
+    "Eficiência na entrega de novas features - 95% de cumprimento",
+    "Avaliação da satisfação do usuário - Média 4,5/5",
+    "Taxa de conversão de leads - 10% de aumento"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em animações CSS",
+    "Participar de workshops sobre acessibilidade web",
+    "Desenvolver um projeto pessoal utilizando uma nova tecnologia"
+  ],
+  "generated_at": "2025-12-08T14:40:39.609Z"
+}

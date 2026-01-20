@@ -1,0 +1,112 @@
+{
+  "persona": {
+    "nome": "[Placeholder 23] Tester QA de Software",
+    "nacionalidade": "latinos",
+    "genero": "masculino",
+    "cargo": "Tester QA de Software",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Em definição",
+    "competencias": "Em definição",
+    "biografia": "Profissional experiente",
+    "personalidade": {},
+    "experiencia_anos": 4,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=1024&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=400&fit=crop&crop=face",
+    "prompt_usado": "Retrato realista em foto 4K de um homem latino masculino, idade aparente 28-32 anos, etnia latino, tipo físico médio levemente atlético, altura estimada 1.75-1.80m, cabelo cor preto escuro, comprimento curto, estilo liso penteado lateral, volume denso, olhos cor castanhos escuros, formato amendoados expressivos, rosto formato oval, pele tom morena clara, textura lisa com poros sutis, sobrancelhas grossas arqueadas, nariz largo reto, boca lábios médios retos, expressão facial padrão confiante com sorriso leve, marcas únicas nenhuma, acessórios permanentes óculos de armação fina preta retangular e relógio minimalista prateado, postura ereta confiante, características distintivas barba rala bem aparada, estilo vestimenta padrão business casual com camisa azul clara abotoada e calça chino cinza, paleta cores vestuário azul frio cinza neutro tons terrosos, em ambiente office com fundo neutro suave, rendering style foto 4K retrato editorial, lens focus 85mm close-up, lighting soft studio light, aspect ratio 1:1",
+    "estilo": "business casual",
+    "background_tipo": "office",
+    "servico_usado": "gemini_ai",
+    "versao": 1,
+    "ativo": true,
+    "biometrics": {
+      "idade_aparente": "28-32",
+      "genero": "masculino",
+      "etnia": "latino",
+      "tipo_fisico": "médio levemente atlético",
+      "altura_estimada": "1.75-1.80m",
+      "cabelo_cor": "preto escuro",
+      "cabelo_comprimento": "curto",
+      "cabelo_estilo": "liso penteado lateral",
+      "cabelo_volume": "denso",
+      "olhos_cor": "castanhos escuros",
+      "olhos_formato": "amendoados expressivos",
+      "rosto_formato": "oval",
+      "pele_tom": "morena clara",
+      "pele_textura": "lisa com poros sutis",
+      "sobrancelhas": "grossas arqueadas",
+      "nariz": "largo reto",
+      "boca_labios": "médios retos",
+      "expressao_facial_padrao": "confiante com sorriso leve",
+      "marcas_unicas": "nenhuma",
+      "acessorios_permanentes": "óculos de armação fina preta retangular, relógio minimalista prateado",
+      "postura": "ereta confiante",
+      "caracteristicas_distintivas": "barba rala bem aparada",
+      "estilo_vestimenta_padrao": "business casual",
+      "paleta_cores_vestuario": "azul frio cinza neutro tons terrosos"
+    },
+    "physical_description_detailed": {
+      "rosto": {
+        "formato": "oval com queixo levemente definido",
+        "tom_pele": "morena clara uniforme",
+        "textura_pele": "lisa com poros sutis e sem imperfeições visíveis",
+        "olhos": {
+          "cor": "castanhos escuros profundos",
+          "formato": "amendoados expressivos com olhar atento"
+        },
+        "sobrancelhas": "grossas arqueadas cheias e bem definidas",
+        "nariz": "largo reto com narinas moderadas",
+        "boca": "lábios médios retos com contorno natural",
+        "expressao_tipica": "confiante com sorriso leve e olhos diretos"
+      },
+      "cabelo": {
+        "cor_exata": "preto escuro com leves reflexos naturais",
+        "comprimento": "3-5 cm no topo, laterais curtas",
+        "estilo": "liso penteado lateral com fade baixo nas laterais",
+        "volume": "denso e bem cuidado"
+      },
+      "corpo": {
+        "altura_aproximada": "1.77m",
+        "tipo_fisico": "médio levemente atlético com ombros proporcionais",
+        "proporcao": "corpo equilibrado sem excessos musculares",
+        "postura_tipica": "ereta confiante com ombros relaxados"
+      }
+    },
+    "consistency_parameters": {
+      "rendering_style": "foto 4K retrato editorial",
+      "lens_focus": "85mm close-up",
+      "lighting": "soft studio light",
+      "aspect_ratio": "1:1 (avatar)"
+    },
+    "history": {
+      "background_educacional": "Bacharelado em Ciência da Computação com foco em testes de software",
+      "experiencia_internacional": "Experiência em equipes remotas com empresas dos EUA influenciando estilo business casual tech",
+      "contexto_cultural": "Raízes latinas com mistura brasileira/mexicana refletida na pele morena e traços expressivos",
+      "estilo_vida": "Estilo de vida ativo com academia moderada e home office, mantendo aparência profissional limpa",
+      "marcos_carreira": "4 anos de experiência moldando confiança profissional e acessórios tech como óculos e relógio",
+      "valores_pessoais": "Profissionalismo e atenção aos detalhes refletidos em grooming impecável e postura ereta",
+      "ambiente_trabalho": "Ambiente tech Operations na LifewayUSA favorecendo business casual com tons neutros",
+      "redes_sociais": "Perfil LinkedIn ativo com fotos profissionais em contextos office"
+    },
+    "metadados": {
+      "resolucao": "1024x1024",
+      "formato": "webp",
+      "qualidade": "ultra_high",
+      "parametros_geracao": {
+        "prompt_negativo": "blurry, low quality, distorted, cartoonish",
+        "steps": 30,
+        "cfg_scale": 8.5
+      },
+      "contexto_profissional": {
+        "cargo": "Tester QA de Software",
+        "industria": "tecnologia",
+        "senioridade": "mid-level"
+      }
+    }
+  },
+  "generated_at": "2025-12-03T12:56:00.909Z"
+}

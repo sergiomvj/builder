@@ -1,0 +1,53 @@
+{
+  "persona_id": "064cae10-9eb1-4022-b322-b0e737b5e7cd",
+  "full_name": "[Placeholder 5] Gerente de Conteúdo Imigratório",
+  "role": "Gerente de Conteúdo Imigratório",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Criação e edição de conteúdo especializado em imigração",
+    "Conhecimento avançado de leis e processos imigratórios dos EUA",
+    "Otimização SEO para conteúdos multilíngues",
+    "Gestão de calendário editorial e fluxos de produção",
+    "Análise de dados de performance de conteúdo"
+  ],
+  "competencias_comportamentais": [
+    "Liderança e motivação de equipes criativas",
+    "Comunicação clara e empática com stakeholders",
+    "Atenção aos detalhes regulatórios",
+    "Adaptabilidade a mudanças em políticas imigratórias",
+    "Orientação para resultados e inovação em conteúdo"
+  ],
+  "ferramentas": [
+    "WordPress ou CMS similar",
+    "Google Analytics e Search Console",
+    "SEMrush ou Ahrefs",
+    "HubSpot ou ferramentas de automação de marketing"
+  ],
+  "tarefas_diarias": [
+    "Revisar e aprovar conteúdos produzidos pela equipe",
+    "Monitorar métricas de engajamento em tempo real",
+    "Responder consultas da equipe e stakeholders",
+    "Atualizar calendário editorial com prioridades"
+  ],
+  "tarefas_semanais": [
+    "Realizar reuniões de alinhamento com a equipe",
+    "Analisar relatórios semanais de performance",
+    "Planejar e distribuir tarefas de conteúdo semanal"
+  ],
+  "tarefas_mensais": [
+    "Gerar relatório mensal de KPIs e insights",
+    "Atualizar guidelines com novas regulamentações imigratórias",
+    "Coordenar treinamentos e desenvolvimento da equipe"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de engajamento - 5%",
+    "KPI 2: Crescimento de tráfego orgânico - 20%",
+    "KPI 3: Leads qualificados gerados - 150/mês"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação em SEO avançado e marketing digital",
+    "Aprofundar expertise em atualizações de políticas imigratórias USCIS",
+    "Expandir rede de especialistas em imigração para parcerias de conteúdo"
+  ],
+  "generated_at": "2025-12-02T18:08:48.835Z"
+}

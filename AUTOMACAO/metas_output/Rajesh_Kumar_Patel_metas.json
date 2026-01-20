@@ -1,0 +1,59 @@
+{
+  "persona_id": "e580b8b7-f556-45d3-8e7c-4cd972d3506e",
+  "full_name": "Rajesh Kumar Patel",
+  "role": "Diretor de Engenharia",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "metas": [
+    {
+      "titulo": "Reduzir Tempo Médio de Deploy",
+      "descricao": "Reduzir o tempo médio de deploy de agentes para menos de 4 horas em 100% dos deploys realizados pela equipe de engenharia.",
+      "categoria": "kpi",
+      "valor_alvo": 4,
+      "unidade_medida": "horas",
+      "data_prazo": "2024-07-15",
+      "prioridade": 5,
+      "vinculada_kpi": "KPI 1: Tempo Médio de Deploy de Agentes - < 4 horas"
+    },
+    {
+      "titulo": "Garantir Uptime da Plataforma",
+      "descricao": "Manter o uptime médio mensal da Plataforma ARVA em pelo menos 99.99% durante o período.",
+      "categoria": "performance",
+      "valor_alvo": 99.99,
+      "unidade_medida": "%",
+      "data_prazo": "2024-10-01",
+      "prioridade": 4,
+      "vinculada_kpi": "KPI 2: Uptime da Plataforma ARVA - 99.99%"
+    },
+    {
+      "titulo": "Aumentar Taxa de Sucesso de Treinamento",
+      "descricao": "Elevar a taxa de sucesso no treinamento de agentes para acima de 95% em todos os ciclos de treinamento.",
+      "categoria": "kpi",
+      "valor_alvo": 95,
+      "unidade_medida": "%",
+      "data_prazo": "2024-08-15",
+      "prioridade": 4,
+      "vinculada_kpi": "KPI 3: Taxa de Sucesso de Treinamento de Agentes - > 95%"
+    },
+    {
+      "titulo": "Expandir Certificações Cloud",
+      "descricao": "Garantir que 80% da equipe de engenharia obtenha certificações em cloud (AWS ou Azure), totalizando pelo menos 12 certificações novas.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 12,
+      "unidade_medida": "certificações",
+      "data_prazo": "2024-09-30",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Iniciar Migração Serverless",
+      "descricao": "Liderar a migração de 30% dos serviços críticos para arquitetura serverless, completando a fase inicial de planejamento e implementação.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 30,
+      "unidade_medida": "%",
+      "data_prazo": "2024-10-01",
+      "prioridade": 3,
+      "vinculada_kpi": ""
+    }
+  ],
+  "generated_at": "2025-12-08T22:24:18.392Z"
+}

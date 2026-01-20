@@ -1,0 +1,50 @@
+{
+  "persona": {
+    "id": "46f07159-d384-496f-a480-45ac5c684082",
+    "nome": "Jennifer Smith",
+    "biografia": "Biografia não disponível"
+  },
+  "avatar": {
+    "avatar_url": "/avatars/jennifer_smith_avatar.svg",
+    "avatar_thumbnail_url": "/avatars/jennifer_smith_avatar.svg",
+    "prompt_usado": "26-year-old professional man, business professional style, confident expression, corporate attire",
+    "estilo": "Profissional Simulado",
+    "background_tipo": "escritório (fallback)",
+    "servico_usado": "dicebear_local",
+    "versao": "v1.0",
+    "ativo": true,
+    "local_file": "jennifer_smith_avatar.svg",
+    "file_size": 5158,
+    "biometrics": {
+      "genero": "masculino",
+      "idade_aparente": 26,
+      "etnia": "diverso",
+      "estatura": "média",
+      "biotipo": "profissional"
+    },
+    "history": {
+      "formacao_academica": [
+        "Administração"
+      ],
+      "experiencia_anos": 13,
+      "empresas_anteriores": [
+        "Previous Corp",
+        "Tech Solutions"
+      ],
+      "certificacoes": [
+        "Professional Certification"
+      ],
+      "idiomas": [
+        "português",
+        "inglês"
+      ]
+    },
+    "metadados": {
+      "generated_at": "2025-11-22T20:13:41.101Z",
+      "script_version": "03_nano_banana",
+      "confidence_score": 95,
+      "google_nano_banana": true
+    }
+  },
+  "generated_at": "2025-11-22T20:13:41.312Z"
+}

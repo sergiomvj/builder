@@ -1,0 +1,50 @@
+{
+  "persona": {
+    "id": "ff4feab2-17c2-406c-9d57-609e0a46cfb1",
+    "nome": "James Wilson",
+    "biografia": "Biografia não disponível"
+  },
+  "avatar": {
+    "avatar_url": "/avatars/james_wilson_avatar.svg",
+    "avatar_thumbnail_url": "/avatars/james_wilson_avatar.svg",
+    "prompt_usado": "33-year-old professional man, business professional style, confident expression, corporate attire",
+    "estilo": "Profissional Simulado",
+    "background_tipo": "escritório (fallback)",
+    "servico_usado": "dicebear_local",
+    "versao": "v1.0",
+    "ativo": true,
+    "local_file": "james_wilson_avatar.svg",
+    "file_size": 4367,
+    "biometrics": {
+      "genero": "masculino",
+      "idade_aparente": 33,
+      "etnia": "diverso",
+      "estatura": "média",
+      "biotipo": "profissional"
+    },
+    "history": {
+      "formacao_academica": [
+        "Administração"
+      ],
+      "experiencia_anos": 14,
+      "empresas_anteriores": [
+        "Previous Corp",
+        "Tech Solutions"
+      ],
+      "certificacoes": [
+        "Professional Certification"
+      ],
+      "idiomas": [
+        "português",
+        "inglês"
+      ]
+    },
+    "metadados": {
+      "generated_at": "2025-11-22T20:14:25.074Z",
+      "script_version": "03_nano_banana",
+      "confidence_score": 95,
+      "google_nano_banana": true
+    }
+  },
+  "generated_at": "2025-11-22T20:14:25.234Z"
+}

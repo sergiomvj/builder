@@ -1,0 +1,112 @@
+{
+  "persona": {
+    "nome": "[Placeholder 12] Assistente de Marketing Digital",
+    "nacionalidade": "latinos",
+    "genero": "feminino",
+    "cargo": "Assistente de Marketing Digital",
+    "departamento": "Operations",
+    "especialidade": "General",
+    "atribuicoes": "Em definição",
+    "competencias": "Em definição",
+    "biografia": "Profissional experiente",
+    "personalidade": {},
+    "experiencia_anos": 4,
+    "empresa": "LifewayUSA",
+    "industria": "tecnologia"
+  },
+  "avatar": {
+    "avatar_url": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+    "avatar_thumbnail_url": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+    "prompt_usado": "Retrato realista de mulher latina de 26-28 anos, assistente de marketing digital em empresa de tecnologia, etnia latina com pele morena clara lisa, rosto oval com maçãs de rosto altas, olhos castanhos escuros amendoados expressivos, sobrancelhas cheias arqueadas, nariz reto médio, lábios médios cheios arqueados, expressão sorriso leve confiante, cabelo castanho escuro médio ondulado denso, tipo físico esguio atlético, altura 1.68m, postura ereta confiante, sardas leves no nariz, óculos de armação fina preta, brincos pequenos dourados, estilo vestimenta casual tech com blusa branca solta e colar minimalista, paleta cores neutra com azul frio, fundo office neutro, foto 4K DSLR 50mm soft studio light, aspect ratio 1:1",
+    "estilo": "criativo",
+    "background_tipo": "office",
+    "servico_usado": "gemini_ai",
+    "versao": 1,
+    "ativo": true,
+    "biometrics": {
+      "idade_aparente": "26-28 anos",
+      "genero": "feminino",
+      "etnia": "latino",
+      "tipo_fisico": "esguia atlética",
+      "altura_estimada": "1.65-1.70m",
+      "cabelo_cor": "castanho escuro",
+      "cabelo_comprimento": "médio",
+      "cabelo_estilo": "ondulado",
+      "cabelo_volume": "denso",
+      "olhos_cor": "castanhos escuros",
+      "olhos_formato": "amendoados expressivos",
+      "rosto_formato": "oval",
+      "pele_tom": "morena clara",
+      "pele_textura": "lisa",
+      "sobrancelhas": "cheias arqueadas",
+      "nariz": "reto médio",
+      "boca_labios": "médios cheios",
+      "expressao_facial_padrao": "sorriso leve confiante",
+      "marcas_unicas": "sardas leves no nariz",
+      "acessorios_permanentes": "óculos de armação fina preta, brincos pequenos dourados",
+      "postura": "ereta confiante",
+      "caracteristicas_distintivas": "maçãs de rosto altas",
+      "estilo_vestimenta_padrao": "casual tech",
+      "paleta_cores_vestuario": "neutra com azul frio"
+    },
+    "physical_description_detailed": {
+      "rosto": {
+        "formato": "oval com maçãs de rosto altas proeminentes",
+        "tom_pele": "morena clara com subtom oliva quente",
+        "textura_pele": "lisa com poros mínimos e brilho saudável",
+        "olhos": {
+          "cor": "castanhos escuros profundos",
+          "formato": "amendoados expressivos com cílios longos"
+        },
+        "sobrancelhas": "cheias arqueadas naturalmente definidas",
+        "nariz": "reto médio proporcional ao rosto",
+        "boca": "lábios médios cheios ligeiramente arqueados",
+        "expressao_tipica": "sorriso leve confiante com olhar direto"
+      },
+      "cabelo": {
+        "cor_exata": "castanho escuro com reflexos naturais castanhos",
+        "comprimento": "até ombros",
+        "estilo": "ondulado solto com ondas suaves",
+        "volume": "denso com movimento natural"
+      },
+      "corpo": {
+        "altura_aproximada": "1.68m",
+        "tipo_fisico": "esguia atlética com curvas moderadas",
+        "proporcao": "proporções equilibradas ombros estreitos quadris suaves",
+        "postura_tipica": "ereta confiante com ombros relaxados"
+      }
+    },
+    "consistency_parameters": {
+      "rendering_style": "foto 4K realista",
+      "lens_focus": "50mm",
+      "lighting": "soft studio light",
+      "aspect_ratio": "1:1 (avatar)"
+    },
+    "history": {
+      "background_educacional": "Graduada em Comunicação com ênfase em Marketing Digital pela universidade local no Brasil",
+      "experiencia_internacional": "Estágio remoto em agência de tech nos EUA influenciando estilo casual moderno",
+      "contexto_cultural": "Herança latina brasileira com mistura étnica visível na pele morena e traços expressivos",
+      "estilo_vida": "Ativo com yoga e networking digital mantendo aparência fresca e energética",
+      "marcos_carreira": "Promoção rápida após 2 anos por campanhas virais em redes sociais",
+      "valores_pessoais": "Inovação e colaboração refletidos em acessórios minimalistas e look acessível",
+      "ambiente_trabalho": "Startup de tecnologia LifewayUSA com dress code casual tech influenciando blusas soltas e jeans slim",
+      "redes_sociais": "Ativa no LinkedIn e Instagram com posts profissionais criativos reforçando imagem dinâmica"
+    },
+    "metadados": {
+      "resolucao": "1024x1024",
+      "formato": "webp",
+      "qualidade": "ultra_high",
+      "parametros_geracao": {
+        "prompt_negativo": "blurry, low quality, distorted, cartoonish",
+        "steps": 30,
+        "cfg_scale": 8.5
+      },
+      "contexto_profissional": {
+        "cargo": "Assistente de Marketing Digital",
+        "industria": "tecnologia",
+        "senioridade": "mid-level"
+      }
+    }
+  },
+  "generated_at": "2025-12-03T13:02:18.643Z"
+}

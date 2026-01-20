@@ -1,0 +1,53 @@
+{
+  "persona_id": "0311235b-6ea0-42e0-b196-bd07e1d573e9",
+  "full_name": "Carlos Eduardo Siqueira",
+  "role": "Executivo de Vendas",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em vendas consultivas",
+    "Experiência em negociação",
+    "Conhecimento em tecnologia da informação",
+    "Conhecimento em serviços de imigração",
+    "Domínio do idioma inglês"
+  ],
+  "competencias_comportamentais": [
+    "Proatividade",
+    "Comunicação eficaz",
+    "Resiliência",
+    "Capacidade de trabalhar sob pressão",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "CRM",
+    "Microsoft Office",
+    "LinkedIn Sales Navigator",
+    "Google Analytics"
+  ],
+  "tarefas_diarias": [
+    "Prospectar novos clientes",
+    "Elaborar propostas comerciais",
+    "Negociar contratos",
+    "Fazer follow-up com clientes"
+  ],
+  "tarefas_semanais": [
+    "Participar de reuniões de alinhamento com a equipe",
+    "Atualizar pipeline de vendas",
+    "Analisar métricas de desempenho"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatórios de vendas",
+    "Participar de treinamentos de capacitação",
+    "Realizar visitas a clientes-chave"
+  ],
+  "kpis": [
+    "Taxa de conversão de leads - 30%",
+    "Volume de vendas mensal - R$100.000",
+    "Índice de satisfação do cliente - 90%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de negociação",
+    "Ampliar networking na área de tecnologia e imigração",
+    "Participar de cursos de aprimoramento em vendas"
+  ],
+  "generated_at": "2025-12-08T14:38:59.833Z"
+}

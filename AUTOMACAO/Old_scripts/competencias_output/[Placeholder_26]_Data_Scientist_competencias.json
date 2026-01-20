@@ -1,0 +1,55 @@
+{
+  "persona_id": "087fee64-9bb3-4ec2-aaa8-8544a61e5155",
+  "full_name": "[Placeholder 26] Data Scientist",
+  "role": "Data Scientist",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Programação em Python e R",
+    "Machine Learning e Deep Learning",
+    "Análise Estatística Avançada",
+    "Engenharia de Dados e ETL",
+    "Visualização de Dados"
+  ],
+  "competencias_comportamentais": [
+    "Pensamento Analítico Crítico",
+    "Resolução de Problemas Complexos",
+    "Comunicação Eficaz de Insights",
+    "Trabalho Colaborativo em Equipe",
+    "Aprendizado Contínuo e Adaptação"
+  ],
+  "ferramentas": [
+    "Python (Pandas, Scikit-learn, TensorFlow)",
+    "SQL e PostgreSQL",
+    "Tableau e Power BI",
+    "AWS e Docker"
+  ],
+  "tarefas_diarias": [
+    "Limpeza e pré-processamento de dados",
+    "Análise exploratória de dados (EDA)",
+    "Desenvolvimento e teste de modelos",
+    "Geração de relatórios e dashboards"
+  ],
+  "tarefas_semanais": [
+    "Reuniões com stakeholders para alinhamento",
+    "Otimização de pipelines de dados",
+    "Validação de modelos e métricas",
+    "Documentação de experimentos"
+  ],
+  "tarefas_mensais": [
+    "Apresentação de resultados e insights",
+    "Treinamento de novos modelos em produção",
+    "Revisão de performance de KPIs",
+    "Pesquisa de novas técnicas e ferramentas"
+  ],
+  "kpis": [
+    "KPI 1: Precisão de Modelos - 92%",
+    "KPI 2: Tempo de Processamento de Dados - < 2h",
+    "KPI 3: Taxa de Adoção de Insights - 85%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Certificação em AWS Machine Learning",
+    "Domínio de técnicas de NLP avançadas",
+    "Liderança em projeto de IA explicável"
+  ],
+  "generated_at": "2025-12-02T18:02:21.028Z"
+}

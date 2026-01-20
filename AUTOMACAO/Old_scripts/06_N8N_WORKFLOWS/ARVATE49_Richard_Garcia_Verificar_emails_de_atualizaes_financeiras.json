@@ -1,0 +1,204 @@
+{
+  "name": "Richard (Asst Fin) - Verificar e-mails de atualizações financ...",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 9h para verificar novos e-mails de atualizações financeiras"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "list",
+        "to": "{{ $json.email }}",
+        "subject": "Notification",
+        "message": "Automated message"
+      },
+      "typeVersion": 1,
+      "notes": "Buscar e-mails com assuntos relacionados a atualizações financeiras, pagamentos pendentes e recebimentos dos últimos dias",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.filter(email => email.snippet.includes('atualização') || email.snippet.includes('pendente') || email.snippet.includes('recebimento'));"
+      },
+      "typeVersion": 1,
+      "notes": "Filtrar e-mails relevantes baseados no conteúdo"
+    },
+    {
+      "id": "4",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "{{ $json.from }}",
+        "subject": "Re: {{ $json.subject }}",
+        "message": "Obrigado pelo seu e-mail. Estamos processando sua solicitação e entraremos em contato em breve."
+      },
+      "typeVersion": 1,
+      "notes": "Responder automaticamente aos e-mails relevantes",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Notify",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#finance-updates",
+        "text": "Um novo e-mail de atualização financeira foi processado e respondido."
+      },
+      "typeVersion": 1,
+      "notes": "Notificar o canal do Slack sobre a ação realizada",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1340,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Richard (Asst Fin) - Verificar e-mails de atualizações financ...\nEmpresa: ARVA Tech Solutions\nPersona: Richard Garcia\nTarefa: Verificar e-mails de atualizações financeiras\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "6"
+  },
+  "createdAt": "2025-11-28T17:05:25.877Z",
+  "updatedAt": "2025-11-28T17:05:25.877Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "20ae86c4-137e-412f-9c35-99fd7ce11ebf",
+    "persona_nome": "Richard Garcia",
+    "task_id": "ca289fdc-bdf9-4190-9c5e-840e993a51c8",
+    "task_title": "Verificar e-mails de atualizações financeiras",
+    "opportunity_id": "363df367-3441-44bf-8cb5-b455b650a82f",
+    "automation_score": 65,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:25.877Z"
+  }
+}

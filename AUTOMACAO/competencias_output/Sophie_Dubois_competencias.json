@@ -1,0 +1,53 @@
+{
+  "persona_id": "4697d8be-864d-4104-8c9a-a90c50bb7382",
+  "full_name": "Sophie Dubois",
+  "role": "Assistente de Marketing",
+  "empresa_id": "27470d32-9cce-4975-9a62-1d76f3ab77a4",
+  "competencias_tecnicas": [
+    "Conhecimento em marketing digital",
+    "Habilidade em análise de dados",
+    "Experiência em gestão de redes sociais",
+    "Conhecimento em SEO",
+    "Familiaridade com ferramentas de automação de marketing"
+  ],
+  "competencias_comportamentais": [
+    "Proatividade",
+    "Criatividade",
+    "Boa comunicação",
+    "Capacidade de trabalho em equipe",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "Canva",
+    "Hootsuite",
+    "Mailchimp"
+  ],
+  "tarefas_diarias": [
+    "Criar e agendar posts nas redes sociais",
+    "Analisar métricas de campanhas de marketing",
+    "Elaborar relatórios de desempenho",
+    "Monitorar a presença online da empresa"
+  ],
+  "tarefas_semanais": [
+    "Participar de reuniões de brainstorming",
+    "Desenvolver estratégias de marketing",
+    "Acompanhar tendências do mercado"
+  ],
+  "tarefas_mensais": [
+    "Elaborar plano de conteúdo para o mês seguinte",
+    "Realizar análise SWOT da concorrência",
+    "Participar de eventos de networking"
+  ],
+  "kpis": [
+    "Aumento de engajamento nas redes sociais - Crescimento de 15%",
+    "Taxa de conversão de leads - 20%",
+    "Melhoria do posicionamento no Google - Top 3 para palavras-chave principais"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em SEO",
+    "Participar de cursos de marketing digital",
+    "Desenvolver habilidades de liderança"
+  ],
+  "generated_at": "2025-12-05T20:13:34.831Z"
+}

@@ -1,0 +1,53 @@
+{
+  "persona_id": "8cdc628c-7441-4833-855e-8e64c854d7a3",
+  "full_name": "Sarah Jenkins",
+  "role": "Especialista em Vendas",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "competencias_tecnicas": [
+    "Conhecimento profundo da plataforma ARVA e agentes virtuais",
+    "Técnicas de vendas consultivas B2B",
+    "Análise de dados de CRM e pipeline de vendas",
+    "Realização de demonstrações de produto (demos)",
+    "Gestão de funil de vendas e forecasting"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação persuasiva e adaptável",
+    "Habilidades avançadas de negociação",
+    "Empatia e compreensão de necessidades do cliente",
+    "Resiliência e persistência em rejeições",
+    "Orientação para resultados e proatividade"
+  ],
+  "ferramentas": [
+    "Salesforce",
+    "HubSpot",
+    "Zoom para demonstrações",
+    "LinkedIn Sales Navigator"
+  ],
+  "tarefas_diarias": [
+    "Prospecção de leads qualificados",
+    "Follow-up com prospects via email e calls",
+    "Agendamento de reuniões e demos",
+    "Atualização do CRM com interações"
+  ],
+  "tarefas_semanais": [
+    "Análise do pipeline de vendas",
+    "Reuniões de alinhamento com equipe",
+    "Preparação de relatórios de progresso"
+  ],
+  "tarefas_mensais": [
+    "Revisão de metas e desempenho pessoal",
+    "Treinamento em novas features da ARVA",
+    "Participação em webinars ou networking"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de Conversão de Leads - 25%",
+    "KPI 2: Valor de Pipeline Gerado - $500k",
+    "KPI 3: Número de Demos Realizadas - 20"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aumentar taxa de qualificação de leads em 20%",
+    "Dominar integrações avançadas da ARVA",
+    "Melhorar taxa de fechamento de deals em 15%"
+  ],
+  "generated_at": "2025-12-08T22:27:00.762Z"
+}

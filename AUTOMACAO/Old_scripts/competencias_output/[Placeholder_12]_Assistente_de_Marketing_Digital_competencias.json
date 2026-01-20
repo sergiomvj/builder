@@ -1,0 +1,53 @@
+{
+  "persona_id": "7aab0d45-f922-442a-b68d-c2603106e110",
+  "full_name": "[Placeholder 12] Assistente de Marketing Digital",
+  "role": "Assistente de Marketing Digital",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Gestão de campanhas em redes sociais (Facebook, Instagram, LinkedIn)",
+    "SEO e otimização de conteúdo para buscadores",
+    "Análise de dados com Google Analytics e Google Tag Manager",
+    "Criação e automação de email marketing",
+    "Produção de conteúdo multimídia (vídeos, imagens e copywriting)"
+  ],
+  "competencias_comportamentais": [
+    "Criatividade e inovação em estratégias digitais",
+    "Comunicação clara e persuasiva",
+    "Trabalho em equipe colaborativo",
+    "Proatividade e resolução de problemas",
+    "Adaptabilidade a tendências digitais"
+  ],
+  "ferramentas": [
+    "Google Analytics",
+    "Google Ads e Meta Ads Manager",
+    "Canva e Adobe Creative Suite",
+    "Mailchimp e HubSpot"
+  ],
+  "tarefas_diarias": [
+    "Monitorar e otimizar campanhas ativas",
+    "Responder interações nas redes sociais",
+    "Analisar métricas de tráfego e engajamento",
+    "Criar e agendar posts diários"
+  ],
+  "tarefas_semanais": [
+    "Gerar relatórios de desempenho semanal",
+    "Planejar calendário de conteúdo",
+    "Realizar A/B tests em anúncios"
+  ],
+  "tarefas_mensais": [
+    "Preparar relatório consolidado de KPIs",
+    "Planejar campanhas para o próximo mês",
+    "Avaliar ROI e ajustes estratégicos"
+  ],
+  "kpis": [
+    "KPI 1: Taxa de engajamento - 5%",
+    "KPI 2: Leads qualificados gerados - 150/mês",
+    "KPI 3: ROI de campanhas pagas - 300%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação Google Analytics 4",
+    "Dominar automação avançada no HubSpot",
+    "Aprimorar habilidades em copywriting persuasivo"
+  ],
+  "generated_at": "2025-12-02T18:01:10.845Z"
+}

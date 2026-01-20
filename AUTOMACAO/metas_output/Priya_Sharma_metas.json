@@ -1,0 +1,59 @@
+{
+  "persona_id": "6a66563e-bff4-4960-b767-a42af11ba99f",
+  "full_name": "Priya Sharma",
+  "role": "Analista de Marketing Digital",
+  "empresa_id": "768e7df2-fc61-424e-8618-cbfa1db74331",
+  "metas": [
+    {
+      "titulo": "Aumentar taxa de conversão de leads para 5%",
+      "descricao": "Otimizar funis de conversão em landing pages e e-mails para alcançar 5% de taxa de conversão de leads qualificados mensalmente, medido via Google Analytics.",
+      "categoria": "kpi",
+      "valor_alvo": 5,
+      "unidade_medida": "%",
+      "data_prazo": "2025-04-01",
+      "prioridade": 5,
+      "vinculada_kpi": "Taxa de conversão de leads"
+    },
+    {
+      "titulo": "Crescer tráfego orgânico em 15%",
+      "descricao": "Implementar estratégia de SEO com foco em 20 palavras-chave prioritárias para aumentar o tráfego orgânico em 15% em relação à baseline atual, rastreado no Google Analytics.",
+      "categoria": "kpi",
+      "valor_alvo": 15,
+      "unidade_medida": "%",
+      "data_prazo": "2025-04-01",
+      "prioridade": 4,
+      "vinculada_kpi": "Crescimento de tráfego orgânico"
+    },
+    {
+      "titulo": "Alcançar ROI de 300% em campanhas pagas",
+      "descricao": "Gerenciar campanhas no Google Ads e Meta Ads com orçamento otimizado para atingir ROI de 300% em receita gerada versus gasto, medido mensalmente.",
+      "categoria": "performance",
+      "valor_alvo": 300,
+      "unidade_medida": "%",
+      "data_prazo": "2025-04-01",
+      "prioridade": 5,
+      "vinculada_kpi": "ROI de campanhas pagas"
+    },
+    {
+      "titulo": "Obter certificações avançadas em Google Analytics e Ads",
+      "descricao": "Completar e aprovar as certificações avançadas de Google Analytics e Google Ads, totalizando 2 certificações válidas.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 2,
+      "unidade_medida": "certificações",
+      "data_prazo": "2025-02-15",
+      "prioridade": 4,
+      "vinculada_kpi": ""
+    },
+    {
+      "titulo": "Liderar campanha multicanal integrada",
+      "descricao": "Planejar, executar e reportar uma campanha multicanal (SEO, paid, e-mail, social) focada na ARVA Tech Solutions, alcançando pelo menos 10% de engajamento total.",
+      "categoria": "desenvolvimento",
+      "valor_alvo": 10,
+      "unidade_medida": "%",
+      "data_prazo": "2025-03-31",
+      "prioridade": 4,
+      "vinculada_kpi": "ROI de campanhas pagas"
+    }
+  ],
+  "generated_at": "2025-12-08T22:22:59.001Z"
+}

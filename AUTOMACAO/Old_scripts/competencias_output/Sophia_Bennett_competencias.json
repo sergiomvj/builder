@@ -1,0 +1,54 @@
+{
+  "persona_id": "be36a681-6050-4d10-b615-c50737721147",
+  "full_name": "Sophia Bennett",
+  "role": "Designer UX/UI",
+  "empresa_id": "a2845f62-59e2-48b2-8f89-8bfc6c33193f",
+  "competencias_tecnicas": [
+    "Design de interfaces",
+    "Experiência do usuário (UX)",
+    "Interface do usuário (UI)",
+    "Design responsivo",
+    "Prototipagem"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação eficaz",
+    "Trabalho em equipe",
+    "Criatividade",
+    "Resolução de problemas",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "Sketch",
+    "Adobe XD",
+    "Figma",
+    "InVision"
+  ],
+  "tarefas_diarias": [
+    "Elaborar wireframes",
+    "Criar protótipos interativos",
+    "Realizar testes de usabilidade",
+    "Colaborar com desenvolvedores",
+    "Atualizar interfaces conforme feedback"
+  ],
+  "tarefas_semanais": [
+    "Participar de reuniões de equipe",
+    "Analisar métricas de desempenho das interfaces",
+    "Fazer ajustes nas interfaces conforme necessidade"
+  ],
+  "tarefas_mensais": [
+    "Realizar pesquisas de mercado e tendências de design",
+    "Participar de workshops e cursos de atualização",
+    "Apresentar propostas de melhorias nas interfaces"
+  ],
+  "kpis": [
+    "Satisfação do usuário - 90%",
+    "Taxa de conversão de leads - 15%",
+    "Tempo médio de interação com a interface - 2 minutos"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades de prototipagem",
+    "Desenvolver conhecimento em design responsivo",
+    "Aumentar a capacidade de análise de métricas de desempenho"
+  ],
+  "generated_at": "2025-12-05T17:49:12.552Z"
+}

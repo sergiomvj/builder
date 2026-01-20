@@ -1,0 +1,53 @@
+{
+  "persona_id": "6f802aa9-1fb7-481f-b139-946481240145",
+  "full_name": "Rafael Augusto Lima",
+  "role": "Executivo de Vendas",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Conhecimento em vendas consultivas",
+    "Domínio de técnicas de negociação",
+    "Experiência em prospecção de clientes",
+    "Conhecimento em tecnologia e serviços de imigração",
+    "Habilidade em fechamento de vendas"
+  ],
+  "competencias_comportamentais": [
+    "Comunicação eficaz",
+    "Resiliência",
+    "Orientação para resultados",
+    "Trabalho em equipe",
+    "Adaptabilidade"
+  ],
+  "ferramentas": [
+    "CRM",
+    "LinkedIn Sales Navigator",
+    "Google Analytics",
+    "Pipedrive"
+  ],
+  "tarefas_diarias": [
+    "Elaborar propostas comerciais",
+    "Realizar follow-up com clientes",
+    "Agendar reuniões de vendas",
+    "Atualizar informações no CRM"
+  ],
+  "tarefas_semanais": [
+    "Participar de reuniões de equipe",
+    "Analisar métricas de vendas",
+    "Atualizar pipeline de vendas"
+  ],
+  "tarefas_mensais": [
+    "Elaborar relatórios de desempenho de vendas",
+    "Realizar treinamentos de produtos/serviços",
+    "Participar de eventos do setor"
+  ],
+  "kpis": [
+    "Taxa de conversão de leads - 20%",
+    "Número de reuniões agendadas - 10 por semana",
+    "Volume de vendas mensal - R$50.000"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar técnicas de negociação",
+    "Expandir rede de contatos no setor de imigração",
+    "Aumentar taxa de conversão de leads em 10%"
+  ],
+  "generated_at": "2025-12-08T14:41:12.536Z"
+}

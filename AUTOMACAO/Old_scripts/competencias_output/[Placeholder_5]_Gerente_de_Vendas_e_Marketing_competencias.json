@@ -1,0 +1,57 @@
+{
+  "persona_id": "ca7ede6d-bff2-441f-9c1a-42e1b7d6bf56",
+  "full_name": "[Placeholder 5] Gerente de Vendas e Marketing",
+  "role": "Gerente de Vendas e Marketing",
+  "empresa_id": "58234085-d661-4171-8664-4149b5559a3c",
+  "competencias_tecnicas": [
+    "Desenvolvimento e execução de estratégias integradas de vendas e marketing B2B em tecnologia",
+    "Gestão avançada de funil de vendas e otimização de taxas de conversão usando CRM",
+    "Análise de dados de mercado, performance de campanhas e forecasting de receitas",
+    "Automação de marketing e lead nurturing com ferramentas como HubSpot ou Marketo",
+    "Gerenciamento de contas estratégicas (Key Account Management) em soluções tech"
+  ],
+  "competencias_comportamentais": [
+    "Liderança motivacional de equipes multifuncionais",
+    "Negociação persuasiva e fechamento de deals complexos",
+    "Comunicação estratégica e apresentação de pitches de alto impacto",
+    "Orientação para resultados com foco em metas agressivas",
+    "Adaptabilidade a mudanças rápidas no mercado de tecnologia"
+  ],
+  "ferramentas": [
+    "Salesforce (CRM para gestão de vendas)",
+    "HubSpot (Automação de marketing e inbound)",
+    "Google Analytics (Análise de tráfego e conversões)",
+    "LinkedIn Sales Navigator (Prospecção B2B)",
+    "Tableau ou Power BI (Visualização de dados e relatórios)"
+  ],
+  "tarefas_diarias": [
+    "Monitorar e atualizar pipeline de vendas no CRM, garantindo 100% de acurácia diária",
+    "Realizar follow-up com pelo menos 20 leads qualificados via email ou call",
+    "Analisar métricas de campanhas de marketing em tempo real e ajustar bids/orçamentos",
+    "Qualificar e nutrir 15 novos leads recebidos de inbound marketing",
+    "Coordenar alinhamentos rápidos com equipe de operations para suporte a vendas"
+  ],
+  "tarefas_semanais": [
+    "Conduzir reunião de vendas com equipe para revisão de pipeline e metas semanais",
+    "Gerar relatório de performance de marketing com análise de ROI de campanhas",
+    "Prospectar 50 novos contatos qualificados via LinkedIn ou cold outreach",
+    "Treinar equipe em técnicas de vendas consultivas e objeções comuns"
+  ],
+  "tarefas_mensais": [
+    "Planejar e lançar campanhas de marketing digital para o próximo ciclo",
+    "Realizar avaliação de performance da equipe e ajuste de metas individuais",
+    "Participar de reuniões estratégicas de Operations para alinhar vendas com produto"
+  ],
+  "kpis": [
+    "Taxa de conversão de leads em clientes - 25%",
+    "Crescimento de receita de vendas - 20% MoM",
+    "Custo de Aquisição de Cliente (CAC) - Menos de R$ 800",
+    "Net Promoter Score (NPS) de clientes - Acima de 75"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar expertise em IA para personalização de campanhas de marketing",
+    "Expandir rede de parceiros estratégicos em eventos de tecnologia (meta: 10 novos/mês)",
+    "Implementar metodologia de vendas consultivas para aumentar ticket médio em 30%"
+  ],
+  "generated_at": "2025-12-01T16:16:42.542Z"
+}

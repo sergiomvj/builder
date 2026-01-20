@@ -1,0 +1,232 @@
+{
+  "name": "Lisa (SDR Senior) - Contato Inicial com Leads Prioritários",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "value": "0 9 * * *"
+            }
+          ]
+        },
+        "timezone": "America/Sao_Paulo"
+      },
+      "typeVersion": 1,
+      "notes": "Disparar todo dia às 9h"
+    },
+    {
+      "id": "2",
+      "name": "Fetch Data",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "select",
+        "table": "leads",
+        "filters": {
+          "priority": "high"
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Buscar leads de alta prioridade",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_ARVATE49",
+          "name": "Supabase ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Transform",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return items.map(lead => lead.preferred_contact_method === 'email' ? { ...lead, contact_action: 'email' } : { ...lead, contact_action: 'call' });"
+      },
+      "typeVersion": 1,
+      "notes": "Determinar método de contato preferido"
+    },
+    {
+      "id": "4",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "to": "{{ $json.email }}",
+        "subject": "Oportunidade Única para Você!",
+        "message": "Olá {{ $json.name }}, gostaríamos de conversar sobre como nossas soluções podem beneficiar sua empresa."
+      },
+      "typeVersion": 1,
+      "notes": "Enviar e-mail para leads que preferem contato por e-mail",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmail_ARVATE49",
+          "name": "Gmail ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Action",
+      "type": "n8n-nodes-base.twilio",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "to": "{{ $json.phone }}",
+        "message": "Olá {{ $json.name }}, este é um lembrete de que temos uma oportunidade única para você. Por favor, responda a este número para conversarmos.",
+        "condition": "{{ $json.contact_action === 'call' }}"
+      },
+      "typeVersion": 1,
+      "notes": "Enviar SMS para leads que preferem contato por telefone"
+    },
+    {
+      "id": "6",
+      "name": "Update Record",
+      "type": "n8n-nodes-base.supabase",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "operation": "update",
+        "table": "leads",
+        "data": {
+          "last_contacted": "NOW()"
+        }
+      },
+      "typeVersion": 1,
+      "notes": "Atualizar registro do lead após contato",
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase_ARVATE49",
+          "name": "Supabase ARVATE49"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.slack",
+      "position": [
+        1560,
+        450
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "channel": "#vcm-errors",
+        "text": "❌ Erro no workflow: Lisa (SDR Senior) - Contato Inicial com Leads Prioritários\nEmpresa: ARVA Tech Solutions\nPersona: Lisa Wilson\nTarefa: Contato Inicial com Leads Prioritários\n\nErro: {{ $json.error }}"
+      },
+      "typeVersion": 1,
+      "notes": "Error handler - notifica falhas no Slack",
+      "credentials": {
+        "slackApi": {
+          "id": "slack_ARVATE49",
+          "name": "Slack ARVATE49"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [
+        [
+          {
+            "node": "2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2": {
+      "main": [
+        [
+          {
+            "node": "3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3": {
+      "main": [
+        [
+          {
+            "node": "4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4": {
+      "main": [
+        [
+          {
+            "node": "5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5": {
+      "main": [
+        [
+          {
+            "node": "6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "timezone": "America/Sao_Paulo",
+    "errorWorkflow": "7"
+  },
+  "createdAt": "2025-11-28T17:05:21.483Z",
+  "updatedAt": "2025-11-28T17:05:21.483Z",
+  "versionId": "1",
+  "meta": {
+    "empresa_id": "7761ddfd-0ecc-4a11-95fd-5ee913a6dd17",
+    "empresa_codigo": "ARVATE49",
+    "persona_id": "32bfbb7a-148b-4113-9fb6-9caff688efcc",
+    "persona_nome": "Lisa Wilson",
+    "task_id": "592a9f65-d36c-407b-a216-1fb8948fb064",
+    "task_title": "Contato Inicial com Leads Prioritários",
+    "opportunity_id": "c5e8694c-613a-4ae3-b660-93428611c852",
+    "automation_score": 75,
+    "generated_by": "VCM Task-Driven Generator",
+    "generated_at": "2025-11-28T17:05:21.483Z"
+  }
+}

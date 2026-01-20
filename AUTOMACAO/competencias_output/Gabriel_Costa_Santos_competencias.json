@@ -1,0 +1,54 @@
+{
+  "persona_id": "64e29610-2944-4703-a5ef-5d3257345ac5",
+  "full_name": "Gabriel Costa Santos",
+  "role": "Desenvolvedor Full Stack",
+  "empresa_id": "b356b561-cd43-4760-8377-98a0cc1463ad",
+  "competencias_tecnicas": [
+    "Desenvolvimento web",
+    "Programação",
+    "Banco de dados",
+    "Segurança da informação",
+    "Metodologias ágeis"
+  ],
+  "competencias_comportamentais": [
+    "Trabalho em equipe",
+    "Comunicação eficaz",
+    "Resolução de problemas",
+    "Adaptabilidade",
+    "Proatividade"
+  ],
+  "ferramentas": [
+    "Visual Studio Code",
+    "Git",
+    "Node.js",
+    "React",
+    "MongoDB"
+  ],
+  "tarefas_diarias": [
+    "Desenvolvimento de novas funcionalidades",
+    "Correção de bugs",
+    "Reuniões de alinhamento",
+    "Atualização de documentação"
+  ],
+  "tarefas_semanais": [
+    "Realizar testes de software",
+    "Participar de code reviews",
+    "Planejar sprint"
+  ],
+  "tarefas_mensais": [
+    "Análise de performance da plataforma",
+    "Propor melhorias no processo de desenvolvimento",
+    "Participar de treinamentos"
+  ],
+  "kpis": [
+    "Entrega de novas funcionalidades - 95% de aderência ao prazo",
+    "Taxa de satisfação dos usuários - 90%",
+    "Redução de bugs reportados - 20%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Aprimorar habilidades em React Native",
+    "Participar de cursos de segurança da informação",
+    "Certificação em metodologias ágeis"
+  ],
+  "generated_at": "2025-12-08T14:42:29.045Z"
+}

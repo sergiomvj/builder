@@ -1,0 +1,53 @@
+{
+  "persona_id": "9629aa14-6372-42dc-9847-ec697c762647",
+  "full_name": "[Placeholder 14] CTO - Chief Technology Officer",
+  "role": "CTO - Chief Technology Officer",
+  "empresa_id": "3c3bee15-b3a4-4442-89e9-5859c06e7575",
+  "competencias_tecnicas": [
+    "Arquitetura de Sistemas Escaláveis",
+    "Cloud Computing (AWS, Azure, GCP)",
+    "Cibersegurança Avançada",
+    "Inteligência Artificial e Machine Learning",
+    "DevOps e Pipelines CI/CD"
+  ],
+  "competencias_comportamentais": [
+    "Liderança Estratégica",
+    "Comunicação Eficaz",
+    "Pensamento Inovador",
+    "Resolução de Problemas Complexos",
+    "Gestão de Equipes Ágeis"
+  ],
+  "ferramentas": [
+    "AWS Management Console",
+    "Kubernetes",
+    "Jira",
+    "Terraform"
+  ],
+  "tarefas_diarias": [
+    "Revisar relatórios de performance técnica",
+    "Reuniões com líderes de equipe",
+    "Monitorar incidentes críticos",
+    "Avaliar novas tecnologias emergentes"
+  ],
+  "tarefas_semanais": [
+    "Reuniões de planejamento estratégico",
+    "Revisão de roadmaps de produto",
+    "Mentorias com engenheiros seniores"
+  ],
+  "tarefas_mensais": [
+    "Análise de orçamento de TI",
+    "Auditorias de segurança e compliance",
+    "Relatórios executivos para o board"
+  ],
+  "kpis": [
+    "Uptime dos Sistemas: 99.99%",
+    "Tempo Médio de Deploy: < 1 hora",
+    "Satisfação da Equipe Tech: > 85%"
+  ],
+  "objetivos_desenvolvimento": [
+    "Obter certificação avançada em Cloud Architecture",
+    "Liderar implementação de stack de IA escalável",
+    "Expandir equipe técnica em 20% com talentos estratégicos"
+  ],
+  "generated_at": "2025-12-02T18:10:48.060Z"
+}
