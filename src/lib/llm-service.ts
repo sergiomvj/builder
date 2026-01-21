@@ -162,9 +162,17 @@ export class LLMService {
         "target_audience": "Descrição detalhada do público-alvo",
         "pain_points": ["Dor 1", "Dor 2", "Dor 3"],
         "marketing_strategy": {
+           "value_proposition": "Proposta de Valor clara e concisa",
+           "target_audience": "Definição do público alvo para marketing",
+           "approach_strategy": "Definição de Abordagem (Ex: Inbound, Outbound, PLG, etc)",
            "channels": ["Canal 1", "Canal 2"],
            "tactics": ["Tática 1", "Tática 2"],
            "launch_plan_steps": ["Semana 1: ...", "Semana 2: ...", "Mês 1: ..."]
+        },
+        "lead_generation_strategy": {
+           "lead_magnets": ["Ebook: ...", "Webinar: ..."],
+           "conversion_tactics": ["Landing Page com ...", "Sequência de email..."],
+           "tools_suggested": ["Hubspot", "Mailchimp"]
         },
         "systems_and_modules": [
            {

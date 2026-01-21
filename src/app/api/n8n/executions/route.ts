@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
+export const dynamic = 'force-dynamic';
+
 import { createN8NClient } from '@/lib/n8n-client';
 
 /**
@@ -18,19 +20,19 @@ export async function GET(request: NextRequest) {
     const limit = parseInt(searchParams.get('limit') || '50');
 
     const client = await createN8NClient();
-    
+
     if (!client) {
       return NextResponse.json(
-        { 
-          success: false, 
-          error: 'N8N não configurado' 
+        {
+          success: false,
+          error: 'N8N não configurado'
         },
         { status: 503 }
       );
     }
 
     const options: any = { limit };
-    
+
     if (workflowId) options.workflowId = workflowId;
     if (status) options.status = status;
 
@@ -45,9 +47,9 @@ export async function GET(request: NextRequest) {
   } catch (error: any) {
     console.error('Erro ao buscar execuções N8N:', error);
     return NextResponse.json(
-      { 
-        success: false, 
-        error: error.message || 'Erro ao buscar execuções' 
+      {
+        success: false,
+        error: error.message || 'Erro ao buscar execuções'
       },
       { status: 500 }
     );

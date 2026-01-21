@@ -5,7 +5,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Send, Bot, User, Sparkles } from 'lucide-react';
+import { Send, Bot, User, Sparkles, CheckCircle, AlertCircle } from 'lucide-react';
+import { toast } from 'sonner';
 
 interface HRManagerChatProps {
   projectId: string;
@@ -17,6 +18,12 @@ interface HRManagerChatProps {
 interface Message {
   role: 'user' | 'assistant' | 'system';
   content: string;
+  proposal?: {
+    type: string;
+    payload: any;
+    summary: string;
+  };
+  confirmed?: boolean;
 }
 
 export default function HRManagerChat({ projectId, mode, onUpdate, currentData }: HRManagerChatProps) {
@@ -62,11 +69,16 @@ export default function HRManagerChat({ projectId, mode, onUpdate, currentData }
 
       if (data.error) throw new Error(data.error);
 
-      if (data.action_performed) {
-        onUpdate(); // Trigger parent refresh
+      // Handle direct actions (legacy or informational)
+      if (data.action_performed && !data.proposal) {
+        onUpdate();
       }
 
-      setMessages(prev => [...prev, { role: 'assistant', content: data.content }]);
+      setMessages(prev => [...prev, { 
+        role: 'assistant', 
+        content: data.content,
+        proposal: data.proposal 
+      }]);
 
     } catch (error) {
       console.error(error);
@@ -74,6 +86,46 @@ export default function HRManagerChat({ projectId, mode, onUpdate, currentData }
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const handleConfirm = async (messageIndex: number, proposal: any) => {
+      setIsLoading(true);
+      try {
+          const response = await fetch('/api/chat-assistant', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              messages: [], // Context not strictly needed for execution
+              projectId,
+              mode,
+              currentData,
+              confirm_action: proposal
+            })
+          });
+    
+          const data = await response.json();
+    
+          if (data.error) throw new Error(data.error);
+    
+          if (data.action_performed) {
+            onUpdate();
+            toast.success('Alterações aplicadas com sucesso!');
+            
+            // Mark message as confirmed
+            setMessages(prev => prev.map((m, i) => 
+                i === messageIndex ? { ...m, confirmed: true } : m
+            ));
+            
+            // Add confirmation response
+            setMessages(prev => [...prev, { role: 'assistant', content: data.content }]);
+          }
+    
+        } catch (error) {
+          console.error(error);
+          toast.error('Erro ao aplicar alterações.');
+        } finally {
+          setIsLoading(false);
+        }
   };
 
   return (
@@ -100,7 +152,33 @@ export default function HRManagerChat({ projectId, mode, onUpdate, currentData }
                     ? 'bg-indigo-600 text-white rounded-tr-none' 
                     : 'bg-slate-100 text-slate-800 rounded-tl-none border border-slate-200'
                 }`}>
-                  {m.content}
+                  <p className="whitespace-pre-wrap">{m.content}</p>
+                  
+                  {/* Proposal Card */}
+                  {m.proposal && (
+                      <div className={`mt-3 p-3 rounded bg-white border ${m.confirmed ? 'border-green-200 bg-green-50' : 'border-indigo-200'}`}>
+                          <div className="flex items-start gap-2 mb-2">
+                              {m.confirmed ? <CheckCircle className="w-4 h-4 text-green-600 mt-1"/> : <AlertCircle className="w-4 h-4 text-indigo-600 mt-1"/>}
+                              <div>
+                                  <p className="font-semibold text-slate-800 text-xs uppercase tracking-wide">
+                                      {m.confirmed ? 'Alteração Confirmada' : 'Sugestão de Alteração'}
+                                  </p>
+                                  <p className="text-slate-600 mt-1">{m.proposal.summary}</p>
+                              </div>
+                          </div>
+                          
+                          {!m.confirmed && (
+                              <Button 
+                                size="sm" 
+                                className="w-full mt-2 bg-indigo-600 hover:bg-indigo-700"
+                                onClick={() => handleConfirm(i, m.proposal)}
+                                disabled={isLoading}
+                              >
+                                  Concordar e Aplicar
+                              </Button>
+                          )}
+                      </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -122,6 +200,7 @@ export default function HRManagerChat({ projectId, mode, onUpdate, currentData }
             onKeyDown={e => e.key === 'Enter' && handleSend()}
             placeholder={mode === 'team' ? "Ex: Hire a Senior React Dev..." : "Ex: Create a workflow for lead qualification..."}
             className="flex-1"
+            disabled={isLoading}
           />
           <Button onClick={handleSend} disabled={isLoading} size="icon" className="bg-indigo-600 hover:bg-indigo-700">
             <Send className="w-4 h-4" />

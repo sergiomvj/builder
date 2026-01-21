@@ -12,7 +12,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Switch } from '@/components/ui/switch'
 import { Progress } from '@/components/ui/progress'
 import { DatabaseService } from '@/lib/database'
-import { 
+import {
   BarChart3,
   LineChart,
   PieChart,
@@ -34,8 +34,13 @@ import {
   Award,
   ArrowUpRight,
   ArrowDownRight,
-  AlertCircle
+  AlertCircle,
+  Plus,
+  Archive,
+  FileCheck
 } from 'lucide-react'
+import SavedAnalysesPanel from './SavedAnalysesPanel'
+import { useToast } from '@/components/ui/use-toast'
 
 interface AnalyticsMetric {
   id: string
@@ -118,7 +123,7 @@ export default function AnalyticsReportingSystem() {
     product: 'all',
     channel: 'all'
   })
-  
+
   const [selectedDateRange, setSelectedDateRange] = useState('30days')
   const [isRealTime, setIsRealTime] = useState(false)
 
@@ -405,8 +410,8 @@ export default function AnalyticsReportingSystem() {
             value: parseFloat(metric.value) || 0,
             previousValue: parseFloat(metric.previous_value) || 0,
             change: parseFloat(metric.change_percentage) || 0,
-            changeType: (parseFloat(metric.change_percentage) || 0) > 0 ? 'increase' : 
-                       (parseFloat(metric.change_percentage) || 0) < 0 ? 'decrease' : 'neutral',
+            changeType: (parseFloat(metric.change_percentage) || 0) > 0 ? 'increase' :
+              (parseFloat(metric.change_percentage) || 0) < 0 ? 'decrease' : 'neutral',
             unit: metric.unit || '',
             category: metric.category as AnalyticsMetric['category'],
             description: metric.description || '',
@@ -468,9 +473,9 @@ export default function AnalyticsReportingSystem() {
             current: parseFloat(goal.value) || 0,
             deadline: goal.target_deadline || new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
             responsible: 'Sistema',
-            status: (parseFloat(goal.value) || 0) >= (parseFloat(goal.target_value) || 0) ? 'completed' : 
-                    (parseFloat(goal.value) || 0) >= (parseFloat(goal.target_value) || 0) * 0.8 ? 'on-track' : 
-                    (parseFloat(goal.value) || 0) >= (parseFloat(goal.target_value) || 0) * 0.6 ? 'at-risk' : 'behind',
+            status: (parseFloat(goal.value) || 0) >= (parseFloat(goal.target_value) || 0) ? 'completed' :
+              (parseFloat(goal.value) || 0) >= (parseFloat(goal.target_value) || 0) * 0.8 ? 'on-track' :
+                (parseFloat(goal.value) || 0) >= (parseFloat(goal.target_value) || 0) * 0.6 ? 'at-risk' : 'behind',
             milestones: []
           }))
           setGoals(mappedGoals)
@@ -519,23 +524,23 @@ export default function AnalyticsReportingSystem() {
       'behind': { color: 'bg-red-100 text-red-800', label: 'Atrasado' },
       'completed': { color: 'bg-blue-100 text-blue-800', label: 'Concluído' }
     }
-    
+
     const config = configs[status as keyof typeof configs]
     return config ? <Badge className={config.color}>{config.label}</Badge> : null
   }
 
   const formatNumber = (value: number, unit: string) => {
     if (unit === 'R$') {
-      return new Intl.NumberFormat('pt-BR', { 
-        style: 'currency', 
-        currency: 'BRL' 
+      return new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
       }).format(value)
     } else if (unit === '%') {
       return `${value}%`
     } else if (value >= 1000) {
-      return new Intl.NumberFormat('pt-BR', { 
-        notation: 'compact', 
-        compactDisplay: 'short' 
+      return new Intl.NumberFormat('pt-BR', {
+        notation: 'compact',
+        compactDisplay: 'short'
       }).format(value)
     }
     return `${value} ${unit}`
@@ -550,9 +555,47 @@ export default function AnalyticsReportingSystem() {
   }
 
   const getChangeColor = (changeType: string) => {
-    return changeType === 'increase' ? 'text-green-600' : 
-           changeType === 'decrease' ? 'text-red-600' : 'text-gray-600'
+    return changeType === 'increase' ? 'text-green-600' :
+      changeType === 'decrease' ? 'text-red-600' : 'text-gray-600'
   }
+
+  const handleSaveAnalysis = async (type: string = 'strategic') => {
+    try {
+      const empresaId = localStorage.getItem('selectedEmpresaId') || 'demo-empresa';
+
+      const analysisData = {
+        empresa_id: empresaId,
+        title: `Análise de Performance - ${new Date().toLocaleDateString('pt-BR')}`,
+        summary: "Análise consolidada baseada nas métricas de performance e engajamento do período.",
+        analysis_type: type,
+        content: {
+          metrics: metrics.reduce((acc: any, m) => {
+            acc[m.name] = `${m.value}${m.unit}`;
+            return acc;
+          }, {}),
+          insights: [
+            "A taxa de conversão aumentou consideravelmente.",
+            "Necessidade de otimização do CAC identificada.",
+            "Oportunidade de crescimento no segmento Enterprise."
+          ],
+          notes: "Relatório gerado automaticamente através da interface de Analytics."
+        }
+      };
+
+      const res = await fetch('/api/analyses', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(analysisData)
+      });
+
+      if (res.ok) {
+        alert('Análise salva com sucesso!');
+      }
+    } catch (error) {
+      console.error('Erro ao salvar análise:', error);
+      alert('Erro ao salvar análise.');
+    }
+  };
 
   return (
     <div className="space-y-6">
@@ -583,8 +626,8 @@ export default function AnalyticsReportingSystem() {
       <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-2">
-            <Switch 
-              checked={isRealTime} 
+            <Switch
+              checked={isRealTime}
               onCheckedChange={setIsRealTime}
             />
             <Label className="text-sm">Tempo Real</Label>
@@ -595,9 +638,9 @@ export default function AnalyticsReportingSystem() {
               </div>
             )}
           </div>
-          
+
           <div className="h-4 w-px bg-gray-300" />
-          
+
           <Select value={selectedDateRange} onValueChange={setSelectedDateRange}>
             <SelectTrigger className="w-[150px]">
               <SelectValue />
@@ -624,6 +667,10 @@ export default function AnalyticsReportingSystem() {
           <TabsTrigger value="goals">Metas</TabsTrigger>
           <TabsTrigger value="reports">Relatórios</TabsTrigger>
           <TabsTrigger value="insights">Insights</TabsTrigger>
+          <TabsTrigger value="saved" className="flex items-center">
+            <Archive className="w-3 h-3 mr-1" />
+            Análises Salvas
+          </TabsTrigger>
         </TabsList>
 
         <TabsContent value="dashboard" className="space-y-6">
@@ -653,8 +700,8 @@ export default function AnalyticsReportingSystem() {
                         <span>Meta</span>
                         <span>{formatNumber(metric.target, metric.unit)}</span>
                       </div>
-                      <Progress 
-                        value={(metric.value / metric.target) * 100} 
+                      <Progress
+                        value={(metric.value / metric.target) * 100}
                         className="h-1"
                       />
                     </div>
@@ -795,24 +842,23 @@ export default function AnalyticsReportingSystem() {
                       <div className="text-right">
                         <div className="text-sm text-muted-foreground">Meta</div>
                         <div className="font-medium">{formatNumber(metric.target, metric.unit)}</div>
-                        <div className={`text-xs ${
-                          metric.value >= metric.target ? 'text-green-600' : 'text-red-600'
-                        }`}>
-                          {metric.value >= metric.target ? 'Atingida!' : 
-                           `${((metric.value / metric.target) * 100).toFixed(1)}% da meta`}
+                        <div className={`text-xs ${metric.value >= metric.target ? 'text-green-600' : 'text-red-600'
+                          }`}>
+                          {metric.value >= metric.target ? 'Atingida!' :
+                            `${((metric.value / metric.target) * 100).toFixed(1)}% da meta`}
                         </div>
                       </div>
                     )}
                   </div>
-                  
+
                   {metric.target && (
                     <div>
                       <div className="flex justify-between text-xs text-muted-foreground mb-1">
                         <span>Progresso</span>
                         <span>{((metric.value / metric.target) * 100).toFixed(1)}%</span>
                       </div>
-                      <Progress 
-                        value={(metric.value / metric.target) * 100} 
+                      <Progress
+                        value={(metric.value / metric.target) * 100}
                         className="h-2"
                       />
                     </div>
@@ -846,8 +892,8 @@ export default function AnalyticsReportingSystem() {
                     <div>
                       <div className="text-sm text-muted-foreground">Atual</div>
                       <div className="text-2xl font-bold">
-                        {goal.type === 'revenue' ? 
-                          formatNumber(goal.current, 'R$') : 
+                        {goal.type === 'revenue' ?
+                          formatNumber(goal.current, 'R$') :
                           `${goal.current}${goal.type === 'retention' && goal.current < 10 ? '%' : ''}`
                         }
                       </div>
@@ -855,8 +901,8 @@ export default function AnalyticsReportingSystem() {
                     <div>
                       <div className="text-sm text-muted-foreground">Meta</div>
                       <div className="text-2xl font-bold">
-                        {goal.type === 'revenue' ? 
-                          formatNumber(goal.target, 'R$') : 
+                        {goal.type === 'revenue' ?
+                          formatNumber(goal.target, 'R$') :
                           `${goal.target}${goal.type === 'retention' && goal.target < 10 ? '%' : ''}`
                         }
                       </div>
@@ -877,8 +923,8 @@ export default function AnalyticsReportingSystem() {
                       <span>Progresso</span>
                       <span>{getGoalProgress(goal).toFixed(1)}%</span>
                     </div>
-                    <Progress 
-                      value={getGoalProgress(goal)} 
+                    <Progress
+                      value={getGoalProgress(goal)}
                       className="h-3"
                     />
                   </div>
@@ -887,12 +933,10 @@ export default function AnalyticsReportingSystem() {
                     <div className="text-sm font-medium mb-2">Marcos ({goal.milestones.filter(m => m.completed).length}/{goal.milestones.length})</div>
                     <div className="grid grid-cols-3 gap-2">
                       {goal.milestones.map((milestone) => (
-                        <div key={milestone.id} className={`p-2 rounded text-center text-sm border ${
-                          milestone.completed ? 'bg-green-50 border-green-200' : 'bg-gray-50 border-gray-200'
-                        }`}>
-                          <div className={`font-medium ${
-                            milestone.completed ? 'text-green-700' : 'text-gray-700'
+                        <div key={milestone.id} className={`p-2 rounded text-center text-sm border ${milestone.completed ? 'bg-green-50 border-green-200' : 'bg-gray-50 border-gray-200'
                           }`}>
+                          <div className={`font-medium ${milestone.completed ? 'text-green-700' : 'text-gray-700'
+                            }`}>
                             {milestone.name}
                           </div>
                           <div className="text-xs text-muted-foreground">
@@ -924,10 +968,10 @@ export default function AnalyticsReportingSystem() {
                       <CardDescription>{report.description}</CardDescription>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <Badge variant={report.status === 'active' ? 'default' : 
-                                   report.status === 'paused' ? 'secondary' : 'destructive'}>
-                        {report.status === 'active' ? 'Ativo' : 
-                         report.status === 'paused' ? 'Pausado' : 'Erro'}
+                      <Badge variant={report.status === 'active' ? 'default' :
+                        report.status === 'paused' ? 'secondary' : 'destructive'}>
+                        {report.status === 'active' ? 'Ativo' :
+                          report.status === 'paused' ? 'Pausado' : 'Erro'}
                       </Badge>
                       <Badge variant="outline" className="capitalize">
                         {report.frequency}
@@ -954,8 +998,8 @@ export default function AnalyticsReportingSystem() {
                     <div>
                       <div className="text-muted-foreground">Próxima Geração</div>
                       <div className="font-medium">
-                        {report.nextGeneration ? 
-                          new Date(report.nextGeneration).toLocaleString('pt-BR') : 
+                        {report.nextGeneration ?
+                          new Date(report.nextGeneration).toLocaleString('pt-BR') :
                           'Sob demanda'
                         }
                       </div>
@@ -998,6 +1042,12 @@ export default function AnalyticsReportingSystem() {
         </TabsContent>
 
         <TabsContent value="insights" className="space-y-4">
+          <div className="flex justify-end mb-2">
+            <Button onClick={() => handleSaveAnalysis('strategic')} className="bg-yellow-600 hover:bg-yellow-700">
+              <Archive className="w-4 h-4 mr-2" />
+              Salvar esta análise estratégica
+            </Button>
+          </div>
           <div className="space-y-4">
             <Card>
               <CardHeader>
@@ -1016,7 +1066,7 @@ export default function AnalyticsReportingSystem() {
                     <div>
                       <div className="font-medium text-green-800">Performance Positiva</div>
                       <div className="text-sm text-green-700">
-                        A taxa de conversão aumentou 14.3% este mês, principalmente devido ao 
+                        A taxa de conversão aumentou 14.3% este mês, principalmente devido ao
                         novo funil de onboarding implementado.
                       </div>
                       <div className="text-xs text-green-600 mt-1">
@@ -1032,7 +1082,7 @@ export default function AnalyticsReportingSystem() {
                     <div>
                       <div className="font-medium text-yellow-800">Atenção Necessária</div>
                       <div className="text-sm text-yellow-700">
-                        O CAC (Custo de Aquisição) está próximo da meta, mas pode ser otimizado 
+                        O CAC (Custo de Aquisição) está próximo da meta, mas pode ser otimizado
                         focando em canais orgânicos.
                       </div>
                       <div className="text-xs text-yellow-600 mt-1">
@@ -1048,7 +1098,7 @@ export default function AnalyticsReportingSystem() {
                     <div>
                       <div className="font-medium text-blue-800">Oportunidade Identificada</div>
                       <div className="text-sm text-blue-700">
-                        Usuários do segmento Enterprise têm 3x maior LTV. 
+                        Usuários do segmento Enterprise têm 3x maior LTV.
                         Considere criar ofertas específicas para este público.
                       </div>
                       <div className="text-xs text-blue-600 mt-1">
@@ -1105,6 +1155,9 @@ export default function AnalyticsReportingSystem() {
               </CardContent>
             </Card>
           </div>
+        </TabsContent>
+        <TabsContent value="saved" className="space-y-4">
+          <SavedAnalysesPanel empresaId={localStorage.getItem('selectedEmpresaId') || undefined} />
         </TabsContent>
       </Tabs>
     </div>

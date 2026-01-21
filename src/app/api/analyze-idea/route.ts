@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
+export const dynamic = 'force-dynamic';
+
 import { llmService } from '@/lib/llm-service';
 import { getSupabase } from '@/lib/supabase';
 
@@ -27,6 +29,10 @@ export async function POST(req: NextRequest) {
     let projectId = null;
     let dbError = null;
 
+    // Debugging Supabase Key usage (safe log, don't log full key)
+    const isServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY?.startsWith('eyJ');
+    console.log('Using Service Role Key:', isServiceKey);
+
     const { data: ideaRecord, error: ideaError } = await supabase
       .from('ideas')
       .insert({
@@ -40,8 +46,27 @@ export async function POST(req: NextRequest) {
 
     if (ideaError) {
       console.error('Error saving idea (DB):', ideaError);
-      dbError = ideaError.message;
-      // Continue without saving to allow UI to show analysis
+
+      const isRlsError = ideaError.code === '42501'; // permission denied for table
+      const isAuthError = ideaError.message?.includes('Invalid API key');
+
+      let errorMessage = `Failed to save idea to database: ${ideaError.message}`;
+      if (isAuthError) {
+        errorMessage = 'Erro de Autenticação Supabase: A chave fornecida no .env não corresponde ao URL do projeto ou é inválida.';
+      } else if (isRlsError && !isServiceKey) {
+        errorMessage = 'Database permission denied (RLS). SUPABASE_SERVICE_ROLE_KEY válida é necessária ou desabilite o RLS nas tabelas ideas/projects.';
+      }
+
+      return NextResponse.json(
+        {
+          error: errorMessage,
+          details: ideaError.message,
+          code: ideaError.code,
+          hint: 'Verifique se a Service Role Key no seu .env corresponde ao projeto atual no dashboard do Supabase.',
+          usingServiceKey: isServiceKey
+        },
+        { status: 500 }
+      );
     } else {
       ideaId = ideaRecord.id;
 
@@ -68,6 +93,7 @@ export async function POST(req: NextRequest) {
             backlog_preview: analysis.backlog_preview,
             business_potential_diagnosis: analysis.business_potential_diagnosis,
             marketing_strategy: analysis.marketing_strategy,
+            lead_generation_strategy: analysis.lead_generation_strategy,
             systems_and_modules: analysis.systems_and_modules,
             executive_summary: analysis.executive_summary,
             key_metrics: analysis.key_metrics,
@@ -81,16 +107,14 @@ export async function POST(req: NextRequest) {
       if (projectError) {
         console.error('Error creating project:', projectError);
         dbError = projectError.message;
+
+        return NextResponse.json(
+          { error: 'Failed to save project to database', details: dbError },
+          { status: 500 }
+        );
       } else {
         projectId = projectRecord.id;
       }
-    }
-
-    // Fallback for Demo/Testing if DB fails (e.g. invalid keys)
-    if (!projectId) {
-        console.warn('Returning MOCK Project ID due to DB failure');
-        projectId = 'mock-project-' + Date.now();
-        // Return minimal mock data structure in analysis if needed
     }
 
     return NextResponse.json({

@@ -1,10 +1,5 @@
-import { createClient } from '@supabase/supabase-js'
+import { supabase } from './supabase';
 import { normalizeNationality } from './normalizeNationality';
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-
-export const supabase = createClient(supabaseUrl, supabaseKey)
 
 // Database service functions
 export class DatabaseService {
@@ -17,7 +12,7 @@ export class DatabaseService {
       .not('nome', 'like', '[DELETED-%')
       .not('nome', 'like', '[EXCLUÍDA]%')
       .order('created_at', { ascending: false });
-    
+
     if (error) throw error;
     return data;
   }
@@ -28,7 +23,7 @@ export class DatabaseService {
       .select('*')
       .eq('id', id)
       .single();
-    
+
     if (error) throw error;
     return data;
   }
@@ -39,7 +34,7 @@ export class DatabaseService {
       .insert(empresa)
       .select()
       .single();
-    
+
     if (error) throw error;
     return data;
   }
@@ -78,7 +73,7 @@ export class DatabaseService {
   }  // Personas
   static async getPersonas(empresaId?: string) {
     console.log('🔍 DatabaseService.getPersonas chamado:', { empresaId });
-    
+
     try {
       let query = supabase
         .from('personas')
@@ -94,32 +89,70 @@ export class DatabaseService {
         .not('empresas.nome', 'like', '[DELETED-%')
         .not('empresas.nome', 'like', '[EXCLUÍDA]%')
         .order('created_at', { ascending: false });
-      
+
       if (empresaId) {
         query = query.eq('empresa_id', empresaId);
       }
-      
+
       const { data, error } = await query;
-      
-      console.log('📊 Resultado da query:', { 
-        count: data?.length || 0, 
+
+      console.log('📊 Resultado da query:', {
+        count: data?.length || 0,
         error: error?.message || 'sem erro',
-        sample: data?.[0] ? { 
-          name: data[0].full_name, 
-          empresa: data[0].empresas?.nome 
+        sample: data?.[0] ? {
+          name: data[0].full_name,
+          empresa: data[0].empresas?.nome
         } : 'nenhuma persona'
       });
-      
+
       if (error) {
         console.error('❌ Erro na query:', error);
         throw error;
       }
-      
+
       return data;
     } catch (err) {
       console.error('❌ Erro inesperado em getPersonas:', err);
       throw err;
     }
+  }
+
+  // Saved Analyses
+  static async getSavedAnalyses(empresaId?: string) {
+    let query = supabase
+      .from('saved_analyses')
+      .select('*')
+      .order('created_at', { ascending: false });
+
+    if (empresaId) {
+      query = query.eq('empresa_id', empresaId);
+    }
+
+    const { data, error } = await query;
+
+    if (error) throw error;
+    return data;
+  }
+
+  static async saveAnalysis(analysis: any) {
+    const { data, error } = await supabase
+      .from('saved_analyses')
+      .insert(analysis)
+      .select()
+      .single();
+
+    if (error) throw error;
+    return data;
+  }
+
+  static async deleteAnalysis(id: string) {
+    const { error } = await supabase
+      .from('saved_analyses')
+      .delete()
+      .eq('id', id);
+
+    if (error) throw error;
+    return true;
   }
 
   static async getPersonaById(id: string) {
@@ -135,7 +168,7 @@ export class DatabaseService {
       `)
       .eq('id', id)
       .single();
-    
+
     if (error) throw error;
     return data;
   }
@@ -262,13 +295,13 @@ export class DatabaseService {
       .from('analytics_metrics')
       .select('*')
       .order('date', { ascending: false });
-    
+
     if (empresaId) {
       query = query.eq('empresa_id', empresaId);
     }
-    
+
     const { data, error } = await query;
-    
+
     if (error) throw error;
     return data;
   }
@@ -278,13 +311,13 @@ export class DatabaseService {
       .from('analytics_dashboards')
       .select('*')
       .order('created_at', { ascending: false });
-    
+
     if (empresaId) {
       query = query.eq('empresa_id', empresaId);
     }
-    
+
     const { data, error } = await query;
-    
+
     if (error) throw error;
     return data;
   }
@@ -296,13 +329,13 @@ export class DatabaseService {
       .select('*')
       .order('executed_at', { ascending: false })
       .limit(limit);
-    
+
     if (empresaId) {
       query = query.eq('empresa_id', empresaId);
     }
-    
+
     const { data, error } = await query;
-    
+
     if (error) throw error;
     return data;
   }
@@ -312,13 +345,13 @@ export class DatabaseService {
       .from('auditorias')
       .select('*')
       .order('created_at', { ascending: false });
-    
+
     if (empresaId) {
       query = query.eq('empresa_id', empresaId);
     }
-    
+
     const { data, error } = await query;
-    
+
     if (error) throw error;
     return data;
   }
@@ -328,13 +361,13 @@ export class DatabaseService {
       .from('compliance_audit')
       .select('*')
       .order('assessed_at', { ascending: false });
-    
+
     if (empresaId) {
       query = query.eq('empresa_id', empresaId);
     }
-    
+
     const { data, error } = await query;
-    
+
     if (error) throw error;
     return data;
   }
@@ -345,13 +378,13 @@ export class DatabaseService {
       .from('n8n_workflows')
       .select('*')
       .order('created_at', { ascending: false });
-    
+
     if (empresaId) {
       query = query.eq('empresa_id', empresaId);
     }
-    
+
     const { data, error } = await query;
-    
+
     if (error) throw error;
     return data;
   }
@@ -361,13 +394,13 @@ export class DatabaseService {
       .from('tech_specifications')
       .select('*')
       .order('created_at', { ascending: false });
-    
+
     if (personaId) {
       query = query.eq('persona_id', personaId);
     }
-    
+
     const { data, error } = await query;
-    
+
     if (error) throw error;
     return data;
   }
@@ -379,7 +412,7 @@ export class DatabaseService {
       .select('*')
       .order('created_at', { ascending: false })
       .limit(50);
-    
+
     if (error) throw error;
     return data;
   }
@@ -389,13 +422,13 @@ export class DatabaseService {
       .from('performance_metrics')
       .select('*')
       .order('metric_date', { ascending: false });
-    
+
     if (empresaId) {
       query = query.eq('empresa_id', empresaId);
     }
-    
+
     const { data, error } = await query;
-    
+
     if (error) throw error;
     return data;
   }
@@ -406,7 +439,7 @@ export class DatabaseService {
       .from('system_configurations')
       .select('*')
       .order('updated_at', { ascending: false });
-    
+
     if (error) throw error;
     return data;
   }
@@ -417,7 +450,7 @@ export class DatabaseService {
       .select('*')
       .order('changed_at', { ascending: false })
       .limit(100);
-    
+
     if (error) throw error;
     return data;
   }
@@ -430,17 +463,17 @@ export class DatabaseService {
         .from('empresas')
         .select('id', { count: 'exact', head: true })
         .eq('status', 'ativa');
-      
+
       // Se não há empresas ativas, contar empresas que não foram explicitamente deletadas
       let empresasCount = empresasQuery.count || 0;
-      
+
       if (empresasCount === 0) {
         const empresasNaoDeletedas = await supabase
           .from('empresas')
           .select('id', { count: 'exact', head: true })
           .not('nome', 'like', '[DELETED-%')
           .not('nome', 'like', '[EXCLUÍDA]%');
-        
+
         empresasCount = empresasNaoDeletedas.count || 0;
       }
 

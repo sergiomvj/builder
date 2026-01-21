@@ -45,7 +45,7 @@ export default function IdeationPage() {
     try {
       // Try v3 prompt first
       const systemPrompt = localStorage.getItem('vcm_prompt_idea_v3');
-      
+
       const response = await fetch('/api/analyze-idea', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -59,13 +59,8 @@ export default function IdeationPage() {
       }
 
       toast.success('Idea captured! Redirecting to project dashboard...');
-      
-      // If using Mock Mode, persist the analysis to LocalStorage so the next page can read it
-      if (data.projectId && data.projectId.startsWith('mock-project-')) {
-        console.log('Mock Project detected, saving analysis to LocalStorage:', data.analysis);
-        localStorage.setItem(`mock_analysis_${data.projectId}`, JSON.stringify(data.analysis));
-      }
 
+      toast.success('Idea captured! Redirecting to project dashboard...');
       router.push(`/projects/${data.projectId}`);
     } catch (error: any) {
       toast.error(error.message || 'Failed to process idea');
@@ -75,7 +70,7 @@ export default function IdeationPage() {
 
   return (
     <div className="container mx-auto max-w-4xl py-12 px-4 relative">
-      
+
       {/* Loading Overlay */}
       {isAnalyzing && (
         <div className="fixed inset-0 bg-white/90 backdrop-blur-md z-50 flex flex-col items-center justify-center p-4">
@@ -85,7 +80,7 @@ export default function IdeationPage() {
               <div className="absolute inset-4 border-t-4 border-purple-500 border-solid rounded-full animate-spin reverse"></div>
               <BrainCircuit className="absolute inset-0 m-auto h-8 w-8 text-slate-400 animate-pulse" />
             </div>
-            
+
             <div className="space-y-2">
               <h3 className="text-2xl font-bold text-slate-800 animate-fade-in">
                 {loadingMessages[loadingStep]}
@@ -94,7 +89,7 @@ export default function IdeationPage() {
             </div>
 
             <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
-              <div 
+              <div
                 className="bg-gradient-to-r from-blue-500 to-purple-600 h-full transition-all duration-500 ease-out"
                 style={{ width: `${Math.min(((loadingStep + 1) / loadingMessages.length) * 100, 100)}%` }}
               ></div>
@@ -113,7 +108,7 @@ export default function IdeationPage() {
           From Idea to <span className="text-blue-600">Enterprise</span> in Minutes
         </h1>
         <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-          Describe your business concept and let our autonomous agents build the foundation, 
+          Describe your business concept and let our autonomous agents build the foundation,
           hire the virtual team, and automate the workflows.
         </p>
       </div>
@@ -130,19 +125,19 @@ export default function IdeationPage() {
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
-          <Textarea 
+          <Textarea
             placeholder="e.g., A subscription service for organic dog food tailored to specific breeds, with a mobile app for tracking health metrics..."
             className="min-h-[200px] text-lg p-6 resize-none focus-visible:ring-blue-500"
             value={idea}
             onChange={(e) => setIdea(e.target.value)}
           />
-          
+
           <div className="flex justify-end items-center gap-4">
             <span className="text-sm text-slate-500 italic">
               {idea.length > 0 ? `${idea.length} characters` : 'Ready to start?'}
             </span>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 h-12 text-lg shadow-lg shadow-blue-200 transition-all hover:scale-105"
               onClick={handleAnalyze}
               disabled={isAnalyzing}

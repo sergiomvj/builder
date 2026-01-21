@@ -32,9 +32,17 @@ export interface ProjectAnalysis {
   target_audience: string;
   pain_points: string[];
   marketing_strategy: {
+    value_proposition?: string;
+    target_audience?: string;
+    approach_strategy?: string;
     channels: string[];
     tactics: string[];
     launch_plan_steps: string[];
+  };
+  lead_generation_strategy: {
+    lead_magnets: string[];
+    conversion_tactics: string[];
+    tools_suggested: string[];
   };
   systems_and_modules: ProjectModule[];
   roadmap: ProjectRoadmapPhase[];
@@ -80,4 +88,5 @@ export interface Project extends Partial<ProjectAnalysis> {
   key_metrics?: string[];
   risks?: string[]; // Mapped from risks_and_gaps
   improvements?: string[]; // Mapped from improvement_suggestions
+  lead_generation_strategy?: ProjectAnalysis['lead_generation_strategy'];
 }

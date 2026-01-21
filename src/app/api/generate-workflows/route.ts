@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
+export const dynamic = 'force-dynamic';
+
 import { llmService } from '@/lib/llm-service';
 import { getSupabase } from '@/lib/supabase';
 
@@ -18,33 +20,33 @@ export async function POST(req: NextRequest) {
     let team;
 
     if (projectContext && teamContext) {
-        console.log('Using provided Project/Team Context (Mock Mode)');
-        project = projectContext;
-        team = teamContext;
-        empresa = { id: 'mock-empresa-' + projectId };
+      console.log('Using provided Project/Team Context (Mock Mode)');
+      project = projectContext;
+      team = teamContext;
+      empresa = { id: 'mock-empresa-' + projectId };
     } else if (projectId.startsWith('mock-project-')) {
-        console.log('Using Default MOCK Project data (No context provided)');
-        project = { id: projectId, name: 'Mock Project' };
-        empresa = { id: 'mock-empresa-' + projectId };
-        team = [
-            { id: 'mock-p1', nome: 'Alice', cargo: 'CEO', avatar_url: '' },
-            { id: 'mock-p2', nome: 'Bob', cargo: 'CTO', avatar_url: '' }
-        ];
+      console.log('Using Default MOCK Project data (No context provided)');
+      project = { id: projectId, name: 'Mock Project' };
+      empresa = { id: 'mock-empresa-' + projectId };
+      team = [
+        { id: 'mock-p1', nome: 'Alice', cargo: 'CEO', avatar_url: '' },
+        { id: 'mock-p2', nome: 'Bob', cargo: 'CTO', avatar_url: '' }
+      ];
     } else {
-        const { data: dbProject } = await supabase.from('projects').select('*').eq('id', projectId).single();
-        if (!dbProject) return NextResponse.json({ error: 'Project not found' }, { status: 404 });
-        project = dbProject;
+      const { data: dbProject } = await supabase.from('projects').select('*').eq('id', projectId).single();
+      if (!dbProject) return NextResponse.json({ error: 'Project not found' }, { status: 404 });
+      project = dbProject;
 
-        const { data: dbEmpresa } = await supabase.from('empresas').select('id').eq('project_id', projectId).single();
-        if (!dbEmpresa) return NextResponse.json({ error: 'Company not found (hire team first)' }, { status: 404 });
-        empresa = dbEmpresa;
+      const { data: dbEmpresa } = await supabase.from('empresas').select('id').eq('project_id', projectId).single();
+      if (!dbEmpresa) return NextResponse.json({ error: 'Company not found (hire team first)' }, { status: 404 });
+      empresa = dbEmpresa;
 
-        // 2. Fetch Team
-        const { data: dbTeam } = await supabase.from('personas').select('*').eq('empresa_id', empresa.id);
-        if (!dbTeam || dbTeam.length === 0) {
+      // 2. Fetch Team
+      const { data: dbTeam } = await supabase.from('personas').select('*').eq('empresa_id', empresa.id);
+      if (!dbTeam || dbTeam.length === 0) {
         return NextResponse.json({ error: 'Team not found. Please hire the team first.' }, { status: 400 });
-        }
-        team = dbTeam;
+      }
+      team = dbTeam;
     }
 
     // 3. Generate Workflows via LLM
@@ -57,19 +59,19 @@ export async function POST(req: NextRequest) {
 
     // Mock DB insertion
     if (projectId.startsWith('mock-project-')) {
-        for (const wf of workflowData.workflows) {
-             createdWorkflows.push({
-                 id: 'mock-workflow-' + Math.random(),
-                 task_title: wf.title,
-                 task_description: wf.description,
-                 status: 'identified',
-                 assignee_name: 'Alice'
-             });
-        }
-        return NextResponse.json({
-            success: true,
-            workflows: createdWorkflows
+      for (const wf of workflowData.workflows) {
+        createdWorkflows.push({
+          id: 'mock-workflow-' + Math.random(),
+          task_title: wf.title,
+          task_description: wf.description,
+          status: 'identified',
+          assignee_name: 'Alice'
         });
+      }
+      return NextResponse.json({
+        success: true,
+        workflows: createdWorkflows
+      });
     }
 
     for (const wf of workflowData.workflows) {
