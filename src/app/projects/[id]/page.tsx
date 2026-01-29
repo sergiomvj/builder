@@ -11,7 +11,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
 import { Project } from '@/types/project';
-import { FileText, Lightbulb, Download, Target, Briefcase, TrendingUp, AlertTriangle, Users, Rocket, Shield, Archive, Quote, Plus, Pencil, Trash2, FileJson } from 'lucide-react';
+import { FileText, Lightbulb, Download, Target, Briefcase, TrendingUp, AlertTriangle, Users, Rocket, Shield, Archive, Quote, Plus, Pencil, Trash2, FileJson, RefreshCw } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import ExecutionPlanTab from '@/components/dashboard/ExecutionPlanTab';
 import WorkflowsTab from '@/components/dashboard/WorkflowsTab';
@@ -27,6 +27,11 @@ export default function ProjectDashboard() {
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingMember, setEditingMember] = useState<any>(null);
+
+  // Genesis Edit State
+  const [isEditingGenesis, setIsEditingGenesis] = useState(false);
+  const [genesisContent, setGenesisContent] = useState('');
+  const [isReevaluating, setIsReevaluating] = useState(false);
 
   const fetchProjectData = useCallback(async () => {
     if (!params.id) return;
@@ -114,11 +119,65 @@ export default function ProjectDashboard() {
       md += `## Business Diagnosis\n`;
       md += `- Viability Score: ${project.business_diagnosis.viability_score}/100\n`;
       md += `- Analysis: ${project.business_diagnosis.viability_analysis}\n`;
+      if (project.business_diagnosis.score_gap_analysis) {
+        md += `- Score Gap: ${project.business_diagnosis.score_gap_analysis}\n`;
+      }
       md += `- Why Now: ${project.business_diagnosis.compelling_reason}\n\n`;
     }
 
     if (project.mission) md += `## Mission\n${project.mission}\n\n`;
     if (project.vision) md += `## Vision\n${project.vision}\n\n`;
+    if (project.values) md += `## Values\n${project.values.join(', ')}\n\n`;
+
+    if (project.target_audience) md += `## Target Audience\n${project.target_audience}\n\n`;
+    if (project.pain_points) md += `## Pain Points\n- ${project.pain_points.join('\n- ')}\n\n`;
+
+    if (project.marketing_strategy) {
+      md += `## Marketing Strategy\n`;
+      md += `**UVP:** ${project.marketing_strategy.value_proposition}\n\n`;
+      md += `### Approach\n${project.marketing_strategy.approach_strategy}\n\n`;
+      md += `### Channels\n- ${project.marketing_strategy.channels?.join('\n- ')}\n\n`;
+      md += `### Tactics\n- ${project.marketing_strategy.tactics?.join('\n- ')}\n\n`;
+    }
+
+    if (project.lead_generation_strategy) {
+      md += `## Lead Generation\n`;
+      md += `### Lead Magnets\n- ${project.lead_generation_strategy.lead_magnets?.join('\n- ')}\n\n`;
+      md += `### Conversion Tactics\n- ${project.lead_generation_strategy.conversion_tactics?.join('\n- ')}\n\n`;
+    }
+
+    if (project.systems_modules) {
+      md += `## Systems & Modules\n`;
+      project.systems_modules.forEach((mod: any) => {
+        md += `### ${mod.module_name}\n`;
+        md += `${mod.description}\n`;
+        if (mod.tech_stack_recommendation) md += `**Tech Stack:** ${mod.tech_stack_recommendation}\n`;
+        md += `**Features:**\n- ${mod.features?.join('\n- ')}\n\n`;
+      });
+    }
+
+    if (project.roadmap) {
+      md += `## Roadmap\n`;
+      project.roadmap.forEach((phase: any) => {
+        md += `### ${phase.phase} (${phase.duration})\n`;
+        phase.deliverables?.forEach((del: any) => {
+          if (typeof del === 'string') {
+            md += `- ${del}\n`;
+          } else {
+            md += `- [${del.area}] ${del.task}\n`;
+          }
+        });
+        md += `\n`;
+      });
+    }
+
+    if (project.swot) {
+      md += `## SWOT Analysis\n`;
+      md += `### Strengths\n- ${project.swot.strengths?.join('\n- ')}\n\n`;
+      md += `### Weaknesses\n- ${project.swot.weaknesses?.join('\n- ')}\n\n`;
+      md += `### Opportunities\n- ${project.swot.opportunities?.join('\n- ')}\n\n`;
+      md += `### Threats\n- ${project.swot.threats?.join('\n- ')}\n\n`;
+    }
 
     const blob = new Blob([md], { type: 'text/markdown' });
     const url = URL.createObjectURL(blob);
@@ -254,6 +313,50 @@ export default function ProjectDashboard() {
     toast.success('Equipe e Workflows exportados!');
   };
 
+  const handleSaveGenesis = async () => {
+    if (!project || !genesisContent.trim()) return;
+    try {
+      const { error } = await supabase
+        .from('projects')
+        .update({ description: genesisContent })
+        .eq('id', project.id);
+
+      if (error) throw error;
+      toast.success('Descrição atualizada!');
+      setIsEditingGenesis(false);
+      fetchProjectData();
+    } catch (e: any) {
+      toast.error('Erro ao salvar: ' + e.message);
+    }
+  };
+
+  const handleReevaluate = async () => {
+    if (!project || !confirm('Isso irá refazer TODA a análise com base na descrição atual. Deseja continuar?')) return;
+    setIsReevaluating(true);
+    try {
+      const response = await fetch('/api/reevaluate-project', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          projectId: project.id,
+          newDescription: project.description // Use current state description (or genesisContent if we wanted to allow saving first)
+        })
+      });
+
+      if (!response.ok) {
+        const err = await response.json();
+        throw new Error(err.error || 'Falha na reavaliação');
+      }
+
+      toast.success('Projeto reavaliado com sucesso!');
+      fetchProjectData();
+    } catch (e: any) {
+      toast.error(e.message);
+    } finally {
+      setIsReevaluating(false);
+    }
+  };
+
   if (loading) {
     return (
       <div className="container mx-auto py-8 space-y-8">
@@ -288,10 +391,13 @@ export default function ProjectDashboard() {
           {project.id.startsWith('mock-project-') && (
             <Badge variant="destructive" className="text-sm bg-amber-500 hover:bg-amber-600">Simulated Mode</Badge>
           )}
-          <Button variant="outline" size="sm" onClick={generateMarkdown} className="ml-auto gap-2">
-            <Download className="w-4 h-4" /> Export Analysis (MD)
+          <Button variant="outline" size="sm" onClick={() => window.print()} className="gap-2 print:hidden">
+            <FileText className="w-4 h-4" /> Export PDF
           </Button>
-          <Button variant="default" size="sm" onClick={saveToSystem} className="gap-2 bg-indigo-600 hover:bg-indigo-700">
+          <Button variant="outline" size="sm" onClick={generateMarkdown} className="ml-auto gap-2 print:hidden">
+            <Download className="w-4 h-4" /> Export MD
+          </Button>
+          <Button variant="default" size="sm" onClick={saveToSystem} className="gap-2 bg-indigo-600 hover:bg-indigo-700 print:hidden">
             <Archive className="w-4 h-4" /> Salvar no Sistema
           </Button>
         </div>
@@ -299,7 +405,7 @@ export default function ProjectDashboard() {
 
       {/* Main Content */}
       <Tabs defaultValue="strategy" className="w-full">
-        <TabsList className="grid w-full grid-cols-4 lg:w-[800px]">
+        <TabsList className="grid w-full grid-cols-4 lg:w-[800px] print:hidden">
           <TabsTrigger value="strategy">Strategy</TabsTrigger>
           <TabsTrigger value="execution">Execution Plan</TabsTrigger>
           <TabsTrigger value="team">Virtual Team</TabsTrigger>
@@ -337,6 +443,18 @@ export default function ProjectDashboard() {
                         <p className="text-sm text-slate-600">{project.business_diagnosis.viability_analysis}</p>
                         <p className="text-xs text-slate-500 mt-1"><span className="font-semibold">Why Now:</span> {project.business_diagnosis.compelling_reason}</p>
                       </div>
+
+                      {/* Score Gap Analysis */}
+                      {project.business_diagnosis.score_gap_analysis && (
+                        <div className="bg-slate-50 border border-slate-200 rounded-md p-3">
+                          <h5 className="text-xs font-bold text-slate-700 uppercase mb-1">
+                            Why {project.business_diagnosis.viability_score} and not 100?
+                          </h5>
+                          <p className="text-xs text-slate-600 mb-0">
+                            {project.business_diagnosis.score_gap_analysis}
+                          </p>
+                        </div>
+                      )}
 
                       {(Number(project.business_diagnosis.viability_score) < 99 || project.improvements?.length > 0) && (
                         <div className="bg-amber-50 border border-amber-200 rounded-md p-3">
@@ -612,15 +730,46 @@ export default function ProjectDashboard() {
             <div className="bg-indigo-50 p-3 rounded-2xl">
               <Quote className="w-6 h-6 text-indigo-600" />
             </div>
-            <div>
+            <div className="flex-1">
               <h3 className="text-lg font-bold text-slate-800">Gênese do Projeto</h3>
               <p className="text-xs text-slate-400 font-medium uppercase tracking-[0.2em]">O Conceito Original do Idealizador</p>
             </div>
+            <div className="flex gap-2 print:hidden z-10 relative">
+              {!isEditingGenesis ? (
+                <>
+                  <Button variant="ghost" size="sm" onClick={() => { setGenesisContent(project.description || ''); setIsEditingGenesis(true); }} className="gap-2 text-slate-500 hover:text-indigo-600">
+                    <Pencil className="w-4 h-4" /> Editar
+                  </Button>
+                  <Button variant="outline" size="sm" onClick={handleReevaluate} disabled={isReevaluating} className="gap-2 border-indigo-200 text-indigo-700 hover:bg-indigo-50">
+                    {isReevaluating ? <RefreshCw className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
+                    {isReevaluating ? 'Reavaliando...' : 'Reavaliar'}
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <Button variant="ghost" size="sm" onClick={() => setIsEditingGenesis(false)} className="text-slate-500">
+                    Cancelar
+                  </Button>
+                  <Button variant="default" size="sm" onClick={handleSaveGenesis} className="bg-indigo-600 hover:bg-indigo-700">
+                    Salvar
+                  </Button>
+                </>
+              )}
+            </div>
           </div>
-          <div
-            className="text-slate-600 leading-relaxed markdown-content italic font-light text-xl pl-4 border-l-2 border-slate-100 prose prose-slate max-w-none"
-            dangerouslySetInnerHTML={{ __html: marked.parse(project.description || '') }}
-          />
+
+          {isEditingGenesis ? (
+            <textarea
+              className="w-full text-slate-600 leading-relaxed border border-indigo-200 rounded-md p-4 min-h-[150px] focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+              value={genesisContent}
+              onChange={(e) => setGenesisContent(e.target.value)}
+            />
+          ) : (
+            <div
+              className="text-slate-600 leading-relaxed markdown-content italic font-light text-xl pl-4 border-l-2 border-slate-100 prose prose-slate max-w-none"
+              dangerouslySetInnerHTML={{ __html: marked.parse(project.description || '') }}
+            />
+          )}
 
           {/* Subtle decor */}
           <div className="absolute top-0 right-0 p-4 opacity-[0.03] pointer-events-none group-hover:opacity-[0.06] transition-opacity">

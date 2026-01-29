@@ -98,28 +98,28 @@ export class LLMService {
       } catch (primaryError: any) {
         // Fallback logic for errors (429 Rate Limit, 503 Service Unavailable, 500 Server Error)
         if (primaryError.status === 429 || primaryError.status >= 500) {
-           console.warn(`Primary model ${model} failed with ${primaryError.status}. Attempting fallbacks...`);
-           
-           for (const fallbackModel of FALLBACK_MODELS) {
-             console.log(`Trying fallback model: ${fallbackModel}`);
-             await this.sleep(1000); // Wait 1s before retry
-             
-             try {
-               const response = await client.chat.completions.create({
-                 model: fallbackModel,
-                 messages: messages,
-                 temperature: temperature,
-                 max_tokens: maxTokens,
-                 response_format: responseFormat,
-               });
-               return response.choices[0]?.message?.content || null;
-             } catch (fallbackError: any) {
-               console.warn(`Fallback model ${fallbackModel} failed: ${fallbackError.message}`);
-               // Continue to next fallback
-             }
-           }
-           
-           throw primaryError; // Throw original error if all fallbacks fail
+          console.warn(`Primary model ${model} failed with ${primaryError.status}. Attempting fallbacks...`);
+
+          for (const fallbackModel of FALLBACK_MODELS) {
+            console.log(`Trying fallback model: ${fallbackModel}`);
+            await this.sleep(1000); // Wait 1s before retry
+
+            try {
+              const response = await client.chat.completions.create({
+                model: fallbackModel,
+                messages: messages,
+                temperature: temperature,
+                max_tokens: maxTokens,
+                response_format: responseFormat,
+              });
+              return response.choices[0]?.message?.content || null;
+            } catch (fallbackError: any) {
+              console.warn(`Fallback model ${fallbackModel} failed: ${fallbackError.message}`);
+              // Continue to next fallback
+            }
+          }
+
+          throw primaryError; // Throw original error if all fallbacks fail
         }
         throw primaryError;
       }
@@ -135,81 +135,107 @@ export class LLMService {
    */
   async analyzeIdea(ideaDescription: string, config: LLMRequestConfig = {}) {
     const systemPrompt = config.systemPrompt || `
-      Atue como uma Consultoria Estratégica de Elite (Produto, Operações e Go-to-Market).
-      Sua missão é transformar a ideia bruta do usuário em um plano de execução completo e profissional.
+      Atue como uma Consultoria Estratégica de Elite (Nível McKinsey/BCG + CTO de Big Tech + CMO de Growth).
+      Sua missão é transformar a ideia bruta do usuário em um plano de execução tático, técnico e comercial de profundidade extrema.
 
       CRITÉRIOS DE AVALIAÇÃO DE VIABILIDADE (VCM SCORE 0-100):
-      Avalie severamente usando estes 4 pilares para compor a nota final:
-      1. Dor de Mercado: Alta (Urgente/Crítico) | Média (Real mas contornável) | Baixa (Nice to have)
-      2. Viabilidade Técnica: Alta (Tecnologia madura) | Média (Complexo) | Baixa (P&D/Inviável)
-      3. Potencial de Receita: Alta (Escalável/LTV alto) | Média (Margens apertadas) | Baixa (Incerto)
-      4. Cenário Competitivo: Alta (Oceano Azul/Nicho) | Média (Diferenciação possível) | Baixa (Saturado/Oceano Vermelho)
+      O Score deve ser a média ponderada de 4 pilares. SEJA CRÍTICO. Notas altas exigem inovação real.
+      1. Dor de Mercado (30%): A dor é latente, urgente e frequente?
+      2. Viabilidade Técnica (20%): É factível com tecnologia atual? Custo vs Benefício.
+      3. Potencial de Receita (30%): Escalabilidade, LTV, Margem.
+      4. Cenário Competitivo (20%): Diferenciação clara vs Players atuais.
 
       ENTREGÁVEIS OBRIGATÓRIOS (Responda neste JSON estrito):
       {
-        "project_name": "Nome comercial sugerido",
-        "tagline": "Slogan de impacto",
-        "executive_summary": "Resumo executivo decisório (3-4 parágrafos) analisando a viabilidade e o 'big picture'",
+        "project_name": "Nome comercial sugerido (Moderno, curto, memorável)",
+        "tagline": "Slogan de impacto (Value proposition em 1 frase)",
+        "executive_summary": "Análise crítica de 3-4 parágrafos. Não apenas descreva a ideia, mas julgue a oportunidade. Aponte o 'Why Now'.",
         "business_potential_diagnosis": {
-           "market_size": "Estimativa de mercado (TAM/SAM/SOM se possível)",
-           "compelling_reason": "Por que agora? (Why Now)",
-           "viability_score": "0-100",
-           "viability_analysis": "Justificativa detalhada baseada em: 1) Dor do Mercado, 2) Viabilidade Técnica, 3) Potencial de Receita, 4) Competição."
+           "market_size": "Estimativa quantitativa (TAM/SAM/SOM) com raciocínio lógico.",
+           "compelling_reason": "O gatilho de mercado que torna isso urgente agora.",
+           "viability_score": "0-100 (Seja rigoroso, evite notas infladas)",
+           "viability_score_breakdown": {
+              "market_pain": "0-100",
+              "tech_feasibility": "0-100",
+              "revenue_potential": "0-100",
+              "competitive_landscape": "0-100"
+           },
+           "viability_analysis": "Justificativa detalhada de cada nota do breakdown.",
+           "score_gap_analysis": "Se a nota for menor que 100, explique exatamente POR QUE não é 100 (Ex: 'Why 76 and not 100?'). Liste os gaps específicos."
         },
-        "mission": "Missão",
-        "vision": "Visão",
+        "mission": "Propósito transformador massivo.",
+        "vision": "Onde a empresa estará em 5-10 anos.",
         "values": ["Valor 1", "Valor 2", "Valor 3", "Valor 4", "Valor 5"],
-        "target_audience": "Descrição detalhada do público-alvo",
-        "pain_points": ["Dor 1", "Dor 2", "Dor 3"],
+        "target_audience": "Definição granular (Ex: idade, cargo, comportamento, dores psicográficas).",
+        "pain_points": ["Dor profunda 1", "Dor profunda 2", "Dor profunda 3"],
         "marketing_strategy": {
-           "value_proposition": "Proposta de Valor clara e concisa",
-           "target_audience": "Definição do público alvo para marketing",
-           "approach_strategy": "Definição de Abordagem (Ex: Inbound, Outbound, PLG, etc)",
-           "channels": ["Canal 1", "Canal 2"],
-           "tactics": ["Tática 1", "Tática 2"],
-           "launch_plan_steps": ["Semana 1: ...", "Semana 2: ...", "Mês 1: ..."]
+           "value_proposition": "Proposta de Valor Única (UVP).",
+           "target_audience": "Segmentação psicográfica detalhada para campanhas.",
+           "approach_strategy": "Ex: Product-Led Growth, ABM, Viral Loop, Content-First.",
+           "channels": ["Canal A (Ex: LinkedIn Ads com foco em CTOs)", "Canal B (Ex: Parcerias com Influencers de Niche)"],
+           "tactics": ["Campanha específica 1 (Descreva o hook)", "Campanha específica 2 (Descreva a oferta)"],
+           "launch_plan_steps": ["Semana 1-2: [Ação Específica]", "Semana 3-4: [Ação Específica]", "Mês 2: [Ação Específica]"]
         },
         "lead_generation_strategy": {
-           "lead_magnets": ["Ebook: ...", "Webinar: ..."],
-           "conversion_tactics": ["Landing Page com ...", "Sequência de email..."],
-           "tools_suggested": ["Hubspot", "Mailchimp"]
+           "lead_magnets": ["Ideia de Ebook/Tool Grátis Específica", "Ideia de Webinar/Evento Exclusivo"],
+           "conversion_tactics": ["Funil detalhado (Ex: Quiz -> Aula Grátis -> Oferta)"],
+           "tools_suggested": ["Ferramenta específica para o nicho", "CRM sugerido"]
         },
         "systems_and_modules": [
            {
-             "module_name": "Ex: Módulo de Aquisição",
-             "description": "O que este módulo faz",
-             "features": ["Feature A", "Feature B"]
+             "module_name": "Nome Técnico (Ex: Order Processing Microservice)",
+             "description": "Responsabilidade única do módulo.",
+             "features": ["Feature técnica A", "Feature técnica B"],
+             "tech_stack_recommendation": "Linguagem/DB sugerido para este módulo"
            },
            {
-             "module_name": "Ex: Motor de Processamento (Core)",
-             "description": "Descrição...",
-             "features": ["Feature C", "Feature D"]
+             "module_name": "Nome Técnico (Ex: AI Recommendation Engine)",
+             "description": "Responsabilidade...",
+             "features": ["Feature C", "Feature D"],
+             "tech_stack_recommendation": "Technology hint"
            }
         ],
         "roadmap": [
-           { "phase": "Fase 1 - MVP", "duration": "1 mês", "deliverables": ["Item A", "Item B"] },
-           { "phase": "Fase 2 - Tração", "duration": "3 meses", "deliverables": ["Item C", "Item D"] }
+           { 
+             "phase": "Fase 1: MVP (Mês 1-2)", 
+             "duration": "8 semanas", 
+             "deliverables": [
+                { "area": "Tech", "task": "Configurar Supabase Auth e criar tabelas de usuários." },
+                { "area": "Product", "task": "Rodar 10 entrevistas de problem-fit com nicho alvo." },
+                { "area": "Marketing", "task": "Lançar Landing Page com captura de e-mail (Waitlist)." }
+             ] 
+           },
+           { 
+             "phase": "Fase 2: Beta Launch (Mês 3)", 
+             "duration": "4 semanas", 
+             "deliverables": [
+                { "area": "Tech", "task": "Integrar Gateway Stripe e Webhooks de pagamento." },
+                { "area": "Product", "task": "Refinar onboarding com base no feedback dos primeiros 50 usuários." },
+                { "area": "Marketing", "task": "Disparar sequência de e-mail marketing (3 emails) para lista de espera." }
+             ]
+           }
         ],
         "backlog_preview": [
-           { "title": "Tarefa Técnica 1", "priority": "High", "category": "Backend" },
-           { "title": "Tarefa de Design 1", "priority": "Medium", "category": "UX" }
+           { "title": "Tarefa Técnica Crítica", "priority": "High", "category": "Backend", "effort": "Large" },
+           { "title": "Melhoria de UX/UI Chave", "priority": "Medium", "category": "Design", "effort": "Medium" }
         ],
-        "revenue_streams": ["Fonte 1", "Fonte 2"],
+        "revenue_streams": ["Modelo de Receita 1 detalhado", "Modelo de Receita 2 detalhado"],
         "swot": {
-          "strengths": ["S1", "S2"],
-          "weaknesses": ["W1", "W2"],
-          "opportunities": ["O1", "O2"],
-          "threats": ["T1", "T2"]
+          "strengths": ["Força interna 1", "Força interna 2"],
+          "weaknesses": ["Fraqueza interna real 1", "Fraqueza interna real 2"],
+          "opportunities": ["Oportunidade externa acionável 1", "Oportunidade externa acionável 2"],
+          "threats": ["Ameaça de mercado específica 1", "Ameaça regulatória/competitiva 2"]
         },
-        "key_metrics": ["Metric 1", "Metric 2", "Metric 3"],
-        "risks_and_gaps": ["Risco 1", "Risco 2"],
-        "improvement_suggestions": ["Melhoria 1", "Melhoria 2"]
+        "key_metrics": ["North Star Metric", "Counter Metric", "Growth Metric"],
+        "risks_and_gaps": ["Risco fatal 1", "Gap de competência 1"],
+        "improvement_suggestions": ["Ação concreta para elevar o Score 1", "Ação concreta 2"]
       }
 
       IMPORTANTE:
       - Seja profundo, crítico e tático.
       - NÃO seja genérico. Use a terminologia do setor da ideia.
-      - Se a viability_score for menor que 99, preencha 'improvement_suggestions' com ações concretas para aumentar a nota.
+      - Liste Módulos SISTÊMICOS exaustivos.
+      - Detalhe o Roadmap com AÇÕES OBJETIVAS E IMPERATIVAS (Nada de "fazer setup", use "Configurar X no Y").
       - Tudo em Português do Brasil.
     `;
 
@@ -233,7 +259,7 @@ export class LLMService {
       );
 
       if (!result) throw new Error('Failed to generate analysis');
-    
+
       const cleanedResult = result.replace(/```json\n?|\n?```/g, '').trim();
       return JSON.parse(cleanedResult);
     } catch (e) {
@@ -300,7 +326,7 @@ export class LLMService {
       );
 
       if (!result) throw new Error('Failed to generate team structure');
-      
+
       const cleanedResult = result.replace(/```json\n?|\n?```/g, '').trim();
       return JSON.parse(cleanedResult);
     } catch (e) {
@@ -363,7 +389,7 @@ export class LLMService {
       );
 
       if (!result) throw new Error('Failed to generate workflows');
-      
+
       // Clean up potential markdown formatting (```json ... ```)
       const cleanedResult = result.replace(/```json\n?|\n?```/g, '').trim();
       return JSON.parse(cleanedResult);

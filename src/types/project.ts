@@ -7,7 +7,7 @@ export interface ProjectModule {
 export interface ProjectRoadmapPhase {
   phase: string;
   duration: string;
-  deliverables: string[];
+  deliverables: (string | { area: string; task: string })[];
 }
 
 export interface ProjectBacklogItem {
@@ -25,6 +25,7 @@ export interface ProjectAnalysis {
     compelling_reason: string;
     viability_score: number | string;
     viability_analysis: string;
+    score_gap_analysis?: string;
   };
   mission: string;
   vision: string;
@@ -66,23 +67,23 @@ export interface Project extends Partial<ProjectAnalysis> {
   description?: string; // Mapped from tagline
   objectives?: string[]; // Sometimes used in older mocks
   status: 'planning' | 'in_progress' | 'completed' | 'on_hold';
-  
+
   // Mapped fields for easier UI consumption if needed, 
   // though we should prefer using the raw Analysis structure where possible.
   systems_modules?: ProjectModule[];
   backlog?: ProjectBacklogItem[];
-  
+
   // DB specific
   created_at?: string;
   updated_at?: string;
   user_id?: string;
-  
+
   // Ideas/Original input
   ideas?: {
     title: string;
     description: string;
   };
-  
+
   // V3 specific fields that might be directly accessed
   business_diagnosis?: ProjectAnalysis['business_potential_diagnosis'];
   key_metrics?: string[];
