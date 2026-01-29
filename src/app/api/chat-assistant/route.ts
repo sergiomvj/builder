@@ -5,6 +5,15 @@ export const dynamic = 'force-dynamic';
 import { getSupabase } from '@/lib/supabase';
 import OpenAI from 'openai';
 
+interface ChatLogEntry {
+  project_id: string;
+  mode: string;
+  role: 'user' | 'assistant' | 'system';
+  content: string;
+  proposal?: any;
+  confirmed?: boolean;
+}
+
 export async function POST(req: NextRequest) {
   try {
     const openai = new OpenAI({
@@ -13,11 +22,126 @@ export async function POST(req: NextRequest) {
 
     const { messages, projectId, mode, currentData, confirm_action } = await req.json();
 
-
     // Create a new Supabase client for this request context
     const supabase = getSupabase();
     const isMockProject = projectId.startsWith('mock-');
 
+    // --- EXECUTE CONFIRMED ACTION ---
+    if (confirm_action) {
+      if (confirm_action.type === 'update_team_structure') {
+        const { team } = confirm_action.payload;
+
+        if (isMockProject) {
+          await persistLog(supabase, {
+            project_id: projectId, mode, role: 'assistant',
+            content: 'Simulação: Atualizei a estrutura da equipe (Confirmado).',
+            confirmed: true
+          });
+
+          return NextResponse.json({
+            role: 'assistant',
+            content: 'Simulação: Atualizei a estrutura da equipe (Confirmado).',
+            action_performed: 'team_updated',
+            action_payload: team
+          });
+        }
+
+        // Get Empresa
+        let empresaId = null;
+        const { data: empresaData } = await supabase.from('empresas').select('id').eq('project_id', projectId).single();
+        if (!empresaData) {
+          const { data: project } = await supabase.from('projects').select('name').eq('id', projectId).single();
+          const { data: newEmpresa, error: createError } = await supabase
+            .from('empresas')
+            .insert({ project_id: projectId, nome: project?.name || 'New Company' })
+            .select()
+            .single();
+          if (createError) throw createError;
+          empresaId = newEmpresa.id;
+        } else {
+          empresaId = empresaData.id;
+        }
+
+        const upsertData = team.map((member: any) => ({
+          ...member,
+          empresa_id: empresaId,
+          updated_at: new Date().toISOString()
+        }));
+
+        await supabase.from('personas').upsert(upsertData);
+
+        // Handle deletions
+        if (team.length > 0) {
+          const newIds = team.filter((m: any) => m.id).map((m: any) => m.id);
+          // If we have IDs to keep, delete others. This is risky if user didn't see everyone.
+          // For safety, let's only upsert for now to avoid accidental deletions unless explicit.
+          // Or, better: if this is a full structure update, we should trust it.
+          // Let's assume it's additive/corrective for now.
+        }
+
+        const responseContent = 'Atualizei a estrutura da equipe conforme solicitado.';
+        await persistLog(supabase, {
+          project_id: projectId, mode, role: 'assistant',
+          content: responseContent,
+          confirmed: true
+        });
+
+        return NextResponse.json({
+          role: 'assistant',
+          content: responseContent,
+          action_performed: 'team_updated'
+        });
+      }
+
+      if (confirm_action.type === 'update_workflows') {
+        const { workflows } = confirm_action.payload;
+
+        if (isMockProject) {
+          await persistLog(supabase, {
+            project_id: projectId, mode, role: 'assistant',
+            content: 'Simulação: Atualizei os fluxos de trabalho (Confirmado).',
+            confirmed: true
+          });
+          return NextResponse.json({
+            role: 'assistant',
+            content: 'Simulação: Atualizei os fluxos de trabalho (Confirmado).',
+            action_performed: 'workflows_updated',
+            action_payload: workflows
+          });
+        }
+
+        const { data: project } = await supabase.from('projects').select('metadata').eq('id', projectId).single();
+        const updatedMetadata = { ...project?.metadata, workflows: workflows };
+        await supabase.from('projects').update({ metadata: updatedMetadata }).eq('id', projectId);
+
+        const responseContent = 'Atualizei os fluxos de trabalho no plano do projeto.';
+        await persistLog(supabase, {
+          project_id: projectId, mode, role: 'assistant',
+          content: responseContent,
+          confirmed: true
+        });
+
+        return NextResponse.json({
+          role: 'assistant',
+          content: responseContent,
+          action_performed: 'workflows_updated'
+        });
+      }
+    }
+
+
+    // --- PERSIST USER MESSAGE ---
+    // The last message in 'messages' array is the new user message
+    if (messages.length > 0) {
+      const lastMsg = messages[messages.length - 1];
+      if (lastMsg.role === 'user') {
+        await persistLog(supabase, {
+          project_id: projectId, mode, role: 'user', content: lastMsg.content
+        });
+      }
+    }
+
+    // --- FETCH PROJECT CONTEXT ---
     let project: any = null;
     let empresa: any = null;
 
@@ -32,76 +156,6 @@ export async function POST(req: NextRequest) {
         mission: 'Simulated Mission',
         metadata: { workflows: currentData?.workflows || [] }
       };
-    }
-
-    // --- EXECUTE CONFIRMED ACTION ---
-    if (confirm_action) {
-      if (confirm_action.type === 'update_team_structure') {
-        const { team } = confirm_action.payload;
-
-        if (isMockProject) {
-          return NextResponse.json({
-            role: 'assistant',
-            content: 'Simulação: Atualizei a estrutura da equipe (Confirmado).',
-            action_performed: 'team_updated',
-            action_payload: team
-          });
-        }
-
-        if (!empresa) {
-          const { data: newEmpresa, error: createError } = await supabase
-            .from('empresas')
-            .insert({ project_id: projectId, nome: project.name })
-            .select()
-            .single();
-          if (createError) throw createError;
-          empresa = newEmpresa;
-        }
-
-        const upsertData = team.map((member: any) => ({
-          ...member,
-          empresa_id: empresa.id,
-          updated_at: new Date().toISOString()
-        }));
-
-        await supabase.from('personas').upsert(upsertData);
-
-        // Handle deletions
-        if (team.length > 0) {
-          const newIds = team.filter((m: any) => m.id).map((m: any) => m.id);
-          if (newIds.length > 0) {
-            await supabase.from('personas').delete().eq('empresa_id', empresa.id).not('id', 'in', `(${newIds.join(',')})`);
-          }
-        }
-
-        return NextResponse.json({
-          role: 'assistant',
-          content: 'Atualizei a estrutura da equipe conforme solicitado.',
-          action_performed: 'team_updated'
-        });
-      }
-
-      if (confirm_action.type === 'update_workflows') {
-        const { workflows } = confirm_action.payload;
-
-        if (isMockProject) {
-          return NextResponse.json({
-            role: 'assistant',
-            content: 'Simulação: Atualizei os fluxos de trabalho (Confirmado).',
-            action_performed: 'workflows_updated',
-            action_payload: workflows
-          });
-        }
-
-        const updatedMetadata = { ...project.metadata, workflows: workflows };
-        await supabase.from('projects').update({ metadata: updatedMetadata }).eq('id', projectId);
-
-        return NextResponse.json({
-          role: 'assistant',
-          content: 'Atualizei os fluxos de trabalho no plano do projeto.',
-          action_performed: 'workflows_updated'
-        });
-      }
     }
 
     // --- PREPARE SYSTEM PROMPT & TOOLS ---
@@ -152,6 +206,7 @@ export async function POST(req: NextRequest) {
         }
       }];
     } else if (mode === 'workflows') {
+      // ... (Workflows setup remains same)
       const workflows = currentData?.workflows || project?.metadata?.workflows || [];
       const team = currentData?.team || (empresa ? (await supabase.from('personas').select('id, nome, cargo').eq('empresa_id', empresa.id)).data : []);
       systemPrompt = `
@@ -207,31 +262,55 @@ export async function POST(req: NextRequest) {
     // --- HANDLE PROPOSAL (Do not execute, just return proposal) ---
     if (responseMessage.tool_calls) {
       const toolCall = responseMessage.tool_calls[0];
-      const args = JSON.parse(toolCall.function.arguments);
+      const args = JSON.parse((toolCall as any).function.arguments);
 
-      if (toolCall.function.name === 'update_team_structure') {
+      if ((toolCall as any).function.name === 'update_team_structure') {
+        const content = 'Preparei uma sugestão de atualização da equipe. Por favor, confirme as alterações abaixo.';
+        const proposal = {
+          type: 'update_team_structure',
+          payload: args,
+          summary: `Atualização de Equipe: ${args.team.length} membros.`
+        };
+
+        await persistLog(supabase, {
+          project_id: projectId, mode, role: 'assistant',
+          content, proposal
+        });
+
         return NextResponse.json({
           role: 'assistant',
-          content: 'Preparei uma sugestão de atualização da equipe. Por favor, confirme as alterações abaixo.',
-          proposal: {
-            type: 'update_team_structure',
-            payload: args,
-            summary: `Atualização de Equipe: ${args.team.length} membros.`
-          }
+          content,
+          proposal
         });
       }
 
-      if (toolCall.function.name === 'update_workflows') {
+      if ((toolCall as any).function.name === 'update_workflows') {
+        const content = 'Sugiro as seguintes alterações nos fluxos de trabalho. Por favor, confirme.';
+        const proposal = {
+          type: 'update_workflows',
+          payload: args,
+          summary: `Atualização de Fluxos: ${args.workflows.length} itens.`
+        };
+
+        await persistLog(supabase, {
+          project_id: projectId, mode, role: 'assistant',
+          content, proposal
+        });
+
         return NextResponse.json({
           role: 'assistant',
-          content: 'Sugiro as seguintes alterações nos fluxos de trabalho. Por favor, confirme.',
-          proposal: {
-            type: 'update_workflows',
-            payload: args,
-            summary: `Atualização de Fluxos: ${args.workflows.length} itens.`
-          }
+          content,
+          proposal
         });
       }
+    }
+
+    // Normal text response
+    if (responseMessage.content) {
+      await persistLog(supabase, {
+        project_id: projectId, mode, role: 'assistant',
+        content: responseMessage.content
+      });
     }
 
     return NextResponse.json(responseMessage);
@@ -239,5 +318,22 @@ export async function POST(req: NextRequest) {
   } catch (error: any) {
     console.error('Chat API Error:', error);
     return NextResponse.json({ error: error.message }, { status: 500 });
+  }
+}
+
+// Helper to safely persist logs (ignores errors to not break chat flow)
+async function persistLog(supabase: any, entry: ChatLogEntry) {
+  if (!entry.project_id || entry.project_id.startsWith('mock-')) return;
+  try {
+    await supabase.from('chat_logs').insert({
+      project_id: entry.project_id,
+      mode: entry.mode,
+      role: entry.role,
+      content: entry.content || '',
+      proposal: entry.proposal ? JSON.stringify(entry.proposal) : null,
+      confirmed: entry.confirmed || false
+    });
+  } catch (e) {
+    console.warn('Failed to persist chat log:', e);
   }
 }

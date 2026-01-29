@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
-import { Rocket, Sparkles, ArrowRight, BrainCircuit } from 'lucide-react';
+import { Rocket, Sparkles, ArrowRight, BrainCircuit, FolderOpen } from 'lucide-react';
 import { toast } from 'sonner';
 
 export default function IdeationPage() {
@@ -113,6 +113,18 @@ export default function IdeationPage() {
         </p>
       </div>
 
+      <div className="flex justify-center items-center gap-4">
+        <Button
+          size="lg"
+          variant="outline"
+          className="px-8 h-12 text-lg border-2"
+          onClick={() => router.push('/projects-list')}
+        >
+          <FolderOpen className="mr-2 h-5 w-5" /> Acessar Projetos Salvos
+        </Button>
+      </div>
+
+
       {/* Input Section */}
       <Card className="border-2 border-blue-100 shadow-xl bg-white/80 backdrop-blur-sm">
         <CardHeader>
@@ -168,6 +180,6 @@ export default function IdeationPage() {
           </div>
         ))}
       </div>
-    </div>
+    </div >
   );
 }

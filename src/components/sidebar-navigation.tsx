@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useIsClient } from '@/components/no-ssr';
-import { 
+import {
   Home,
   Users,
   Shield,
@@ -54,6 +54,7 @@ export default function SidebarNavigation({ className }: SidebarProps) {
 
   const navigationItems = [
     { title: 'Dashboard', href: '/', icon: Home, badge: null },
+    { title: 'Meus Projetos', href: '/projects-list', icon: FileText, badge: 'Saved' },
     { title: 'Company OS', href: '/company-os', icon: Target, badge: 'NEW' },
     { title: 'Empresas', href: '/empresas', icon: Building, badge: null },
     { title: 'Personas', href: '/personas', icon: Users, badge: 'Central' },
@@ -89,7 +90,7 @@ export default function SidebarNavigation({ className }: SidebarProps) {
 
       {/* Mobile Overlay */}
       {isMobileOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/50 z-40 md:hidden"
           onClick={() => setIsMobileOpen(false)}
         />
@@ -113,7 +114,7 @@ export default function SidebarNavigation({ className }: SidebarProps) {
               <span className="font-bold text-lg text-gray-900">BuildCorp</span>
             </div>
           )}
-          
+
           <Button
             variant="ghost"
             size="sm"
@@ -133,7 +134,7 @@ export default function SidebarNavigation({ className }: SidebarProps) {
           {navigationItems.map((item) => {
             const Icon = item.icon;
             const active = isActive(item.href);
-            
+
             return (
               <Link
                 key={item.href}
@@ -148,12 +149,12 @@ export default function SidebarNavigation({ className }: SidebarProps) {
                 onClick={() => setIsMobileOpen(false)}
               >
                 <Icon className={cn('h-4 w-4 flex-shrink-0', active && 'text-blue-700')} />
-                
+
                 {!isCollapsed && (
                   <>
                     <span className="flex-1">{item.title}</span>
                     {item.badge && (
-                      <Badge 
+                      <Badge
                         variant={active ? "default" : "secondary"}
                         className="text-xs"
                       >

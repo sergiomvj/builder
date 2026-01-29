@@ -1,6 +1,6 @@
-# Sistema de Design - BlogPlugin (Premium Dark Architecture)
+# Sistema de Design - (Premium Dark Architecture)
 
-Este documento contém as definições de design, cores, fontes e padrões de UI utilizados no projeto **BlogPlugin**, estruturados para serem replicados em outros projetos que buscam uma estética "Premium Digital".
+Este documento contém as definições de design, cores, fontes e padrões de UI utilizados no projeto , estruturados para serem replicados em outros projetos que buscam uma estética "Premium Digital".
 
 ## 1. Paleta de Cores (Color Palette)
 
