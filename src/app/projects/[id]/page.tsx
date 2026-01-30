@@ -2,7 +2,7 @@
 'use client';
 
 import { useEffect, useState, useCallback } from 'react';
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -19,8 +19,71 @@ import HRManagerChat from '@/components/dashboard/HRManagerChat';
 import TeamMemberModal from '@/components/dashboard/TeamMemberModal';
 import { marked } from 'marked';
 
+// Helper to detect JSON string
+const isJsonString = (str: string) => {
+  try {
+    const o = JSON.parse(str);
+    return (o && typeof o === "object");
+  } catch (e) { return false; }
+};
+
+const StructuredExecutiveSummary = ({ data }: { data: any }) => {
+  if (!data) return null;
+
+  // Handle new simple content format
+  if (data.content && !data.investment_thesis) {
+    return (
+      <div className="space-y-6">
+        <div className="bg-white p-4 rounded-lg border border-slate-100">
+          <p className="text-slate-700 leading-relaxed whitespace-pre-line leading-relaxed text-justify">
+            {data.content}
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-6">
+      {data.investment_thesis && (
+        <div className="bg-indigo-50/50 p-4 rounded-lg border border-indigo-100">
+          <h4 className="text-sm font-bold text-indigo-900 uppercase tracking-wide mb-2 flex items-center gap-2">
+            <Target className="w-4 h-4" /> Tese de Investimento
+          </h4>
+          <p className="text-slate-700 leading-relaxed">{data.investment_thesis}</p>
+        </div>
+      )}
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {data.solution_overview && (
+          <div>
+            <h4 className="text-sm font-bold text-slate-800 uppercase tracking-wide mb-2">Visão Geral da Solução</h4>
+            <p className="text-sm text-slate-600 leading-relaxed">{data.solution_overview}</p>
+          </div>
+        )}
+        {data.opportunity_statement && (
+          <div>
+            <h4 className="text-sm font-bold text-slate-800 uppercase tracking-wide mb-2">Oportunidade</h4>
+            <p className="text-sm text-slate-600 leading-relaxed">{data.opportunity_statement}</p>
+          </div>
+        )}
+      </div>
+
+      {data.market_positioning && (
+        <div className="border-t border-slate-100 pt-4">
+          <h4 className="text-sm font-bold text-slate-800 uppercase tracking-wide mb-2">Posicionamento de Mercado</h4>
+          <p className="text-sm text-slate-600 leading-relaxed italic border-l-2 border-indigo-300 pl-4">
+            "{data.market_positioning}"
+          </p>
+        </div>
+      )}
+    </div>
+  );
+};
+
 export default function ProjectDashboard() {
   const params = useParams();
+  const router = useRouter();
   const [project, setProject] = useState<Project | null>(null);
   const [team, setTeam] = useState<any[]>([]);
   const [workflows, setWorkflows] = useState<any[]>([]);
@@ -47,24 +110,42 @@ export default function ProjectDashboard() {
 
     if (projectError) {
       console.error('Error fetching project:', projectError);
+
+      // If project doesn't exist (deleted or invalid ID), redirect to projects list
+      if (projectError.code === 'PGRST116' || projectError.message?.includes('0 rows')) {
+        toast.error('Projeto não encontrado. Pode ter sido excluído.');
+        router.push('/projects-list');
+        return;
+      }
+
       setLoading(false);
       return;
     }
 
+
+    const ensureString = (val: any) => {
+      if (!val) return '';
+      if (typeof val === 'string') return val;
+      if (typeof val === 'object') return val.content || val.message || JSON.stringify(val);
+      return String(val);
+    };
+
+    const executionPlan = projectData.metadata?.execution_plan || {};
+
     setProject({
       ...projectData,
-      systems_modules: projectData.metadata?.systems_and_modules || projectData.metadata?.systems_modules,
-      backlog: projectData.metadata?.backlog_preview || projectData.metadata?.backlog,
-      roadmap: projectData.roadmap || projectData.metadata?.roadmap,
+      systems_modules: projectData.metadata?.systems_and_modules || projectData.metadata?.systems_modules || executionPlan.systems_breakdown,
+      backlog: projectData.metadata?.backlog_preview || projectData.metadata?.backlog || executionPlan.backlog_preview,
+      roadmap: projectData.roadmap || projectData.metadata?.roadmap || executionPlan.roadmap,
       swot: projectData.swot || projectData.metadata?.swot,
       marketing_strategy: projectData.marketing_strategy || projectData.metadata?.marketing_strategy,
       lead_generation_strategy: projectData.lead_generation_strategy || projectData.metadata?.lead_generation_strategy,
-      executive_summary: projectData.executive_summary || projectData.metadata?.executive_summary,
+      executive_summary: projectData.executive_summary || projectData.metadata?.executive_summary, // Allow object or string
       business_diagnosis: projectData.metadata?.business_potential_diagnosis || projectData.metadata?.business_diagnosis,
-      key_metrics: projectData.metadata?.key_metrics,
-      risks: projectData.metadata?.risks_and_gaps,
+      key_metrics: projectData.metadata?.key_metrics || projectData.key_metrics, // Try root level too just in case
+      risks: projectData.metadata?.risks_and_gaps || projectData.metadata?.risks,
       pain_points: projectData.pain_points || projectData.metadata?.pain_points,
-      improvements: projectData.metadata?.improvement_suggestions || projectData.metadata?.improvements || projectData.improvements
+      improvements: projectData.metadata?.improvement_suggestions || projectData.metadata?.improvements || projectData.improvements || projectData.metadata?.potential_improvements
     });
 
     // Workflows - Use Metadata (NoSQL approach for MVP)
@@ -200,7 +281,9 @@ export default function ProjectDashboard() {
       const analysisData = {
         empresa_id: project.empresa_id && isUuid(project.empresa_id) ? project.empresa_id : null,
         title: `Análise Estratégica: ${project.name}`,
-        summary: project.executive_summary?.substring(0, 300) + '...',
+        summary: typeof project.executive_summary === 'string'
+          ? project.executive_summary.substring(0, 300) + '...'
+          : JSON.stringify(project.executive_summary || {}).substring(0, 300) + '...',
         analysis_type: 'strategic',
         content: {
           executive_summary: project.executive_summary,
@@ -236,11 +319,12 @@ export default function ProjectDashboard() {
 
   const handleSaveMember = async (memberData: any) => {
     try {
+      const currentProjectId = params.id as string;
       // Find or Create Empresa
       const { data: empresa } = await supabase
         .from('empresas')
         .select('id')
-        .eq('project_id', projectId)
+        .eq('project_id', currentProjectId)
         .single();
 
       let empresaId = empresa?.id;
@@ -248,7 +332,7 @@ export default function ProjectDashboard() {
       if (!empresaId) {
         const { data: newEmpresa, error: createError } = await supabase
           .from('empresas')
-          .insert({ project_id: projectId, nome: project.name })
+          .insert({ project_id: currentProjectId, nome: project?.name || 'Nova Empresa' })
           .select()
           .single();
         if (createError) throw createError;
@@ -374,6 +458,23 @@ export default function ProjectDashboard() {
     return <div className="container mx-auto py-8">Project not found</div>;
   }
 
+  // Helper to unify access to analysis data (Columns vs Metadata)
+  const analysisData: any = {
+    ...project,
+    ...project.metadata, // Metadata takes precedence for prompt-generated fields that might not be columns
+    marketing_strategy: project.marketing_strategy || project.metadata?.marketing_strategy,
+    lead_generation_strategy: project.lead_generation_strategy || project.metadata?.lead_generation_strategy,
+    business_diagnosis: project.business_diagnosis || project.metadata?.business_diagnosis,
+    swot: project.swot || project.metadata?.swot,
+    key_metrics: project.key_metrics || project.metadata?.key_metrics,
+    risks: project.risks || project.metadata?.risks,
+    // New fields specifically from metadata
+    why_now: project.metadata?.why_now,
+    why_not_100: project.metadata?.why_not_100,
+    potential_improvements: project.metadata?.potential_improvements,
+    executive_summary: project.executive_summary || project.metadata?.executive_summary
+  };
+
   return (
     <div className="container mx-auto py-8 px-4 space-y-8">
       {/* Header */}
@@ -423,52 +524,67 @@ export default function ProjectDashboard() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="pt-6">
-                <div
-                  className="text-slate-700 leading-relaxed prose prose-slate max-w-none"
-                  dangerouslySetInnerHTML={{ __html: marked.parse(project.executive_summary || '') }}
-                />
+                {typeof project.executive_summary === 'string' ? (
+                  isJsonString(project.executive_summary) ? (
+                    <StructuredExecutiveSummary data={JSON.parse(project.executive_summary)} />
+                  ) : (
+                    <div
+                      className="text-slate-700 leading-relaxed prose prose-slate max-w-none"
+                      dangerouslySetInnerHTML={{ __html: marked.parse(project.executive_summary || '') }}
+                    />
+                  )
+                ) : (
+                  <StructuredExecutiveSummary data={analysisData.executive_summary} />
+                )}
 
-                {project.business_diagnosis && (
+                {(analysisData.business_diagnosis || analysisData.viability_score) && (
                   <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 border-t pt-4">
                     <div className="text-center">
                       <p className="text-xs uppercase text-slate-500 font-bold">Viability Score</p>
-                      <div className={`text-3xl font-bold mt-1 inline-block px-3 py-1 rounded-lg ${getViabilityColor(Number(project.business_diagnosis.viability_score))}`}>
-                        {project.business_diagnosis.viability_score}/100
+                      {/* Check legacy path (business_diagnosis.viability_score) OR new path (viability_score.total) */}
+                      <div className={`text-3xl font-bold mt-1 inline-block px-3 py-1 rounded-lg ${getViabilityColor(Number(analysisData.viability_score?.total || analysisData.business_diagnosis?.viability_score || 0))}`}>
+                        {analysisData.viability_score?.total || analysisData.business_diagnosis?.viability_score || 0}/100
                       </div>
-                      <p className="text-xs font-semibold mt-1 text-slate-600">{getViabilityLabel(Number(project.business_diagnosis.viability_score))}</p>
+                      <p className="text-xs font-semibold mt-1 text-slate-600">{getViabilityLabel(Number(analysisData.viability_score?.total || analysisData.business_diagnosis?.viability_score || 0))}</p>
                     </div>
                     <div className="col-span-2 space-y-3">
                       <div>
                         <p className="text-xs uppercase text-slate-500 font-bold mb-1">Diagnosis</p>
-                        <p className="text-sm text-slate-600">{project.business_diagnosis.viability_analysis}</p>
-                        <p className="text-xs text-slate-500 mt-1"><span className="font-semibold">Why Now:</span> {project.business_diagnosis.compelling_reason}</p>
+                        <p className="text-sm text-slate-600">
+                          {analysisData.business_diagnosis?.viability_analysis || (typeof analysisData.business_diagnosis?.content === 'string' ? analysisData.business_diagnosis.content : analysisData.business_diagnosis?.content?.content) || analysisData.business_diagnosis?.content}
+                        </p>
+                        <p className="text-xs text-slate-500 mt-1">
+                          <span className="font-semibold">Why Now:</span>{' '}
+                          {analysisData.why_now?.content || (typeof analysisData.why_now === 'string' ? analysisData.why_not : '') || 'N/A'}
+                        </p>
                       </div>
 
-                      {/* Score Gap Analysis */}
-                      {project.business_diagnosis.score_gap_analysis && (
+                      {/* Why Not 100? */}
+                      {analysisData.why_not_100 && (
                         <div className="bg-slate-50 border border-slate-200 rounded-md p-3">
                           <h5 className="text-xs font-bold text-slate-700 uppercase mb-1">
-                            Why {project.business_diagnosis.viability_score} and not 100?
+                            Why {analysisData.viability_score?.total || analysisData.business_diagnosis?.viability_score} and not 100?
                           </h5>
-                          <p className="text-xs text-slate-600 mb-0">
-                            {project.business_diagnosis.score_gap_analysis}
+                          <p className="text-xs text-slate-600 mb-2">
+                            {analysisData.why_not_100.summary}
                           </p>
+                          {analysisData.why_not_100.critical_gaps?.map((gap: any, i: number) => (
+                            <div key={i} className="text-xs text-red-600 mb-1 flex gap-1">
+                              <span>⚠️</span> <span>{gap.gap} ({gap.impact_on_score})</span>
+                            </div>
+                          ))}
                         </div>
                       )}
 
-                      {(Number(project.business_diagnosis.viability_score) < 99 || project.improvements?.length > 0) && (
+                      {/* Potential Improvements */}
+                      {analysisData.potential_improvements && (
                         <div className="bg-amber-50 border border-amber-200 rounded-md p-3">
                           <h5 className="flex items-center gap-2 text-sm font-bold text-amber-800 mb-2">
                             <Lightbulb className="w-4 h-4 text-amber-600" /> Potential Improvements
                           </h5>
-                          <ul className="space-y-1">
-                            {project.improvements?.map((imp: string, i: number) => (
-                              <li key={i} className="text-xs text-amber-900 flex items-start gap-2">
-                                <span className="mt-1 block w-1 h-1 rounded-full bg-amber-500"></span>
-                                {imp}
-                              </li>
-                            ))}
-                          </ul>
+                          <p className="text-xs text-amber-900 whitespace-pre-line">
+                            {analysisData.potential_improvements.content || (typeof analysisData.potential_improvements === 'string' ? analysisData.potential_improvements : JSON.stringify(analysisData.potential_improvements))}
+                          </p>
                         </div>
                       )}
                     </div>
@@ -480,7 +596,7 @@ export default function ProjectDashboard() {
 
           {/* Marketing & Lead Gen - Immediately after Viability/Diagnosis */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {project.marketing_strategy && (
+            {analysisData.marketing_strategy && (
               <Card className="border-indigo-100">
                 <CardHeader className="bg-indigo-50/50">
                   <CardTitle className="flex items-center gap-2 text-base text-indigo-900">
@@ -488,41 +604,60 @@ export default function ProjectDashboard() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-4 space-y-4">
-                  {project.marketing_strategy.value_proposition && (
+                  {analysisData.marketing_strategy.value_proposition && (
                     <div>
                       <h4 className="text-xs font-bold text-slate-500 uppercase mb-2">Value Proposition</h4>
-                      <p className="text-sm text-slate-700 bg-slate-50 p-3 rounded-md border border-slate-100 italic">"{project.marketing_strategy.value_proposition}"</p>
+                      <p className="text-sm text-slate-700 bg-slate-50 p-3 rounded-md border border-slate-100 italic">
+                        "{typeof analysisData.marketing_strategy.value_proposition === 'string' ? analysisData.marketing_strategy.value_proposition : analysisData.marketing_strategy.value_proposition?.content}"
+                      </p>
                     </div>
                   )}
 
-                  {project.marketing_strategy.target_audience && (
+                  {analysisData.marketing_strategy.target_audience && (
                     <div>
                       <h4 className="text-xs font-bold text-slate-500 uppercase mb-2">Target Audience</h4>
-                      <p className="text-sm text-slate-700">{project.marketing_strategy.target_audience}</p>
+                      <p className="text-sm text-slate-700">
+                        {typeof analysisData.marketing_strategy.target_audience === 'string'
+                          ? analysisData.marketing_strategy.target_audience
+                          : (() => {
+                            const ta = analysisData.marketing_strategy.target_audience;
+                            return (
+                              <span>
+                                <span className="font-semibold">Primary:</span> {ta?.primary}<br />
+                                <span className="font-semibold">Secondary:</span> {ta?.secondary}
+                              </span>
+                            );
+                          })()
+                        }
+                      </p>
                     </div>
                   )}
 
-                  {project.marketing_strategy.approach_strategy && (
+                  {analysisData.marketing_strategy.approach_strategy && (
                     <div>
                       <h4 className="text-xs font-bold text-slate-500 uppercase mb-2">Approach Strategy</h4>
-                      <p className="text-sm text-slate-700">{project.marketing_strategy.approach_strategy}</p>
+                      <p className="text-sm text-slate-700">
+                        {typeof analysisData.marketing_strategy.approach_strategy === 'string' ? analysisData.marketing_strategy.approach_strategy : analysisData.marketing_strategy.approach_strategy?.content}
+                      </p>
                     </div>
                   )}
 
                   <div>
                     <h4 className="text-xs font-bold text-slate-500 uppercase mb-2">Channels</h4>
                     <div className="flex flex-wrap gap-2">
-                      {project.marketing_strategy.channels?.map((c, i) => (
-                        <Badge key={i} variant="secondary" className="bg-indigo-100 text-indigo-700 hover:bg-indigo-200">{c}</Badge>
+                      {analysisData.marketing_strategy.channels?.map((c: any, i: number) => (
+                        <Badge key={i} variant="secondary" className="bg-indigo-100 text-indigo-700 hover:bg-indigo-200">
+                          {typeof c === 'string' ? c : c.name}
+                        </Badge>
                       ))}
                     </div>
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-slate-500 uppercase mb-2">Tactics</h4>
                     <ul className="space-y-1">
-                      {project.marketing_strategy.tactics?.map((t, i) => (
+                      {analysisData.marketing_strategy.tactics?.map((t: any, i: number) => (
                         <li key={i} className="text-sm text-slate-600 flex items-start gap-2">
-                          <span className="text-indigo-400 mt-1">•</span> {t}
+                          <span className="text-indigo-400 mt-1">•</span> {typeof t === 'string' ? t : `${t.tactic}: ${t.description}`}
                         </li>
                       ))}
                     </ul>
@@ -531,7 +666,7 @@ export default function ProjectDashboard() {
               </Card>
             )}
 
-            {project.lead_generation_strategy && (
+            {analysisData.lead_generation_strategy && (
               <Card className="border-emerald-100">
                 <CardHeader className="bg-emerald-50/50">
                   <CardTitle className="flex items-center gap-2 text-base text-emerald-900">
@@ -542,9 +677,9 @@ export default function ProjectDashboard() {
                   <div>
                     <h4 className="text-xs font-bold text-slate-500 uppercase mb-2">Lead Magnets</h4>
                     <ul className="space-y-1">
-                      {project.lead_generation_strategy.lead_magnets?.map((m, i) => (
+                      {analysisData.lead_generation_strategy.lead_magnets?.map((m: any, i: number) => (
                         <li key={i} className="text-sm text-slate-600 flex items-start gap-2">
-                          <span className="text-emerald-400 mt-1">🎁</span> {m}
+                          <span className="text-emerald-400 mt-1">🎁</span> {typeof m === 'string' ? m : `${m.name} - ${m.description}`}
                         </li>
                       ))}
                     </ul>
@@ -552,9 +687,9 @@ export default function ProjectDashboard() {
                   <div>
                     <h4 className="text-xs font-bold text-slate-500 uppercase mb-2">Conversion Tactics</h4>
                     <ul className="space-y-1">
-                      {project.lead_generation_strategy.conversion_tactics?.map((t, i) => (
+                      {analysisData.lead_generation_strategy.conversion_tactics?.map((t: any, i: number) => (
                         <li key={i} className="text-sm text-slate-600 flex items-start gap-2">
-                          <span className="text-emerald-400 mt-1">⚡</span> {t}
+                          <span className="text-emerald-400 mt-1">⚡</span> {typeof t === 'string' ? t : `${t.tactic}: ${t.description}`}
                         </li>
                       ))}
                     </ul>
@@ -574,12 +709,19 @@ export default function ProjectDashboard() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
-                  {project.key_metrics?.map((metric: string, i: number) => (
-                    <li key={i} className="flex gap-2 text-sm text-slate-600">
-                      <Target className="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0" />
-                      {metric}
+                  {Array.isArray(analysisData.key_metrics) ? (
+                    analysisData.key_metrics.map((metric: string, i: number) => (
+                      <li key={i} className="flex gap-2 text-sm text-slate-600">
+                        <Target className="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0" />
+                        {metric}
+                      </li>
+                    ))
+                  ) : (
+                    <li className="text-sm text-slate-600 whitespace-pre-line">
+                      {/* @ts-ignore */}
+                      {analysisData.key_metrics?.content || (typeof analysisData.key_metrics === 'string' ? analysisData.key_metrics : <span className="text-slate-400">No metrics defined yet.</span>)}
                     </li>
-                  )) || <p className="text-sm text-slate-400">No metrics defined yet.</p>}
+                  )}
                 </ul>
               </CardContent>
             </Card>
@@ -591,43 +733,105 @@ export default function ProjectDashboard() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
-                  {project.risks?.map((risk: string, i: number) => (
-                    <li key={i} className="flex gap-2 text-sm text-slate-600">
-                      <Shield className="w-4 h-4 text-red-400 mt-0.5 flex-shrink-0" />
-                      {risk}
+                  {Array.isArray(analysisData.risks) ? (
+                    analysisData.risks.map((risk: string, i: number) => (
+                      <li key={i} className="flex gap-2 text-sm text-slate-600">
+                        <Shield className="w-4 h-4 text-red-400 mt-0.5 flex-shrink-0" />
+                        {risk}
+                      </li>
+                    ))
+                  ) : (
+                    <li className="text-sm text-slate-600 whitespace-pre-line">
+                      {/* @ts-ignore */}
+                      {analysisData.risks?.content || (typeof analysisData.risks === 'string' ? analysisData.risks : <span className="text-slate-400">No risks identified yet.</span>)}
                     </li>
-                  )) || <p className="text-sm text-slate-400">No risks identified yet.</p>}
+                  )}
                 </ul>
               </CardContent>
             </Card>
           </div>
 
           {/* SWOT */}
-          {project.swot && (
+          {analysisData.swot && (
             <Card>
               <CardHeader><CardTitle>SWOT Analysis</CardTitle></CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-green-50 p-4 rounded-lg">
                     <h4 className="font-bold text-green-800 mb-2">Strengths</h4>
-                    <ul className="list-disc list-inside text-sm text-green-900">{project.swot.strengths?.map((s, i) => <li key={i}>{s}</li>)}</ul>
+                    <ul className="list-disc list-inside text-sm text-green-900">{analysisData.swot.strengths?.map((s: string, i: number) => <li key={i}>{s}</li>)}</ul>
                   </div>
                   <div className="bg-red-50 p-4 rounded-lg">
                     <h4 className="font-bold text-red-800 mb-2">Weaknesses</h4>
-                    <ul className="list-disc list-inside text-sm text-red-900">{project.swot.weaknesses?.map((s, i) => <li key={i}>{s}</li>)}</ul>
+                    <ul className="list-disc list-inside text-sm text-red-900">{analysisData.swot.weaknesses?.map((s: string, i: number) => <li key={i}>{s}</li>)}</ul>
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg">
                     <h4 className="font-bold text-blue-800 mb-2">Opportunities</h4>
-                    <ul className="list-disc list-inside text-sm text-blue-900">{project.swot.opportunities?.map((s, i) => <li key={i}>{s}</li>)}</ul>
+                    <ul className="list-disc list-inside text-sm text-blue-900">{analysisData.swot.opportunities?.map((s: string, i: number) => <li key={i}>{s}</li>)}</ul>
                   </div>
                   <div className="bg-orange-50 p-4 rounded-lg">
                     <h4 className="font-bold text-orange-800 mb-2">Threats</h4>
-                    <ul className="list-disc list-inside text-sm text-orange-900">{project.swot.threats?.map((s, i) => <li key={i}>{s}</li>)}</ul>
+                    <ul className="list-disc list-inside text-sm text-orange-900">{analysisData.swot.threats?.map((s: string, i: number) => <li key={i}>{s}</li>)}</ul>
                   </div>
                 </div>
               </CardContent>
             </Card>
           )}
+
+          {/* Genesis / Description - Moved inside Strategy for cohesive report */}
+          <div className="mt-8 pt-8 border-t border-slate-200 print:break-before-page">
+            <div className="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm border-l-4 border-l-indigo-500 relative overflow-hidden group hover:shadow-md transition-shadow duration-300">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-indigo-50 p-3 rounded-2xl">
+                  <Quote className="w-6 h-6 text-indigo-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-slate-800">Gênese do Projeto</h3>
+                  <p className="text-xs text-slate-400 font-medium uppercase tracking-[0.2em]">O Conceito Original</p>
+                </div>
+                <div className="flex gap-2 print:hidden z-10 relative">
+                  {!isEditingGenesis ? (
+                    <>
+                      <Button variant="ghost" size="sm" onClick={() => { setGenesisContent(project.description || ''); setIsEditingGenesis(true); }} className="gap-2 text-slate-500 hover:text-indigo-600">
+                        <Pencil className="w-4 h-4" /> Editar
+                      </Button>
+                      <Button variant="outline" size="sm" onClick={handleReevaluate} disabled={isReevaluating} className="gap-2 border-indigo-200 text-indigo-700 hover:bg-indigo-50">
+                        {isReevaluating ? <RefreshCw className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
+                        {isReevaluating ? 'Reavaliando...' : 'Reavaliar'}
+                      </Button>
+                    </>
+                  ) : (
+                    <>
+                      <Button variant="ghost" size="sm" onClick={() => setIsEditingGenesis(false)} className="text-slate-500">
+                        Cancelar
+                      </Button>
+                      <Button variant="default" size="sm" onClick={handleSaveGenesis} className="bg-indigo-600 hover:bg-indigo-700">
+                        Salvar
+                      </Button>
+                    </>
+                  )}
+                </div>
+              </div>
+
+              {isEditingGenesis ? (
+                <textarea
+                  className="w-full text-slate-600 leading-relaxed border border-indigo-200 rounded-md p-4 min-h-[150px] focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                  value={genesisContent}
+                  onChange={(e) => setGenesisContent(e.target.value)}
+                />
+              ) : (
+                <div
+                  className="text-slate-600 leading-relaxed markdown-content italic font-light text-xl pl-4 border-l-2 border-slate-100 prose prose-slate max-w-none"
+                  dangerouslySetInnerHTML={{ __html: marked.parse(project.description || '') }}
+                />
+              )}
+
+              {/* Subtle decor */}
+              <div className="absolute top-0 right-0 p-4 opacity-[0.03] pointer-events-none group-hover:opacity-[0.06] transition-opacity">
+                <Lightbulb className="w-32 h-32" />
+              </div>
+            </div>
+          </div>
         </TabsContent>
 
         <TabsContent value="execution" className="mt-6">
@@ -723,60 +927,7 @@ export default function ProjectDashboard() {
         </TabsContent>
       </Tabs>
 
-      {/* Elegant Original Concept Box - Moved to the bottom */}
-      <div className="mt-12 pt-8 border-t border-slate-200">
-        <div className="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm border-l-4 border-l-indigo-500 max-w-4xl mx-auto relative overflow-hidden group hover:shadow-md transition-shadow duration-300">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="bg-indigo-50 p-3 rounded-2xl">
-              <Quote className="w-6 h-6 text-indigo-600" />
-            </div>
-            <div className="flex-1">
-              <h3 className="text-lg font-bold text-slate-800">Gênese do Projeto</h3>
-              <p className="text-xs text-slate-400 font-medium uppercase tracking-[0.2em]">O Conceito Original do Idealizador</p>
-            </div>
-            <div className="flex gap-2 print:hidden z-10 relative">
-              {!isEditingGenesis ? (
-                <>
-                  <Button variant="ghost" size="sm" onClick={() => { setGenesisContent(project.description || ''); setIsEditingGenesis(true); }} className="gap-2 text-slate-500 hover:text-indigo-600">
-                    <Pencil className="w-4 h-4" /> Editar
-                  </Button>
-                  <Button variant="outline" size="sm" onClick={handleReevaluate} disabled={isReevaluating} className="gap-2 border-indigo-200 text-indigo-700 hover:bg-indigo-50">
-                    {isReevaluating ? <RefreshCw className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
-                    {isReevaluating ? 'Reavaliando...' : 'Reavaliar'}
-                  </Button>
-                </>
-              ) : (
-                <>
-                  <Button variant="ghost" size="sm" onClick={() => setIsEditingGenesis(false)} className="text-slate-500">
-                    Cancelar
-                  </Button>
-                  <Button variant="default" size="sm" onClick={handleSaveGenesis} className="bg-indigo-600 hover:bg-indigo-700">
-                    Salvar
-                  </Button>
-                </>
-              )}
-            </div>
-          </div>
 
-          {isEditingGenesis ? (
-            <textarea
-              className="w-full text-slate-600 leading-relaxed border border-indigo-200 rounded-md p-4 min-h-[150px] focus:ring-2 focus:ring-indigo-500 focus:outline-none"
-              value={genesisContent}
-              onChange={(e) => setGenesisContent(e.target.value)}
-            />
-          ) : (
-            <div
-              className="text-slate-600 leading-relaxed markdown-content italic font-light text-xl pl-4 border-l-2 border-slate-100 prose prose-slate max-w-none"
-              dangerouslySetInnerHTML={{ __html: marked.parse(project.description || '') }}
-            />
-          )}
-
-          {/* Subtle decor */}
-          <div className="absolute top-0 right-0 p-4 opacity-[0.03] pointer-events-none group-hover:opacity-[0.06] transition-opacity">
-            <Lightbulb className="w-32 h-32" />
-          </div>
-        </div>
-      </div>
 
       <TeamMemberModal
         isOpen={isModalOpen}

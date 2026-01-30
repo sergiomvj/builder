@@ -40,13 +40,13 @@ export default function RootLayout({
         <Providers>
           <div className="flex min-h-screen flex-col">
             <header className="border-b px-6 py-4 flex items-center justify-between bg-white z-10">
-               <div className="flex items-center gap-4">
-                 <Link href="/" className="text-xl font-bold tracking-tight hover:opacity-80">Builder MVP</Link>
-                 <MockModeIndicator />
-               </div>
-               <Link href="/settings" className="p-2 text-slate-500 hover:text-blue-600 hover:bg-slate-100 rounded-full transition-colors">
-                 <Settings className="w-5 h-5" />
-               </Link>
+              <div className="flex items-center gap-4">
+                <Link href="/" className="text-xl font-bold tracking-tight hover:opacity-80">Builder MVP</Link>
+                <MockModeIndicator />
+              </div>
+              <Link href="/config" className="p-2 text-slate-500 hover:text-blue-600 hover:bg-slate-100 rounded-full transition-colors">
+                <Settings className="w-5 h-5" />
+              </Link>
             </header>
             <main className="flex-1 overflow-auto bg-slate-50">
               {children}

@@ -41,6 +41,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { config } from 'dotenv';
+import { loadPrompt } from './lib/prompt-loader.js';
 
 // Configurar encoding do console
 setupConsoleEncoding();
@@ -49,7 +50,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Carregar .env.local
-config({ path: path.join(__dirname, '..', '.env.local') });
+config();
+// dotenv.config();
+// config({ path: path.join(__dirname, '..', '.env.local') });
 
 // ============================================================================
 // CONFIGURAÇÃO
@@ -63,7 +66,10 @@ if (!SUPABASE_KEY) {
   process.exit(1);
 }
 
-const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+const supabase = createClient(
+  SUPABASE_URL,
+  process.env.SUPABASE_SERVICE_ROLE_KEY || SUPABASE_KEY
+);
 
 // Parse CLI arguments
 const args = process.argv.slice(2);
@@ -349,13 +355,74 @@ async function analyzeTaskWithLLM(task, persona, empresa, allTasks) {
     'CRM', 'ERP', 'RH', 'Financeiro', 'Projetos', 'Atendimento', 'Marketing', 'Vendas', 'BI', 'Documentos', 'N8N', 'Supabase', 'Google Sheets', 'Slack', 'Gmail', 'Notion', 'Trello', 'Asana', 'Calendly', 'Twilio', 'Stripe'
   ];
 
-  const prompt = `SUBSISTEMAS DISPONÍVEIS PARA AUTOMAÇÃO: ${subsistemasDisponiveis.join(', ')}\n\n` + ANALYZE_TASK_PROMPT(task, persona, empresa, allTasks);
+  // =================================================================================
+  // LÓGICA DE CARREGAMENTO DE PROMPT COM FALLBACK E INJEÇÃO DE CONTEXTO
+  // =================================================================================
+
+  // Tentar carregar prompt customizado do banco (workflow_prompt)
+  const customBasePrompt = await loadPrompt(supabase, 'workflow_prompt', null);
+
+  let prompt;
+
+  if (customBasePrompt) {
+    // SE EXISTIR PROMPT NO BANCO, USA ELE COMO BASE MAS INJETA O CONTEXTO ESPECÍFICO
+    prompt = `
+${customBasePrompt}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ INSTRUÇÃO DE SOBRESCRITA DE SISTEMA ⚠️
+IGNORE qualquer instrução anterior de gerar listas de workflows ou estruturas JSON massivas.
+Sua missão AGORA é analisar UMA ÚNICA TAREFA para identificar oportunidades de automação.
+
+Mantenha a IDENTIDADE e CRITÉRIOS DE QUALIDADE definidos no início do prompt.
+
+DADOS DA ANÁLISE:
+
+SUBSISTEMAS DISPONÍVEIS: ${subsistemasDisponiveis.join(', ')}
+
+TAREFA ALVO:
+- Título: ${task.title}
+- Descrição: ${task.description}
+- Tipo: ${task.task_type}
+- Prioridade: ${task.priority}
+
+CONTEXTO DA PERSONA:
+- Nome: ${persona.nome_completo}
+- Cargo: ${persona.cargo}
+
+EMPRESA:
+- Nome: ${empresa.nome}
+- Setor: ${empresa.setor_atuacao}
+
+OBRIGATÓRIO: Retorne APENAS um objeto JSON com a análise desta tarefa específica, seguindo EXATAMENTE esta estrutura (compatível com o sistema):
+
+\`\`\`json
+{
+  "automation_score": (0-100),
+  "automation_feasibility": "high|medium|low",
+  "workflow_type": "webhook|cron|event|manual",
+  "required_integrations": ["tool1", "tool2"],
+  "workflow_steps": [
+    { "step": 1, "action": "Trigger", "type": "webhook", "config": {}, "description": "..." }
+  ],
+  "dependencies": [],
+  "estimated_time_saved_per_execution": "XX minutes",
+  "roi_potential": "high|medium|low",
+  "complexity": "simple|medium|complex",
+  "reasoning": "Justificativa..."
+}
+\`\`\`
+`;
+  } else {
+    // FALLBACK PADRÃO (HARDCODED)
+    prompt = `SUBSISTEMAS DISPONÍVEIS PARA AUTOMAÇÃO: ${subsistemasDisponiveis.join(', ')}\n\n` + ANALYZE_TASK_PROMPT(task, persona, empresa, allTasks);
+  }
 
   console.log(`   🤔 Analisando tarefa "${task.title}"...`);
 
   try {
     console.log(`   📤 Chamando LLM com fallback...`);
-    
+
     // Usar sistema de fallback (prioriza FREE models)
     const analysis = await generateJSONWithFallback(prompt, {
       temperature: 0.3,
@@ -378,11 +445,11 @@ async function analyzeTaskWithLLM(task, persona, empresa, allTasks) {
 
     return {
       ...analysis,
-      llm_response_raw: { 
-        system: result.model.includes('openai') ? 'openai' : 'openrouter', 
-        model: result.model,
-        tokens: result.tokens,
-        duration_ms: result.duration
+      llm_response_raw: {
+        system: 'llm-service',
+        model: 'fallback-model',
+        tokens: 0,
+        duration_ms: 0
       },
       llm_prompt_used: prompt
     };
@@ -399,7 +466,7 @@ async function analyzeTaskWithLLM(task, persona, empresa, allTasks) {
  */
 async function saveAnalysis(empresaId, personaId, task, analysis) {
   console.log(`      💾 [SAVE] Iniciando salvamento...`);
-  
+
   // Converter estimated_time_saved para formato Postgres INTERVAL
   let timeInterval = null;
   if (analysis.estimated_time_saved_per_execution) {
@@ -412,7 +479,7 @@ async function saveAnalysis(empresaId, personaId, task, analysis) {
   }
 
   console.log(`      💾 [SAVE] Preparando record para inserção...`);
-  
+
   const record = {
     empresa_id: empresaId,
     persona_id: personaId,
@@ -522,7 +589,7 @@ Retorne JSON válido:
 
     const totalSteps = procedimentoData.procedimento_execucao.length;
     const totalTime = procedimentoData.procedimento_execucao.reduce((sum, step) => sum + (step.tempo_estimado_min || 0), 0);
-    
+
     console.log(`      ✅ Procedimento salvo: ${totalSteps} steps (${totalTime} min)`);
 
   } catch (error) {
@@ -612,7 +679,7 @@ async function main() {
       taskIndex++;
       console.log(`\n   📝 [${taskIndex}/${tasks.length}] Processando: "${task.title}"`);
       console.log(`   🔑 Task ID: ${task.id} | Frequency: ${task.frequency}`);
-      
+
       console.log(`   ⏱️  [1/4] Preparando análise LLM...`);
       const analysis = await analyzeTaskWithLLM(task, persona, empresa, tasks);
 
@@ -638,11 +705,11 @@ async function main() {
 
       if (saved) {
         console.log(`   ⏱️  [4/5] Salvo com sucesso!`);
-        
+
         // NOVO: Gerar procedimentos detalhados
         console.log(`   ⏱️  [5/5] Gerando procedimento de execução...`);
         await generateProcedimento(task, analysis, persona, empresa);
-        
+
         report.analyses.push({
           persona_nome: persona.nome_completo,
           persona_cargo: persona.cargo,

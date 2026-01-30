@@ -3,130 +3,133 @@ export const dynamic = 'force-dynamic';
 
 import { llmService } from '@/lib/llm-service';
 import { getSupabase } from '@/lib/supabase';
+import * as fs from 'fs';
+import * as path from 'path';
 
-console.log('Analyze Idea Route Module Loaded');
+// DEBUG LOGGING
+const logPath = path.join(process.cwd(), 'api_debug.log');
+const debugLog = (msg: string, data?: any) => {
+  const timestamp = new Date().toISOString();
+  let dataStr = '';
+  if (data instanceof Error) {
+    dataStr = `ERROR: ${data.message}\nSTACK: ${data.stack}`;
+  } else if (data) {
+    dataStr = JSON.stringify(data, null, 2);
+  }
+  const logMsg = `${timestamp}: ${msg} ${dataStr}\n`;
+  try {
+    fs.appendFileSync(logPath, logMsg);
+  } catch (e) {
+    console.error('Failed to write to log file', e);
+  }
+};
 
 export async function POST(req: NextRequest) {
+  debugLog('--- REQUEST RECEIVED ---');
   try {
     const supabase = getSupabase();
     const body = await req.json();
     const { idea, systemPrompt } = body;
+    debugLog('Body parsed', { ideaLength: idea?.length, hasPrompt: !!systemPrompt });
 
     if (!idea || typeof idea !== 'string') {
-      return NextResponse.json(
-        { error: 'Idea description is required' },
-        { status: 400 }
-      );
+      debugLog('Invalid input');
+      return NextResponse.json({ error: 'Idea description is required' }, { status: 400 });
     }
 
-    // 1. Analyze the idea using LLM (prioritizing OpenRouter)
-    console.log('Analyzing idea via LLM...');
+    // 1. Analyze
+    debugLog('Calling LLM Service...');
     const analysis = await llmService.analyzeIdea(idea, { systemPrompt });
-    console.log('Analysis complete:', analysis.project_name);
+    debugLog('LLM Analysis Complete', { projectName: analysis.project_name });
 
-    // 2. Create the Idea record
+    // 2. Create Idea
     let ideaId = null;
     let projectId = null;
     let dbError = null;
 
-    // Debugging Supabase Key usage (safe log, don't log full key)
-    const isServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY?.startsWith('eyJ');
-    console.log('Using Service Role Key:', isServiceKey);
+    // Mapping setup
+    const meta = analysis.project_metadata || {};
+    const strategy = analysis.strategic_foundation || {};
+    const product = analysis.product_strategy || {};
+    const safeTitle = meta.project_name || analysis.project_name || 'Novo Projeto';
 
+    debugLog('Ready to insert Idea', { safeTitle });
+
+    // Ensure consistency
+    if (!analysis.project_metadata) analysis.project_metadata = {};
+    analysis.project_metadata.project_name = safeTitle;
+
+    // Idea Insert
     const { data: ideaRecord, error: ideaError } = await supabase
       .from('ideas')
       .insert({
-        title: analysis.project_name,
+        title: safeTitle,
         description: idea,
-        status: 'approved', // Auto-approve for MVP
+        status: 'approved',
         analysis_result: analysis
       })
       .select()
       .single();
 
     if (ideaError) {
-      console.error('Error saving idea (DB):', ideaError);
+      debugLog('Idea Insert Failed', ideaError);
+      throw new Error(`Idea Insert Failed: ${ideaError.message}`);
+    }
 
-      const isRlsError = ideaError.code === '42501'; // permission denied for table
-      const isAuthError = ideaError.message?.includes('Invalid API key');
+    debugLog('Idea Created', { id: ideaRecord.id });
+    ideaId = ideaRecord.id;
 
-      let errorMessage = `Failed to save idea to database: ${ideaError.message}`;
-      if (isAuthError) {
-        errorMessage = 'Erro de Autenticação Supabase: A chave fornecida no .env não corresponde ao URL do projeto ou é inválida.';
-      } else if (isRlsError && !isServiceKey) {
-        errorMessage = 'Database permission denied (RLS). SUPABASE_SERVICE_ROLE_KEY válida é necessária ou desabilite o RLS nas tabelas ideas/projects.';
-      }
+    // 3. Create Project
+    try {
+      const payload = {
+        idea_id: ideaRecord.id,
+        name: safeTitle,
+        description: meta.tagline || ideaRecord.description,
+        mission: strategy.mission || '',
+        vision: strategy.vision || '',
+        values: strategy.core_values?.map((v: any) => v.value || v) || [],
+        objectives: [],
+        target_audience: 'TBD',
+        revenue_streams: [],
+        status: 'planning',
+        metadata: analysis,
+        executive_summary: analysis.executive_summary
+      };
 
-      return NextResponse.json(
-        {
-          error: errorMessage,
-          details: ideaError.message,
-          code: ideaError.code,
-          hint: 'Verifique se a Service Role Key no seu .env corresponde ao projeto atual no dashboard do Supabase.',
-          usingServiceKey: isServiceKey
-        },
-        { status: 500 }
-      );
-    } else {
-      ideaId = ideaRecord.id;
+      debugLog('Inserting Project', payload);
 
-      // 3. Create the Project record (only if idea saved)
       const { data: projectRecord, error: projectError } = await supabase
         .from('projects')
-        .insert({
-          idea_id: ideaRecord.id,
-          name: analysis.project_name,
-          description: ideaRecord.description,
-          mission: analysis.mission,
-          vision: analysis.vision,
-          values: analysis.values,
-          objectives: analysis.objectives,
-          target_audience: analysis.target_audience,
-          revenue_streams: analysis.revenue_streams,
-          status: 'planning',
-          metadata: {
-            core_functions: analysis.core_functions,
-            suggested_departments: analysis.suggested_departments,
-            // V3 Expanded Data
-            swot: analysis.swot,
-            roadmap: analysis.roadmap,
-            backlog_preview: analysis.backlog_preview,
-            business_potential_diagnosis: analysis.business_potential_diagnosis,
-            marketing_strategy: analysis.marketing_strategy,
-            lead_generation_strategy: analysis.lead_generation_strategy,
-            systems_and_modules: analysis.systems_and_modules,
-            executive_summary: analysis.executive_summary,
-            key_metrics: analysis.key_metrics,
-            risks_and_gaps: analysis.risks_and_gaps,
-            improvement_suggestions: analysis.improvement_suggestions
-          }
-        })
+        .insert(payload)
         .select()
         .single();
 
       if (projectError) {
-        console.error('Error creating project:', projectError);
+        debugLog('Project Insert Failed', projectError);
         dbError = projectError.message;
-
-        return NextResponse.json(
-          { error: 'Failed to save project to database', details: dbError },
-          { status: 500 }
-        );
       } else {
+        debugLog('Project Created', { id: projectRecord.id });
         projectId = projectRecord.id;
       }
+
+    } catch (mapErr: any) {
+      debugLog('Mapping/Project Error', mapErr);
+      throw mapErr;
     }
 
     return NextResponse.json({
       success: true,
-      projectId: projectId,
-      ideaId: ideaId,
-      analysis: analysis,
-      warning: dbError ? `Database save failed: ${dbError}` : null
+      projectId,
+      ideaId,
+      analysis,
+      warning: dbError
     });
 
-  } catch (error: any) {
-    console.error('Error in analyze-idea:', error);
-    return NextResponse.json({ error: error.message || 'Internal Server Error' }, { status: 500 });
+  } catch (err: any) {
+    debugLog('CRITICAL ROUTE ERROR', err);
+    return NextResponse.json(
+      { error: 'Internal Server Error', details: err.message },
+      { status: 500 }
+    );
   }
 }

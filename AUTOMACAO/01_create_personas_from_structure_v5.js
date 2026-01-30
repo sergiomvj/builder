@@ -26,15 +26,17 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import { distribuirNacionalidades } from './lib/nomes_nacionalidades.js';
+import { loadPrompt } from './lib/prompt-loader.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-dotenv.config({ path: path.join(__dirname, '..', '.env.local') });
+dotenv.config();
+// dotenv.config({ path: path.join(__dirname, '..', '.env.local') });
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 );
 
 const OUTPUT_DIR = path.join(__dirname, 'estrutura_organizacional_output');
@@ -70,32 +72,32 @@ if (!targetEmpresaId) {
 
 async function buscarBlocosFuncionais(empresaId) {
   console.log('1️⃣ Buscando blocos funcionais...\n');
-  
+
   const { data, error } = await supabase
     .from('empresas_blocos_funcionais')
     .select('*')
     .eq('empresa_id', empresaId)
     .order('nome');
-  
+
   if (error) throw error;
-  
+
   if (!data || data.length === 0) {
     throw new Error('❌ Nenhum bloco funcional encontrado. Execute o Script 00 primeiro.');
   }
-  
+
   console.log(`✅ ${data.length} blocos funcionais encontrados:\n`);
   data.forEach((bloco, i) => {
-    console.log(`   ${i+1}. ${bloco.nome}`);
+    console.log(`   ${i + 1}. ${bloco.nome}`);
     console.log(`      Objetivo: ${bloco.objetivo}`);
     console.log(`      KPIs: ${bloco.kpis?.join(', ') || 'Nenhum'}\n`);
   });
-  
+
   return data;
 }
 
 async function buscarOKRs(empresaId) {
   console.log('2️⃣ Buscando OKRs...\n');
-  
+
   const { data, error } = await supabase
     .from('empresas_okrs')
     .select(`
@@ -103,18 +105,18 @@ async function buscarOKRs(empresaId) {
       objetivo:empresas_objetivos_estrategicos(*)
     `)
     .eq('empresa_id', empresaId);
-  
+
   if (error) throw error;
-  
+
   console.log(`✅ ${data?.length || 0} OKRs encontrados:\n`);
   data?.forEach((okr, i) => {
-    console.log(`   ${i+1}. ${okr.titulo}`);
+    console.log(`   ${i + 1}. ${okr.titulo}`);
     console.log(`      Área: ${okr.area_responsavel}`);
     console.log(`      KR1: ${okr.key_result_1}`);
     console.log(`      KR2: ${okr.key_result_2}`);
     console.log(`      KR3: ${okr.key_result_3}\n`);
   });
-  
+
   return data || [];
 }
 
@@ -124,7 +126,7 @@ async function buscarValueStream(empresaId) {
     .select('*')
     .eq('empresa_id', empresaId)
     .order('ordem');
-  
+
   return data || [];
 }
 
@@ -134,7 +136,7 @@ async function buscarValueStream(empresaId) {
 
 async function gerarCargosDoBloco(bloco, okrsRelacionados, empresa, activeLLM) {
   console.log(`\n3️⃣ Gerando cargos para bloco: ${bloco.nome}...\n`);
-  
+
   const okrsTexto = okrsRelacionados.length > 0
     ? okrsRelacionados.map(okr => `
       • OKR ID: ${okr.id}
@@ -145,22 +147,23 @@ async function gerarCargosDoBloco(bloco, okrsRelacionados, empresa, activeLLM) {
         - Progresso atual: ${okr.progresso_percentual}%
     `).join('\n')
     : 'Nenhum OKR específico para este bloco';
-  
-  const prompt = `Você é um especialista em design organizacional estratégico.
 
-EMPRESA: ${empresa.nome}
-INDÚSTRIA: ${empresa.industria}
+  // PROMPT PADRÃO (FALLBACK) - CONTÉM A ESTRUTURA ORIGINAL QUE FUNCIONA
+  const defaultPromptTemplate = `Você é um especialista em design organizacional estratégico.
 
-BLOCO FUNCIONAL: ${bloco.nome}
+EMPRESA: \${empresaNome}
+INDÚSTRIA: \${empresaIndustria}
+
+BLOCO FUNCIONAL: \${blocoNome}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 OBJETIVO DO BLOCO:
-${bloco.objetivo}
+\${blocoObjetivo}
 
 KPIs DO BLOCO:
-${bloco.kpis?.join('\n') || 'Não definidos'}
+\${blocoKpis}
 
 OKRs DESTE BLOCO:
-${okrsTexto}
+\${okrsTexto}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Defina 2-5 CARGOS necessários para este bloco funcional.
@@ -182,7 +185,7 @@ Retorne APENAS JSON VÁLIDO (sem markdown, sem texto extra):
     {
       "titulo": "Nome do cargo (ex: 'Gerente de Marketing Digital')",
       "nivel_hierarquico": "gerencial|especialista|operacional",
-      "departamento": "${bloco.nome}",
+      "departamento": "\${blocoNome}",
       "responsabilidade_resultado": "Resultado mensurável que garante (ex: 'Gerar 150 leads qualificados/mês com CAC < $50')",
       "metricas_responsabilidade": ["Métrica 1", "Métrica 2", "Métrica 3"],
       "okr_titles_ownership": ["Título do OKR se for owner (copie o título exato da lista acima)"],
@@ -191,12 +194,64 @@ Retorne APENAS JSON VÁLIDO (sem markdown, sem texto extra):
   ]
 }`;
 
+  // Tentar carregar 'team_prompt' do banco (Prompt de Identidade/Estilo customizado pelo usuário)
+  // Se existir, usaremos ele como BASE e injetaremos o contexto e a estrutura obrigatória ao final.
+  const customBasePrompt = await loadPrompt(supabase, 'team_prompt', null);
+
+  let prompt;
+
+  if (customBasePrompt) {
+    // USANDO PROMPT CUSTOMIZADO + INJEÇÃO DE CONTEXTO
+    prompt = `
+${customBasePrompt}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ INSTRUÇÃO DE SOBRESCRITA DE SISTEMA ⚠️
+Ignore a instrução de gerar JSON de time completo acima.
+Sua missão AGORA é focar EXCLUSIVAMENTE no seguinte BLOCO FUNCIONAL desta empresa, mantendo a IDENTIDADE e CRITÉRIOS DE QUALIDADE definidos anteriormente.
+
+EMPRESA: ${empresa.nome}
+INDÚSTRIA: ${empresa.industria}
+
+BLOCO ALVO: ${bloco.nome}
+OBJETIVO: ${bloco.objetivo}
+KPIs: ${bloco.kpis?.join(', ') || 'Não definidos'}
+
+OKRs VINCULADOS:
+${okrsTexto}
+
+Gere 2-5 cargos para este bloco.
+OBRIGATÓRIO: Retorne APENAS JSON com a seguinte estrutura (compatível com o sistema):
+{
+  "cargos": [
+    {
+      "titulo": "Nome do cargo",
+      "nivel_hierarquico": "gerencial|especialista|operacional",
+      "departamento": "${bloco.nome}",
+      "responsabilidade_resultado": "Resultado mensurável",
+      "metricas_responsabilidade": ["Métrica 1", "Métrica 2"],
+      "okr_titles_ownership": ["Titulo OKR 1"],
+      "justificativa": "..."
+    }
+  ]
+}`;
+  } else {
+    // USANDO PROMPT PADRÃO (FALLBACK)
+    prompt = defaultPromptTemplate
+      .replace('\${empresaNome}', empresa.nome)
+      .replace('\${empresaIndustria}', empresa.industria)
+      .replace('\${blocoNome}', bloco.nome)
+      .replace('\${blocoObjetivo}', bloco.objetivo)
+      .replace('\${blocoKpis}', bloco.kpis?.join('\n') || 'Não definidos')
+      .replace('\${okrsTexto}', okrsTexto);
+  }
+
   try {
     const response = await generateWithFallback(activeLLM, prompt, {
       temperature: 0.75,
       maxTokens: 2500
     });
-    
+
     // Limpar resposta
     let cleanResponse = response.trim();
     if (cleanResponse.startsWith('```json')) {
@@ -204,49 +259,49 @@ Retorne APENAS JSON VÁLIDO (sem markdown, sem texto extra):
     } else if (cleanResponse.startsWith('```')) {
       cleanResponse = cleanResponse.replace(/```\s*/, '').replace(/```\s*$/, '');
     }
-    
+
     const resultado = JSON.parse(cleanResponse);
-    
+
     if (!resultado.cargos || !Array.isArray(resultado.cargos)) {
       throw new Error('Resposta LLM inválida: campo "cargos" ausente ou não é array');
     }
-    
+
     // ====================================================================
     // MATCHING: Converter títulos de OKRs em UUIDs reais
     // ====================================================================
     resultado.cargos.forEach(cargo => {
       const okrTitles = cargo.okr_titles_ownership || [];
       cargo.okr_owner_ids = [];
-      
+
       okrTitles.forEach(title => {
-        const okrMatch = okrsRelacionados.find(okr => 
+        const okrMatch = okrsRelacionados.find(okr =>
           okr.titulo.toLowerCase().includes(title.toLowerCase()) ||
           title.toLowerCase().includes(okr.titulo.toLowerCase())
         );
-        
+
         if (okrMatch && !cargo.okr_owner_ids.includes(okrMatch.id)) {
           cargo.okr_owner_ids.push(okrMatch.id);
         }
       });
-      
+
       // Se nível gerencial mas sem OKRs matched, atribuir todos os OKRs do bloco
       if (cargo.nivel_hierarquico === 'gerencial' && cargo.okr_owner_ids.length === 0) {
         cargo.okr_owner_ids = okrsRelacionados.map(okr => okr.id);
       }
     });
-    
+
     console.log(`✅ ${resultado.cargos.length} cargo(s) gerado(s) para ${bloco.nome}:\n`);
     resultado.cargos.forEach((cargo, i) => {
-      console.log(`   ${i+1}. ${cargo.titulo} (${cargo.nivel_hierarquico})`);
+      console.log(`   ${i + 1}. ${cargo.titulo} (${cargo.nivel_hierarquico})`);
       console.log(`      Responsabilidade: ${cargo.responsabilidade_resultado}`);
       console.log(`      Métricas: ${cargo.metricas_responsabilidade?.join(', ') || 'Nenhuma'}\n`);
     });
-    
+
     return resultado.cargos;
-    
+
   } catch (error) {
     console.error(`❌ Erro ao gerar cargos para ${bloco.nome}:`, error.message);
-    
+
     // Fallback: criar 1 cargo gerencial genérico
     console.log('⚠️  Usando fallback: criando 1 cargo gerencial genérico\n');
     return [{
@@ -268,34 +323,34 @@ Retorne APENAS JSON VÁLIDO (sem markdown, sem texto extra):
 
 async function criarPersonas(empresa, blocosFuncionais, okrs, cargosGerados) {
   console.log('\n4️⃣ Criando personas no banco de dados...\n');
-  
+
   // Distribuir nacionalidades
   const totalCargos = cargosGerados.reduce((sum, grupo) => sum + grupo.cargos.length, 0);
   const todosOsCargos = cargosGerados.flatMap(grupo => grupo.cargos);
-  
+
   const distribuicaoNacionalidades = distribuirNacionalidades(
     todosOsCargos.map(c => c.titulo),
     empresa.nationalities || [{ tipo: 'brasileiros', percentual: 100 }]
   );
-  
+
   console.log(`🌍 Distribuindo ${totalCargos} cargos entre nacionalidades\n`);
-  
+
   let personaIndex = 0;
   let successCount = 0;
-  
+
   for (const grupo of cargosGerados) {
     const bloco = grupo.bloco;
-    
+
     for (const cargo of grupo.cargos) {
       const nacionalidadeInfo = distribuicaoNacionalidades[personaIndex];
-      
+
       const personaData = {
-        persona_code: `${empresa.codigo}-${bloco.nome.substring(0,3).toUpperCase()}${personaIndex+1}`,
+        persona_code: `${empresa.codigo}-${bloco.nome.substring(0, 3).toUpperCase()}${personaIndex + 1}`,
         empresa_id: empresa.id,
         specialty: cargo.titulo,
         department: cargo.departamento,
         role: cargo.titulo,
-        
+
         // NOVOS CAMPOS V5.0
         bloco_funcional_id: bloco.id,
         bloco_funcional_nome: bloco.nome,
@@ -303,27 +358,27 @@ async function criarPersonas(empresa, blocosFuncionais, okrs, cargosGerados) {
         responsabilidade_resultado: cargo.responsabilidade_resultado,
         metricas_responsabilidade: cargo.metricas_responsabilidade || [],
         nivel_hierarquico: cargo.nivel_hierarquico,
-        
+
         // Dados básicos (serão preenchidos pelo Script 02)
         nacionalidade: nacionalidadeInfo?.nacionalidade || 'brasileiros',
         status: 'active',
         full_name: '[A GERAR]',
-        email: `persona${personaIndex+1}@${empresa.dominio || 'empresa.com'}`
+        email: `persona${personaIndex + 1}@${empresa.dominio || 'empresa.com'}`
       };
-      
+
       // Verificar se já existe
       const { data: existing } = await supabase
         .from('personas')
         .select('id, full_name')
         .eq('persona_code', personaData.persona_code)
         .maybeSingle();
-      
+
       if (existing && existing.full_name && !existing.full_name.startsWith('[')) {
         console.log(`   ⏭️  Pulando ${personaData.persona_code} - já existe com dados reais`);
         personaIndex++;
         continue;
       }
-      
+
       // Inserir/atualizar
       const { error } = await supabase
         .from('personas')
@@ -331,20 +386,20 @@ async function criarPersonas(empresa, blocosFuncionais, okrs, cargosGerados) {
           onConflict: 'persona_code',
           ignoreDuplicates: false
         });
-      
+
       if (error) {
         console.error(`   ❌ Erro ao criar ${personaData.persona_code}:`, error.message);
       } else {
         console.log(`   ✅ ${personaData.persona_code} - ${cargo.titulo} (${cargo.nivel_hierarquico})`);
         successCount++;
       }
-      
+
       personaIndex++;
     }
   }
-  
+
   console.log(`\n✅ ${successCount} personas criadas/atualizadas com sucesso!\n`);
-  
+
   // Atualizar empresa
   await supabase
     .from('empresas')
@@ -353,7 +408,7 @@ async function criarPersonas(empresa, blocosFuncionais, okrs, cargosGerados) {
       updated_at: new Date().toISOString()
     })
     .eq('id', empresa.id);
-  
+
   return successCount;
 }
 
@@ -370,19 +425,19 @@ async function main() {
       .select('*')
       .eq('id', targetEmpresaId)
       .single();
-    
+
     if (empresaError || !empresa) {
       throw new Error('❌ Empresa não encontrada');
     }
-    
+
     console.log(`✅ Empresa: ${empresa.nome}\n`);
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
-    
+
     // Buscar fundação da empresa (Script 00)
     const blocos = await buscarBlocosFuncionais(targetEmpresaId);
     const okrs = await buscarOKRs(targetEmpresaId);
     const valueStream = await buscarValueStream(targetEmpresaId);
-    
+
     // Testar LLM
     console.log('🤖 Testando LLMs disponíveis...\n');
     const activeLLM = await testLLMs();
@@ -391,34 +446,34 @@ async function main() {
     }
     console.log(`✅ LLM ativo: ${activeLLM}\n`);
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
-    
+
     // Para cada bloco funcional, gerar cargos
     const cargosGerados = [];
-    
+
     for (const bloco of blocos) {
       // Filtrar OKRs relacionados a este bloco
-      const okrsRelacionados = okrs.filter(okr => 
+      const okrsRelacionados = okrs.filter(okr =>
         okr.area_responsavel?.toLowerCase().includes(bloco.nome.toLowerCase()) ||
         bloco.nome.toLowerCase().includes(okr.area_responsavel?.toLowerCase())
       );
-      
+
       const cargos = await gerarCargosDoBloco(bloco, okrsRelacionados, empresa, activeLLM);
-      
+
       cargosGerados.push({
         bloco,
         cargos,
         okrsRelacionados
       });
-      
+
       // Pausa entre blocos
       await new Promise(resolve => setTimeout(resolve, 2000));
     }
-    
+
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
-    
+
     // Criar personas no banco
     const totalCriadas = await criarPersonas(empresa, blocos, okrs, cargosGerados);
-    
+
     // Salvar estrutura gerada em arquivo
     const outputFile = path.join(OUTPUT_DIR, `${empresa.codigo}_structure_v5.json`);
     fs.writeFileSync(outputFile, JSON.stringify({
@@ -433,7 +488,7 @@ async function main() {
       estrutura: cargosGerados,
       gerado_em: new Date().toISOString()
     }, null, 2));
-    
+
     console.log(`📄 Estrutura salva em: ${outputFile}\n`);
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
     console.log('🎉 SCRIPT 01 V5.0 CONCLUÍDO COM SUCESSO!\n');
@@ -441,7 +496,7 @@ async function main() {
     console.log('   1️⃣ Execute o Script 02 para gerar biografias com contexto de OKRs');
     console.log('   2️⃣ Execute o Script 03 para gerar atribuições baseadas em resultados');
     console.log('   3️⃣ Continue com os Scripts 04-11 normalmente\n');
-    
+
   } catch (error) {
     console.error('\n❌ ERRO NA EXECUÇÃO:\n');
     console.error(error);

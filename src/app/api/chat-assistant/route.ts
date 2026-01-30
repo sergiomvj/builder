@@ -110,9 +110,42 @@ export async function POST(req: NextRequest) {
           });
         }
 
+        console.log('[API] Confirming workflows update for project:', projectId);
         const { data: project } = await supabase.from('projects').select('metadata').eq('id', projectId).single();
-        const updatedMetadata = { ...project?.metadata, workflows: workflows };
-        await supabase.from('projects').update({ metadata: updatedMetadata }).eq('id', projectId);
+
+        // Ensure we don't lose existing workflows if the LLM only suggests *new* ones, 
+        // BUT usually "update" assumes full state in this simple architecture or the LLM was given context of all.
+        // In the system prompt, we provide "Current workflows", so the LLM likely returns the Full Modified List or at least we hope so.
+        // If the LLM returns only new ones, we might need to merge. 
+        // For safe measure, let's assume the LLM returns the *delta* or *full*. 
+        // Actually, the system prompt says "If user asks to change, use update...". logic dictates it might just send new ones.
+        // Let's try to merge if IDs exist, or append if not.
+
+        let existingWorkflows = project?.metadata?.workflows || [];
+        if (!Array.isArray(existingWorkflows)) existingWorkflows = [];
+
+        // Simple merge strategy: If ID matches, update; else add.
+        // Note: LLM might not generate IDs for new items.
+
+        const mergedWorkflows = [...existingWorkflows];
+
+        workflows.forEach((newWf: any) => {
+          const index = mergedWorkflows.findIndex((w: any) => w.id === newWf.id || w.task_title === newWf.task_title);
+          if (index >= 0) {
+            mergedWorkflows[index] = { ...mergedWorkflows[index], ...newWf };
+          } else {
+            mergedWorkflows.push({ ...newWf, id: newWf.id || crypto.randomUUID() });
+          }
+        });
+
+        const updatedMetadata = { ...project?.metadata, workflows: mergedWorkflows };
+
+        const { error: updateError } = await supabase.from('projects').update({ metadata: updatedMetadata }).eq('id', projectId);
+
+        if (updateError) {
+          console.error('[API] Error updating workflows in DB:', updateError);
+          throw updateError;
+        }
 
         const responseContent = 'Atualizei os fluxos de trabalho no plano do projeto.';
         await persistLog(supabase, {
@@ -164,11 +197,19 @@ export async function POST(req: NextRequest) {
 
     if (mode === 'team') {
       const team = currentData?.team || (empresa ? (await supabase.from('personas').select('*').eq('empresa_id', empresa.id)).data : []);
+      const contextSummary = typeof project?.executive_summary === 'string'
+        ? project.executive_summary
+        : (project?.executive_summary?.content || project?.description || 'No description available');
+
       systemPrompt = `
         You are an expert HR Manager & Organizational Strategist for the project "${project?.name || 'Project'}".
+        
+        Project Context/Summary:
+        ${contextSummary}
+
         Current Team Context: ${JSON.stringify(team, null, 2)}
-        Project Mission: ${project?.mission || 'Not specified'}
-        Your goal is to help the user refine the team structure.
+        
+        Your goal is to help the user define, hire, or reorganize the team to achieve the project goals.
         If the user asks to change the team, you MUST use the "update_team_structure" tool.
         Always reply in Portuguese (Brazil).
       `;
@@ -209,10 +250,21 @@ export async function POST(req: NextRequest) {
       // ... (Workflows setup remains same)
       const workflows = currentData?.workflows || project?.metadata?.workflows || [];
       const team = currentData?.team || (empresa ? (await supabase.from('personas').select('id, nome, cargo').eq('empresa_id', empresa.id)).data : []);
+
+      const contextSummary = typeof project?.executive_summary === 'string'
+        ? project.executive_summary
+        : (project?.executive_summary?.content || project?.description || 'No description available');
+
       systemPrompt = `
         You are an expert Operations & Automation Manager for "${project?.name || 'Project'}".
+        
+        Project Context:
+        ${contextSummary}
+
         Current Workflows: ${JSON.stringify(workflows, null, 2)}
         Available Team Members: ${JSON.stringify(team, null, 2)}
+        
+        Your goal is to create or optimize workflows to execute the project vision.
         If the user asks to change workflows, use the "update_workflows" tool.
         Always reply in Portuguese (Brazil).
       `;

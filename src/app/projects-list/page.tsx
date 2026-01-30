@@ -15,7 +15,8 @@ import {
     Plus,
     Rocket,
     LayoutDashboard,
-    Clock
+    Clock,
+    Trash2
 } from 'lucide-react';
 import { toast } from 'sonner';
 
@@ -40,17 +41,49 @@ export default function ProjectsListPage() {
 
     const fetchProjects = async () => {
         try {
-            const response = await fetch('/api/projects');
+            // Add timestamp to prevent browser caching
+            const response = await fetch(`/api/projects?t=${Date.now()}`, {
+                cache: 'no-store',
+                headers: { 'Pragma': 'no-cache' }
+            });
             const data = await response.json();
+
+            console.log('📊 Fetched projects:', data.projects?.length || 0, 'projects');
+            console.log('📋 Project IDs:', data.projects?.map((p: any) => p.id.slice(0, 8)) || []);
 
             if (!response.ok) throw new Error(data.error || 'Falha ao carregar projetos');
 
             setProjects(data.projects || []);
         } catch (error: any) {
-            console.error('Erro:', error);
+            console.error('❌ Erro ao buscar projetos:', error);
             toast.error(error.message);
         } finally {
             setLoading(false);
+        }
+    };
+
+    const handleDeleteProject = async (id: string) => {
+        if (!confirm('Tem certeza que deseja excluir este projeto? Esta ação não pode ser desfeita.')) return;
+
+        try {
+            const response = await fetch(`/api/projects/${id}`, {
+                method: 'DELETE',
+                cache: 'no-store'
+            });
+
+            if (!response.ok) {
+                const data = await response.json();
+                throw new Error(data.error || 'Erro ao excluir');
+            }
+
+            toast.success('Projeto excluído com sucesso');
+
+            // Force a complete refresh from server instead of just filtering local state
+            // This ensures we don't have stale data or ghost projects
+            await fetchProjects();
+        } catch (error: any) {
+            console.error(error);
+            toast.error(error.message);
         }
     };
 
@@ -144,11 +177,20 @@ export default function ProjectsListPage() {
                                     </div>
                                 </div>
                             </CardContent>
-                            <CardFooter className="pt-0 border-t border-slate-50 bg-slate-50/50 group-hover:bg-indigo-50/30 transition-colors p-4">
+                            <CardFooter className="pt-0 border-t border-slate-50 bg-slate-50/50 group-hover:bg-indigo-50/30 transition-colors p-4 flex gap-2">
+                                <Button
+                                    onClick={() => handleDeleteProject(project.id)}
+                                    variant="ghost"
+                                    size="icon"
+                                    className="text-slate-400 hover:text-red-600 hover:bg-red-50"
+                                    title="Excluir Projeto"
+                                >
+                                    <Trash2 className="w-4 h-4" />
+                                </Button>
                                 <Button
                                     onClick={() => router.push(`/projects/${project.id}`)}
                                     variant="ghost"
-                                    className="w-full justify-between hover:bg-white hover:text-indigo-600 border border-transparent hover:border-indigo-100 font-semibold"
+                                    className="flex-1 justify-between hover:bg-white hover:text-indigo-600 border border-transparent hover:border-indigo-100 font-semibold"
                                 >
                                     <span className="flex items-center">
                                         <LayoutDashboard className="w-4 h-4 mr-2" /> Ver Dashboard
@@ -180,6 +222,20 @@ export default function ProjectsListPage() {
                     </CardContent>
                 </Card>
             )}
+
+            {/* DEBUG INFO - REMOVE IN PRODUCTION */}
+            <div className="mt-8 p-4 bg-slate-100 rounded-lg text-xs font-mono text-slate-500 border border-slate-200">
+                <p className="font-bold text-slate-700 mb-2">🔧 Debug Info:</p>
+                <div className="grid grid-cols-2 gap-2">
+                    <div>Supabase URL: <span className="text-blue-600">{process.env.NEXT_PUBLIC_SUPABASE_URL || 'Missing'}</span></div>
+                    <div>Projects Loaded: <span className="text-blue-600">{projects.length}</span></div>
+                    <div className="col-span-2 text-[10px] break-all border-t border-slate-200 mt-2 pt-2">
+                        <strong>IDs:</strong> {projects.map(p => p.id).join(', ') || 'None'}
+                    </div>
+                    <div>Search Term: "{searchTerm}"</div>
+                    <div>Last Fetch: {new Date().toLocaleTimeString()}</div>
+                </div>
+            </div>
         </div>
     );
 }
