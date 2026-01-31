@@ -20,9 +20,15 @@ RUN npm ci && npm cache clean --force
 # Copiar código fonte
 COPY . .
 
+# Build Arguments (Required for Client Component injection)
+ARG NEXT_PUBLIC_SUPABASE_URL
+ARG NEXT_PUBLIC_SUPABASE_ANON_KEY
+
 # Configurar variáveis de ambiente para build
 ENV NEXT_TELEMETRY_DISABLED 1
 ENV NODE_ENV production
+ENV NEXT_PUBLIC_SUPABASE_URL=$NEXT_PUBLIC_SUPABASE_URL
+ENV NEXT_PUBLIC_SUPABASE_ANON_KEY=$NEXT_PUBLIC_SUPABASE_ANON_KEY
 
 # Build da aplicação
 RUN npm run build
@@ -32,10 +38,10 @@ FROM node:18-alpine AS runner
 
 # Instalar dependências mínimas
 RUN apk add --no-cache \
-    curl \
-    dumb-init \
-    && addgroup -g 1001 -S nodejs \
-    && adduser -S nextjs -u 1001
+  curl \
+  dumb-init \
+  && addgroup -g 1001 -S nodejs \
+  && adduser -S nextjs -u 1001
 
 # Configurar diretório
 WORKDIR /app

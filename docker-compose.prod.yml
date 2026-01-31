@@ -4,9 +4,12 @@ version: '3.8'
 services:
   # Aplicação Principal VCM
   vcm-dashboard:
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile.prod
+      args:
+        NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL}
+        NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY}
     container_name: vcm-dashboard
     restart: unless-stopped
     ports:
@@ -24,7 +27,7 @@ services:
     depends_on:
       - nginx
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      test: [ "CMD", "curl", "-f", "http://localhost:3000/api/health" ]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -73,7 +76,7 @@ services:
       - ./backups:/backup/output
       - ./scripts/backup.sh:/backup/backup.sh:ro
     environment:
-      - BACKUP_SCHEDULE=0 2 * * *  # 2:00 AM diariamente
+      - BACKUP_SCHEDULE=0 2 * * * # 2:00 AM diariamente
     command: |
       sh -c "
         apk add --no-cache dcron curl &&
