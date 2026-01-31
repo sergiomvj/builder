@@ -14,21 +14,6 @@ RUN npm ci
 FROM node:18-alpine AS builder
 WORKDIR /app
 
-# Copy dependencies from deps stage
-COPY --from=deps /app/node_modules ./node_modules
-COPY . .
-
-# Set environment variables for build
-ENV NODE_ENV production
-ENV NEXT_TELEMETRY_DISABLED 1
-
-# Build the application
-RUN npm run build
-
-# Stage 3: Runner
-FROM node:18-alpine AS runner
-WORKDIR /app
-
 ENV NODE_ENV production
 ENV NEXT_TELEMETRY_DISABLED 1
 
