@@ -5,6 +5,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -192,51 +193,147 @@ export default function ProjectDashboard() {
   const generateMarkdown = () => {
     if (!project) return;
 
+    // Helper to unify access to analysis data locally for the export
+    const analysisData: any = {
+      ...project,
+      ...project.metadata,
+      marketing_strategy: project.marketing_strategy || project.metadata?.marketing_strategy,
+      lead_generation_strategy: project.lead_generation_strategy || project.metadata?.lead_generation_strategy,
+      business_diagnosis: project.business_diagnosis || project.metadata?.business_diagnosis,
+      swot: project.swot || project.metadata?.swot,
+      key_metrics: project.key_metrics || project.metadata?.key_metrics,
+      risks: project.risks || project.metadata?.risks,
+      why_now: project.metadata?.why_now,
+      why_not_100: project.metadata?.why_not_100,
+      potential_improvements: project.metadata?.potential_improvements,
+      executive_summary: project.executive_summary || project.metadata?.executive_summary
+    };
+
     let md = `# ${project.name}\n\n`;
     md += `**Tagline:** ${project.description}\n\n`;
-    md += `## Executive Summary\n${project.executive_summary}\n\n`;
 
-    if (project.business_diagnosis) {
-      md += `## Business Diagnosis\n`;
-      md += `- Viability Score: ${project.business_diagnosis.viability_score}/100\n`;
-      md += `- Analysis: ${project.business_diagnosis.viability_analysis}\n`;
-      if (project.business_diagnosis.score_gap_analysis) {
-        md += `- Score Gap: ${project.business_diagnosis.score_gap_analysis}\n`;
+    // Executive Summary
+    if (analysisData.executive_summary) {
+      md += `## Executive Summary\n`;
+      if (typeof analysisData.executive_summary === 'string') {
+        if (isJsonString(analysisData.executive_summary)) {
+          const es = JSON.parse(analysisData.executive_summary);
+          if (es.investment_thesis) md += `### Investment Thesis\n${es.investment_thesis}\n\n`;
+          if (es.solution_overview) md += `### Solution Overview\n${es.solution_overview}\n\n`;
+          if (es.opportunity_statement) md += `### Opportunity\n${es.opportunity_statement}\n\n`;
+          if (es.market_positioning) md += `### Market Positioning\n${es.market_positioning}\n\n`;
+          if (es.content) md += `${es.content}\n\n`;
+        } else {
+          md += `${analysisData.executive_summary}\n\n`;
+        }
+      } else {
+        const es = analysisData.executive_summary;
+        if (es.investment_thesis) md += `### Investment Thesis\n${es.investment_thesis}\n\n`;
+        if (es.solution_overview) md += `### Solution Overview\n${es.solution_overview}\n\n`;
+        if (es.opportunity_statement) md += `### Opportunity\n${es.opportunity_statement}\n\n`;
+        if (es.market_positioning) md += `### Market Positioning\n${es.market_positioning}\n\n`;
+        if (es.content) md += `${es.content}\n\n`;
       }
-      md += `- Why Now: ${project.business_diagnosis.compelling_reason}\n\n`;
     }
 
+    // Business Diagnosis / Viability
+    const diagnosis = analysisData.business_diagnosis;
+    const score = analysisData.viability_score?.total || diagnosis?.viability_score;
+
+    if (diagnosis || score) {
+      md += `## Business Diagnosis\n`;
+      if (score) md += `- **Viability Score:** ${score}/100\n`;
+
+      const analysisContent = diagnosis?.viability_analysis || diagnosis?.content || diagnosis;
+      if (analysisContent && typeof analysisContent === 'string') {
+        md += `- **Analysis:** ${analysisContent}\n`;
+      } else if (analysisContent?.content) {
+        md += `- **Analysis:** ${analysisContent.content}\n`;
+      }
+
+      const whyNow = analysisData.why_now?.content || (typeof analysisData.why_now === 'string' ? analysisData.why_now : null);
+      if (whyNow) md += `- **Why Now:** ${whyNow}\n`;
+
+      md += `\n`;
+    }
+
+    // Why Not 100?
+    if (analysisData.why_not_100) {
+      md += `### Why Not 100?\n`;
+      if (analysisData.why_not_100.summary) md += `${analysisData.why_not_100.summary}\n\n`;
+      if (analysisData.why_not_100.critical_gaps) {
+        md += `**Critical Gaps:**\n`;
+        analysisData.why_not_100.critical_gaps.forEach((gap: any) => {
+          md += `- ${gap.gap} (Impact: ${gap.impact_on_score})\n`;
+        });
+        md += `\n`;
+      }
+    }
+
+    // Potential Improvements
+    if (analysisData.potential_improvements) {
+      md += `### Potential Improvements\n`;
+      const improvements = analysisData.potential_improvements.content || (typeof analysisData.potential_improvements === 'string' ? analysisData.potential_improvements : JSON.stringify(analysisData.potential_improvements));
+      md += `${improvements}\n\n`;
+    }
+
+    // Standard Fields
     if (project.mission) md += `## Mission\n${project.mission}\n\n`;
     if (project.vision) md += `## Vision\n${project.vision}\n\n`;
     if (project.values) md += `## Values\n${project.values.join(', ')}\n\n`;
-
     if (project.target_audience) md += `## Target Audience\n${project.target_audience}\n\n`;
-    if (project.pain_points) md += `## Pain Points\n- ${project.pain_points.join('\n- ')}\n\n`;
 
-    if (project.marketing_strategy) {
+    // Pain Points
+    const painPoints = analysisData.pain_points || project.pain_points;
+    if (painPoints && Array.isArray(painPoints)) md += `## Pain Points\n- ${painPoints.join('\n- ')}\n\n`;
+
+    // Marketing Strategy
+    const marketing = analysisData.marketing_strategy;
+    if (marketing) {
       md += `## Marketing Strategy\n`;
-      md += `**UVP:** ${project.marketing_strategy.value_proposition}\n\n`;
-      md += `### Approach\n${project.marketing_strategy.approach_strategy}\n\n`;
-      md += `### Channels\n- ${project.marketing_strategy.channels?.join('\n- ')}\n\n`;
-      md += `### Tactics\n- ${project.marketing_strategy.tactics?.join('\n- ')}\n\n`;
+      if (marketing.value_proposition) {
+        const uvp = typeof marketing.value_proposition === 'string' ? marketing.value_proposition : marketing.value_proposition.content;
+        md += `**UVP:** ${uvp}\n\n`;
+      }
+
+      if (marketing.approach_strategy) {
+        const approach = typeof marketing.approach_strategy === 'string' ? marketing.approach_strategy : marketing.approach_strategy.content;
+        md += `### Approach\n${approach}\n\n`;
+      }
+
+      if (marketing.channels && Array.isArray(marketing.channels)) {
+        md += `### Channels\n- ${marketing.channels.map((c: any) => typeof c === 'string' ? c : c.name).join('\n- ')}\n\n`;
+      }
+
+      if (marketing.tactics && Array.isArray(marketing.tactics)) {
+        md += `### Tactics\n- ${marketing.tactics.map((t: any) => typeof t === 'string' ? t : `${t.tactic}: ${t.description}`).join('\n- ')}\n\n`;
+      }
     }
 
-    if (project.lead_generation_strategy) {
+    // Lead Generation
+    const leadGen = analysisData.lead_generation_strategy;
+    if (leadGen) {
       md += `## Lead Generation\n`;
-      md += `### Lead Magnets\n- ${project.lead_generation_strategy.lead_magnets?.join('\n- ')}\n\n`;
-      md += `### Conversion Tactics\n- ${project.lead_generation_strategy.conversion_tactics?.join('\n- ')}\n\n`;
+      if (leadGen.lead_magnets) {
+        md += `### Lead Magnets\n- ${leadGen.lead_magnets.map((m: any) => typeof m === 'string' ? m : `${m.name} - ${m.description}`).join('\n- ')}\n\n`;
+      }
+      if (leadGen.conversion_tactics) {
+        md += `### Conversion Tactics\n- ${leadGen.conversion_tactics.map((t: any) => typeof t === 'string' ? t : `${t.tactic}: ${t.description}`).join('\n- ')}\n\n`;
+      }
     }
 
+    // Systems
     if (project.systems_modules) {
       md += `## Systems & Modules\n`;
       project.systems_modules.forEach((mod: any) => {
         md += `### ${mod.module_name}\n`;
         md += `${mod.description}\n`;
         if (mod.tech_stack_recommendation) md += `**Tech Stack:** ${mod.tech_stack_recommendation}\n`;
-        md += `**Features:**\n- ${mod.features?.join('\n- ')}\n\n`;
+        if (mod.features) md += `**Features:**\n- ${mod.features.join('\n- ')}\n\n`;
       });
     }
 
+    // Roadmap
     if (project.roadmap) {
       md += `## Roadmap\n`;
       project.roadmap.forEach((phase: any) => {
@@ -252,12 +349,38 @@ export default function ProjectDashboard() {
       });
     }
 
-    if (project.swot) {
+    // SWOT
+    const swot = analysisData.swot;
+    if (swot) {
       md += `## SWOT Analysis\n`;
-      md += `### Strengths\n- ${project.swot.strengths?.join('\n- ')}\n\n`;
-      md += `### Weaknesses\n- ${project.swot.weaknesses?.join('\n- ')}\n\n`;
-      md += `### Opportunities\n- ${project.swot.opportunities?.join('\n- ')}\n\n`;
-      md += `### Threats\n- ${project.swot.threats?.join('\n- ')}\n\n`;
+      if (swot.strengths) md += `### Strengths\n- ${swot.strengths.join('\n- ')}\n\n`;
+      if (swot.weaknesses) md += `### Weaknesses\n- ${swot.weaknesses.join('\n- ')}\n\n`;
+      if (swot.opportunities) md += `### Opportunities\n- ${swot.opportunities.join('\n- ')}\n\n`;
+      if (swot.threats) md += `### Threats\n- ${swot.threats.join('\n- ')}\n\n`;
+    }
+
+    // Key Metrics
+    const metrics = analysisData.key_metrics;
+    if (metrics) {
+      md += `## Key Metrics\n`;
+      if (Array.isArray(metrics)) {
+        md += `- ${metrics.join('\n- ')}\n\n`;
+      } else {
+        const mContent = metrics.content || (typeof metrics === 'string' ? metrics : '');
+        if (mContent) md += `${mContent}\n\n`;
+      }
+    }
+
+    // Risks
+    const risks = analysisData.risks;
+    if (risks) {
+      md += `## Risks\n`;
+      if (Array.isArray(risks)) {
+        md += `- ${risks.join('\n- ')}\n\n`;
+      } else {
+        const rContent = risks.content || (typeof risks === 'string' ? risks : '');
+        if (rContent) md += `${rContent}\n\n`;
+      }
     }
 
     const blob = new Blob([md], { type: 'text/markdown' });
@@ -480,7 +603,7 @@ export default function ProjectDashboard() {
       {/* Header */}
       <div className="flex flex-col gap-2">
         <div className="flex items-center gap-2 text-slate-500 text-sm">
-          <span>Projects</span>
+          <Link href="/projects-list" className="hover:text-indigo-600 transition-colors">Projects</Link>
           <span>/</span>
           <span>{project.name}</span>
         </div>
@@ -492,8 +615,8 @@ export default function ProjectDashboard() {
           {project.id.startsWith('mock-project-') && (
             <Badge variant="destructive" className="text-sm bg-amber-500 hover:bg-amber-600">Simulated Mode</Badge>
           )}
-          <Button variant="outline" size="sm" onClick={() => window.print()} className="gap-2 print:hidden">
-            <FileText className="w-4 h-4" /> Export PDF
+          <Button variant="outline" size="sm" onClick={() => window.open(`/projects/${project.id}/report`, '_blank')} className="gap-2 print:hidden">
+            <FileText className="w-4 h-4" /> Export PDF (E-book)
           </Button>
           <Button variant="outline" size="sm" onClick={generateMarkdown} className="ml-auto gap-2 print:hidden">
             <Download className="w-4 h-4" /> Export MD

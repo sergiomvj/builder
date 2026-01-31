@@ -7,7 +7,20 @@ export async function GET() {
     try {
         console.log('[API] Fetching projects...');
         console.log('[API] Connected to Supabase:', process.env.NEXT_PUBLIC_SUPABASE_URL);
-        const supabase = getSupabase();
+        // Fix: Use direct client instantiation to ensure Service Role Key is used correctly on Vercel/Next.js
+        // attempting to use the singleton helper often fails to bypass RLS in the edge/server runtime
+        const { createClient } = require('@supabase/supabase-js');
+        const supabase = createClient(
+            process.env.NEXT_PUBLIC_SUPABASE_URL,
+            process.env.SUPABASE_SERVICE_ROLE_KEY,
+            {
+                auth: {
+                    persistSession: false,
+                    autoRefreshToken: false,
+                    detectSessionInUrl: false
+                }
+            }
+        );
 
         if (!supabase) {
             console.error('[API] Supabase client is null. Check environment variables.');
@@ -17,8 +30,7 @@ export async function GET() {
         // Buscar projetos (Simplificado para evitar bloqueios de JOIN/RLS)
         const { data: projects, error } = await supabase
             .from('projects')
-            .select('*')
-            .order('created_at', { ascending: false });
+            .select('*');
 
         if (error) {
             console.error('[API] Error fetching projects:', error);
