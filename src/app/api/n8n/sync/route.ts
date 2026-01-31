@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createN8NClient } from '@/lib/n8n-client';
-import { supabase } from '@/lib/database';
+import { supabase } from '@/lib/supabase';
 
 /**
  * POST /api/n8n/sync
@@ -15,12 +15,12 @@ export async function POST(request: NextRequest) {
     const empresaId = searchParams.get('empresaId');
 
     const client = await createN8NClient();
-    
+
     if (!client) {
       return NextResponse.json(
-        { 
-          success: false, 
-          error: 'N8N não configurado' 
+        {
+          success: false,
+          error: 'N8N não configurado'
         },
         { status: 503 }
       );
@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
     let query = supabase
       .from('personas_workflows')
       .select('*');
-    
+
     if (empresaId) {
       query = query.eq('empresa_id', empresaId);
     }
@@ -53,7 +53,7 @@ export async function POST(request: NextRequest) {
       try {
         // Procurar workflow no banco pelo nome ou n8n_workflow_id
         const dbWorkflow = dbWorkflows?.find(
-          (w: any) => 
+          (w: any) =>
             w.n8n_workflow_id === n8nWorkflow.id ||
             w.workflow_name === n8nWorkflow.name
         );
@@ -101,9 +101,9 @@ export async function POST(request: NextRequest) {
   } catch (error: any) {
     console.error('Erro ao sincronizar workflows:', error);
     return NextResponse.json(
-      { 
-        success: false, 
-        error: error.message || 'Erro ao sincronizar workflows' 
+      {
+        success: false,
+        error: error.message || 'Erro ao sincronizar workflows'
       },
       { status: 500 }
     );
