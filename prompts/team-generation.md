@@ -38,6 +38,11 @@ Retorne APENAS um JSON válido com EXATAMENTE esta estrutura:
         "KPI Mensurável 2 (ex: Aumentar NPS para 70+)",
         "KPI Mensurável 3 (ex: Lançar 2 features/mês)"
       ],
+      "daily_tasks": [
+        "Tarefa Diária 1 (ex: Revisar Pull Requests críticos)",
+        "Tarefa Diária 2 (ex: Daily com time de infraestrutura)"
+      ],
+      "weekly_task": "Tarefa Semanal 1 (ex: Planejamento de Sprint com PMs)",
       "tools": [
         "Ferramenta Específica 1 (ex: Figma, Notion, Jira)",
         "Ferramenta Específica 2",

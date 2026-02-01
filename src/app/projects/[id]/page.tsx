@@ -158,7 +158,7 @@ export default function ProjectDashboard() {
       .from('empresas')
       .select('id')
       .eq('project_id', projectId)
-      .single();
+      .maybeSingle();
 
     if (empresa) {
       const { data: teamData } = await supabase
@@ -448,7 +448,7 @@ export default function ProjectDashboard() {
         .from('empresas')
         .select('id')
         .eq('project_id', currentProjectId)
-        .single();
+        .maybeSingle();
 
       let empresaId = empresa?.id;
 

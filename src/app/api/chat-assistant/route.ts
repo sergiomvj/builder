@@ -63,21 +63,29 @@ export async function POST(req: NextRequest) {
         }
 
         const upsertData = team.map((member: any) => ({
-          ...member,
+          id: member.id && member.id.length > 10 ? member.id : undefined, // Keep ID if valid UUID (simple check)
           empresa_id: empresaId,
-          updated_at: new Date().toISOString()
+          nome: member.nome || member.name,
+          cargo: member.cargo || member.role,
+          descricao_funcao: member.descricao_funcao || member.description,
+          nivel_senioridade: member.nivel_senioridade || member.seniority || 'Sênior',
+          tracos_personalidade: member.tracos_personalidade || member.personality_traits,
+          tipo: 'virtual_assistant',
+          status: 'active',
+          avatar_url: member.avatar_url || `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(member.nome || member.name)}`,
+          updated_at: new Date().toISOString(),
+          // Store new extended fields in metadata
+          metadata: {
+            daily_tasks: member.daily_tasks || [],
+            weekly_task: member.weekly_task || '',
+            responsibilities: member.responsibilities || [],
+            kpis: member.kpis || [],
+            tools: member.tools || []
+          }
         }));
 
-        await supabase.from('personas').upsert(upsertData);
-
-        // Handle deletions
-        if (team.length > 0) {
-          const newIds = team.filter((m: any) => m.id).map((m: any) => m.id);
-          // If we have IDs to keep, delete others. This is risky if user didn't see everyone.
-          // For safety, let's only upsert for now to avoid accidental deletions unless explicit.
-          // Or, better: if this is a full structure update, we should trust it.
-          // Let's assume it's additive/corrective for now.
-        }
+        const { error: upsertError } = await supabase.from('personas').upsert(upsertData);
+        if (upsertError) throw upsertError;
 
         const responseContent = 'Atualizei a estrutura da equipe conforme solicitado.';
         await persistLog(supabase, {
@@ -110,27 +118,17 @@ export async function POST(req: NextRequest) {
           });
         }
 
-        console.log('[API] Confirming workflows update for project:', projectId);
+        // Merge logic
         const { data: project } = await supabase.from('projects').select('metadata').eq('id', projectId).single();
-
-        // Ensure we don't lose existing workflows if the LLM only suggests *new* ones, 
-        // BUT usually "update" assumes full state in this simple architecture or the LLM was given context of all.
-        // In the system prompt, we provide "Current workflows", so the LLM likely returns the Full Modified List or at least we hope so.
-        // If the LLM returns only new ones, we might need to merge. 
-        // For safe measure, let's assume the LLM returns the *delta* or *full*. 
-        // Actually, the system prompt says "If user asks to change, use update...". logic dictates it might just send new ones.
-        // Let's try to merge if IDs exist, or append if not.
 
         let existingWorkflows = project?.metadata?.workflows || [];
         if (!Array.isArray(existingWorkflows)) existingWorkflows = [];
 
-        // Simple merge strategy: If ID matches, update; else add.
-        // Note: LLM might not generate IDs for new items.
-
         const mergedWorkflows = [...existingWorkflows];
 
         workflows.forEach((newWf: any) => {
-          const index = mergedWorkflows.findIndex((w: any) => w.id === newWf.id || w.task_title === newWf.task_title);
+          // Simple dedupe by title if no ID
+          const index = mergedWorkflows.findIndex((w: any) => (w.id && w.id === newWf.id) || w.task_title === newWf.task_title || w.title === newWf.title);
           if (index >= 0) {
             mergedWorkflows[index] = { ...mergedWorkflows[index], ...newWf };
           } else {
@@ -142,10 +140,7 @@ export async function POST(req: NextRequest) {
 
         const { error: updateError } = await supabase.from('projects').update({ metadata: updatedMetadata }).eq('id', projectId);
 
-        if (updateError) {
-          console.error('[API] Error updating workflows in DB:', updateError);
-          throw updateError;
-        }
+        if (updateError) throw updateError;
 
         const responseContent = 'Atualizei os fluxos de trabalho no plano do projeto.';
         await persistLog(supabase, {
@@ -164,7 +159,6 @@ export async function POST(req: NextRequest) {
 
 
     // --- PERSIST USER MESSAGE ---
-    // The last message in 'messages' array is the new user message
     if (messages.length > 0) {
       const lastMsg = messages[messages.length - 1];
       if (lastMsg.role === 'user') {
@@ -192,27 +186,42 @@ export async function POST(req: NextRequest) {
     }
 
     // --- PREPARE SYSTEM PROMPT & TOOLS ---
+
+    // Load prompts dynamically via LLMService to respect user configuration
+    // We import the instance to use its loading logic
+    const { llmService } = await import('@/lib/llm-service');
+
     let systemPrompt = '';
     let tools: OpenAI.Chat.Completions.ChatCompletionTool[] = [];
 
+    const contextSummary = typeof project?.executive_summary === 'string'
+      ? project.executive_summary
+      : (project?.executive_summary?.content || project?.description || 'No description available');
+
     if (mode === 'team') {
       const team = currentData?.team || (empresa ? (await supabase.from('personas').select('*').eq('empresa_id', empresa.id)).data : []);
-      const contextSummary = typeof project?.executive_summary === 'string'
-        ? project.executive_summary
-        : (project?.executive_summary?.content || project?.description || 'No description available');
+
+      // Load custom prompt
+      const basePrompt = await llmService.loadPrompt('team-generation', `
+        You are an expert HR Manager. Help the user define their team.
+        Project: ${project?.name}
+        Mission: ${project?.mission}
+      `);
 
       systemPrompt = `
-        You are an expert HR Manager & Organizational Strategist for the project "${project?.name || 'Project'}".
+        ${basePrompt}
         
-        Project Context/Summary:
-        ${contextSummary}
-
-        Current Team Context: ${JSON.stringify(team, null, 2)}
+        ---
+        CURRENT CONTEXT:
+        Project: ${project?.name}
+        Description: ${contextSummary}
         
-        Your goal is to help the user define, hire, or reorganize the team to achieve the project goals.
-        If the user asks to change the team, you MUST use the "update_team_structure" tool.
+        Existing Team: ${JSON.stringify(team, null, 2)}
+        
+        Using the "update_team_structure" tool is the ONLY way to change the team.
         Always reply in Portuguese (Brazil).
       `;
+
       tools = [{
         type: 'function',
         function: {
@@ -227,18 +236,20 @@ export async function POST(req: NextRequest) {
                   type: 'object',
                   properties: {
                     id: { type: 'string' },
-                    nome: { type: 'string' },
-                    cargo: { type: 'string' },
-                    nacionalidade: { type: 'string' },
-                    idade: { type: 'number' },
-                    perfil_profissional: { type: 'string' },
-                    descricao_funcao: { type: 'string' },
-                    nivel_senioridade: { type: 'string' },
+                    name: { type: 'string' },
+                    role: { type: 'string' },
+                    seniority: { type: 'string' },
+                    description: { type: 'string' },
+                    personality_traits: { type: 'array', items: { type: 'string' } },
+                    skills: { type: 'array', items: { type: 'object', properties: { name: { type: 'string' }, type: { type: 'string' }, level: { type: 'string' } } } },
                     responsibilities: { type: 'array', items: { type: 'string' } },
                     kpis: { type: 'array', items: { type: 'string' } },
-                    tracos_personalidade: { type: 'array', items: { type: 'string' } }
+                    tools: { type: 'array', items: { type: 'string' } },
+                    daily_tasks: { type: 'array', items: { type: 'string' }, description: '2 daily mandatory tasks' },
+                    weekly_task: { type: 'string', description: '1 weekly mandatory task' },
+                    why_this_role: { type: 'string' }
                   },
-                  required: ['nome', 'cargo', 'descricao_funcao']
+                  required: ['name', 'role', 'description', 'daily_tasks', 'weekly_task']
                 }
               }
             },
@@ -246,28 +257,31 @@ export async function POST(req: NextRequest) {
           }
         }
       }];
-    } else if (mode === 'workflows') {
-      // ... (Workflows setup remains same)
-      const workflows = currentData?.workflows || project?.metadata?.workflows || [];
-      const team = currentData?.team || (empresa ? (await supabase.from('personas').select('id, nome, cargo').eq('empresa_id', empresa.id)).data : []);
 
-      const contextSummary = typeof project?.executive_summary === 'string'
-        ? project.executive_summary
-        : (project?.executive_summary?.content || project?.description || 'No description available');
+    } else if (mode === 'workflows') {
+      const workflows = currentData?.workflows || project?.metadata?.workflows || [];
+      const team = currentData?.team || (empresa ? (await supabase.from('personas').select('*').eq('empresa_id', empresa.id)).data : []);
+
+      // Load custom prompt
+      const basePrompt = await llmService.loadPrompt('workflow-generation', `
+        You are an Automation Expert. Create workflows for this project.
+      `);
 
       systemPrompt = `
-        You are an expert Operations & Automation Manager for "${project?.name || 'Project'}".
+        ${basePrompt}
         
-        Project Context:
-        ${contextSummary}
-
+        ---
+        CURRENT CONTEXT:
+        Project: ${project?.name}
+        Description: ${contextSummary}
+        
         Current Workflows: ${JSON.stringify(workflows, null, 2)}
-        Available Team Members: ${JSON.stringify(team, null, 2)}
+        Available Team & Tasks: ${JSON.stringify(team, null, 2)}
         
-        Your goal is to create or optimize workflows to execute the project vision.
-        If the user asks to change workflows, use the "update_workflows" tool.
+        Use "update_workflows" to suggest changes.
         Always reply in Portuguese (Brazil).
       `;
+
       tools = [{
         type: 'function',
         function: {
@@ -282,16 +296,26 @@ export async function POST(req: NextRequest) {
                   type: 'object',
                   properties: {
                     id: { type: 'string' },
-                    task_title: { type: 'string' },
-                    task_description: { type: 'string' },
-                    status: { type: 'string', enum: ['identified', 'implemented', 'backlog'] },
-                    workflow_type: { type: 'string' },
-                    estimated_roi: { type: 'string' },
+                    title: { type: 'string' },
+                    description: { type: 'string' },
+                    trigger_type: { type: 'string' },
+                    trigger_details: { type: 'string' },
+                    actions: {
+                      type: 'array',
+                      items: {
+                        type: 'object',
+                        properties: { step: { type: 'number' }, action: { type: 'string' }, tool: { type: 'string' }, details: { type: 'string' } }
+                      }
+                    },
                     assigned_persona_role: { type: 'string' },
-                    tools_involved: { type: 'array', items: { type: 'string' } },
-                    steps: { type: 'array', items: { type: 'string' } }
+                    complexity: { type: 'string' },
+                    estimated_time_saved: { type: 'string' },
+                    roi_impact: { type: 'string' },
+                    priority: { type: 'string' },
+                    dependencies: { type: 'array', items: { type: 'string' } },
+                    success_metrics: { type: 'array', items: { type: 'string' } }
                   },
-                  required: ['task_title', 'task_description']
+                  required: ['title', 'description', 'trigger_type', 'actions']
                 }
               }
             },
@@ -311,7 +335,7 @@ export async function POST(req: NextRequest) {
 
     const responseMessage = response.choices[0].message;
 
-    // --- HANDLE PROPOSAL (Do not execute, just return proposal) ---
+    // --- HANDLE PROPOSAL ---
     if (responseMessage.tool_calls) {
       const toolCall = responseMessage.tool_calls[0];
       const args = JSON.parse((toolCall as any).function.arguments);

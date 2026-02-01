@@ -84,7 +84,7 @@ export class LLMService {
   /**
    * Load custom prompt from markdown file or database
    */
-  private async loadPrompt(fileKey: string, defaultPrompt: string): Promise<string> {
+  public async loadPrompt(fileKey: string, defaultPrompt: string): Promise<string> {
     try {
       // Map file keys (kebab-case) to DB keys (snake_case)
       const keyMapping: Record<string, string> = {

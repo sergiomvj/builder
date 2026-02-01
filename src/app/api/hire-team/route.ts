@@ -89,7 +89,16 @@ export async function POST(req: NextRequest) {
 
     // 3. Generate Team Structure via LLM
     console.log('Generating virtual team...');
-    const teamStructure = await llmService.generateTeamStructure(project, { systemPrompt });
+
+    // Load custom prompt if not provided in body
+    let finalSystemPrompt = systemPrompt;
+    if (!finalSystemPrompt) {
+      finalSystemPrompt = await llmService.loadPrompt('team-generation', `
+            You are an expert HR Manager. Help the user define their team.
+        `);
+    }
+
+    const teamStructure = await llmService.generateTeamStructure(project, { systemPrompt: finalSystemPrompt });
     console.log(`Generated ${teamStructure.team.length} personas.`);
 
     // 4. Insert Personas and Skills
@@ -106,7 +115,9 @@ export async function POST(req: NextRequest) {
           descricao_funcao: member.description,
           nivel_senioridade: member.seniority,
           tracos_personalidade: member.personality_traits,
-          avatar_url: `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(member.name)}`
+          avatar_url: `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(member.name)}`,
+          daily_tasks: member.daily_tasks,
+          weekly_task: member.weekly_task
         });
       }
 
@@ -129,7 +140,15 @@ export async function POST(req: NextRequest) {
           tracos_personalidade: member.personality_traits,
           tipo: 'virtual_assistant',
           status: 'active',
-          avatar_url: `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(member.name)}` // Simple avatar generation
+          avatar_url: `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(member.name)}`, // Simple avatar generation
+          metadata: {
+            daily_tasks: member.daily_tasks || [],
+            weekly_task: member.weekly_task || '',
+            responsibilities: member.responsibilities || [],
+            kpis: member.kpis || [],
+            tools: member.tools || [],
+            why_this_role: member.why_this_role
+          }
         })
         .select()
         .single();
@@ -144,7 +163,7 @@ export async function POST(req: NextRequest) {
         persona_id: persona.id,
         nome: skill.name,
         tipo: skill.type === 'soft' ? 'soft_skill' : 'tecnica',
-        nivel: 'avancado'
+        nivel: 'avancado' // Default level if not specified or mapped
       }));
 
       if (skillsToInsert.length > 0) {

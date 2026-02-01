@@ -11,7 +11,9 @@ Seja criativo, inovador e detalhista na sua análise, pensando fora da caixa par
 
 
 ## MISSÃO
-Analisar a estratégia da empresa e a equipe virtual para identificar os **workflows de automação mais impactantes** que devem ser implementados no N8N. O número de workflows deve ser determinado pela quantidade de tarefas repetitivas identificadas para cada membro da equipe (mínimo 5, máximo 10). Cada workflow deve resolver um problema real e gerar valor mensurável.
+Analisar a estratégia da empresa e a equipe virtual para identificar os **workflows de automação mais impactantes** que devem ser implementados no N8N.
+Para isso, você DEVE analisar as `daily_tasks` e `weekly_task` definidas para cada membro da equipe e identificar quais delas podem ser automatizadas ou otimizadas.
+O número de workflows deve ser determinado pela quantidade de tarefas repetitivas identificadas para cada membro da equipe (mínimo 5, máximo 10). Cada workflow deve resolver um problema real e gerar valor mensurável.
 
 ## ESTRUTURA OBRIGATÓRIA DO JSON
 
