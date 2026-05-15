@@ -78,8 +78,41 @@ CREATE TABLE public.projects (
     revenue_streams TEXT[],
     status TEXT DEFAULT 'planning' CHECK (status IN ('planning', 'building', 'active', 'archived')),
     metadata JSONB DEFAULT '{}'::jsonb,
+    executive_summary TEXT,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- ------------------------------------------------------------------------------
+-- 4.5 CONFIGURAÇÕES E LOGS DE SISTEMA
+-- ------------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS public.system_configs CASCADE;
+CREATE TABLE public.system_configs (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    key VARCHAR(100) UNIQUE NOT NULL,
+    value TEXT,
+    description TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Inserir configurações padrão
+INSERT INTO public.system_configs (key, value, description) VALUES
+('llm_provider', 'openai', 'Provedor de LLM padrão (openai, openrouter, google)'),
+('llm_model', 'gpt-4o', 'Modelo de LLM padrão');
+
+DROP TABLE IF EXISTS public.llm_logs CASCADE;
+CREATE TABLE public.llm_logs (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    project_id UUID REFERENCES public.projects(id) ON DELETE SET NULL,
+    prompt_type VARCHAR(100),
+    full_prompt_sent TEXT,
+    llm_response JSONB,
+    expected_deliverables TEXT[],
+    missing_deliverables TEXT[],
+    status VARCHAR(50),
+    created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
 -- ------------------------------------------------------------------------------

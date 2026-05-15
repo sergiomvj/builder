@@ -61,7 +61,7 @@ export class LLMService {
     try {
       const supabase = getSupabase();
       const { data, error } = await supabase
-        .from('system_config')
+        .from('system_configs')
         .select('key, value')
         .in('key', ['llm_provider', 'llm_model']);
 
@@ -98,7 +98,7 @@ export class LLMService {
       // First, try to load from database
       const supabase = getSupabase();
       const { data, error } = await supabase
-        .from('system_config')
+        .from('system_configs')
         .select('value')
         .eq('key', dbKey)
         .single();

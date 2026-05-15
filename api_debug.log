@@ -5589,3 +5589,482 @@ STACK: Error: 401 Incorrect API key provided: sk-proj-**************************
   "hint": null,
   "message": "Could not find the 'executive_summary' column of 'projects' in the schema cache"
 }
+2026-05-15T15:38:31.495Z: --- REQUEST RECEIVED --- 
+2026-05-15T15:38:31.499Z: Body parsed {
+  "ideaLength": 80,
+  "hasPrompt": false
+}
+2026-05-15T15:38:31.499Z: Calling LLM Service... 
+2026-05-15T15:38:50.020Z: LLM Analysis Complete {
+  "projectName": "BrasilConnect USA"
+}
+2026-05-15T15:38:50.020Z: Ready to insert Idea {
+  "safeTitle": "BrasilConnect USA"
+}
+2026-05-15T15:38:50.315Z: Idea Created {
+  "id": "8896b259-dbc5-4333-b7c9-f4aab2121cfd"
+}
+2026-05-15T15:38:50.315Z: Inserting Project {
+  "idea_id": "8896b259-dbc5-4333-b7c9-f4aab2121cfd",
+  "name": "BrasilConnect USA",
+  "description": "Um portal para brasileiros nos EUA que oferece serviços de imigração e notícias.",
+  "mission": "",
+  "vision": "",
+  "values": [],
+  "objectives": [],
+  "target_audience": "TBD",
+  "revenue_streams": [],
+  "status": "planning",
+  "metadata": {
+    "project_name": "BrasilConnect USA",
+    "tagline": "Conectando Brasileiros nos EUA com Informação e Oportunidades",
+    "executive_summary": {
+      "content": "O projeto BrasilConnect USA é um portal online projetado para atender às necessidades dos brasileiros que vivem nos Estados Unidos. Este portal visa resolver duas dores principais da comunidade brasileira: a complexidade dos processos de imigração e a dificuldade em acessar notícias relevantes e atualizadas sobre o Brasil e os EUA. \n\nA solução proposta é uma plataforma digital que oferece uma gama de serviços de imigração, desde consultoria até documentação e acompanhamento de processos, além de um hub de notícias que cobre desde atualizações legais até eventos culturais e sociais. O mercado-alvo são os quase 1,5 milhão de brasileiros residentes nos EUA, com um foco especial em novos imigrantes e aqueles que buscam regularizar sua situação ou se manter informados sobre mudanças legais.\n\nA oportunidade é significativa, dado o crescimento constante da comunidade brasileira nos EUA e a necessidade contínua de suporte em imigração e acesso a informações. Além disso, há uma carência de plataformas centralizadas e de fácil acesso que combinem ambos os serviços, o que coloca o BrasilConnect USA em uma posição estratégica para capturar esse mercado."
+    },
+    "viability_score": {
+      "total": 71,
+      "breakdown": {
+        "market_pain": {
+          "score": 20,
+          "rationale": "A dor de lidar com processos de imigração é aguda e frequente para brasileiros nos EUA, mas existem alternativas no mercado."
+        },
+        "technical_feasibility": {
+          "score": 18,
+          "rationale": "Construir um portal com serviços de imigração e notícias é tecnicamente viável, mas requer integração cuidadosa de sistemas."
+        },
+        "revenue_potential": {
+          "score": 15,
+          "rationale": "O potencial de receita existe, mas depende da monetização eficaz de serviços e publicidade."
+        },
+        "competitive_landscape": {
+          "score": 18,
+          "rationale": "Há competição de portais de imigração e notícias, mas poucos combinam ambos os serviços para brasileiros nos EUA."
+        }
+      }
+    },
+    "business_diagnosis": {
+      "content": "Go"
+    },
+    "why_now": {
+      "content": "O momento é oportuno devido ao aumento de brasileiros nos EUA e as recentes mudanças nas políticas de imigração que criam uma demanda por informações atualizadas e serviços de suporte."
+    },
+    "why_not_100": {
+      "summary": "A pontuação não foi 100 devido à concorrência existente, desafios na monetização e complexidade técnica para integrar serviços de imigração com notícias.",
+      "critical_gaps": [
+        {
+          "gap": "Concorrência de portais estabelecidos.",
+          "impact_on_score": "-5",
+          "mitigation_path": "Diferenciar-se através de um serviço personalizado e conteúdo exclusivo para brasileiros."
+        },
+        {
+          "gap": "Monetização incerta.",
+          "impact_on_score": "-5",
+          "mitigation_path": "Explorar modelos de assinatura e parcerias com advogados de imigração."
+        },
+        {
+          "gap": "Integração técnica complexa.",
+          "impact_on_score": "-4",
+          "mitigation_path": "Investir em uma equipe de desenvolvimento sólida e em plataformas tecnológicas escaláveis."
+        }
+      ]
+    },
+    "execution_plan": {
+      "systems_breakdown": [
+        {
+          "name": "Portal de Imigração",
+          "description": "Sistema para oferecer consultoria e serviços de imigração online.",
+          "tech_stack": "React, Node.js, MongoDB"
+        },
+        {
+          "name": "Hub de Notícias",
+          "description": "Plataforma de publicação de notícias e atualizações.",
+          "tech_stack": "WordPress, PHP, MySQL"
+        },
+        {
+          "name": "Sistema de Autenticação e Pagamentos",
+          "description": "Gerenciamento de usuários e transações.",
+          "tech_stack": "OAuth, Stripe API"
+        }
+      ],
+      "roadmap": [
+        {
+          "phase": "Mês 1",
+          "goal": "Lançamento do MVP do portal de imigração.",
+          "actions": [
+            "Definir requisitos de usuário",
+            "Desenvolver interface básica",
+            "Configurar sistema de gestão de conteúdo"
+          ]
+        },
+        {
+          "phase": "Mês 3",
+          "goal": "Integração do hub de notícias.",
+          "actions": [
+            "Implementar plataforma de publicação",
+            "Integrar feeds de notícias",
+            "Testar funcionalidades básicas"
+          ]
+        },
+        {
+          "phase": "Mês 6",
+          "goal": "Expandir serviços e otimizar UX/UI.",
+          "actions": [
+            "Lançar serviços adicionais de imigração",
+            "Melhorar experiência do usuário",
+            "Implementar sistema de feedback"
+          ]
+        }
+      ],
+      "backlog_preview": [
+        "Como usuário, quero acessar consultoria de imigração para entender meus direitos nos EUA.",
+        "Como visitante, gostaria de ler notícias atualizadas sobre mudanças nas leis de imigração.",
+        "Como assinante, quero receber notificações sobre eventos da comunidade brasileira nos EUA."
+      ]
+    },
+    "marketing_strategy": {
+      "value_proposition": {
+        "content": "BrasilConnect USA é a única plataforma que combina serviços de imigração personalizados com notícias relevantes para brasileiros nos EUA, tudo em um único lugar."
+      },
+      "target_audience": {
+        "primary": "Brasileiros recém-chegados aos EUA e aqueles em processo de imigração.",
+        "secondary": "Brasileiros nos EUA buscando notícias e eventos culturais."
+      },
+      "approach_strategy": {
+        "content": "O foco será em marketing digital, parcerias com comunidades brasileiras e presença em eventos culturais para aumentar a visibilidade e a confiança na plataforma."
+      },
+      "channels": [
+        {
+          "name": "Redes Sociais",
+          "description": "Facebook, Instagram, e grupos de WhatsApp.",
+          "priority": "Alta"
+        },
+        {
+          "name": "SEO e Conteúdo",
+          "description": "Blog e artigos otimizados para busca.",
+          "priority": "Média"
+        },
+        {
+          "name": "Parcerias Comunitárias",
+          "description": "Colaborações com associações brasileiras nos EUA.",
+          "priority": "Alta"
+        }
+      ],
+      "tactics": [
+        {
+          "tactic": "Campanhas de mídia social",
+          "description": "Criar campanhas focadas nos desafios de imigração e notícias culturais.",
+          "timeline": "Lançamento e contínuo"
+        },
+        {
+          "tactic": "SEO e marketing de conteúdo",
+          "description": "Publicar artigos otimizados para atrair tráfego orgânico.",
+          "timeline": "Mês 1 em diante"
+        },
+        {
+          "tactic": "Eventos e parcerias",
+          "description": "Participar de eventos culturais para promover a plataforma.",
+          "timeline": "Mês 3 em diante"
+        }
+      ]
+    },
+    "lead_generation_strategy": {
+      "lead_magnets": [
+        {
+          "name": "E-book de Imigração",
+          "description": "Guia gratuito sobre os passos básicos de imigração para os EUA."
+        },
+        {
+          "name": "Newsletter Semanal",
+          "description": "Atualizações semanais sobre imigração e notícias relevantes."
+        }
+      ],
+      "conversion_tactics": [
+        {
+          "tactic": "Consultas Gratuitas",
+          "description": "Oferecer uma consulta inicial gratuita para novos usuários."
+        },
+        {
+          "tactic": "Testemunhos de Sucesso",
+          "description": "Usar depoimentos de usuários satisfeitos para construir confiança."
+        }
+      ]
+    },
+    "key_metrics": {
+      "content": "Número de usuários ativos mensais, taxa de conversão de leads, receita mensal recorrente, engajamento em redes sociais e feedback do usuário."
+    },
+    "risks": {
+      "content": "Os principais riscos incluem a alta competitividade no setor de imigração, mudanças nas políticas de imigração que podem afetar a demanda, e possíveis desafios técnicos na integração de sistemas. Mitigar esses riscos envolve manter-se atualizado com as regulamentações, diversificar a oferta de serviços e investir em tecnologia robusta."
+    },
+    "swot": {
+      "strengths": [
+        "Solução integrada de imigração e notícias",
+        "Foco em um nicho específico: brasileiros nos EUA"
+      ],
+      "weaknesses": [
+        "Desafios na monetização",
+        "Necessidade de integração técnica complexa"
+      ],
+      "opportunities": [
+        "Crescimento da comunidade brasileira nos EUA",
+        "Aumento da demanda por informações de imigração"
+      ],
+      "threats": [
+        "Concorrência de plataformas estabelecidas",
+        "Mudanças imprevistas na legislação de imigração"
+      ]
+    },
+    "potential_improvements": {
+      "content": "Considerar a inclusão de uma plataforma de suporte comunitário onde os usuários possam compartilhar experiências e dicas, aumentando o engajamento e a retenção."
+    },
+    "project_metadata": {
+      "project_name": "BrasilConnect USA"
+    }
+  },
+  "executive_summary": {
+    "content": "O projeto BrasilConnect USA é um portal online projetado para atender às necessidades dos brasileiros que vivem nos Estados Unidos. Este portal visa resolver duas dores principais da comunidade brasileira: a complexidade dos processos de imigração e a dificuldade em acessar notícias relevantes e atualizadas sobre o Brasil e os EUA. \n\nA solução proposta é uma plataforma digital que oferece uma gama de serviços de imigração, desde consultoria até documentação e acompanhamento de processos, além de um hub de notícias que cobre desde atualizações legais até eventos culturais e sociais. O mercado-alvo são os quase 1,5 milhão de brasileiros residentes nos EUA, com um foco especial em novos imigrantes e aqueles que buscam regularizar sua situação ou se manter informados sobre mudanças legais.\n\nA oportunidade é significativa, dado o crescimento constante da comunidade brasileira nos EUA e a necessidade contínua de suporte em imigração e acesso a informações. Além disso, há uma carência de plataformas centralizadas e de fácil acesso que combinem ambos os serviços, o que coloca o BrasilConnect USA em uma posição estratégica para capturar esse mercado."
+  }
+}
+2026-05-15T15:38:50.641Z: Project Insert Failed {
+  "code": "PGRST204",
+  "details": null,
+  "hint": null,
+  "message": "Could not find the 'executive_summary' column of 'projects' in the schema cache"
+}
+2026-05-15T15:39:15.239Z: --- REQUEST RECEIVED --- 
+2026-05-15T15:39:15.240Z: Body parsed {
+  "ideaLength": 120,
+  "hasPrompt": false
+}
+2026-05-15T15:39:15.240Z: Calling LLM Service... 
+2026-05-15T15:39:35.401Z: LLM Analysis Complete {
+  "projectName": "Facelatina"
+}
+2026-05-15T15:39:35.402Z: Ready to insert Idea {
+  "safeTitle": "Facelatina"
+}
+2026-05-15T15:39:35.697Z: Idea Created {
+  "id": "8974e6e6-7d30-4180-8c31-705ab33c1470"
+}
+2026-05-15T15:39:35.698Z: Inserting Project {
+  "idea_id": "8974e6e6-7d30-4180-8c31-705ab33c1470",
+  "name": "Facelatina",
+  "description": "Revista online voltada para o publico hispanico residente nos Estados Unidos e outros paises do mundo chamada Facelatina",
+  "mission": "",
+  "vision": "",
+  "values": [],
+  "objectives": [],
+  "target_audience": "TBD",
+  "revenue_streams": [],
+  "status": "planning",
+  "metadata": {
+    "project_name": "Facelatina",
+    "tagline": "Conectando Cultura Hispânica ao Mundo",
+    "executive_summary": {
+      "content": "**Problema:** A comunidade hispânica, que é uma das maiores minorias nos Estados Unidos e uma presença significativa em muitos países, muitas vezes se vê carente de conteúdos que abordem suas particularidades culturais, sociais e econômicas de forma relevante e acessível. Embora existam plataformas de mídia em espanhol, poucas são as que realmente capturam a essência e as nuances desta rica cultura em um formato digital moderno e engajante.\n\n**Solução:** Facelatina é uma revista online criada especificamente para atender às necessidades dessa comunidade diversificada. A plataforma oferecerá conteúdo de qualidade que abrange temas como cultura, entretenimento, política, negócios e estilo de vida, com uma perspectiva hispânica autêntica. Além disso, a Facelatina integrará funcionalidades interativas, como fóruns de discussão e seções de opinião, para fomentar um senso de comunidade e pertencimento.\n\n**Mercado:** O público-alvo principal são os hispânicos residentes nos Estados Unidos, que representam mais de 18% da população americana, além de hispânicos em outros países que buscam conteúdo culturalmente relevante. Este grupo demográfico tem uma crescente influência econômica, social e política, apresentando uma oportunidade de mercado robusta para plataformas que atendem suas necessidades.\n\n**Oportunidade:** Com o crescimento contínuo da população hispânica e sua influência cultural, há uma demanda crescente por conteúdos que ressoem com suas experiências e aspirações. Facelatina pode preencher essa lacuna ao oferecer uma plataforma vibrante e dedicada que não apenas informa, mas também une a comunidade hispânica global, criando oportunidades para monetização por meio de publicidade, assinaturas premium e eventos patrocinados."
+    },
+    "viability_score": {
+      "total": 72,
+      "breakdown": {
+        "market_pain": {
+          "score": 18,
+          "rationale": "A dor é aguda, dado que muitos hispânicos buscam representatividade e conteúdo culturalmente relevante, mas a variedade de plataformas existentes reduz a pontuação."
+        },
+        "technical_feasibility": {
+          "score": 22,
+          "rationale": "Construir uma revista online é tecnicamente viável com as ferramentas e plataformas disponíveis atualmente."
+        },
+        "revenue_potential": {
+          "score": 15,
+          "rationale": "Há potencial de receita através de assinaturas, publicidade e parcerias, mas a competição pode limitar o crescimento inicial."
+        },
+        "competitive_landscape": {
+          "score": 17,
+          "rationale": "Embora existam outras plataformas, poucas oferecem um enfoque tão específico e abrangente, mas a presença de players estabelecidos torna o mercado competitivo."
+        }
+      }
+    },
+    "business_diagnosis": {
+      "content": "Go"
+    },
+    "why_now": {
+      "content": "O aumento da conscientização e valorização das culturas minoritárias, combinado com o crescimento da população hispânica e sua influência nos Estados Unidos, torna este o momento ideal para lançar uma plataforma focada neste público."
+    },
+    "why_not_100": {
+      "summary": "A nota não foi 100 devido a desafios de competição e a necessidade de se diferenciar em um mercado saturado.",
+      "critical_gaps": [
+        {
+          "gap": "Competição com grandes players estabelecidos.",
+          "impact_on_score": "-5",
+          "mitigation_path": "Focar em um nicho específico e oferecer conteúdos exclusivos e parcerias com influenciadores locais."
+        },
+        {
+          "gap": "Monetização inicial limitada.",
+          "impact_on_score": "-3",
+          "mitigation_path": "Desenvolver estratégias de monetização criativas, como eventos online e assinaturas premium com conteúdos exclusivos."
+        },
+        {
+          "gap": "Atração de audiência inicial.",
+          "impact_on_score": "-5",
+          "mitigation_path": "Investir em marketing digital focado e campanhas de redes sociais para atrair o público-alvo."
+        }
+      ]
+    },
+    "execution_plan": {
+      "systems_breakdown": [
+        {
+          "name": "Plataforma de Publicação",
+          "description": "Sistema para gerenciar e publicar conteúdo online.",
+          "tech_stack": "WordPress, Ghost"
+        },
+        {
+          "name": "Sistema de Análise",
+          "description": "Ferramentas para monitorar o engajamento e o desempenho do conteúdo.",
+          "tech_stack": "Google Analytics, Mixpanel"
+        },
+        {
+          "name": "Comunidade e Interação",
+          "description": "Funcionalidades para fóruns e comentários.",
+          "tech_stack": "Disqus, Vanilla Forums"
+        }
+      ],
+      "roadmap": [
+        {
+          "phase": "Mês 1",
+          "goal": "Lançamento do site básico.",
+          "actions": [
+            "Desenvolver a plataforma de publicação.",
+            "Configurar as ferramentas de análise."
+          ]
+        },
+        {
+          "phase": "Mês 3",
+          "goal": "Lançamento de funcionalidades de comunidade.",
+          "actions": [
+            "Implementar fóruns e seções de comentários.",
+            "Iniciar campanhas de marketing digital."
+          ]
+        },
+        {
+          "phase": "Mês 6",
+          "goal": "Expansão de conteúdo e monetização.",
+          "actions": [
+            "Ampliar a equipe de redatores.",
+            "Iniciar estratégias de monetização como eventos online."
+          ]
+        }
+      ],
+      "backlog_preview": [
+        "Como usuário, eu quero acessar artigos em espanhol sobre cultura hispânica para me sentir conectado com minhas raízes.",
+        "Como leitor, quero participar de discussões em fóruns para interagir com outros membros da comunidade.",
+        "Como assinante, quero receber notificações sobre novos conteúdos para não perder atualizações importantes."
+      ]
+    },
+    "marketing_strategy": {
+      "value_proposition": {
+        "content": "Facelatina é única por oferecer uma plataforma que não apenas informa, mas também une a comunidade hispânica global através de conteúdo culturalmente relevante e interativo."
+      },
+      "target_audience": {
+        "primary": "Hispânicos residentes nos EUA",
+        "secondary": "Hispânicos em outros países buscando conteúdo culturalmente relevante"
+      },
+      "approach_strategy": {
+        "content": "Utilizar uma combinação de marketing digital, parcerias com influenciadores e eventos comunitários para atrair e engajar os leitores hispânicos."
+      },
+      "channels": [
+        {
+          "name": "Redes Sociais",
+          "description": "Instagram, Facebook, e Twitter para engajamento e promoção de conteúdo.",
+          "priority": "Alta"
+        },
+        {
+          "name": "SEO e Conteúdo",
+          "description": "Otimização para motores de busca e criação de conteúdo evergreen para atrair tráfego orgânico.",
+          "priority": "Média"
+        },
+        {
+          "name": "Eventos Online",
+          "description": "Webinars e lives para engajar a comunidade e promover a marca.",
+          "priority": "Média"
+        }
+      ],
+      "tactics": [
+        {
+          "tactic": "Marketing de Influência",
+          "description": "Parcerias com influenciadores hispânicos para amplificar o alcance.",
+          "timeline": "Início imediato"
+        },
+        {
+          "tactic": "SEO Localizado",
+          "description": "Foco em otimização de SEO para alcançar hispânicos em diferentes regiões.",
+          "timeline": "Mês 2"
+        },
+        {
+          "tactic": "Lançamento de Campanhas de Redes Sociais",
+          "description": "Campanhas no Instagram e Facebook para aumentar a visibilidade da marca.",
+          "timeline": "Mês 1"
+        }
+      ]
+    },
+    "lead_generation_strategy": {
+      "lead_magnets": [
+        {
+          "name": "E-books Culturais",
+          "description": "E-books gratuitos sobre história e cultura hispânica."
+        },
+        {
+          "name": "Newsletters Exclusivas",
+          "description": "Assinatura de newsletters com conteúdos exclusivos e insights."
+        }
+      ],
+      "conversion_tactics": [
+        {
+          "tactic": "Ofertas de Assinatura",
+          "description": "Descontos para os primeiros assinantes e pacotes de assinatura."
+        },
+        {
+          "tactic": "Conteúdo Premium",
+          "description": "Acesso exclusivo a artigos e eventos para assinantes pagos."
+        }
+      ]
+    },
+    "key_metrics": {
+      "content": "Número de visitantes únicos, taxa de engajamento nos artigos, crescimento de assinaturas, engajamento nas redes sociais, receita mensal por usuário (ARPU)."
+    },
+    "risks": {
+      "content": "Concorrência intensa pode dificultar a diferenciação. Dependência de receita de publicidade pode ser instável. Mitigação através de diversificação de receitas e foco em parcerias estratégicas."
+    },
+    "swot": {
+      "strengths": [
+        "Foco em um nicho culturalmente específico.",
+        "Equipe com experiência em mídia digital."
+      ],
+      "weaknesses": [
+        "Dependência inicial de publicidade.",
+        "Desafio em atrair audiência inicial."
+      ],
+      "opportunities": [
+        "Crescimento da população hispânica nos EUA.",
+        "Aumentada demanda por conteúdo culturalmente relevante."
+      ],
+      "threats": [
+        "Concorrência de grandes plataformas de mídia.",
+        "Mudanças nos algoritmos das redes sociais que impactam distribuição de conteúdo."
+      ]
+    },
+    "potential_improvements": {
+      "content": "Explorar parcerias com instituições culturais e educacionais para ampliar o alcance e relevância do conteúdo. Investir em tecnologia de IA para personalização de conteúdo e recomendações."
+    },
+    "project_metadata": {
+      "project_name": "Facelatina"
+    }
+  },
+  "executive_summary": {
+    "content": "**Problema:** A comunidade hispânica, que é uma das maiores minorias nos Estados Unidos e uma presença significativa em muitos países, muitas vezes se vê carente de conteúdos que abordem suas particularidades culturais, sociais e econômicas de forma relevante e acessível. Embora existam plataformas de mídia em espanhol, poucas são as que realmente capturam a essência e as nuances desta rica cultura em um formato digital moderno e engajante.\n\n**Solução:** Facelatina é uma revista online criada especificamente para atender às necessidades dessa comunidade diversificada. A plataforma oferecerá conteúdo de qualidade que abrange temas como cultura, entretenimento, política, negócios e estilo de vida, com uma perspectiva hispânica autêntica. Além disso, a Facelatina integrará funcionalidades interativas, como fóruns de discussão e seções de opinião, para fomentar um senso de comunidade e pertencimento.\n\n**Mercado:** O público-alvo principal são os hispânicos residentes nos Estados Unidos, que representam mais de 18% da população americana, além de hispânicos em outros países que buscam conteúdo culturalmente relevante. Este grupo demográfico tem uma crescente influência econômica, social e política, apresentando uma oportunidade de mercado robusta para plataformas que atendem suas necessidades.\n\n**Oportunidade:** Com o crescimento contínuo da população hispânica e sua influência cultural, há uma demanda crescente por conteúdos que ressoem com suas experiências e aspirações. Facelatina pode preencher essa lacuna ao oferecer uma plataforma vibrante e dedicada que não apenas informa, mas também une a comunidade hispânica global, criando oportunidades para monetização por meio de publicidade, assinaturas premium e eventos patrocinados."
+  }
+}
+2026-05-15T15:39:35.977Z: Project Insert Failed {
+  "code": "PGRST204",
+  "details": null,
+  "hint": null,
+  "message": "Could not find the 'executive_summary' column of 'projects' in the schema cache"
+}
