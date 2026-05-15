@@ -90,7 +90,8 @@ export class LLMService {
       const keyMapping: Record<string, string> = {
         'genesis-analysis': 'genesis_prompt',
         'team-generation': 'team_prompt',
-        'workflow-generation': 'workflow_prompt'
+        'workflow-generation': 'workflow_prompt',
+        'marketing-strategy': 'marketing_strategy_prompt'
       };
 
       const dbKey = keyMapping[fileKey] || fileKey;
@@ -893,6 +894,111 @@ IMPORTANTE: Retorne APENAS JSON válido, sem markdown, sem explicações.
       return parsed;
     } catch (e) {
       console.error("Failed to analyze idea:", e);
+      throw e;
+    }
+  }
+
+  /**
+   * Generates a complete Central Marketing Strategy based on 4-layer template
+   */
+  async generateMarketingStrategy(
+    projectContext: any,
+    wizardAnswers: any,
+    config: LLMRequestConfig = {}
+  ) {
+    const defaultPrompt = await this.loadPrompt('marketing-strategy', '');
+
+    const systemPrompt = config.systemPrompt || defaultPrompt;
+
+    // Build context from project + wizard answers
+    const existingAnalysis = projectContext.metadata
+      ? JSON.stringify({
+          executive_summary: projectContext.metadata.executive_summary,
+          marketing_strategy: projectContext.metadata.marketing_strategy,
+          swot: projectContext.metadata.swot,
+          viability_score: projectContext.metadata.viability_score,
+          target_audience: projectContext.target_audience,
+        }).substring(0, 3000)
+      : 'Nenhuma análise existente disponível.';
+
+    const wizardContext = wizardAnswers
+      ? JSON.stringify(wizardAnswers, null, 2)
+      : 'Nenhuma resposta do wizard fornecida.';
+
+    // Replace template variables in prompt
+    const filledPrompt = systemPrompt
+      .replace('{{PROJECT_NAME}}', projectContext.name || 'N/A')
+      .replace('{{PROJECT_DESCRIPTION}}', projectContext.description || 'N/A')
+      .replace('{{PROJECT_MISSION}}', projectContext.mission || 'N/A')
+      .replace('{{PROJECT_VISION}}', projectContext.vision || 'N/A')
+      .replace('{{TARGET_AUDIENCE}}', projectContext.target_audience || 'N/A')
+      .replace('{{INDUSTRY}}', wizardAnswers?.setor || projectContext.metadata?.industry || 'N/A')
+      .replace('{{EXISTING_ANALYSIS}}', existingAnalysis)
+      .replace('{{WIZARD_ANSWERS}}', wizardContext);
+
+    const userMessage = `
+Gere a Estratégia Central de Marketing completa para o projeto abaixo.
+
+**Projeto:** ${projectContext.name}
+**Descrição:** ${projectContext.description || 'N/A'}
+**Missão:** ${projectContext.mission || 'N/A'}
+**Setor:** ${wizardAnswers?.setor || 'N/A'}
+**Modelo de Negócio:** ${wizardAnswers?.modelo_negocio || 'N/A'}
+**Fase da Empresa:** ${wizardAnswers?.fase || 'N/A'}
+
+**Respostas do Wizard:**
+${wizardContext}
+
+Siga RIGOROSAMENTE a estrutura JSON de 4 camadas definida no prompt do sistema.
+Retorne APENAS JSON válido. Nada além do JSON.
+    `.trim();
+
+    const messages = [
+      { role: 'system' as const, content: filledPrompt },
+      { role: 'user' as const, content: userMessage }
+    ];
+
+    try {
+      const result = await this.generateCompletion(
+        messages,
+        {
+          ...config,
+          jsonMode: true,
+          maxTokens: 16000,
+        }
+      );
+
+      if (!result) throw new Error('Failed to generate marketing strategy');
+
+      const cleanedResult = result.replace(/```json\n?|\n?```/g, '').trim();
+      const parsed = JSON.parse(cleanedResult);
+
+      // Log and Validate
+      const expectedKeys = [
+        'estrategia_central_marketing.versao',
+        'estrategia_central_marketing.empresa',
+        'estrategia_central_marketing.camada_1_nucleo_grupo',
+        'estrategia_central_marketing.camada_2_modulos_obrigatorios.diagnostico',
+        'estrategia_central_marketing.camada_2_modulos_obrigatorios.okrs',
+        'estrategia_central_marketing.camada_2_modulos_obrigatorios.publico_alvo',
+        'estrategia_central_marketing.camada_2_modulos_obrigatorios.posicionamento',
+        'estrategia_central_marketing.camada_2_modulos_obrigatorios.canais',
+        'estrategia_central_marketing.camada_2_modulos_obrigatorios.plano_acao_90_dias',
+        'estrategia_central_marketing.camada_3_modulos_opcionais',
+        'estrategia_central_marketing.camada_4_governanca',
+      ];
+
+      await this.logLLMInteraction(
+        'marketing_strategy',
+        messages.map(m => `${m.role.toUpperCase()}:\n${m.content}`).join('\n\n---\n\n'),
+        parsed,
+        expectedKeys,
+        projectContext.id
+      );
+
+      return parsed;
+    } catch (e) {
+      console.error("Failed to generate marketing strategy:", e);
       throw e;
     }
   }

@@ -12,7 +12,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
 import { Project } from '@/types/project';
-import { FileText, Lightbulb, Download, Target, Briefcase, TrendingUp, AlertTriangle, Users, Rocket, Shield, Archive, Quote, Plus, Pencil, Trash2, FileJson, RefreshCw } from 'lucide-react';
+import { FileText, Lightbulb, Download, Target, Briefcase, TrendingUp, AlertTriangle, Users, Rocket, Shield, Archive, Quote, Plus, Pencil, Trash2, FileJson, RefreshCw, Megaphone } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import ExecutionPlanTab from '@/components/dashboard/ExecutionPlanTab';
 import WorkflowsTab from '@/components/dashboard/WorkflowsTab';
@@ -616,12 +616,15 @@ export default function ProjectDashboard() {
         </div>
         <h1 className="text-4xl font-bold text-slate-900 tracking-tight">{project.name}</h1>
 
-        <div className="flex gap-2 mt-4">
+        <div className="flex gap-2 mt-4 flex-wrap">
           <Badge variant="secondary" className="text-sm">{project.status}</Badge>
           <Badge variant="outline" className="text-sm">MVP Mode</Badge>
           {project.id.startsWith('mock-project-') && (
             <Badge variant="destructive" className="text-sm bg-amber-500 hover:bg-amber-600">Simulated Mode</Badge>
           )}
+          <Button variant="default" size="sm" onClick={() => router.push(`/marketing-strategy/${project.id}`)} className="gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 shadow-md print:hidden">
+            <Megaphone className="w-4 h-4" /> Gerar Estratégia Central de Marketing
+          </Button>
           <Button variant="outline" size="sm" onClick={() => window.open(`/projects/${project.id}/report`, '_blank')} className="gap-2 print:hidden">
             <FileText className="w-4 h-4" /> Export PDF (E-book)
           </Button>

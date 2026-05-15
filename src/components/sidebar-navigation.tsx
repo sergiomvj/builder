@@ -28,7 +28,8 @@ import {
   Lightbulb,
   Workflow,
   Image,
-  Target
+  Target,
+  Megaphone
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -56,6 +57,7 @@ export default function SidebarNavigation({ className }: SidebarProps) {
     { title: 'Dashboard', href: '/', icon: Home, badge: null },
     { title: 'Meus Projetos', href: '/projects-list', icon: FileText, badge: 'Saved' },
     { title: 'Company OS', href: '/company-os', icon: Target, badge: 'NEW' },
+    { title: 'Marketing Strategy', href: '/marketing-strategy', icon: Megaphone, badge: 'AI' },
     { title: 'Empresas', href: '/empresas', icon: Building, badge: null },
     { title: 'Personas', href: '/personas', icon: Users, badge: 'Central' },
     { title: 'Avatares', href: '/avatares', icon: Image, badge: 'AI' },
