@@ -135,6 +135,29 @@ export class DatabaseService {
   }
 
   static async saveAnalysis(analysis: any) {
+    // Check if an analysis already exists for this empresa_id (if provided)
+    if (analysis.empresa_id) {
+      const { data: existing } = await supabase
+        .from('saved_analyses')
+        .select('id')
+        .eq('empresa_id', analysis.empresa_id)
+        .maybeSingle();
+
+      if (existing) {
+        // Update
+        const { data, error } = await supabase
+          .from('saved_analyses')
+          .update(analysis)
+          .eq('id', existing.id)
+          .select()
+          .single();
+
+        if (error) throw error;
+        return data;
+      }
+    }
+
+    // Insert new
     const { data, error } = await supabase
       .from('saved_analyses')
       .insert(analysis)
