@@ -415,6 +415,7 @@ CREATE TRIGGER update_empresas_updated_at BEFORE UPDATE ON empresas FOR EACH ROW
 CREATE TRIGGER update_personas_updated_at BEFORE UPDATE ON personas FOR EACH ROW EXECUTE PROCEDURE update_updated_at_column();
 CREATE TRIGGER update_personas_avatares_updated_at BEFORE UPDATE ON personas_avatares FOR EACH ROW EXECUTE PROCEDURE update_updated_at_column();
 CREATE TRIGGER update_tasks_updated_at BEFORE UPDATE ON tasks FOR EACH ROW EXECUTE PROCEDURE update_updated_at_column();
+CREATE TRIGGER update_system_configs_updated_at BEFORE UPDATE ON system_configs FOR EACH ROW EXECUTE PROCEDURE update_updated_at_column();
 CREATE TRIGGER update_communications_updated_at BEFORE UPDATE ON personas_communications FOR EACH ROW EXECUTE PROCEDURE update_updated_at_column();
 
 -- Função para calcular tempo de resposta em supervisão

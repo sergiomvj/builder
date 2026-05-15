@@ -5315,3 +5315,277 @@
 2026-01-31T22:42:38.084Z: Project Created {
   "id": "c8481617-cb8f-423e-a07e-bd6af007c96d"
 }
+2026-05-15T15:30:42.566Z: --- REQUEST RECEIVED --- 
+2026-05-15T15:30:42.571Z: Body parsed {
+  "ideaLength": 99,
+  "hasPrompt": false
+}
+2026-05-15T15:30:42.571Z: Calling LLM Service... 
+2026-05-15T15:30:44.216Z: CRITICAL ROUTE ERROR ERROR: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************lNkA. You can find your API key at https://platform.openai.com/account/api-keys.
+STACK: Error: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************lNkA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at APIError.generate (webpack-internal:///(rsc)/./node_modules/openai/core/error.mjs:64:20)
+    at OpenAI.makeStatusError (webpack-internal:///(rsc)/./node_modules/openai/client.mjs:205:71)
+    at OpenAI.makeRequest (webpack-internal:///(rsc)/./node_modules/openai/client.mjs:373:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async LLMService.generateCompletion (webpack-internal:///(rsc)/./src/lib/llm-service.ts:175:34)
+    at async LLMService.analyzeIdea (webpack-internal:///(rsc)/./src/lib/llm-service.ts:1134:28)
+    at async POST (webpack-internal:///(rsc)/./src/app/api/analyze-idea/route.ts:56:26)
+    at async C:\4Old_Projects\1Builder\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:57228
+    at async eT.execute (C:\4Old_Projects\1Builder\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:46851)
+    at async eT.handle (C:\4Old_Projects\1Builder\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:58760)
+    at async doRender (C:\4Old_Projects\1Builder\node_modules\next\dist\server\base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\4Old_Projects\1Builder\node_modules\next\dist\server\base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\4Old_Projects\1Builder\node_modules\next\dist\server\base-server.js:1496:28)
+    at async DevServer.renderPageComponent (C:\4Old_Projects\1Builder\node_modules\next\dist\server\base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (C:\4Old_Projects\1Builder\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\4Old_Projects\1Builder\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\4Old_Projects\1Builder\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\4Old_Projects\1Builder\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\4Old_Projects\1Builder\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\4Old_Projects\1Builder\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\4Old_Projects\1Builder\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\4Old_Projects\1Builder\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\4Old_Projects\1Builder\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\4Old_Projects\1Builder\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\4Old_Projects\1Builder\node_modules\next\dist\server\lib\start-server.js:141:13)
+2026-05-15T15:36:00.414Z: --- REQUEST RECEIVED --- 
+2026-05-15T15:36:00.419Z: Body parsed {
+  "ideaLength": 80,
+  "hasPrompt": false
+}
+2026-05-15T15:36:00.419Z: Calling LLM Service... 
+2026-05-15T15:36:19.784Z: LLM Analysis Complete {
+  "projectName": "Portal Brasil-USA"
+}
+2026-05-15T15:36:19.784Z: Ready to insert Idea {
+  "safeTitle": "Portal Brasil-USA"
+}
+2026-05-15T15:36:20.079Z: Idea Created {
+  "id": "84472de9-5f79-4e1e-9dfc-dd2e0b1db4c9"
+}
+2026-05-15T15:36:20.079Z: Inserting Project {
+  "idea_id": "84472de9-5f79-4e1e-9dfc-dd2e0b1db4c9",
+  "name": "Portal Brasil-USA",
+  "description": "Um portal para brasileiros nos EUA que oferece serviços de imigração e notícias.",
+  "mission": "",
+  "vision": "",
+  "values": [],
+  "objectives": [],
+  "target_audience": "TBD",
+  "revenue_streams": [],
+  "status": "planning",
+  "metadata": {
+    "project_name": "Portal Brasil-USA",
+    "tagline": "Conectando Brasileiros, Facilitando Sonhos",
+    "executive_summary": {
+      "content": "A ideia de negócio é criar um portal online voltado para a comunidade brasileira residente nos Estados Unidos. Este portal irá oferecer uma combinação de serviços de imigração, como assessoria e acompanhamento de processos, e notícias relevantes sobre questões legais, culturais e sociais que afetam essa comunidade. \n\nO problema identificado é a dificuldade que muitos brasileiros enfrentam ao tentar navegar pelo complexo sistema de imigração dos EUA, além da carência de informações centralizadas e confiáveis sobre a vida nos Estados Unidos. \n\nA solução proposta é um portal que centraliza serviços de consultoria em imigração e notícias diárias. A equipe do portal seria composta por advogados especializados em imigração e jornalistas brasileiros que vivem nos EUA, garantindo assim um serviço de qualidade e informações precisas.\n\nO mercado-alvo são os mais de 1 milhão de brasileiros que vivem nos Estados Unidos, um público que está em constante crescimento. A oportunidade reside na falta de plataformas que combinem serviços essenciais de imigração com conteúdo informativo de maneira integrada, criando assim um ponto único de contato para essa comunidade."
+    },
+    "viability_score": {
+      "total": 70,
+      "breakdown": {
+        "market_pain": {
+          "score": 20,
+          "rationale": "A dor é relevante, muitos brasileiros realmente enfrentam dificuldades com imigração e informações confiáveis nos EUA."
+        },
+        "technical_feasibility": {
+          "score": 20,
+          "rationale": "Construir um portal com serviços de consultoria e conteúdo informativo é tecnicamente viável."
+        },
+        "revenue_potential": {
+          "score": 15,
+          "rationale": "Existem oportunidades de receita através de serviços pagos de consultoria e anúncios, mas a monetização pode ser um desafio inicial."
+        },
+        "competitive_landscape": {
+          "score": 15,
+          "rationale": "Existem outros serviços de imigração e portais de notícias, mas poucos oferecem uma combinação integrada focada na comunidade brasileira."
+        }
+      }
+    },
+    "business_diagnosis": {
+      "content": "Go"
+    },
+    "why_now": {
+      "content": "O aumento da população imigrante brasileira nos EUA e a crescente complexidade das leis de imigração tornam este um momento ideal para lançar um serviço que oferece suporte específico e informações atualizadas."
+    },
+    "why_not_100": {
+      "summary": "A nota não é 100 devido a desafios na monetização e concorrência significativa.",
+      "critical_gaps": [
+        {
+          "gap": "Estratégia de monetização não está clara.",
+          "impact_on_score": "-5",
+          "mitigation_path": "Desenvolver um modelo de assinatura para serviços premium e explorar parcerias com advogados e anunciantes."
+        },
+        {
+          "gap": "Concorrência com portais estabelecidos e serviços de imigração independentes.",
+          "impact_on_score": "-5",
+          "mitigation_path": "Diferenciar-se com um forte foco na comunidade brasileira e oferecer serviços exclusivos."
+        },
+        {
+          "gap": "Necessidade de conquistar a confiança do público-alvo.",
+          "impact_on_score": "-5",
+          "mitigation_path": "Investir em conteúdo de alta qualidade e publicidade direcionada para construir reputação."
+        }
+      ]
+    },
+    "execution_plan": {
+      "systems_breakdown": [
+        {
+          "name": "Portal Web",
+          "description": "Plataforma online que integra notícias e serviços de imigração.",
+          "tech_stack": "React, Node.js, MongoDB"
+        },
+        {
+          "name": "Sistema de Consultoria",
+          "description": "Ferramenta para agendamento e gestão de consultas de imigração.",
+          "tech_stack": "Calendly API, Twilio"
+        },
+        {
+          "name": "Gerenciamento de Conteúdo",
+          "description": "Sistema para publicação e atualização de notícias.",
+          "tech_stack": "WordPress, Custom API"
+        }
+      ],
+      "roadmap": [
+        {
+          "phase": "Mês 1",
+          "goal": "Lançamento do portal beta",
+          "actions": [
+            "Desenvolver MVP do portal",
+            "Estabelecer parcerias iniciais com advogados de imigração",
+            "Criar conteúdo inicial"
+          ]
+        },
+        {
+          "phase": "Mês 3",
+          "goal": "Expandir serviços e conteúdo",
+          "actions": [
+            "Adicionar funcionalidades de agendamento de consultas",
+            "Aumentar a produção de conteúdo",
+            "Iniciar campanhas de marketing direcionadas"
+          ]
+        },
+        {
+          "phase": "Mês 6",
+          "goal": "Otimização e escalabilidade",
+          "actions": [
+            "Aprimorar UX/UI",
+            "Expandir parcerias comerciais",
+            "Introduzir modelo de assinatura"
+          ]
+        }
+      ],
+      "backlog_preview": [
+        "Como usuário, quero agendar uma consulta de imigração para obter orientação especializada.",
+        "Como leitor, quero acessar notícias atualizadas sobre imigração e cultura nos EUA.",
+        "Como usuário, quero receber notificações sobre mudanças nas leis de imigração."
+      ]
+    },
+    "marketing_strategy": {
+      "value_proposition": {
+        "content": "Um portal único que combina serviços de imigração especializados com notícias direcionadas para a comunidade brasileira nos EUA."
+      },
+      "target_audience": {
+        "primary": "Brasileiros residentes nos EUA buscando serviços de imigração.",
+        "secondary": "Novos imigrantes brasileiros procurando informações sobre a vida nos EUA."
+      },
+      "approach_strategy": {
+        "content": "Focar em conteúdo de qualidade e parcerias estratégicas com influenciadores e advogados para aumentar a confiança e a visibilidade do portal."
+      },
+      "channels": [
+        {
+          "name": "Redes sociais",
+          "description": "Facebook, Instagram e grupos de WhatsApp de brasileiros.",
+          "priority": "Alta"
+        },
+        {
+          "name": "SEO e Content Marketing",
+          "description": "Atração orgânica através de conteúdo relevante.",
+          "priority": "Alta"
+        },
+        {
+          "name": "Parcerias Institucionais",
+          "description": "Colaboração com consulados e associações brasileiras.",
+          "priority": "Média"
+        }
+      ],
+      "tactics": [
+        {
+          "tactic": "Campanha de lançamento nas redes sociais",
+          "description": "Utilizar influenciadores para promover o portal.",
+          "timeline": "Mês 1"
+        },
+        {
+          "tactic": "Webinars gratuitos sobre imigração",
+          "description": "Oferecer conteúdo valioso e promover os serviços de imigração.",
+          "timeline": "Mês 2"
+        },
+        {
+          "tactic": "SEO focado em palavras-chave de imigração brasileira",
+          "description": "Melhorar a visibilidade orgânica do portal.",
+          "timeline": "Mês 3"
+        }
+      ]
+    },
+    "lead_generation_strategy": {
+      "lead_magnets": [
+        {
+          "name": "Guia Gratuito de Imigração",
+          "description": "E-book detalhado sobre os processos de imigração nos EUA."
+        },
+        {
+          "name": "Webinars ao vivo",
+          "description": "Sessões gratuitas sobre temas de imigração com especialistas."
+        }
+      ],
+      "conversion_tactics": [
+        {
+          "tactic": "Ofertas de consulta inicial gratuita",
+          "description": "Incentivar usuários a experimentar os serviços de consultoria."
+        },
+        {
+          "tactic": "Pacotes promocionais de serviços",
+          "description": "Oferecer descontos para serviços de consultoria em pacote."
+        }
+      ]
+    },
+    "key_metrics": {
+      "content": "Número de usuários ativos mensalmente, taxa de conversão de leads para clientes pagantes, engajamento de conteúdo (visualizações e compartilhamentos), satisfação do cliente."
+    },
+    "risks": {
+      "content": "Concorrência forte, mudanças nas leis de imigração, dependência de conteúdo de terceiros. Mitigar com inovação contínua, monitoramento de legislação e diversificação do conteúdo."
+    },
+    "swot": {
+      "strengths": [
+        "Foco específico na comunidade brasileira.",
+        "Combinação única de serviços e notícias."
+      ],
+      "weaknesses": [
+        "Monetização inicial pode ser desafiadora.",
+        "Necessidade de construir confiança rapidamente."
+      ],
+      "opportunities": [
+        "Crescimento da comunidade brasileira nos EUA.",
+        "Demanda por informações e suporte confiáveis."
+      ],
+      "threats": [
+        "Concorrência de serviços estabelecidos.",
+        "Mudanças abruptas nas políticas de imigração."
+      ]
+    },
+    "potential_improvements": {
+      "content": "Considerar a inclusão de serviços adicionais, como orientação sobre empregos e estudos, para aumentar o valor oferecido aos usuários."
+    },
+    "project_metadata": {
+      "project_name": "Portal Brasil-USA"
+    }
+  },
+  "executive_summary": {
+    "content": "A ideia de negócio é criar um portal online voltado para a comunidade brasileira residente nos Estados Unidos. Este portal irá oferecer uma combinação de serviços de imigração, como assessoria e acompanhamento de processos, e notícias relevantes sobre questões legais, culturais e sociais que afetam essa comunidade. \n\nO problema identificado é a dificuldade que muitos brasileiros enfrentam ao tentar navegar pelo complexo sistema de imigração dos EUA, além da carência de informações centralizadas e confiáveis sobre a vida nos Estados Unidos. \n\nA solução proposta é um portal que centraliza serviços de consultoria em imigração e notícias diárias. A equipe do portal seria composta por advogados especializados em imigração e jornalistas brasileiros que vivem nos EUA, garantindo assim um serviço de qualidade e informações precisas.\n\nO mercado-alvo são os mais de 1 milhão de brasileiros que vivem nos Estados Unidos, um público que está em constante crescimento. A oportunidade reside na falta de plataformas que combinem serviços essenciais de imigração com conteúdo informativo de maneira integrada, criando assim um ponto único de contato para essa comunidade."
+  }
+}
+2026-05-15T15:36:20.352Z: Project Insert Failed {
+  "code": "PGRST204",
+  "details": null,
+  "hint": null,
+  "message": "Could not find the 'executive_summary' column of 'projects' in the schema cache"
+}
