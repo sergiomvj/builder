@@ -537,8 +537,15 @@ export default function ProjectDashboard() {
     }
   };
 
-  const handleReevaluate = async () => {
-    if (!project || !confirm('Isso irá refazer TODA a análise com base na descrição atual. Deseja continuar?')) return;
+  const handleReevaluate = async (customDescription?: string) => {
+    const descriptionToUse = customDescription || project?.description;
+    if (!project || !descriptionToUse) {
+      toast.error('Descrição não encontrada para reavaliação');
+      return;
+    }
+    
+    if (!confirm('Isso irá refazer TODA a análise com base na descrição atual. Deseja continuar?')) return;
+    
     setIsReevaluating(true);
     try {
       const response = await fetch('/api/reevaluate-project', {
@@ -546,7 +553,7 @@ export default function ProjectDashboard() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           projectId: project.id,
-          newDescription: project.description // Use current state description (or genesisContent if we wanted to allow saving first)
+          newDescription: descriptionToUse
         })
       });
 
@@ -918,7 +925,7 @@ export default function ProjectDashboard() {
                       <Button variant="ghost" size="sm" onClick={() => { setGenesisContent(project.description || ''); setIsEditingGenesis(true); }} className="gap-2 text-slate-500 hover:text-indigo-600">
                         <Pencil className="w-4 h-4" /> Editar
                       </Button>
-                      <Button variant="outline" size="sm" onClick={handleReevaluate} disabled={isReevaluating} className="gap-2 border-indigo-200 text-indigo-700 hover:bg-indigo-50">
+                      <Button variant="outline" size="sm" onClick={() => handleReevaluate()} disabled={isReevaluating} className="gap-2 border-indigo-200 text-indigo-700 hover:bg-indigo-50">
                         {isReevaluating ? <RefreshCw className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
                         {isReevaluating ? 'Reavaliando...' : 'Reavaliar'}
                       </Button>
@@ -927,6 +934,10 @@ export default function ProjectDashboard() {
                     <>
                       <Button variant="ghost" size="sm" onClick={() => setIsEditingGenesis(false)} className="text-slate-500">
                         Cancelar
+                      </Button>
+                      <Button variant="outline" size="sm" onClick={() => handleReevaluate(genesisContent)} disabled={isReevaluating} className="gap-2 border-indigo-200 text-indigo-700 hover:bg-indigo-50">
+                        {isReevaluating ? <RefreshCw className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
+                        Reavaliar com Novo Conceito
                       </Button>
                       <Button variant="default" size="sm" onClick={handleSaveGenesis} className="bg-indigo-600 hover:bg-indigo-700">
                         Salvar
