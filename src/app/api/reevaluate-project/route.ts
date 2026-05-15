@@ -33,28 +33,33 @@ export async function POST(req: NextRequest) {
         const updatedMetadata = {
             ...currentProject.metadata,
             // Overwrite with new analysis data
-            core_functions: analysis.core_functions, // Legacy support if needed
-            suggested_departments: analysis.suggested_departments, // Legacy support if needed
-
-            // V3 Data
             swot: analysis.swot,
-            roadmap: analysis.roadmap,
-            backlog_preview: analysis.backlog_preview,
-            business_potential_diagnosis: analysis.business_potential_diagnosis,
+            
+            // Correct mapping for execution_plan
+            roadmap: analysis.execution_plan.roadmap,
+            backlog_preview: analysis.execution_plan.backlog_preview,
+            systems_and_modules: analysis.execution_plan.systems_breakdown,
+            
+            business_potential_diagnosis: analysis.business_diagnosis, // Keep legacy key if needed
+            business_diagnosis: analysis.business_diagnosis,
             marketing_strategy: analysis.marketing_strategy,
             lead_generation_strategy: analysis.lead_generation_strategy,
-            systems_and_modules: analysis.systems_and_modules,
             executive_summary: analysis.executive_summary,
             key_metrics: analysis.key_metrics,
-            risks_and_gaps: analysis.risks_and_gaps,
-            improvement_suggestions: analysis.improvement_suggestions
+            risks_and_gaps: analysis.risks_and_gaps, // Legacy
+            risks: analysis.risks,
+            improvement_suggestions: analysis.potential_improvements,
+            
+            viability_score: analysis.viability_score,
+            why_not_100: analysis.why_not_100,
+            why_now: analysis.why_now
         };
 
         const { error: updateError } = await supabase
             .from('projects')
             .update({
-                description: newDescription, // Update the genesis
-                name: analysis.project_name, // Update name if it changed (optional, maybe keep original?) -> user asked to reevaluate, usually implies new direction. Let's update.
+                description: newDescription,
+                name: analysis.project_name,
                 mission: analysis.mission,
                 vision: analysis.vision,
                 values: analysis.values,

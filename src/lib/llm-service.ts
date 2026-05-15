@@ -704,6 +704,10 @@ IMPORTANTE: Retorne APENAS JSON válido, sem markdown, sem explicações.
             required: ["content"],
             additionalProperties: false
           },
+          mission: { type: "string", description: "Missão da empresa." },
+          vision: { type: "string", description: "Visão de futuro." },
+          values: { type: "array", items: { type: "string" }, description: "Valores core." },
+          target_audience: { type: "string", description: "Público-alvo detalhado." },
           viability_score: {
             type: "object",
             properties: {
@@ -821,7 +825,8 @@ IMPORTANTE: Retorne APENAS JSON válido, sem markdown, sem explicações.
           "project_name", "tagline", "executive_summary", "viability_score",
           "business_diagnosis", "why_now", "why_not_100", "execution_plan",
           "marketing_strategy", "lead_generation_strategy", "key_metrics",
-          "risks", "swot", "potential_improvements"
+          "risks", "swot", "potential_improvements",
+          "mission", "vision", "values", "target_audience"
         ],
         additionalProperties: false
       }
