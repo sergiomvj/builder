@@ -93,7 +93,6 @@ export async function POST(req: NextRequest) {
         revenue_streams: [],
         status: 'planning',
         metadata: analysis,
-        executive_summary: analysis.executive_summary
       };
 
       debugLog('Inserting Project', payload);
