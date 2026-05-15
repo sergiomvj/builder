@@ -395,6 +395,74 @@ export default function ProjectDashboard() {
     toast.success('Analysis exported to Markdown');
   };
 
+  const generateMarketingMarkdown = () => {
+    if (!project) return;
+    
+    const mkt = analysisData.marketing_strategy;
+    const leadGen = analysisData.lead_generation_strategy;
+    
+    if (!mkt) {
+      toast.error('Estratégia de Marketing não encontrada');
+      return;
+    }
+
+    let md = `# Report de Marketing: ${project.name}\n\n`;
+    md += `**Data de Geração:** ${new Date().toLocaleDateString()}\n`;
+    md += `**Status:** Estratégico Aprovado\n\n`;
+
+    md += `## 1. Proposta de Valor Única (UVP)\n`;
+    md += `${typeof mkt.value_proposition === 'string' ? mkt.value_proposition : mkt.value_proposition?.content || ''}\n\n`;
+
+    md += `## 2. Público-Alvo\n`;
+    if (typeof mkt.target_audience === 'string') {
+      md += `${mkt.target_audience}\n\n`;
+    } else {
+      md += `- **Primário:** ${mkt.target_audience?.primary || 'N/A'}\n`;
+      md += `- **Secundário:** ${mkt.target_audience?.secondary || 'N/A'}\n\n`;
+    }
+
+    md += `## 3. Estratégia de Abordagem\n`;
+    md += `${typeof mkt.approach_strategy === 'string' ? mkt.approach_strategy : mkt.approach_strategy?.content || ''}\n\n`;
+
+    md += `## 4. Canais Prioritários\n`;
+    mkt.channels?.forEach((c: any) => {
+      md += `- **${typeof c === 'string' ? c : c.name}** (Prioridade: ${c.priority || 'Normal'}): ${c.description || ''}\n`;
+    });
+    md += `\n`;
+
+    md += `## 5. Táticas de Marketing\n`;
+    mkt.tactics?.forEach((t: any) => {
+      md += `### ${typeof t === 'string' ? t : t.tactic}\n`;
+      if (t.description) md += `${t.description}\n`;
+      if (t.timeline) md += `**Timeline:** ${t.timeline}\n`;
+      md += `\n`;
+    });
+
+    if (leadGen) {
+      md += `## 6. Estratégia de Geração de Leads\n`;
+      md += `### Lead Magnets\n`;
+      leadGen.lead_magnets?.forEach((m: any) => {
+        md += `- **${typeof m === 'string' ? m : m.name}**: ${m.description || ''}\n`;
+      });
+      md += `\n### Táticas de Conversão\n`;
+      leadGen.conversion_tactics?.forEach((t: any) => {
+        md += `- **${typeof t === 'string' ? t : t.tactic}**: ${t.description || ''}\n`;
+      });
+      md += `\n`;
+    }
+
+    const blob = new Blob([md], { type: 'text/markdown' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `MKT_Report_${project.name.replace(/\s+/g, '_').toLowerCase()}.md`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    toast.success('Marketing Report exported to Markdown');
+  };
+
   const saveToSystem = async () => {
     if (!project) return;
     try {
@@ -794,6 +862,17 @@ export default function ProjectDashboard() {
                         </li>
                       ))}
                     </ul>
+                  </div>
+
+                  <div className="pt-4 border-t border-indigo-50 mt-4">
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      onClick={generateMarketingMarkdown}
+                      className="w-full gap-2 text-indigo-600 border-indigo-200 hover:bg-indigo-50"
+                    >
+                      <Download className="w-4 h-4" /> Gerar Report de Marketing (MD)
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
