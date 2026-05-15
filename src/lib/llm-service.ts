@@ -671,8 +671,8 @@ Avalie **severamente** usando estes 4 pilares para compor a nota final:
 - **Baixa (0-9)**: Saturado/Oceano Vermelho - Mercado commoditizado
 
 **MATEMÁTICA OBRIGATÓRIA**:
-1. A nota `total` deve ser a SOMA exata dos 4 pilares do `breakdown`.
-2. A soma dos valores em `impact_on_score` (ex: -5, -3) deve ser EXATAMENTE igual a `100 - total`.
+1. A nota total deve ser a SOMA exata dos 4 pilares do breakdown.
+2. A soma dos valores em impact_on_score (ex: -5, -3) deve ser EXATAMENTE igual a 100 - total.
    *Exemplo: Se a nota total for 91, a soma dos gaps deve ser exatamente -9.*
 
 IMPORTANTE: Retorne APENAS JSON válido, sem markdown, sem explicações.
