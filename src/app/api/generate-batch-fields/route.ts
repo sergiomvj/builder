@@ -30,36 +30,39 @@ export async function POST(req: NextRequest) {
       .eq('project_id', projectId)
       .maybeSingle();
 
-    const systemPrompt = `Você é um Estrategista Chefe (CMO/CGO) auxiliando no preenchimento de um plano de marketing.
-Sua tarefa é gerar conteúdos precisos e concisos para múltiplos campos do formulário, com base no documento estratégico do projeto e nas respostas já preenchidas pelo usuário.
+    const hasStrategicDoc = !!strategicDoc?.document_data && Object.keys(strategicDoc.document_data).length > 0;
 
-REGRA ABSOLUTA DE SAÍDA: 
-Você deve retornar APENAS um objeto JSON válido (sem \`\`\`json ou qualquer texto antes/depois). 
-As chaves do JSON devem ser exatamente as IDs dos campos listados na solicitação.
-Os valores devem ser os textos sugeridos.`;
+    const systemPrompt = `Você é um Estrategista Chefe (CMO/CGO) auxiliando no preenchimento de um plano de marketing.
+Sua tarefa é gerar conteúdos precisos, específicos e acionáveis para múltiplos campos de um formulário de estratégia de marketing.
+
+${hasStrategicDoc
+  ? 'VOCÊ TEM ACESSO AO DOCUMENTO ESTRATÉGICO DO PROJETO — use-o como fonte primária de informações. Extraia dados concretos dele ao invés de gerar respostas genéricas.'
+  : 'Use o nome, descrição e as respostas já preenchidas como contexto para gerar sugestões relevantes.'}
+
+REGRAS DE SAÍDA:
+1. Retorne APENAS um objeto JSON válido (sem \`\`\`json ou qualquer texto antes/depois)
+2. As chaves do JSON devem ser EXATAMENTE as IDs dos campos listados
+3. Os valores devem ser textos prontos para uso no formulário — não use placeholders como "[NOME DA EMPRESA]"
+4. Seja específico ao negócio analisado, não genérico`;
 
     const userMessage = `
-Contexto do Projeto:
-Nome: ${project.name}
-Descrição: ${project.description || ''}
+PROJETO:
+- Nome: ${project.name}
+- Descrição: ${project.description || 'Não informada'}
 
-Documento Estratégico Global (Strategie Doc):
-${strategicDoc?.document_data ? JSON.stringify(strategicDoc.document_data, null, 2) : 'Ainda não gerado / Não disponível.'}
+${hasStrategicDoc ? `DOCUMENTO ESTRATÉGICO CONSOLIDADO (use como fonte primária):
+${JSON.stringify(strategicDoc.document_data, null, 2)}` : '(Documento estratégico ainda não disponível — use o contexto do projeto)'}
 
-Respostas do formulário já preenchidas até agora:
+RESPOSTAS JÁ PREENCHIDAS NO FORMULÁRIO (não repita o que já foi preenchido):
 ${JSON.stringify(currentAnswers, null, 2)}
 
-Por favor, gere uma sugestão para cada um dos seguintes campos:
+CAMPOS PARA GERAR (gere uma sugestão específica e acionável para cada um):
 ${selectedFields.map((fieldId: string) => {
-    const label = fieldsMetadata[fieldId] || fieldId;
-    return `- ${fieldId} (${label})`;
-}).join('\n')}
+    const label = fieldsMetadata?.[fieldId] || fieldId;
+    return `- "${fieldId}": ${label}`;
+  }).join('\n')}
 
-Retorne SOMENTE um JSON no formato:
-{
-  "${selectedFields[0]}": "Sua sugestão de texto para este campo...",
-  // demais campos...
-}
+Retorne SOMENTE o JSON com as chaves solicitadas acima e seus valores sugeridos.
 `;
 
     const resultText = await llmService.generateCompletion([

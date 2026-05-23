@@ -87,7 +87,13 @@ export default function MarketingStrategyPage() {
   const [generatedStrategy, setGeneratedStrategy] = useState<any>(null);
   const [existingStrategy, setExistingStrategy] = useState<any>(null);
   const [activeResultTab, setActiveResultTab] = useState('overview');
-  const [generatingField, setGeneratingField] = useState<string | null>(null);
+
+  // Batch AI Generation
+  const [selectedAIFields, setSelectedAIFields] = useState<Set<string>>(new Set());
+  const [aiSuggestions, setAiSuggestions] = useState<Record<string, string>>({});
+  const [isGeneratingBatch, setIsGeneratingBatch] = useState(false);
+  const [showPreview, setShowPreview] = useState(false);
+  const [strategicDocExists, setStrategicDocExists] = useState(false);
 
   const fetchData = useCallback(async () => {
     if (!projectId) return;
@@ -105,6 +111,14 @@ export default function MarketingStrategyPage() {
     }
 
     setProject(projectData);
+
+    // Verificar se o strategic document já foi gerado
+    const { data: strategicDoc } = await supabase
+      .from('strategic_documents')
+      .select('id')
+      .eq('project_id', projectId)
+      .maybeSingle();
+    setStrategicDocExists(!!strategicDoc);
 
     // Check for existing strategy
     try {
@@ -167,31 +181,90 @@ export default function MarketingStrategyPage() {
     }
   };
 
-  const handleGenerateField = async (key: string, label: string) => {
-    if (!project) return;
-    setGeneratingField(key);
+  // Mapa de chave → label legível (usado no preview e no prompt da LLM)
+  const FIELD_LABELS: Record<string, string> = {
+    setor: 'Setor / Indústria',
+    modelo_negocio: 'Modelo de Negócio',
+    fase: 'Fase da Empresa',
+    porte: 'Porte da Empresa',
+    faturamento_mensal: 'Faturamento Mensal Aproximado',
+    orcamento_marketing_mensal: 'Orçamento de Marketing Mensal',
+    diferenciais_competitivos: 'Diferenciais Competitivos Principais',
+    grupo_identidade: 'Identidade do Grupo (Missão, Visão, Valores)',
+    grupo_audiencias_macro: 'Audiências Macro do Grupo',
+    grupo_regras_convivencia: 'Regras de Convivência Entre Marcas',
+    grupo_posicionamento_mae: 'Posicionamento da Marca Mãe / Holding',
+    concorrentes_principais: 'Principais Concorrentes (3-5)',
+    maturidade_digital: 'Maturidade Digital',
+    presenca_digital_atual: 'Presença Digital Atual',
+    gaps_marketing: 'Gaps de Marketing Identificados',
+    okrs_principais: 'OKRs de Marketing (3-5 objetivos)',
+    alinhamento_grupo: 'Alinhamento com OKR do Grupo',
+    clusters_publico: 'Clusters de Público-Alvo',
+    tam_sam_som: 'TAM / SAM / SOM Estimado',
+    uvp: 'Proposta de Valor Única (UVP)',
+    brand_personality: 'Brand Personality (Arquétipos)',
+    tom_voz: 'Tom de Voz e Guidelines de Comunicação',
+    canais_principais: 'Canais de Marketing',
+    budget_alocacao: 'Alocação de Budget (% por canal)',
+    prioridades_90_dias: 'Prioridades Absolutas dos 90 dias',
+    sprint_1: 'Sprint 1 — Semanas 1-4 (Quick Wins e Fundação)',
+    sprint_2: 'Sprint 2 — Semanas 5-8 (Escala e Otimização)',
+    sprint_3: 'Sprint 3 — Semanas 9-12 (Consolidação e Expansão)',
+    frequencia_revisao: 'Frequência de Revisão da Estratégia',
+    aprovacao_niveis: 'Níveis de Aprovação',
+    consolidacao_grupo: 'Consolidação com o Grupo',
+    observacoes_adicionais: 'Observações Adicionais',
+  };
 
+  const toggleAIField = (key: string) => {
+    setSelectedAIFields(prev => {
+      const next = new Set(prev);
+      next.has(key) ? next.delete(key) : next.add(key);
+      return next;
+    });
+  };
+
+  const handleBatchGenerate = async () => {
+    if (selectedAIFields.size === 0 || !project) return;
+    setIsGeneratingBatch(true);
     try {
-      const res = await fetch('/api/generate-field-suggestion', {
+      const res = await fetch('/api/generate-batch-fields', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ projectId, fieldKey: key, fieldLabel: label, currentAnswers: answers }),
+        body: JSON.stringify({
+          projectId,
+          selectedFields: Array.from(selectedAIFields),
+          fieldsMetadata: FIELD_LABELS,
+          currentAnswers: answers,
+        }),
       });
-
-      if (!res.ok) {
-        throw new Error('Falha ao gerar sugestão');
-      }
-
+      if (!res.ok) throw new Error('Falha ao gerar sugestões em lote');
       const data = await res.json();
-      if (data.suggestion) {
-        updateAnswer(key, data.suggestion);
-        toast.success(`Sugestão para "${label}" gerada!`);
+      if (data.suggestions && Object.keys(data.suggestions).length > 0) {
+        setAiSuggestions(data.suggestions);
+        setShowPreview(true);
+        toast.success(`${Object.keys(data.suggestions).length} campos gerados com sucesso!`);
+      } else {
+        toast.error('A IA não retornou sugestões. Tente novamente.');
       }
     } catch (e: any) {
       toast.error(e.message);
     } finally {
-      setGeneratingField(null);
+      setIsGeneratingBatch(false);
     }
+  };
+
+  const handleConfirmSuggestions = () => {
+    setAnswers(prev => ({ ...prev, ...aiSuggestions }));
+    setShowPreview(false);
+    setSelectedAIFields(new Set());
+    setAiSuggestions({});
+    toast.success(`${Object.keys(aiSuggestions).length} campo(s) aplicado(s) com sucesso!`);
+  };
+
+  const handleCancelPreview = () => {
+    setShowPreview(false);
   };
 
   const handleExport = () => {
@@ -209,34 +282,42 @@ export default function MarketingStrategyPage() {
   };
 
   const renderInput = (key: string, label: string, type: 'text' | 'textarea' | 'select' = 'text', options?: string[], placeholder?: string) => {
-    const isGeneratingThis = generatingField === key;
+    // Campos select são simples demais para precisar de IA — sem checkbox
+    const showAICheckbox = type !== 'select';
+    const isAISelected = selectedAIFields.has(key);
 
-    const renderLabelAndAI = () => (
+    const renderLabelRow = () => (
       <div className="flex items-center justify-between mb-1">
         <label className="text-sm font-semibold text-slate-700">{label}</label>
-        <Button
-          variant="ghost"
-          size="sm"
-          className="h-6 px-2 text-xs text-indigo-600 hover:text-indigo-800 hover:bg-indigo-50"
-          onClick={() => handleGenerateField(key, label)}
-          disabled={isGeneratingThis}
-        >
-          {isGeneratingThis ? <Loader2 className="w-3 h-3 mr-1 animate-spin" /> : <Sparkles className="w-3 h-3 mr-1" />}
-          IA
-        </Button>
+        {showAICheckbox && (
+          <label className="flex items-center gap-1.5 cursor-pointer group select-none">
+            <input
+              type="checkbox"
+              className="w-3.5 h-3.5 accent-indigo-600 cursor-pointer"
+              checked={isAISelected}
+              onChange={() => toggleAIField(key)}
+            />
+            <span className={`text-xs flex items-center gap-0.5 transition-colors ${
+              isAISelected ? 'text-indigo-600 font-semibold' : 'text-slate-400 group-hover:text-indigo-500'
+            }`}>
+              <Sparkles className="w-3 h-3" /> IA
+            </span>
+          </label>
+        )}
       </div>
     );
 
     if (type === 'textarea') {
       return (
-        <div key={key} className="space-y-1">
-          {renderLabelAndAI()}
+        <div key={key} className={`space-y-1 rounded-lg p-2 -mx-2 transition-colors ${
+          isAISelected ? 'bg-indigo-50/60 ring-1 ring-indigo-200' : ''
+        }`}>
+          {renderLabelRow()}
           <Textarea
             value={answers[key] || ''}
             onChange={(e) => updateAnswer(key, e.target.value)}
             placeholder={placeholder || `Descreva ${label.toLowerCase()}...`}
-            className="min-h-[100px] border-slate-200 focus:border-indigo-500 focus:ring-indigo-500"
-            disabled={isGeneratingThis}
+            className="min-h-[100px] border-slate-200 focus:border-indigo-500 focus:ring-indigo-500 bg-white"
           />
         </div>
       );
@@ -244,7 +325,7 @@ export default function MarketingStrategyPage() {
     if (type === 'select' && options) {
       return (
         <div key={key} className="space-y-1">
-          {renderLabelAndAI()}
+          {renderLabelRow()}
           <div className="flex flex-wrap gap-2">
             {options.map(opt => (
               <Button
@@ -253,7 +334,6 @@ export default function MarketingStrategyPage() {
                 size="sm"
                 onClick={() => updateAnswer(key, opt)}
                 className={answers[key] === opt ? 'bg-indigo-600 hover:bg-indigo-700' : ''}
-                disabled={isGeneratingThis}
               >
                 {opt}
               </Button>
@@ -263,14 +343,15 @@ export default function MarketingStrategyPage() {
       );
     }
     return (
-      <div key={key} className="space-y-1">
-        {renderLabelAndAI()}
+      <div key={key} className={`space-y-1 rounded-lg p-2 -mx-2 transition-colors ${
+        isAISelected ? 'bg-indigo-50/60 ring-1 ring-indigo-200' : ''
+      }`}>
+        {renderLabelRow()}
         <Input
           value={answers[key] || ''}
           onChange={(e) => updateAnswer(key, e.target.value)}
           placeholder={placeholder || `Informe ${label.toLowerCase()}`}
-          className="border-slate-200 focus:border-indigo-500 focus:ring-indigo-500"
-          disabled={isGeneratingThis}
+          className="border-slate-200 focus:border-indigo-500 focus:ring-indigo-500 bg-white"
         />
       </div>
     );
@@ -436,31 +517,138 @@ export default function MarketingStrategyPage() {
       case 'review':
         return (
           <div className="space-y-6">
-            <div className="bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-200 rounded-lg p-6 mb-6">
+            {/* Header da etapa */}
+            <div className="bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-200 rounded-lg p-6">
               <h3 className="text-lg font-bold text-indigo-900 mb-2 flex items-center gap-2">
-                <Sparkles className="w-5 h-5" /> Pronto para gerar!
+                <Sparkles className="w-5 h-5" /> Revisão & Geração
               </h3>
               <p className="text-sm text-indigo-700">
-                A IA irá analisar suas respostas e gerar uma Estratégia Central de Marketing completa seguindo a arquitetura de 4 camadas.
-                O processo pode levar 30-60 segundos.
+                Revise seus campos, use a IA em lote para preencher os selecionados e depois gere a estratégia completa.
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            {/* Indicador do Strategic Doc */}
+            <div className={`flex items-center gap-3 p-3 rounded-lg border text-sm ${
+              strategicDocExists
+                ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
+                : 'bg-amber-50 border-amber-200 text-amber-800'
+            }`}>
+              {strategicDocExists ? (
+                <><CheckCircle className="w-4 h-4 flex-shrink-0" />
+                <span><strong>Contexto estratégico disponível</strong> — a IA usará o documento do projeto para gerar sugestões precisas.</span></>
+              ) : (
+                <><Loader2 className="w-4 h-4 flex-shrink-0 animate-spin" />
+                <span><strong>Gerando contexto estratégico...</strong> — aguarde alguns instantes ou continue sem ele.</span></>
+              )}
+            </div>
+
+            {/* Painel de Geração em Lote */}
+            {!showPreview ? (
+              <div className="border border-indigo-200 rounded-lg p-4 space-y-4 bg-white">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h4 className="text-sm font-bold text-slate-800 flex items-center gap-2">
+                      <Sparkles className="w-4 h-4 text-indigo-500" />
+                      Geração em Lote com IA
+                    </h4>
+                    <p className="text-xs text-slate-500 mt-0.5">
+                      Marque os campos desejados nos steps anteriores com ✨ IA para incluí-los aqui.
+                    </p>
+                  </div>
+                  <Badge variant={selectedAIFields.size > 0 ? 'default' : 'secondary'} className={selectedAIFields.size > 0 ? 'bg-indigo-600' : ''}>
+                    {selectedAIFields.size} campo{selectedAIFields.size !== 1 ? 's' : ''} selecionado{selectedAIFields.size !== 1 ? 's' : ''}
+                  </Badge>
+                </div>
+
+                {selectedAIFields.size > 0 && (
+                  <div className="flex flex-wrap gap-2">
+                    {Array.from(selectedAIFields).map(key => (
+                      <span key={key} className="flex items-center gap-1 bg-indigo-50 text-indigo-700 text-xs px-2 py-1 rounded-full border border-indigo-200">
+                        <Sparkles className="w-2.5 h-2.5" />
+                        {FIELD_LABELS[key] || key}
+                        <button onClick={() => toggleAIField(key)} className="ml-1 hover:text-red-500 transition-colors">×</button>
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                <Button
+                  onClick={handleBatchGenerate}
+                  disabled={selectedAIFields.size === 0 || isGeneratingBatch}
+                  className="w-full gap-2 bg-indigo-600 hover:bg-indigo-700 disabled:opacity-50"
+                >
+                  {isGeneratingBatch ? (
+                    <><Loader2 className="w-4 h-4 animate-spin" /> Gerando {selectedAIFields.size} campo{selectedAIFields.size !== 1 ? 's' : ''}...</>
+                  ) : (
+                    <><Sparkles className="w-4 h-4" /> Gerar campos selecionados com IA</>
+                  )}
+                </Button>
+              </div>
+            ) : (
+              /* Preview das sugestões */
+              <div className="border border-emerald-200 rounded-lg bg-emerald-50/30 overflow-hidden">
+                <div className="flex items-center justify-between px-4 py-3 bg-emerald-50 border-b border-emerald-200">
+                  <h4 className="text-sm font-bold text-emerald-800 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4" /> Preview das sugestões da IA
+                  </h4>
+                  <p className="text-xs text-emerald-600">Edite antes de confirmar, se necessário</p>
+                </div>
+                <div className="p-4 space-y-4">
+                  {Object.entries(aiSuggestions).map(([key, value]) => (
+                    <div key={key} className="space-y-1">
+                      <label className="text-xs font-semibold text-slate-600 flex items-center gap-1">
+                        <Sparkles className="w-3 h-3 text-indigo-400" />
+                        {FIELD_LABELS[key] || key}
+                      </label>
+                      <Textarea
+                        value={aiSuggestions[key]}
+                        onChange={(e) => setAiSuggestions(prev => ({ ...prev, [key]: e.target.value }))}
+                        className="min-h-[80px] text-sm border-emerald-200 focus:border-indigo-400 bg-white"
+                      />
+                    </div>
+                  ))}
+                </div>
+                <div className="flex gap-3 px-4 pb-4">
+                  <Button
+                    onClick={handleConfirmSuggestions}
+                    className="flex-1 gap-2 bg-emerald-600 hover:bg-emerald-700"
+                  >
+                    <CheckCircle className="w-4 h-4" /> Aplicar sugestões
+                  </Button>
+                  <Button
+                    variant="outline"
+                    onClick={handleCancelPreview}
+                    className="gap-2 border-slate-300"
+                  >
+                    Cancelar
+                  </Button>
+                </div>
+              </div>
+            )}
+
+            {/* Sumário dos steps */}
+            <div className="grid grid-cols-2 gap-3">
               {WIZARD_STEPS.slice(0, -1).map((step, i) => {
                 const stepKeys = getStepKeys(step.id);
                 const filled = stepKeys.filter(k => answers[k] && String(answers[k]).trim() !== '').length;
                 const total = stepKeys.length;
+                const StepIcon = step.icon;
                 return (
-                  <div key={step.id} className="flex items-center gap-3 p-3 bg-white border border-slate-200 rounded-lg">
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center ${filled === total ? 'bg-green-100 text-green-600' : 'bg-slate-100 text-slate-400'}`}>
-                      {filled === total ? <CheckCircle className="w-4 h-4" /> : <span className="text-xs font-bold">{i + 1}</span>}
+                  <button
+                    key={step.id}
+                    onClick={() => setCurrentStep(i)}
+                    className="flex items-center gap-3 p-3 bg-white border border-slate-200 rounded-lg hover:border-indigo-300 hover:bg-indigo-50/30 transition-all text-left"
+                  >
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
+                      filled === total ? 'bg-green-100 text-green-600' : 'bg-slate-100 text-slate-400'
+                    }`}>
+                      {filled === total ? <CheckCircle className="w-4 h-4" /> : <StepIcon className="w-4 h-4" />}
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-semibold text-slate-800 truncate">{step.title}</p>
                       <p className="text-xs text-slate-500">{filled}/{total} campos preenchidos</p>
                     </div>
-                  </div>
+                  </button>
                 );
               })}
             </div>
@@ -472,7 +660,7 @@ export default function MarketingStrategyPage() {
                   <p className="font-semibold">Estratégia já gerada!</p>
                 </div>
                 <p className="text-sm text-green-700 mt-1">
-                  Você pode regenerar a estratégia a qualquer momento. Os dados serão atualizados.
+                  Você pode regenerar a qualquer momento. Os dados serão atualizados.
                 </p>
               </div>
             )}

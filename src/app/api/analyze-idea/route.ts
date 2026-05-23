@@ -109,6 +109,17 @@ export async function POST(req: NextRequest) {
       } else {
         debugLog('Project Created', { id: projectRecord.id });
         projectId = projectRecord.id;
+
+        // Fire-and-forget: gerar o strategic document em background
+        // Isso garante que o contexto esteja disponível quando o usuário acessar o Wizard de Marketing
+        const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
+        fetch(`${appUrl}/api/generate-strategic-doc`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ projectId: projectRecord.id })
+        })
+          .then(res => debugLog(`Strategic doc generation triggered (status: ${res.status})`, { projectId: projectRecord.id }))
+          .catch(err => debugLog('Strategic doc generation failed (non-blocking)', err));
       }
 
     } catch (mapErr: any) {
