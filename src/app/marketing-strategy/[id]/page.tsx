@@ -87,6 +87,7 @@ export default function MarketingStrategyPage() {
   const [generatedStrategy, setGeneratedStrategy] = useState<any>(null);
   const [existingStrategy, setExistingStrategy] = useState<any>(null);
   const [activeResultTab, setActiveResultTab] = useState('overview');
+  const [generatingField, setGeneratingField] = useState<string | null>(null);
 
   const fetchData = useCallback(async () => {
     if (!projectId) return;
@@ -166,6 +167,33 @@ export default function MarketingStrategyPage() {
     }
   };
 
+  const handleGenerateField = async (key: string, label: string) => {
+    if (!project) return;
+    setGeneratingField(key);
+
+    try {
+      const res = await fetch('/api/generate-field-suggestion', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ projectId, fieldKey: key, fieldLabel: label, currentAnswers: answers }),
+      });
+
+      if (!res.ok) {
+        throw new Error('Falha ao gerar sugestão');
+      }
+
+      const data = await res.json();
+      if (data.suggestion) {
+        updateAnswer(key, data.suggestion);
+        toast.success(`Sugestão para "${label}" gerada!`);
+      }
+    } catch (e: any) {
+      toast.error(e.message);
+    } finally {
+      setGeneratingField(null);
+    }
+  };
+
   const handleExport = () => {
     if (!generatedStrategy) return;
     const blob = new Blob([JSON.stringify(generatedStrategy, null, 2)], { type: 'application/json' });
@@ -181,23 +209,42 @@ export default function MarketingStrategyPage() {
   };
 
   const renderInput = (key: string, label: string, type: 'text' | 'textarea' | 'select' = 'text', options?: string[], placeholder?: string) => {
+    const isGeneratingThis = generatingField === key;
+
+    const renderLabelAndAI = () => (
+      <div className="flex items-center justify-between mb-1">
+        <label className="text-sm font-semibold text-slate-700">{label}</label>
+        <Button
+          variant="ghost"
+          size="sm"
+          className="h-6 px-2 text-xs text-indigo-600 hover:text-indigo-800 hover:bg-indigo-50"
+          onClick={() => handleGenerateField(key, label)}
+          disabled={isGeneratingThis}
+        >
+          {isGeneratingThis ? <Loader2 className="w-3 h-3 mr-1 animate-spin" /> : <Sparkles className="w-3 h-3 mr-1" />}
+          IA
+        </Button>
+      </div>
+    );
+
     if (type === 'textarea') {
       return (
-        <div key={key} className="space-y-2">
-          <label className="text-sm font-semibold text-slate-700">{label}</label>
+        <div key={key} className="space-y-1">
+          {renderLabelAndAI()}
           <Textarea
             value={answers[key] || ''}
             onChange={(e) => updateAnswer(key, e.target.value)}
             placeholder={placeholder || `Descreva ${label.toLowerCase()}...`}
             className="min-h-[100px] border-slate-200 focus:border-indigo-500 focus:ring-indigo-500"
+            disabled={isGeneratingThis}
           />
         </div>
       );
     }
     if (type === 'select' && options) {
       return (
-        <div key={key} className="space-y-2">
-          <label className="text-sm font-semibold text-slate-700">{label}</label>
+        <div key={key} className="space-y-1">
+          {renderLabelAndAI()}
           <div className="flex flex-wrap gap-2">
             {options.map(opt => (
               <Button
@@ -206,6 +253,7 @@ export default function MarketingStrategyPage() {
                 size="sm"
                 onClick={() => updateAnswer(key, opt)}
                 className={answers[key] === opt ? 'bg-indigo-600 hover:bg-indigo-700' : ''}
+                disabled={isGeneratingThis}
               >
                 {opt}
               </Button>
@@ -215,13 +263,14 @@ export default function MarketingStrategyPage() {
       );
     }
     return (
-      <div key={key} className="space-y-2">
-        <label className="text-sm font-semibold text-slate-700">{label}</label>
+      <div key={key} className="space-y-1">
+        {renderLabelAndAI()}
         <Input
           value={answers[key] || ''}
           onChange={(e) => updateAnswer(key, e.target.value)}
           placeholder={placeholder || `Informe ${label.toLowerCase()}`}
           className="border-slate-200 focus:border-indigo-500 focus:ring-indigo-500"
+          disabled={isGeneratingThis}
         />
       </div>
     );
