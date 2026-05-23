@@ -325,7 +325,11 @@ export default function MarketingStrategyPage() {
   const toggleAIField = (key: string) => {
     setSelectedAIFields(prev => {
       const next = new Set(prev);
-      next.has(key) ? next.delete(key) : next.add(key);
+      if (next.has(key)) {
+        next.delete(key);
+      } else {
+        next.add(key);
+      }
       return next;
     });
   };
@@ -384,6 +388,252 @@ export default function MarketingStrategyPage() {
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
     toast.success('Estratégia exportada com sucesso!');
+  };
+
+  const handleExportMarkdown = () => {
+    if (!generatedStrategy) return;
+    const s = generatedStrategy.estrategia_central_marketing;
+    if (!s) return;
+
+    let md = `# Estratégia Central de Marketing\n\n`;
+    md += `**Projeto:** ${project?.name || 'N/A'}\n`;
+    md += `**Setor:** ${s.empresa?.setor || 'N/A'} | **Modelo de Negócio:** ${s.empresa?.modelo_negocio || 'N/A'} | **Fase:** ${s.empresa?.fase || 'N/A'}\n\n`;
+    md += `**Versão:** ${s.versao || '1.0'}\n\n`;
+    md += `---\n\n`;
+
+    // Núcleo do Grupo
+    if (s.camada_1_nucleo_grupo?.grupo) {
+      md += `## 1. Núcleo do Grupo\n\n`;
+      const grupo = s.camada_1_nucleo_grupo.grupo;
+      md += `### Identidade do Grupo\n\n`;
+      md += `- **Missão:** ${grupo.identidade?.missao || 'N/A'}\n`;
+      md += `- **Visão:** ${grupo.identidade?.visao || 'N/A'}\n`;
+      md += `- **Valores:** ${grupo.identidade?.valores?.join(', ') || 'N/A'}\n\n`;
+      md += `### Audiências Macro\n\n`;
+      md += `${grupo.audiencias_macro?.join(', ') || 'N/A'}\n\n`;
+      md += `### Regras de Convivência\n\n`;
+      md += `${grupo.regras_convivencia?.join(', ') || 'N/A'}\n\n`;
+      md += `### Posicionamento da Marca Mãe\n\n`;
+      md += `${grupo.posicionamento_mae || 'N/A'}\n\n`;
+      md += `---\n\n`;
+    }
+
+    // Diagnóstico
+    if (s.camada_2_modulos_obrigatorios?.diagnostico) {
+      const d = s.camada_2_modulos_obrigatorios.diagnostico;
+      md += `## 2. Diagnóstico\n\n`;
+      md += `### Situação do Mercado\n\n`;
+      md += `${d.situacao_atual_mercado || 'N/A'}\n\n`;
+
+      if (d.analise_competitiva?.length > 0) {
+        md += `### Análise Competitiva\n\n`;
+        d.analise_competitiva.forEach((c: any, i: number) => {
+          md += `#### ${c.concorrente}\n\n`;
+          md += `- **Posicionamento:** ${c.posicionamento}\n`;
+          md += `- **Nível de Ameaça:** ${c.ameaca_nivel}\n`;
+          md += `- **Pontos Fortes:** ${c.pontos_fortes?.join(', ')}\n`;
+          md += `- **Pontos Fracos:** ${c.pontos_fracos?.join(', ')}\n\n`;
+        });
+      }
+
+      if (d.maturidade_digital) {
+        md += `### Maturidade Digital\n\n`;
+        md += `- **Nível:** ${d.maturidade_digital.nivel}\n`;
+        md += `- **Justificativa:** ${d.maturidade_digital.justificativa}\n\n`;
+      }
+
+      if (d.gaps_marketing?.length > 0) {
+        md += `### Gaps de Marketing\n\n`;
+        d.gaps_marketing.forEach((g: any, i: number) => {
+          md += `- **Gap:** ${g.gap} (Impacto: ${g.impacto})\n`;
+        });
+        md += `\n`;
+      }
+      md += `---\n\n`;
+    }
+
+    // OKRs
+    if (s.camada_2_modulos_obrigatorios?.okrs) {
+      md += `## 3. OKRs de Marketing\n\n`;
+      s.camada_2_modulos_obrigatorios.okrs.forEach((okr: any, i: number) => {
+        md += `### Objetivo ${i + 1}: ${okr.objetivo}\n\n`;
+        if (okr.alinhamento_okr_grupo) {
+          md += `**Alinhamento com Grupo:** ${okr.alinhamento_okr_grupo}\n\n`;
+        }
+        md += `#### Key Results\n\n`;
+        okr.key_results?.forEach((kr: any, j: number) => {
+          md += `- **KR${j + 1}:** ${kr.kr}\n`;
+          md += `  - Meta: ${kr.meta}\n`;
+          md += `  - Baseline: ${kr.baseline}\n`;
+          md += `  - Timeline: ${kr.timeline}\n\n`;
+        });
+        md += `- **Responsável Sugerido:** ${okr.responsavel_sugerido}\n`;
+        md += `- **Confiança:** ${okr.confianca}\n\n`;
+      });
+      md += `---\n\n`;
+    }
+
+    // Público-Alvo
+    if (s.camada_2_modulos_obrigatorios?.publico_alvo) {
+      const aud = s.camada_2_modulos_obrigatorios.publico_alvo;
+      md += `## 4. Público-Alvo\n\n`;
+      if (aud.clusters?.length > 0) {
+        aud.clusters.forEach((cluster: any, i: number) => {
+          md += `### Cluster ${i + 1}: ${cluster.nome_cluster}\n\n`;
+          md += `- **Tamanho Estimado:** ${cluster.tamanho_estimado}\n\n`;
+
+          if (cluster.demographics) {
+            md += `#### Demographics\n\n`;
+            Object.entries(cluster.demographics).forEach(([k, v]) => {
+              md += `- **${k}:** ${v}\n`;
+            });
+            md += `\n`;
+          }
+
+          if (cluster.psychographics) {
+            md += `#### Psychographics\n\n`;
+            Object.entries(cluster.psychographics).forEach(([k, v]) => {
+              md += `- **${k}:** ${Array.isArray(v) ? v.join(', ') : v}\n`;
+            });
+            md += `\n`;
+          }
+
+          if (cluster.pain_points?.length > 0) {
+            md += `#### Pain Points\n\n`;
+            cluster.pain_points.forEach((p: string) => md += `- ${p}\n`);
+            md += `\n`;
+          }
+
+          if (cluster.desired_outcomes?.length > 0) {
+            md += `#### Desired Outcomes\n\n`;
+            cluster.desired_outcomes.forEach((o: string) => md += `- ${o}\n`);
+            md += `\n`;
+          }
+
+          if (cluster.watering_holes?.length > 0) {
+            md += `#### Watering Holes\n\n`;
+            cluster.watering_holes.forEach((w: string) => md += `- ${w}\n`);
+            md += `\n`;
+          }
+        });
+      }
+
+      if (aud.mercado_total) {
+        md += `### Mercado Total\n\n`;
+        md += `- **TAM:** ${aud.mercado_total.tam}\n`;
+        md += `- **SAM:** ${aud.mercado_total.sam}\n`;
+        md += `- **SOM:** ${aud.mercado_total.som}\n`;
+        md += `- **Metodologia:** ${aud.mercado_total.metodologia_calculo}\n\n`;
+      }
+      md += `---\n\n`;
+    }
+
+    // Posicionamento
+    if (s.camada_2_modulos_obrigatorios?.posicionamento) {
+      const p = s.camada_2_modulos_obrigatorios.posicionamento;
+      md += `## 5. Posicionamento\n\n`;
+      md += `### Declaração de Posicionamento\n\n`;
+      md += `> "${p.declaracao || 'N/A'}"\n\n`;
+      md += `### Proposta de Valor Única (UVP)\n\n`;
+      md += `${p.uvp || 'N/A'}\n\n`;
+
+      if (p.brand_personality) {
+        md += `### Brand Personality\n\n`;
+        md += `- **Arquétipos:** ${p.brand_personality.arquetipos?.join(', ') || 'N/A'}\n`;
+        md += `- **Tom de Voz:** ${p.brand_personality.tom_voz || 'N/A'}\n\n`;
+        if (p.brand_personality.guidelines_comunicacao?.length > 0) {
+          md += `#### Guidelines de Comunicação\n\n`;
+          p.brand_personality.guidelines_comunicacao.forEach((g: string) => md += `- ${g}\n`);
+          md += `\n`;
+        }
+      }
+      md += `---\n\n`;
+    }
+
+    // Canais
+    if (s.camada_2_modulos_obrigatorios?.canais) {
+      md += `## 6. Canais de Marketing\n\n`;
+      s.camada_2_modulos_obrigatorios.canais.forEach((ch: any, i: number) => {
+        md += `### ${ch.canal}\n\n`;
+        md += `- **Objetivo:** ${ch.objetivo}\n`;
+        md += `- **Funil Stage:** ${ch.funil_stage}\n`;
+        md += `- **Prioridade:** ${ch.prioridade}\n`;
+        md += `- **Formatos:** ${ch.formatos?.join(', ')}\n`;
+        md += `- **Frequência:** ${ch.frequencia}\n`;
+        md += `- **Investimento:** ${ch.investimento_mensal_estimado}\n`;
+        md += `- **Budget:** ${ch.percentual_budget}\n`;
+        md += `- **KPIs:** ${ch.kpis?.join(', ')}\n\n`;
+      });
+      md += `---\n\n`;
+    }
+
+    // Plano de Ação
+    if (s.camada_2_modulos_obrigatorios?.plano_acao_90_dias) {
+      const plan = s.camada_2_modulos_obrigatorios.plano_acao_90_dias;
+      md += `## 7. Plano de Ação (90 Dias)\n\n`;
+      ['sprint_1_semanas_1_4', 'sprint_2_semanas_5_8', 'sprint_3_semanas_9_12'].forEach((sprintKey, idx) => {
+        const sprint = plan[sprintKey];
+        if (!sprint) return;
+        md += `### Sprint ${idx + 1}: ${sprint.foco}\n\n`;
+        sprint.acoes?.forEach((acao: any, j: number) => {
+          if (typeof acao === 'string') {
+            md += `- ${acao}\n`;
+          } else {
+            md += `- **${acao.acao}**\n`;
+            md += `  - Responsável: ${acao.responsavel || 'N/A'}\n`;
+            md += `  - Métrica: ${acao.metrica_sucesso || 'N/A'}\n`;
+            md += `  - Esforço: ${acao.esforco || 'N/A'}\n`;
+          }
+        });
+        md += `\n`;
+      });
+      md += `---\n\n`;
+    }
+
+    // Governança
+    if (s.camada_4_governanca) {
+      const g = s.camada_4_governanca;
+      md += `## 8. Governança\n\n`;
+      md += `### Frequência de Revisão\n\n`;
+      md += `${g.frequencia_revisao || 'N/A'}\n\n`;
+
+      if (g.aprovacao_niveis) {
+        md += `### Níveis de Aprovação\n\n`;
+        Object.entries(g.aprovacao_niveis).forEach(([nivel, responsavel]) => {
+          md += `- **${nivel.charAt(0).toUpperCase() + nivel.slice(1)}:** ${responsavel}\n`;
+        });
+        md += `\n`;
+      }
+
+      if (g.consolidacao_grupo) {
+        md += `### Consolidação com o Grupo\n\n`;
+        md += `- **Frequência:** ${g.consolidacao_grupo.frequencia || 'N/A'}\n`;
+        md += `- **Processo:** ${g.consolidacao_grupo.processo || 'N/A'}\n`;
+        md += `- **Output:** ${g.consolidacao_grupo.output || 'N/A'}\n\n`;
+      }
+
+      if (g.dashboard_kpis?.length > 0) {
+        md += `### Dashboard KPIs\n\n`;
+        g.dashboard_kpis.forEach((kpi: any) => {
+          md += `- **${kpi.nome}** (Frequência: ${kpi.frequencia_medicao}) - Responsável: ${kpi.responsavel}\n`;
+        });
+        md += `\n`;
+      }
+      md += `---\n\n`;
+    }
+
+    md += `\n*Documento gerado em ${new Date().toLocaleString('pt-BR')}*\n`;
+
+    const blob = new Blob([md], { type: 'text/markdown;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `estrategia-marketing-${project?.name?.replace(/\s+/g, '_').toLowerCase() || 'projeto'}.md`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    toast.success('Estratégia exportada em Markdown com sucesso!');
   };
 
   const renderInput = (key: string, label: string, type: 'text' | 'textarea' | 'select' = 'text', options?: string[], placeholder?: string) => {
@@ -1455,6 +1705,9 @@ export default function MarketingStrategyPage() {
             </Button>
             <Button variant="outline" size="sm" onClick={handleExport} className="gap-2">
               <Download className="w-4 h-4" /> Exportar JSON
+            </Button>
+            <Button variant="outline" size="sm" onClick={handleExportMarkdown} className="gap-2">
+              <Download className="w-4 h-4" /> Exportar MD
             </Button>
             <Button variant="outline" size="sm" onClick={() => router.push(`/projects/${projectId}`)} className="gap-2">
               <FileText className="w-4 h-4" /> Ver no Dashboard
