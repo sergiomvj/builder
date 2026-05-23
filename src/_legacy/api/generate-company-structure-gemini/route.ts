@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 // OpenRouter com modelo gratuito
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
-const OPENROUTER_MODEL = 'x-ai/grok-4.1-fast:free'; // Grok 4.1 Fast gratuito via OpenRouter
+const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || 'x-ai/grok-4.1-fast:free'; // Fallback para Grok se não houver env
 
 export async function POST(request: NextRequest) {
   try {

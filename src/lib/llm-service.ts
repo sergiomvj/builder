@@ -21,12 +21,11 @@ const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
 const SITE_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'Builder MVP';
 
 // Default configuration - will be overridden by database config
-let DEFAULT_PROVIDER: LLMProvider = 'openai';
-let DEFAULT_MODEL = 'gpt-4o';
-const FALLBACK_MODELS = [
-  'gpt-4o-mini',
-  'gpt-3.5-turbo'
-];
+let DEFAULT_PROVIDER: LLMProvider = process.env.OPENROUTER_API_KEY ? 'openrouter' : 'openai';
+let DEFAULT_MODEL = process.env.OPENROUTER_MODEL || 'tencent/hy3-preview';
+const FALLBACK_MODELS = process.env.OPENROUTER_FALLBACK_MODEL
+  ? [process.env.OPENROUTER_FALLBACK_MODEL, 'gpt-4o-mini', 'gpt-3.5-turbo']
+  : ['gpt-4o-mini', 'gpt-3.5-turbo'];
 
 export class LLMService {
   private openRouterClient: OpenAI | null = null;
