@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
@@ -94,6 +94,13 @@ export default function MarketingStrategyPage() {
   const [isGeneratingBatch, setIsGeneratingBatch] = useState(false);
   const [showPreview, setShowPreview] = useState(false);
   const [strategicDocExists, setStrategicDocExists] = useState(false);
+  const [isGeneratingStrategicDoc, setIsGeneratingStrategicDoc] = useState(false);
+  const strategicDocPollRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Auto-save
+  const [autoSaveStatus, setAutoSaveStatus] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
+  const autoSaveTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const isFirstLoad = useRef(2); // ignora render inicial + restore do banco
 
   const fetchData = useCallback(async () => {
     if (!projectId) return;
@@ -141,6 +148,104 @@ export default function MarketingStrategyPage() {
   }, [projectId]);
 
   useEffect(() => { fetchData(); }, [fetchData]);
+
+  // Auto-save: debounce de 1.5s a cada mudança em `answers`
+  useEffect(() => {
+    // Ignora renders iniciais (EMPTY_ANSWERS + possível restore do banco)
+    if (isFirstLoad.current > 0) {
+      isFirstLoad.current -= 1;
+      return;
+    }
+    if (!projectId) return;
+
+    if (autoSaveTimerRef.current) clearTimeout(autoSaveTimerRef.current);
+    setAutoSaveStatus('saving');
+
+    autoSaveTimerRef.current = setTimeout(async () => {
+      try {
+        const { error } = await supabase
+          .from('marketing_strategies')
+          .upsert(
+            { project_id: projectId, wizard_answers: answers, updated_at: new Date().toISOString() },
+            { onConflict: 'project_id' }
+          );
+        setAutoSaveStatus(error ? 'error' : 'saved');
+        // Volta ao idle após 3s
+        setTimeout(() => setAutoSaveStatus('idle'), 3000);
+      } catch {
+        setAutoSaveStatus('error');
+      }
+    }, 1500);
+
+    return () => {
+      if (autoSaveTimerRef.current) clearTimeout(autoSaveTimerRef.current);
+    };
+  }, [answers, projectId]);
+
+
+
+  // Quando chega na etapa de Revisão, garante que o strategic doc exista
+  const REVIEW_STEP_INDEX = WIZARD_STEPS.length - 1;
+
+  const stopStrategicDocPolling = useCallback(() => {
+    if (strategicDocPollRef.current) {
+      clearInterval(strategicDocPollRef.current);
+      strategicDocPollRef.current = null;
+    }
+  }, []);
+
+  const checkStrategicDocExists = useCallback(async (): Promise<boolean> => {
+    const { data } = await supabase
+      .from('strategic_documents')
+      .select('id')
+      .eq('project_id', projectId)
+      .maybeSingle();
+    return !!data;
+  }, [projectId]);
+
+  useEffect(() => {
+    if (currentStep !== REVIEW_STEP_INDEX || !projectId) return;
+
+    // Já encontrado — não faz nada
+    if (strategicDocExists) return;
+
+    let cancelled = false;
+
+    const triggerAndPoll = async () => {
+      // Dispara a geração diretamente se ainda não existe
+      setIsGeneratingStrategicDoc(true);
+      try {
+        await fetch('/api/generate-strategic-doc', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ projectId }),
+        });
+      } catch (e) {
+        // Ignora erro da geração — polling vai detectar se funcionou
+      }
+
+      if (cancelled) return;
+
+      // Polling a cada 3s para confirmar que o doc foi salvo
+      strategicDocPollRef.current = setInterval(async () => {
+        if (cancelled) { stopStrategicDocPolling(); return; }
+        const exists = await checkStrategicDocExists();
+        if (exists) {
+          setStrategicDocExists(true);
+          setIsGeneratingStrategicDoc(false);
+          stopStrategicDocPolling();
+        }
+      }, 3000);
+    };
+
+    triggerAndPoll();
+
+    return () => {
+      cancelled = true;
+      stopStrategicDocPolling();
+    };
+  }, [currentStep, REVIEW_STEP_INDEX, projectId, strategicDocExists, checkStrategicDocExists, stopStrategicDocPolling]);
+
 
   const updateAnswer = (key: string, value: any) => {
     setAnswers(prev => ({ ...prev, [key]: value }));
@@ -531,14 +636,40 @@ export default function MarketingStrategyPage() {
             <div className={`flex items-center gap-3 p-3 rounded-lg border text-sm ${
               strategicDocExists
                 ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
+                : isGeneratingStrategicDoc
+                ? 'bg-blue-50 border-blue-200 text-blue-800'
                 : 'bg-amber-50 border-amber-200 text-amber-800'
             }`}>
               {strategicDocExists ? (
                 <><CheckCircle className="w-4 h-4 flex-shrink-0" />
                 <span><strong>Contexto estratégico disponível</strong> — a IA usará o documento do projeto para gerar sugestões precisas.</span></>
-              ) : (
+              ) : isGeneratingStrategicDoc ? (
                 <><Loader2 className="w-4 h-4 flex-shrink-0 animate-spin" />
-                <span><strong>Gerando contexto estratégico...</strong> — aguarde alguns instantes ou continue sem ele.</span></>
+                <span><strong>Gerando contexto estratégico...</strong> — isso pode levar de 20 a 40 segundos. Você já pode selecionar os campos.</span></>
+              ) : (
+                <><Zap className="w-4 h-4 flex-shrink-0" />
+                <div className="flex items-center justify-between w-full">
+                  <span><strong>Contexto estratégico não gerado</strong> — você pode gerar campos com IA mesmo assim, mas com menos precisão.</span>
+                  <button
+                    onClick={() => {
+                      setIsGeneratingStrategicDoc(true);
+                      fetch('/api/generate-strategic-doc', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ projectId }),
+                      })
+                        .then(() => checkStrategicDocExists())
+                        .then(exists => {
+                          if (exists) { setStrategicDocExists(true); setIsGeneratingStrategicDoc(false); }
+                        })
+                        .catch(() => setIsGeneratingStrategicDoc(false));
+                    }}
+                    className="ml-3 text-xs underline whitespace-nowrap hover:no-underline"
+                  >
+                    Tentar novamente
+                  </button>
+                </div>
+                </>
               )}
             </div>
 
@@ -1201,9 +1332,25 @@ export default function MarketingStrategyPage() {
     <div className="container mx-auto py-8 px-4 max-w-5xl">
       {/* Header */}
       <div className="mb-8">
-        <Button variant="ghost" size="sm" onClick={() => router.push(`/projects/${projectId}`)} className="gap-2 text-slate-500 hover:text-indigo-600 mb-4">
-          <ArrowLeft className="w-4 h-4" /> Voltar ao Projeto
-        </Button>
+        <div className="flex items-center justify-between">
+          <Button variant="ghost" size="sm" onClick={() => router.push(`/projects/${projectId}`)} className="gap-2 text-slate-500 hover:text-indigo-600 mb-4">
+            <ArrowLeft className="w-4 h-4" /> Voltar ao Projeto
+          </Button>
+
+          {/* Indicador de Auto-Save */}
+          {autoSaveStatus !== 'idle' && (
+            <span className={`flex items-center gap-1.5 text-xs font-medium transition-all ${
+              autoSaveStatus === 'saving' ? 'text-slate-400' :
+              autoSaveStatus === 'saved'  ? 'text-emerald-600' :
+                                            'text-red-500'
+            }`}>
+              {autoSaveStatus === 'saving' && <Loader2 className="w-3 h-3 animate-spin" />}
+              {autoSaveStatus === 'saved'  && <CheckCircle className="w-3 h-3" />}
+              {autoSaveStatus === 'saving' ? 'Salvando...' : autoSaveStatus === 'saved' ? 'Salvo' : 'Erro ao salvar'}
+            </span>
+          )}
+        </div>
+
         <h1 className="text-3xl font-bold text-slate-900 tracking-tight flex items-center gap-3">
           <Megaphone className="w-8 h-8 text-indigo-600" />
           Estratégia Central de Marketing
@@ -1264,6 +1411,24 @@ export default function MarketingStrategyPage() {
             </Button>
 
             <div className="flex gap-2">
+              <Button
+                variant="outline"
+                onClick={async () => {
+                  setAutoSaveStatus('saving');
+                  const { error } = await supabase
+                    .from('marketing_strategies')
+                    .upsert(
+                      { project_id: projectId, wizard_answers: answers, updated_at: new Date().toISOString() },
+                      { onConflict: 'project_id' }
+                    );
+                  setAutoSaveStatus(error ? 'error' : 'saved');
+                  setTimeout(() => setAutoSaveStatus('idle'), 3000);
+                }}
+                className="gap-2"
+              >
+                <CheckCircle className="w-4 h-4" /> Salvar Dados
+              </Button>
+
               {currentStep === WIZARD_STEPS.length - 1 ? (
                 <Button onClick={handleGenerate} disabled={isGenerating} className="gap-2 bg-indigo-600 hover:bg-indigo-700 px-8">
                   {isGenerating ? (
@@ -1279,6 +1444,7 @@ export default function MarketingStrategyPage() {
               )}
             </div>
           </div>
+
         </>
       ) : (
         <>
