@@ -5,7 +5,7 @@ const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || 'tencent/hy3-preview';
 const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions';
 
-export async function callOpenRouterLLM({ prompt, model = OPENROUTER_MODEL, max_tokens = 1200 }) {
+export async function callOpenRouterLLM({ prompt, model = OPENROUTER_MODEL, max_tokens = 1200 }: { prompt: string, model?: string, max_tokens?: number }) {
   if (!OPENROUTER_API_KEY) throw new Error('OPENROUTER_API_KEY missing');
   const body = {
     model,
