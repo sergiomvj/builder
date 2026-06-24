@@ -1252,13 +1252,13 @@ export default function MarketingStrategyPage() {
                <Card>
                 <CardHeader><CardTitle className="text-base">Audiências Macro</CardTitle></CardHeader>
                 <CardContent>
-                  <ul className="list-disc pl-4 text-sm space-y-1">{Array.isArray(s.camada_1_nucleo_grupo?.grupo?.audiencias_macro) && s.camada_1_nucleo_grupo.grupo.audiencias_macro.map((a:string, i:number) => <li key={i}>{a}</li>)}</ul>
+                  <ul className="list-disc pl-4 text-sm space-y-1">{Array.isArray(s.camada_1_nucleo_grupo?.grupo?.audiencias_macro) && s.camada_1_nucleo_grupo.grupo.audiencias_macro.map((a:any, i:number) => <li key={i}>{typeof a === 'string' ? a : a?.nome || a?.descricao || JSON.stringify(a)}</li>)}</ul>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader><CardTitle className="text-base">Regras de Convivência</CardTitle></CardHeader>
                 <CardContent>
-                  <ul className="list-disc pl-4 text-sm space-y-1">{Array.isArray(s.camada_1_nucleo_grupo?.grupo?.regras_convivencia) && s.camada_1_nucleo_grupo.grupo.regras_convivencia.map((r:string, i:number) => <li key={i}>{r}</li>)}</ul>
+                  <ul className="list-disc pl-4 text-sm space-y-1">{Array.isArray(s.camada_1_nucleo_grupo?.grupo?.regras_convivencia) && s.camada_1_nucleo_grupo.grupo.regras_convivencia.map((r:any, i:number) => <li key={i}>{typeof r === 'string' ? r : r?.nome || r?.descricao || JSON.stringify(r)}</li>)}</ul>
                 </CardContent>
               </Card>
             </div>
@@ -1527,11 +1527,11 @@ export default function MarketingStrategyPage() {
                   <div className="grid grid-cols-2 gap-2 mt-2">
                     <div>
                       <p className="text-xs font-bold text-green-700">Fortes:</p>
-                      <ul className="text-xs text-green-800">{Array.isArray(c.pontos_fortes) && c.pontos_fortes.map((p: string, j: number) => <li key={j}>• {p}</li>)}</ul>
+                      <ul className="text-xs text-green-800">{Array.isArray(c.pontos_fortes) && c.pontos_fortes.map((p: any, j: number) => <li key={j}>{typeof p === 'string' ? p : p?.nome || p?.descricao || JSON.stringify(p)}</li>)}</ul>
                     </div>
                     <div>
                       <p className="text-xs font-bold text-red-700">Fracos:</p>
-                      <ul className="text-xs text-red-800">{Array.isArray(c.pontos_fracos) && c.pontos_fracos.map((p: string, j: number) => <li key={j}>• {p}</li>)}</ul>
+                      <ul className="text-xs text-red-800">{Array.isArray(c.pontos_fracos) && c.pontos_fracos.map((p: any, j: number) => <li key={j}>{typeof p === 'string' ? p : p?.nome || p?.descricao || JSON.stringify(p)}</li>)}</ul>
                     </div>
                   </div>
                 </div>
@@ -1635,15 +1635,15 @@ export default function MarketingStrategyPage() {
             <div className="grid grid-cols-3 gap-3">
               <div className="bg-red-50 p-2 rounded">
                 <h5 className="text-xs font-bold text-red-700 mb-1">Pain Points</h5>
-                <ul className="text-xs text-red-900">{Array.isArray(cluster.pain_points) && cluster.pain_points.map((p: string, j: number) => <li key={j}>• {p}</li>)}</ul>
+                <ul className="text-xs text-red-900">{Array.isArray(cluster.pain_points) && cluster.pain_points.map((p: any, j: number) => <li key={j}>{typeof p === 'string' ? p : p?.nome || p?.descricao || JSON.stringify(p)}</li>)}</ul>
               </div>
               <div className="bg-green-50 p-2 rounded">
                 <h5 className="text-xs font-bold text-green-700 mb-1">Desired Outcomes</h5>
-                <ul className="text-xs text-green-900">{Array.isArray(cluster.desired_outcomes) && cluster.desired_outcomes.map((o: string, j: number) => <li key={j}>• {o}</li>)}</ul>
+                <ul className="text-xs text-green-900">{Array.isArray(cluster.desired_outcomes) && cluster.desired_outcomes.map((o: any, j: number) => <li key={j}>{typeof o === 'string' ? o : o?.nome || o?.descricao || JSON.stringify(o)}</li>)}</ul>
               </div>
               <div className="bg-blue-50 p-2 rounded">
                 <h5 className="text-xs font-bold text-blue-700 mb-1">Watering Holes</h5>
-                <ul className="text-xs text-blue-900">{Array.isArray(cluster.watering_holes) && cluster.watering_holes.map((w: string, j: number) => <li key={j}>• {w}</li>)}</ul>
+                <ul className="text-xs text-blue-900">{Array.isArray(cluster.watering_holes) && cluster.watering_holes.map((w: any, j: number) => <li key={j}>{typeof w === 'string' ? w : w?.nome || w?.descricao || JSON.stringify(w)}</li>)}</ul>
               </div>
             </div>
             {cluster.mapa_empatia && (
@@ -1736,7 +1736,7 @@ export default function MarketingStrategyPage() {
             {p.brand_personality.guidelines_comunicacao && (
               <div>
                 <p className="text-xs font-bold text-slate-500 uppercase mb-1">Guidelines</p>
-                <ul className="text-xs text-slate-700">{Array.isArray(p.brand_personality.guidelines_comunicacao) && p.brand_personality.guidelines_comunicacao.map((g: string, i: number) => <li key={i}>• {g}</li>)}</ul>
+                <ul className="text-xs text-slate-700">{Array.isArray(p.brand_personality.guidelines_comunicacao) && p.brand_personality.guidelines_comunicacao.map((g: any, i: number) => <li key={i}>{typeof g === 'string' ? g : g?.nome || g?.descricao || JSON.stringify(g)}</li>)}</ul>
               </div>
             )}
           </CardContent>
