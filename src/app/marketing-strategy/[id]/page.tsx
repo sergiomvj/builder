@@ -25,7 +25,7 @@ interface WizardStep {
   description: string;
 }
 
-const WIZARD_STEPS: WizardStep[] = [
+const BASE_WIZARD_STEPS: WizardStep[] = [
   { id: 'basics', title: 'Informações Básicas', icon: Building, description: 'Setor, modelo de negócio e fase da empresa' },
   { id: 'group', title: 'Núcleo do Grupo', icon: Layers, description: 'Identidade do grupo, audiências e regras de convivência' },
   { id: 'diagnosis', title: 'Diagnóstico', icon: BarChart3, description: 'Concorrentes, maturidade digital e gaps' },
@@ -39,6 +39,12 @@ const WIZARD_STEPS: WizardStep[] = [
 ];
 
 const EMPTY_ANSWERS: Record<string, any> = {
+  usa_plf: false,
+  plf_tipo_lancamento: '',
+  plf_promessa: '',
+  plf_oferta: '',
+  plf_preco: '',
+  plf_duracao_carrinho: '',
   setor: '',
   modelo_negocio: '',
   fase: '',
@@ -87,6 +93,16 @@ export default function MarketingStrategyPage() {
   const [generatedStrategy, setGeneratedStrategy] = useState<any>(null);
   const [existingStrategy, setExistingStrategy] = useState<any>(null);
   const [activeResultTab, setActiveResultTab] = useState('overview');
+
+  const wizardSteps = [...BASE_WIZARD_STEPS];
+  if (answers.usa_plf) {
+    wizardSteps.splice(wizardSteps.length - 1, 0, {
+      id: 'plf_formula',
+      title: 'Launch Formula',
+      icon: Rocket,
+      description: 'Estratégia de Marketing usando Product Launch Formula (PLF)',
+    });
+  }
 
   // Batch AI Generation
   const [selectedAIFields, setSelectedAIFields] = useState<Set<string>>(new Set());
@@ -185,7 +201,7 @@ export default function MarketingStrategyPage() {
 
 
   // Quando chega na etapa de Revisão, garante que o strategic doc exista
-  const REVIEW_STEP_INDEX = WIZARD_STEPS.length - 1;
+  const REVIEW_STEP_INDEX = wizardSteps.length - 1;
 
   const stopStrategicDocPolling = useCallback(() => {
     if (strategicDocPollRef.current) {
@@ -252,7 +268,7 @@ export default function MarketingStrategyPage() {
   };
 
   const nextStep = () => {
-    if (currentStep < WIZARD_STEPS.length - 1) setCurrentStep(currentStep + 1);
+    if (currentStep < wizardSteps.length - 1) setCurrentStep(currentStep + 1);
   };
 
   const prevStep = () => {
@@ -657,6 +673,17 @@ export default function MarketingStrategyPage() {
         md += `---\n\n`;
       }
 
+      // Estratégia de Lançamento (PLF)
+      if (answers?.usa_plf) {
+        md += `## 9. Estratégia de Lançamento (PLF)\n\n`;
+        md += `- **Tipo de Lançamento:** ${answers.plf_tipo_lancamento || 'N/A'}\n`;
+        md += `- **Promessa (A Roma):** ${answers.plf_promessa || 'N/A'}\n`;
+        md += `- **Oferta:** ${answers.plf_oferta || 'N/A'}\n`;
+        md += `- **Preço e Condições:** ${answers.plf_preco || 'N/A'}\n`;
+        md += `- **Duração do Carrinho:** ${answers.plf_duracao_carrinho || 'N/A'}\n\n`;
+        md += `---\n\n`;
+      }
+
       md += `\n*Documento gerado em ${new Date().toLocaleString('pt-BR')}*\n`;
 
       const blob = new Blob([md], { type: 'text/markdown;charset=utf-8' });
@@ -786,7 +813,7 @@ export default function MarketingStrategyPage() {
   };
 
   const renderStepContent = () => {
-    const step = WIZARD_STEPS[currentStep];
+    const step = wizardSteps[currentStep];
 
     switch (step.id) {
       case 'basics':
@@ -796,6 +823,16 @@ export default function MarketingStrategyPage() {
               <p className="text-sm text-indigo-800">
                 <strong>Objetivo:</strong> Mapear as variáveis fundamentais do negócio para contextualizar toda a estratégia.
               </p>
+            </div>
+            <div className="bg-white border border-slate-200 rounded-lg p-4 mb-6 flex items-center justify-between">
+              <div>
+                <p className="font-semibold text-slate-800">Utilizar framework PLF?</p>
+                <p className="text-sm text-slate-500">Habilita a aba Launch Formula para incluir a estratégia de lançamento no plano.</p>
+              </div>
+              <label className="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" checked={answers.usa_plf || false} onChange={(e) => updateAnswer('usa_plf', e.target.checked)} className="sr-only peer" />
+                <div className="w-11 h-6 bg-slate-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
+              </label>
             </div>
             {renderInput('setor', 'Setor / Indústria', 'text', undefined, 'Ex: Tecnologia, Saúde, Educação, E-commerce...')}
             {renderInput('modelo_negocio', 'Modelo de Negócio', 'select', ['B2B', 'B2C', 'B2B2C', 'Marketplace', 'SaaS', 'E-commerce', 'Serviços'])}
@@ -939,6 +976,22 @@ export default function MarketingStrategyPage() {
               </div>
             </div>
             {renderInput('observacoes_adicionais', 'Observações Adicionais', 'textarea', undefined, 'Qualquer informação adicional que considere relevante para a estratégia.')}
+          </div>
+        );
+
+      case 'plf_formula':
+        return (
+          <div className="space-y-6">
+            <div className="bg-rose-50 border border-rose-100 rounded-lg p-4 mb-6">
+              <p className="text-sm text-rose-800">
+                <strong>Launch Formula (PLF):</strong> Estruture os dados específicos do seu lançamento seguindo o framework.
+              </p>
+            </div>
+            {renderInput('plf_tipo_lancamento', 'Tipo de Lançamento', 'select', ['Semente', 'Interno', 'Externo', 'Relâmpago', 'Perpétuo'])}
+            {renderInput('plf_promessa', 'Promessa do Lançamento (A Roma)', 'textarea', undefined, 'Qual é a grande promessa/transformação que o lançamento fará?')}
+            {renderInput('plf_oferta', 'Estrutura da Oferta e Bônus', 'textarea', undefined, 'Descreva o produto principal, bônus limitados, garantias, etc.')}
+            {renderInput('plf_preco', 'Preço / Condições de Pagamento', 'text', undefined, 'Ex: R$ 997 à vista ou 12x de R$ 97')}
+            {renderInput('plf_duracao_carrinho', 'Duração do Carrinho Aberto', 'text', undefined, 'Ex: 7 dias (De Segunda a Domingo)')}
           </div>
         );
 
@@ -1861,7 +1914,7 @@ export default function MarketingStrategyPage() {
           {/* Progress Bar */}
           <div className="mb-8">
             <div className="flex items-center justify-between mb-2">
-              {WIZARD_STEPS.map((step, i) => {
+              {wizardSteps.map((step, i) => {
                 const StepIcon = step.icon;
                 return (
                   <button
@@ -1882,7 +1935,7 @@ export default function MarketingStrategyPage() {
             <div className="w-full bg-slate-100 rounded-full h-1.5">
               <div
                 className="bg-indigo-600 h-1.5 rounded-full transition-all duration-500"
-                style={{ width: `${((currentStep + 1) / WIZARD_STEPS.length) * 100}%` }}
+                style={{ width: `${((currentStep + 1) / wizardSteps.length) * 100}%` }}
               />
             </div>
           </div>
@@ -1891,10 +1944,10 @@ export default function MarketingStrategyPage() {
           <Card className="mb-8">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                {(() => { const Icon = WIZARD_STEPS[currentStep].icon; return <Icon className="w-5 h-5 text-indigo-600" />; })()}
-                {WIZARD_STEPS[currentStep].title}
+                {(() => { const Icon = wizardSteps[currentStep].icon; return <Icon className="w-5 h-5 text-indigo-600" />; })()}
+                {wizardSteps[currentStep].title}
               </CardTitle>
-              <CardDescription>{WIZARD_STEPS[currentStep].description}</CardDescription>
+              <CardDescription>{wizardSteps[currentStep].description}</CardDescription>
             </CardHeader>
             <CardContent>
               {renderStepContent()}
@@ -1926,7 +1979,7 @@ export default function MarketingStrategyPage() {
                 <CheckCircle className="w-4 h-4" /> Salvar Dados
               </Button>
 
-              {currentStep === WIZARD_STEPS.length - 1 ? (
+              {currentStep === wizardSteps.length - 1 ? (
                 <Button onClick={handleGenerate} disabled={isGenerating} className="gap-2 bg-indigo-600 hover:bg-indigo-700 px-8">
                   {isGenerating ? (
                     <><Loader2 className="w-4 h-4 animate-spin" /> Gerando Estratégia...</>
