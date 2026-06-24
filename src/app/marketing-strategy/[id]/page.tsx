@@ -1252,13 +1252,13 @@ export default function MarketingStrategyPage() {
                <Card>
                 <CardHeader><CardTitle className="text-base">Audiências Macro</CardTitle></CardHeader>
                 <CardContent>
-                  <ul className="list-disc pl-4 text-sm space-y-1">{s.camada_1_nucleo_grupo.grupo.audiencias_macro?.map((a:string, i:number) => <li key={i}>{a}</li>)}</ul>
+                  <ul className="list-disc pl-4 text-sm space-y-1">{Array.isArray(s.camada_1_nucleo_grupo?.grupo?.audiencias_macro) && s.camada_1_nucleo_grupo.grupo.audiencias_macro.map((a:string, i:number) => <li key={i}>{a}</li>)}</ul>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader><CardTitle className="text-base">Regras de Convivência</CardTitle></CardHeader>
                 <CardContent>
-                  <ul className="list-disc pl-4 text-sm space-y-1">{s.camada_1_nucleo_grupo.grupo.regras_convivencia?.map((r:string, i:number) => <li key={i}>{r}</li>)}</ul>
+                  <ul className="list-disc pl-4 text-sm space-y-1">{Array.isArray(s.camada_1_nucleo_grupo?.grupo?.regras_convivencia) && s.camada_1_nucleo_grupo.grupo.regras_convivencia.map((r:string, i:number) => <li key={i}>{r}</li>)}</ul>
                 </CardContent>
               </Card>
             </div>
@@ -1527,11 +1527,11 @@ export default function MarketingStrategyPage() {
                   <div className="grid grid-cols-2 gap-2 mt-2">
                     <div>
                       <p className="text-xs font-bold text-green-700">Fortes:</p>
-                      <ul className="text-xs text-green-800">{c.pontos_fortes?.map((p: string, j: number) => <li key={j}>• {p}</li>)}</ul>
+                      <ul className="text-xs text-green-800">{Array.isArray(c.pontos_fortes) && c.pontos_fortes.map((p: string, j: number) => <li key={j}>• {p}</li>)}</ul>
                     </div>
                     <div>
                       <p className="text-xs font-bold text-red-700">Fracos:</p>
-                      <ul className="text-xs text-red-800">{c.pontos_fracos?.map((p: string, j: number) => <li key={j}>• {p}</li>)}</ul>
+                      <ul className="text-xs text-red-800">{Array.isArray(c.pontos_fracos) && c.pontos_fracos.map((p: string, j: number) => <li key={j}>• {p}</li>)}</ul>
                     </div>
                   </div>
                 </div>
@@ -1583,7 +1583,7 @@ export default function MarketingStrategyPage() {
           </CardHeader>
           <CardContent>
             <div className="space-y-2">
-              {okr.key_results?.map((kr: any, j: number) => (
+              {Array.isArray(okr.key_results) && okr.key_results.map((kr: any, j: number) => (
                 <div key={j} className="flex items-start gap-3 p-2 bg-slate-50 rounded">
                   <Badge variant="outline" className="mt-0.5">KR{j + 1}</Badge>
                   <div>
@@ -1635,15 +1635,15 @@ export default function MarketingStrategyPage() {
             <div className="grid grid-cols-3 gap-3">
               <div className="bg-red-50 p-2 rounded">
                 <h5 className="text-xs font-bold text-red-700 mb-1">Pain Points</h5>
-                <ul className="text-xs text-red-900">{cluster.pain_points?.map((p: string, j: number) => <li key={j}>• {p}</li>)}</ul>
+                <ul className="text-xs text-red-900">{Array.isArray(cluster.pain_points) && cluster.pain_points.map((p: string, j: number) => <li key={j}>• {p}</li>)}</ul>
               </div>
               <div className="bg-green-50 p-2 rounded">
                 <h5 className="text-xs font-bold text-green-700 mb-1">Desired Outcomes</h5>
-                <ul className="text-xs text-green-900">{cluster.desired_outcomes?.map((o: string, j: number) => <li key={j}>• {o}</li>)}</ul>
+                <ul className="text-xs text-green-900">{Array.isArray(cluster.desired_outcomes) && cluster.desired_outcomes.map((o: string, j: number) => <li key={j}>• {o}</li>)}</ul>
               </div>
               <div className="bg-blue-50 p-2 rounded">
                 <h5 className="text-xs font-bold text-blue-700 mb-1">Watering Holes</h5>
-                <ul className="text-xs text-blue-900">{cluster.watering_holes?.map((w: string, j: number) => <li key={j}>• {w}</li>)}</ul>
+                <ul className="text-xs text-blue-900">{Array.isArray(cluster.watering_holes) && cluster.watering_holes.map((w: string, j: number) => <li key={j}>• {w}</li>)}</ul>
               </div>
             </div>
             {cluster.mapa_empatia && (
@@ -1711,7 +1711,7 @@ export default function MarketingStrategyPage() {
                 title="Sua empresa"
               />
               {/* Competitor dots */}
-              {p.matriz_posicionamento.concorrentes?.map((c: any, i: number) => (
+              {Array.isArray(p.matriz_posicionamento.concorrentes) && p.matriz_posicionamento.concorrentes.map((c: any, i: number) => (
                 <div
                   key={i}
                   className="absolute w-3 h-3 bg-slate-400 rounded-full border-2 border-white"
@@ -1736,7 +1736,7 @@ export default function MarketingStrategyPage() {
             {p.brand_personality.guidelines_comunicacao && (
               <div>
                 <p className="text-xs font-bold text-slate-500 uppercase mb-1">Guidelines</p>
-                <ul className="text-xs text-slate-700">{p.brand_personality.guidelines_comunicacao.map((g: string, i: number) => <li key={i}>• {g}</li>)}</ul>
+                <ul className="text-xs text-slate-700">{Array.isArray(p.brand_personality.guidelines_comunicacao) && p.brand_personality.guidelines_comunicacao.map((g: string, i: number) => <li key={i}>• {g}</li>)}</ul>
               </div>
             )}
           </CardContent>
@@ -1787,7 +1787,7 @@ export default function MarketingStrategyPage() {
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
-                {sprint.acoes?.map((acao: any, j: number) => (
+                {Array.isArray(sprint.acoes) && sprint.acoes.map((acao: any, j: number) => (
                   <div key={j} className="flex items-start gap-2 p-2 bg-white rounded border border-slate-100">
                     <Rocket className="w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0" />
                     <div>
@@ -1867,7 +1867,7 @@ export default function MarketingStrategyPage() {
           <CardHeader><CardTitle className="text-base">Dashboard KPIs</CardTitle></CardHeader>
           <CardContent>
             <div className="space-y-2">
-              {g.dashboard_kpis.map((kpi: any, i: number) => (
+              {Array.isArray(g.dashboard_kpis) && g.dashboard_kpis.map((kpi: any, i: number) => (
                 <div key={i} className="flex items-center gap-2 p-2 bg-slate-50 rounded">
                   <TrendingUp className="w-4 h-4 text-blue-500" />
                   <span className="text-sm font-medium text-slate-800">{kpi.nome}</span>
