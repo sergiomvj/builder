@@ -1340,7 +1340,7 @@ export default function MarketingStrategyPage() {
 
         {/* 5. Posicionamento */}
         {s.camada_2_modulos_obrigatorios?.posicionamento && (
-          <div className="space-y-6" style={{ pageBreakBefore: 'always' }}>
+          <div className="space-y-6 print:break-before-page break-inside-avoid-page">
             <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
               <Megaphone className="w-6 h-6" /> 5. Posicionamento
             </h2>
@@ -1350,7 +1350,7 @@ export default function MarketingStrategyPage() {
 
         {/* 6. Canais */}
         {s.camada_2_modulos_obrigatorios?.canais && (
-          <div className="space-y-6" style={{ pageBreakBefore: 'always' }}>
+          <div className="space-y-6 print:break-before-page break-inside-avoid-page">
             <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
               <Globe className="w-6 h-6" /> 6. Canais de Marketing
             </h2>
@@ -1360,7 +1360,7 @@ export default function MarketingStrategyPage() {
 
         {/* 7. Plano de Ação */}
         {s.camada_2_modulos_obrigatorios?.plano_acao_90_dias && (
-          <div className="space-y-6" style={{ pageBreakBefore: 'always' }}>
+          <div className="space-y-6 print:break-before-page break-inside-avoid-page">
             <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
               <Rocket className="w-6 h-6" /> 7. Plano de Ação (90 Dias)
             </h2>
@@ -1370,16 +1370,95 @@ export default function MarketingStrategyPage() {
 
         {/* 8. Governança */}
         {s.camada_4_governanca && (
-          <div className="space-y-6" style={{ pageBreakBefore: 'always' }}>
+          <div className="space-y-6 print:break-before-page break-inside-avoid-page">
             <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
               <Shield className="w-6 h-6" /> 8. Governança
             </h2>
             {renderGovernance(s.camada_4_governanca)}
           </div>
         )}
+
+        {/* 9. Product Launch Formula */}
+        {s.camada_3_modulos_opcionais?.plf_strategy && (
+          <div className="space-y-6 print:break-before-page break-inside-avoid-page">
+            <h2 className="text-2xl font-bold text-purple-900 border-b-2 border-purple-100 pb-2 flex items-center gap-2">
+              <Rocket className="w-6 h-6" /> 9. Product Launch Formula (PLF)
+            </h2>
+            {renderPLF(s.camada_3_modulos_opcionais.plf_strategy)}
+          </div>
+        )}
       </div>
     );
   };
+
+  // --- PLF RENDERING ---
+  const renderPLF = (plf: any) => (
+    <div className="mt-8 space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <Card className="border-t-4 border-t-purple-500">
+          <CardHeader><CardTitle className="text-base text-purple-900">Tipo de Lançamento</CardTitle></CardHeader>
+          <CardContent><p className="font-bold text-slate-700">{typeof plf.tipo_lancamento === 'string' ? plf.tipo_lancamento : plf.tipo_lancamento?.nome || 'Não definido'}</p></CardContent>
+        </Card>
+        
+        {plf.pre_pre_lancamento && (
+        <Card>
+          <CardHeader><CardTitle className="text-base">Pré-Pré Lançamento (PPL)</CardTitle></CardHeader>
+          <CardContent>
+            <ul className="list-disc pl-4 text-sm space-y-1">
+              {Array.isArray(plf.pre_pre_lancamento) && plf.pre_pre_lancamento.map((item: any, i: number) => (
+                <li key={i}>{typeof item === 'string' ? item : item?.nome || item?.descricao || JSON.stringify(item)}</li>
+              ))}
+            </ul>
+          </CardContent>
+        </Card>
+        )}
+      </div>
+
+      {plf.pre_lancamento_plf && (
+      <div className="mt-4 grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <Card className="bg-purple-50 border border-purple-100">
+          <CardHeader><CardTitle className="text-sm text-purple-900">PLC 1: A Oportunidade</CardTitle></CardHeader>
+          <CardContent><p className="text-sm text-purple-800">{typeof plf.pre_lancamento_plf.plc1 === 'string' ? plf.pre_lancamento_plf.plc1 : JSON.stringify(plf.pre_lancamento_plf.plc1)}</p></CardContent>
+        </Card>
+        <Card className="bg-purple-50 border border-purple-100">
+          <CardHeader><CardTitle className="text-sm text-purple-900">PLC 2: A Transformação</CardTitle></CardHeader>
+          <CardContent><p className="text-sm text-purple-800">{typeof plf.pre_lancamento_plf.plc2 === 'string' ? plf.pre_lancamento_plf.plc2 : JSON.stringify(plf.pre_lancamento_plf.plc2)}</p></CardContent>
+        </Card>
+        <Card className="bg-purple-50 border border-purple-100">
+          <CardHeader><CardTitle className="text-sm text-purple-900">PLC 3: A Experiência</CardTitle></CardHeader>
+          <CardContent><p className="text-sm text-purple-800">{typeof plf.pre_lancamento_plf.plc3 === 'string' ? plf.pre_lancamento_plf.plc3 : JSON.stringify(plf.pre_lancamento_plf.plc3)}</p></CardContent>
+        </Card>
+      </div>
+      )}
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        {plf.dia_lancamento && (
+        <Card className="border border-green-200">
+          <CardHeader className="bg-green-50"><CardTitle className="text-base text-green-900 flex items-center gap-2"><CheckCircle className="w-5 h-5"/> Dia do Lançamento (Open Cart)</CardTitle></CardHeader>
+          <CardContent className="pt-4">
+            <ul className="list-disc pl-4 text-sm space-y-1">
+              {Array.isArray(plf.dia_lancamento) && plf.dia_lancamento.map((item: any, i: number) => (
+                <li key={i}>{typeof item === 'string' ? item : item?.nome || item?.descricao || JSON.stringify(item)}</li>
+              ))}
+            </ul>
+          </CardContent>
+        </Card>
+        )}
+        {plf.pos_lancamento && (
+        <Card className="border border-amber-200">
+          <CardHeader className="bg-amber-50"><CardTitle className="text-base text-amber-900">Pós-Lançamento (Downsell)</CardTitle></CardHeader>
+          <CardContent className="pt-4">
+            <ul className="list-disc pl-4 text-sm space-y-1">
+              {Array.isArray(plf.pos_lancamento) && plf.pos_lancamento.map((item: any, i: number) => (
+                <li key={i}>{typeof item === 'string' ? item : item?.nome || item?.descricao || JSON.stringify(item)}</li>
+              ))}
+            </ul>
+          </CardContent>
+        </Card>
+        )}
+      </div>
+    </div>
+  );
 
   // --- RESULTS RENDERING ---
   const renderStrategyResults = () => {
@@ -1398,6 +1477,7 @@ export default function MarketingStrategyPage() {
           <TabsTrigger value="channels" className="text-xs">Canais</TabsTrigger>
           <TabsTrigger value="action" className="text-xs">Plano de Ação</TabsTrigger>
           <TabsTrigger value="governance" className="text-xs">Governança</TabsTrigger>
+          {s.camada_3_modulos_opcionais?.plf_strategy && <TabsTrigger value="plf" className="text-xs bg-purple-50 text-purple-700 data-[state=active]:bg-purple-600 data-[state=active]:text-white border border-purple-200">PLF</TabsTrigger>}
           <TabsTrigger value="raw" className="text-xs">JSON</TabsTrigger>
         </TabsList>
 
@@ -1486,6 +1566,13 @@ export default function MarketingStrategyPage() {
         <TabsContent value="governance" className="space-y-6">
           {s.camada_4_governanca && renderGovernance(s.camada_4_governanca)}
         </TabsContent>
+
+        {/* PLF */}
+        {s.camada_3_modulos_opcionais?.plf_strategy && (
+        <TabsContent value="plf" className="space-y-6">
+          {renderPLF(s.camada_3_modulos_opcionais.plf_strategy)}
+        </TabsContent>
+        )}
 
         {/* Raw JSON */}
         <TabsContent value="raw">
@@ -1925,8 +2012,8 @@ export default function MarketingStrategyPage() {
       {!generatedStrategy ? (
         <>
           {/* Progress Bar */}
-          <div className="mb-8">
-            <div className="flex items-center justify-between mb-2">
+          <div className="mb-8 w-full max-w-full overflow-hidden">
+            <div className="flex items-center justify-start md:justify-center mb-2 overflow-x-auto hide-scrollbar gap-2 md:gap-4 pb-2 snap-x">
               {wizardSteps.map((step, i) => {
                 const StepIcon = step.icon;
                 return (
