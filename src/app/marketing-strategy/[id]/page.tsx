@@ -1514,8 +1514,8 @@ export default function MarketingStrategyPage() {
         <Card>
           <CardHeader><CardTitle className="text-base">Análise Competitiva</CardTitle></CardHeader>
           <CardContent>
-            <div className="space-y-3">
-              {d.analise_competitiva.map((c: any, i: number) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {Array.isArray(d.analise_competitiva) && d.analise_competitiva.map((c: any, i: number) => (
                 <div key={i} className="p-3 bg-slate-50 rounded-lg border border-slate-200">
                   <div className="flex items-center justify-between mb-2">
                     <h5 className="font-bold text-slate-800">{c.concorrente}</h5>
@@ -1553,8 +1553,8 @@ export default function MarketingStrategyPage() {
         <Card>
           <CardHeader><CardTitle className="text-base">Gaps de Marketing</CardTitle></CardHeader>
           <CardContent>
-            <div className="space-y-2">
-              {d.gaps_marketing.map((g: any, i: number) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {Array.isArray(d.gaps_marketing) && d.gaps_marketing.map((g: any, i: number) => (
                 <div key={i} className="flex items-start gap-2 p-2 bg-red-50 rounded">
                   <Badge variant={g.impacto === 'high' ? 'destructive' : 'default'} className="mt-0.5">{g.impacto}</Badge>
                   <p className="text-sm text-red-900">{g.gap}</p>
@@ -1568,8 +1568,8 @@ export default function MarketingStrategyPage() {
   );
 
   const renderOKRs = (okrs: any[]) => (
-    <div className="space-y-4">
-      {okrs.map((okr: any, i: number) => (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+      {Array.isArray(okrs) && okrs.map((okr: any, i: number) => (
         <Card key={i} className="border-l-4 border-l-green-500">
           <CardHeader>
             <CardTitle className="text-base flex items-center gap-2">
@@ -1604,8 +1604,8 @@ export default function MarketingStrategyPage() {
   );
 
   const renderAudience = (audience: any) => (
-    <div className="space-y-4">
-      {audience.clusters?.map((cluster: any, i: number) => (
+    <div className="space-y-6 mt-4">
+      {Array.isArray(audience.clusters) && audience.clusters.map((cluster: any, i: number) => (
         <Card key={i}>
           <CardHeader>
             <CardTitle className="text-base flex items-center gap-2">
@@ -1746,8 +1746,8 @@ export default function MarketingStrategyPage() {
   );
 
   const renderChannels = (channels: any[]) => (
-    <div className="space-y-4">
-      {channels.map((ch: any, i: number) => (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+      {Array.isArray(channels) && channels.map((ch: any, i: number) => (
         <Card key={i}>
           <CardContent className="pt-4">
             <div className="flex items-center justify-between mb-3">
