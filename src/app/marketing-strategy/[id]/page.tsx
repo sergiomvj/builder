@@ -104,6 +104,12 @@ export default function MarketingStrategyPage() {
     });
   }
 
+  useEffect(() => {
+    if (currentStep >= wizardSteps.length) {
+      setCurrentStep(wizardSteps.length - 1);
+    }
+  }, [wizardSteps.length, currentStep]);
+
   // Batch AI Generation
   const [selectedAIFields, setSelectedAIFields] = useState<Set<string>>(new Set());
   const [aiSuggestions, setAiSuggestions] = useState<Record<string, string>>({});
@@ -336,6 +342,11 @@ export default function MarketingStrategyPage() {
     aprovacao_niveis: 'Níveis de Aprovação',
     consolidacao_grupo: 'Consolidação com o Grupo',
     observacoes_adicionais: 'Observações Adicionais',
+    plf_tipo_lancamento: 'Recomendação de Tipo de Lançamento (Analisar a avaliação preliminar e recomendar um tipo: Semente, Interno, Externo, Relâmpago ou Perpétuo. Fornecer justificativa detalhada.)',
+    plf_promessa: 'Promessa do Lançamento (A Roma)',
+    plf_oferta: 'Estrutura da Oferta e Bônus',
+    plf_preco: 'Preço / Condições de Pagamento',
+    plf_duracao_carrinho: 'Duração do Carrinho Aberto',
   };
 
   const toggleAIField = (key: string) => {
@@ -814,6 +825,7 @@ export default function MarketingStrategyPage() {
 
   const renderStepContent = () => {
     const step = wizardSteps[currentStep];
+    if (!step) return null;
 
     switch (step.id) {
       case 'basics':
@@ -987,7 +999,7 @@ export default function MarketingStrategyPage() {
                 <strong>Launch Formula (PLF):</strong> Estruture os dados específicos do seu lançamento seguindo o framework.
               </p>
             </div>
-            {renderInput('plf_tipo_lancamento', 'Tipo de Lançamento', 'select', ['Semente', 'Interno', 'Externo', 'Relâmpago', 'Perpétuo'])}
+            {renderInput('plf_tipo_lancamento', 'Tipo de Lançamento Recomendado', 'textarea', undefined, 'Qual tipo de lançamento você executará? (Clique na IA ✨ para gerar uma recomendação)')}
             {renderInput('plf_promessa', 'Promessa do Lançamento (A Roma)', 'textarea', undefined, 'Qual é a grande promessa/transformação que o lançamento fará?')}
             {renderInput('plf_oferta', 'Estrutura da Oferta e Bônus', 'textarea', undefined, 'Descreva o produto principal, bônus limitados, garantias, etc.')}
             {renderInput('plf_preco', 'Preço / Condições de Pagamento', 'text', undefined, 'Ex: R$ 997 à vista ou 12x de R$ 97')}
@@ -1944,10 +1956,10 @@ export default function MarketingStrategyPage() {
           <Card className="mb-8">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                {(() => { const Icon = wizardSteps[currentStep].icon; return <Icon className="w-5 h-5 text-indigo-600" />; })()}
-                {wizardSteps[currentStep].title}
+                {(() => { const Icon = wizardSteps[currentStep]?.icon; return Icon ? <Icon className="w-5 h-5 text-indigo-600" /> : null; })()}
+                {wizardSteps[currentStep]?.title}
               </CardTitle>
-              <CardDescription>{wizardSteps[currentStep].description}</CardDescription>
+              <CardDescription>{wizardSteps[currentStep]?.description}</CardDescription>
             </CardHeader>
             <CardContent>
               {renderStepContent()}
