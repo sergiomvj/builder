@@ -675,6 +675,40 @@ export default function MarketingStrategyPage() {
     }
   };
 
+  const handleExportPDF = async () => {
+    try {
+      if (!generatedStrategy) {
+        toast.error('Nenhuma estratégia gerada para exportar.');
+        return;
+      }
+      
+      const safeProjectName = project?.name
+        ?.normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-zA-Z0-9-_]/g, '_')
+        .toLowerCase() || 'projeto';
+
+      toast.info('Gerando PDF, aguarde...');
+      // @ts-ignore
+      const html2pdf = (await import('html2pdf.js')).default;
+      const element = document.getElementById('strategy-results');
+      if (!element) return;
+      
+      const opt = {
+        margin:       10,
+        filename:     `estrategia-marketing-${safeProjectName}.pdf`,
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2, useCORS: true },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      };
+
+      html2pdf().set(opt).from(element).save();
+    } catch (error: any) {
+      console.error('Erro ao gerar PDF:', error);
+      toast.error(`Falha ao gerar PDF: ${error.message}`);
+    }
+  };
+
   const renderInput = (key: string, label: string, type: 'text' | 'textarea' | 'select' = 'text', options?: string[], placeholder?: string) => {
     // Campos select são simples demais para precisar de IA — sem checkbox
     const showAICheckbox = type !== 'select';
@@ -1738,7 +1772,7 @@ export default function MarketingStrategyPage() {
       ) : (
         <>
           {/* Results View */}
-          <div className="flex gap-2 mb-6">
+          <div className="flex flex-wrap gap-2 mb-6">
             <Button variant="outline" size="sm" onClick={() => setGeneratedStrategy(null)} className="gap-2">
               <RefreshCw className="w-4 h-4" /> Editar Respostas
             </Button>
@@ -1748,12 +1782,17 @@ export default function MarketingStrategyPage() {
             <Button variant="outline" size="sm" onClick={handleExportMarkdown} className="gap-2">
               <Download className="w-4 h-4" /> Exportar MD
             </Button>
+            <Button variant="outline" size="sm" onClick={handleExportPDF} className="gap-2">
+              <FileText className="w-4 h-4" /> Gerar Relatório de Marketing Estratégico em PDF
+            </Button>
             <Button variant="outline" size="sm" onClick={() => router.push(`/projects/${projectId}`)} className="gap-2">
               <FileText className="w-4 h-4" /> Ver no Dashboard
             </Button>
           </div>
 
-          {renderStrategyResults()}
+          <div id="strategy-results">
+            {renderStrategyResults()}
+          </div>
         </>
       )}
     </div>
