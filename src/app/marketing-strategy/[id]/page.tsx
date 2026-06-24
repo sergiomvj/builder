@@ -691,14 +691,14 @@ export default function MarketingStrategyPage() {
       toast.info('Gerando PDF, aguarde...');
       // @ts-ignore
       const html2pdf = (await import('html2pdf.js')).default;
-      const element = document.getElementById('strategy-results');
+      const element = document.getElementById('pdf-export-content');
       if (!element) return;
       
       const opt = {
         margin:       10,
         filename:     `estrategia-marketing-${safeProjectName}.pdf`,
         image:        { type: 'jpeg', quality: 0.98 },
-        html2canvas:  { scale: 2, useCORS: true },
+        html2canvas:  { scale: 2, useCORS: true, windowWidth: 1200 },
         jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
       };
 
@@ -1139,6 +1139,180 @@ export default function MarketingStrategyPage() {
       governance: ['frequencia_revisao', 'aprovacao_niveis', 'consolidacao_grupo'],
     };
     return keyMap[stepId] || [];
+  };
+
+  // --- PDF REPORT RENDERING ---
+  const renderFullReportPDF = () => {
+    if (!generatedStrategy) return null;
+    const s = generatedStrategy.estrategia_central_marketing;
+    if (!s) return null;
+
+    return (
+      <div className="space-y-12 bg-white text-slate-900 font-sans">
+        {/* Capa */}
+        <div className="text-center py-20 bg-indigo-50 rounded-xl mb-12 border border-indigo-100">
+          <h1 className="text-4xl font-extrabold text-indigo-900 mb-4">Relatório de Estratégia de Marketing</h1>
+          <p className="text-2xl text-slate-700 font-semibold">{s.empresa?.nome || project?.name}</p>
+          <div className="mt-8 flex justify-center gap-4 text-sm text-slate-600">
+            <span className="px-3 py-1 bg-white border border-slate-200 rounded-full font-medium">{s.empresa?.setor}</span>
+            <span className="px-3 py-1 bg-white border border-slate-200 rounded-full font-medium">{s.empresa?.modelo_negocio}</span>
+            <span className="px-3 py-1 bg-white border border-slate-200 rounded-full font-medium">{s.empresa?.fase}</span>
+          </div>
+        </div>
+
+        {/* 1. Visão Geral (Núcleo do Grupo) */}
+        {s.camada_1_nucleo_grupo?.grupo && (
+          <div className="space-y-6">
+            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
+              <Layers className="w-6 h-6" /> 1. Núcleo do Grupo
+            </h2>
+            <div className="grid grid-cols-2 gap-4">
+              <Card>
+                <CardHeader><CardTitle className="text-base">Identidade</CardTitle></CardHeader>
+                <CardContent className="space-y-2">
+                  <p className="text-sm"><strong>Missão:</strong> {s.camada_1_nucleo_grupo.grupo.identidade?.missao}</p>
+                  <p className="text-sm"><strong>Visão:</strong> {s.camada_1_nucleo_grupo.grupo.identidade?.visao}</p>
+                  <p className="text-sm"><strong>Valores:</strong> {s.camada_1_nucleo_grupo.grupo.identidade?.valores?.join(', ')}</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader><CardTitle className="text-base">Posicionamento Mãe</CardTitle></CardHeader>
+                <CardContent>
+                  <p className="text-sm">{s.camada_1_nucleo_grupo.grupo.posicionamento_mae}</p>
+                </CardContent>
+              </Card>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+               <Card>
+                <CardHeader><CardTitle className="text-base">Audiências Macro</CardTitle></CardHeader>
+                <CardContent>
+                  <ul className="list-disc pl-4 text-sm space-y-1">{s.camada_1_nucleo_grupo.grupo.audiencias_macro?.map((a:string, i:number) => <li key={i}>{a}</li>)}</ul>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader><CardTitle className="text-base">Regras de Convivência</CardTitle></CardHeader>
+                <CardContent>
+                  <ul className="list-disc pl-4 text-sm space-y-1">{s.camada_1_nucleo_grupo.grupo.regras_convivencia?.map((r:string, i:number) => <li key={i}>{r}</li>)}</ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        )}
+
+        {/* 2. Diagnóstico */}
+        {s.camada_2_modulos_obrigatorios?.diagnostico && (
+          <div className="space-y-6" style={{ pageBreakBefore: 'always' }}>
+            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
+              <BarChart3 className="w-6 h-6" /> 2. Diagnóstico
+            </h2>
+            {renderDiagnosis(s.camada_2_modulos_obrigatorios.diagnostico)}
+          </div>
+        )}
+
+        {/* 3. OKRs */}
+        {s.camada_2_modulos_obrigatorios?.okrs && (
+          <div className="space-y-6" style={{ pageBreakBefore: 'always' }}>
+            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
+              <Target className="w-6 h-6" /> 3. OKRs de Marketing
+            </h2>
+            {renderOKRs(s.camada_2_modulos_obrigatorios.okrs)}
+          </div>
+        )}
+
+        {/* 4. Público-Alvo e Gráfico de Mercado */}
+        {s.camada_2_modulos_obrigatorios?.publico_alvo && (
+          <div className="space-y-6" style={{ pageBreakBefore: 'always' }}>
+            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
+              <Users className="w-6 h-6" /> 4. Público-Alvo & Mercado
+            </h2>
+            
+            {/* Gráfico Ilustrativo de Mercado (TAM SAM SOM) */}
+            {s.camada_2_modulos_obrigatorios.publico_alvo.mercado_total && (
+              <Card className="mb-6 bg-slate-50 border border-slate-200">
+                <CardHeader>
+                  <CardTitle className="text-center text-lg text-indigo-900">Análise de Mercado (TAM / SAM / SOM)</CardTitle>
+                </CardHeader>
+                <CardContent className="flex flex-col md:flex-row items-center justify-center gap-12 py-6">
+                  {/* Visual representation */}
+                  <div className="relative w-64 h-64 flex items-center justify-center">
+                    <div className="absolute w-full h-full bg-indigo-100/50 rounded-full border-2 border-indigo-300 flex items-start justify-center pt-4">
+                      <span className="text-sm font-bold text-indigo-700">TAM</span>
+                    </div>
+                    <div className="absolute w-48 h-48 bg-blue-100/60 rounded-full border-2 border-blue-300 flex items-start justify-center pt-4">
+                      <span className="text-sm font-bold text-blue-700">SAM</span>
+                    </div>
+                    <div className="absolute w-32 h-32 bg-green-100/70 rounded-full border-2 border-green-300 flex items-center justify-center">
+                      <span className="text-sm font-bold text-green-800">SOM</span>
+                    </div>
+                  </div>
+                  
+                  {/* Legenda com Dados */}
+                  <div className="space-y-4 max-w-md w-full">
+                    <div className="bg-white p-3 rounded-lg border-l-4 border-l-indigo-400 shadow-sm">
+                      <p className="text-xs font-bold text-indigo-600 uppercase tracking-wider mb-1">TAM (Total Addressable Market)</p>
+                      <p className="text-lg font-semibold text-slate-800">{s.camada_2_modulos_obrigatorios.publico_alvo.mercado_total.tam}</p>
+                    </div>
+                    <div className="bg-white p-3 rounded-lg border-l-4 border-l-blue-400 shadow-sm">
+                      <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">SAM (Serviceable Available Market)</p>
+                      <p className="text-lg font-semibold text-slate-800">{s.camada_2_modulos_obrigatorios.publico_alvo.mercado_total.sam}</p>
+                    </div>
+                    <div className="bg-white p-3 rounded-lg border-l-4 border-l-green-400 shadow-sm">
+                      <p className="text-xs font-bold text-green-700 uppercase tracking-wider mb-1">SOM (Serviceable Obtainable Market)</p>
+                      <p className="text-lg font-semibold text-slate-800">{s.camada_2_modulos_obrigatorios.publico_alvo.mercado_total.som}</p>
+                    </div>
+                    <p className="text-xs text-slate-500 italic mt-4 px-2">
+                      <strong className="text-slate-600">Metodologia:</strong> {s.camada_2_modulos_obrigatorios.publico_alvo.mercado_total.metodologia_calculo}
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {renderAudience(s.camada_2_modulos_obrigatorios.publico_alvo)}
+          </div>
+        )}
+
+        {/* 5. Posicionamento */}
+        {s.camada_2_modulos_obrigatorios?.posicionamento && (
+          <div className="space-y-6" style={{ pageBreakBefore: 'always' }}>
+            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
+              <Megaphone className="w-6 h-6" /> 5. Posicionamento
+            </h2>
+            {renderPositioning(s.camada_2_modulos_obrigatorios.posicionamento)}
+          </div>
+        )}
+
+        {/* 6. Canais */}
+        {s.camada_2_modulos_obrigatorios?.canais && (
+          <div className="space-y-6" style={{ pageBreakBefore: 'always' }}>
+            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
+              <Globe className="w-6 h-6" /> 6. Canais de Marketing
+            </h2>
+            {renderChannels(s.camada_2_modulos_obrigatorios.canais)}
+          </div>
+        )}
+
+        {/* 7. Plano de Ação */}
+        {s.camada_2_modulos_obrigatorios?.plano_acao_90_dias && (
+          <div className="space-y-6" style={{ pageBreakBefore: 'always' }}>
+            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
+              <Rocket className="w-6 h-6" /> 7. Plano de Ação (90 Dias)
+            </h2>
+            {renderActionPlan(s.camada_2_modulos_obrigatorios.plano_acao_90_dias)}
+          </div>
+        )}
+
+        {/* 8. Governança */}
+        {s.camada_4_governanca && (
+          <div className="space-y-6" style={{ pageBreakBefore: 'always' }}>
+            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
+              <Shield className="w-6 h-6" /> 8. Governança
+            </h2>
+            {renderGovernance(s.camada_4_governanca)}
+          </div>
+        )}
+      </div>
+    );
   };
 
   // --- RESULTS RENDERING ---
@@ -1792,6 +1966,13 @@ export default function MarketingStrategyPage() {
 
           <div id="strategy-results">
             {renderStrategyResults()}
+          </div>
+          
+          {/* Off-screen PDF container */}
+          <div style={{ position: 'absolute', left: '-9999px', top: 0 }}>
+            <div id="pdf-export-content" style={{ width: '1200px', padding: '40px', backgroundColor: 'white' }}>
+              {renderFullReportPDF()}
+            </div>
           </div>
         </>
       )}
