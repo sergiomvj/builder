@@ -1147,7 +1147,7 @@ export default function MarketingStrategyPage() {
 
             {/* Sumário dos steps */}
             <div className="grid grid-cols-2 gap-3">
-              {WIZARD_STEPS.slice(0, -1).map((step, i) => {
+              {wizardSteps.slice(0, -1).map((step, i) => {
                 const stepKeys = getStepKeys(step.id);
                 const filled = stepKeys.filter(k => answers[k] && String(answers[k]).trim() !== '').length;
                 const total = stepKeys.length;
@@ -1202,6 +1202,7 @@ export default function MarketingStrategyPage() {
       channels: ['canais_principais', 'budget_alocacao'],
       action: ['sprint_1', 'sprint_2', 'sprint_3'],
       governance: ['frequencia_revisao', 'aprovacao_niveis', 'consolidacao_grupo'],
+      plf_formula: ['plf_tipo_lancamento', 'plf_promessa', 'plf_oferta', 'plf_preco', 'plf_duracao_carrinho'],
     };
     return keyMap[stepId] || [];
   };
