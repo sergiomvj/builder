@@ -72,7 +72,8 @@ Incluir APENAS se o contexto do projeto justificar. Se não justificar, retornar
 - `crm_automacao`: Estratégia de CRM e automação (para empresas com funil complexo B2B)
 - `influenciadores`: Estratégia de influenciadores (para empresas B2C com budget de awareness)
 - `expansao_internacional`: Estratégia de expansão (para empresas com ambição global)
-- `prdutos_digitais`: Estratégia de produtos digitais (para empresas com SaaS/content)
+- `produtos_digitais`: Estratégia de produtos digitais (para empresas com SaaS/content)
+- `plf_strategy`: Estratégia de Lançamento no modelo Product Launch Formula (Obrigatório caso as respostas indiquem uso da formula de Jeff Walker ou 'Launch Formula')
 
 ### CAMADA 4 — GOVERNANÇA
 - `frequencia_revisao`: Com que frequência a estratégia é revisada (mensal/trimestral/semestral)
@@ -252,7 +253,18 @@ Retorne APENAS um objeto JSON válido. Sem markdown, sem explicação antes ou d
       "crm_automacao": null,
       "influenciadores": null,
       "expansao_internacional": null,
-      "produtos_digitais": null
+      "produtos_digitais": null,
+      "plf_strategy": {
+        "tipo_lancamento": "Semente | Interno | Externo | Relâmpago | Perpétuo",
+        "pre_pre_lancamento": ["Ação 1 de antecipação...", "Ação 2..."],
+        "pre_lancamento_plf": {
+          "plc1": "A Oportunidade: [Tema ou Script Resumido]",
+          "plc2": "A Transformação: [Tema ou Script Resumido]",
+          "plc3": "A Experiência: [Tema ou Script Resumido]"
+        },
+        "dia_lancamento": ["Ações de abertura de carrinho...", "..."],
+        "pos_lancamento": ["Estratégia de downsell ou encerramento...", "..."]
+      }
     },
 
     "camada_4_governanca": {
