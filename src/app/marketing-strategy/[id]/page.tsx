@@ -732,14 +732,17 @@ export default function MarketingStrategyPage() {
       const element = document.getElementById('pdf-export-content');
       if (!element) return;
       
+      // @ts-ignore - html2pdf.js supports pagebreak but types don't include it
       const opt = {
-        margin:       10,
+        margin:       [15, 10, 15, 10],
         filename:     `estrategia-marketing-${safeProjectName}.pdf`,
-        image:        { type: 'jpeg', quality: 0.98 },
-        html2canvas:  { scale: 2, useCORS: true, windowWidth: 1200 },
-        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        image:        { type: 'jpeg', quality: 0.95 },
+        html2canvas:  { scale: 2, useCORS: true, windowWidth: 794, logging: false },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] },
       };
 
+      // @ts-ignore
       html2pdf().set(opt).from(element).save();
     } catch (error: any) {
       console.error('Erro ao gerar PDF:', error);
@@ -1213,180 +1216,557 @@ export default function MarketingStrategyPage() {
     const s = generatedStrategy.estrategia_central_marketing;
     if (!s) return null;
 
+    const pdfSectionStyle: React.CSSProperties = {
+      pageBreakInside: 'avoid',
+      breakInside: 'avoid',
+      marginBottom: '24px',
+    };
+
+    const pdfHeadingStyle: React.CSSProperties = {
+      fontSize: '18px',
+      fontWeight: 800,
+      color: '#312e81',
+      borderBottom: '2px solid #e0e7ff',
+      paddingBottom: '8px',
+      marginBottom: '16px',
+      pageBreakAfter: 'avoid',
+      breakAfter: 'avoid',
+      display: 'flex',
+      alignItems: 'center',
+      gap: '8px',
+    };
+
+    const pdfCardStyle: React.CSSProperties = {
+      border: '1px solid #e2e8f0',
+      borderRadius: '8px',
+      padding: '14px',
+      background: '#fff',
+      pageBreakInside: 'avoid',
+      breakInside: 'avoid',
+      overflow: 'hidden',
+    };
+
+    const pdfCardTitleStyle: React.CSSProperties = {
+      fontSize: '13px',
+      fontWeight: 700,
+      color: '#1e293b',
+      marginBottom: '8px',
+      paddingBottom: '6px',
+      borderBottom: '1px solid #f1f5f9',
+    };
+
+    const renderPDFCompetitorCard = (c: any, i: number) => (
+      <div key={i} style={{ ...pdfCardStyle, background: '#f8fafc' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
+          <span style={{ fontWeight: 700, fontSize: '13px', color: '#1e293b' }}>{c.concorrente}</span>
+          <span className={`pdf-badge ${c.ameaca_nivel === 'high' ? 'pdf-badge-red' : c.ameaca_nivel === 'medium' ? 'pdf-badge-indigo' : ''}`}>{c.ameaca_nivel}</span>
+        </div>
+        <p className="pdf-text-xs pdf-mb-2"><strong>Posicionamento:</strong> {c.posicionamento}</p>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginTop: '8px' }}>
+          <div>
+            <p className="pdf-text-xs" style={{ fontWeight: 700, color: '#15803d' }}>Fortes:</p>
+            <ul className="pdf-list pdf-text-xs">{Array.isArray(c.pontos_fortes) && c.pontos_fortes.map((p: any, j: number) => <li key={j}>{typeof p === 'string' ? p : p?.nome || JSON.stringify(p)}</li>)}</ul>
+          </div>
+          <div>
+            <p className="pdf-text-xs" style={{ fontWeight: 700, color: '#b91c1c' }}>Fracos:</p>
+            <ul className="pdf-list pdf-text-xs">{Array.isArray(c.pontos_fracos) && c.pontos_fracos.map((p: any, j: number) => <li key={j}>{typeof p === 'string' ? p : p?.nome || JSON.stringify(p)}</li>)}</ul>
+          </div>
+        </div>
+      </div>
+    );
+
     return (
-      <div className="space-y-12 bg-white text-slate-900 font-sans">
+      <div style={{ background: 'white', color: '#1e293b', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
         {/* Capa */}
-        <div className="text-center py-20 bg-indigo-50 rounded-xl mb-12 border border-indigo-100">
-          <h1 className="text-4xl font-extrabold text-indigo-900 mb-4">Relatório de Estratégia de Marketing</h1>
-          <p className="text-2xl text-slate-700 font-semibold">{s.empresa?.nome || project?.name}</p>
-          <div className="mt-8 flex justify-center gap-4 text-sm text-slate-600">
-            <span className="px-3 py-1 bg-white border border-slate-200 rounded-full font-medium">{s.empresa?.setor}</span>
-            <span className="px-3 py-1 bg-white border border-slate-200 rounded-full font-medium">{s.empresa?.modelo_negocio}</span>
-            <span className="px-3 py-1 bg-white border border-slate-200 rounded-full font-medium">{s.empresa?.fase}</span>
+        <div style={{ textAlign: 'center', padding: '80px 40px', background: '#eef2ff', borderRadius: '12px', marginBottom: '32px', border: '1px solid #c7d2fe' }}>
+          <h1 style={{ fontSize: '28px', fontWeight: 900, color: '#312e81', marginBottom: '12px' }}>Relatório de Estratégia de Marketing</h1>
+          <p style={{ fontSize: '20px', color: '#334155', fontWeight: 700 }}>{s.empresa?.nome || project?.name}</p>
+          <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
+            <span className="pdf-badge pdf-badge-indigo">{s.empresa?.setor}</span>
+            <span className="pdf-badge pdf-badge-indigo">{s.empresa?.modelo_negocio}</span>
+            <span className="pdf-badge pdf-badge-indigo">{s.empresa?.fase}</span>
           </div>
         </div>
 
-        {/* 1. Visão Geral (Núcleo do Grupo) */}
+        {/* 1. Núcleo do Grupo */}
         {s.camada_1_nucleo_grupo?.grupo && (
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
-              <Layers className="w-6 h-6" /> 1. Núcleo do Grupo
-            </h2>
-            <div className="grid grid-cols-2 gap-4">
-              <Card>
-                <CardHeader><CardTitle className="text-base">Identidade</CardTitle></CardHeader>
-                <CardContent className="space-y-2">
-                  <p className="text-sm"><strong>Missão:</strong> {s.camada_1_nucleo_grupo.grupo.identidade?.missao}</p>
-                  <p className="text-sm"><strong>Visão:</strong> {s.camada_1_nucleo_grupo.grupo.identidade?.visao}</p>
-                  <p className="text-sm"><strong>Valores:</strong> {s.camada_1_nucleo_grupo.grupo.identidade?.valores?.join(', ')}</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader><CardTitle className="text-base">Posicionamento Mãe</CardTitle></CardHeader>
-                <CardContent>
-                  <p className="text-sm">{s.camada_1_nucleo_grupo.grupo.posicionamento_mae}</p>
-                </CardContent>
-              </Card>
+          <div style={pdfSectionStyle}>
+            <h2 style={pdfHeadingStyle}>1. Núcleo do Grupo</h2>
+            <div className="pdf-grid-2">
+              <div style={pdfCardStyle}>
+                <div style={pdfCardTitleStyle}>Identidade</div>
+                <p className="pdf-text-sm"><strong>Missão:</strong> {s.camada_1_nucleo_grupo.grupo.identidade?.missao || 'N/A'}</p>
+                <p className="pdf-text-sm pdf-mt-2"><strong>Visão:</strong> {s.camada_1_nucleo_grupo.grupo.identidade?.visao || 'N/A'}</p>
+                <p className="pdf-text-sm pdf-mt-2"><strong>Valores:</strong> {Array.isArray(s.camada_1_nucleo_grupo.grupo.identidade?.valores) ? s.camada_1_nucleo_grupo.grupo.identidade.valores.join(', ') : 'N/A'}</p>
+              </div>
+              <div style={pdfCardStyle}>
+                <div style={pdfCardTitleStyle}>Posicionamento Mãe</div>
+                <p className="pdf-text-sm">{s.camada_1_nucleo_grupo.grupo.posicionamento_mae || 'N/A'}</p>
+              </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-               <Card>
-                <CardHeader><CardTitle className="text-base">Audiências Macro</CardTitle></CardHeader>
-                <CardContent>
-                  <ul className="list-disc pl-4 text-sm space-y-1">{Array.isArray(s.camada_1_nucleo_grupo?.grupo?.audiencias_macro) && s.camada_1_nucleo_grupo.grupo.audiencias_macro.map((a:any, i:number) => <li key={i}>{typeof a === 'string' ? a : a?.nome || a?.descricao || JSON.stringify(a)}</li>)}</ul>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader><CardTitle className="text-base">Regras de Convivência</CardTitle></CardHeader>
-                <CardContent>
-                  <ul className="list-disc pl-4 text-sm space-y-1">{Array.isArray(s.camada_1_nucleo_grupo?.grupo?.regras_convivencia) && s.camada_1_nucleo_grupo.grupo.regras_convivencia.map((r:any, i:number) => <li key={i}>{typeof r === 'string' ? r : r?.nome || r?.descricao || JSON.stringify(r)}</li>)}</ul>
-                </CardContent>
-              </Card>
+            <div className="pdf-grid-2" style={{ marginTop: '12px' }}>
+              <div style={pdfCardStyle}>
+                <div style={pdfCardTitleStyle}>Audiências Macro</div>
+                <ul className="pdf-list pdf-text-sm">
+                  {Array.isArray(s.camada_1_nucleo_grupo?.grupo?.audiencias_macro) && s.camada_1_nucleo_grupo.grupo.audiencias_macro.map((a: any, i: number) => (
+                    <li key={i}>{typeof a === 'string' ? a : a?.nome || a?.descricao || JSON.stringify(a)}</li>
+                  ))}
+                </ul>
+              </div>
+              <div style={pdfCardStyle}>
+                <div style={pdfCardTitleStyle}>Regras de Convivência</div>
+                <ul className="pdf-list pdf-text-sm">
+                  {Array.isArray(s.camada_1_nucleo_grupo?.grupo?.regras_convivencia) && s.camada_1_nucleo_grupo.grupo.regras_convivencia.map((r: any, i: number) => (
+                    <li key={i}>{typeof r === 'string' ? r : r?.nome || r?.descricao || JSON.stringify(r)}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         )}
 
         {/* 2. Diagnóstico */}
         {s.camada_2_modulos_obrigatorios?.diagnostico && (
-          <div className="space-y-6" style={{ pageBreakBefore: 'always' }}>
-            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
-              <BarChart3 className="w-6 h-6" /> 2. Diagnóstico
-            </h2>
-            {renderDiagnosis(s.camada_2_modulos_obrigatorios.diagnostico)}
+          <div style={{ ...pdfSectionStyle, pageBreakBefore: 'always', breakBefore: 'page' }}>
+            <h2 style={pdfHeadingStyle}>2. Diagnóstico</h2>
+            {(() => {
+              const d = s.camada_2_modulos_obrigatorios.diagnostico;
+              return (
+                <>
+                  <div style={pdfCardStyle}>
+                    <div style={pdfCardTitleStyle}>Situação do Mercado</div>
+                    <p className="pdf-text-sm" style={{ color: '#334155' }}>{d.situacao_atual_mercado || 'N/A'}</p>
+                  </div>
+
+                  {Array.isArray(d.analise_competitiva) && d.analise_competitiva.length > 0 && (
+                    <div style={{ ...pdfCardStyle, marginTop: '12px' }}>
+                      <div style={pdfCardTitleStyle}>Análise Competitiva</div>
+                      <div className="pdf-grid-2">
+                        {d.analise_competitiva.map((c: any, i: number) => renderPDFCompetitorCard(c, i))}
+                      </div>
+                    </div>
+                  )}
+
+                  {d.maturidade_digital && (
+                    <div style={{ ...pdfCardStyle, marginTop: '12px' }}>
+                      <div style={pdfCardTitleStyle}>Maturidade Digital</div>
+                      <span className="pdf-badge pdf-badge-indigo pdf-mb-2">{d.maturidade_digital.nivel}</span>
+                      <p className="pdf-text-sm pdf-mt-2" style={{ color: '#334155' }}>{d.maturidade_digital.justificativa || 'N/A'}</p>
+                    </div>
+                  )}
+
+                  {Array.isArray(d.gaps_marketing) && d.gaps_marketing.length > 0 && (
+                    <div style={{ ...pdfCardStyle, marginTop: '12px' }}>
+                      <div style={pdfCardTitleStyle}>Gaps de Marketing</div>
+                      <div className="pdf-grid-4">
+                        {d.gaps_marketing.map((g: any, i: number) => (
+                          <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', padding: '8px', background: '#fef2f2', borderRadius: '6px' }}>
+                            <span className={`pdf-badge ${g.impacto === 'high' ? 'pdf-badge-red' : ''}`}>{g.impacto}</span>
+                            <p className="pdf-text-sm" style={{ color: '#7f1d1d' }}>{g.gap}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </>
+              );
+            })()}
           </div>
         )}
 
         {/* 3. OKRs */}
         {s.camada_2_modulos_obrigatorios?.okrs && (
-          <div className="space-y-6" style={{ pageBreakBefore: 'always' }}>
-            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
-              <Target className="w-6 h-6" /> 3. OKRs de Marketing
-            </h2>
-            {renderOKRs(s.camada_2_modulos_obrigatorios.okrs)}
+          <div style={{ ...pdfSectionStyle, pageBreakBefore: 'always', breakBefore: 'page' }}>
+            <h2 style={pdfHeadingStyle}>3. OKRs de Marketing</h2>
+            <div className="pdf-grid-2">
+              {Array.isArray(s.camada_2_modulos_obrigatorios.okrs) && s.camada_2_modulos_obrigatorios.okrs.map((okr: any, i: number) => (
+                <div key={i} style={{ ...pdfCardStyle, borderLeft: '4px solid #22c55e' }}>
+                  <div style={{ ...pdfCardTitleStyle, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <span style={{ color: '#16a34a', fontSize: '14px' }}>&#9679;</span> {okr.objetivo || 'N/A'}
+                  </div>
+                  {okr.alinhamento_okr_grupo && (
+                    <div style={{ background: '#f0fdf4', padding: '8px', borderRadius: '6px', marginBottom: '8px' }}>
+                      <p className="pdf-text-xs"><strong>Alinhamento com Grupo:</strong> {okr.alinhamento_okr_grupo}</p>
+                    </div>
+                  )}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                    {Array.isArray(okr.key_results) && okr.key_results.map((kr: any, j: number) => (
+                      <div key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', padding: '6px', background: '#f8fafc', borderRadius: '4px' }}>
+                        <span className="pdf-badge">KR{j + 1}</span>
+                        <div>
+                          <p className="pdf-text-sm" style={{ fontWeight: 600 }}>{kr.kr || 'N/A'}</p>
+                          <p className="pdf-text-xs pdf-text-muted">Meta: {kr.meta || 'N/A'} | Baseline: {kr.baseline || 'N/A'} | Timeline: {kr.timeline || 'N/A'}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div style={{ display: 'flex', gap: '16px', marginTop: '8px', fontSize: '11px', color: '#64748b' }}>
+                    <span><strong>Responsável:</strong> {okr.responsavel_sugerido || 'N/A'}</span>
+                    <span><strong>Confiança:</strong> <span className="pdf-badge">{okr.confianca || 'N/A'}</span></span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         )}
 
-        {/* 4. Público-Alvo e Gráfico de Mercado */}
+        {/* 4. Público-Alvo & Mercado */}
         {s.camada_2_modulos_obrigatorios?.publico_alvo && (
-          <div className="space-y-6" style={{ pageBreakBefore: 'always' }}>
-            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
-              <Users className="w-6 h-6" /> 4. Público-Alvo & Mercado
-            </h2>
-            
-            {/* Gráfico Ilustrativo de Mercado (TAM SAM SOM) */}
+          <div style={{ ...pdfSectionStyle, pageBreakBefore: 'always', breakBefore: 'page' }}>
+            <h2 style={pdfHeadingStyle}>4. Público-Alvo & Mercado</h2>
+
+            {/* TAM / SAM / SOM */}
             {s.camada_2_modulos_obrigatorios.publico_alvo.mercado_total && (
-              <Card className="mb-6 bg-slate-50 border border-slate-200">
-                <CardHeader>
-                  <CardTitle className="text-center text-lg text-indigo-900">Análise de Mercado (TAM / SAM / SOM)</CardTitle>
-                </CardHeader>
-                <CardContent className="flex flex-col md:flex-row items-center justify-center gap-12 py-6">
-                  {/* Visual representation */}
-                  <div className="relative w-64 h-64 flex items-center justify-center">
-                    <div className="absolute w-full h-full bg-indigo-100/50 rounded-full border-2 border-indigo-300 flex items-start justify-center pt-4">
-                      <span className="text-sm font-bold text-indigo-700">TAM</span>
-                    </div>
-                    <div className="absolute w-48 h-48 bg-blue-100/60 rounded-full border-2 border-blue-300 flex items-start justify-center pt-4">
-                      <span className="text-sm font-bold text-blue-700">SAM</span>
-                    </div>
-                    <div className="absolute w-32 h-32 bg-green-100/70 rounded-full border-2 border-green-300 flex items-center justify-center">
-                      <span className="text-sm font-bold text-green-800">SOM</span>
-                    </div>
+              <div style={{ ...pdfCardStyle, background: '#f8fafc', marginBottom: '16px' }}>
+                <div style={{ ...pdfCardTitleStyle, textAlign: 'center', fontSize: '15px', color: '#312e81' }}>
+                  Análise de Mercado (TAM / SAM / SOM)
+                </div>
+                <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                  <div style={{ flex: '1', minWidth: '180px', background: 'white', padding: '12px', borderRadius: '8px', borderLeft: '4px solid #6366f1' }}>
+                    <p className="pdf-text-xs" style={{ fontWeight: 700, color: '#4f46e5', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '4px' }}>TAM (Total Addressable Market)</p>
+                    <p style={{ fontSize: '16px', fontWeight: 700, color: '#1e293b' }}>{s.camada_2_modulos_obrigatorios.publico_alvo.mercado_total.tam || 'N/A'}</p>
                   </div>
-                  
-                  {/* Legenda com Dados */}
-                  <div className="space-y-4 max-w-md w-full">
-                    <div className="bg-white p-3 rounded-lg border-l-4 border-l-indigo-400 shadow-sm">
-                      <p className="text-xs font-bold text-indigo-600 uppercase tracking-wider mb-1">TAM (Total Addressable Market)</p>
-                      <p className="text-lg font-semibold text-slate-800">{s.camada_2_modulos_obrigatorios.publico_alvo.mercado_total.tam}</p>
-                    </div>
-                    <div className="bg-white p-3 rounded-lg border-l-4 border-l-blue-400 shadow-sm">
-                      <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">SAM (Serviceable Available Market)</p>
-                      <p className="text-lg font-semibold text-slate-800">{s.camada_2_modulos_obrigatorios.publico_alvo.mercado_total.sam}</p>
-                    </div>
-                    <div className="bg-white p-3 rounded-lg border-l-4 border-l-green-400 shadow-sm">
-                      <p className="text-xs font-bold text-green-700 uppercase tracking-wider mb-1">SOM (Serviceable Obtainable Market)</p>
-                      <p className="text-lg font-semibold text-slate-800">{s.camada_2_modulos_obrigatorios.publico_alvo.mercado_total.som}</p>
-                    </div>
-                    <p className="text-xs text-slate-500 italic mt-4 px-2">
-                      <strong className="text-slate-600">Metodologia:</strong> {s.camada_2_modulos_obrigatorios.publico_alvo.mercado_total.metodologia_calculo}
-                    </p>
+                  <div style={{ flex: '1', minWidth: '180px', background: 'white', padding: '12px', borderRadius: '8px', borderLeft: '4px solid #3b82f6' }}>
+                    <p className="pdf-text-xs" style={{ fontWeight: 700, color: '#2563eb', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '4px' }}>SAM (Serviceable Available Market)</p>
+                    <p style={{ fontSize: '16px', fontWeight: 700, color: '#1e293b' }}>{s.camada_2_modulos_obrigatorios.publico_alvo.mercado_total.sam || 'N/A'}</p>
                   </div>
-                </CardContent>
-              </Card>
+                  <div style={{ flex: '1', minWidth: '180px', background: 'white', padding: '12px', borderRadius: '8px', borderLeft: '4px solid #22c55e' }}>
+                    <p className="pdf-text-xs" style={{ fontWeight: 700, color: '#15803d', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '4px' }}>SOM (Serviceable Obtainable Market)</p>
+                    <p style={{ fontSize: '16px', fontWeight: 700, color: '#1e293b' }}>{s.camada_2_modulos_obrigatorios.publico_alvo.mercado_total.som || 'N/A'}</p>
+                  </div>
+                </div>
+                <p className="pdf-text-xs pdf-text-muted" style={{ marginTop: '12px', fontStyle: 'italic' }}>
+                  <strong>Metodologia:</strong> {s.camada_2_modulos_obrigatorios.publico_alvo.mercado_total.metodologia_calculo || 'N/A'}
+                </p>
+              </div>
             )}
 
-            {renderAudience(s.camada_2_modulos_obrigatorios.publico_alvo)}
+            {/* Clusters */}
+            {Array.isArray(s.camada_2_modulos_obrigatorios.publico_alvo.clusters) && s.camada_2_modulos_obrigatorios.publico_alvo.clusters.map((cluster: any, i: number) => (
+              <div key={i} style={{ ...pdfCardStyle, marginBottom: '12px' }}>
+                <div style={{ ...pdfCardTitleStyle, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <span style={{ color: '#2563eb', fontSize: '14px' }}>&#9679;</span> {cluster.nome_cluster || `Cluster ${i + 1}`}
+                  <span className="pdf-badge">{cluster.tamanho_estimado || 'N/A'}</span>
+                </div>
+                <div className="pdf-grid-2" style={{ marginBottom: '10px' }}>
+                  <div>
+                    <p className="pdf-text-xs" style={{ fontWeight: 700, color: '#64748b', textTransform: 'uppercase', marginBottom: '4px' }}>Demographics</p>
+                    {cluster.demographics && typeof cluster.demographics === 'object' && Object.entries(cluster.demographics).map(([k, v]) => (
+                      <p key={k} className="pdf-text-xs"><strong>{k}:</strong> {String(v || 'N/A')}</p>
+                    ))}
+                  </div>
+                  <div>
+                    <p className="pdf-text-xs" style={{ fontWeight: 700, color: '#64748b', textTransform: 'uppercase', marginBottom: '4px' }}>Psychographics</p>
+                    {cluster.psychographics && typeof cluster.psychographics === 'object' && Object.entries(cluster.psychographics).map(([k, v]) => (
+                      <p key={k} className="pdf-text-xs"><strong>{k}:</strong> {Array.isArray(v) ? (v as string[]).join(', ') : String(v || 'N/A')}</p>
+                    ))}
+                  </div>
+                </div>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '8px' }}>
+                  <div style={{ background: '#fef2f2', padding: '8px', borderRadius: '6px' }}>
+                    <p className="pdf-text-xs" style={{ fontWeight: 700, color: '#b91c1c', marginBottom: '4px' }}>Pain Points</p>
+                    <ul className="pdf-list pdf-text-xs" style={{ color: '#7f1d1d' }}>
+                      {Array.isArray(cluster.pain_points) && cluster.pain_points.map((p: any, j: number) => <li key={j}>{typeof p === 'string' ? p : JSON.stringify(p)}</li>)}
+                    </ul>
+                  </div>
+                  <div style={{ background: '#f0fdf4', padding: '8px', borderRadius: '6px' }}>
+                    <p className="pdf-text-xs" style={{ fontWeight: 700, color: '#15803d', marginBottom: '4px' }}>Desired Outcomes</p>
+                    <ul className="pdf-list pdf-text-xs" style={{ color: '#14532d' }}>
+                      {Array.isArray(cluster.desired_outcomes) && cluster.desired_outcomes.map((o: any, j: number) => <li key={j}>{typeof o === 'string' ? o : JSON.stringify(o)}</li>)}
+                    </ul>
+                  </div>
+                  <div style={{ background: '#eff6ff', padding: '8px', borderRadius: '6px' }}>
+                    <p className="pdf-text-xs" style={{ fontWeight: 700, color: '#1d4ed8', marginBottom: '4px' }}>Watering Holes</p>
+                    <ul className="pdf-list pdf-text-xs" style={{ color: '#1e3a5f' }}>
+                      {Array.isArray(cluster.watering_holes) && cluster.watering_holes.map((w: any, j: number) => <li key={j}>{typeof w === 'string' ? w : JSON.stringify(w)}</li>)}
+                    </ul>
+                  </div>
+                </div>
+                {cluster.mapa_empatia && typeof cluster.mapa_empatia === 'object' && (
+                  <div style={{ background: '#f8fafc', padding: '10px', borderRadius: '6px', border: '1px solid #e2e8f0', marginTop: '10px' }}>
+                    <p className="pdf-text-xs" style={{ fontWeight: 700, color: '#475569', marginBottom: '6px' }}>Mapa de Empatia</p>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '6px' }} className="pdf-text-xs">
+                      <p><strong>Pensa:</strong> {cluster.mapa_empatia.pensa || 'N/A'}</p>
+                      <p><strong>Sente:</strong> {cluster.mapa_empatia.sente || 'N/A'}</p>
+                      <p><strong>Vê:</strong> {cluster.mapa_empatia.ve || 'N/A'}</p>
+                      <p><strong>Ouve:</strong> {cluster.mapa_empatia.ouve || 'N/A'}</p>
+                      <p><strong>Diz/Faz:</strong> {cluster.mapa_empatia.diz_faz || 'N/A'}</p>
+                      <p><strong>Dor:</strong> {cluster.mapa_empatia.dor_principal || 'N/A'}</p>
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         )}
 
         {/* 5. Posicionamento */}
         {s.camada_2_modulos_obrigatorios?.posicionamento && (
-          <div className="space-y-6 print:break-before-page break-inside-avoid-page">
-            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
-              <Megaphone className="w-6 h-6" /> 5. Posicionamento
-            </h2>
-            {renderPositioning(s.camada_2_modulos_obrigatorios.posicionamento)}
+          <div style={{ ...pdfSectionStyle, pageBreakBefore: 'always', breakBefore: 'page' }}>
+            <h2 style={pdfHeadingStyle}>5. Posicionamento</h2>
+            {(() => {
+              const p = s.camada_2_modulos_obrigatorios.posicionamento;
+              return (
+                <>
+                  <div style={{ ...pdfCardStyle, borderLeft: '4px solid #ec4899', marginBottom: '12px' }}>
+                    <div style={pdfCardTitleStyle}>Declaração de Posicionamento</div>
+                    <p className="pdf-text-sm" style={{ fontStyle: 'italic', color: '#334155' }}>"{p.declaracao || 'N/A'}"</p>
+                  </div>
+                  <div style={{ ...pdfCardStyle, borderLeft: '4px solid #a855f7', marginBottom: '12px' }}>
+                    <div style={pdfCardTitleStyle}>Proposta de Valor Única (UVP)</div>
+                    <p className="pdf-text-sm" style={{ fontWeight: 600, color: '#334155' }}>{p.uvp || 'N/A'}</p>
+                  </div>
+                  {p.matriz_posicionamento && (
+                    <div style={{ ...pdfCardStyle, marginBottom: '12px' }}>
+                      <div style={pdfCardTitleStyle}>Matriz de Posicionamento</div>
+                      <div style={{ display: 'flex', gap: '16px', marginTop: '8px' }}>
+                        <div style={{ flex: '1' }}>
+                          <p className="pdf-text-xs pdf-text-muted"><strong>Eixo X:</strong> {p.matriz_posicionamento.eixo_x || 'Preço'}</p>
+                          <p className="pdf-text-xs pdf-text-muted"><strong>Eixo Y:</strong> {p.matriz_posicionamento.eixo_y || 'Valor Percebido'}</p>
+                          <p className="pdf-text-xs pdf-mt-2"><strong>Sua Empresa:</strong> x={p.matriz_posicionamento.posicionamento_empresa?.x || 0.5}, y={p.matriz_posicionamento.posicionamento_empresa?.y || 0.5}</p>
+                          {Array.isArray(p.matriz_posicionamento.concorrentes) && p.matriz_posicionamento.concorrentes.map((c: any, i: number) => (
+                            <p key={i} className="pdf-text-xs"><strong>{c.nome || `Concorrente ${i + 1}`}:</strong> x={c.x || 0.5}, y={c.y || 0.5}</p>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  {p.brand_personality && (
+                    <div style={pdfCardStyle}>
+                      <div style={pdfCardTitleStyle}>Brand Personality</div>
+                      <p className="pdf-text-sm"><strong>Arquétipos:</strong> {Array.isArray(p.brand_personality.arquetipos) ? p.brand_personality.arquetipos.join(', ') : 'N/A'}</p>
+                      <p className="pdf-text-sm pdf-mt-2"><strong>Tom de Voz:</strong> {p.brand_personality.tom_voz || 'N/A'}</p>
+                      {Array.isArray(p.brand_personality.guidelines_comunicacao) && p.brand_personality.guidelines_comunicacao.length > 0 && (
+                        <div className="pdf-mt-2">
+                          <p className="pdf-text-xs" style={{ fontWeight: 700, color: '#64748b', textTransform: 'uppercase', marginBottom: '4px' }}>Guidelines</p>
+                          <ul className="pdf-list pdf-text-xs">
+                            {p.brand_personality.guidelines_comunicacao.map((g: any, i: number) => <li key={i}>{typeof g === 'string' ? g : JSON.stringify(g)}</li>)}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </>
+              );
+            })()}
           </div>
         )}
 
         {/* 6. Canais */}
         {s.camada_2_modulos_obrigatorios?.canais && (
-          <div className="space-y-6 print:break-before-page break-inside-avoid-page">
-            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
-              <Globe className="w-6 h-6" /> 6. Canais de Marketing
-            </h2>
-            {renderChannels(s.camada_2_modulos_obrigatorios.canais)}
+          <div style={{ ...pdfSectionStyle, pageBreakBefore: 'always', breakBefore: 'page' }}>
+            <h2 style={pdfHeadingStyle}>6. Canais de Marketing</h2>
+            <div className="pdf-grid-2">
+              {Array.isArray(s.camada_2_modulos_obrigatorios.canais) && s.camada_2_modulos_obrigatorios.canais.map((ch: any, i: number) => (
+                <div key={i} style={pdfCardStyle}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
+                    <span style={{ fontWeight: 700, fontSize: '13px', color: '#1e293b' }}>{ch.canal || 'N/A'}</span>
+                    <div style={{ display: 'flex', gap: '6px' }}>
+                      <span className="pdf-badge">{ch.funil_stage || 'N/A'}</span>
+                      <span className={`pdf-badge ${ch.prioridade === 'high' ? 'pdf-badge-indigo' : ''}`}>{ch.prioridade || 'N/A'}</span>
+                    </div>
+                  </div>
+                  <p className="pdf-text-sm pdf-mb-2" style={{ color: '#334155' }}>{ch.objetivo || 'N/A'}</p>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px', fontSize: '11px' }}>
+                    <p><strong>Formatos:</strong> {Array.isArray(ch.formatos) ? ch.formatos.join(', ') : 'N/A'}</p>
+                    <p><strong>Frequência:</strong> {ch.frequencia || 'N/A'}</p>
+                    <p><strong>Investimento:</strong> {ch.investimento_mensal_estimado || 'N/A'}</p>
+                    <p><strong>Budget:</strong> {ch.percentual_budget || 'N/A'}</p>
+                  </div>
+                  <p className="pdf-text-xs pdf-mt-2"><strong>KPIs:</strong> {Array.isArray(ch.kpis) ? ch.kpis.join(', ') : 'N/A'}</p>
+                </div>
+              ))}
+            </div>
           </div>
         )}
 
         {/* 7. Plano de Ação */}
         {s.camada_2_modulos_obrigatorios?.plano_acao_90_dias && (
-          <div className="space-y-6 print:break-before-page break-inside-avoid-page">
-            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
-              <Rocket className="w-6 h-6" /> 7. Plano de Ação (90 Dias)
-            </h2>
-            {renderActionPlan(s.camada_2_modulos_obrigatorios.plano_acao_90_dias)}
+          <div style={{ ...pdfSectionStyle, pageBreakBefore: 'always', breakBefore: 'page' }}>
+            <h2 style={pdfHeadingStyle}>7. Plano de Ação (90 Dias)</h2>
+            {(() => {
+              const plan = s.camada_2_modulos_obrigatorios.plano_acao_90_dias;
+              const sprintColors = [
+                { border: '#22c55e', bg: '#f0fdf4', text: '#14532d' },
+                { border: '#f59e0b', bg: '#fffbeb', text: '#78350f' },
+                { border: '#3b82f6', bg: '#eff6ff', text: '#1e3a5f' },
+              ];
+              return ['sprint_1_semanas_1_4', 'sprint_2_semanas_5_8', 'sprint_3_semanas_9_12'].map((sprintKey, idx) => {
+                const sprint = plan[sprintKey];
+                if (!sprint) return null;
+                const colors = sprintColors[idx];
+                return (
+                  <div key={sprintKey} style={{ ...pdfCardStyle, borderLeft: `4px solid ${colors.border}`, marginBottom: '12px' }}>
+                    <div style={{ ...pdfCardTitleStyle, color: colors.text }}>Sprint {idx + 1} — {sprint.foco || 'N/A'}</div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                      {Array.isArray(sprint.acoes) && sprint.acoes.map((acao: any, j: number) => (
+                        <div key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', padding: '8px', background: 'white', borderRadius: '4px', border: '1px solid #f1f5f9' }}>
+                          <span style={{ color: '#94a3b8', fontSize: '12px', flexShrink: 0, marginTop: '2px' }}>&#9654;</span>
+                          <div>
+                            <p className="pdf-text-sm" style={{ fontWeight: 600, color: '#1e293b' }}>
+                              {typeof acao === 'string' ? acao : acao.acao || 'N/A'}
+                            </p>
+                            {typeof acao === 'object' && (
+                              <div style={{ display: 'flex', gap: '12px', fontSize: '11px', color: '#64748b', marginTop: '4px' }}>
+                                {acao.responsavel && <span>Resp: {acao.responsavel}</span>}
+                                {acao.metrica_sucesso && <span>KPI: {acao.metrica_sucesso}</span>}
+                                {acao.esforco && <span>Esforço: {acao.esforco}</span>}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                );
+              });
+            })()}
           </div>
         )}
 
         {/* 8. Governança */}
         {s.camada_4_governanca && (
-          <div className="space-y-6 print:break-before-page break-inside-avoid-page">
-            <h2 className="text-2xl font-bold text-indigo-900 border-b-2 border-indigo-100 pb-2 flex items-center gap-2">
-              <Shield className="w-6 h-6" /> 8. Governança
-            </h2>
-            {renderGovernance(s.camada_4_governanca)}
+          <div style={{ ...pdfSectionStyle, pageBreakBefore: 'always', breakBefore: 'page' }}>
+            <h2 style={pdfHeadingStyle}>8. Governança</h2>
+            {(() => {
+              const g = s.camada_4_governanca;
+              return (
+                <>
+                  <div style={{ ...pdfCardStyle, marginBottom: '12px' }}>
+                    <div style={pdfCardTitleStyle}>Frequência de Revisão</div>
+                    <span className="pdf-badge pdf-badge-indigo">{g.frequencia_revisao || 'N/A'}</span>
+                  </div>
+                  {g.aprovacao_niveis && typeof g.aprovacao_niveis === 'object' && (
+                    <div style={{ ...pdfCardStyle, marginBottom: '12px' }}>
+                      <div style={pdfCardTitleStyle}>Níveis de Aprovação</div>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                        {Object.entries(g.aprovacao_niveis).map(([nivel, responsavel]) => (
+                          <div key={nivel} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px', background: '#f8fafc', borderRadius: '6px' }}>
+                            <span style={{ color: '#64748b', fontSize: '14px' }}>&#128737;</span>
+                            <span className="pdf-text-sm" style={{ fontWeight: 700, color: '#334155', textTransform: 'capitalize' }}>{nivel}:</span>
+                            <span className="pdf-text-sm" style={{ color: '#475569' }}>{String(responsavel || 'N/A')}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                  {g.consolidacao_grupo && typeof g.consolidacao_grupo === 'object' && (
+                    <div style={{ ...pdfCardStyle, marginBottom: '12px' }}>
+                      <div style={pdfCardTitleStyle}>Consolidação com o Grupo</div>
+                      <p className="pdf-text-sm"><strong>Frequência:</strong> {g.consolidacao_grupo.frequencia || 'N/A'}</p>
+                      <p className="pdf-text-sm pdf-mt-2"><strong>Processo:</strong> {g.consolidacao_grupo.processo || 'N/A'}</p>
+                      <p className="pdf-text-sm pdf-mt-2"><strong>Output:</strong> {g.consolidacao_grupo.output || 'N/A'}</p>
+                    </div>
+                  )}
+                  {g.ciclo_revisao && typeof g.ciclo_revisao === 'object' && (
+                    <div style={{ ...pdfCardStyle, marginBottom: '12px' }}>
+                      <div style={pdfCardTitleStyle}>Ciclo de Revisão</div>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                        {Object.entries(g.ciclo_revisao).map(([freq, desc]) => (
+                          <div key={freq} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', padding: '8px', background: '#f8fafc', borderRadius: '6px' }}>
+                            <span style={{ color: '#64748b', fontSize: '12px', marginTop: '2px' }}>&#9200;</span>
+                            <div>
+                              <p className="pdf-text-sm" style={{ fontWeight: 700, color: '#334155', textTransform: 'capitalize' }}>{freq}</p>
+                              <p className="pdf-text-xs" style={{ color: '#475569' }}>{String(desc || 'N/A')}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                  {Array.isArray(g.dashboard_kpis) && g.dashboard_kpis.length > 0 && (
+                    <div style={pdfCardStyle}>
+                      <div style={pdfCardTitleStyle}>Dashboard KPIs</div>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                        {g.dashboard_kpis.map((kpi: any, i: number) => (
+                          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px', background: '#f8fafc', borderRadius: '6px' }}>
+                            <span style={{ color: '#3b82f6', fontSize: '14px' }}>&#9650;</span>
+                            <span className="pdf-text-sm" style={{ fontWeight: 600, color: '#1e293b' }}>{kpi.nome || 'N/A'}</span>
+                            <span className="pdf-badge">{kpi.frequencia_medicao || 'N/A'}</span>
+                            <span className="pdf-text-xs pdf-text-muted" style={{ marginLeft: 'auto' }}>{kpi.responsavel || 'N/A'}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </>
+              );
+            })()}
           </div>
         )}
 
-        {/* 9. Product Launch Formula */}
+        {/* 9. PLF */}
         {s.camada_3_modulos_opcionais?.plf_strategy && (
-          <div className="space-y-6 print:break-before-page break-inside-avoid-page">
-            <h2 className="text-2xl font-bold text-purple-900 border-b-2 border-purple-100 pb-2 flex items-center gap-2">
-              <Rocket className="w-6 h-6" /> 9. Product Launch Formula (PLF)
-            </h2>
-            {renderPLF(s.camada_3_modulos_opcionais.plf_strategy)}
+          <div style={{ ...pdfSectionStyle, pageBreakBefore: 'always', breakBefore: 'page' }}>
+            <h2 style={{ ...pdfHeadingStyle, color: '#7e22ce', borderBottomColor: '#e9d5ff' }}>9. Product Launch Formula (PLF)</h2>
+            {(() => {
+              const plf = s.camada_3_modulos_opcionais.plf_strategy;
+              return (
+                <>
+                  <div className="pdf-grid-2">
+                    <div style={{ ...pdfCardStyle, borderTop: '4px solid #a855f7' }}>
+                      <div style={pdfCardTitleStyle}>Tipo de Lançamento</div>
+                      <p className="pdf-text-sm" style={{ fontWeight: 700, color: '#334155' }}>{typeof plf.tipo_lancamento === 'string' ? plf.tipo_lancamento : plf.tipo_lancamento?.nome || 'Não definido'}</p>
+                    </div>
+                    {Array.isArray(plf.pre_pre_lancamento) && (
+                      <div style={pdfCardStyle}>
+                        <div style={pdfCardTitleStyle}>Pré-Pré Lançamento (PPL)</div>
+                        <ul className="pdf-list pdf-text-sm">
+                          {plf.pre_pre_lancamento.map((item: any, i: number) => (
+                            <li key={i}>{typeof item === 'string' ? item : item?.nome || item?.descricao || JSON.stringify(item)}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                  {plf.pre_lancamento_plf && (
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '10px', marginTop: '12px' }}>
+                      <div style={{ ...pdfCardStyle, background: '#faf5ff', border: '1px solid #e9d5ff' }}>
+                        <div style={{ ...pdfCardTitleStyle, color: '#7e22ce' }}>PLC 1: A Oportunidade</div>
+                        <p className="pdf-text-sm" style={{ color: '#6b21a8' }}>{typeof plf.pre_lancamento_plf.plc1 === 'string' ? plf.pre_lancamento_plf.plc1 : JSON.stringify(plf.pre_lancamento_plf.plc1)}</p>
+                      </div>
+                      <div style={{ ...pdfCardStyle, background: '#faf5ff', border: '1px solid #e9d5ff' }}>
+                        <div style={{ ...pdfCardTitleStyle, color: '#7e22ce' }}>PLC 2: A Transformação</div>
+                        <p className="pdf-text-sm" style={{ color: '#6b21a8' }}>{typeof plf.pre_lancamento_plf.plc2 === 'string' ? plf.pre_lancamento_plf.plc2 : JSON.stringify(plf.pre_lancamento_plf.plc2)}</p>
+                      </div>
+                      <div style={{ ...pdfCardStyle, background: '#faf5ff', border: '1px solid #e9d5ff' }}>
+                        <div style={{ ...pdfCardTitleStyle, color: '#7e22ce' }}>PLC 3: A Experiência</div>
+                        <p className="pdf-text-sm" style={{ color: '#6b21a8' }}>{typeof plf.pre_lancamento_plf.plc3 === 'string' ? plf.pre_lancamento_plf.plc3 : JSON.stringify(plf.pre_lancamento_plf.plc3)}</p>
+                      </div>
+                    </div>
+                  )}
+                  <div className="pdf-grid-2" style={{ marginTop: '12px' }}>
+                    {Array.isArray(plf.dia_lancamento) && (
+                      <div style={{ ...pdfCardStyle, border: '1px solid #bbf7d0' }}>
+                        <div style={{ ...pdfCardTitleStyle, color: '#15803d', background: '#f0fdf4', margin: '-14px -14px 8px -14px', padding: '10px 14px', borderRadius: '8px 8px 0 0' }}>Dia do Lançamento (Open Cart)</div>
+                        <ul className="pdf-list pdf-text-sm">
+                          {plf.dia_lancamento.map((item: any, i: number) => (
+                            <li key={i}>{typeof item === 'string' ? item : item?.nome || item?.descricao || JSON.stringify(item)}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {Array.isArray(plf.pos_lancamento) && (
+                      <div style={{ ...pdfCardStyle, border: '1px solid #fde68a' }}>
+                        <div style={{ ...pdfCardTitleStyle, color: '#92400e', background: '#fffbeb', margin: '-14px -14px 8px -14px', padding: '10px 14px', borderRadius: '8px 8px 0 0' }}>Pós-Lançamento (Downsell)</div>
+                        <ul className="pdf-list pdf-text-sm">
+                          {plf.pos_lancamento.map((item: any, i: number) => (
+                            <li key={i}>{typeof item === 'string' ? item : item?.nome || item?.descricao || JSON.stringify(item)}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                </>
+              );
+            })()}
           </div>
         )}
+
+        {/* Footer */}
+        <div style={{ textAlign: 'center', marginTop: '32px', paddingTop: '16px', borderTop: '1px solid #e2e8f0' }}>
+          <p className="pdf-text-xs pdf-text-muted">Documento gerado em {new Date().toLocaleString('pt-BR')}</p>
+        </div>
       </div>
     );
   };
@@ -2123,7 +2503,125 @@ export default function MarketingStrategyPage() {
           
           {/* Off-screen PDF container */}
           <div style={{ position: 'absolute', left: '-9999px', top: 0 }}>
-            <div id="pdf-export-content" style={{ width: '1200px', padding: '40px', backgroundColor: 'white' }}>
+            <div id="pdf-export-content" style={{ width: '794px', padding: '32px 40px', backgroundColor: 'white', boxSizing: 'border-box', fontSize: '12px', lineHeight: '1.5', color: '#1e293b', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+              <style>{`
+                #pdf-export-content * { box-sizing: border-box; }
+                #pdf-export-content .pdf-section {
+                  page-break-inside: avoid;
+                  break-inside: avoid;
+                  margin-bottom: 24px;
+                }
+                #pdf-export-content h2 {
+                  page-break-after: avoid;
+                  break-after: avoid;
+                  margin-top: 0;
+                }
+                #pdf-export-content [data-pdf-card] {
+                  page-break-inside: avoid;
+                  break-inside: avoid;
+                  overflow: hidden;
+                }
+                #pdf-export-content table {
+                  width: 100%;
+                  border-collapse: collapse;
+                  page-break-inside: avoid;
+                }
+                #pdf-export-content .pdf-grid-2 {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  gap: 12px;
+                }
+                #pdf-export-content .pdf-grid-3 {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr 1fr;
+                  gap: 10px;
+                }
+                #pdf-export-content .pdf-grid-4 {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  gap: 10px;
+                }
+                #pdf-export-content .pdf-card {
+                  border: 1px solid #e2e8f0;
+                  border-radius: 8px;
+                  padding: 14px;
+                  background: #fff;
+                  page-break-inside: avoid;
+                  break-inside: avoid;
+                  overflow: hidden;
+                }
+                #pdf-export-content .pdf-card-header {
+                  font-size: 13px;
+                  font-weight: 700;
+                  color: #1e293b;
+                  margin-bottom: 8px;
+                  padding-bottom: 6px;
+                  border-bottom: 1px solid #f1f5f9;
+                }
+                #pdf-export-content .pdf-badge {
+                  display: inline-block;
+                  padding: 2px 8px;
+                  border-radius: 9999px;
+                  font-size: 10px;
+                  font-weight: 600;
+                  border: 1px solid #e2e8f0;
+                  background: #f8fafc;
+                  color: #475569;
+                }
+                #pdf-export-content .pdf-badge-green {
+                  background: #f0fdf4;
+                  color: #15803d;
+                  border-color: #bbf7d0;
+                }
+                #pdf-export-content .pdf-badge-red {
+                  background: #fef2f2;
+                  color: #b91c1c;
+                  border-color: #fecaca;
+                }
+                #pdf-export-content .pdf-badge-indigo {
+                  background: #eef2ff;
+                  color: #4338ca;
+                  border-color: #c7d2fe;
+                }
+                #pdf-export-content .pdf-badge-purple {
+                  background: #faf5ff;
+                  color: #7e22ce;
+                  border-color: #e9d5ff;
+                }
+                #pdf-export-content .pdf-text-sm {
+                  font-size: 12px;
+                }
+                #pdf-export-content .pdf-text-xs {
+                  font-size: 11px;
+                }
+                #pdf-export-content .pdf-text-muted {
+                  color: #64748b;
+                }
+                #pdf-export-content .pdf-mb-2 { margin-bottom: 8px; }
+                #pdf-export-content .pdf-mb-4 { margin-bottom: 16px; }
+                #pdf-export-content .pdf-mt-2 { margin-top: 8px; }
+                #pdf-export-content .pdf-list {
+                  padding-left: 18px;
+                  margin: 4px 0;
+                }
+                #pdf-export-content .pdf-list li {
+                  margin-bottom: 3px;
+                }
+                #pdf-export-content .pdf-border-l-4 {
+                  border-left: 4px solid;
+                }
+                #pdf-export-content .pdf-flex-between {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                }
+                #pdf-export-content .pdf-flex-gap {
+                  display: flex;
+                  align-items: center;
+                  gap: 8px;
+                  flex-wrap: wrap;
+                }
+              `}</style>
               {renderFullReportPDF()}
             </div>
           </div>
