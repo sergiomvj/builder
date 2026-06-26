@@ -97,6 +97,9 @@ export async function DELETE(
         }
 
         // 7. Clean Project Dependencies
+        await deleteTable('marketing_strategies', 'project_id', [projectId]);
+        await deleteTable('strategic_documents', 'project_id', [projectId]);
+        await deleteTable('llm_logs', 'project_id', [projectId]);
         await deleteTable('chat_logs', 'project_id', [projectId]);
 
         // 8. Get Idea ID before deleting project
